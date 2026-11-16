@@ -1,0 +1,242 @@
+% =====================================================================
+% PROGRAMA LAF 2 â€” RANKING DE PUBLICACIONES
+% Sistema argumentativo de recomendacion de cafe
+% Trabajo Final - Ana Paula Machado - UNSE
+% =====================================================================
+
+% DOMINIO: Cafe
+% Dataset key: mlm_mlm194329_20260528_142014
+% Configuracion congelada SHA-256: 735f9b0cfde030c5d855d11262e73d460d15b5be7dba20a30d3d2157c41432fb
+% Congelada: 2026-09-10T18:12:11.440501+00:00
+% PRODUCTO: Cafe Capuccino Vainilla Francesa En Polvo Members Mark 1.8 Kg
+% Product ID: MLM19566313
+% Publicaciones analizadas: 26
+
+% Publicaciones incluidas:
+%   mlm1649958450                   $       288  [oficial]
+%   mlm3607232064                   $       295  [oficial]
+%   mlm2016344939                   $       299
+%   mlm2130464857                   $       304  [oficial]
+%   mlm4468329986                   $       380  [oficial]  [envio gratis]
+%   mlm4957271440                   $       395  [envio gratis]
+%   mlm2479322051                   $       398  [oficial]  [envio gratis]
+%   mlm1991154456                   $       399  [envio gratis]
+%   mlm2479347871                   $       399  [envio gratis]
+%   mlm4354086592                   $       399  [envio gratis]
+%   mlm4925077838                   $       399  [envio gratis]
+%   mlm5172133566                   $       399  [envio gratis]
+%   mlm3140707206                   $       415  [oficial]  [envio gratis]
+%   mlm2552802793                   $       427  descuento 5%  [oficial]  [envio gratis]
+%   mlm5132285828                   $       429  [envio gratis]
+%   mlm2370451767                   $       430  [envio gratis]
+%   mlm2906277033                   $       437  [envio gratis]
+%   mlm5035699430                   $       438  [envio gratis]
+%   mlm2852622541                   $       447  [envio gratis]
+%   mlm3870777402                   $       449  [envio gratis]
+%   mlm1494089883                   $       450  [oficial]  [envio gratis]
+%   mlm3498948492                   $       450  [envio gratis]
+%   mlm4612094968                   $       459  [envio gratis]
+%   mlm2700501437                   $       598  [envio gratis]
+%   mlm2941006159                   $       645  [envio gratis]
+%   mlm5154556164                   $       645  [envio gratis]
+
+% Preferencias de compra del usuario:
+%   envio: 0.67
+%   descuento: 0.67
+%   factura: 0.67
+%   cuotas: 0.67
+%   tienda_oficial: 0.67
+%   garantia: 0.67
+%   precio: 0.67
+
+% ============================================================
+% HECHOS â€” uno por (publicaciÃ³n, condiciÃ³n)
+% Variable X identifica la publicaciÃ³n (item).
+% ============================================================
+
+% MLM1649958450  ($288)
+precioBueno(mlm1649958450). {0.95; 0.67}
+% precio $288 â†’ confianza 0.95 dentro del rango
+esTiendaOficial(mlm1649958450). {0.95; 0.67}
+
+% MLM3607232064  ($295)
+precioBueno(mlm3607232064). {0.94; 0.67}
+% precio $295 â†’ confianza 0.94 dentro del rango
+esTiendaOficial(mlm3607232064). {0.95; 0.67}
+
+% MLM2016344939  ($299)
+precioBueno(mlm2016344939). {0.93; 0.67}
+% precio $299 â†’ confianza 0.93 dentro del rango
+
+% MLM2130464857  ($304)
+precioBueno(mlm2130464857). {0.92; 0.67}
+% precio $304 â†’ confianza 0.92 dentro del rango
+esTiendaOficial(mlm2130464857). {0.95; 0.67}
+
+% MLM4468329986  ($380)
+precioBueno(mlm4468329986). {0.78; 0.67}
+% precio $380 â†’ confianza 0.78 dentro del rango
+esTiendaOficial(mlm4468329986). {0.95; 0.67}
+tieneEnvioGratis(mlm4468329986). {0.95; 0.67}
+% envio gratuito; logistica=xd_drop_off
+
+% MLM4957271440  ($395)
+precioBueno(mlm4957271440). {0.76; 0.67}
+% precio $395 â†’ confianza 0.76 dentro del rango
+tieneEnvioGratis(mlm4957271440). {0.95; 0.67}
+% envio gratuito; logistica=xd_drop_off
+
+% MLM2479322051  ($398)
+precioBueno(mlm2479322051). {0.75; 0.67}
+% precio $398 â†’ confianza 0.75 dentro del rango
+esTiendaOficial(mlm2479322051). {0.95; 0.67}
+tieneEnvioGratis(mlm2479322051). {0.95; 0.67}
+% envio gratuito; logistica=xd_drop_off
+
+% MLM1991154456  ($399)
+precioBueno(mlm1991154456). {0.75; 0.67}
+% precio $399 â†’ confianza 0.75 dentro del rango
+tieneEnvioGratis(mlm1991154456). {0.95; 0.67}
+% envio gratuito; logistica=cross_docking
+
+% MLM2479347871  ($399)
+precioBueno(mlm2479347871). {0.75; 0.67}
+% precio $399 â†’ confianza 0.75 dentro del rango
+tieneEnvioGratis(mlm2479347871). {0.95; 0.67}
+% envio gratuito; logistica=xd_drop_off
+
+% MLM4354086592  ($399)
+precioBueno(mlm4354086592). {0.75; 0.67}
+% precio $399 â†’ confianza 0.75 dentro del rango
+tieneEnvioGratis(mlm4354086592). {0.95; 0.67}
+% envio gratuito; logistica=xd_drop_off
+
+% MLM4925077838  ($399)
+precioBueno(mlm4925077838). {0.75; 0.67}
+% precio $399 â†’ confianza 0.75 dentro del rango
+tieneEnvioGratis(mlm4925077838). {0.95; 0.67}
+% envio gratuito; logistica=xd_drop_off
+
+% MLM5172133566  ($399)
+precioBueno(mlm5172133566). {0.75; 0.67}
+% precio $399 â†’ confianza 0.75 dentro del rango
+tieneEnvioGratis(mlm5172133566). {0.95; 0.67}
+% envio gratuito; logistica=drop_off
+
+% MLM3140707206  ($415)
+precioBueno(mlm3140707206). {0.72; 0.67}
+% precio $415 â†’ confianza 0.72 dentro del rango
+esTiendaOficial(mlm3140707206). {0.95; 0.67}
+tieneEnvioGratis(mlm3140707206). {0.95; 0.67}
+% envio gratuito; logistica=cross_docking
+
+% MLM2552802793  ($427)
+precioBueno(mlm2552802793). {0.70; 0.67}
+% precio $427 â†’ confianza 0.70 dentro del rango
+tieneDescuento(mlm2552802793). {0.62; 0.67}
+% descuento 5%
+esTiendaOficial(mlm2552802793). {0.95; 0.67}
+tieneEnvioGratis(mlm2552802793). {0.95; 0.67}
+% envio gratuito; logistica=xd_drop_off
+
+% MLM5132285828  ($429)
+precioBueno(mlm5132285828). {0.69; 0.67}
+% precio $429 â†’ confianza 0.69 dentro del rango
+tieneEnvioGratis(mlm5132285828). {0.95; 0.67}
+% envio gratuito; logistica=cross_docking
+
+% MLM2370451767  ($430)
+precioBueno(mlm2370451767). {0.69; 0.67}
+% precio $430 â†’ confianza 0.69 dentro del rango
+tieneEnvioGratis(mlm2370451767). {0.95; 0.67}
+% envio gratuito; logistica=xd_drop_off
+
+% MLM2906277033  ($437)
+precioBueno(mlm2906277033). {0.68; 0.67}
+% precio $437 â†’ confianza 0.68 dentro del rango
+tieneEnvioGratis(mlm2906277033). {0.95; 0.67}
+% envio gratuito; logistica=xd_drop_off
+
+% MLM5035699430  ($438)
+precioBueno(mlm5035699430). {0.68; 0.67}
+% precio $438 â†’ confianza 0.68 dentro del rango
+tieneEnvioGratis(mlm5035699430). {0.95; 0.67}
+% envio gratuito; logistica=xd_drop_off
+
+% MLM2852622541  ($447)
+precioBueno(mlm2852622541). {0.66; 0.67}
+% precio $447 â†’ confianza 0.66 dentro del rango
+tieneEnvioGratis(mlm2852622541). {0.95; 0.67}
+% envio gratuito; logistica=xd_drop_off
+
+% MLM3870777402  ($449)
+precioBueno(mlm3870777402). {0.66; 0.67}
+% precio $449 â†’ confianza 0.66 dentro del rango
+tieneEnvioGratis(mlm3870777402). {0.95; 0.67}
+% envio gratuito; logistica=cross_docking
+
+% MLM1494089883  ($450)
+precioBueno(mlm1494089883). {0.66; 0.67}
+% precio $450 â†’ confianza 0.66 dentro del rango
+esTiendaOficial(mlm1494089883). {0.95; 0.67}
+tieneEnvioGratis(mlm1494089883). {0.95; 0.67}
+% envio gratuito; logistica=cross_docking
+
+% MLM3498948492  ($450)
+precioBueno(mlm3498948492). {0.66; 0.67}
+% precio $450 â†’ confianza 0.66 dentro del rango
+tieneEnvioGratis(mlm3498948492). {0.95; 0.67}
+% envio gratuito; logistica=xd_drop_off
+
+% MLM4612094968  ($459)
+precioBueno(mlm4612094968). {0.64; 0.67}
+% precio $459 â†’ confianza 0.64 dentro del rango
+tieneEnvioGratis(mlm4612094968). {0.95; 0.67}
+% envio gratuito; logistica=xd_drop_off
+
+% MLM2700501437  ($598)
+precioBueno(mlm2700501437). {0.39; 0.67}
+% precio $598 â†’ confianza 0.39 dentro del rango
+tieneEnvioGratis(mlm2700501437). {0.95; 0.67}
+% envio gratuito; logistica=xd_drop_off
+
+% MLM2941006159  ($645)
+precioBueno(mlm2941006159). {0.30; 0.67}
+% precio $645 â†’ confianza 0.30 dentro del rango
+tieneEnvioGratis(mlm2941006159). {0.95; 0.67}
+% envio gratuito; logistica=cross_docking
+
+% MLM5154556164  ($645)
+precioBueno(mlm5154556164). {0.30; 0.67}
+% precio $645 â†’ confianza 0.30 dentro del rango
+tieneEnvioGratis(mlm5154556164). {0.95; 0.67}
+% envio gratuito; logistica=xd_drop_off
+
+% ============================================================
+% REGLAS DE AGREGACIÃ“N
+% ============================================================
+
+compraBuena(X) :- precioBueno(X). {0.85; 0.67}
+compraBuena(X) :- tieneDescuento(X). {0.85; 0.67}
+compraBuena(X) :- tieneCuotas(X). {0.85; 0.67}
+compraBuena(X) :- tieneGarantiaLarga(X). {0.85; 0.67}
+compraBuena(X) :- esTiendaOficial(X). {0.85; 0.67}
+compraBuena(X) :- tieneFactura(X). {0.85; 0.67}
+compraBuena(X) :- tieneEnvioGratis(X). {0.85; 0.67}
+
+% ============================================================
+% REGLAS DE RECOMENDACIÃ“N
+% X = publicaciÃ³n candidata
+% ============================================================
+
+recomendar(X) :- compraBuena(X). {0.90; 0.67}
+
+% ============================================================
+% OPERADORES (configurar en el Argumentation Studio)
+% ============================================================
+% Atributo 1 â€” Confianza:
+%   âŠ™ = X*Y     âŠ• = X+Y-X*Y     âŠ– = (X-Y)/(1-Y) si Xâ‰¥Y, sino 0
+% Atributo 2 â€” Preferencia del usuario:
+%   âŠ™ = min(X,Y)     âŠ• = min(X+Y,1)     âŠ– = max(X-Y,0)
+%
+% Fuente: BudÃ¡n et al. (2017) IJAR 82:242-269, Ejemplo 1 pp.249-250

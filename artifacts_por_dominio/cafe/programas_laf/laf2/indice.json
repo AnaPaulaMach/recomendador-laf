@@ -1,0 +1,84 @@
+[
+  {
+    "product_id": "MLM19566313",
+    "product_name": "Cafe Capuccino Vainilla Francesa En Polvo Members Mark 1.8 Kg",
+    "dataset_key": "mlm_mlm194329_20260528_142014",
+    "publicaciones": 26,
+    "methodology_sha256": "735f9b0cfde030c5d855d11262e73d460d15b5be7dba20a30d3d2157c41432fb",
+    "completo": {
+      "hechos": 57,
+      "reglas": 8
+    },
+    "condiciones": {
+      "cuotas": {
+        "hechos": 0,
+        "reglas": 2
+      },
+      "descuento": {
+        "hechos": 1,
+        "reglas": 2
+      },
+      "envio": {
+        "hechos": 22,
+        "reglas": 2
+      },
+      "factura": {
+        "hechos": 0,
+        "reglas": 2
+      },
+      "garantia": {
+        "hechos": 0,
+        "reglas": 2
+      },
+      "precio": {
+        "hechos": 26,
+        "reglas": 2
+      },
+      "tienda_oficial": {
+        "hechos": 8,
+        "reglas": 2
+      }
+    }
+  },
+  {
+    "product_id": "MLM41148521",
+    "product_name": "Café Gourmet Molido Espresso 400g Blasón",
+    "dataset_key": "mlm_mlm194335_20260805_185233",
+    "publicaciones": 9,
+    "methodology_sha256": "735f9b0cfde030c5d855d11262e73d460d15b5be7dba20a30d3d2157c41432fb",
+    "completo": {
+      "hechos": 19,
+      "reglas": 8
+    },
+    "condiciones": {
+      "cuotas": {
+        "hechos": 0,
+        "reglas": 2
+      },
+      "descuento": {
+        "hechos": 1,
+        "reglas": 2
+      },
+      "envio": {
+        "hechos": 7,
+        "reglas": 2
+      },
+      "factura": {
+        "hechos": 0,
+        "reglas": 2
+      },
+      "garantia": {
+        "hechos": 0,
+        "reglas": 2
+      },
+      "precio": {
+        "hechos": 9,
+        "reglas": 2
+      },
+      "tienda_oficial": {
+        "hechos": 2,
+        "reglas": 2
+      }
+    }
+  }
+]

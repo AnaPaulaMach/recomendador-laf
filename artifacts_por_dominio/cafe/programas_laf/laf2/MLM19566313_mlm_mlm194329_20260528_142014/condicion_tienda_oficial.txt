@@ -1,0 +1,16 @@
+% LAF2 independiente: una etiqueta (confianza)
+% Condicion de compra: tienda_oficial
+% Dataset key: mlm_mlm194329_20260528_142014
+% Product ID: MLM19566313
+% Methodology SHA256: 735f9b0cfde030c5d855d11262e73d460d15b5be7dba20a30d3d2157c41432fb
+% Preferencias del usuario: pesos externos, no etiquetas LAF.
+esTiendaOficial(mlm1649958450). {0.95}
+esTiendaOficial(mlm3607232064). {0.95}
+esTiendaOficial(mlm2130464857). {0.95}
+esTiendaOficial(mlm4468329986). {0.95}
+esTiendaOficial(mlm2479322051). {0.95}
+esTiendaOficial(mlm3140707206). {0.95}
+esTiendaOficial(mlm2552802793). {0.95}
+esTiendaOficial(mlm1494089883). {0.95}
+compraBuena(X) :- esTiendaOficial(X). {0.85}
+recomendar(X) :- compraBuena(X). {0.90}

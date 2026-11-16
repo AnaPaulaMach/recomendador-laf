@@ -1,0 +1,121 @@
+% =====================================================================
+% PROGRAMA LAF 2 â€” RANKING DE PUBLICACIONES
+% Sistema argumentativo de recomendacion de cafe
+% Trabajo Final - Ana Paula Machado - UNSE
+% =====================================================================
+
+% DOMINIO: Cafe
+% Dataset key: mlm_mlm194335_20260805_185233
+% Configuracion congelada SHA-256: 735f9b0cfde030c5d855d11262e73d460d15b5be7dba20a30d3d2157c41432fb
+% Congelada: 2026-09-10T18:12:11.440501+00:00
+% PRODUCTO: Café Gourmet Molido Espresso 400g Blasón
+% Product ID: MLM41148521
+% Publicaciones analizadas: 9
+
+% Publicaciones incluidas:
+%   mlm2151158225                   $       138  descuento 11%  [oficial]  [envio gratis]
+%   mlm3542758966                   $       259
+%   mlm4943867012                   $       260
+%   mlm3247026917                   $       399  [envio gratis]
+%   mlm5601446840                   $       400  [envio gratis]
+%   mlm4111335334                   $       427  [envio gratis]
+%   mlm3582500384                   $       449  [oficial]  [envio gratis]
+%   mlm2176425355                   $       524  [envio gratis]
+%   mlm5393016838                   $       600  [envio gratis]
+
+% Preferencias de compra del usuario:
+%   envio: 0.67
+%   descuento: 0.67
+%   factura: 0.67
+%   cuotas: 0.67
+%   tienda_oficial: 0.67
+%   garantia: 0.67
+%   precio: 0.67
+
+% ============================================================
+% HECHOS â€” uno por (publicaciÃ³n, condiciÃ³n)
+% Variable X identifica la publicaciÃ³n (item).
+% ============================================================
+
+% MLM2151158225  ($138)
+precioBueno(mlm2151158225). {0.95; 0.67}
+% precio $138 â†’ confianza 0.95 dentro del rango
+tieneDescuento(mlm2151158225). {0.65; 0.67}
+% descuento 11%
+esTiendaOficial(mlm2151158225). {0.95; 0.67}
+tieneEnvioGratis(mlm2151158225). {0.95; 0.67}
+% envio gratuito; logistica=fulfillment
+
+% MLM3542758966  ($259)
+precioBueno(mlm3542758966). {0.78; 0.67}
+% precio $259 â†’ confianza 0.78 dentro del rango
+
+% MLM4943867012  ($260)
+precioBueno(mlm4943867012). {0.78; 0.67}
+% precio $260 â†’ confianza 0.78 dentro del rango
+
+% MLM3247026917  ($399)
+precioBueno(mlm3247026917). {0.58; 0.67}
+% precio $399 â†’ confianza 0.58 dentro del rango
+tieneEnvioGratis(mlm3247026917). {0.95; 0.67}
+% envio gratuito; logistica=xd_drop_off
+
+% MLM5601446840  ($400)
+precioBueno(mlm5601446840). {0.58; 0.67}
+% precio $400 â†’ confianza 0.58 dentro del rango
+tieneEnvioGratis(mlm5601446840). {0.95; 0.67}
+% envio gratuito; logistica=xd_drop_off
+
+% MLM4111335334  ($427)
+precioBueno(mlm4111335334). {0.54; 0.67}
+% precio $427 â†’ confianza 0.54 dentro del rango
+tieneEnvioGratis(mlm4111335334). {0.95; 0.67}
+% envio gratuito; logistica=xd_drop_off
+
+% MLM3582500384  ($449)
+precioBueno(mlm3582500384). {0.51; 0.67}
+% precio $449 â†’ confianza 0.51 dentro del rango
+esTiendaOficial(mlm3582500384). {0.95; 0.67}
+tieneEnvioGratis(mlm3582500384). {0.95; 0.67}
+% envio gratuito; logistica=cross_docking
+
+% MLM2176425355  ($524)
+precioBueno(mlm2176425355). {0.41; 0.67}
+% precio $524 â†’ confianza 0.41 dentro del rango
+tieneEnvioGratis(mlm2176425355). {0.95; 0.67}
+% envio gratuito; logistica=cross_docking
+
+% MLM5393016838  ($600)
+precioBueno(mlm5393016838). {0.30; 0.67}
+% precio $600 â†’ confianza 0.30 dentro del rango
+tieneEnvioGratis(mlm5393016838). {0.95; 0.67}
+% envio gratuito; logistica=drop_off
+
+% ============================================================
+% REGLAS DE AGREGACIÃ“N
+% ============================================================
+
+compraBuena(X) :- precioBueno(X). {0.85; 0.67}
+compraBuena(X) :- tieneDescuento(X). {0.85; 0.67}
+compraBuena(X) :- tieneCuotas(X). {0.85; 0.67}
+compraBuena(X) :- tieneGarantiaLarga(X). {0.85; 0.67}
+compraBuena(X) :- esTiendaOficial(X). {0.85; 0.67}
+compraBuena(X) :- tieneFactura(X). {0.85; 0.67}
+compraBuena(X) :- tieneEnvioGratis(X). {0.85; 0.67}
+
+% ============================================================
+% REGLAS DE RECOMENDACIÃ“N
+% X = publicaciÃ³n candidata
+% ============================================================
+
+recomendar(X) :- compraBuena(X). {0.90; 0.67}
+
+% ============================================================
+% OPERADORES (configurar en el Argumentation Studio)
+% ============================================================
+% Atributo 1 â€” Confianza:
+%   âŠ™ = X*Y     âŠ• = X+Y-X*Y     âŠ– = (X-Y)/(1-Y) si Xâ‰¥Y, sino 0
+% Atributo 2 â€” Preferencia del usuario:
+%   âŠ™ = min(X,Y)     âŠ• = min(X+Y,1)     âŠ– = max(X-Y,0)
+%
+% Fuente: BudÃ¡n et al. (2017) IJAR 82:242-269, Ejemplo 1 pp.249-250

@@ -1,0 +1,15 @@
+% LAF2 independiente: una etiqueta (confianza)
+% Condicion de compra: envio
+% Dataset key: mlm_mlm194335_20260805_185233
+% Product ID: MLM41148521
+% Methodology SHA256: 735f9b0cfde030c5d855d11262e73d460d15b5be7dba20a30d3d2157c41432fb
+% Preferencias del usuario: pesos externos, no etiquetas LAF.
+tieneEnvioGratis(mlm2151158225). {0.95}
+tieneEnvioGratis(mlm3247026917). {0.95}
+tieneEnvioGratis(mlm5601446840). {0.95}
+tieneEnvioGratis(mlm4111335334). {0.95}
+tieneEnvioGratis(mlm3582500384). {0.95}
+tieneEnvioGratis(mlm2176425355). {0.95}
+tieneEnvioGratis(mlm5393016838). {0.95}
+compraBuena(X) :- tieneEnvioGratis(X). {0.85}
+recomendar(X) :- compraBuena(X). {0.90}

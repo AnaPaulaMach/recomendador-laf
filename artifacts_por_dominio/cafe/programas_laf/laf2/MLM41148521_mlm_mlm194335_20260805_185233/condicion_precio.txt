@@ -1,0 +1,17 @@
+% LAF2 independiente: una etiqueta (confianza)
+% Condicion de compra: precio
+% Dataset key: mlm_mlm194335_20260805_185233
+% Product ID: MLM41148521
+% Methodology SHA256: 735f9b0cfde030c5d855d11262e73d460d15b5be7dba20a30d3d2157c41432fb
+% Preferencias del usuario: pesos externos, no etiquetas LAF.
+precioBueno(mlm2151158225). {0.95}
+precioBueno(mlm3542758966). {0.78}
+precioBueno(mlm4943867012). {0.78}
+precioBueno(mlm3247026917). {0.58}
+precioBueno(mlm5601446840). {0.58}
+precioBueno(mlm4111335334). {0.54}
+precioBueno(mlm3582500384). {0.51}
+precioBueno(mlm2176425355). {0.41}
+precioBueno(mlm5393016838). {0.30}
+compraBuena(X) :- precioBueno(X). {0.85}
+recomendar(X) :- compraBuena(X). {0.90}

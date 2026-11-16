@@ -1,0 +1,30 @@
+% LAF2 independiente: una etiqueta (confianza)
+% Condicion de compra: envio
+% Dataset key: mlm_mlm194329_20260528_142014
+% Product ID: MLM19566313
+% Methodology SHA256: 735f9b0cfde030c5d855d11262e73d460d15b5be7dba20a30d3d2157c41432fb
+% Preferencias del usuario: pesos externos, no etiquetas LAF.
+tieneEnvioGratis(mlm4468329986). {0.95}
+tieneEnvioGratis(mlm4957271440). {0.95}
+tieneEnvioGratis(mlm2479322051). {0.95}
+tieneEnvioGratis(mlm1991154456). {0.95}
+tieneEnvioGratis(mlm2479347871). {0.95}
+tieneEnvioGratis(mlm4354086592). {0.95}
+tieneEnvioGratis(mlm4925077838). {0.95}
+tieneEnvioGratis(mlm5172133566). {0.95}
+tieneEnvioGratis(mlm3140707206). {0.95}
+tieneEnvioGratis(mlm2552802793). {0.95}
+tieneEnvioGratis(mlm5132285828). {0.95}
+tieneEnvioGratis(mlm2370451767). {0.95}
+tieneEnvioGratis(mlm2906277033). {0.95}
+tieneEnvioGratis(mlm5035699430). {0.95}
+tieneEnvioGratis(mlm2852622541). {0.95}
+tieneEnvioGratis(mlm3870777402). {0.95}
+tieneEnvioGratis(mlm1494089883). {0.95}
+tieneEnvioGratis(mlm3498948492). {0.95}
+tieneEnvioGratis(mlm4612094968). {0.95}
+tieneEnvioGratis(mlm2700501437). {0.95}
+tieneEnvioGratis(mlm2941006159). {0.95}
+tieneEnvioGratis(mlm5154556164). {0.95}
+compraBuena(X) :- tieneEnvioGratis(X). {0.85}
+recomendar(X) :- compraBuena(X). {0.90}
