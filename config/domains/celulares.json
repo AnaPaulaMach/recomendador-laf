@@ -1,0 +1,73 @@
+{
+  "domain_key": "celulares",
+  "display_name": "celulares",
+  "product_label": "producto",
+  "item_label": "publicacion",
+  "lexicon_path": "../lexicon.json",
+  "quality_aspects": {
+    "bateria": {
+      "label": "Bateria y autonomia",
+      "icon": "ti-battery-2"
+    },
+    "camara": {
+      "label": "Camara y fotografia",
+      "icon": "ti-camera"
+    },
+    "pantalla": {
+      "label": "Pantalla y display",
+      "icon": "ti-device-tablet"
+    },
+    "rendimiento": {
+      "label": "Rendimiento (procesador, RAM)",
+      "icon": "ti-cpu"
+    },
+    "almacenamiento": {
+      "label": "Almacenamiento interno",
+      "icon": "ti-database"
+    },
+    "dise\u00f1o": {
+      "label": "Dise\u00f1o, peso y tama\u00f1o",
+      "icon": "ti-resize"
+    },
+    "software": {
+      "label": "Software y sistema operativo",
+      "icon": "ti-brand-android"
+    },
+    "se\u00f1al": {
+      "label": "Conectividad (WiFi, 5G, NFC)",
+      "icon": "ti-wifi"
+    }
+  },
+  "purchase_aspects": {
+    "precio": "Precio bajo (menor precio = mejor)",
+    "descuento": "Descuento sobre precio original",
+    "cuotas": "Financiacion (cuotas sin interes)",
+    "garantia": "Garantia larga (12 meses o mas)",
+    "tienda_oficial": "Tienda oficial del fabricante",
+    "factura": "Factura A (empresa registrada)",
+    "envio": "Envio gratuito"
+  },
+  "catalog_aspect_map": {
+    "BATTERY_CAPACITY": "bateria",
+    "MAIN_REAR_CAMERA_RESOLUTION": "camara",
+    "DISPLAY_SIZE": "pantalla",
+    "RAM": "rendimiento",
+    "INTERNAL_MEMORY": "almacenamiento",
+    "MOBILE_NETWORK": "se\u00f1al"
+  },
+  "ui": {
+    "laf1_page_title": "Que buscas en un celular?",
+    "laf1_title": "Que buscas en un celular?",
+    "laf1_caption": "Indica que tan importante es cada aspecto para vos. El sistema va a recomendar productos segun estas preferencias.",
+    "laf1_next_info": "Ahora corres `python src/08_laf1_generate.py` para ver el ranking de productos.",
+    "laf2_page_title": "Como queres comprarlo?",
+    "laf2_title": "Como queres comprarlo?",
+    "laf2_purchase_title": "Que condiciones de compra te importan?",
+    "laf2_next_info": "Ahora corres `python src/10_laf2_generate.py` para ver el ranking de publicaciones."
+  },
+  "laf": {
+    "system_description": "Sistema argumentativo de recomendacion de celulares",
+    "author_line": "Trabajo Final - Ana Paula Machado - UNSE"
+  }
+}
+

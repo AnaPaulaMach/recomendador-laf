@@ -1,0 +1,114 @@
+{
+  "edges": [
+    {
+      "from": "F1",
+      "kind": "SUPPORT",
+      "to": "F3"
+    },
+    {
+      "from": "R1",
+      "kind": "SUPPORT",
+      "to": "F4"
+    },
+    {
+      "from": "R2",
+      "kind": "SUPPORT",
+      "to": "F3"
+    },
+    {
+      "from": "F2",
+      "kind": "SUPPORT",
+      "to": "F4"
+    },
+    {
+      "from": "F3",
+      "kind": "CONFLICT",
+      "to": "F4"
+    },
+    {
+      "from": "F4",
+      "kind": "CONFLICT",
+      "to": "F3"
+    }
+  ],
+  "nodes": [
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.12"
+      ],
+      "deltaAttributes": [
+        "0.12"
+      ],
+      "id": "F1",
+      "label": "negativo(ejemplo)",
+      "sourceKey": "FACT|negativo|ejemplo",
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "1"
+      ],
+      "deltaAttributes": [
+        "1"
+      ],
+      "id": "R1",
+      "label": "aspectoBueno(X) :- positivo(X).",
+      "sourceKey": "RULE|line:4",
+      "type": "RULE"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "1"
+      ],
+      "deltaAttributes": [
+        "1"
+      ],
+      "id": "R2",
+      "label": "~aspectoBueno(X) :- negativo(X).",
+      "sourceKey": "RULE|line:5",
+      "type": "RULE"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.32"
+      ],
+      "deltaAttributes": [
+        "0.32"
+      ],
+      "id": "F2",
+      "label": "positivo(ejemplo)",
+      "sourceKey": "FACT|positivo|ejemplo",
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.12"
+      ],
+      "deltaAttributes": [
+        "0.0"
+      ],
+      "id": "F3",
+      "label": "~aspectoBueno(ejemplo)",
+      "sourceKey": null,
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.32"
+      ],
+      "deltaAttributes": [
+        "0.2272727272727273"
+      ],
+      "id": "F4",
+      "label": "aspectoBueno(ejemplo)",
+      "sourceKey": null,
+      "type": "FACT"
+    }
+  ]
+}

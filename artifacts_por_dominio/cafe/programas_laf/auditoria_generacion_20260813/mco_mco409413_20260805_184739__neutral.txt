@@ -1,0 +1,419 @@
+% =====================================================================
+% PROGRAMA LAF 1 - RANKING DE PRODUCTOS
+% Sistema argumentativo de recomendacion de cafe
+% Trabajo Final - Ana Paula Machado - UNSE
+% =====================================================================
+
+% Estrategia de balanceo: D - Contraccion hacia una media a priori
+% Dominio: Cafe
+% Dataset key: mco_mco409413_20260805_184739
+% Metodologia congelada SHA-256: 4be8a4f128dbac3d40b88dfa9204458b2bcfda40015608cf678bc69494062767
+% Congelada en: 2026-08-13T14:15:42.644751+00:00
+% Productos analizados: 16
+
+% Productos y rango de precios:
+%   # 3 mco61683828_cafe_en_grano_cafebotero_malla_17  $35,500-$35,500  (1 publicaciones)
+%   # 4 mco62388737_cafe_molido_cafebotero_100_colombiano_500g  $33,500-$33,500  (1 publicaciones)
+%   # 5 mcou3855066983                                 $35,000-$35,000  (1 publicaciones)
+%   # 6 mco36482102_cafe_quindio_gourmet_molido454g    $39,063-$147,000  (6 publicaciones)
+%   # 7 mcou2815148040                                 $33,240-$33,240  (1 publicaciones)
+%   # 8 mcou3866199842                                 $30,000-$30,000  (1 publicaciones)
+%   # 9 mcou2535049655                                 $35,500-$47,000  (2 publicaciones)
+%   #11 mco47441198_cafe_quindio_gourmet_grano_454g    $40,410-$40,410  (1 publicaciones)
+%   #12 mcou4000183558                                 $29,742-$29,742  (1 publicaciones)
+%   #13 mco24208284_cafe_sello_rojo_2500gr             $125,900-$153,710  (4 publicaciones)
+%   #14 mco20959140_cafe_juan_valdez_colina_454_g      $37,800-$57,900  (12 publicaciones)
+%   #15 mcou3421097675                                 $54,900-$54,900  (1 publicaciones)
+%   #16 mco51050685_cafe_quindio_grano_2500g_2_5kg     $184,000-$249,900  (2 publicaciones)
+%   #17 mcou2659312729                                 $44,550-$44,550  (1 publicaciones)
+%   #19 mcou2429426695                                 $39,000-$39,000  (1 publicaciones)
+%   #20 mcou4152714259                                 $47,490-$47,490  (1 publicaciones)
+
+% Preferencias del usuario:
+%   sabor: 0.50
+%   aroma: 0.50
+%   intensidad: 0.50
+%   dulzor: 0.50
+%   tueste: 0.50
+%   acidez: 0.50
+%   presentacion: 0.50
+%   rendimiento: 0.50
+%   variedad: 0.50
+%   preparacion: 0.50
+%   molienda: 0.50
+%   originalidad: 0.50
+%   tamano: 0.50
+%   caducidad: 0.50
+
+% Estructura argumentativa LAF 1:
+%   resena -> aspecto -> dimension -> recomendar
+%   beta de reglas = 1.00 (neutral); la preferencia proviene solo del slider
+%   sensorial: sabor, aroma, intensidad, dulzor, tueste, acidez
+%   valor: rendimiento, tamano
+%   producto: originalidad, presentacion, variedad
+%   elaboracion: preparacion, molienda
+%   conservacion: caducidad
+
+% ============================================================
+% HECHOS - un hecho por (producto, aspecto, polaridad)
+% Variable X identifica al producto.
+% ============================================================
+
+% Cafe En Grano Cafebotero, Malla 17, Tost
+% n=5
+resenaPositivaAcidez(mco61683828_cafe_en_grano_cafebotero_malla_17). {0.59; 0.50}
+% n=23
+resenaPositivaAroma(mco61683828_cafe_en_grano_cafebotero_malla_17). {0.71; 0.50}
+% n=2
+resenaNegativaAroma(mco61683828_cafe_en_grano_cafebotero_malla_17). {0.29; 0.50}
+% n=1
+resenaPositivaCaducidad(mco61683828_cafe_en_grano_cafebotero_malla_17). {0.52; 0.50}
+% n=1
+resenaNegativaDulzor(mco61683828_cafe_en_grano_cafebotero_malla_17). {0.51; 0.50}
+% n=4
+resenaPositivaIntensidad(mco61683828_cafe_en_grano_cafebotero_malla_17). {0.55; 0.50}
+% n=1
+resenaNegativaIntensidad(mco61683828_cafe_en_grano_cafebotero_malla_17). {0.45; 0.50}
+% n=2
+resenaPositivaMolienda(mco61683828_cafe_en_grano_cafebotero_malla_17). {0.54; 0.50}
+% n=1
+resenaPositivaPreparacion(mco61683828_cafe_en_grano_cafebotero_malla_17). {0.52; 0.50}
+% n=4
+resenaPositivaPresentacion(mco61683828_cafe_en_grano_cafebotero_malla_17). {0.57; 0.50}
+% n=33
+resenaPositivaSabor(mco61683828_cafe_en_grano_cafebotero_malla_17). {0.72; 0.50}
+% n=4
+resenaNegativaSabor(mco61683828_cafe_en_grano_cafebotero_malla_17). {0.28; 0.50}
+% n=13
+resenaPositivaTueste(mco61683828_cafe_en_grano_cafebotero_malla_17). {0.67; 0.50}
+% n=1
+resenaNegativaTueste(mco61683828_cafe_en_grano_cafebotero_malla_17). {0.33; 0.50}
+% n=1
+resenaPositivaVariedad(mco61683828_cafe_en_grano_cafebotero_malla_17). {0.52; 0.50}
+
+% Café Molido Cafebotero 100% Colombiano 5
+% n=9
+resenaPositivaAroma(mco62388737_cafe_molido_cafebotero_100_colombiano_500g). {0.61; 0.50}
+% n=1
+resenaPositivaIntensidad(mco62388737_cafe_molido_cafebotero_100_colombiano_500g). {0.52; 0.50}
+% n=1
+resenaPositivaMolienda(mco62388737_cafe_molido_cafebotero_100_colombiano_500g). {0.52; 0.50}
+% n=1
+resenaPositivaPresentacion(mco62388737_cafe_molido_cafebotero_100_colombiano_500g). {0.51; 0.50}
+% n=18
+resenaPositivaSabor(mco62388737_cafe_molido_cafebotero_100_colombiano_500g). {0.59; 0.50}
+% n=5
+resenaNegativaSabor(mco62388737_cafe_molido_cafebotero_100_colombiano_500g). {0.41; 0.50}
+% n=3
+resenaPositivaTueste(mco62388737_cafe_molido_cafebotero_100_colombiano_500g). {0.52; 0.50}
+% n=1
+resenaNegativaTueste(mco62388737_cafe_molido_cafebotero_100_colombiano_500g). {0.48; 0.50}
+
+% MCOU3855066983
+% n=10
+resenaPositivaAroma(mcou3855066983). {0.65; 0.50}
+% n=2
+resenaPositivaCaducidad(mcou3855066983). {0.56; 0.50}
+% n=1
+resenaPositivaDulzor(mcou3855066983). {0.52; 0.50}
+% n=3
+resenaPositivaIntensidad(mcou3855066983). {0.54; 0.50}
+% n=1
+resenaPositivaPreparacion(mcou3855066983). {0.52; 0.50}
+% n=2
+resenaPositivaPresentacion(mcou3855066983). {0.54; 0.50}
+% n=6
+resenaPositivaSabor(mcou3855066983). {0.59; 0.50}
+% n=1
+resenaPositivaTamano(mcou3855066983). {0.52; 0.50}
+% n=1
+resenaPositivaTueste(mcou3855066983). {0.52; 0.50}
+
+% Café Quindío Gourmet Molido454g
+% n=8
+resenaPositivaAroma(mco36482102_cafe_quindio_gourmet_molido454g). {0.54; 0.50}
+% n=1
+resenaNegativaAroma(mco36482102_cafe_quindio_gourmet_molido454g). {0.46; 0.50}
+% n=2
+resenaPositivaIntensidad(mco36482102_cafe_quindio_gourmet_molido454g). {0.54; 0.50}
+% n=1
+resenaPositivaMolienda(mco36482102_cafe_quindio_gourmet_molido454g). {0.51; 0.50}
+% n=1
+resenaPositivaPresentacion(mco36482102_cafe_quindio_gourmet_molido454g). {0.51; 0.50}
+% n=1
+resenaNegativaPresentacion(mco36482102_cafe_quindio_gourmet_molido454g). {0.49; 0.50}
+% n=12
+resenaPositivaSabor(mco36482102_cafe_quindio_gourmet_molido454g). {0.59; 0.50}
+% n=1
+resenaNegativaSabor(mco36482102_cafe_quindio_gourmet_molido454g). {0.41; 0.50}
+% n=2
+resenaPositivaTueste(mco36482102_cafe_quindio_gourmet_molido454g). {0.51; 0.50}
+% n=1
+resenaNegativaTueste(mco36482102_cafe_quindio_gourmet_molido454g). {0.49; 0.50}
+
+% MCOU2815148040
+% n=1
+resenaNegativaAcidez(mcou2815148040). {0.52; 0.50}
+% n=6
+resenaPositivaAroma(mcou2815148040). {0.52; 0.50}
+% n=3
+resenaNegativaAroma(mcou2815148040). {0.48; 0.50}
+% n=1
+resenaPositivaCaducidad(mcou2815148040). {0.53; 0.50}
+% n=1
+resenaPositivaDulzor(mcou2815148040). {0.52; 0.50}
+% n=3
+resenaPositivaIntensidad(mcou2815148040). {0.54; 0.50}
+% n=1
+resenaNegativaPresentacion(mcou2815148040). {0.53; 0.50}
+% n=20
+resenaPositivaSabor(mcou2815148040). {0.63; 0.50}
+% n=4
+resenaNegativaSabor(mcou2815148040). {0.37; 0.50}
+% n=3
+resenaPositivaTueste(mcou2815148040). {0.53; 0.50}
+% n=1
+resenaPositivaVariedad(mcou2815148040). {0.52; 0.50}
+
+% MCOU3866199842
+% n=12
+resenaPositivaAroma(mcou3866199842). {0.63; 0.50}
+% n=1
+resenaNegativaAroma(mcou3866199842). {0.37; 0.50}
+% n=1
+resenaPositivaCaducidad(mcou3866199842). {0.51; 0.50}
+% n=2
+resenaPositivaDulzor(mcou3866199842). {0.54; 0.50}
+% n=2
+resenaPositivaIntensidad(mcou3866199842). {0.54; 0.50}
+% n=3
+resenaPositivaPresentacion(mcou3866199842). {0.54; 0.50}
+% n=14
+resenaPositivaSabor(mcou3866199842). {0.63; 0.50}
+% n=1
+resenaNegativaSabor(mcou3866199842). {0.37; 0.50}
+% n=4
+resenaPositivaTueste(mcou3866199842). {0.56; 0.50}
+
+% MCOU2535049655
+% n=12
+resenaPositivaAroma(mcou2535049655). {0.66; 0.50}
+% n=1
+resenaPositivaCaducidad(mcou2535049655). {0.53; 0.50}
+% n=2
+resenaPositivaIntensidad(mcou2535049655). {0.54; 0.50}
+% n=2
+resenaPositivaMolienda(mcou2535049655). {0.53; 0.50}
+% n=1
+resenaPositivaOriginalidad(mcou2535049655). {0.52; 0.50}
+% n=2
+resenaPositivaPresentacion(mcou2535049655). {0.55; 0.50}
+% n=1
+resenaPositivaRendimiento(mcou2535049655). {0.52; 0.50}
+% n=18
+resenaPositivaSabor(mcou2535049655). {0.69; 0.50}
+% n=2
+resenaPositivaTueste(mcou2535049655). {0.53; 0.50}
+
+% Café Quindío Gourmet Grano 454g
+% n=9
+resenaPositivaAroma(mco47441198_cafe_quindio_gourmet_grano_454g). {0.60; 0.50}
+% n=3
+resenaPositivaIntensidad(mco47441198_cafe_quindio_gourmet_grano_454g). {0.54; 0.50}
+% n=1
+resenaPositivaPresentacion(mco47441198_cafe_quindio_gourmet_grano_454g). {0.49; 0.50}
+% n=1
+resenaNegativaPresentacion(mco47441198_cafe_quindio_gourmet_grano_454g). {0.51; 0.50}
+% n=15
+resenaPositivaSabor(mco47441198_cafe_quindio_gourmet_grano_454g). {0.64; 0.50}
+% n=1
+resenaPositivaTamano(mco47441198_cafe_quindio_gourmet_grano_454g). {0.51; 0.50}
+% n=1
+resenaPositivaVariedad(mco47441198_cafe_quindio_gourmet_grano_454g). {0.51; 0.50}
+
+% MCOU4000183558
+% n=4
+resenaPositivaSabor(mcou4000183558). {0.57; 0.50}
+% n=1
+resenaPositivaTueste(mcou4000183558). {0.53; 0.50}
+
+% Café Sello Rojo 2500gr
+% n=1
+resenaPositivaCaducidad(mco24208284_cafe_sello_rojo_2500gr). {0.51; 0.50}
+% n=1
+resenaPositivaDulzor(mco24208284_cafe_sello_rojo_2500gr). {0.50; 0.50}
+% n=1
+resenaPositivaIntensidad(mco24208284_cafe_sello_rojo_2500gr). {0.51; 0.50}
+% n=3
+resenaPositivaSabor(mco24208284_cafe_sello_rojo_2500gr). {0.54; 0.50}
+% n=1
+resenaPositivaTamano(mco24208284_cafe_sello_rojo_2500gr). {0.51; 0.50}
+
+% Café Juan Valdez Colina 454 g
+% n=1
+resenaPositivaAcidez(mco20959140_cafe_juan_valdez_colina_454_g). {0.52; 0.50}
+% n=4
+resenaPositivaAroma(mco20959140_cafe_juan_valdez_colina_454_g). {0.55; 0.50}
+% n=2
+resenaPositivaIntensidad(mco20959140_cafe_juan_valdez_colina_454_g). {0.53; 0.50}
+% n=3
+resenaPositivaOriginalidad(mco20959140_cafe_juan_valdez_colina_454_g). {0.54; 0.50}
+% n=7
+resenaPositivaSabor(mco20959140_cafe_juan_valdez_colina_454_g). {0.53; 0.50}
+% n=1
+resenaNegativaSabor(mco20959140_cafe_juan_valdez_colina_454_g). {0.47; 0.50}
+% n=1
+resenaPositivaTueste(mco20959140_cafe_juan_valdez_colina_454_g). {0.51; 0.50}
+
+% MCOU3421097675
+% n=2
+resenaPositivaAcidez(mcou3421097675). {0.54; 0.50}
+% n=7
+resenaPositivaAroma(mcou3421097675). {0.60; 0.50}
+% n=1
+resenaPositivaCaducidad(mcou3421097675). {0.52; 0.50}
+% n=1
+resenaPositivaDulzor(mcou3421097675). {0.52; 0.50}
+% n=1
+resenaPositivaPresentacion(mcou3421097675). {0.52; 0.50}
+% n=6
+resenaPositivaSabor(mcou3421097675). {0.57; 0.50}
+% n=2
+resenaPositivaTueste(mcou3421097675). {0.55; 0.50}
+
+% Café Quindío Grano 2500g 2.5kg
+% n=2
+resenaPositivaAroma(mco51050685_cafe_quindio_grano_2500g_2_5kg). {0.53; 0.50}
+% n=1
+resenaPositivaTamano(mco51050685_cafe_quindio_grano_2500g_2_5kg). {0.53; 0.50}
+
+% MCOU2659312729
+% n=1
+resenaNegativaAroma(mcou2659312729). {0.52; 0.50}
+% n=2
+resenaPositivaCaducidad(mcou2659312729). {0.54; 0.50}
+% n=1
+resenaNegativaSabor(mcou2659312729). {0.52; 0.50}
+% n=1
+resenaPositivaTueste(mcou2659312729). {0.52; 0.50}
+
+% MCOU2429426695
+% n=11
+resenaPositivaAroma(mcou2429426695). {0.63; 0.50}
+% n=1
+resenaNegativaAroma(mcou2429426695). {0.37; 0.50}
+% n=2
+resenaPositivaCaducidad(mcou2429426695). {0.54; 0.50}
+% n=2
+resenaPositivaIntensidad(mcou2429426695). {0.53; 0.50}
+% n=1
+resenaPositivaPresentacion(mcou2429426695). {0.52; 0.50}
+% n=12
+resenaPositivaSabor(mcou2429426695). {0.63; 0.50}
+% n=1
+resenaNegativaSabor(mcou2429426695). {0.37; 0.50}
+% n=1
+resenaNegativaTueste(mcou2429426695). {0.52; 0.50}
+% n=1
+resenaNegativaVariedad(mcou2429426695). {0.52; 0.50}
+
+% MCOU4152714259
+
+% ============================================================
+% REGLAS DE AGREGACION POR ASPECTO
+% ============================================================
+
+acidezBueno(X) :- resenaPositivaAcidez(X). {0.85; 1.00}
+~acidezBueno(X) :- resenaNegativaAcidez(X). {0.85; 1.00}
+aromaBueno(X) :- resenaPositivaAroma(X). {0.85; 1.00}
+~aromaBueno(X) :- resenaNegativaAroma(X). {0.85; 1.00}
+caducidadBueno(X) :- resenaPositivaCaducidad(X). {0.85; 1.00}
+~caducidadBueno(X) :- resenaNegativaCaducidad(X). {0.85; 1.00}
+dulzorBueno(X) :- resenaPositivaDulzor(X). {0.85; 1.00}
+~dulzorBueno(X) :- resenaNegativaDulzor(X). {0.85; 1.00}
+intensidadBueno(X) :- resenaPositivaIntensidad(X). {0.85; 1.00}
+~intensidadBueno(X) :- resenaNegativaIntensidad(X). {0.85; 1.00}
+moliendaBueno(X) :- resenaPositivaMolienda(X). {0.85; 1.00}
+~moliendaBueno(X) :- resenaNegativaMolienda(X). {0.85; 1.00}
+originalidadBueno(X) :- resenaPositivaOriginalidad(X). {0.85; 1.00}
+~originalidadBueno(X) :- resenaNegativaOriginalidad(X). {0.85; 1.00}
+preparacionBueno(X) :- resenaPositivaPreparacion(X). {0.85; 1.00}
+~preparacionBueno(X) :- resenaNegativaPreparacion(X). {0.85; 1.00}
+presentacionBueno(X) :- resenaPositivaPresentacion(X). {0.85; 1.00}
+~presentacionBueno(X) :- resenaNegativaPresentacion(X). {0.85; 1.00}
+rendimientoBueno(X) :- resenaPositivaRendimiento(X). {0.85; 1.00}
+~rendimientoBueno(X) :- resenaNegativaRendimiento(X). {0.85; 1.00}
+saborBueno(X) :- resenaPositivaSabor(X). {0.85; 1.00}
+~saborBueno(X) :- resenaNegativaSabor(X). {0.85; 1.00}
+tamanoBueno(X) :- resenaPositivaTamano(X). {0.85; 1.00}
+~tamanoBueno(X) :- resenaNegativaTamano(X). {0.85; 1.00}
+tuesteBueno(X) :- resenaPositivaTueste(X). {0.85; 1.00}
+~tuesteBueno(X) :- resenaNegativaTueste(X). {0.85; 1.00}
+variedadBueno(X) :- resenaPositivaVariedad(X). {0.85; 1.00}
+~variedadBueno(X) :- resenaNegativaVariedad(X). {0.85; 1.00}
+
+% ============================================================
+% REGLAS INTERMEDIAS POR DIMENSION
+% Cada dimension agrupa aspectos relacionados antes de recomendar.
+% ============================================================
+
+% Experiencia sensorial
+sensorialBueno(X) :- saborBueno(X). {0.90; 1.00}
+~sensorialBueno(X) :- ~saborBueno(X). {0.92; 1.00}
+sensorialBueno(X) :- aromaBueno(X). {0.85; 1.00}
+~sensorialBueno(X) :- ~aromaBueno(X). {0.85; 1.00}
+sensorialBueno(X) :- intensidadBueno(X). {0.80; 1.00}
+~sensorialBueno(X) :- ~intensidadBueno(X). {0.80; 1.00}
+sensorialBueno(X) :- dulzorBueno(X). {0.80; 1.00}
+~sensorialBueno(X) :- ~dulzorBueno(X). {0.80; 1.00}
+sensorialBueno(X) :- tuesteBueno(X). {0.85; 1.00}
+~sensorialBueno(X) :- ~tuesteBueno(X). {0.88; 1.00}
+sensorialBueno(X) :- acidezBueno(X). {0.85; 1.00}
+~sensorialBueno(X) :- ~acidezBueno(X). {0.85; 1.00}
+
+% Rendimiento y valor
+valorBueno(X) :- rendimientoBueno(X). {0.85; 1.00}
+~valorBueno(X) :- ~rendimientoBueno(X). {0.85; 1.00}
+valorBueno(X) :- tamanoBueno(X). {0.75; 1.00}
+~valorBueno(X) :- ~tamanoBueno(X). {0.75; 1.00}
+
+% Producto y presentacion
+productoBueno(X) :- originalidadBueno(X). {0.88; 1.00}
+~productoBueno(X) :- ~originalidadBueno(X). {0.90; 1.00}
+productoBueno(X) :- presentacionBueno(X). {0.80; 1.00}
+~productoBueno(X) :- ~presentacionBueno(X). {0.80; 1.00}
+productoBueno(X) :- variedadBueno(X). {0.75; 1.00}
+~productoBueno(X) :- ~variedadBueno(X). {0.75; 1.00}
+
+% Preparacion y molienda
+elaboracionBueno(X) :- preparacionBueno(X). {0.80; 1.00}
+~elaboracionBueno(X) :- ~preparacionBueno(X). {0.85; 1.00}
+elaboracionBueno(X) :- moliendaBueno(X). {0.80; 1.00}
+~elaboracionBueno(X) :- ~moliendaBueno(X). {0.85; 1.00}
+
+% Conservacion
+conservacionBueno(X) :- caducidadBueno(X). {0.85; 1.00}
+~conservacionBueno(X) :- ~caducidadBueno(X). {0.92; 1.00}
+
+% ============================================================
+% REGLAS DE RECOMENDACION
+% X = producto candidato
+% ============================================================
+
+recomendar(X) :- sensorialBueno(X). {0.90; 1.00}
+~recomendar(X) :- ~sensorialBueno(X). {0.92; 1.00}
+recomendar(X) :- valorBueno(X). {0.80; 1.00}
+recomendar(X) :- productoBueno(X). {0.78; 1.00}
+~recomendar(X) :- ~productoBueno(X). {0.90; 1.00}
+recomendar(X) :- elaboracionBueno(X). {0.75; 1.00}
+recomendar(X) :- conservacionBueno(X). {0.78; 1.00}
+~recomendar(X) :- ~conservacionBueno(X). {0.92; 1.00}
+
+% ============================================================
+% ============================================================
+% Atributo 1 - Confianza:
+%   producto = X*Y     suma = X+Y-X*Y     debilitamiento = (X-Y)/(1-Y) si X>=Y, sino 0
+% Atributo 2 - Preferencia del usuario:
+%   producto = min(X,Y)     suma = min(X+Y,1)     debilitamiento = max(X-Y,0)
+%
+% Fuente: Budan et al. (2017) IJAR 82:242-269, Ejemplo 1 pp.249-250

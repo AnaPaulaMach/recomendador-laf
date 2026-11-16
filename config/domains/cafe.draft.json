@@ -1,0 +1,300 @@
+{
+  "_draft_notes": [
+    "Borrador generado automaticamente desde resenas.",
+    "El experto debe agrupar, renombrar y eliminar candidatos antes de usarlo como perfil final.",
+    "Para activarlo, revisar y guardar como config/domains/cafe.json."
+  ],
+  "domain_key": "cafe",
+  "display_name": "Cafe",
+  "product_label": "producto",
+  "item_label": "publicacion",
+  "quality_aspects": {
+    "sabor": {
+      "label": "Sabor",
+      "icon": ""
+    },
+    "cafe": {
+      "label": "Cafe",
+      "icon": ""
+    },
+    "rico": {
+      "label": "Rico",
+      "icon": ""
+    },
+    "precio": {
+      "label": "Precio",
+      "icon": ""
+    },
+    "delicioso": {
+      "label": "Delicioso",
+      "icon": ""
+    },
+    "aroma": {
+      "label": "Aroma",
+      "icon": ""
+    },
+    "excelente_sabor": {
+      "label": "Excelente Sabor",
+      "icon": ""
+    },
+    "riquisimo": {
+      "label": "Riquisimo",
+      "icon": ""
+    },
+    "excelente_cafe": {
+      "label": "Excelente Cafe",
+      "icon": ""
+    },
+    "fuerte": {
+      "label": "Fuerte",
+      "icon": ""
+    },
+    "sabroso": {
+      "label": "Sabroso",
+      "icon": ""
+    },
+    "original": {
+      "label": "Original",
+      "icon": ""
+    },
+    "marca": {
+      "label": "Marca",
+      "icon": ""
+    },
+    "favorito": {
+      "label": "Favorito",
+      "icon": ""
+    },
+    "frio": {
+      "label": "Frio",
+      "icon": ""
+    },
+    "excelente_precio": {
+      "label": "Excelente Precio",
+      "icon": ""
+    },
+    "tamano": {
+      "label": "Tamano",
+      "icon": ""
+    },
+    "exquisito": {
+      "label": "Exquisito",
+      "icon": ""
+    },
+    "nescafe": {
+      "label": "Nescafe",
+      "icon": ""
+    },
+    "intenso": {
+      "label": "Intenso",
+      "icon": ""
+    }
+  },
+  "purchase_aspects": {
+    "precio": "Precio bajo (menor precio = mejor)",
+    "descuento": "Descuento sobre precio original",
+    "cuotas": "Financiacion (cuotas sin interes)",
+    "garantia": "Garantia",
+    "tienda_oficial": "Tienda oficial",
+    "factura": "Factura",
+    "envio": "Envio"
+  },
+  "catalog_aspect_map": {},
+  "ui": {
+    "laf1_page_title": "Que buscas en Cafe?",
+    "laf1_title": "Que buscas en Cafe?",
+    "laf1_caption": "Indica que tan importante es cada aspecto para vos.",
+    "laf2_page_title": "Como queres comprarlo?",
+    "laf2_title": "Como queres comprarlo?",
+    "laf2_purchase_title": "Que condiciones de compra te importan?"
+  },
+  "laf": {
+    "system_description": "Sistema argumentativo de recomendacion - Cafe",
+    "author_line": "Trabajo Final - Ana Paula Machado - UNSE"
+  },
+  "lexicon": {
+    "aspects": {
+      "sabor": [
+        "sabor"
+      ],
+      "cafe": [
+        "cafe"
+      ],
+      "rico": [
+        "rico"
+      ],
+      "precio": [
+        "precio"
+      ],
+      "delicioso": [
+        "delicioso"
+      ],
+      "aroma": [
+        "aroma"
+      ],
+      "excelente_sabor": [
+        "excelente sabor"
+      ],
+      "riquisimo": [
+        "riquisimo"
+      ],
+      "excelente_cafe": [
+        "excelente cafe"
+      ],
+      "fuerte": [
+        "fuerte"
+      ],
+      "sabroso": [
+        "sabroso"
+      ],
+      "original": [
+        "original"
+      ],
+      "marca": [
+        "marca"
+      ],
+      "favorito": [
+        "favorito"
+      ],
+      "frio": [
+        "frio"
+      ],
+      "excelente_precio": [
+        "excelente precio"
+      ],
+      "tamano": [
+        "tamano"
+      ],
+      "exquisito": [
+        "exquisito"
+      ],
+      "nescafe": [
+        "nescafe"
+      ],
+      "intenso": [
+        "intenso"
+      ]
+    },
+    "positive": [
+      "aceptable",
+      "barbaro",
+      "bárbaro",
+      "bien",
+      "bonita",
+      "bonito",
+      "buena",
+      "bueno",
+      "calidad",
+      "clara",
+      "claro",
+      "comodo",
+      "cómodo",
+      "conforme",
+      "contenta",
+      "contento",
+      "correcta",
+      "correcto",
+      "cumple",
+      "cumple expectativas",
+      "cumplio expectativas",
+      "cumplir",
+      "destacado",
+      "duradero",
+      "eficiente",
+      "excelente",
+      "fluida",
+      "fluido",
+      "genial",
+      "hermoso",
+      "ideal",
+      "impecable",
+      "increible",
+      "increíble",
+      "linda",
+      "lindo",
+      "me encanta",
+      "muy bien",
+      "perfecta",
+      "perfecto",
+      "potente",
+      "rapida",
+      "rápida",
+      "rapido",
+      "rápido",
+      "recomendable",
+      "recomiendo",
+      "resistente",
+      "satisfecho",
+      "satisfecha",
+      "satisfechos",
+      "satisfechas",
+      "sobresaliente",
+      "supera expectativas",
+      "supero expectativas",
+      "superar",
+      "suficiente"
+    ],
+    "negative": [
+      "deficiente",
+      "defecto",
+      "decepcion",
+      "decepción",
+      "decepcionante",
+      "decepcionada",
+      "decepcionado",
+      "débil",
+      "debil",
+      "demora",
+      "descarga",
+      "falla",
+      "fallado",
+      "fallando",
+      "feo",
+      "fragil",
+      "frágil",
+      "horrible",
+      "insuficiente",
+      "lag",
+      "lenta",
+      "lento",
+      "mal",
+      "mala",
+      "malo",
+      "mediocre",
+      "molesto",
+      "no cumple expectativas",
+      "no cumplio expectativas",
+      "no estoy contento",
+      "no estoy contenta",
+      "no satisfecho",
+      "no satisfecha",
+      "no sirve",
+      "pobre",
+      "problema",
+      "recalienta",
+      "se apaga",
+      "se cuelga",
+      "se descarga",
+      "se tilda",
+      "se traba",
+      "tarda",
+      "trabado",
+      "traba"
+    ],
+    "negation": [
+      "jamas",
+      "jamás",
+      "nada",
+      "nadie",
+      "ni",
+      "ningun",
+      "ningún",
+      "ninguna",
+      "ninguno",
+      "no",
+      "nunca",
+      "sin",
+      "tampoco"
+    ]
+  }
+}

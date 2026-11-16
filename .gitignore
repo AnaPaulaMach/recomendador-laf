@@ -1,0 +1,105 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.local
+*.secret
+*.key
+*.pem
+*.bak
+.streamlit/secrets.toml
+
+# Python virtual environments and dependency folders
+venv/
+.venv/
+env/
+ENV/
+Lib/
+site-packages/
+
+# Python cache/build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.python-version
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.vite/
+.pyre/
+.coverage
+.coverage.*
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Jupyter / notebooks
+.ipynb_checkpoints/
+
+# Generated program outputs and local preferences
+
+outputs/
+output/
+results/
+resultados/
+exports/
+tmp/
+temp/
+cache/
+.cache/
+.tmp*/
+
+# Artefactos de revisión manual de extracción (plantillas generadas, semilla reproducible)
+artifacts_por_dominio/**/manual_extraction_review/
+
+# Local datasets and heavy documents
+data/
+datos/
+raw/
+clean/
+processed/
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.parquet
+*.feather
+*.pickle
+*.pkl
+*.db
+*.sqlite
+*.sqlite3
+*.docx
+*.pdf
+
+# Excepciones para evidencia pequeña y revisada que sí pertenece al proyecto.
+# Los directorios se crean cuando una corrida se promueve explícitamente.
+!webapp/fixtures/**/*.csv
+!webapp/reports/validated/**/*.csv
+
+# Excepción: evidencia experimental del juicio ciego (experimento 1).
+# No son corridas ordinarias del sitio, por eso no viven en webapp/reports/:
+# son el material que se entregó, las respuestas originales y las salidas de
+# los análisis. Sin ellos los resultados no se pueden auditar ni reproducir.
+# Revisados el 2026-09-10: sin credenciales y sin datos personales (las reseñas
+# llegan con reviewer_id anonimizado desde la API, ver ASPECTOS_ETICOS).
+!validacion_juicio_ciego/materiales/*.csv
+!validacion_juicio_ciego/respuestas/*.csv
+!validacion_juicio_ciego/salidas/*.csv
+
+# Logs
+*.log
+logs/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.tsbuildinfo
+
+
+# Copia local de las salidas del 30/09 previas al motor corregido (ya estan en el historial git, commit anterior al 2026-10-10)
+validacion_laf1/revision_director_20260930/motor_corregido_20261007/pre_delta_20260930/

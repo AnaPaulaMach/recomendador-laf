@@ -1,0 +1,24 @@
+{
+  "product_id": "MLA1019615360",
+  "product_name": "#13 - Apple iPhone 14 (128 GB) - Medianoche - Distribuidor Autorizado",
+  "budget_min": 1140000,
+  "budget_max": 1140000,
+  "items_in_budget": [
+    {
+      "item_id": "MLA1661558779",
+      "price": 1140000.0,
+      "original_price": 1500000.0,
+      "condition": "new",
+      "listing_type": "gold_pro",
+      "seller_id": 2386762620,
+      "official_store_id": 2549
+    }
+  ],
+  "precio": 0.5,
+  "descuento": 0.5,
+  "cuotas": 0.5,
+  "garantia": 0.5,
+  "tienda_oficial": 0.5,
+  "factura": 0.5,
+  "envio": 0.5
+}

@@ -1,0 +1,41 @@
+{
+  "domain_key": "cafe",
+  "display_name": "Cafe",
+  "frozen_at": "2026-09-10T18:12:11.440501+00:00",
+  "methodology_sha256": "735f9b0cfde030c5d855d11262e73d460d15b5be7dba20a30d3d2157c41432fb",
+  "laf2_scope": "shared",
+  "warnings": [],
+  "refreeze_history": [
+    {
+      "date": "2026-09-10",
+      "previous_methodology_sha256": "3bbbb1775d04cb945ad1cc489dbba9934e5403bd7281d7edef513d42310e883b",
+      "previous_frozen_at": "2026-09-01T19:56:43.813672+00:00",
+      "reason": "Fila 13: reglas ~recomendar para valor y elaboracion, confianza simetrica; decision medida en EXP11",
+      "reference": "validacion_laf1/EXP11_FILA13_IMPACTO.md; validacion_laf1/salidas/recongelado_20260910/RESUMEN.md",
+      "informed_to": "director Maximiliano Budan",
+      "kept_deliberately": "R3 (prior de la estrategia D sobre la critica unica) se mantiene"
+    },
+    {
+      "date": "2026-10-08",
+      "previous_methodology_sha256": "735f9b0cfde030c5d855d11262e73d460d15b5be7dba20a30d3d2157c41432fb",
+      "previous_frozen_at": "2026-09-10T18:12:11.440501+00:00",
+      "reason": "Cambio de version del evaluador (propagacion con delta segun Def. 8(iii)); la configuracion del dominio no cambio, por lo que el hash se conserva",
+      "reference": "validacion_laf1/revision_director_20260930/motor_corregido_20261007/RESUMEN.md",
+      "informed_to": "director (acordado 2026-10-08)",
+      "kept_deliberately": "configuracion, fuerzas y hash 735f9b0c sin cambios"
+    }
+  ],
+  "evaluator": {
+    "name": "laf-api",
+    "repository": "https://github.com/AnaPaulaMach/LAF",
+    "commit": "ce69811",
+    "adopted_on": "2026-10-08",
+    "propagation": "weakened (Budan et al. 2017, Def. 8(iii) / Alg. 2); LAF_PROPAGATION=accrued reproduce la version anterior",
+    "previous": {
+      "repository": "https://github.com/JaviDebortoli/LAF",
+      "commit": "f2747dd",
+      "propagation": "accrued; conflicto una vez al final"
+    },
+    "note": "El hash metodologico cubre la configuracion del dominio, no el motor; este bloque registra la version del evaluador con la que se obtuvieron los resultados finales."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "sabor": 1.0,
+  "aroma": 0.8,
+  "intensidad": 0.6,
+  "originalidad": 0.6,
+  "dulzor": 0.5,
+  "rendimiento": 0.5,
+  "preparacion": 0.5,
+  "molienda": 0.5,
+  "caducidad": 0.4,
+  "presentacion": 0.4,
+  "variedad": 0.4,
+  "tamano": 0.3
+}

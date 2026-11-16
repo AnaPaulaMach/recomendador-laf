@@ -1,0 +1,486 @@
+{
+ "neutral": [
+  {
+   "product": "mlm41148521_cafe_gourmet_molido_espresso_400g_blason",
+   "score": 0.3642009073933372,
+   "reviews": 320,
+   "neg_aspects": 1
+  },
+  {
+   "product": "mlm19535763_cafe_puro_soluble_colombiano_liofilizado_members",
+   "score": 0.3149614140837086,
+   "reviews": 395,
+   "neg_aspects": 2
+  },
+  {
+   "product": "mlm16207862_nescafe_taster_s_choice_vainilla_cafe",
+   "score": 0.3142978476580618,
+   "reviews": 786,
+   "neg_aspects": 6
+  },
+  {
+   "product": "mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble",
+   "score": 0.3049104809018944,
+   "reviews": 442,
+   "neg_aspects": 4
+  },
+  {
+   "product": "mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo",
+   "score": 0.296770490310417,
+   "reviews": 636,
+   "neg_aspects": 5
+  },
+  {
+   "product": "mlm19544520_cafe_capuccino_moka_members_mark_1",
+   "score": 0.2958741979510085,
+   "reviews": 725,
+   "neg_aspects": 6
+  },
+  {
+   "product": "mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional",
+   "score": 0.27224859497299775,
+   "reviews": 217,
+   "neg_aspects": 2
+  },
+  {
+   "product": "mlm19663240_nescafe_clasico_cafe_100_puro_soluble",
+   "score": 0.26166569999999995,
+   "reviews": 254,
+   "neg_aspects": 1
+  },
+  {
+   "product": "mlm21827563_nescafe_reserva_oahan_cafe_100_soluble",
+   "score": 0.2468626162506325,
+   "reviews": 115,
+   "neg_aspects": 1
+  },
+  {
+   "product": "mlm19791561_cafe_nescafe_cappuccino_original_1_sobre",
+   "score": 0.24377395716788666,
+   "reviews": 153,
+   "neg_aspects": 3
+  },
+  {
+   "product": "mlm23633481_nescafe_clasico_ice_cafe_soluble_en",
+   "score": 0.2246588145621025,
+   "reviews": 162,
+   "neg_aspects": 4
+  },
+  {
+   "product": "mlm16207863_nescafe_cafe_de_olla_100_cafe",
+   "score": 0.2225233594079337,
+   "reviews": 242,
+   "neg_aspects": 3
+  },
+  {
+   "product": "mlm16207890_nescafe_reserva_verarica_cafe_100_soluble",
+   "score": 0.20347913386573696,
+   "reviews": 149,
+   "neg_aspects": 1
+  },
+  {
+   "product": "mlm50307832_cafe_capuchino_instantaneo_para_maquinas_vending",
+   "score": 0.17138696225440692,
+   "reviews": 77,
+   "neg_aspects": 3
+  },
+  {
+   "product": "mlm55879706_cafe_soluble_nescafe_clasico_frasco_200g",
+   "score": 0.13702728571428574,
+   "reviews": 18,
+   "neg_aspects": 0
+  },
+  {
+   "product": "mlm16207893_cafe_instantaneo_clasico_nescafe_sin_gluten",
+   "score": 0.11616670714285715,
+   "reviews": 28,
+   "neg_aspects": 1
+  }
+ ],
+ "solo_sabor": [
+  {
+   "product": "mlm19544520_cafe_capuccino_moka_members_mark_1",
+   "score": 0.647154046997389,
+   "reviews": 725,
+   "neg_aspects": 6
+  },
+  {
+   "product": "mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo",
+   "score": 0.647154046997389,
+   "reviews": 636,
+   "neg_aspects": 5
+  },
+  {
+   "product": "mlm16207862_nescafe_taster_s_choice_vainilla_cafe",
+   "score": 0.6384404636459431,
+   "reviews": 786,
+   "neg_aspects": 6
+  },
+  {
+   "product": "mlm41148521_cafe_gourmet_molido_espresso_400g_blason",
+   "score": 0.626535,
+   "reviews": 320,
+   "neg_aspects": 1
+  },
+  {
+   "product": "mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble",
+   "score": 0.6205364806866954,
+   "reviews": 442,
+   "neg_aspects": 4
+  },
+  {
+   "product": "mlm19535763_cafe_puro_soluble_colombiano_liofilizado_members",
+   "score": 0.6205364806866954,
+   "reviews": 395,
+   "neg_aspects": 2
+  },
+  {
+   "product": "mlm19663240_nescafe_clasico_cafe_100_puro_soluble",
+   "score": 0.5989949999999999,
+   "reviews": 254,
+   "neg_aspects": 1
+  },
+  {
+   "product": "mlm16207863_nescafe_cafe_de_olla_100_cafe",
+   "score": 0.5826948775055679,
+   "reviews": 242,
+   "neg_aspects": 3
+  },
+  {
+   "product": "mlm16207890_nescafe_reserva_verarica_cafe_100_soluble",
+   "score": 0.5626787741203179,
+   "reviews": 149,
+   "neg_aspects": 1
+  },
+  {
+   "product": "mlm19791561_cafe_nescafe_cappuccino_original_1_sobre",
+   "score": 0.5311630625365285,
+   "reviews": 153,
+   "neg_aspects": 3
+  },
+  {
+   "product": "mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional",
+   "score": 0.5202361275088547,
+   "reviews": 217,
+   "neg_aspects": 2
+  },
+  {
+   "product": "mlm21827563_nescafe_reserva_oahan_cafe_100_soluble",
+   "score": 0.5202361275088547,
+   "reviews": 115,
+   "neg_aspects": 1
+  },
+  {
+   "product": "mlm23633481_nescafe_clasico_ice_cafe_soluble_en",
+   "score": 0.4977108433734941,
+   "reviews": 162,
+   "neg_aspects": 4
+  },
+  {
+   "product": "mlm55879706_cafe_soluble_nescafe_clasico_frasco_200g",
+   "score": 0.4268700000000001,
+   "reviews": 18,
+   "neg_aspects": 0
+  },
+  {
+   "product": "mlm16207893_cafe_instantaneo_clasico_nescafe_sin_gluten",
+   "score": 0.39244499999999993,
+   "reviews": 28,
+   "neg_aspects": 1
+  },
+  {
+   "product": "mlm50307832_cafe_capuchino_instantaneo_para_maquinas_vending",
+   "score": 0.355234215885947,
+   "reviews": 77,
+   "neg_aspects": 3
+  }
+ ],
+ "solo_aroma": [
+  {
+   "product": "mlm16207862_nescafe_taster_s_choice_vainilla_cafe",
+   "score": 0.5917275,
+   "reviews": 786,
+   "neg_aspects": 6
+  },
+  {
+   "product": "mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble",
+   "score": 0.559215,
+   "reviews": 442,
+   "neg_aspects": 4
+  },
+  {
+   "product": "mlm19535763_cafe_puro_soluble_colombiano_liofilizado_members",
+   "score": 0.5397075,
+   "reviews": 395,
+   "neg_aspects": 2
+  },
+  {
+   "product": "mlm41148521_cafe_gourmet_molido_espresso_400g_blason",
+   "score": 0.5016540035067212,
+   "reviews": 320,
+   "neg_aspects": 1
+  },
+  {
+   "product": "mlm16207890_nescafe_reserva_verarica_cafe_100_soluble",
+   "score": 0.4876875,
+   "reviews": 149,
+   "neg_aspects": 1
+  },
+  {
+   "product": "mlm16207863_nescafe_cafe_de_olla_100_cafe",
+   "score": 0.481185,
+   "reviews": 242,
+   "neg_aspects": 3
+  },
+  {
+   "product": "mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo",
+   "score": 0.46167749999999996,
+   "reviews": 636,
+   "neg_aspects": 5
+  },
+  {
+   "product": "mlm19663240_nescafe_clasico_cafe_100_puro_soluble",
+   "score": 0.45517499999999994,
+   "reviews": 254,
+   "neg_aspects": 1
+  },
+  {
+   "product": "mlm21827563_nescafe_reserva_oahan_cafe_100_soluble",
+   "score": 0.45517499999999994,
+   "reviews": 115,
+   "neg_aspects": 1
+  },
+  {
+   "product": "mlm19544520_cafe_capuccino_moka_members_mark_1",
+   "score": 0.39665249999999996,
+   "reviews": 725,
+   "neg_aspects": 6
+  },
+  {
+   "product": "mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional",
+   "score": 0.39015,
+   "reviews": 217,
+   "neg_aspects": 2
+  },
+  {
+   "product": "mlm19791561_cafe_nescafe_cappuccino_original_1_sobre",
+   "score": 0.3836475,
+   "reviews": 153,
+   "neg_aspects": 3
+  },
+  {
+   "product": "mlm50307832_cafe_capuchino_instantaneo_para_maquinas_vending",
+   "score": 0.37064249999999993,
+   "reviews": 77,
+   "neg_aspects": 3
+  },
+  {
+   "product": "mlm23633481_nescafe_clasico_ice_cafe_soluble_en",
+   "score": 0.35763750000000005,
+   "reviews": 162,
+   "neg_aspects": 4
+  },
+  {
+   "product": "mlm55879706_cafe_soluble_nescafe_clasico_frasco_200g",
+   "score": 0.35763750000000005,
+   "reviews": 18,
+   "neg_aspects": 0
+  }
+ ],
+ "sensorial": [
+  {
+   "product": "mlm41148521_cafe_gourmet_molido_espresso_400g_blason",
+   "score": 0.4502352505844535,
+   "reviews": 320,
+   "neg_aspects": 1
+  },
+  {
+   "product": "mlm19535763_cafe_puro_soluble_colombiano_liofilizado_members",
+   "score": 0.4369627467811159,
+   "reviews": 395,
+   "neg_aspects": 2
+  },
+  {
+   "product": "mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble",
+   "score": 0.3793275228756284,
+   "reviews": 442,
+   "neg_aspects": 4
+  },
+  {
+   "product": "mlm16207862_nescafe_taster_s_choice_vainilla_cafe",
+   "score": 0.3593818392714517,
+   "reviews": 786,
+   "neg_aspects": 6
+  },
+  {
+   "product": "mlm21827563_nescafe_reserva_oahan_cafe_100_soluble",
+   "score": 0.3341197712514758,
+   "reviews": 115,
+   "neg_aspects": 1
+  },
+  {
+   "product": "mlm19544520_cafe_capuccino_moka_members_mark_1",
+   "score": 0.3009496625948029,
+   "reviews": 725,
+   "neg_aspects": 6
+  },
+  {
+   "product": "mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo",
+   "score": 0.2942053968183047,
+   "reviews": 636,
+   "neg_aspects": 5
+  },
+  {
+   "product": "mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional",
+   "score": 0.2682660212514758,
+   "reviews": 217,
+   "neg_aspects": 2
+  },
+  {
+   "product": "mlm19791561_cafe_nescafe_cappuccino_original_1_sobre",
+   "score": 0.26058842708942137,
+   "reviews": 153,
+   "neg_aspects": 3
+  },
+  {
+   "product": "mlm16207890_nescafe_reserva_verarica_cafe_100_soluble",
+   "score": 0.23422104568671964,
+   "reviews": 149,
+   "neg_aspects": 1
+  },
+  {
+   "product": "mlm19663240_nescafe_clasico_cafe_100_puro_soluble",
+   "score": 0.233835,
+   "reviews": 254,
+   "neg_aspects": 1
+  },
+  {
+   "product": "mlm16207863_nescafe_cafe_de_olla_100_cafe",
+   "score": 0.2040230386185119,
+   "reviews": 242,
+   "neg_aspects": 3
+  },
+  {
+   "product": "mlm50307832_cafe_capuchino_instantaneo_para_maquinas_vending",
+   "score": 0.19838047908622702,
+   "reviews": 77,
+   "neg_aspects": 3
+  },
+  {
+   "product": "mlm23633481_nescafe_clasico_ice_cafe_soluble_en",
+   "score": 0.1976380572289157,
+   "reviews": 162,
+   "neg_aspects": 4
+  },
+  {
+   "product": "mlm55879706_cafe_soluble_nescafe_clasico_frasco_200g",
+   "score": 0.13075125,
+   "reviews": 18,
+   "neg_aspects": 0
+  },
+  {
+   "product": "mlm16207893_cafe_instantaneo_clasico_nescafe_sin_gluten",
+   "score": 0.0654075,
+   "reviews": 28,
+   "neg_aspects": 1
+  }
+ ],
+ "pert_sabor_0.6": [
+  {
+   "product": "mlm41148521_cafe_gourmet_molido_espresso_400g_blason",
+   "score": 0.36789575376807904,
+   "reviews": 320,
+   "neg_aspects": 1
+  },
+  {
+   "product": "mlm19535763_cafe_puro_soluble_colombiano_liofilizado_members",
+   "score": 0.3192652882612155,
+   "reviews": 395,
+   "neg_aspects": 2
+  },
+  {
+   "product": "mlm16207862_nescafe_taster_s_choice_vainilla_cafe",
+   "score": 0.31886323661563754,
+   "reviews": 786,
+   "neg_aspects": 6
+  },
+  {
+   "product": "mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble",
+   "score": 0.3093559175185817,
+   "reviews": 442,
+   "neg_aspects": 4
+  },
+  {
+   "product": "mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo",
+   "score": 0.3017054699820645,
+   "reviews": 636,
+   "neg_aspects": 5
+  },
+  {
+   "product": "mlm19544520_cafe_capuccino_moka_members_mark_1",
+   "score": 0.300821801458704,
+   "reviews": 725,
+   "neg_aspects": 6
+  },
+  {
+   "product": "mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional",
+   "score": 0.2757413771213901,
+   "reviews": 217,
+   "neg_aspects": 2
+  },
+  {
+   "product": "mlm19663240_nescafe_clasico_cafe_100_puro_soluble",
+   "score": 0.2664168169014084,
+   "reviews": 254,
+   "neg_aspects": 1
+  },
+  {
+   "product": "mlm21827563_nescafe_reserva_oahan_cafe_100_soluble",
+   "score": 0.2507129473951145,
+   "reviews": 115,
+   "neg_aspects": 1
+  },
+  {
+   "product": "mlm19791561_cafe_nescafe_cappuccino_original_1_sobre",
+   "score": 0.24782169104631824,
+   "reviews": 153,
+   "neg_aspects": 3
+  },
+  {
+   "product": "mlm23633481_nescafe_clasico_ice_cafe_soluble_en",
+   "score": 0.22850461778479814,
+   "reviews": 162,
+   "neg_aspects": 4
+  },
+  {
+   "product": "mlm16207863_nescafe_cafe_de_olla_100_cafe",
+   "score": 0.22759619769099898,
+   "reviews": 242,
+   "neg_aspects": 3
+  },
+  {
+   "product": "mlm16207890_nescafe_reserva_verarica_cafe_100_soluble",
+   "score": 0.20853828372847755,
+   "reviews": 149,
+   "neg_aspects": 1
+  },
+  {
+   "product": "mlm50307832_cafe_capuchino_instantaneo_para_maquinas_vending",
+   "score": 0.17397636019287932,
+   "reviews": 77,
+   "neg_aspects": 3
+  },
+  {
+   "product": "mlm55879706_cafe_soluble_nescafe_clasico_frasco_200g",
+   "score": 0.14110957746478875,
+   "reviews": 18,
+   "neg_aspects": 0
+  },
+  {
+   "product": "mlm16207893_cafe_instantaneo_clasico_nescafe_sin_gluten",
+   "score": 0.12005795070422537,
+   "reviews": 28,
+   "neg_aspects": 1
+  }
+ ]
+}

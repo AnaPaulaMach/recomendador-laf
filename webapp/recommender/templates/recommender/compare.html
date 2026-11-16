@@ -1,0 +1,18 @@
+{% extends "recommender/base.html" %}
+{% block title %}Comparar opciones · Recomendador de productos{% endblock %}
+{% block banner %}{% if result.evaluation_status == "mock" %}{% include "recommender/partials/demo_banner.html" %}{% endif %}{% endblock %}
+{% block content %}
+<section class="page-shell">
+  <a class="back-link" href="{% url 'recommender:listing-ranking' flow.id %}">{% include "recommender/partials/icon_arrow_left.html" %} Volver al ranking</a>
+  <div class="page-heading mt-7 max-w-3xl">
+    <h1 class="page-title">Compará las opciones</h1>
+    <p class="page-copy">Revisá precio y condiciones de compra en el mismo lugar.</p>
+  </div>
+  <div id="listing-comparison" class="mt-10">
+    {% include "recommender/partials/listing_comparison.html" %}
+  </div>
+  <div class="mt-8 flex flex-wrap gap-3">
+    <a class="subtle-link" href="{% url 'recommender:explanation' flow.id %}">¿Querés ver cómo se calculó?</a>
+  </div>
+</section>
+{% endblock %}

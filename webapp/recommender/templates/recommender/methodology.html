@@ -1,0 +1,53 @@
+{% extends "recommender/base.html" %}
+{% block title %}Cómo funciona · Recomendador de productos{% endblock %}
+{% block content %}
+<section class="page-shell methodology-page">
+  <div class="page-heading max-w-3xl">
+    <h1 class="page-title">Cómo funciona</h1>
+    <p class="page-copy">Este recomendador lee las reseñas de cada producto, separa lo que dicen sobre cada característica y arma un orden con lo que a vos te importa. Acá está el recorrido completo, sin nada escondido.</p>
+  </div>
+
+  <h2 class="methodology-title">Lo que hacés vos</h2>
+  <ol class="how-steps">
+    <li><span>1</span><div><h2>Elegís una categoría</h2><p>Escribís qué estás buscando y elegís una de las categorías disponibles.</p></div></li>
+    <li><span>2</span><div><h2>Decís qué te importa</h2><p>Para cada característica marcás cuánto te importa: no me importa, poco, bastante o es prioridad. Después hacés lo mismo con las condiciones de compra, como el precio o el envío.</p></div></li>
+    <li><span>3</span><div><h2>Mirás el orden y sus razones</h2><p>Cada producto llega con las menciones que encontramos por característica y con el detalle de cómo se armó su puntaje.</p></div></li>
+  </ol>
+
+  <h2 class="methodology-title">Lo que hace el sistema con las reseñas</h2>
+  <ol class="how-steps">
+    <li><span>1</span><div><h2>Separa cada reseña en menciones</h2><p>Una reseña puede hablar del sabor, del envase y del precio en la misma frase. El sistema detecta de qué característica habla cada parte y si lo que dice es a favor o en contra. Esa detección es automática y se equivoca a veces: cuánto se equivoca está medido con revisión humana y publicado en Datos y transparencia.</p></div></li>
+    <li><span>2</span><div><h2>Le da un peso a cada reseña</h2><p>No todas valen lo mismo como testimonio. Suman puntos la extensión y la relevancia que le asigna la plataforma, tener fotos o video, y los votos de otras personas que la marcaron útil. Resta puntos ser muy corta. Las estrellas no entran en esta cuenta.</p></div></li>
+    <li><span>3</span><div><h2>Resume cada característica en dos valores</h2><p>Junta todo lo que se dijo a favor de esa característica y todo lo que se dijo en contra, cada mención con su peso, y calcula qué proporción es favorable. Cuando hay pocas menciones el valor queda cerca de la mitad, que es la forma de decir que todavía no hay con qué afirmar nada.</p></div></li>
+    <li><span>4</span><div><h2>Hace discutir a los argumentos</h2><p>Con esos valores arma argumentos: uno dice que conviene recomendar el producto porque su sabor es bueno, otro dice lo contrario porque hay críticas al sabor. El motor argumentativo resta la fuerza de la crítica a la del elogio. Si la crítica iguala o supera al elogio, esa característica queda en cero. El resultado es un número por característica, y podés ver el dibujo de ese razonamiento en la pantalla de cada producto.</p></div></li>
+    <li><span>5</span><div><h2>Aplica tus prioridades</h2><p>Cada resultado se multiplica por el peso que le diste y se suman todos, dividido por la suma de esos pesos. Ese número es el puntaje que ordena la lista. En la pantalla del producto está la tabla con la cuenta y, debajo, la misma cuenta escrita en una línea con los valores de ese café. Lo que pusiste en no me importa queda afuera de la cuenta.</p></div></li>
+  </ol>
+
+  <h2 class="methodology-title">Qué podés revisar</h2>
+  <ul class="methodology-list">
+    <li>Las menciones de cada característica, con ejemplos textuales de las reseñas.</li>
+    <li>El grafo del razonamiento de cada característica, tal como lo devuelve el motor.</li>
+    <li>Los programas exactos que se le enviaron al motor y produjeron el orden, uno por característica, en Datos y transparencia.</li>
+    <li>La exactitud medida de la detección automática, con la fecha de la medición.</li>
+  </ul>
+
+  <h2 class="methodology-title">Lo que el sistema no hace</h2>
+  <ul class="methodology-list">
+    <li>No opina sobre el producto. Ordena y resume lo que dicen las reseñas.</li>
+    <li>No ordena por estrellas. Un producto con muy buen promedio puede quedar abajo si casi nadie habló de lo que a vos te importa.</li>
+    <li>No lee reseñas en vivo. Trabaja sobre un relevamiento con fecha, que figura en Datos y transparencia.</li>
+    <li>No escribe con un modelo de lenguaje. Las frases salen de plantillas fijas y las citas de reseñas son textuales.</li>
+  </ul>
+
+  <details class="technical-details technical-details-large mt-12">
+    <summary>Los nombres técnicos, por si te interesan</summary>
+    <div class="mt-5 space-y-4 text-sm leading-7 text-slate-600">
+      <p>El motor argumentativo es un LAF (Labeled Argumentation Framework), el formalismo de Budán, Simari, Viglizzo y Simari (2017). Cada argumento lleva dos etiquetas. La <strong>confianza</strong> mide qué tan sostenido está lo que afirma, según las reseñas. La <strong>preferencia</strong> representa cuánto te importa a vos esa característica.</p>
+      <p>El motor trabaja con tres operaciones. El <strong>soporte</strong> encadena una razón con la regla que la usa. La <strong>agregación</strong> junta varias razones que apuntan a lo mismo. El <strong>conflicto</strong> enfrenta dos conclusiones opuestas y debilita a la que resiste menos. Las fórmulas exactas de las tres están listadas en Datos y transparencia.</p>
+      <p>La discusión ocurre dentro de cada característica. La combinación entre características es la suma ponderada del paso 5, que es una regla de decisión explícita y no una conclusión del motor.</p>
+    </div>
+  </details>
+
+  <div class="mt-10"><a class="button button-primary" href="{% url 'recommender:home' %}">Empezar</a></div>
+</section>
+{% endblock %}

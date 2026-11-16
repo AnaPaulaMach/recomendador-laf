@@ -1,0 +1,75 @@
+% =====================================================================
+% PROGRAMA LAF 2 â€” RANKING DE PUBLICACIONES
+% Sistema argumentativo de recomendacion de cafe
+% Trabajo Final - Ana Paula Machado - UNSE
+% =====================================================================
+
+% DOMINIO: Cafe
+% PRODUCTO: Producto de auditoria
+% Publicaciones analizadas: 2
+% Nota: Programa offline con preferencias neutrales (0.50).
+
+% Publicaciones incluidas:
+%   item_auditoria_completo         $       100  descuento 20%  cuotas  [oficial]  [envio gratis]
+%   item_auditoria_basico           $       120
+
+% Preferencias de compra del usuario:
+%   precio: 0.50
+%   descuento: 0.50
+%   cuotas: 0.50
+%   garantia: 0.50
+%   tienda_oficial: 0.50
+%   factura: 0.50
+%   envio: 0.50
+
+% ============================================================
+% HECHOS â€” uno por (publicaciÃ³n, condiciÃ³n)
+% Variable X identifica la publicaciÃ³n (item).
+% ============================================================
+
+% item_auditoria_completo  ($100)
+precioBueno(item_auditoria_completo). {0.95; 0.50}
+% precio $100 â†’ confianza 0.95 dentro del rango
+tieneDescuento(item_auditoria_completo). {0.68; 0.50}
+% descuento 20%
+tieneCuotas(item_auditoria_completo). {0.95; 0.50}
+% 12 cuotas sin interÃ©s
+tieneGarantiaLarga(item_auditoria_completo). {0.82; 0.50}
+% garantÃ­a 12 meses
+esTiendaOficial(item_auditoria_completo). {0.95; 0.50}
+tieneFactura(item_auditoria_completo). {0.95; 0.50}
+tieneEnvioGratis(item_auditoria_completo). {0.95; 0.50}
+% envio gratuito; logistica=fulfillment
+
+% item_auditoria_basico  ($120)
+precioBueno(item_auditoria_basico). {0.30; 0.50}
+% precio $120 â†’ confianza 0.30 dentro del rango
+
+% ============================================================
+% REGLAS DE AGREGACIÃ“N
+% ============================================================
+
+compraBuena(X) :- precioBueno(X). {0.85; 0.50}
+compraBuena(X) :- tieneDescuento(X). {0.85; 0.50}
+compraBuena(X) :- tieneCuotas(X). {0.85; 0.50}
+compraBuena(X) :- tieneGarantiaLarga(X). {0.85; 0.50}
+compraBuena(X) :- esTiendaOficial(X). {0.85; 0.50}
+compraBuena(X) :- tieneFactura(X). {0.85; 0.50}
+compraBuena(X) :- tieneEnvioGratis(X). {0.85; 0.50}
+
+% ============================================================
+% REGLAS DE RECOMENDACIÃ“N
+% X = publicaciÃ³n candidata
+% ============================================================
+
+recomendar(X) :- compraBuena(X). {0.90; 0.50}
+
+% ============================================================
+% OPERADORES (configurar en el Argumentation Studio)
+% ============================================================
+% Atributo 1 â€” Confianza:
+%   âŠ™ = X*Y     âŠ• = X+Y-X*Y     âŠ– = (X-Y)/(1-Y) si Xâ‰¥Y, sino 0
+% Atributo 2 â€” Preferencia del usuario:
+%   âŠ™ = min(X,Y)     âŠ• = min(X+Y,1)     âŠ– = max(X-Y,0)
+%
+% Fuente: BudÃ¡n et al. (2017) IJAR 82:242-269, Ejemplo 1 pp.249-250

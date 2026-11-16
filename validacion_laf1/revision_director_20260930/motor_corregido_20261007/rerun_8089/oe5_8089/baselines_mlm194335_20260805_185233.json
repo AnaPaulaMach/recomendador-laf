@@ -1,0 +1,226 @@
+{
+ "dataset_key": "mlm_mlm194335_20260805_185233",
+ "umbral_pos": 4,
+ "provisional": "version de trust actual, previo a la decision R3/fila 13",
+ "n_productos": 19,
+ "n_reviews_leidas": 8024,
+ "por_producto": {
+  "MLM26204244": {
+   "n_rate": 133,
+   "b1_estrella_media": 4.774436090225564,
+   "b2_positivas_conteo": 124,
+   "b3_positivas_prop": 0.9323308270676691,
+   "n_neg": 3,
+   "nombre": "Café La Parroquia De Veracruz En Grano, Tostado Y Puro 780gr"
+  },
+  "MLM19543513": {
+   "n_rate": 1196,
+   "b1_estrella_media": 4.831103678929765,
+   "b2_positivas_conteo": 1149,
+   "b3_positivas_prop": 0.9607023411371237,
+   "n_neg": 15,
+   "nombre": "Café Molido La Parroquia Puro 1 Kg Tradicional Gourmet"
+  },
+  "MLM43007251": {
+   "n_rate": 154,
+   "b1_estrella_media": 4.935064935064935,
+   "b2_positivas_conteo": 152,
+   "b3_positivas_prop": 0.987012987012987,
+   "n_neg": 0,
+   "nombre": "Café Molido 100% Arábico Gourmet Americano 900g Blasón"
+  },
+  "MLM46938408": {
+   "n_rate": 276,
+   "b1_estrella_media": 4.7101449275362315,
+   "b2_positivas_conteo": 255,
+   "b3_positivas_prop": 0.9239130434782609,
+   "n_neg": 8,
+   "nombre": "Café De Chiapas Mezcla Caracolillo Bourbon Arabe Grano 1 Kg"
+  },
+  "MLM26912881": {
+   "n_rate": 1200,
+   "b1_estrella_media": 4.91,
+   "b2_positivas_conteo": 1180,
+   "b3_positivas_prop": 0.9833333333333333,
+   "n_neg": 12,
+   "nombre": "Café Blasón Espresso Robusto Tostado Y Molido 1kg"
+  },
+  "MLM45641721": {
+   "n_rate": 136,
+   "b1_estrella_media": 4.867647058823529,
+   "b2_positivas_conteo": 132,
+   "b3_positivas_prop": 0.9705882352941176,
+   "n_neg": 0,
+   "nombre": "Café Espresso en grano 100% arábica 500 g Blasón"
+  },
+  "MLM52303869": {
+   "n_rate": 109,
+   "b1_estrella_media": 4.944954128440367,
+   "b2_positivas_conteo": 109,
+   "b3_positivas_prop": 1.0,
+   "n_neg": 0,
+   "nombre": "Café Premium Pluma Oaxaca Tostado y Molido Blasón 340 g"
+  },
+  "MLM60041718": {
+   "n_rate": 92,
+   "b1_estrella_media": 4.760869565217392,
+   "b2_positivas_conteo": 87,
+   "b3_positivas_prop": 0.9456521739130435,
+   "n_neg": 2,
+   "nombre": "Café En Grano Don Justo No. 02 - Tueste Medio - 500 G"
+  },
+  "MLM34232599": {
+   "n_rate": 170,
+   "b1_estrella_media": 4.652941176470589,
+   "b2_positivas_conteo": 157,
+   "b3_positivas_prop": 0.9235294117647059,
+   "n_neg": 8,
+   "nombre": "Café ETNIA 52 Molido de Altura Chiapas | 454gr | Tostado Medio | Cuerpo Medio | Certificación Kosher | Notas a Nuez, Miel y Caramelo | Cafe para Cafetera | ETNIA 52"
+  },
+  "MLM19777103": {
+   "n_rate": 365,
+   "b1_estrella_media": 4.813698630136987,
+   "b2_positivas_conteo": 352,
+   "b3_positivas_prop": 0.9643835616438357,
+   "n_neg": 5,
+   "nombre": "Café La Parroquia De Veracruz Molido Gourmet 500 Grs"
+  },
+  "MLM41148521": {
+   "n_rate": 523,
+   "b1_estrella_media": 4.925430210325048,
+   "b2_positivas_conteo": 516,
+   "b3_positivas_prop": 0.9866156787762906,
+   "n_neg": 2,
+   "nombre": "Café Gourmet Molido Espresso 400g Blasón"
+  },
+  "MLM19543517": {
+   "n_rate": 263,
+   "b1_estrella_media": 4.836501901140684,
+   "b2_positivas_conteo": 253,
+   "b3_positivas_prop": 0.9619771863117871,
+   "n_neg": 4,
+   "nombre": "Cafe Puro Tostado Y Molido Veracruz Chiapas Oaxaca Tres Regiones Members Mark 1 Kg"
+  },
+  "MLM43006788": {
+   "n_rate": 285,
+   "b1_estrella_media": 4.926315789473684,
+   "b2_positivas_conteo": 281,
+   "b3_positivas_prop": 0.9859649122807017,
+   "n_neg": 3,
+   "nombre": "Café Molido Gourmet Espresso Robusto 900g Blasón"
+  },
+  "MLM25263480": {
+   "n_rate": 710,
+   "b1_estrella_media": 4.925352112676056,
+   "b2_positivas_conteo": 702,
+   "b3_positivas_prop": 0.9887323943661972,
+   "n_neg": 3,
+   "nombre": "Café Gourmet Tostado y Molido Americano Blasón 1 kg"
+  },
+  "MLM20502238": {
+   "n_rate": 1185,
+   "b1_estrella_media": 4.864978902953586,
+   "b2_positivas_conteo": 1149,
+   "b3_positivas_prop": 0.9696202531645569,
+   "n_neg": 21,
+   "nombre": "Cafe Folgers Classic Roast Clasico Bote Jumbo 1.23kg Molido Tostado 400 Tazas"
+  },
+  "MLM68722805": {
+   "n_rate": 110,
+   "b1_estrella_media": 4.781818181818182,
+   "b2_positivas_conteo": 103,
+   "b3_positivas_prop": 0.9363636363636364,
+   "n_neg": 4,
+   "nombre": "Café Santa Elena Artesanal De Veracruz 1kg Grano O Molido"
+  },
+  "MLM34739841": {
+   "n_rate": 73,
+   "b1_estrella_media": 4.671232876712328,
+   "b2_positivas_conteo": 67,
+   "b3_positivas_prop": 0.9178082191780822,
+   "n_neg": 4,
+   "nombre": "Café en Grano de Altura Gourmet | 250gr | Tostado Medio Oscuro | Cuerpo Completo | 100% Arábica | Certificación Kosher | Notas a Almendra y Avellana - Aroma Fragancia Frutal | Grano Entero | ETNIA 52"
+  },
+  "MLM19535969": {
+   "n_rate": 495,
+   "b1_estrella_media": 4.703030303030303,
+   "b2_positivas_conteo": 456,
+   "b3_positivas_prop": 0.9212121212121213,
+   "n_neg": 23,
+   "nombre": "Nescafé Taster's Choice Gourmet Roast Americano | Café Puro Tostado y Molido 100% Arábica | Bolsa de 1kg"
+  },
+  "MLM65430742": {
+   "n_rate": 549,
+   "b1_estrella_media": 4.624772313296903,
+   "b2_positivas_conteo": 497,
+   "b3_positivas_prop": 0.9052823315118397,
+   "n_neg": 35,
+   "nombre": "Café Veracruzano Artesanal Calidad Gourmet 100% Arábigo"
+  }
+ },
+ "orden": {
+  "b1_estrella_media": [
+   "MLM52303869",
+   "MLM43007251",
+   "MLM43006788",
+   "MLM41148521",
+   "MLM25263480",
+   "MLM26912881",
+   "MLM45641721",
+   "MLM20502238",
+   "MLM19543517",
+   "MLM19543513",
+   "MLM19777103",
+   "MLM68722805",
+   "MLM26204244",
+   "MLM60041718",
+   "MLM46938408",
+   "MLM19535969",
+   "MLM34739841",
+   "MLM34232599",
+   "MLM65430742"
+  ],
+  "b2_positivas_conteo": [
+   "MLM26912881",
+   "MLM19543513",
+   "MLM20502238",
+   "MLM25263480",
+   "MLM41148521",
+   "MLM65430742",
+   "MLM19535969",
+   "MLM19777103",
+   "MLM43006788",
+   "MLM46938408",
+   "MLM19543517",
+   "MLM34232599",
+   "MLM43007251",
+   "MLM45641721",
+   "MLM26204244",
+   "MLM52303869",
+   "MLM68722805",
+   "MLM60041718",
+   "MLM34739841"
+  ],
+  "b3_positivas_prop": [
+   "MLM52303869",
+   "MLM25263480",
+   "MLM43007251",
+   "MLM41148521",
+   "MLM43006788",
+   "MLM26912881",
+   "MLM45641721",
+   "MLM20502238",
+   "MLM19777103",
+   "MLM19543517",
+   "MLM19543513",
+   "MLM60041718",
+   "MLM68722805",
+   "MLM26204244",
+   "MLM46938408",
+   "MLM34232599",
+   "MLM19535969",
+   "MLM34739841",
+   "MLM65430742"
+  ]
+ }
+}

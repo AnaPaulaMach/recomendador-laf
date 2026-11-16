@@ -1,0 +1,199 @@
+% =====================================================================
+% PROGRAMA LAF 1 - RANKING DE PRODUCTOS
+% Sistema argumentativo de recomendacion de cafe
+% Trabajo Final - Ana Paula Machado - UNSE
+% =====================================================================
+
+% Estrategia de balanceo: D - Contraccion hacia una media a priori
+% Dominio: Cafe
+% Productos analizados: 1
+
+% Productos y rango de precios:
+%   # 1 producto_auditoria_producto_de_auditoria       $100-$120  (2 publicaciones)
+
+% Preferencias del usuario:
+%   sabor: 0.50
+%   aroma: 0.50
+%   intensidad: 0.50
+%   dulzor: 0.50
+%   tueste: 0.50
+%   acidez: 0.50
+%   presentacion: 0.50
+%   rendimiento: 0.50
+%   variedad: 0.50
+%   preparacion: 0.50
+%   molienda: 0.50
+%   originalidad: 0.50
+%   tamano: 0.50
+%   caducidad: 0.50
+
+% Estructura argumentativa LAF 1:
+%   resena -> aspecto -> dimension -> recomendar
+%   beta de reglas = 1.00 (neutral); la preferencia proviene solo del usuario
+%   sensorial: sabor, aroma, intensidad, dulzor, tueste, acidez
+%   valor: rendimiento, tamano
+%   producto: originalidad, presentacion, variedad
+%   elaboracion: preparacion, molienda
+%   conservacion: caducidad
+
+% ============================================================
+% HECHOS - un hecho por (producto, aspecto, polaridad)
+% Variable X identifica al producto.
+% ============================================================
+
+% Producto de auditoria
+% n=3
+resenaPositivaAcidez(producto_auditoria_producto_de_auditoria). {0.65; 0.50}
+% n=2
+resenaNegativaAcidez(producto_auditoria_producto_de_auditoria). {0.35; 0.50}
+% n=3
+resenaPositivaAroma(producto_auditoria_producto_de_auditoria). {0.65; 0.50}
+% n=2
+resenaNegativaAroma(producto_auditoria_producto_de_auditoria). {0.35; 0.50}
+% n=3
+resenaPositivaCaducidad(producto_auditoria_producto_de_auditoria). {0.65; 0.50}
+% n=2
+resenaNegativaCaducidad(producto_auditoria_producto_de_auditoria). {0.35; 0.50}
+% n=3
+resenaPositivaDulzor(producto_auditoria_producto_de_auditoria). {0.65; 0.50}
+% n=2
+resenaNegativaDulzor(producto_auditoria_producto_de_auditoria). {0.35; 0.50}
+% n=3
+resenaPositivaIntensidad(producto_auditoria_producto_de_auditoria). {0.65; 0.50}
+% n=2
+resenaNegativaIntensidad(producto_auditoria_producto_de_auditoria). {0.35; 0.50}
+% n=3
+resenaPositivaMolienda(producto_auditoria_producto_de_auditoria). {0.65; 0.50}
+% n=2
+resenaNegativaMolienda(producto_auditoria_producto_de_auditoria). {0.35; 0.50}
+% n=3
+resenaPositivaOriginalidad(producto_auditoria_producto_de_auditoria). {0.65; 0.50}
+% n=2
+resenaNegativaOriginalidad(producto_auditoria_producto_de_auditoria). {0.35; 0.50}
+% n=3
+resenaPositivaPreparacion(producto_auditoria_producto_de_auditoria). {0.65; 0.50}
+% n=2
+resenaNegativaPreparacion(producto_auditoria_producto_de_auditoria). {0.35; 0.50}
+% n=3
+resenaPositivaPresentacion(producto_auditoria_producto_de_auditoria). {0.65; 0.50}
+% n=2
+resenaNegativaPresentacion(producto_auditoria_producto_de_auditoria). {0.35; 0.50}
+% n=3
+resenaPositivaRendimiento(producto_auditoria_producto_de_auditoria). {0.65; 0.50}
+% n=2
+resenaNegativaRendimiento(producto_auditoria_producto_de_auditoria). {0.35; 0.50}
+% n=3
+resenaPositivaSabor(producto_auditoria_producto_de_auditoria). {0.65; 0.50}
+% n=2
+resenaNegativaSabor(producto_auditoria_producto_de_auditoria). {0.35; 0.50}
+% n=3
+resenaPositivaTamano(producto_auditoria_producto_de_auditoria). {0.65; 0.50}
+% n=2
+resenaNegativaTamano(producto_auditoria_producto_de_auditoria). {0.35; 0.50}
+% n=3
+resenaPositivaTueste(producto_auditoria_producto_de_auditoria). {0.65; 0.50}
+% n=2
+resenaNegativaTueste(producto_auditoria_producto_de_auditoria). {0.35; 0.50}
+% n=3
+resenaPositivaVariedad(producto_auditoria_producto_de_auditoria). {0.65; 0.50}
+% n=2
+resenaNegativaVariedad(producto_auditoria_producto_de_auditoria). {0.35; 0.50}
+
+% ============================================================
+% REGLAS DE AGREGACION POR ASPECTO
+% ============================================================
+
+acidezBueno(X) :- resenaPositivaAcidez(X). {0.85; 1.00}
+~acidezBueno(X) :- resenaNegativaAcidez(X). {0.85; 1.00}
+aromaBueno(X) :- resenaPositivaAroma(X). {0.85; 1.00}
+~aromaBueno(X) :- resenaNegativaAroma(X). {0.85; 1.00}
+caducidadBueno(X) :- resenaPositivaCaducidad(X). {0.85; 1.00}
+~caducidadBueno(X) :- resenaNegativaCaducidad(X). {0.85; 1.00}
+dulzorBueno(X) :- resenaPositivaDulzor(X). {0.85; 1.00}
+~dulzorBueno(X) :- resenaNegativaDulzor(X). {0.85; 1.00}
+intensidadBueno(X) :- resenaPositivaIntensidad(X). {0.85; 1.00}
+~intensidadBueno(X) :- resenaNegativaIntensidad(X). {0.85; 1.00}
+moliendaBueno(X) :- resenaPositivaMolienda(X). {0.85; 1.00}
+~moliendaBueno(X) :- resenaNegativaMolienda(X). {0.85; 1.00}
+originalidadBueno(X) :- resenaPositivaOriginalidad(X). {0.85; 1.00}
+~originalidadBueno(X) :- resenaNegativaOriginalidad(X). {0.85; 1.00}
+preparacionBueno(X) :- resenaPositivaPreparacion(X). {0.85; 1.00}
+~preparacionBueno(X) :- resenaNegativaPreparacion(X). {0.85; 1.00}
+presentacionBueno(X) :- resenaPositivaPresentacion(X). {0.85; 1.00}
+~presentacionBueno(X) :- resenaNegativaPresentacion(X). {0.85; 1.00}
+rendimientoBueno(X) :- resenaPositivaRendimiento(X). {0.85; 1.00}
+~rendimientoBueno(X) :- resenaNegativaRendimiento(X). {0.85; 1.00}
+saborBueno(X) :- resenaPositivaSabor(X). {0.85; 1.00}
+~saborBueno(X) :- resenaNegativaSabor(X). {0.85; 1.00}
+tamanoBueno(X) :- resenaPositivaTamano(X). {0.85; 1.00}
+~tamanoBueno(X) :- resenaNegativaTamano(X). {0.85; 1.00}
+tuesteBueno(X) :- resenaPositivaTueste(X). {0.85; 1.00}
+~tuesteBueno(X) :- resenaNegativaTueste(X). {0.85; 1.00}
+variedadBueno(X) :- resenaPositivaVariedad(X). {0.85; 1.00}
+~variedadBueno(X) :- resenaNegativaVariedad(X). {0.85; 1.00}
+
+% ============================================================
+% REGLAS INTERMEDIAS POR DIMENSION
+% Cada dimension agrupa aspectos relacionados antes de recomendar.
+% ============================================================
+
+% Experiencia sensorial
+sensorialBueno(X) :- saborBueno(X). {0.90; 1.00}
+~sensorialBueno(X) :- ~saborBueno(X). {0.92; 1.00}
+sensorialBueno(X) :- aromaBueno(X). {0.85; 1.00}
+~sensorialBueno(X) :- ~aromaBueno(X). {0.85; 1.00}
+sensorialBueno(X) :- intensidadBueno(X). {0.80; 1.00}
+~sensorialBueno(X) :- ~intensidadBueno(X). {0.80; 1.00}
+sensorialBueno(X) :- dulzorBueno(X). {0.80; 1.00}
+~sensorialBueno(X) :- ~dulzorBueno(X). {0.80; 1.00}
+sensorialBueno(X) :- tuesteBueno(X). {0.85; 1.00}
+~sensorialBueno(X) :- ~tuesteBueno(X). {0.88; 1.00}
+sensorialBueno(X) :- acidezBueno(X). {0.85; 1.00}
+~sensorialBueno(X) :- ~acidezBueno(X). {0.85; 1.00}
+
+% Rendimiento y valor
+valorBueno(X) :- rendimientoBueno(X). {0.85; 1.00}
+~valorBueno(X) :- ~rendimientoBueno(X). {0.85; 1.00}
+valorBueno(X) :- tamanoBueno(X). {0.75; 1.00}
+~valorBueno(X) :- ~tamanoBueno(X). {0.75; 1.00}
+
+% Producto y presentacion
+productoBueno(X) :- originalidadBueno(X). {0.88; 1.00}
+~productoBueno(X) :- ~originalidadBueno(X). {0.90; 1.00}
+productoBueno(X) :- presentacionBueno(X). {0.80; 1.00}
+~productoBueno(X) :- ~presentacionBueno(X). {0.80; 1.00}
+productoBueno(X) :- variedadBueno(X). {0.75; 1.00}
+~productoBueno(X) :- ~variedadBueno(X). {0.75; 1.00}
+
+% Preparacion y molienda
+elaboracionBueno(X) :- preparacionBueno(X). {0.80; 1.00}
+~elaboracionBueno(X) :- ~preparacionBueno(X). {0.85; 1.00}
+elaboracionBueno(X) :- moliendaBueno(X). {0.80; 1.00}
+~elaboracionBueno(X) :- ~moliendaBueno(X). {0.85; 1.00}
+
+% Conservacion
+conservacionBueno(X) :- caducidadBueno(X). {0.85; 1.00}
+~conservacionBueno(X) :- ~caducidadBueno(X). {0.92; 1.00}
+
+% ============================================================
+% REGLAS DE RECOMENDACION
+% X = producto candidato
+% ============================================================
+
+recomendar(X) :- sensorialBueno(X). {0.90; 1.00}
+~recomendar(X) :- ~sensorialBueno(X). {0.92; 1.00}
+recomendar(X) :- valorBueno(X). {0.80; 1.00}
+recomendar(X) :- productoBueno(X). {0.78; 1.00}
+~recomendar(X) :- ~productoBueno(X). {0.90; 1.00}
+recomendar(X) :- elaboracionBueno(X). {0.75; 1.00}
+recomendar(X) :- conservacionBueno(X). {0.78; 1.00}
+~recomendar(X) :- ~conservacionBueno(X). {0.92; 1.00}
+
+% ============================================================
+% ============================================================
+% Atributo 1 - Confianza:
+%   producto = X*Y     suma = X+Y-X*Y     debilitamiento = (X-Y)/(1-Y) si X>=Y, sino 0
+% Atributo 2 - Preferencia del usuario:
+%   producto = min(X,Y)     suma = min(X+Y,1)     debilitamiento = max(X-Y,0)
+%
+% Fuente: Budan et al. (2017) IJAR 82:242-269, Ejemplo 1 pp.249-250

@@ -1,0 +1,86 @@
+{
+  "validated_at": "2026-07-30T12:26:16-03:00",
+  "dataset_key": "mlm_mlm194329_20260528_142014",
+  "domain_key": "cafe",
+  "status": "passed",
+  "scope": {
+    "included_products": 18,
+    "excluded_products_checked": [
+      "MLMU3847444590",
+      "MLM34290592"
+    ],
+    "excluded_products_found": 0
+  },
+  "programs": {
+    "A": {
+      "file": "programa_laf1_A.txt",
+      "facts": 243,
+      "rules": 56,
+      "products_with_facts": 18
+    },
+    "B": {
+      "file": "programa_laf1_B.txt",
+      "facts": 107,
+      "rules": 46,
+      "products_with_facts": 18
+    },
+    "C": {
+      "file": "programa_laf1_C.txt",
+      "facts": 243,
+      "rules": 56,
+      "products_with_facts": 18
+    },
+    "D": {
+      "file": "programa_laf1_D.txt",
+      "facts": 243,
+      "rules": 56,
+      "products_with_facts": 18
+    },
+    "E": {
+      "file": "programa_laf1_E.txt",
+      "facts": 243,
+      "rules": 56,
+      "products_with_facts": 18
+    }
+  },
+  "checks": {
+    "coefficients_between_zero_and_one": true,
+    "duplicate_executable_lines": 0,
+    "invalid_annotated_lines": 0,
+    "all_included_products_have_facts": true,
+    "molienda_aggregation_rule_present": true,
+    "molienda_dimension_rule_present": true,
+    "elaboracion_recommendation_rule_present": true
+  },
+  "comparisons": {
+    "A_differs_from_D": true,
+    "D_differs_from_C": true,
+    "C_equals_E_except_strategy_header": true,
+    "C_equals_E_reason": "El dominio cafe no define catalog_aspect_map; C no agrega evidencia estructurada y usa el mismo balance crudo de resenas que E."
+  },
+  "methodology": {
+    "primary_strategy": "D",
+    "comparison_strategies": [
+      "A",
+      "B",
+      "E"
+    ],
+    "catalog_strategy_status": "C se conserva como control no informativo para cafe mientras catalog_aspect_map permanezca vacio."
+  },
+  "aspect_polarity_audit": {
+    "status": "passed_with_author_confirmation_pending",
+    "cohort_groups": 73,
+    "labeled_aspects": 154,
+    "accuracy_before": 0.6623,
+    "accuracy_after": 0.9091,
+    "mixed_candidates_before": 33,
+    "mixed_candidates_after": 26,
+    "extractions_before": 6754,
+    "extractions_after": 6788,
+    "provenance": "Preauditoria tecnica asistida por IA; la autora debe confirmar las etiquetas antes de tratarlas como gold standard humano.",
+    "comparison_report": "artifacts_por_dominio/cafe/otros/aspect_polarity_audit/comparison.json",
+    "workbook": "artifacts_por_dominio/cafe/otros/aspect_polarity_audit/auditoria_polaridad_cafe_20260730.xlsx",
+    "ranking_note": "El proxy de sensibilidad cambia hasta 4 posiciones y no sustituye la inferencia LAF final."
+  },
+  "expert_decision_register": "config/laf_rule_review_decisions.json"
+}

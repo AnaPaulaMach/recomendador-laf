@@ -1,0 +1,216 @@
+{
+ "dataset_key": "mlm_mlm194335_20260805_185233",
+ "provisional": "trust actual, previo a R3/fila 13",
+ "nombres": {
+  "MLM26204244": "Café La Parroquia De Veracruz En Grano, Tostado Y Puro 780gr",
+  "MLM19543513": "Café Molido La Parroquia Puro 1 Kg Tradicional Gourmet",
+  "MLM43007251": "Café Molido 100% Arábico Gourmet Americano 900g Blasón",
+  "MLM46938408": "Café De Chiapas Mezcla Caracolillo Bourbon Arabe Grano 1 Kg",
+  "MLM26912881": "Café Blasón Espresso Robusto Tostado Y Molido 1kg",
+  "MLM45641721": "Café Espresso en grano 100% arábica 500 g Blasón",
+  "MLM52303869": "Café Premium Pluma Oaxaca Tostado y Molido Blasón 340 g",
+  "MLM60041718": "Café En Grano Don Justo No. 02 - Tueste Medio - 500 G",
+  "MLM34232599": "Café ETNIA 52 Molido de Altura Chiapas | 454gr | Tostado Medio | Cuerpo Medio | Certificación Kosher | Notas a Nuez, Miel y Caramelo | Cafe para Cafetera | ETNIA 52",
+  "MLM19777103": "Café La Parroquia De Veracruz Molido Gourmet 500 Grs",
+  "MLM41148521": "Café Gourmet Molido Espresso 400g Blasón",
+  "MLM19543517": "Cafe Puro Tostado Y Molido Veracruz Chiapas Oaxaca Tres Regiones Members Mark 1 Kg",
+  "MLM43006788": "Café Molido Gourmet Espresso Robusto 900g Blasón",
+  "MLM25263480": "Café Gourmet Tostado y Molido Americano Blasón 1 kg",
+  "MLM20502238": "Cafe Folgers Classic Roast Clasico Bote Jumbo 1.23kg Molido Tostado 400 Tazas",
+  "MLM68722805": "Café Santa Elena Artesanal De Veracruz 1kg Grano O Molido",
+  "MLM34739841": "Café en Grano de Altura Gourmet | 250gr | Tostado Medio Oscuro | Cuerpo Completo | 100% Arábica | Certificación Kosher | Notas a Almendra y Avellana - Aroma Fragancia Frutal | Grano Entero | ETNIA 52",
+  "MLM19535969": "Nescafé Taster's Choice Gourmet Roast Americano | Café Puro Tostado y Molido 100% Arábica | Bolsa de 1kg",
+  "MLM65430742": "Café Veracruzano Artesanal Calidad Gourmet 100% Arábigo"
+ },
+ "por_perfil": {
+  "neutral": {
+   "top5": [
+    "Café Blasón Espresso Robusto Tostado Y Molido 1kg",
+    "Café Gourmet Molido Espresso 400g Blasón",
+    "Cafe Folgers Classic Roast Clasico Bote Jumbo 1.23kg Molido Tostado 400 Tazas",
+    "Café Gourmet Tostado y Molido Americano Blasón 1 kg",
+    "Café Veracruzano Artesanal Calidad Gourmet 100% Arábigo"
+   ],
+   "precision": {
+    "b1_estrella_media": {
+     "spearman": 0.296,
+     "prec@3": 0.0,
+     "prec@5": 0.4
+    },
+    "b2_positivas_conteo": {
+     "spearman": 0.846,
+     "prec@3": 0.667,
+     "prec@5": 0.8
+    },
+    "b3_positivas_prop": {
+     "spearman": 0.284,
+     "prec@3": 0.0,
+     "prec@5": 0.4
+    }
+   },
+   "cobertura": {
+    "laf_scores_distintos": 19,
+    "laf_en_cero": 0,
+    "n": 19,
+    "laf_rango": [
+     0.135,
+     0.382
+    ],
+    "estrella_rango": [
+     4.625,
+     4.945
+    ],
+    "pares_empatados_en_estrellas": 11,
+    "de_esos_LAF_separa": 11
+   },
+   "novedad": {
+    "laf_sesgo_popularidad": 0.854,
+    "b2_sesgo_popularidad": 0.996,
+    "b3_sesgo_popularidad": 0.17,
+    "laf_pop_media_top3": 969.3,
+    "b2_pop_media_top3": 1193.7,
+    "b3_pop_media_top3": 324.3
+   },
+   "coherencia": {
+    "i_interna_spearman_net": 0.882,
+    "i_interna_spearman_pos": 0.853,
+    "i_inversiones_duras": 25,
+    "i_peor_inversion": [
+     "MLM41148521",
+     "MLM20502238",
+     318,
+     502
+    ],
+    "ii_top5_con_evidencia_negativa": []
+   }
+  },
+  "solo_sabor": {
+   "top5": [
+    "Café Gourmet Tostado y Molido Americano Blasón 1 kg",
+    "Café Blasón Espresso Robusto Tostado Y Molido 1kg",
+    "Café Gourmet Molido Espresso 400g Blasón",
+    "Café Molido La Parroquia Puro 1 Kg Tradicional Gourmet",
+    "Cafe Folgers Classic Roast Clasico Bote Jumbo 1.23kg Molido Tostado 400 Tazas"
+   ],
+   "precision": {
+    "b1_estrella_media": {
+     "spearman": 0.444,
+     "prec@3": 0.0,
+     "prec@5": 0.4
+    },
+    "b2_positivas_conteo": {
+     "spearman": 0.9,
+     "prec@3": 0.333,
+     "prec@5": 1.0
+    },
+    "b3_positivas_prop": {
+     "spearman": 0.444,
+     "prec@3": 0.333,
+     "prec@5": 0.4
+    }
+   },
+   "cobertura": {
+    "laf_scores_distintos": 16,
+    "laf_en_cero": 0,
+    "n": 19,
+    "laf_rango": [
+     0.278,
+     0.647
+    ],
+    "estrella_rango": [
+     4.625,
+     4.945
+    ],
+    "pares_empatados_en_estrellas": 11,
+    "de_esos_LAF_separa": 10
+   },
+   "novedad": {
+    "laf_sesgo_popularidad": 0.886,
+    "b2_sesgo_popularidad": 0.996,
+    "b3_sesgo_popularidad": 0.17,
+    "laf_pop_media_top3": 811.0,
+    "b2_pop_media_top3": 1193.7,
+    "b3_pop_media_top3": 324.3
+   },
+   "coherencia": {
+    "i_interna_spearman_net": 0.916,
+    "i_interna_spearman_pos": 0.876,
+    "i_inversiones_duras": 21,
+    "i_peor_inversion": [
+     "MLM25263480",
+     "MLM26912881",
+     227,
+     374
+    ],
+    "ii_top5_con_evidencia_negativa": []
+   }
+  },
+  "solo_aroma": {
+   "top5": [
+    "Café Blasón Espresso Robusto Tostado Y Molido 1kg",
+    "Café Molido La Parroquia Puro 1 Kg Tradicional Gourmet",
+    "Café Gourmet Tostado y Molido Americano Blasón 1 kg",
+    "Cafe Folgers Classic Roast Clasico Bote Jumbo 1.23kg Molido Tostado 400 Tazas",
+    "Café Veracruzano Artesanal Calidad Gourmet 100% Arábigo"
+   ],
+   "precision": {
+    "b1_estrella_media": {
+     "spearman": 0.161,
+     "prec@3": 0.0,
+     "prec@5": 0.2
+    },
+    "b2_positivas_conteo": {
+     "spearman": 0.865,
+     "prec@3": 0.667,
+     "prec@5": 0.8
+    },
+    "b3_positivas_prop": {
+     "spearman": 0.181,
+     "prec@3": 0.333,
+     "prec@5": 0.2
+    }
+   },
+   "cobertura": {
+    "laf_scores_distintos": 16,
+    "laf_en_cero": 0,
+    "n": 19,
+    "laf_rango": [
+     0.293,
+     0.585
+    ],
+    "estrella_rango": [
+     4.625,
+     4.945
+    ],
+    "pares_empatados_en_estrellas": 11,
+    "de_esos_LAF_separa": 11
+   },
+   "novedad": {
+    "laf_sesgo_popularidad": 0.881,
+    "b2_sesgo_popularidad": 0.996,
+    "b3_sesgo_popularidad": 0.17,
+    "laf_pop_media_top3": 1035.3,
+    "b2_pop_media_top3": 1193.7,
+    "b3_pop_media_top3": 324.3
+   },
+   "coherencia": {
+    "i_interna_spearman_net": 0.934,
+    "i_interna_spearman_pos": 0.907,
+    "i_inversiones_duras": 11,
+    "i_peor_inversion": [
+     "MLM26912881",
+     "MLM19543513",
+     128,
+     187
+    ],
+    "ii_top5_con_evidencia_negativa": []
+   }
+  }
+ },
+ "estabilidad_laf": {
+  "neutral_vs_perturbado_sabor0.6": 1.0,
+  "responsividad_neutral_vs_solo_sabor": 0.872,
+  "responsividad_neutral_vs_solo_aroma": 0.821,
+  "nota": "las bases son perfectamente estables (rho=1) pero perfectamente NO responsivas (rho=1): no dependen del perfil."
+ }
+}

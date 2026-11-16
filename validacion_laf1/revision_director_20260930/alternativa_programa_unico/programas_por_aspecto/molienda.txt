@@ -1,0 +1,19 @@
+% Referencia independiente por aspecto: molienda
+% Preparado offline; verificado después con API local. Ver comparacion_motor_local.json.
+% Fuente: validacion_laf1/salidas/recongelado_20260910/despues/programa_laf1_D.txt
+% Una etiqueta de confianza; preferencias como pesos externos.
+resenaPositivaMolienda(mlm20075768_nescafe_clasico_cafe_100_puro_soluble). {0.52}
+resenaNegativaMolienda(mlm20075768_nescafe_clasico_cafe_100_puro_soluble). {0.48}
+resenaPositivaMolienda(mlm26912881_cafe_blason_espresso_robusto_tostado_y). {0.64}
+resenaPositivaMolienda(mlm25263480_cafe_gourmet_tostado_y_molido_americano). {0.57}
+resenaPositivaMolienda(mlm23633481_nescafe_clasico_ice_cafe_soluble_en). {0.53}
+resenaPositivaMolienda(mlm41148521_cafe_gourmet_molido_espresso_400g_blason). {0.57}
+resenaPositivaMolienda(mlm43007251_cafe_molido_100_arabico_gourmet_americano). {0.53}
+resenaPositivaMolienda(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.56}
+resenaNegativaMolienda(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.44}
+moliendaBueno(X) :- resenaPositivaMolienda(X). {0.85}
+~moliendaBueno(X) :- resenaNegativaMolienda(X). {0.85}
+elaboracionBueno(X) :- moliendaBueno(X). {0.80}
+~elaboracionBueno(X) :- ~moliendaBueno(X). {0.85}
+recomendar(X) :- elaboracionBueno(X). {0.75}
+~recomendar(X) :- ~elaboracionBueno(X). {0.75}

@@ -1,0 +1,1810 @@
+{
+  "dataset": {
+    "dataset_key": "mlm_mlm194329_20260528_142014",
+    "category_id": "MLM194329",
+    "category_label": "Cafe",
+    "site_id": "MLM"
+  },
+  "candidates": [
+    {
+      "term": "sabor",
+      "aspect_key_sugerido": "sabor",
+      "reviews_mencion": 2529,
+      "oraciones_mencion": 3118,
+      "pos": 1536,
+      "neg": 41,
+      "neu": 1541,
+      "polaridad_neta": 0.948,
+      "examples": [
+        "guau excelente y muy rico cafe me encanto l exclusivo aroma y sabor felicidades mi favorito.",
+        "excelente compra, muy buen sabor.",
+        "muy rico sabor, excelente calidad."
+      ]
+    },
+    {
+      "term": "cafe",
+      "aspect_key_sugerido": "cafe",
+      "reviews_mencion": 2003,
+      "oraciones_mencion": 2524,
+      "pos": 1161,
+      "neg": 42,
+      "neu": 1321,
+      "polaridad_neta": 0.93,
+      "examples": [
+        "guau excelente y muy rico cafe me encanto l exclusivo aroma y sabor felicidades mi favorito.",
+        "es un café soluble de marca, no es de los mejores, pero su ventaja es el aroma, según de olla.",
+        "bastante ligero este café."
+      ]
+    },
+    {
+      "term": "rico",
+      "aspect_key_sugerido": "rico",
+      "reviews_mencion": 1359,
+      "oraciones_mencion": 1630,
+      "pos": 513,
+      "neg": 10,
+      "neu": 1107,
+      "polaridad_neta": 0.962,
+      "examples": [
+        "guau excelente y muy rico cafe me encanto l exclusivo aroma y sabor felicidades mi favorito.",
+        "muy rico sabor, excelente calidad.",
+        "el cafe tiene un rico sabor, parece autentico de olla."
+      ]
+    },
+    {
+      "term": "precio",
+      "aspect_key_sugerido": "precio",
+      "reviews_mencion": 1279,
+      "oraciones_mencion": 1450,
+      "pos": 796,
+      "neg": 9,
+      "neu": 645,
+      "polaridad_neta": 0.978,
+      "examples": [
+        "muy rico, valor en calidad y precio.",
+        "excelente sabor, aroma, calidad y precio.",
+        "pues bueno el precio los productos nescafe ya son muy conocidos pero para quien no sepa el frasco de 170 gramos es el tamaño más común este esta bueno es estilo de olla pero es soluble y trae un toquesito de canela."
+      ]
+    },
+    {
+      "term": "delicioso",
+      "aspect_key_sugerido": "delicioso",
+      "reviews_mencion": 977,
+      "oraciones_mencion": 1168,
+      "pos": 261,
+      "neg": 5,
+      "neu": 902,
+      "polaridad_neta": 0.962,
+      "examples": [
+        "delicioso llega en óptimas condiciones.",
+        "delicioso sabor a café de olla, esa carmelita le da un delicioso sabor especial.",
+        "delicioso sabor a café de olla."
+      ]
+    },
+    {
+      "term": "aroma",
+      "aspect_key_sugerido": "aroma",
+      "reviews_mencion": 513,
+      "oraciones_mencion": 674,
+      "pos": 343,
+      "neg": 4,
+      "neu": 327,
+      "polaridad_neta": 0.977,
+      "examples": [
+        "guau excelente y muy rico cafe me encanto l exclusivo aroma y sabor felicidades mi favorito.",
+        "es un café soluble de marca, no es de los mejores, pero su ventaja es el aroma, según de olla.",
+        "tiene un agradable aroma y gran sabor."
+      ]
+    },
+    {
+      "term": "excelente sabor",
+      "aspect_key_sugerido": "excelente_sabor",
+      "reviews_mencion": 277,
+      "oraciones_mencion": 342,
+      "pos": 340,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "excelente sabor, aroma, calidad y precio.",
+        "de mis favoritos excelente sabor.",
+        "excelente sabor,."
+      ]
+    },
+    {
+      "term": "riquisimo",
+      "aspect_key_sugerido": "riquisimo",
+      "reviews_mencion": 227,
+      "oraciones_mencion": 283,
+      "pos": 78,
+      "neg": 2,
+      "neu": 203,
+      "polaridad_neta": 0.95,
+      "examples": [
+        "riquisimo.",
+        "muy rico y espumoso, riquísimo .",
+        "hacen es café de allá está riquísimo."
+      ]
+    },
+    {
+      "term": "excelente cafe",
+      "aspect_key_sugerido": "excelente_cafe",
+      "reviews_mencion": 198,
+      "oraciones_mencion": 250,
+      "pos": 250,
+      "neg": 0,
+      "neu": 0,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "excelente cafe.",
+        "es un excelente cafe.",
+        "excelente cafe."
+      ]
+    },
+    {
+      "term": "fuerte",
+      "aspect_key_sugerido": "fuerte",
+      "reviews_mencion": 161,
+      "oraciones_mencion": 178,
+      "pos": 73,
+      "neg": 3,
+      "neu": 102,
+      "polaridad_neta": 0.921,
+      "examples": [
+        "estaría mejor si fuera más fuerte.",
+        "tiene buen sabor, el secreto está en no usar demasiado café ya que la canela que contiene es muy fuerte.",
+        "es la primera vez que lo pruebo, tiene un olor fuerte que en lo personal no es de mi agrado pero tiene sabor suave, no a café tradicional pero sabe bien."
+      ]
+    },
+    {
+      "term": "sabroso",
+      "aspect_key_sugerido": "sabroso",
+      "reviews_mencion": 157,
+      "oraciones_mencion": 192,
+      "pos": 64,
+      "neg": 1,
+      "neu": 127,
+      "polaridad_neta": 0.969,
+      "examples": [
+        "muy sabroso es que de la familia.",
+        "sabroso, lástima que tiene azúcar.",
+        "sabroso."
+      ]
+    },
+    {
+      "term": "original",
+      "aspect_key_sugerido": "original",
+      "reviews_mencion": 147,
+      "oraciones_mencion": 166,
+      "pos": 65,
+      "neg": 2,
+      "neu": 99,
+      "polaridad_neta": 0.94,
+      "examples": [
+        "no viene con etiqueta, pero si es el original.",
+        "es el original.",
+        "sabor muy original y muy buena presentacion."
+      ]
+    },
+    {
+      "term": "marca",
+      "aspect_key_sugerido": "marca",
+      "reviews_mencion": 144,
+      "oraciones_mencion": 168,
+      "pos": 87,
+      "neg": 6,
+      "neu": 75,
+      "polaridad_neta": 0.871,
+      "examples": [
+        "es un café soluble de marca, no es de los mejores, pero su ventaja es el aroma, según de olla.",
+        "la marca ya es. garantía.",
+        "siempre compro de esta marca, me gusta mucho este sabor."
+      ]
+    },
+    {
+      "term": "favorito",
+      "aspect_key_sugerido": "favorito",
+      "reviews_mencion": 144,
+      "oraciones_mencion": 158,
+      "pos": 40,
+      "neg": 1,
+      "neu": 117,
+      "polaridad_neta": 0.951,
+      "examples": [
+        "guau excelente y muy rico cafe me encanto l exclusivo aroma y sabor felicidades mi favorito.",
+        "de mis favoritos excelente sabor.",
+        "mi favorito."
+      ]
+    },
+    {
+      "term": "frio",
+      "aspect_key_sugerido": "frio",
+      "reviews_mencion": 134,
+      "oraciones_mencion": 147,
+      "pos": 77,
+      "neg": 2,
+      "neu": 68,
+      "polaridad_neta": 0.949,
+      "examples": [
+        "deliciosos para tiempo de frio.",
+        "es muy difícil mezclarlo si lo haces en frío.",
+        "el cafe tiene un sabor muy rico que se puede hacer de distintas maneras, lo he intentado en cafetera normal, cafetera italiana, cafetera francesa y en todas da un cafe muy rico, se puede tomar frio o caliente, con leche "
+      ]
+    },
+    {
+      "term": "excelente precio",
+      "aspect_key_sugerido": "excelente_precio",
+      "reviews_mencion": 126,
+      "oraciones_mencion": 135,
+      "pos": 135,
+      "neg": 0,
+      "neu": 0,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "excelente precio.",
+        "excelente precio y calidad.",
+        "muy buen sabor y excelente precio rinde mucho."
+      ]
+    },
+    {
+      "term": "tamano",
+      "aspect_key_sugerido": "tamano",
+      "reviews_mencion": 115,
+      "oraciones_mencion": 129,
+      "pos": 63,
+      "neg": 0,
+      "neu": 66,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "buen tamaño exelente calidad el sabor combina muy bien para cualquier postre.",
+        "pues bueno el precio los productos nescafe ya son muy conocidos pero para quien no sepa el frasco de 170 gramos es el tamaño más común este esta bueno es estilo de olla pero es soluble y trae un toquesito de canela.",
+        "buen tamaño, rendidor y de buen sabor."
+      ]
+    },
+    {
+      "term": "exquisito",
+      "aspect_key_sugerido": "exquisito",
+      "reviews_mencion": 113,
+      "oraciones_mencion": 145,
+      "pos": 56,
+      "neg": 0,
+      "neu": 89,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "muy exquisito y practico.",
+        "delicioso y un aroma exquisita!.",
+        "delicioso sabor realmente exquisito,es como si estuvieras tomando un café en algún pueblito de ese que hacen en el fogón con leña es delicioso."
+      ]
+    },
+    {
+      "term": "nescafe",
+      "aspect_key_sugerido": "nescafe",
+      "reviews_mencion": 113,
+      "oraciones_mencion": 120,
+      "pos": 51,
+      "neg": 6,
+      "neu": 63,
+      "polaridad_neta": 0.789,
+      "examples": [
+        "pues bueno el precio los productos nescafe ya son muy conocidos pero para quien no sepa el frasco de 170 gramos es el tamaño más común este esta bueno es estilo de olla pero es soluble y trae un toquesito de canela.",
+        "delicioso, se convirtió en mi favorito en la linea nescafé.",
+        "de los mejores productos de nescafé, el sabor perfecto del café para mí ,sin duda lo seguiré comprando."
+      ]
+    },
+    {
+      "term": "intenso",
+      "aspect_key_sugerido": "intenso",
+      "reviews_mencion": 108,
+      "oraciones_mencion": 130,
+      "pos": 48,
+      "neg": 2,
+      "neu": 80,
+      "polaridad_neta": 0.92,
+      "examples": [
+        "pues un sabor muy intenso y pues exelente cafe.",
+        "tiene un sabor un poco extraño, pero no es intenso.",
+        "pues un sabor muy intenso y pues exelente cafe."
+      ]
+    },
+    {
+      "term": "condicion",
+      "aspect_key_sugerido": "condicion",
+      "reviews_mencion": 106,
+      "oraciones_mencion": 118,
+      "pos": 111,
+      "neg": 0,
+      "neu": 7,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "delicioso llega en óptimas condiciones.",
+        "muy buen producto, el café venía protegido, junto con otro más que compre, lo recibí bien, venias en muy buenas condiciones, lo recomiendo.",
+        "me lleg贸 en perfectas condiciones."
+      ]
+    },
+    {
+      "term": "presentacion",
+      "aspect_key_sugerido": "presentacion",
+      "reviews_mencion": 102,
+      "oraciones_mencion": 124,
+      "pos": 74,
+      "neg": 1,
+      "neu": 49,
+      "polaridad_neta": 0.973,
+      "examples": [
+        "sabor muy original y muy buena presentacion.",
+        "qué es muy bueno yo lo recomiendo en esta presentación porque es más económico.",
+        "muy buena presentación ."
+      ]
+    },
+    {
+      "term": "barato",
+      "aspect_key_sugerido": "barato",
+      "reviews_mencion": 100,
+      "oraciones_mencion": 112,
+      "pos": 49,
+      "neg": 1,
+      "neu": 62,
+      "polaridad_neta": 0.96,
+      "examples": [
+        "cómo me gusta, bueno bonito y barato.",
+        "es mas barato en bodega aurrera y trae mas producto.",
+        "es muy rico este caf茅 lo pido x mercado libre x ser m谩s barato."
+      ]
+    },
+    {
+      "term": "rico cafe",
+      "aspect_key_sugerido": "rico_cafe",
+      "reviews_mencion": 94,
+      "oraciones_mencion": 112,
+      "pos": 16,
+      "neg": 2,
+      "neu": 94,
+      "polaridad_neta": 0.778,
+      "examples": [
+        "guau excelente y muy rico cafe me encanto l exclusivo aroma y sabor felicidades mi favorito.",
+        "rico este café.",
+        "muy rico café."
+      ]
+    },
+    {
+      "term": "gracia",
+      "aspect_key_sugerido": "gracia",
+      "reviews_mencion": 93,
+      "oraciones_mencion": 109,
+      "pos": 59,
+      "neg": 0,
+      "neu": 50,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "excelente producto y muy eficiente gracias.",
+        "muy bien muchas gracias.",
+        "producto enviado pronto, gracias."
+      ]
+    },
+    {
+      "term": "rendidor",
+      "aspect_key_sugerido": "rendidor",
+      "reviews_mencion": 93,
+      "oraciones_mencion": 104,
+      "pos": 37,
+      "neg": 0,
+      "neu": 67,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "excelente producto muy rendidor y recomendable el sabor y precio.",
+        "buen tamaño, rendidor y de buen sabor.",
+        "sabor clásico, rico y muy rendidor por el tamaño."
+      ]
+    },
+    {
+      "term": "leche",
+      "aspect_key_sugerido": "leche",
+      "reviews_mencion": 92,
+      "oraciones_mencion": 106,
+      "pos": 52,
+      "neg": 1,
+      "neu": 53,
+      "polaridad_neta": 0.962,
+      "examples": [
+        "es un café con delicioso sabor a canela, muy sabroso en agua o leche.",
+        "no soy muy fan de la marca, pero regularmente consumo el black por qué es fuerte y medio despierta más, pero este me gustó, es suave y sabe bien con leche.",
+        "excelente sabor, negro con crema o con leche sabe riquísimo 10 /10."
+      ]
+    },
+    {
+      "term": "frasco",
+      "aspect_key_sugerido": "frasco",
+      "reviews_mencion": 92,
+      "oraciones_mencion": 97,
+      "pos": 35,
+      "neg": 4,
+      "neu": 58,
+      "polaridad_neta": 0.795,
+      "examples": [
+        "pues bueno el precio los productos nescafe ya son muy conocidos pero para quien no sepa el frasco de 170 gramos es el tamaño más común este esta bueno es estilo de olla pero es soluble y trae un toquesito de canela.",
+        "lo ame, soy fan de esté cafe y es la primera vez qué compro un frasco lleno, aquí en él súper ya viene casi a la mitad, me encanto!.",
+        "mismo sabor y calidad del producto en frasco, más económico."
+      ]
+    },
+    {
+      "term": "agradable",
+      "aspect_key_sugerido": "agradable",
+      "reviews_mencion": 89,
+      "oraciones_mencion": 113,
+      "pos": 43,
+      "neg": 2,
+      "neu": 68,
+      "polaridad_neta": 0.911,
+      "examples": [
+        "tiene un agradable aroma y gran sabor.",
+        "tiene un agradable sabor, llevo mucho tiempo consumiendolo.",
+        "delicioso el aroma el sabor es muy agradable."
+      ]
+    },
+    {
+      "term": "sellado",
+      "aspect_key_sugerido": "sellado",
+      "reviews_mencion": 89,
+      "oraciones_mencion": 101,
+      "pos": 83,
+      "neg": 2,
+      "neu": 16,
+      "polaridad_neta": 0.953,
+      "examples": [
+        "buen producto y llegó bien sellado.",
+        "venia perfectamente sellado y es de buena calidad.",
+        "un gran café muy rico, lo importante es que llegó perfectamente sellado y nada maltratado eso da la seguridad del producto completamente original y mismo sabor."
+      ]
+    },
+    {
+      "term": "caliente",
+      "aspect_key_sugerido": "caliente",
+      "reviews_mencion": 86,
+      "oraciones_mencion": 96,
+      "pos": 42,
+      "neg": 0,
+      "neu": 54,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "el cafe tiene un sabor muy rico que se puede hacer de distintas maneras, lo he intentado en cafetera normal, cafetera italiana, cafetera francesa y en todas da un cafe muy rico, se puede tomar frio o caliente, con leche ",
+        "super rico ,frío o caliente no se hace grumos , excelente rinde bastante.",
+        "sabe rico caliente, pero para mí frío está delicioso una muy buena experiencia probando este capuccino."
+      ]
+    },
+    {
+      "term": "rico sabor",
+      "aspect_key_sugerido": "rico_sabor",
+      "reviews_mencion": 85,
+      "oraciones_mencion": 97,
+      "pos": 33,
+      "neg": 0,
+      "neu": 64,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "muy rico sabor, excelente calidad.",
+        "el cafe tiene un rico sabor, parece autentico de olla.",
+        "ya conocido por su rico sabor."
+      ]
+    },
+    {
+      "term": "facil",
+      "aspect_key_sugerido": "facil",
+      "reviews_mencion": 84,
+      "oraciones_mencion": 94,
+      "pos": 25,
+      "neg": 0,
+      "neu": 69,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "es de muy buen sabor m encanto su sabor ya q ew facil de disolber y muy aromatico.",
+        "es delicioso, fácil de almacenar y no cambia su sabor después de abierto.",
+        "rico sabor, fácil de preparar, sin duda compraría otro."
+      ]
+    },
+    {
+      "term": "duda",
+      "aspect_key_sugerido": "duda",
+      "reviews_mencion": 83,
+      "oraciones_mencion": 101,
+      "pos": 41,
+      "neg": 1,
+      "neu": 59,
+      "polaridad_neta": 0.952,
+      "examples": [
+        "rico sabor sin duda lo volver茅 a comprar.",
+        "de los mejores productos de nescafé, el sabor perfecto del café para mí ,sin duda lo seguiré comprando.",
+        "a mí familia le encantó muy rico, sin duda lo volvería a comprar."
+      ]
+    },
+    {
+      "term": "economico",
+      "aspect_key_sugerido": "economico",
+      "reviews_mencion": 80,
+      "oraciones_mencion": 87,
+      "pos": 39,
+      "neg": 1,
+      "neu": 47,
+      "polaridad_neta": 0.95,
+      "examples": [
+        "mismo sabor y calidad del producto en frasco, más económico.",
+        "qué es muy bueno yo lo recomiendo en esta presentación porque es más económico.",
+        "más económico por este medio."
+      ]
+    },
+    {
+      "term": "olor",
+      "aspect_key_sugerido": "olor",
+      "reviews_mencion": 78,
+      "oraciones_mencion": 99,
+      "pos": 53,
+      "neg": 0,
+      "neu": 46,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "le agregaré piloncillo para ver si mejora olor y sabor.",
+        "muy recomendable el producto olor y sabor unico.",
+        "es bastante rico, su olor a piloncillo y canela es delicioso."
+      ]
+    },
+    {
+      "term": "azucar",
+      "aspect_key_sugerido": "azucar",
+      "reviews_mencion": 74,
+      "oraciones_mencion": 89,
+      "pos": 36,
+      "neg": 0,
+      "neu": 53,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "también le tienes que poner bastante azúcar.",
+        "sabroso, lástima que tiene azúcar.",
+        "este sabor siempre me ha gustado, si no les gusta el café con azúcar y/o sabores artificiales pues no lo compren."
+      ]
+    },
+    {
+      "term": "mejor",
+      "aspect_key_sugerido": "mejor",
+      "reviews_mencion": 73,
+      "oraciones_mencion": 97,
+      "pos": 33,
+      "neg": 0,
+      "neu": 64,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "es un café soluble de marca, no es de los mejores, pero su ventaja es el aroma, según de olla.",
+        "de los mejores productos de nescafé, el sabor perfecto del café para mí ,sin duda lo seguiré comprando.",
+        "de los mejores cafés, gran sabor, aroma y calidad."
+      ]
+    },
+    {
+      "term": "casa",
+      "aspect_key_sugerido": "casa",
+      "reviews_mencion": 73,
+      "oraciones_mencion": 88,
+      "pos": 43,
+      "neg": 2,
+      "neu": 43,
+      "polaridad_neta": 0.911,
+      "examples": [
+        "ya van varias veces que lo compro a todos los de mi casa les encanta.",
+        "es mejor y un poco mas barato que estar comprando los botes de cristal, si lo quieres para oficina, para un promedio de 2 a 3 empleados, cada uno que toma poco mas de tres litros de café al día, te dura una quincena, no ",
+        "muy buen precio y a la puerta de la casa."
+      ]
+    },
+    {
+      "term": "agua",
+      "aspect_key_sugerido": "agua",
+      "reviews_mencion": 71,
+      "oraciones_mencion": 84,
+      "pos": 37,
+      "neg": 5,
+      "neu": 42,
+      "polaridad_neta": 0.762,
+      "examples": [
+        "les recomiendo que hagan un arroz con piloncillo y hechen a una taza el agua resultante de esta.",
+        "es un café con delicioso sabor a canela, muy sabroso en agua o leche.",
+        "muy suave, hay que echarle bastante a la cafetera para que sepa a café, parece agua de calcetín, es café de mala calidad, desde el color, no se vayan por la marca."
+      ]
+    },
+    {
+      "term": "dulce",
+      "aspect_key_sugerido": "dulce",
+      "reviews_mencion": 71,
+      "oraciones_mencion": 84,
+      "pos": 33,
+      "neg": 3,
+      "neu": 48,
+      "polaridad_neta": 0.833,
+      "examples": [
+        "muy rico pero desgraciadamente trae demasiado dulce.",
+        "muy dulce.",
+        "con menos dulce seria excelente."
+      ]
+    },
+    {
+      "term": "suave",
+      "aspect_key_sugerido": "suave",
+      "reviews_mencion": 70,
+      "oraciones_mencion": 102,
+      "pos": 33,
+      "neg": 4,
+      "neu": 65,
+      "polaridad_neta": 0.784,
+      "examples": [
+        "es la primera vez que lo pruebo, tiene un olor fuerte que en lo personal no es de mi agrado pero tiene sabor suave, no a café tradicional pero sabe bien.",
+        "es un caf茅 muy rico y es muy suave en fragancia, sabor inigualable.",
+        "es suave el sabor y agradable."
+      ]
+    },
+    {
+      "term": "cantidad",
+      "aspect_key_sugerido": "cantidad",
+      "reviews_mencion": 69,
+      "oraciones_mencion": 79,
+      "pos": 49,
+      "neg": 0,
+      "neu": 30,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "me agrada el sabor, con una buena cantidad de producto.",
+        "me parecio algo chico para el precio, no se si sea la cantidad que ahi se menciona,.",
+        "buenas cantidad por el precio."
+      ]
+    },
+    {
+      "term": "manana",
+      "aspect_key_sugerido": "manana",
+      "reviews_mencion": 67,
+      "oraciones_mencion": 78,
+      "pos": 36,
+      "neg": 1,
+      "neu": 41,
+      "polaridad_neta": 0.946,
+      "examples": [
+        "el sabor y aroma es delicioso, siempre lo consumo en las mañanas.",
+        "buen producto de buen sabor para preparar un buen café por la mañana antes de ir a la escuela,.",
+        "buen café para todas las mañanas."
+      ]
+    },
+    {
+      "term": "gusto",
+      "aspect_key_sugerido": "gusto",
+      "reviews_mencion": 64,
+      "oraciones_mencion": 81,
+      "pos": 28,
+      "neg": 2,
+      "neu": 51,
+      "polaridad_neta": 0.867,
+      "examples": [
+        "supongo es cada gusto.",
+        "recomendar este café es un verdadero gusto, al prepararlo despide un aroma delicioso.",
+        "el mejor que he comprado, tiene un gran sabor, con un gusto a chocolate ideal para tomar a cualquier hora, la presentación de 1kg solo la he visto aquí en mercado libre, el envasado es perfecto lo que hace que conserve s"
+      ]
+    },
+    {
+      "term": "bolsa",
+      "aspect_key_sugerido": "bolsa",
+      "reviews_mencion": 64,
+      "oraciones_mencion": 74,
+      "pos": 26,
+      "neg": 2,
+      "neu": 46,
+      "polaridad_neta": 0.857,
+      "examples": [
+        "rico aroma, muy buen sabor, quizá un poco falto de cuerpo pero excelente relación calidad/precio ojalá pudieran mejorar la bolsa de empaque por una resellable con zipper ya que el alambre q trae dura muy poco y termina r",
+        "considerando que la bolsa es de 1 kg, la relación entre su precio y el valor percibido es excelente.",
+        "el producto me encantó, pedí 2 bolsas y es el café que más me gusta, está delicioso!!."
+      ]
+    },
+    {
+      "term": "capuchino",
+      "aspect_key_sugerido": "capuchino",
+      "reviews_mencion": 58,
+      "oraciones_mencion": 71,
+      "pos": 29,
+      "neg": 3,
+      "neu": 39,
+      "polaridad_neta": 0.812,
+      "examples": [
+        "el mejor capuchino del mundo, lo he pedido muchas veces, me encanta.",
+        "el producto me pareció muy bueno al igual que el de sabor capuchino moka.",
+        "llegó en perfecto estado , es el original, tiene un sabor delicioso yo lo prefiero el capuchino en frío con mucho hielo para esta temporada es excelente."
+      ]
+    },
+    {
+      "term": "opcion",
+      "aspect_key_sugerido": "opcion",
+      "reviews_mencion": 58,
+      "oraciones_mencion": 64,
+      "pos": 47,
+      "neg": 1,
+      "neu": 16,
+      "polaridad_neta": 0.958,
+      "examples": [
+        "buena opción para iniciar el día.",
+        "es buena opción excelente sabor y buen tamaño.",
+        "excelente opción."
+      ]
+    },
+    {
+      "term": "practico",
+      "aspect_key_sugerido": "practico",
+      "reviews_mencion": 57,
+      "oraciones_mencion": 60,
+      "pos": 29,
+      "neg": 0,
+      "neu": 31,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "muy exquisito y practico.",
+        "muy económico y práctica está presentacion de nescafe.",
+        "súper rico y bien practico excelente."
+      ]
+    },
+    {
+      "term": "oferta",
+      "aspect_key_sugerido": "oferta",
+      "reviews_mencion": 55,
+      "oraciones_mencion": 59,
+      "pos": 39,
+      "neg": 0,
+      "neu": 20,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "compré porque me salió en oferta.",
+        "el café ha subido mucho de precio, esta oferta estuvo excelente.",
+        "excelente oferta y calidad del producto."
+      ]
+    },
+    {
+      "term": "buenisimo",
+      "aspect_key_sugerido": "buenisimo",
+      "reviews_mencion": 53,
+      "oraciones_mencion": 65,
+      "pos": 17,
+      "neg": 0,
+      "neu": 48,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "buenisimo.",
+        "buenísimo y el precio justo.",
+        "buenisimo."
+      ]
+    },
+    {
+      "term": "pena",
+      "aspect_key_sugerido": "pena",
+      "reviews_mencion": 51,
+      "oraciones_mencion": 64,
+      "pos": 19,
+      "neg": 2,
+      "neu": 43,
+      "polaridad_neta": 0.81,
+      "examples": [
+        "no vale la pena hay presentaciones de nescafe más grandes y más baratas.",
+        "exelente calidad de café, vale la pena!!!.",
+        "es un café rico, no el mejor, pero vale la pena."
+      ]
+    },
+    {
+      "term": "cafetero",
+      "aspect_key_sugerido": "cafetero",
+      "reviews_mencion": 50,
+      "oraciones_mencion": 68,
+      "pos": 44,
+      "neg": 4,
+      "neu": 20,
+      "polaridad_neta": 0.833,
+      "examples": [
+        "buen café, delicioso aroma, para una cafetera de 12 tazas le pongo 4 1/2 cucharadas y queda muy bien.",
+        "el café es muy bueno preparándolo cómo café de olla y en la cafetera como capuccino y latte, pero el americano no es el mejor sabor.",
+        "soy cafetera de corazón y tengo mucho tiempo usándolo , lo recomiendo."
+      ]
+    },
+    {
+      "term": "chocolate",
+      "aspect_key_sugerido": "chocolate",
+      "reviews_mencion": 49,
+      "oraciones_mencion": 51,
+      "pos": 20,
+      "neg": 2,
+      "neu": 29,
+      "polaridad_neta": 0.818,
+      "examples": [
+        "el mejor que he comprado, tiene un gran sabor, con un gusto a chocolate ideal para tomar a cualquier hora, la presentación de 1kg solo la he visto aquí en mercado libre, el envasado es perfecto lo que hace que conserve s",
+        "me gustó más el de chocolate.",
+        "el mejor que he comprado, tiene un gran sabor, con un gusto a chocolate ideal para tomar a cualquier hora, la presentación de 1kg solo la he visto aquí en mercado libre, el envasado es perfecto lo que hace que conserve s"
+      ]
+    },
+    {
+      "term": "taza",
+      "aspect_key_sugerido": "taza",
+      "reviews_mencion": 48,
+      "oraciones_mencion": 58,
+      "pos": 25,
+      "neg": 3,
+      "neu": 30,
+      "polaridad_neta": 0.786,
+      "examples": [
+        "les recomiendo que hagan un arroz con piloncillo y hechen a una taza el agua resultante de esta.",
+        "rinde para muchas tazas de café.",
+        "excelente llegó al tiempo establecido y disfrutando de mis tazas de café."
+      ]
+    },
+    {
+      "term": "clasico",
+      "aspect_key_sugerido": "clasico",
+      "reviews_mencion": 48,
+      "oraciones_mencion": 52,
+      "pos": 15,
+      "neg": 2,
+      "neu": 35,
+      "polaridad_neta": 0.765,
+      "examples": [
+        "aunque eso sí a buen precio, solo a los que les gusta que tenga sabor canela les encantará, a mi la verdad no me gustó, después de probarlo prefiero alguno más clásico en sabor y fuerte.",
+        "sabor clásico, rico y muy rendidor por el tamaño.",
+        "exelente nescafé clásico que me ahorra mucho dinero y está súper mejor."
+      ]
+    },
+    {
+      "term": "empaquetado",
+      "aspect_key_sugerido": "empaquetado",
+      "reviews_mencion": 48,
+      "oraciones_mencion": 51,
+      "pos": 47,
+      "neg": 1,
+      "neu": 3,
+      "polaridad_neta": 0.958,
+      "examples": [
+        "buen precio y bien empaquetado.",
+        "bien empaquetado.",
+        "excelente producto, muy bien empaquetado."
+      ]
+    },
+    {
+      "term": "molido",
+      "aspect_key_sugerido": "molido",
+      "reviews_mencion": 47,
+      "oraciones_mencion": 57,
+      "pos": 24,
+      "neg": 5,
+      "neu": 28,
+      "polaridad_neta": 0.655,
+      "examples": [
+        "delicioso lo uso en cafetera tipo expresso y el molido es perfecto y fresco gracias a su válvula.",
+        "es bueno pero viene muy molido y se pone mucho en el filtro de sale.",
+        "para mí es el mejor,es delicioso y lo enviaron molido como lo solicité."
+      ]
+    },
+    {
+      "term": "familia",
+      "aspect_key_sugerido": "familia",
+      "reviews_mencion": 46,
+      "oraciones_mencion": 57,
+      "pos": 19,
+      "neg": 0,
+      "neu": 38,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "muy sabroso es que de la familia.",
+        "a mí familia le encantó muy rico, sin duda lo volvería a comprar.",
+        "a mí familia le encantó muy rico, sin duda lo volvería a comprar."
+      ]
+    },
+    {
+      "term": "unico",
+      "aspect_key_sugerido": "unico",
+      "reviews_mencion": 46,
+      "oraciones_mencion": 55,
+      "pos": 15,
+      "neg": 5,
+      "neu": 35,
+      "polaridad_neta": 0.5,
+      "examples": [
+        "muy recomendable el producto olor y sabor unico.",
+        "nescafé clásico pues es garantía un sabor único.",
+        "es muy rico y tiene un sabor muy único."
+      ]
+    },
+    {
+      "term": "cafe rico",
+      "aspect_key_sugerido": "cafe_rico",
+      "reviews_mencion": 45,
+      "oraciones_mencion": 60,
+      "pos": 21,
+      "neg": 0,
+      "neu": 39,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "es un cafe muy rico.",
+        "un gran café muy rico, lo importante es que llegó perfectamente sellado y nada maltratado eso da la seguridad del producto completamente original y mismo sabor.",
+        "es un café muy rico y a un precio excelente."
+      ]
+    },
+    {
+      "term": "bote",
+      "aspect_key_sugerido": "bote",
+      "reviews_mencion": 45,
+      "oraciones_mencion": 53,
+      "pos": 22,
+      "neg": 2,
+      "neu": 29,
+      "polaridad_neta": 0.833,
+      "examples": [
+        "muy bien muy rico original y si está grande le bote.",
+        "es mejor y un poco mas barato que estar comprando los botes de cristal, si lo quieres para oficina, para un promedio de 2 a 3 empleados, cada uno que toma poco mas de tres litros de café al día, te dura una quincena, no ",
+        "cada bote me duró dos meses aproximadamente para dos personas."
+      ]
+    },
+    {
+      "term": "empaque",
+      "aspect_key_sugerido": "empaque",
+      "reviews_mencion": 44,
+      "oraciones_mencion": 51,
+      "pos": 30,
+      "neg": 3,
+      "neu": 18,
+      "polaridad_neta": 0.818,
+      "examples": [
+        "el empaque en óptimas confío es, su sabor me gusta mucho, lo volveré a comprar.",
+        "muy buen sabor ,el empaque bien cuidado ,olor super deli,buen tamaño 10de10.",
+        "es un producto que deja mucho que desear, desde el empaque se ve pirata y el sabor es malo no sabe ni un poco a nescafe , la verdad hice una mala compra."
+      ]
+    },
+    {
+      "term": "cuerpo",
+      "aspect_key_sugerido": "cuerpo",
+      "reviews_mencion": 43,
+      "oraciones_mencion": 56,
+      "pos": 27,
+      "neg": 0,
+      "neu": 29,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "rico aroma, muy buen sabor, quizá un poco falto de cuerpo pero excelente relación calidad/precio ojalá pudieran mejorar la bolsa de empaque por una resellable con zipper ya que el alambre q trae dura muy poco y termina r",
+        "esperaba más, carece de cuerpo!.",
+        "de lo mejor que he consumido, gran aroma, cuerpo, agradable sabor, buen precio, súper."
+      ]
+    },
+    {
+      "term": "super rico",
+      "aspect_key_sugerido": "super_rico",
+      "reviews_mencion": 43,
+      "oraciones_mencion": 51,
+      "pos": 13,
+      "neg": 0,
+      "neu": 38,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "super rico.",
+        "super rico.",
+        "super rico y no viene húmedo."
+      ]
+    },
+    {
+      "term": "caducidad",
+      "aspect_key_sugerido": "caducidad",
+      "reviews_mencion": 43,
+      "oraciones_mencion": 47,
+      "pos": 34,
+      "neg": 1,
+      "neu": 12,
+      "polaridad_neta": 0.943,
+      "examples": [
+        "buen producto y fecha de caducidad.",
+        "producto con buena fecha de caducidad y en buen estado muy buen sabor.",
+        "original y con fecha de caducidad."
+      ]
+    },
+    {
+      "term": "excelente aroma",
+      "aspect_key_sugerido": "excelente_aroma",
+      "reviews_mencion": 42,
+      "oraciones_mencion": 56,
+      "pos": 56,
+      "neg": 0,
+      "neu": 0,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "excelente aroma.",
+        "excelente aroma y sabor.",
+        "excelente aroma del café."
+      ]
+    },
+    {
+      "term": "ano",
+      "aspect_key_sugerido": "ano",
+      "reviews_mencion": 42,
+      "oraciones_mencion": 56,
+      "pos": 23,
+      "neg": 0,
+      "neu": 33,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "muy bien café, años comprando y me alegra que vendan esta presentación en mercado libre.",
+        "excelente mi segundo kilo en lo que va del año y los que faltan por venir muy rico y aromático al momento de preparar.",
+        "tengo varios años comprándolo me gusta mucho el sabor , tambien lo ofrezco para mis clientas y siempre me dicen que sabe muy rico, que donde lo compro."
+      ]
+    },
+    {
+      "term": "vainilla",
+      "aspect_key_sugerido": "vainilla",
+      "reviews_mencion": 42,
+      "oraciones_mencion": 52,
+      "pos": 17,
+      "neg": 2,
+      "neu": 33,
+      "polaridad_neta": 0.789,
+      "examples": [
+        "muy rico el sabor a vainilla es muy rico suave y aromático, me encanta.",
+        "me encantó, está muy muy rico , si sabe a vainilla , es un sabor exquisito , solo q me hubiera gustado q al prepararlo estuviera más espumoso.",
+        "sabe muy rico el café capuchino sabor vainilla."
+      ]
+    },
+    {
+      "term": "sabor rico",
+      "aspect_key_sugerido": "sabor_rico",
+      "reviews_mencion": 41,
+      "oraciones_mencion": 48,
+      "pos": 11,
+      "neg": 0,
+      "neu": 37,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "me encantó el sabor, muy rico.",
+        "siempre me ha gustado su sabor muy rico.",
+        "sabor muy rico, tamaño grande, llegó bien."
+      ]
+    },
+    {
+      "term": "delicioso sabor",
+      "aspect_key_sugerido": "delicioso_sabor",
+      "reviews_mencion": 41,
+      "oraciones_mencion": 47,
+      "pos": 7,
+      "neg": 0,
+      "neu": 40,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "delicioso sabor a café de olla, esa carmelita le da un delicioso sabor especial.",
+        "delicioso sabor a café de olla.",
+        "delicioso sabor y su aroma muy agradable."
+      ]
+    },
+    {
+      "term": "gramo",
+      "aspect_key_sugerido": "gramo",
+      "reviews_mencion": 41,
+      "oraciones_mencion": 42,
+      "pos": 13,
+      "neg": 2,
+      "neu": 27,
+      "polaridad_neta": 0.733,
+      "examples": [
+        "pues bueno el precio los productos nescafe ya son muy conocidos pero para quien no sepa el frasco de 170 gramos es el tamaño más común este esta bueno es estilo de olla pero es soluble y trae un toquesito de canela.",
+        "para mí es muy pequeño en las tiendas el mismo producto está al mismo precio pero más grande no vi los gramos por eso no lo devuelvo .",
+        "el bote de café no trae los 400 gramos que dicen,."
+      ]
+    },
+    {
+      "term": "fresco",
+      "aspect_key_sugerido": "fresco",
+      "reviews_mencion": 39,
+      "oraciones_mencion": 49,
+      "pos": 22,
+      "neg": 3,
+      "neu": 24,
+      "polaridad_neta": 0.76,
+      "examples": [
+        "delicioso lo uso en cafetera tipo expresso y el molido es perfecto y fresco gracias a su válvula.",
+        "bueno, es un café que se antoja saborearlo, especialmente en los tiempos frescos, lluviosos, y siempre al iniciar o al terminar el día.",
+        "lo seguimos comprando, porque viene súper fresco y molido perfecto para no tapar la cafetera."
+      ]
+    },
+    {
+      "term": "caro",
+      "aspect_key_sugerido": "caro",
+      "reviews_mencion": 39,
+      "oraciones_mencion": 45,
+      "pos": 15,
+      "neg": 1,
+      "neu": 29,
+      "polaridad_neta": 0.875,
+      "examples": [
+        "esta bueno, pero sale un poco caro.",
+        "muy caro para la cantidad se puede conseguir mas barato en otras tiendas.",
+        "demasiado caro."
+      ]
+    },
+    {
+      "term": "empacado",
+      "aspect_key_sugerido": "empacado",
+      "reviews_mencion": 39,
+      "oraciones_mencion": 43,
+      "pos": 40,
+      "neg": 0,
+      "neu": 3,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "bien empacado y buen precio, siempre compro y nunca he tenido problema.",
+        "buen empacados ninguno se rompió .",
+        "muy bien empacado, me gustó, compra segura."
+      ]
+    },
+    {
+      "term": "caf",
+      "aspect_key_sugerido": "caf",
+      "reviews_mencion": 39,
+      "oraciones_mencion": 42,
+      "pos": 15,
+      "neg": 0,
+      "neu": 27,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "exelente caf茅.",
+        "excelente caf茅.",
+        "este caf茅 me encanta."
+      ]
+    },
+    {
+      "term": "mercado",
+      "aspect_key_sugerido": "mercado",
+      "reviews_mencion": 38,
+      "oraciones_mencion": 48,
+      "pos": 18,
+      "neg": 0,
+      "neu": 30,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "es muy rico este caf茅 lo pido x mercado libre x ser m谩s barato.",
+        "hola mercado libre me encantó el café un aroma muy rica y está riquísimo el café queda riquísimo lo recomiendo mucho.",
+        "simplemente el mejor soluble del mercado."
+      ]
+    },
+    {
+      "term": "consumo",
+      "aspect_key_sugerido": "consumo",
+      "reviews_mencion": 38,
+      "oraciones_mencion": 42,
+      "pos": 20,
+      "neg": 2,
+      "neu": 20,
+      "polaridad_neta": 0.818,
+      "examples": [
+        "lo consumo seguido.",
+        "el sabor y aroma es delicioso, siempre lo consumo en las mañanas.",
+        "producto de consumo frecuente."
+      ]
+    },
+    {
+      "term": "relacion",
+      "aspect_key_sugerido": "relacion",
+      "reviews_mencion": 37,
+      "oraciones_mencion": 43,
+      "pos": 38,
+      "neg": 0,
+      "neu": 5,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "buena relación calidad precio.",
+        "buena relación calidad precio.",
+        "rico aroma, muy buen sabor, quizá un poco falto de cuerpo pero excelente relación calidad/precio ojalá pudieran mejorar la bolsa de empaque por una resellable con zipper ya que el alambre q trae dura muy poco y termina r"
+      ]
+    },
+    {
+      "term": "costo",
+      "aspect_key_sugerido": "costo",
+      "reviews_mencion": 36,
+      "oraciones_mencion": 41,
+      "pos": 25,
+      "neg": 0,
+      "neu": 16,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "perfecto por el costo, crei q era más chico pero es de buen tamaño, la verdad este café es delicioso y llegó super rápido.",
+        "muy rico y el costo es perfecto.",
+        "llegó en buenas condiciones y sellado, excelente costo y calidad."
+      ]
+    },
+    {
+      "term": "execelente",
+      "aspect_key_sugerido": "execelente",
+      "reviews_mencion": 36,
+      "oraciones_mencion": 37,
+      "pos": 11,
+      "neg": 0,
+      "neu": 26,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "bueno execelente 馃憣馃挴馃挴馃挴馃挴.",
+        "delicioso, ni necesita azúcar por si gran sabor a canela , execelente precio y me sirve para miñana estar al 100, muy rico.",
+        "execelente sabor sin agregar nada de azúcar, muy buen precio, rinde mucho."
+      ]
+    },
+    {
+      "term": "aromatico",
+      "aspect_key_sugerido": "aromatico",
+      "reviews_mencion": 35,
+      "oraciones_mencion": 49,
+      "pos": 19,
+      "neg": 2,
+      "neu": 28,
+      "polaridad_neta": 0.81,
+      "examples": [
+        "es de muy buen sabor m encanto su sabor ya q ew facil de disolber y muy aromatico.",
+        "es aromático, agradable, presente, pero no tan fuerte en cuanto al sabor, sin problemas para tomarlo y disfrutarlo.",
+        "buen café, poca o nula acidez, pensando en la parroquia tal vez en lo personal, le falto intensudad aromática, sin embargo muy bueno."
+      ]
+    },
+    {
+      "term": "lata",
+      "aspect_key_sugerido": "lata",
+      "reviews_mencion": 35,
+      "oraciones_mencion": 38,
+      "pos": 15,
+      "neg": 0,
+      "neu": 23,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "excelente producto la lata si viene llena.",
+        "conserva el sabor de nescafé en esta presentación en lata! muy recomendable.",
+        "siento que es más lata que el producto que trae."
+      ]
+    },
+    {
+      "term": "amargo",
+      "aspect_key_sugerido": "amargo",
+      "reviews_mencion": 35,
+      "oraciones_mencion": 37,
+      "pos": 17,
+      "neg": 0,
+      "neu": 20,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "un café fuerte, amargo y con buen aroma .",
+        "me encanta ese café y tiene muy buen sabor sin ser amargo.",
+        "el cafe estaba extremadamente amargo, no creo que sea un producto original."
+      ]
+    },
+    {
+      "term": "cafe favorito",
+      "aspect_key_sugerido": "cafe_favorito",
+      "reviews_mencion": 34,
+      "oraciones_mencion": 41,
+      "pos": 4,
+      "neg": 0,
+      "neu": 37,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "mi café favorito.",
+        "mi café favorito.",
+        "mi café favorito siempre aunque me sorprendió la nueva presentación, prefería la anterior."
+      ]
+    },
+    {
+      "term": "tostado",
+      "aspect_key_sugerido": "tostado",
+      "reviews_mencion": 33,
+      "oraciones_mencion": 43,
+      "pos": 8,
+      "neg": 1,
+      "neu": 34,
+      "polaridad_neta": 0.778,
+      "examples": [
+        "buscaba un café con un tostado intenso, de amargura pronunciada y acides baja en otras marcas que parecían mejores, pero esta fue la que más me ha gustado.",
+        "muy rico y tostado.",
+        "más tostado de lo que yo preferiría pero me gustó mucho."
+      ]
+    },
+    {
+      "term": "sabor delicioso",
+      "aspect_key_sugerido": "sabor_delicioso",
+      "reviews_mencion": 33,
+      "oraciones_mencion": 41,
+      "pos": 15,
+      "neg": 2,
+      "neu": 24,
+      "polaridad_neta": 0.765,
+      "examples": [
+        "un sabor delicioso.",
+        "sabor muy delicioso, ya dulce, muy buena compra.",
+        "llegó en perfecto estado , es el original, tiene un sabor delicioso yo lo prefiero el capuchino en frío con mucho hielo para esta temporada es excelente."
+      ]
+    },
+    {
+      "term": "durar",
+      "aspect_key_sugerido": "durar",
+      "reviews_mencion": 33,
+      "oraciones_mencion": 39,
+      "pos": 13,
+      "neg": 0,
+      "neu": 26,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "nos duro un montón y sabe bien rico el café de olla.",
+        "es mejor y un poco mas barato que estar comprando los botes de cristal, si lo quieres para oficina, para un promedio de 2 a 3 empleados, cada uno que toma poco mas de tres litros de café al día, te dura una quincena, no ",
+        "cada bote me duró dos meses aproximadamente para dos personas."
+      ]
+    },
+    {
+      "term": "tienda",
+      "aspect_key_sugerido": "tienda",
+      "reviews_mencion": 33,
+      "oraciones_mencion": 36,
+      "pos": 20,
+      "neg": 0,
+      "neu": 16,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "el precio es el mismo de otras tiendas lo recomiendo.",
+        "para mí es muy pequeño en las tiendas el mismo producto está al mismo precio pero más grande no vi los gramos por eso no lo devuelvo .",
+        "buen sabor, mejor precio que en las tiendas."
+      ]
+    },
+    {
+      "term": "fecha",
+      "aspect_key_sugerido": "fecha",
+      "reviews_mencion": 32,
+      "oraciones_mencion": 38,
+      "pos": 22,
+      "neg": 1,
+      "neu": 15,
+      "polaridad_neta": 0.913,
+      "examples": [
+        "buen producto y fecha de caducidad.",
+        "producto con buena fecha de caducidad y en buen estado muy buen sabor.",
+        "original y con fecha de caducidad."
+      ]
+    },
+    {
+      "term": "producto original",
+      "aspect_key_sugerido": "producto_original",
+      "reviews_mencion": 32,
+      "oraciones_mencion": 37,
+      "pos": 11,
+      "neg": 0,
+      "neu": 26,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "un gran café muy rico, lo importante es que llegó perfectamente sellado y nada maltratado eso da la seguridad del producto completamente original y mismo sabor.",
+        "producto original, muy buen sabor y textura de los granos.",
+        "producto original."
+      ]
+    },
+    {
+      "term": "normal",
+      "aspect_key_sugerido": "normal",
+      "reviews_mencion": 32,
+      "oraciones_mencion": 37,
+      "pos": 3,
+      "neg": 25,
+      "neu": 9,
+      "polaridad_neta": -0.786,
+      "examples": [
+        "nada del otro mundo, un descafeinado normal.",
+        "café con buen aroma pero muy ligero de sabor, tienes que poner café mas de lo normal para tener un buen sabor, pero para las personas que no les gusta cargado seria excelente.",
+        "el cafe tiene un sabor muy rico que se puede hacer de distintas maneras, lo he intentado en cafetera normal, cafetera italiana, cafetera francesa y en todas da un cafe muy rico, se puede tomar frio o caliente, con leche "
+      ]
+    },
+    {
+      "term": "consistencia",
+      "aspect_key_sugerido": "consistencia",
+      "reviews_mencion": 32,
+      "oraciones_mencion": 36,
+      "pos": 20,
+      "neg": 0,
+      "neu": 16,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "me encanta su sabor y consistencia.",
+        "me encantó el sabor, tiene una consistencia única y llegó antes de tiempo ⏱️.",
+        "exquisito sabor, consistencia e ideal para el frío."
+      ]
+    },
+    {
+      "term": "delicioso cafe",
+      "aspect_key_sugerido": "delicioso_cafe",
+      "reviews_mencion": 31,
+      "oraciones_mencion": 43,
+      "pos": 9,
+      "neg": 0,
+      "neu": 34,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "delicioso cafe.",
+        "delicioso café con un aroma muy rico.",
+        "delicioso café para toda hora del día."
+      ]
+    },
+    {
+      "term": "ligero",
+      "aspect_key_sugerido": "ligero",
+      "reviews_mencion": 31,
+      "oraciones_mencion": 40,
+      "pos": 16,
+      "neg": 2,
+      "neu": 22,
+      "polaridad_neta": 0.778,
+      "examples": [
+        "bastante ligero este café.",
+        "es producto ligero de sabor pero lo encontramos mucho más barato en los supermercados.",
+        "lo volvería a comprar definitivamente, tiene un sabor muy bueno no es tan ligero, para los amantes del café es ideal."
+      ]
+    },
+    {
+      "term": "soluble",
+      "aspect_key_sugerido": "soluble",
+      "reviews_mencion": 30,
+      "oraciones_mencion": 32,
+      "pos": 15,
+      "neg": 0,
+      "neu": 17,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "es un café soluble de marca, no es de los mejores, pero su ventaja es el aroma, según de olla.",
+        "pues bueno el precio los productos nescafe ya son muy conocidos pero para quien no sepa el frasco de 170 gramos es el tamaño más común este esta bueno es estilo de olla pero es soluble y trae un toquesito de canela.",
+        "si te gusta el sabor fuerte del caf茅 soluble, est谩 bien est谩 opci贸n."
+      ]
+    },
+    {
+      "term": "accesible",
+      "aspect_key_sugerido": "accesible",
+      "reviews_mencion": 29,
+      "oraciones_mencion": 34,
+      "pos": 15,
+      "neg": 0,
+      "neu": 19,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "lo compré porque se me hace un tamaño accesible y a un buen precio.",
+        "tamaño fam y precio accesible.",
+        "de buen saber y precio accesible."
+      ]
+    },
+    {
+      "term": "expreso",
+      "aspect_key_sugerido": "expreso",
+      "reviews_mencion": 29,
+      "oraciones_mencion": 31,
+      "pos": 18,
+      "neg": 2,
+      "neu": 11,
+      "polaridad_neta": 0.8,
+      "examples": [
+        "exclente producto bueno para los expresos.",
+        "estaba buscando uno que tuviera la textura para mi máquina de expresos y este café lo tiene y tiene muy buen sabor.",
+        "estaba buscando uno que tuviera la textura para mi máquina de expresos y este café lo tiene y tiene muy buen sabor."
+      ]
+    },
+    {
+      "term": "mejor cafe",
+      "aspect_key_sugerido": "mejor_cafe",
+      "reviews_mencion": 28,
+      "oraciones_mencion": 38,
+      "pos": 12,
+      "neg": 0,
+      "neu": 26,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "de los mejores cafés, gran sabor, aroma y calidad.",
+        "de los mejores cafés que he probado, llego rápido.",
+        "producto en perfectas condiciones, de los mejores cafés que he comprado."
+      ]
+    },
+    {
+      "term": "sabor fuerte",
+      "aspect_key_sugerido": "sabor_fuerte",
+      "reviews_mencion": 28,
+      "oraciones_mencion": 31,
+      "pos": 14,
+      "neg": 0,
+      "neu": 17,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "si te gusta el sabor fuerte del caf茅 soluble, est谩 bien est谩 opci贸n.",
+        "el cafe es muy suave, tiene buen aroma y al final te deja un sabor fuerte en la lengua, buen cafe para aquellos que no les gusta muy cargado.",
+        "sabor fuerte para despertar en el dia."
+      ]
+    },
+    {
+      "term": "bebida",
+      "aspect_key_sugerido": "bebida",
+      "reviews_mencion": 28,
+      "oraciones_mencion": 30,
+      "pos": 19,
+      "neg": 0,
+      "neu": 11,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "excelente sabor y dura por mas tiempo debido a la cantidad que trae de polvo para bebida.",
+        "la verdad me sorprendió mucho porque pensé que tendría que ponerle mucho producto pero no es así, no deja tu bebida súper dulce y no tienes que usar mucho producto para obtener un buen sabor.",
+        "excelente producto, sabor agradable no requiere de endulzante adicional, con su medida es perfecta para una bebida excelente."
+      ]
+    },
+    {
+      "term": "veracruz",
+      "aspect_key_sugerido": "veracruz",
+      "reviews_mencion": 27,
+      "oraciones_mencion": 54,
+      "pos": 14,
+      "neg": 0,
+      "neu": 40,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "excelente sabor, lo probé en la parroquia original que está en el malecón del puerto de veracruz y quedé encantado.",
+        "como el de veracruz, depende mucho del tipo de preparación en máquina para expresso es delicioso, para la prensa francesa tienes que ocupar bastante! pero un café rico.",
+        "ya habia porbadonotros cafés de veracruz, muy barato y muy bueno el café, ahora mismo otras marcas de acfebsin muy muy caras y pues mejor apoyar el café nacional."
+      ]
+    },
+    {
+      "term": "delicia",
+      "aspect_key_sugerido": "delicia",
+      "reviews_mencion": 27,
+      "oraciones_mencion": 34,
+      "pos": 9,
+      "neg": 0,
+      "neu": 25,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "una delicia para empezar el día adia.",
+        "una delicia, me encanta.",
+        "muy recomendable su calidad, una delicia para los amantes del café."
+      ]
+    },
+    {
+      "term": "libre",
+      "aspect_key_sugerido": "libre",
+      "reviews_mencion": 27,
+      "oraciones_mencion": 34,
+      "pos": 15,
+      "neg": 0,
+      "neu": 19,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "es muy rico este caf茅 lo pido x mercado libre x ser m谩s barato.",
+        "hola mercado libre me encantó el café un aroma muy rica y está riquísimo el café queda riquísimo lo recomiendo mucho.",
+        "el mejor que he comprado, tiene un gran sabor, con un gusto a chocolate ideal para tomar a cualquier hora, la presentación de 1kg solo la he visto aquí en mercado libre, el envasado es perfecto lo que hace que conserve s"
+      ]
+    },
+    {
+      "term": "amante",
+      "aspect_key_sugerido": "amante",
+      "reviews_mencion": 26,
+      "oraciones_mencion": 33,
+      "pos": 22,
+      "neg": 0,
+      "neu": 11,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "lo volvería a comprar definitivamente, tiene un sabor muy bueno no es tan ligero, para los amantes del café es ideal.",
+        "el café es demasiado rico perfecto para los amantes de café, ya que el sabor es muy concentrado.",
+        "para los amantes del café."
+      ]
+    },
+    {
+      "term": "personal",
+      "aspect_key_sugerido": "personal",
+      "reviews_mencion": 26,
+      "oraciones_mencion": 32,
+      "pos": 7,
+      "neg": 2,
+      "neu": 23,
+      "polaridad_neta": 0.556,
+      "examples": [
+        "es la primera vez q lo pruebo y no fue de mi agrado opinión personal.",
+        "es la primera vez que lo pruebo, tiene un olor fuerte que en lo personal no es de mi agrado pero tiene sabor suave, no a café tradicional pero sabe bien.",
+        "en lo personal, me gusta mucho este sabor."
+      ]
+    },
+    {
+      "term": "supermercado",
+      "aspect_key_sugerido": "supermercado",
+      "reviews_mencion": 26,
+      "oraciones_mencion": 30,
+      "pos": 10,
+      "neg": 5,
+      "neu": 15,
+      "polaridad_neta": 0.333,
+      "examples": [
+        "el tama帽o correcto, lo compr茅 a precio mucho menor que en los supermercados.",
+        "es producto ligero de sabor pero lo encontramos mucho más barato en los supermercados.",
+        "mejor que en el supermercado."
+      ]
+    },
+    {
+      "term": "diario",
+      "aspect_key_sugerido": "diario",
+      "reviews_mencion": 26,
+      "oraciones_mencion": 30,
+      "pos": 17,
+      "neg": 1,
+      "neu": 12,
+      "polaridad_neta": 0.889,
+      "examples": [
+        "excelente producto , sabe muy rico es el café que tomo diario.",
+        "quedé más que satisfecha, pero con ganas que vendan alguna más grande ya que en mi hogar el café se consume diario.",
+        "llevo años comprando el café, es bueno para el café diario por las mañanas o las tardes."
+      ]
+    },
+    {
+      "term": "medida",
+      "aspect_key_sugerido": "medida",
+      "reviews_mencion": 26,
+      "oraciones_mencion": 28,
+      "pos": 16,
+      "neg": 0,
+      "neu": 12,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "pero si le puse menos de la medida lo sentí muy dulce.",
+        "yo empleo una medida y media en una taza de 300 ml.",
+        "con una medida te preparas una rica tasa de cappuccino."
+      ]
+    },
+    {
+      "term": "deli",
+      "aspect_key_sugerido": "deli",
+      "reviews_mencion": 25,
+      "oraciones_mencion": 32,
+      "pos": 8,
+      "neg": 0,
+      "neu": 24,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "me gusta mucho el sabor de café y canela, sade deli!!.",
+        "muy buen sabor ,el empaque bien cuidado ,olor super deli,buen tamaño 10de10.",
+        "me encantó su sabor,esta deli."
+      ]
+    },
+    {
+      "term": "moka",
+      "aspect_key_sugerido": "moka",
+      "reviews_mencion": 25,
+      "oraciones_mencion": 32,
+      "pos": 14,
+      "neg": 2,
+      "neu": 16,
+      "polaridad_neta": 0.75,
+      "examples": [
+        "hace años que tomo este café porque es muy muy bueno, en cafetera o moka siempre sabe muy bien .",
+        "me encantó quiero probar moka.",
+        "pero me gustó mas el moka esta mejor el sabor."
+      ]
+    },
+    {
+      "term": "cremoso",
+      "aspect_key_sugerido": "cremoso",
+      "reviews_mencion": 24,
+      "oraciones_mencion": 29,
+      "pos": 8,
+      "neg": 0,
+      "neu": 21,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "sabe riquísimo y sabe cremoso y de buen sabor.",
+        "delicioso, cremoso no necesita azúcar.",
+        "es muy rico y cremoso, rinde muchísimo ."
+      ]
+    },
+    {
+      "term": "perfecto condicion",
+      "aspect_key_sugerido": "perfecto_condicion",
+      "reviews_mencion": 24,
+      "oraciones_mencion": 26,
+      "pos": 26,
+      "neg": 0,
+      "neu": 0,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "me lleg贸 en perfectas condiciones.",
+        "en perfectas condiciones!!!.",
+        "producto en perfectas condiciones, de los mejores cafés que he comprado."
+      ]
+    },
+    {
+      "term": "protegido",
+      "aspect_key_sugerido": "protegido",
+      "reviews_mencion": 24,
+      "oraciones_mencion": 24,
+      "pos": 21,
+      "neg": 0,
+      "neu": 3,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "muy buen producto, el café venía protegido, junto con otro más que compre, lo recibí bien, venias en muy buenas condiciones, lo recomiendo.",
+        "llegó bien protegido y sin detalles.",
+        ", aparte lo envían muy protegido para no dañarse."
+      ]
+    },
+    {
+      "term": "parroquia",
+      "aspect_key_sugerido": "parroquia",
+      "reviews_mencion": 23,
+      "oraciones_mencion": 46,
+      "pos": 22,
+      "neg": 0,
+      "neu": 24,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "excelente sabor, lo probé en la parroquia original que está en el malecón del puerto de veracruz y quedé encantado.",
+        "buen café, poca o nula acidez, pensando en la parroquia tal vez en lo personal, le falto intensudad aromática, sin embargo muy bueno.",
+        "es muy rico lo recomiendo ampliamente yo cada que voy a tuxpan compro y consumo en la parroquia me encanta este café compren en vdd les gustara."
+      ]
+    },
+    {
+      "term": "consumir",
+      "aspect_key_sugerido": "consumir",
+      "reviews_mencion": 23,
+      "oraciones_mencion": 32,
+      "pos": 13,
+      "neg": 0,
+      "neu": 19,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "ya lo estoy consumiendo es bueno.",
+        "es un producto que tengo consumiendo ya mucho tiempo y me gusta mucho.",
+        "comprar este producto me satisface , porque lo he consumido toda la vida."
+      ]
+    },
+    {
+      "term": "acido",
+      "aspect_key_sugerido": "acido",
+      "reviews_mencion": 23,
+      "oraciones_mencion": 32,
+      "pos": 15,
+      "neg": 0,
+      "neu": 17,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "un café altamente disfrutable para los que nos gusta que el café sepa realmente a café, de sabor un poco más intenso y ligeramente más ácido que otros cafés que se ofrecen en el mercado, sin que eso demerite su personali",
+        "muy buen producto aunque un poco acido.",
+        "muy bien sabor, no es ácido, un aroma exquisito e intenso."
+      ]
+    },
+    {
+      "term": "cafe delicioso",
+      "aspect_key_sugerido": "cafe_delicioso",
+      "reviews_mencion": 23,
+      "oraciones_mencion": 28,
+      "pos": 9,
+      "neg": 0,
+      "neu": 19,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "café delicioso! me encanta.",
+        "es un café muy delicioso.",
+        "un café delicioso, mejor que punta de cielo, mejor que camila, mejor que 3 regiones."
+      ]
+    },
+    {
+      "term": "mercado libre",
+      "aspect_key_sugerido": "mercado_libre",
+      "reviews_mencion": 23,
+      "oraciones_mencion": 28,
+      "pos": 13,
+      "neg": 0,
+      "neu": 15,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "el mejor que he comprado, tiene un gran sabor, con un gusto a chocolate ideal para tomar a cualquier hora, la presentación de 1kg solo la he visto aquí en mercado libre, el envasado es perfecto lo que hace que conserve s",
+        "muy bien café, años comprando y me alegra que vendan esta presentación en mercado libre.",
+        "que ventaja que lo pueda adquirir por mercado libre."
+      ]
+    },
+    {
+      "term": "sabor intenso",
+      "aspect_key_sugerido": "sabor_intenso",
+      "reviews_mencion": 23,
+      "oraciones_mencion": 27,
+      "pos": 12,
+      "neg": 0,
+      "neu": 15,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "pues un sabor muy intenso y pues exelente cafe.",
+        "pues un sabor muy intenso y pues exelente cafe.",
+        "muy bueno, sabor intenso."
+      ]
+    }
+  ]
+}

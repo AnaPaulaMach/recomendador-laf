@@ -1,0 +1,19 @@
+{
+  "domain_key": "cafe",
+  "display_name": "Cafe",
+  "frozen_at": "2026-09-10T18:12:11.440501+00:00",
+  "methodology_sha256": "735f9b0cfde030c5d855d11262e73d460d15b5be7dba20a30d3d2157c41432fb",
+  "laf2_scope": "shared",
+  "warnings": [],
+  "refreeze_history": [
+    {
+      "date": "2026-09-10",
+      "previous_methodology_sha256": "3bbbb1775d04cb945ad1cc489dbba9934e5403bd7281d7edef513d42310e883b",
+      "previous_frozen_at": "2026-09-01T19:56:43.813672+00:00",
+      "reason": "Fila 13: reglas ~recomendar para valor y elaboracion, confianza simetrica; decision medida en EXP11",
+      "reference": "validacion_laf1/EXP11_FILA13_IMPACTO.md; validacion_laf1/salidas/recongelado_20260910/RESUMEN.md",
+      "informed_to": "director Maximiliano Budan",
+      "kept_deliberately": "R3 (prior de la estrategia D sobre la critica unica) se mantiene"
+    }
+  ]
+}

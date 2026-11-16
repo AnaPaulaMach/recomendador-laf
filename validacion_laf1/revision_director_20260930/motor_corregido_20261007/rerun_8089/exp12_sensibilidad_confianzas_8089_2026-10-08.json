@@ -1,0 +1,149 @@
+{
+ "dataset_key": "mlm_mlm194329_20260528_142014",
+ "fecha": "2026-10-08",
+ "variantes": {
+  "A: agregacion 0,75 (base 0,85)": {
+   "neutro": {
+    "rho": 0.986,
+    "cambian": 3,
+    "top3_igual": true,
+    "ganador_igual": true
+   },
+   "solo_sabor": {
+    "rho": 1.0,
+    "cambian": 0,
+    "top3_igual": true,
+    "ganador_igual": true
+   },
+   "solo_aroma": {
+    "rho": 1.0,
+    "cambian": 0,
+    "top3_igual": true,
+    "ganador_igual": true
+   }
+  },
+  "A: agregacion 0,95": {
+   "neutro": {
+    "rho": 1.0,
+    "cambian": 0,
+    "top3_igual": true,
+    "ganador_igual": true
+   },
+   "solo_sabor": {
+    "rho": 0.992,
+    "cambian": 5,
+    "top3_igual": false,
+    "ganador_igual": true
+   },
+   "solo_aroma": {
+    "rho": 0.986,
+    "cambian": 6,
+    "top3_igual": true,
+    "ganador_igual": true
+   }
+  },
+  "B: aspecto->dimension -0,10": {
+   "neutro": {
+    "rho": 1.0,
+    "cambian": 0,
+    "top3_igual": true,
+    "ganador_igual": true
+   },
+   "solo_sabor": {
+    "rho": 1.0,
+    "cambian": 0,
+    "top3_igual": true,
+    "ganador_igual": true
+   },
+   "solo_aroma": {
+    "rho": 1.0,
+    "cambian": 0,
+    "top3_igual": true,
+    "ganador_igual": true
+   }
+  },
+  "B: aspecto->dimension +0,10": {
+   "neutro": {
+    "rho": 1.0,
+    "cambian": 0,
+    "top3_igual": true,
+    "ganador_igual": true
+   },
+   "solo_sabor": {
+    "rho": 1.0,
+    "cambian": 0,
+    "top3_igual": true,
+    "ganador_igual": true
+   },
+   "solo_aroma": {
+    "rho": 1.0,
+    "cambian": 0,
+    "top3_igual": true,
+    "ganador_igual": true
+   }
+  },
+  "C: dimension->recomendar -0,10": {
+   "neutro": {
+    "rho": 0.992,
+    "cambian": 2,
+    "top3_igual": true,
+    "ganador_igual": true
+   },
+   "solo_sabor": {
+    "rho": 1.0,
+    "cambian": 0,
+    "top3_igual": true,
+    "ganador_igual": true
+   },
+   "solo_aroma": {
+    "rho": 1.0,
+    "cambian": 0,
+    "top3_igual": true,
+    "ganador_igual": true
+   }
+  },
+  "C: dimension->recomendar +0,10": {
+   "neutro": {
+    "rho": 1.0,
+    "cambian": 0,
+    "top3_igual": true,
+    "ganador_igual": true
+   },
+   "solo_sabor": {
+    "rho": 1.0,
+    "cambian": 0,
+    "top3_igual": true,
+    "ganador_igual": true
+   },
+   "solo_aroma": {
+    "rho": 1.0,
+    "cambian": 0,
+    "top3_igual": true,
+    "ganador_igual": true
+   }
+  }
+ },
+ "aleatorio": {
+  "neutro": {
+   "rho_media": 0.9940999999999999,
+   "rho_min": 0.979,
+   "cambian_media": 2.5,
+   "top3_igual": 20,
+   "ganador_igual": 20
+  },
+  "solo_sabor": {
+   "rho_media": 1.0,
+   "rho_min": 1.0,
+   "cambian_media": 0.0,
+   "top3_igual": 20,
+   "ganador_igual": 20
+  },
+  "solo_aroma": {
+   "rho_media": 1.0,
+   "rho_min": 1.0,
+   "cambian_media": 0.0,
+   "top3_igual": 20,
+   "ganador_igual": 20
+  }
+ }
+}

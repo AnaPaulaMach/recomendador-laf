@@ -1,0 +1,333 @@
+{
+  "name": "WF98_TFG_Validar_Equivalencia_Reviews",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -96,
+        -128
+      ],
+      "id": "de4b21f3-a829-4e92-a54b-77e49d7b63af",
+      "name": "Execute validation"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "f8888591-5c13-4432-9777-acde4e5e6511",
+              "name": "dataset_key",
+              "value": "mlm_mlm74383_20260529_040230",
+              "type": "string"
+            },
+            {
+              "id": "e065015e-e1c0-4608-93bf-e36f690d9d65",
+              "name": "sample_seed",
+              "value": "TFG-2026-v1",
+              "type": "string"
+            },
+            {
+              "id": "8cfb94da-b791-4a29-906c-585bd06cd7e5",
+              "name": "sample_products",
+              "value": 10,
+              "type": "number"
+            },
+            {
+              "id": "69f4de68-5652-46b8-b3a1-b2ef75fc1138",
+              "name": "items_per_product",
+              "value": 5,
+              "type": "number"
+            },
+            {
+              "id": "bbaf2cef-4276-464c-8d95-acde55a1cb30",
+              "name": "sample_page_size",
+              "value": 100,
+              "type": "number"
+            },
+            {
+              "id": "77a3e39c-9fbe-4464-982f-436a66f93395",
+              "name": "sample_offsets",
+              "value": "0,500,1000,1900",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        144,
+        -128
+      ],
+      "id": "d4a453d6-ee26-47e2-8d2c-5f47e8c3e439",
+      "name": "Validation Configuration"
+    },
+    {
+      "parameters": {
+        "operation": "getAll",
+        "tableId": "review_collection_inventory",
+        "returnAll": true,
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "dataset_key",
+              "condition": "eq",
+              "keyValue": "={{ $json.dataset_key }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        368,
+        -128
+      ],
+      "id": "fdb282a7-57d9-46a5-8d92-31c10f6b2974",
+      "name": "Get Product Inventory",
+      "credentials": {
+        "supabaseApi": {
+          "id": "R4VGp7PiljOL7AgF",
+          "name": "Supabase account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const cfg = $('Validation Configuration').first().json;\n\nfunction parseItemIds(value) {\n  if (Array.isArray(value)) return value.map(String);\n  if (typeof value !== 'string' || !value.trim()) return [];\n  const text = value.trim();\n  try {\n    const parsed = JSON.parse(text);\n    if (Array.isArray(parsed)) return parsed.map(String);\n  } catch {}\n  if (text.startsWith('{') && text.endsWith('}')) {\n    return text.slice(1, -1).split(',').map(x => x.replace(/^\"|\"$/g, '').trim()).filter(Boolean);\n  }\n  return [];\n}\n\nfunction fnv1a(text) {\n  let hash = 2166136261;\n  for (let i = 0; i < text.length; i++) {\n    hash ^= text.charCodeAt(i);\n    hash = Math.imul(hash, 16777619);\n  }\n  return hash >>> 0;\n}\n\nconst offsets = [...new Set(String(cfg.sample_offsets).split(',')\n  .map(x => Number(x.trim()))\n  .filter(x => Number.isInteger(x) && x >= 0))].sort((a, b) => a - b);\nconst offsetsLabel = offsets.join(',');\nconst eligible = items\n  .map(item => ({ ...item.json, item_ids: parseItemIds(item.json.item_ids) }))\n  .filter(row => row.item_ids.length >= 2)\n  .sort((a, b) => fnv1a(`${cfg.sample_seed}|${a.product_id}`) - fnv1a(`${cfg.sample_seed}|${b.product_id}`));\nconst productLimit = Number(cfg.sample_products) > 0 ? Number(cfg.sample_products) : eligible.length;\nconst selectedProducts = eligible.slice(0, productLimit);\nconst testedAt = new Date().toISOString();\nconst runId = `${cfg.dataset_key}|${cfg.sample_seed}|${testedAt}`;\n\nreturn selectedProducts.flatMap(product => {\n  const selectedItems = [...new Set(product.item_ids)]\n    .sort((a, b) => fnv1a(`${cfg.sample_seed}|${product.product_id}|${a}`) - fnv1a(`${cfg.sample_seed}|${product.product_id}|${b}`))\n    .slice(0, Number(cfg.items_per_product));\n  return selectedItems.flatMap(item_id => offsets.map(offset => ({ json: {\n    run_id: runId,\n    tested_at: testedAt,\n    dataset_key: cfg.dataset_key,\n    sample_seed: cfg.sample_seed,\n    sample_page_size: Number(cfg.sample_page_size),\n    sample_offsets: offsetsLabel,\n    product_id: product.product_id,\n    item_id,\n    offset\n  }})));\n});"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        592,
+        -128
+      ],
+      "id": "c9874f14-298c-43b0-823f-83f025c05534",
+      "name": "Build Reproducible Sample"
+    },
+    {
+      "parameters": {
+        "url": "=https://api.mercadolibre.com/reviews/item/{{ $json.item_id }}?limit={{ $json.sample_page_size }}&offset={{ $json.offset }}",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "oAuth2Api",
+        "options": {
+          "batching": {
+            "batch": {
+              "batchSize": 5
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        816,
+        -128
+      ],
+      "id": "7ca1d516-f707-4510-81a8-1cc147569995",
+      "name": "Probe Sampled Items",
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "oAuth2Api": {
+          "id": "Yxudi71RA9ggHlDN",
+          "name": "Unnamed credential"
+        }
+      },
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "jsCode": "const source = $('Build Reproducible Sample').all();\nconst probes = items.map((item, index) => {\n  const input = source[index]?.json ?? {};\n  const body = item.json ?? {};\n  const reviews = Array.isArray(body.reviews) ? body.reviews : [];\n  return {\n    ...input,\n    total: Number(body.paging?.total ?? 0),\n    page_signature: reviews.map(r => String(r.id)).sort().join(','),\n    error: body.error ?? body.message ?? null\n  };\n});\n\nconst productGroups = new Map();\nfor (const row of probes) {\n  if (!productGroups.has(row.product_id)) productGroups.set(row.product_id, []);\n  productGroups.get(row.product_id).push(row);\n}\n\nconst output = [];\nfor (const [productId, productProbes] of productGroups) {\n  const itemGroups = new Map();\n  for (const probe of productProbes) {\n    if (!itemGroups.has(probe.item_id)) itemGroups.set(probe.item_id, []);\n    itemGroups.get(probe.item_id).push(probe);\n  }\n  const itemRows = [...itemGroups.entries()].map(([itemId, itemProbes]) => {\n    itemProbes.sort((a, b) => a.offset - b.offset);\n    return {\n      ...itemProbes[0],\n      item_id: itemId,\n      total: Math.max(...itemProbes.map(p => p.total)),\n      sampled_signature: itemProbes.map(p => `${p.offset}:${p.page_signature}`).join('|'),\n      has_error: itemProbes.some(p => p.error)\n    };\n  });\n  const validItems = itemRows.filter(r => !r.has_error);\n  const withErrors = itemRows.length - validItems.length;\n  const reference = validItems.find(r => r.total > 0) ?? validItems[0] ?? itemRows[0];\n  const equivalent = validItems.filter(r => r.total === reference.total && r.sampled_signature === reference.sampled_signature).length;\n  const withReviews = validItems.filter(r => r.total > 0).length;\n  const withoutReviews = validItems.filter(r => r.total === 0).length;\n  const distinctTotals = new Set(validItems.map(r => r.total)).size;\n  const distinctSets = new Set(validItems.map(r => r.sampled_signature)).size;\n  let verdict = 'DIFFERENT_REVIEW_SETS';\n  if (withErrors > 0) verdict = 'INCONCLUSIVE_API_ERRORS';\n  else if (withReviews === 0) verdict = 'NO_REVIEWS_RETURNED';\n  else if (equivalent === itemRows.length) verdict = 'EQUIVALENT';\n  else if (distinctSets <= 2 && withoutReviews > 0) verdict = 'EQUIVALENT_WITH_ZERO_EXCEPTIONS';\n  output.push({ json: {\n    run_id: reference.run_id, tested_at: reference.tested_at, dataset_key: reference.dataset_key,\n    product_id: productId, sample_seed: reference.sample_seed, sample_page_size: reference.sample_page_size,\n    sample_offsets: reference.sample_offsets, items_tested: itemRows.length, items_with_reviews: withReviews,\n    items_without_reviews: withoutReviews, items_with_errors: withErrors, reference_item_id: reference.item_id, reference_total: reference.total,\n    distinct_totals: distinctTotals, distinct_sampled_page_sets: distinctSets, equivalent_items: equivalent,\n    equivalence_rate: validItems.length ? Number((100 * equivalent / validItems.length).toFixed(2)) : null, verdict\n  }});\n}\nreturn output;"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1040,
+        -128
+      ],
+      "id": "e8fbc4c4-e07c-445d-b5c0-fe1bb83499a6",
+      "name": "Summarize Equivalence Evidence"
+    },
+    {
+      "parameters": {
+        "tableId": "review_item_equivalence_audit",
+        "fieldsUi": {
+          "fieldValues": [
+            {
+              "fieldId": "run_id",
+              "fieldValue": "={{ $json.run_id }}"
+            },
+            {
+              "fieldId": "tested_at",
+              "fieldValue": "={{ $json.tested_at }}"
+            },
+            {
+              "fieldId": "dataset_key",
+              "fieldValue": "={{ $json.dataset_key }}"
+            },
+            {
+              "fieldId": "product_id",
+              "fieldValue": "={{ $json.product_id }}"
+            },
+            {
+              "fieldId": "sample_seed",
+              "fieldValue": "={{ $json.sample_seed }}"
+            },
+            {
+              "fieldId": "sample_page_size",
+              "fieldValue": "={{ $json.sample_page_size }}"
+            },
+            {
+              "fieldId": "sample_offsets",
+              "fieldValue": "={{ $json.sample_offsets }}"
+            },
+            {
+              "fieldId": "items_tested",
+              "fieldValue": "={{ $json.items_tested }}"
+            },
+            {
+              "fieldId": "items_with_reviews",
+              "fieldValue": "={{ $json.items_with_reviews }}"
+            },
+            {
+              "fieldId": "items_without_reviews",
+              "fieldValue": "={{ $json.items_without_reviews }}"
+            },
+            {
+              "fieldId": "items_with_errors",
+              "fieldValue": "={{ $json.items_with_errors }}"
+            },
+            {
+              "fieldId": "reference_item_id",
+              "fieldValue": "={{ $json.reference_item_id }}"
+            },
+            {
+              "fieldId": "reference_total",
+              "fieldValue": "={{ $json.reference_total }}"
+            },
+            {
+              "fieldId": "distinct_totals",
+              "fieldValue": "={{ $json.distinct_totals }}"
+            },
+            {
+              "fieldId": "distinct_sampled_page_sets",
+              "fieldValue": "={{ $json.distinct_sampled_page_sets }}"
+            },
+            {
+              "fieldId": "equivalent_items",
+              "fieldValue": "={{ $json.equivalent_items }}"
+            },
+            {
+              "fieldId": "equivalence_rate",
+              "fieldValue": "={{ $json.equivalence_rate }}"
+            },
+            {
+              "fieldId": "verdict",
+              "fieldValue": "={{ $json.verdict }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        1264,
+        -128
+      ],
+      "id": "fe50331f-3820-4f63-a979-3d28e740c98f",
+      "name": "Save Validation Evidence",
+      "credentials": {
+        "supabaseApi": {
+          "id": "R4VGp7PiljOL7AgF",
+          "name": "Supabase account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Execute validation": {
+      "main": [
+        [
+          {
+            "node": "Validation Configuration",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Validation Configuration": {
+      "main": [
+        [
+          {
+            "node": "Get Product Inventory",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Product Inventory": {
+      "main": [
+        [
+          {
+            "node": "Build Reproducible Sample",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build Reproducible Sample": {
+      "main": [
+        [
+          {
+            "node": "Probe Sampled Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Probe Sampled Items": {
+      "main": [
+        [
+          {
+            "node": "Summarize Equivalence Evidence",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Summarize Equivalence Evidence": {
+      "main": [
+        [
+          {
+            "node": "Save Validation Evidence",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "cc0f3dab-d4ae-477c-a5f0-888300fff782",
+  "meta": {
+    "instanceId": ""
+  },
+  "nodeGroups": [],
+  "id": "lPI1fOU4fIO9JYYV",
+  "tags": []
+}

@@ -1,0 +1,5 @@
+% EJEMPLO SINTETICO; no representa el corpus ni valida calidad.
+positivo(ejemplo). {0.32}
+negativo(ejemplo). {0.12}
+aspectoBueno(X) :- positivo(X). {1}
+~aspectoBueno(X) :- negativo(X). {1}

@@ -1,0 +1,344 @@
+{
+  "name": "WF02_FULL_Extract_Products",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -112,
+        -160
+      ],
+      "id": "838dc306-c990-43d9-bec0-b66ff19caa95",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        640,
+        -160
+      ],
+      "id": "b5c6f2c7-9b6c-4eb7-9656-0809e02ca7b5",
+      "name": "Loop Over Items"
+    },
+    {
+      "parameters": {
+        "url": "=https://api.mercadolibre.com/products/{{ $json.product_id }}",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "oAuth2Api",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {}
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        880,
+        -48
+      ],
+      "id": "c8daa048-c286-4c41-ade1-094fc237cbbc",
+      "name": "Get Product Catalog Data",
+      "credentials": {
+        "oAuth2Api": {
+          "id": "Yxudi71RA9ggHlDN",
+          "name": "Unnamed credential"
+        }
+      },
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "content": "# Qué hace?\n## Extrae atributos de productos (nivel catálogo)\n## 1 Lee dataset activo  ; 2 Obtiene product_id desde products_seed\n## 3 Filtra duplicados : 4 Itera productos\n## 5 Consulta API de productos (catálogo) ; 6 Guarda datos en products_raw\n\n## Extra: - Continúa si falla un producto",
+        "height": 320,
+        "width": 1328
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -160,
+        -608
+      ],
+      "id": "babdb12a-7a6e-49a3-bdf4-da684d2a09bb",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "operation": "getAll",
+        "tableId": "products_seed",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "dataset_key",
+              "condition": "eq",
+              "keyValue": "={{$json.active_dataset_key}}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        256,
+        -160
+      ],
+      "id": "b6713081-21f3-4f64-8acc-16e2cd137750",
+      "name": "Get many rows",
+      "credentials": {
+        "supabaseApi": {
+          "id": "R4VGp7PiljOL7AgF",
+          "name": "Supabase account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "tableId": "workflow_control",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "id",
+              "keyValue": "1"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        80,
+        -160
+      ],
+      "id": "df137dbc-e7e1-4767-84de-fd0da803eee0",
+      "name": "Get active dataset",
+      "credentials": {
+        "supabaseApi": {
+          "id": "R4VGp7PiljOL7AgF",
+          "name": "Supabase account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "tableId": "products_raw",
+        "fieldsUi": {
+          "fieldValues": [
+            {
+              "fieldId": "dataset_key",
+              "fieldValue": "={{ $json.dataset_key }}"
+            },
+            {
+              "fieldId": "product_id",
+              "fieldValue": "={{ $json.product_id }}"
+            },
+            {
+              "fieldId": "extraction_date",
+              "fieldValue": "={{ $json.extraction_date }}"
+            },
+            {
+              "fieldId": "raw_json",
+              "fieldValue": "={{ $json.raw_json }}"
+            },
+            {
+              "fieldId": "status",
+              "fieldValue": "={{ $json.status }}"
+            },
+            {
+              "fieldId": "domain_id",
+              "fieldValue": "={{ $json.domain_id }}"
+            },
+            {
+              "fieldId": "catalog_product_id",
+              "fieldValue": "={{ $json.catalog_product_id }}"
+            },
+            {
+              "fieldId": "name",
+              "fieldValue": "={{ $json.name }}"
+            },
+            {
+              "fieldId": "family_name",
+              "fieldValue": "={{ $json.family_name }}"
+            },
+            {
+              "fieldId": "buy_box_winner_item_id",
+              "fieldValue": "={{ $json.buy_box_winner_item_id }}"
+            },
+            {
+              "fieldId": "attributes",
+              "fieldValue": "={{ $json.attributes }}"
+            },
+            {
+              "fieldId": "pictures",
+              "fieldValue": "={{ $json.pictures }}"
+            },
+            {
+              "fieldId": "main_features",
+              "fieldValue": "={{ $json.main_features }}"
+            },
+            {
+              "fieldId": "short_description",
+              "fieldValue": "={{ $json.short_description }}"
+            },
+            {
+              "fieldId": "last_sync",
+              "fieldValue": "={{ $json.last_sync }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        1296,
+        -48
+      ],
+      "id": "8f0a1a61-8a89-4f23-92bb-13d4fe2535e0",
+      "name": "Insert Products RAW",
+      "credentials": {
+        "supabaseApi": {
+          "id": "R4VGp7PiljOL7AgF",
+          "name": "Supabase account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const seen = new Set();\n\nreturn items.filter(item => {\n  const product = item.json.product_id;\n\n  if (seen.has(product)) {\n    return false;\n  }\n\n  seen.add(product);\n  return true;\n});"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        464,
+        -160
+      ],
+      "id": "45306c64-d06b-48eb-a999-2e796879ab7e",
+      "name": "Remove Duplicate Product IDs"
+    },
+    {
+      "parameters": {
+        "jsCode": "return items.map(item => {\n  const p = item.json;\n\n  return {\n    json: {\n      dataset_key: $('Get active dataset').first().json.active_dataset_key,\n      product_id: $('Loop Over Items').first().json.product_id,\n      extraction_date: new Date().toISOString(),\n      last_sync: new Date().toISOString(),\n\n      status: p.status ?? null,\n      domain_id: p.domain_id ?? null,\n      catalog_product_id: p.id ?? null,\n      name: p.name ?? null,\n      family_name: p.family_name ?? null,\n      buy_box_winner_item_id: p.buy_box_winner?.item_id ?? null,\n      attributes: p.attributes ?? [],\n      pictures: p.pictures ?? [],\n      main_features: p.main_features ?? [],\n      short_description: p.short_description ?? {},\n      raw_json: p\n    }\n  };\n});"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1088,
+        -48
+      ],
+      "id": "6453608e-c6bb-46d8-ae01-8a973f462973",
+      "name": "Build Products RAW Row"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Get active dataset",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items": {
+      "main": [
+        [],
+        [
+          {
+            "node": "Get Product Catalog Data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Product Catalog Data": {
+      "main": [
+        [
+          {
+            "node": "Build Products RAW Row",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get many rows": {
+      "main": [
+        [
+          {
+            "node": "Remove Duplicate Product IDs",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get active dataset": {
+      "main": [
+        [
+          {
+            "node": "Get many rows",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Insert Products RAW": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Remove Duplicate Product IDs": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build Products RAW Row": {
+      "main": [
+        [
+          {
+            "node": "Insert Products RAW",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "8471a112-0bd7-44a9-b1e3-b17af027f3f4",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": ""
+  },
+  "nodeGroups": [],
+  "id": "QxuCXwNEw0P5eSkV",
+  "tags": []
+}

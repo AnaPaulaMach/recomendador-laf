@@ -1,0 +1,196 @@
+{
+  "edges": [
+    {
+      "from": "F1",
+      "kind": "SUPPORT",
+      "to": "F3"
+    },
+    {
+      "from": "F2",
+      "kind": "AGGREGATION",
+      "to": "F6"
+    },
+    {
+      "from": "R1",
+      "kind": "SUPPORT",
+      "to": "F7"
+    },
+    {
+      "from": "R2",
+      "kind": "SUPPORT",
+      "to": "F2"
+    },
+    {
+      "from": "F3",
+      "kind": "AGGREGATION",
+      "to": "F6"
+    },
+    {
+      "from": "F4",
+      "kind": "SUPPORT",
+      "to": "F2"
+    },
+    {
+      "from": "R3",
+      "kind": "SUPPORT",
+      "to": "F3"
+    },
+    {
+      "from": "F5",
+      "kind": "SUPPORT",
+      "to": "F7"
+    },
+    {
+      "from": "F1",
+      "kind": "CONFLICT",
+      "to": "F5"
+    },
+    {
+      "from": "F5",
+      "kind": "CONFLICT",
+      "to": "F1"
+    },
+    {
+      "from": "F6",
+      "kind": "CONFLICT",
+      "to": "F7"
+    },
+    {
+      "from": "F7",
+      "kind": "CONFLICT",
+      "to": "F6"
+    }
+  ],
+  "nodes": [
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.2"
+      ],
+      "deltaAttributes": [
+        "0.0"
+      ],
+      "id": "F1",
+      "label": "~saborBueno(ejemplo)",
+      "sourceKey": "FACT|~saborBueno|ejemplo",
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.3"
+      ],
+      "deltaAttributes": [
+        "0.3"
+      ],
+      "id": "F2",
+      "label": "~recomendarPorSabor(ejemplo)",
+      "sourceKey": null,
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "1"
+      ],
+      "deltaAttributes": [
+        "1"
+      ],
+      "id": "R1",
+      "label": "recomendarPorSabor(X) :- saborBueno(X).",
+      "sourceKey": "RULE|line:5",
+      "type": "RULE"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.50"
+      ],
+      "deltaAttributes": [
+        "0.50"
+      ],
+      "id": "R2",
+      "label": "~recomendarPorSabor(X) :- aromaBueno(X).",
+      "sourceKey": "RULE|line:7",
+      "type": "RULE"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.0"
+      ],
+      "deltaAttributes": [
+        "0.0"
+      ],
+      "id": "F3",
+      "label": "~recomendarPorSabor(ejemplo)",
+      "sourceKey": null,
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.6"
+      ],
+      "deltaAttributes": [
+        "0.6"
+      ],
+      "id": "F4",
+      "label": "aromaBueno(ejemplo)",
+      "sourceKey": "FACT|aromaBueno|ejemplo",
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "1"
+      ],
+      "deltaAttributes": [
+        "1"
+      ],
+      "id": "R3",
+      "label": "~recomendarPorSabor(X) :- ~saborBueno(X).",
+      "sourceKey": "RULE|line:6",
+      "type": "RULE"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.8"
+      ],
+      "deltaAttributes": [
+        "0.7500000000000001"
+      ],
+      "id": "F5",
+      "label": "saborBueno(ejemplo)",
+      "sourceKey": "FACT|saborBueno|ejemplo",
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.3"
+      ],
+      "deltaAttributes": [
+        "0.0"
+      ],
+      "id": "F6",
+      "label": "~recomendarPorSabor(ejemplo)",
+      "sourceKey": null,
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.7500000000000001"
+      ],
+      "deltaAttributes": [
+        "0.6428571428571431"
+      ],
+      "id": "F7",
+      "label": "recomendarPorSabor(ejemplo)",
+      "sourceKey": null,
+      "type": "FACT"
+    }
+  ]
+}

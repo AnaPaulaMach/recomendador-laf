@@ -1,0 +1,22 @@
+<figure class="product-image {{ image_class|default:'' }}" data-product-image>
+  {% if item.metadata.image_url %}
+    <img
+      src="{{ item.metadata.image_url }}"
+      alt="{{ item.entity_name }}"
+      width="240"
+      height="240"
+      decoding="async"
+      {% if eager %}fetchpriority="high"{% else %}loading="lazy"{% endif %}
+      referrerpolicy="no-referrer"
+      data-product-image-source>
+    <div class="product-image-placeholder" data-product-image-fallback hidden>
+      <span aria-hidden="true">{{ item.entity_name|slice:":1"|upper }}</span>
+      <small>Imagen no disponible</small>
+    </div>
+  {% else %}
+    <div class="product-image-placeholder">
+      <span aria-hidden="true">{{ item.entity_name|slice:":1"|upper }}</span>
+      <small>Imagen no disponible</small>
+    </div>
+  {% endif %}
+</figure>

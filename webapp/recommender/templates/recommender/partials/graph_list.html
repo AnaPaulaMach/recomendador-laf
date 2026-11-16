@@ -1,0 +1,36 @@
+<p class="mb-3 text-sm text-slate-600">Esta lista expresa el mismo recorrido que el dibujo: desde las evidencias y reglas hasta la recomendación.</p>
+<ol class="space-y-2">
+  {% for node in fragment.nodes %}
+    <li class="graph-list-item">
+      <span class="node-type-tag node-type-{{ node.node_type }}">{% if node.node_type == "fact" %}Hecho{% elif node.node_type == "aspect" %}Aspecto{% elif node.node_type == "dimension" %}Dimensión{% elif node.node_type == "rule" %}Regla{% elif node.node_type == "operator" %}Operador LAF{% elif node.node_type == "conclusion" %}Conclusión{% else %}Sin tipo{% endif %}</span>
+      <strong>{{ node.metadata.display_name|default:node.label }}</strong>
+      <p class="graph-list-explanation">
+        {% if node.node_type == "conclusion" %}
+          Es el resultado final producido por LAF para este producto.
+        {% elif node.node_type == "operator" and node.metadata.operator == "dMP" %}
+          Aplica una regla a una evidencia para obtener un nuevo argumento.
+        {% elif node.node_type == "operator" and node.metadata.operator == "AGG" %}
+          Combina los argumentos que llegan a la recomendación.
+        {% elif node.node_type == "operator" and node.metadata.operator == "CA" %}
+          Considera conjuntamente argumentos a favor y en contra.
+        {% elif node.node_type == "operator" and node.metadata.operator == "SUMMARY" %}
+          Combina los argumentos, los posibles conflictos y las preferencias antes de producir el resultado.
+        {% elif node.node_type == "rule" %}
+          Conecta una evidencia previa con una conclusión derivada.
+        {% elif node.polarity == "negative" %}
+          Este elemento contradice o debilita la recomendación.
+        {% else %}
+          Este elemento aporta soporte a la recomendación.
+        {% endif %}
+      </p>
+      {% if node.node_type != "operator" %}<small>Confianza {{ node.confidence|floatformat:2 }} · preferencia {{ node.preference|floatformat:2 }} · {% if node.acceptability_status == "accepted" %}aceptado por LAF{% elif node.acceptability_status == "weakened" %}debilitado{% elif node.acceptability_status == "rejected" %}rechazado{% else %}indeterminado{% endif %}</small>{% endif %}
+      <details class="graph-list-technical">
+        <summary>Ver dato técnico</summary>
+        <code>{{ node.literal }}</code>
+        {% if node.node_type != "operator" %}<small>Acumulado {{ node.accumulated_value|floatformat:2 }} · tras conflictos {{ node.weakened_value|floatformat:2 }}</small>{% endif %}
+      </details>
+    </li>
+  {% empty %}
+    <li class="text-sm text-slate-500">Ningún nodo coincide con los filtros.</li>
+  {% endfor %}
+</ol>

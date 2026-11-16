@@ -1,0 +1,3315 @@
+{
+  "dataset": {
+    "dataset_key": "mco_mco409413_20260805_184739",
+    "category_id": "MCO409413",
+    "category_label": "Cafe en granos y molido",
+    "site_id": "MCO"
+  },
+  "candidates": [
+    {
+      "term": "cafe",
+      "aspect_key_sugerido": "cafe",
+      "reviews_mencion": 284,
+      "oraciones_mencion": 308,
+      "pos": 117,
+      "neg": 7,
+      "neu": 184,
+      "polaridad_neta": 0.887,
+      "examples": [
+        "es un café muy exquisito.",
+        "excelente café.",
+        "en grano es muy buen cafe."
+      ]
+    },
+    {
+      "term": "sabor",
+      "aspect_key_sugerido": "sabor",
+      "reviews_mencion": 202,
+      "oraciones_mencion": 208,
+      "pos": 83,
+      "neg": 3,
+      "neu": 122,
+      "polaridad_neta": 0.93,
+      "examples": [
+        "delicioso y de sabor magnífico.",
+        "muy rico y suave el sabor.",
+        "un sabor excelente."
+      ]
+    },
+    {
+      "term": "delicioso",
+      "aspect_key_sugerido": "delicioso",
+      "reviews_mencion": 112,
+      "oraciones_mencion": 112,
+      "pos": 22,
+      "neg": 1,
+      "neu": 89,
+      "polaridad_neta": 0.913,
+      "examples": [
+        "delicioso.",
+        "muy delicioso.",
+        "muy delicioso."
+      ]
+    },
+    {
+      "term": "aroma",
+      "aspect_key_sugerido": "aroma",
+      "reviews_mencion": 106,
+      "oraciones_mencion": 106,
+      "pos": 44,
+      "neg": 1,
+      "neu": 61,
+      "polaridad_neta": 0.956,
+      "examples": [
+        "nunca sabores ni aromas extraños.",
+        "aroma inigualable.",
+        "café con bien aroma y sabor."
+      ]
+    },
+    {
+      "term": "precio",
+      "aspect_key_sugerido": "precio",
+      "reviews_mencion": 92,
+      "oraciones_mencion": 93,
+      "pos": 61,
+      "neg": 0,
+      "neu": 32,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "el mejor café en relación calidad precio, si buen es cierto hay algunos superiores también el precio es muy superior, este café de notas suaves, de tueste medio es superior.",
+        "buen precio y calidad.",
+        "buen producto y buen precio."
+      ]
+    },
+    {
+      "term": "rico",
+      "aspect_key_sugerido": "rico",
+      "reviews_mencion": 67,
+      "oraciones_mencion": 68,
+      "pos": 10,
+      "neg": 0,
+      "neu": 58,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "muy rico y suave el sabor.",
+        "que rico!!.",
+        "muy rico café."
+      ]
+    },
+    {
+      "term": "grano",
+      "aspect_key_sugerido": "grano",
+      "reviews_mencion": 45,
+      "oraciones_mencion": 51,
+      "pos": 18,
+      "neg": 4,
+      "neu": 29,
+      "polaridad_neta": 0.636,
+      "examples": [
+        "en grano es muy buen cafe.",
+        "se le pidió café en grano y lo envío molido.",
+        "pense que seria de mejor calidad , me decepciono tal vez la opcion de granos enteros sea mejor, no se."
+      ]
+    },
+    {
+      "term": "tostion",
+      "aspect_key_sugerido": "tostion",
+      "reviews_mencion": 38,
+      "oraciones_mencion": 38,
+      "pos": 18,
+      "neg": 2,
+      "neu": 18,
+      "polaridad_neta": 0.8,
+      "examples": [
+        "es un café balanceado entre sabor y aroma, tostión media que conlleva a la suavidad, la calidad es excelente.",
+        "nos pareció pasado de tostión, por momentos el café tiene aroma y sabor a quemado.",
+        "sabia a viejo no se cuanto tiempo de tostion tenia pero tenia un sabor desagradable."
+      ]
+    },
+    {
+      "term": "excelente cafe",
+      "aspect_key_sugerido": "excelente_cafe",
+      "reviews_mencion": 32,
+      "oraciones_mencion": 32,
+      "pos": 32,
+      "neg": 0,
+      "neu": 0,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "excelente café.",
+        "excelente cafe a buen precio.",
+        "es un excelente café para su segmento de precio."
+      ]
+    },
+    {
+      "term": "suave",
+      "aspect_key_sugerido": "suave",
+      "reviews_mencion": 20,
+      "oraciones_mencion": 20,
+      "pos": 5,
+      "neg": 0,
+      "neu": 15,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "muy rico y suave el sabor.",
+        "el mejor café en relación calidad precio, si buen es cierto hay algunos superiores también el precio es muy superior, este café de notas suaves, de tueste medio es superior.",
+        "calidad excelente, suave."
+      ]
+    },
+    {
+      "term": "olor",
+      "aspect_key_sugerido": "olor",
+      "reviews_mencion": 19,
+      "oraciones_mencion": 19,
+      "pos": 6,
+      "neg": 0,
+      "neu": 13,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "excelente olor , sabor que perdura y se conserva de forma optima.",
+        "en comparación con su presentación en grano, el sabor y olor de este café es casi desagradable.",
+        "no volveré a comprar esa pasilla ni sabor ni olor."
+      ]
+    },
+    {
+      "term": "empaque",
+      "aspect_key_sugerido": "empaque",
+      "reviews_mencion": 19,
+      "oraciones_mencion": 19,
+      "pos": 6,
+      "neg": 1,
+      "neu": 12,
+      "polaridad_neta": 0.714,
+      "examples": [
+        "deben proteger más los empaques.",
+        "el producto es bueno, lo malo es el empaque, ya que llegó en la misma bolsa con otros elementos comprados y se maltrató el producto.",
+        "el único detalle es la fecha de tostión, no viene especificada en el empaque y considero que es algo importante."
+      ]
+    },
+    {
+      "term": "mejor",
+      "aspect_key_sugerido": "mejor",
+      "reviews_mencion": 17,
+      "oraciones_mencion": 17,
+      "pos": 4,
+      "neg": 0,
+      "neu": 13,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "hay mejores opciones en el mercado, con precios mas justos.",
+        "de los mejores cafés que he consumido uff deliciosoo.",
+        "de los mejores café procesados que he consumido, altamente recomendable."
+      ]
+    },
+    {
+      "term": "gracia",
+      "aspect_key_sugerido": "gracia",
+      "reviews_mencion": 16,
+      "oraciones_mencion": 16,
+      "pos": 1,
+      "neg": 0,
+      "neu": 15,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "sin igual excelente, gracias.",
+        "gracias.",
+        "muchas gracias ."
+      ]
+    },
+    {
+      "term": "relacion",
+      "aspect_key_sugerido": "relacion",
+      "reviews_mencion": 15,
+      "oraciones_mencion": 15,
+      "pos": 14,
+      "neg": 0,
+      "neu": 1,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "el mejor café en relación calidad precio, si buen es cierto hay algunos superiores también el precio es muy superior, este café de notas suaves, de tueste medio es superior.",
+        "el sabor es bueno, relacion costo y caldiad.",
+        "excelente relación precio por gramo."
+      ]
+    },
+    {
+      "term": "quemado",
+      "aspect_key_sugerido": "quemado",
+      "reviews_mencion": 14,
+      "oraciones_mencion": 15,
+      "pos": 3,
+      "neg": 2,
+      "neu": 10,
+      "polaridad_neta": 0.2,
+      "examples": [
+        "este café viene muy quemado y sabe muy mal.",
+        "nos pareció pasado de tostión, por momentos el café tiene aroma y sabor a quemado.",
+        "es el mejor café ! está tostado en un todo uniforme no hay granos quemados ! mi nuevo favorito ."
+      ]
+    },
+    {
+      "term": "exquisito",
+      "aspect_key_sugerido": "exquisito",
+      "reviews_mencion": 14,
+      "oraciones_mencion": 14,
+      "pos": 2,
+      "neg": 0,
+      "neu": 12,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "es un café muy exquisito.",
+        "me encanta es una aroma sensorial y sabe exquisito.",
+        "exquisito sabor de cafe colombiano."
+      ]
+    },
+    {
+      "term": "excelente sabor",
+      "aspect_key_sugerido": "excelente_sabor",
+      "reviews_mencion": 14,
+      "oraciones_mencion": 14,
+      "pos": 14,
+      "neg": 0,
+      "neu": 0,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "excelente sabor.",
+        "excelente sabor y aroma.",
+        "muy buen producto, excelente sabor y aroma."
+      ]
+    },
+    {
+      "term": "tueste",
+      "aspect_key_sugerido": "tueste",
+      "reviews_mencion": 13,
+      "oraciones_mencion": 14,
+      "pos": 5,
+      "neg": 0,
+      "neu": 9,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "el mejor café en relación calidad precio, si buen es cierto hay algunos superiores también el precio es muy superior, este café de notas suaves, de tueste medio es superior.",
+        "café rico, tueste medio como mencionan en la descripción.",
+        "es excelente, grano sano y uniforme, tueste medio y sabor frutal con notas de cacao."
+      ]
+    },
+    {
+      "term": "nota",
+      "aspect_key_sugerido": "nota",
+      "reviews_mencion": 13,
+      "oraciones_mencion": 13,
+      "pos": 9,
+      "neg": 0,
+      "neu": 4,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "el mejor café en relación calidad precio, si buen es cierto hay algunos superiores también el precio es muy superior, este café de notas suaves, de tueste medio es superior.",
+        "delicia de café, lo hago en chemex muy aromático, le encucuentro notas muy frutales.",
+        "es excelente, grano sano y uniforme, tueste medio y sabor frutal con notas de cacao."
+      ]
+    },
+    {
+      "term": "mercado",
+      "aspect_key_sugerido": "mercado",
+      "reviews_mencion": 11,
+      "oraciones_mencion": 11,
+      "pos": 5,
+      "neg": 0,
+      "neu": 6,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "de los mejorcitos cafés que se pueden conseguir en el mercado interno.",
+        "cafe de excelente calidad, el percio por mercado libre esta por debajo al mesno un 20% que en el mercado tradicional.",
+        "hay mejores opciones en el mercado, con precios mas justos."
+      ]
+    },
+    {
+      "term": "fuerte",
+      "aspect_key_sugerido": "fuerte",
+      "reviews_mencion": 11,
+      "oraciones_mencion": 11,
+      "pos": 5,
+      "neg": 1,
+      "neu": 5,
+      "polaridad_neta": 0.667,
+      "examples": [
+        "excelente, lo único es q no es fuerte, es tradicional.",
+        "fuerte y bueno para hacer en prensa.",
+        "muy bien café, no es fuerte pero su sabor es delicioso."
+      ]
+    },
+    {
+      "term": "agradable",
+      "aspect_key_sugerido": "agradable",
+      "reviews_mencion": 10,
+      "oraciones_mencion": 10,
+      "pos": 3,
+      "neg": 0,
+      "neu": 7,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "excelente el café quindío gourmet con un aroma espectacular, sabor muy agradable al paladar, tostado a su medida.",
+        "muy buen café, bastante aroma, muy agradable.",
+        "es magnífico y agradable."
+      ]
+    },
+    {
+      "term": "tostado",
+      "aspect_key_sugerido": "tostado",
+      "reviews_mencion": 10,
+      "oraciones_mencion": 10,
+      "pos": 6,
+      "neg": 0,
+      "neu": 4,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "excelente el café quindío gourmet con un aroma espectacular, sabor muy agradable al paladar, tostado a su medida.",
+        "muy tostado para paladares que gustan de un buen café en la mañana.",
+        "es maluco ese café, no tiene cuerpo ni matices, es increíble pagar tanto por un café que de premium no tiene nada, esta reeepasado de tostado."
+      ]
+    },
+    {
+      "term": "espectacular",
+      "aspect_key_sugerido": "espectacular",
+      "reviews_mencion": 10,
+      "oraciones_mencion": 10,
+      "pos": 4,
+      "neg": 0,
+      "neu": 6,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "excelente el café quindío gourmet con un aroma espectacular, sabor muy agradable al paladar, tostado a su medida.",
+        "espectacular.",
+        "espectacular."
+      ]
+    },
+    {
+      "term": "fresco",
+      "aspect_key_sugerido": "fresco",
+      "reviews_mencion": 10,
+      "oraciones_mencion": 10,
+      "pos": 5,
+      "neg": 0,
+      "neu": 5,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "muy fresco y con un sabor y tonalidad deliciosa.",
+        "delicioso y muy fresco.",
+        "gracias por enviarme un cafe fresco y rico."
+      ]
+    },
+    {
+      "term": "quindio",
+      "aspect_key_sugerido": "quindio",
+      "reviews_mencion": 9,
+      "oraciones_mencion": 9,
+      "pos": 3,
+      "neg": 1,
+      "neu": 5,
+      "polaridad_neta": 0.5,
+      "examples": [
+        "excelente el café quindío gourmet con un aroma espectacular, sabor muy agradable al paladar, tostado a su medida.",
+        "café quindio siempre el de mejor calidad.",
+        "mejor que el mismo quindio."
+      ]
+    },
+    {
+      "term": "opcion",
+      "aspect_key_sugerido": "opcion",
+      "reviews_mencion": 8,
+      "oraciones_mencion": 9,
+      "pos": 5,
+      "neg": 1,
+      "neu": 3,
+      "polaridad_neta": 0.667,
+      "examples": [
+        "excelente producto nunca es una mala opción.",
+        "hay mejores opciones en el mercado, con precios mas justos.",
+        "pense que seria de mejor calidad , me decepciono tal vez la opcion de granos enteros sea mejor, no se."
+      ]
+    },
+    {
+      "term": "presentacion",
+      "aspect_key_sugerido": "presentacion",
+      "reviews_mencion": 8,
+      "oraciones_mencion": 9,
+      "pos": 3,
+      "neg": 0,
+      "neu": 6,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "en comparación con su presentación en grano, el sabor y olor de este café es casi desagradable.",
+        "lo compré por error al confundirlo con su presentación en grano y desde el primer vistazo se apreció una gran diferencia.",
+        "nueva bonita presentación."
+      ]
+    },
+    {
+      "term": "acidez",
+      "aspect_key_sugerido": "acidez",
+      "reviews_mencion": 8,
+      "oraciones_mencion": 8,
+      "pos": 5,
+      "neg": 0,
+      "neu": 3,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "es un café con buen balance y buena acidez a un precio asequible.",
+        "me encanta, un café muy buen logrado; tiene una acidez media espectacular y un saborcito como a nuez, de locos.",
+        "muy bueno, tiene buen sabor , con acidez como me gusta."
+      ]
+    },
+    {
+      "term": "favorito",
+      "aspect_key_sugerido": "favorito",
+      "reviews_mencion": 7,
+      "oraciones_mencion": 8,
+      "pos": 2,
+      "neg": 0,
+      "neu": 6,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "mi café favorito, excelente precio.",
+        "mi favorito.",
+        "desde que lo probé, es mi favorito."
+      ]
+    },
+    {
+      "term": "relacion calidad",
+      "aspect_key_sugerido": "relacion_calidad",
+      "reviews_mencion": 7,
+      "oraciones_mencion": 7,
+      "pos": 7,
+      "neg": 0,
+      "neu": 0,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "el mejor café en relación calidad precio, si buen es cierto hay algunos superiores también el precio es muy superior, este café de notas suaves, de tueste medio es superior.",
+        "buena relación calidad precio.",
+        "buena relación calidad precio."
+      ]
+    },
+    {
+      "term": "frutal",
+      "aspect_key_sugerido": "frutal",
+      "reviews_mencion": 7,
+      "oraciones_mencion": 7,
+      "pos": 1,
+      "neg": 0,
+      "neu": 6,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "delicioso sabor frutal.",
+        "delicia de café, lo hago en chemex muy aromático, le encucuentro notas muy frutales.",
+        "es excelente, grano sano y uniforme, tueste medio y sabor frutal con notas de cacao."
+      ]
+    },
+    {
+      "term": "unico",
+      "aspect_key_sugerido": "unico",
+      "reviews_mencion": 7,
+      "oraciones_mencion": 7,
+      "pos": 3,
+      "neg": 0,
+      "neu": 4,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "sabor único e inigualable.",
+        "excelente, lo único es q no es fuerte, es tradicional.",
+        "lo único es revisar muy bien yo lo quería pedir en grano y por error lo pedí molido."
+      ]
+    },
+    {
+      "term": "marca",
+      "aspect_key_sugerido": "marca",
+      "reviews_mencion": 7,
+      "oraciones_mencion": 7,
+      "pos": 5,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "excelente marca.",
+        "me encanta esta marca de café por esto lo consumo.",
+        "está bien, pero prefiero el burbón rosado de la misma marca."
+      ]
+    },
+    {
+      "term": "bolsa",
+      "aspect_key_sugerido": "bolsa",
+      "reviews_mencion": 7,
+      "oraciones_mencion": 7,
+      "pos": 2,
+      "neg": 1,
+      "neu": 4,
+      "polaridad_neta": 0.333,
+      "examples": [
+        "me encantó! voy por mi segunda bolsa!.",
+        "el producto es bueno, lo malo es el empaque, ya que llegó en la misma bolsa con otros elementos comprados y se maltrató el producto.",
+        "ya es mi segunda bolsa, me encanta, aunque mejoraría el empaque."
+      ]
+    },
+    {
+      "term": "cafe quindio",
+      "aspect_key_sugerido": "cafe_quindio",
+      "reviews_mencion": 7,
+      "oraciones_mencion": 7,
+      "pos": 3,
+      "neg": 1,
+      "neu": 3,
+      "polaridad_neta": 0.5,
+      "examples": [
+        "excelente el café quindío gourmet con un aroma espectacular, sabor muy agradable al paladar, tostado a su medida.",
+        "café quindio siempre el de mejor calidad.",
+        "buen café, pero la verdad esperaba un sabor mejor, no diferencie el sabor del café quindío normal es muy similar, pero si se nota que no lo queman tanto, es mas café, que café oscuro."
+      ]
+    },
+    {
+      "term": "cuerpo",
+      "aspect_key_sugerido": "cuerpo",
+      "reviews_mencion": 7,
+      "oraciones_mencion": 7,
+      "pos": 0,
+      "neg": 0,
+      "neu": 7,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "es maluco ese café, no tiene cuerpo ni matices, es increíble pagar tanto por un café que de premium no tiene nada, esta reeepasado de tostado.",
+        "producto de buen cuerpo y aroma.",
+        "buen sabor, aroma y cuerpo."
+      ]
+    },
+    {
+      "term": "molienda",
+      "aspect_key_sugerido": "molienda",
+      "reviews_mencion": 7,
+      "oraciones_mencion": 7,
+      "pos": 2,
+      "neg": 1,
+      "neu": 4,
+      "polaridad_neta": 0.333,
+      "examples": [
+        "huele muy bien, buen sabor, ideal para molienda gruesa para usar en presan francesa.",
+        "un café agradable al gusto y con buen aroma, lo hago en máquina de expreso con una molienda fina.",
+        "no importa si la molienda es gruesa o fina, el sabor es amargo."
+      ]
+    },
+    {
+      "term": "rico cafe",
+      "aspect_key_sugerido": "rico_cafe",
+      "reviews_mencion": 6,
+      "oraciones_mencion": 6,
+      "pos": 0,
+      "neg": 0,
+      "neu": 6,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "muy rico café.",
+        "muy rico cafe, de los mejores que he comprado.",
+        "muy rico el café."
+      ]
+    },
+    {
+      "term": "libre",
+      "aspect_key_sugerido": "libre",
+      "reviews_mencion": 6,
+      "oraciones_mencion": 6,
+      "pos": 3,
+      "neg": 0,
+      "neu": 3,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "cafe de excelente calidad, el percio por mercado libre esta por debajo al mesno un 20% que en el mercado tradicional.",
+        "me salió más económico comprar por mercado libre.",
+        "el mejor café artesanal comprado en mercado libre que he probado hasta ahora, y van 4 ya."
+      ]
+    },
+    {
+      "term": "mercado libre",
+      "aspect_key_sugerido": "mercado_libre",
+      "reviews_mencion": 6,
+      "oraciones_mencion": 6,
+      "pos": 3,
+      "neg": 0,
+      "neu": 3,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "cafe de excelente calidad, el percio por mercado libre esta por debajo al mesno un 20% que en el mercado tradicional.",
+        "me salió más económico comprar por mercado libre.",
+        "el mejor café artesanal comprado en mercado libre que he probado hasta ahora, y van 4 ya."
+      ]
+    },
+    {
+      "term": "frances",
+      "aspect_key_sugerido": "frances",
+      "reviews_mencion": 6,
+      "oraciones_mencion": 6,
+      "pos": 3,
+      "neg": 0,
+      "neu": 3,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "ideal para presa francesas.",
+        "huele muy bien, buen sabor, ideal para molienda gruesa para usar en presan francesa.",
+        "su proceso con prensa francesa le da un toque especial buenísimo."
+      ]
+    },
+    {
+      "term": "delicioso cafe",
+      "aspect_key_sugerido": "delicioso_cafe",
+      "reviews_mencion": 6,
+      "oraciones_mencion": 6,
+      "pos": 0,
+      "neg": 0,
+      "neu": 6,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "delicioso café.",
+        "delicioso café.",
+        "delicioso café de origen."
+      ]
+    },
+    {
+      "term": "amargo",
+      "aspect_key_sugerido": "amargo",
+      "reviews_mencion": 6,
+      "oraciones_mencion": 6,
+      "pos": 2,
+      "neg": 0,
+      "neu": 4,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "es aromático pero amargo.",
+        "no importa si la molienda es gruesa o fina, el sabor es amargo.",
+        "casi no me gusto, es un poco amargo."
+      ]
+    },
+    {
+      "term": "empacado",
+      "aspect_key_sugerido": "empacado",
+      "reviews_mencion": 6,
+      "oraciones_mencion": 6,
+      "pos": 6,
+      "neg": 0,
+      "neu": 0,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "llegó en el tiempo establecido muy bien empacado.",
+        "este producto siempre excelente, llega bien empacado y en los tiempos establecidos.",
+        "delicioso, bien empacado, buen aroma."
+      ]
+    },
+    {
+      "term": "colombiano",
+      "aspect_key_sugerido": "colombiano",
+      "reviews_mencion": 6,
+      "oraciones_mencion": 6,
+      "pos": 2,
+      "neg": 0,
+      "neu": 4,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "delicioso, típico café colombiano.",
+        "exquisito sabor de cafe colombiano.",
+        "excelente café colombiano."
+      ]
+    },
+    {
+      "term": "economico",
+      "aspect_key_sugerido": "economico",
+      "reviews_mencion": 6,
+      "oraciones_mencion": 6,
+      "pos": 2,
+      "neg": 0,
+      "neu": 4,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "más económico que el los supermercados,",
+        "me salió más económico comprar por mercado libre.",
+        "cage en granos, es más económico que comprar en supermercados o en las mismas tiendas de café quindio."
+      ]
+    },
+    {
+      "term": "cafe delicioso",
+      "aspect_key_sugerido": "cafe_delicioso",
+      "reviews_mencion": 6,
+      "oraciones_mencion": 6,
+      "pos": 0,
+      "neg": 0,
+      "neu": 6,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "un cafe delicioso.",
+        "café delicioso.",
+        "uno de los cafés mas deliciosos que he probado."
+      ]
+    },
+    {
+      "term": "rico sabor",
+      "aspect_key_sugerido": "rico_sabor",
+      "reviews_mencion": 6,
+      "oraciones_mencion": 6,
+      "pos": 0,
+      "neg": 0,
+      "neu": 6,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "buen producto y de rico sabor.",
+        "moler y listo , muy rico sabor.",
+        "rico sabor, suave."
+      ]
+    },
+    {
+      "term": "prensa",
+      "aspect_key_sugerido": "prensa",
+      "reviews_mencion": 6,
+      "oraciones_mencion": 6,
+      "pos": 2,
+      "neg": 0,
+      "neu": 4,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "fuerte y bueno para hacer en prensa.",
+        "lo uso en prensa y mocca para hacer capuchino.",
+        "su proceso con prensa francesa le da un toque especial buenísimo."
+      ]
+    },
+    {
+      "term": "fecha",
+      "aspect_key_sugerido": "fecha",
+      "reviews_mencion": 6,
+      "oraciones_mencion": 6,
+      "pos": 3,
+      "neg": 1,
+      "neu": 2,
+      "polaridad_neta": 0.5,
+      "examples": [
+        "el único detalle es la fecha de tostión, no viene especificada en el empaque y considero que es algo importante.",
+        "granos enteros, mismo color, lo único es que no indican la fecha de tostón.",
+        "buena calidad, tiene fechas y origen."
+      ]
+    },
+    {
+      "term": "medio",
+      "aspect_key_sugerido": "medio",
+      "reviews_mencion": 6,
+      "oraciones_mencion": 6,
+      "pos": 2,
+      "neg": 0,
+      "neu": 4,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "me encanta, un café muy buen logrado; tiene una acidez media espectacular y un saborcito como a nuez, de locos.",
+        "es molienda media.",
+        "genera una crema espesa y consiste, sabor frutal y acidez media que lo hace disfrutable a cualquier hora del día."
+      ]
+    },
+    {
+      "term": "maquina",
+      "aspect_key_sugerido": "maquina",
+      "reviews_mencion": 6,
+      "oraciones_mencion": 6,
+      "pos": 3,
+      "neg": 0,
+      "neu": 3,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "recomiendo mejor hacerlo en máquina.",
+        "un café agradable al gusto y con buen aroma, lo hago en máquina de expreso con una molienda fina.",
+        "el café sale un poco aguado en máquina de espresso."
+      ]
+    },
+    {
+      "term": "textura",
+      "aspect_key_sugerido": "textura",
+      "reviews_mencion": 6,
+      "oraciones_mencion": 6,
+      "pos": 4,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "espectacular el café buen aroma y textura.",
+        "excelente sabor y textura, aparte de económico.",
+        "me encanta el sabor textura y color."
+      ]
+    },
+    {
+      "term": "taza",
+      "aspect_key_sugerido": "taza",
+      "reviews_mencion": 5,
+      "oraciones_mencion": 6,
+      "pos": 2,
+      "neg": 0,
+      "neu": 4,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "para mí el café juán valdez colina es absolutamente lo mejor que he probado en cuanto profundidad de sabor en cada taza.",
+        "honestamente el café casi no sabe a café, se nota mucho ripio y toca echar bastante por taza para que tenga algo de sabor,la calidad no me pareció muy buena.",
+        "buen perfil de taza, balanceado."
+      ]
+    },
+    {
+      "term": "juan",
+      "aspect_key_sugerido": "juan",
+      "reviews_mencion": 5,
+      "oraciones_mencion": 5,
+      "pos": 2,
+      "neg": 0,
+      "neu": 3,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "para mí el café juán valdez colina es absolutamente lo mejor que he probado en cuanto profundidad de sabor en cada taza.",
+        "riquísimo como todos los productos de juan valdez.",
+        "juan valdez siempre será una gran elección y además que me salió a un excelente precio en ese momento."
+      ]
+    },
+    {
+      "term": "aromatico",
+      "aspect_key_sugerido": "aromatico",
+      "reviews_mencion": 5,
+      "oraciones_mencion": 5,
+      "pos": 0,
+      "neg": 0,
+      "neu": 5,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "es aromático pero amargo.",
+        "muy aromático.",
+        "delicia de café, lo hago en chemex muy aromático, le encucuentro notas muy frutales."
+      ]
+    },
+    {
+      "term": "tiempo",
+      "aspect_key_sugerido": "tiempo",
+      "reviews_mencion": 5,
+      "oraciones_mencion": 5,
+      "pos": 2,
+      "neg": 0,
+      "neu": 3,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "llegó en el tiempo establecido muy bien empacado.",
+        "este producto siempre excelente, llega bien empacado y en los tiempos establecidos.",
+        "creó que perdió la frescura, o tenía mucha tiempo."
+      ]
+    },
+    {
+      "term": "puro",
+      "aspect_key_sugerido": "puro",
+      "reviews_mencion": 5,
+      "oraciones_mencion": 5,
+      "pos": 2,
+      "neg": 1,
+      "neu": 2,
+      "polaridad_neta": 0.333,
+      "examples": [
+        "me sorprendió el café puro, buen sabor.",
+        "le hice pruebas y es pura pasilla el cafe queda negro y debe de quedar cafe cuando es de buena calidad.",
+        "el olor a cafe puro se siente al instante y el empaque es muy seguro."
+      ]
+    },
+    {
+      "term": "mejor cafe",
+      "aspect_key_sugerido": "mejor_cafe",
+      "reviews_mencion": 5,
+      "oraciones_mencion": 5,
+      "pos": 0,
+      "neg": 0,
+      "neu": 5,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "de los mejores cafés que he consumido uff deliciosoo.",
+        "de los mejores cafés de colombia.",
+        "es uno de los mejores cafés."
+      ]
+    },
+    {
+      "term": "especialidad",
+      "aspect_key_sugerido": "especialidad",
+      "reviews_mencion": 5,
+      "oraciones_mencion": 5,
+      "pos": 3,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "lo compro para quien no gusta de un café de especialidad.",
+        "café correcto, pero si buscas una experiencia diferente es mejor comprar café de especialidad, directos de finca.",
+        "de los cafés más ricos que me he tomado,, definitivamente volvería a comprarlo, felicitaciones, hace varios años tomó café de especialidad, y este fue una sorpresa muy grata."
+      ]
+    },
+    {
+      "term": "experiencia",
+      "aspect_key_sugerido": "experiencia",
+      "reviews_mencion": 5,
+      "oraciones_mencion": 5,
+      "pos": 3,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "no es un café terrible y sigo buscando el ratio ideal para prepararlo, con lo que espero que la experiencia mejore, pero de momento no lo volvería a comprar.",
+        "café correcto, pero si buscas una experiencia diferente es mejor comprar café de especialidad, directos de finca.",
+        "muy bueno, una nueva experiencia en café."
+      ]
+    },
+    {
+      "term": "descripcion",
+      "aspect_key_sugerido": "descripcion",
+      "reviews_mencion": 5,
+      "oraciones_mencion": 5,
+      "pos": 1,
+      "neg": 0,
+      "neu": 4,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "café rico, tueste medio como mencionan en la descripción.",
+        "no viene con descripciones de sus características, el sabor es bastante fuerte y sin fragancias.",
+        "excelente cafe tosté medio tal como dice la descripción, muy buen aroma y trazas achocolatadas delicioso lo recomiendo 100%."
+      ]
+    },
+    {
+      "term": "equilibrado",
+      "aspect_key_sugerido": "equilibrado",
+      "reviews_mencion": 5,
+      "oraciones_mencion": 5,
+      "pos": 2,
+      "neg": 0,
+      "neu": 3,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "el café tiene granos muy parejos y un sabor bastante equilibrado, no es muy ácido y eso me gusta.",
+        "exquisito café sabor equilibrado.",
+        "probé este café y simplemente superó todas mis expectativas: presentación, aroma intenso, sabor equilibrado y una calidad que se siente en cada sorbo, sin palabras."
+      ]
+    },
+    {
+      "term": "duda",
+      "aspect_key_sugerido": "duda",
+      "reviews_mencion": 5,
+      "oraciones_mencion": 5,
+      "pos": 1,
+      "neg": 0,
+      "neu": 4,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "sin duda de los mejores cafés que he probado, y por el precio una barbaridad.",
+        "sin duda alguna lo volveré a comprar.",
+        "tuve dudas en pedir este cafe ya que soy de bucaramanga y la verdad siempre compro la misma marca, me quise arriesgar con otro café y sin duda alguna, lo recomiendo al 101%."
+      ]
+    },
+    {
+      "term": "alto",
+      "aspect_key_sugerido": "alto",
+      "reviews_mencion": 5,
+      "oraciones_mencion": 5,
+      "pos": 4,
+      "neg": 0,
+      "neu": 1,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "en lo personal me parece que la tostión fue alta a pesar de que decía media, sin embargo, los granos y el sabor, de buena calidad.",
+        "alta calidad, muy recomendado.",
+        "la tostion es dispareja y algo alta, incluso huele y sabe a quemado."
+      ]
+    },
+    {
+      "term": "color",
+      "aspect_key_sugerido": "color",
+      "reviews_mencion": 5,
+      "oraciones_mencion": 5,
+      "pos": 3,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "granos enteros, mismo color, lo único es que no indican la fecha de tostón.",
+        "aroma, color y sabor excelente.",
+        "me encanta el sabor textura y color."
+      ]
+    },
+    {
+      "term": "gusto",
+      "aspect_key_sugerido": "gusto",
+      "reviews_mencion": 5,
+      "oraciones_mencion": 5,
+      "pos": 0,
+      "neg": 0,
+      "neu": 5,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "un café agradable al gusto y con buen aroma, lo hago en máquina de expreso con una molienda fina.",
+        "para mi gusto, delicioso! mil gracias!.",
+        "es un café muy fuerte para mi gusto, es ideal para hacer capuchino, pero no para tomarselo solo sin azúcar , que es lo que normalmente estoy acostumbrada."
+      ]
+    },
+    {
+      "term": "fragancia",
+      "aspect_key_sugerido": "fragancia",
+      "reviews_mencion": 5,
+      "oraciones_mencion": 5,
+      "pos": 2,
+      "neg": 0,
+      "neu": 3,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "no viene con descripciones de sus características, el sabor es bastante fuerte y sin fragancias.",
+        "cuando recibí el paquete senti su fragancia sin igual de un delicioso bourbon.",
+        "muy rico, muy buen sabor y fragancia."
+      ]
+    },
+    {
+      "term": "valdez",
+      "aspect_key_sugerido": "valdez",
+      "reviews_mencion": 4,
+      "oraciones_mencion": 4,
+      "pos": 1,
+      "neg": 0,
+      "neu": 3,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "para mí el café juán valdez colina es absolutamente lo mejor que he probado en cuanto profundidad de sabor en cada taza.",
+        "riquísimo como todos los productos de juan valdez.",
+        "juan valdez siempre será una gran elección y además que me salió a un excelente precio en ese momento."
+      ]
+    },
+    {
+      "term": "excelente precio",
+      "aspect_key_sugerido": "excelente_precio",
+      "reviews_mencion": 4,
+      "oraciones_mencion": 4,
+      "pos": 4,
+      "neg": 0,
+      "neu": 0,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "mi café favorito, excelente precio.",
+        "juan valdez siempre será una gran elección y además que me salió a un excelente precio en ese momento.",
+        "excelente precio y café."
+      ]
+    },
+    {
+      "term": "original",
+      "aspect_key_sugerido": "original",
+      "reviews_mencion": 4,
+      "oraciones_mencion": 4,
+      "pos": 1,
+      "neg": 0,
+      "neu": 3,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "todo ok sin novedades, producto original.",
+        "super original mio preferido.",
+        "excelente producto, original 100% y buen precio."
+      ]
+    },
+    {
+      "term": "tradicional",
+      "aspect_key_sugerido": "tradicional",
+      "reviews_mencion": 4,
+      "oraciones_mencion": 4,
+      "pos": 2,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "cafe de excelente calidad, el percio por mercado libre esta por debajo al mesno un 20% que en el mercado tradicional.",
+        "excelente, lo único es q no es fuerte, es tradicional.",
+        "es un buen p4oducto tiene un molido un poco mas grueso que el tradicional y tiene un aroma delicioso."
+      ]
+    },
+    {
+      "term": "origen",
+      "aspect_key_sugerido": "origen",
+      "reviews_mencion": 4,
+      "oraciones_mencion": 4,
+      "pos": 1,
+      "neg": 0,
+      "neu": 3,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "el café juán valdez es el mejor café de origen que he probado y el que disfruto día tras día.",
+        "delicioso café de origen.",
+        "delicioso, cafe 100% original de origen colombiano."
+      ]
+    },
+    {
+      "term": "justo",
+      "aspect_key_sugerido": "justo",
+      "reviews_mencion": 4,
+      "oraciones_mencion": 4,
+      "pos": 2,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "hay mejores opciones en el mercado, con precios mas justos.",
+        "un precio justo y la mejor calidad .",
+        "un buen café, con buen aroma y y sabor, y además a un precio bastante justo."
+      ]
+    },
+    {
+      "term": "expectativa",
+      "aspect_key_sugerido": "expectativa",
+      "reviews_mencion": 4,
+      "oraciones_mencion": 4,
+      "pos": 2,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "cumplió con mis expectativas.",
+        "probé este café y simplemente superó todas mis expectativas: presentación, aroma intenso, sabor equilibrado y una calidad que se siente en cada sorbo, sin palabras.",
+        "este café excedió mis expectativas."
+      ]
+    },
+    {
+      "term": "costo",
+      "aspect_key_sugerido": "costo",
+      "reviews_mencion": 4,
+      "oraciones_mencion": 4,
+      "pos": 4,
+      "neg": 0,
+      "neu": 0,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "el sabor es bueno, relacion costo y caldiad.",
+        "para ese grado de calidad podría tener un menor costo.",
+        "excelente producto en relación costo beneficio."
+      ]
+    },
+    {
+      "term": "esperado",
+      "aspect_key_sugerido": "esperado",
+      "reviews_mencion": 4,
+      "oraciones_mencion": 4,
+      "pos": 0,
+      "neg": 0,
+      "neu": 4,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "llegó según lo esperado y a muy buen precio.",
+        "producto esperado.",
+        "el producto es el esperado."
+      ]
+    },
+    {
+      "term": "agua",
+      "aspect_key_sugerido": "agua",
+      "reviews_mencion": 4,
+      "oraciones_mencion": 4,
+      "pos": 2,
+      "neg": 1,
+      "neu": 1,
+      "polaridad_neta": 0.333,
+      "examples": [
+        "es bueno entre los que he probado de este estilo, lo usaba para preparar en cafetera eléctrica, 12 gr 400 ml de agua y otro de 24 gr 800 ml de agua.",
+        "es un poco oscuro asi que deben calcular bien el agua o hacerlo italiano con agua aparte.",
+        "delicioso, pero no usar agua muy caliente."
+      ]
+    },
+    {
+      "term": "delicioso sabor",
+      "aspect_key_sugerido": "delicioso_sabor",
+      "reviews_mencion": 4,
+      "oraciones_mencion": 4,
+      "pos": 0,
+      "neg": 0,
+      "neu": 4,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "delicioso sabor.",
+        "delicioso sabor.",
+        "buen aroma, con tostion media y delicioso sabor."
+      ]
+    },
+    {
+      "term": "balanceado",
+      "aspect_key_sugerido": "balanceado",
+      "reviews_mencion": 4,
+      "oraciones_mencion": 4,
+      "pos": 2,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "es un café balanceado entre sabor y aroma, tostión media que conlleva a la suavidad, la calidad es excelente.",
+        "no x ele te café buena combinación y balanceado recomendado!.",
+        "buen perfil de taza, balanceado."
+      ]
+    },
+    {
+      "term": "entero",
+      "aspect_key_sugerido": "entero",
+      "reviews_mencion": 4,
+      "oraciones_mencion": 4,
+      "pos": 1,
+      "neg": 0,
+      "neu": 3,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "pense que seria de mejor calidad , me decepciono tal vez la opcion de granos enteros sea mejor, no se.",
+        "granos enteros, mismo color, lo único es que no indican la fecha de tostón.",
+        "se siente cafe especial de grano entero."
+      ]
+    },
+    {
+      "term": "comercial",
+      "aspect_key_sugerido": "comercial",
+      "reviews_mencion": 4,
+      "oraciones_mencion": 4,
+      "pos": 1,
+      "neg": 0,
+      "neu": 3,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "de los cafés \"comerciales\"",
+        "se nota lo fresco y de gran calidad (superior a los comerciales).",
+        "no soy especialista en café, pero si sabe diferente a los comerciales."
+      ]
+    },
+    {
+      "term": "oscuro",
+      "aspect_key_sugerido": "oscuro",
+      "reviews_mencion": 4,
+      "oraciones_mencion": 4,
+      "pos": 1,
+      "neg": 1,
+      "neu": 2,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "buen café, pero la verdad esperaba un sabor mejor, no diferencie el sabor del café quindío normal es muy similar, pero si se nota que no lo queman tanto, es mas café, que café oscuro.",
+        "es un poco oscuro asi que deben calcular bien el agua o hacerlo italiano con agua aparte.",
+        "no lo percibí solo un sabor fuerte supongo por el tiesto más oscuro que me llegó, en la bolsa dice tueste medio pués llegó más moreno."
+      ]
+    },
+    {
+      "term": "ufff",
+      "aspect_key_sugerido": "ufff",
+      "reviews_mencion": 4,
+      "oraciones_mencion": 4,
+      "pos": 1,
+      "neg": 0,
+      "neu": 3,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "ufff volví a comprar.",
+        "el olor ufff y el sabor excelente.",
+        "ufff"
+      ]
+    },
+    {
+      "term": "buenisimo",
+      "aspect_key_sugerido": "buenisimo",
+      "reviews_mencion": 4,
+      "oraciones_mencion": 4,
+      "pos": 2,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "buenísimo.",
+        "su proceso con prensa francesa le da un toque especial buenísimo.",
+        "buenísima calidad de café."
+      ]
+    },
+    {
+      "term": "capuchino",
+      "aspect_key_sugerido": "capuchino",
+      "reviews_mencion": 4,
+      "oraciones_mencion": 4,
+      "pos": 1,
+      "neg": 0,
+      "neu": 3,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "muy buen cafe para capuchino.",
+        "lo uso en prensa y mocca para hacer capuchino.",
+        "no lo recomiendo si lo va a tomar filtrado, si lo usa para capuchino/late es pasable."
+      ]
+    },
+    {
+      "term": "uniforme",
+      "aspect_key_sugerido": "uniforme",
+      "reviews_mencion": 4,
+      "oraciones_mencion": 4,
+      "pos": 2,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "es el mejor café ! está tostado en un todo uniforme no hay granos quemados ! mi nuevo favorito .",
+        "es excelente, grano sano y uniforme, tueste medio y sabor frutal con notas de cacao.",
+        "el color muestra un tu este medio uniforme, tiene muy buen sabor y aroma."
+      ]
+    },
+    {
+      "term": "cafe rico",
+      "aspect_key_sugerido": "cafe_rico",
+      "reviews_mencion": 4,
+      "oraciones_mencion": 4,
+      "pos": 0,
+      "neg": 0,
+      "neu": 4,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "café rico, tueste medio como mencionan en la descripción.",
+        "de los cafés más ricos que me he tomado,, definitivamente volvería a comprarlo, felicitaciones, hace varios años tomó café de especialidad, y este fue una sorpresa muy grata.",
+        "me encanto el café, muy rico, se recomienda."
+      ]
+    },
+    {
+      "term": "parejo",
+      "aspect_key_sugerido": "parejo",
+      "reviews_mencion": 4,
+      "oraciones_mencion": 4,
+      "pos": 1,
+      "neg": 1,
+      "neu": 2,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "la tostion es buena aunque los granos son algo pequeños y no muy parejos.",
+        "granos parejos.",
+        "el café tiene granos muy parejos y un sabor bastante equilibrado, no es muy ácido y eso me gusta."
+      ]
+    },
+    {
+      "term": "excelente aroma",
+      "aspect_key_sugerido": "excelente_aroma",
+      "reviews_mencion": 4,
+      "oraciones_mencion": 4,
+      "pos": 4,
+      "neg": 0,
+      "neu": 0,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "es la primera vez que lo compro excelente aroma y exquisito sabor.",
+        "buen café, excelente aroma.",
+        "excelente aroma y sabor…"
+      ]
+    },
+    {
+      "term": "dulce",
+      "aspect_key_sugerido": "dulce",
+      "reviews_mencion": 4,
+      "oraciones_mencion": 4,
+      "pos": 1,
+      "neg": 0,
+      "neu": 3,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "tostion media suave notas dulces le doy un 9.",
+        "sabor dulce y cítrico, con aroma frutal muy ligero.",
+        "en prensa francesa ofrece un rico sabor dulce, achocolatado y concentrado."
+      ]
+    },
+    {
+      "term": "fino",
+      "aspect_key_sugerido": "fino",
+      "reviews_mencion": 4,
+      "oraciones_mencion": 4,
+      "pos": 0,
+      "neg": 0,
+      "neu": 4,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "un café agradable al gusto y con buen aroma, lo hago en máquina de expreso con una molienda fina.",
+        "no importa si la molienda es gruesa o fina, el sabor es amargo.",
+        "yo lo preparo con 18 grs de molienda fina nivel 4 en mi molino electrico (tiene 32 así que es bastante fino), homogenizo con wdt, nivelo con giro y tampeo con autonivelante ranurado a 15 lbs, puck screen y ratio 1:1."
+      ]
+    },
+    {
+      "term": "variedad",
+      "aspect_key_sugerido": "variedad",
+      "reviews_mencion": 4,
+      "oraciones_mencion": 4,
+      "pos": 1,
+      "neg": 0,
+      "neu": 3,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "una buena mezcla de variedades.",
+        "sería valioso informar la variedad en el empaque ya que sólo dice arábiga en la descripción de la página.",
+        "no especifica la variedad del cafe."
+      ]
+    },
+    {
+      "term": "metodo",
+      "aspect_key_sugerido": "metodo",
+      "reviews_mencion": 4,
+      "oraciones_mencion": 4,
+      "pos": 2,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "compré este café en grano porque tiene buenas calificaciones, aún no lo pruebo, pero viene en buen empaque de papel, estaré actualizando esta review una vez lo pruebe con diferentes métodos de preparación.",
+        "es muy buen café, use el método tornado y quedó 10/10.",
+        "lo prepare con el método chemex, con un ratio de 16, con buen cuerpo, balanceado y acides media."
+      ]
+    },
+    {
+      "term": "nivel",
+      "aspect_key_sugerido": "nivel",
+      "reviews_mencion": 4,
+      "oraciones_mencion": 4,
+      "pos": 0,
+      "neg": 0,
+      "neu": 4,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "el nivel de tostado está muy quemado.",
+        "yo lo preparo con 18 grs de molienda fina nivel 4 en mi molino electrico (tiene 32 así que es bastante fino), homogenizo con wdt, nivelo con giro y tampeo con autonivelante ranurado a 15 lbs, puck screen y ratio 1:1.",
+        "el nivel del proceso del bourbon presente en este café es insuperable, gracias."
+      ]
+    },
+    {
+      "term": "prensa frances",
+      "aspect_key_sugerido": "prensa_frances",
+      "reviews_mencion": 4,
+      "oraciones_mencion": 4,
+      "pos": 1,
+      "neg": 0,
+      "neu": 3,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "su proceso con prensa francesa le da un toque especial buenísimo.",
+        "en prensa francesa ofrece un rico sabor dulce, achocolatado y concentrado.",
+        "un café, perfecto, para prensa francesa, tostado, medio notas de sabor a chocolatado."
+      ]
+    },
+    {
+      "term": "proceso",
+      "aspect_key_sugerido": "proceso",
+      "reviews_mencion": 3,
+      "oraciones_mencion": 4,
+      "pos": 0,
+      "neg": 0,
+      "neu": 4,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "su proceso con prensa francesa le da un toque especial buenísimo.",
+        "el nivel del proceso del bourbon presente en este café es insuperable, gracias.",
+        "pues un café realmente básico, el proceso de tueste se nota que es rústico ya que vienen diversos niveles de tueste en los granos, granos quemado y otros amarillos."
+      ]
+    },
+    {
+      "term": "magnifico",
+      "aspect_key_sugerido": "magnifico",
+      "reviews_mencion": 3,
+      "oraciones_mencion": 3,
+      "pos": 0,
+      "neg": 0,
+      "neu": 3,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "delicioso y de sabor magnífico.",
+        "es magnífico y agradable.",
+        "magnífico producto."
+      ]
+    },
+    {
+      "term": "inigualable",
+      "aspect_key_sugerido": "inigualable",
+      "reviews_mencion": 3,
+      "oraciones_mencion": 3,
+      "pos": 1,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "aroma inigualable.",
+        "sabor único e inigualable.",
+        "delicioso excelente calidad de grano y sabor inigualable."
+      ]
+    },
+    {
+      "term": "cafe favorito",
+      "aspect_key_sugerido": "cafe_favorito",
+      "reviews_mencion": 3,
+      "oraciones_mencion": 3,
+      "pos": 1,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "mi café favorito, excelente precio.",
+        "es mi café favorito sin duda.",
+        "definitivamente será mi café favorito de ahora en adelante."
+      ]
+    },
+    {
+      "term": "juan valdez",
+      "aspect_key_sugerido": "juan_valdez",
+      "reviews_mencion": 3,
+      "oraciones_mencion": 3,
+      "pos": 1,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "riquísimo como todos los productos de juan valdez.",
+        "juan valdez siempre será una gran elección y además que me salió a un excelente precio en ese momento.",
+        "el café juán valdez es el mejor café de origen que he probado y el que disfruto día tras día."
+      ]
+    },
+    {
+      "term": "condicion",
+      "aspect_key_sugerido": "condicion",
+      "reviews_mencion": 3,
+      "oraciones_mencion": 3,
+      "pos": 2,
+      "neg": 0,
+      "neu": 1,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "llegó el producto en perfectas condiciones.",
+        "el precio es bueno para las condiciones del mercado.",
+        "un producto de muy mala calidad, en todos los aspectos gran parte del producto esta quemado, ni el empaque cumple con las mínimas condiciones."
+      ]
+    },
+    {
+      "term": "mejor opcion",
+      "aspect_key_sugerido": "mejor_opcion",
+      "reviews_mencion": 3,
+      "oraciones_mencion": 3,
+      "pos": 1,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "hay mejores opciones en el mercado, con precios mas justos.",
+        "para personas amantes a un buen café y de calidad hay mejores opciones.",
+        "hay mejores opciones por el precio."
+      ]
+    },
+    {
+      "term": "molido",
+      "aspect_key_sugerido": "molido",
+      "reviews_mencion": 3,
+      "oraciones_mencion": 3,
+      "pos": 0,
+      "neg": 0,
+      "neu": 3,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "se le pidió café en grano y lo envío molido.",
+        "café quindío molido vs.",
+        "es un buen p4oducto tiene un molido un poco mas grueso que el tradicional y tiene un aroma delicioso."
+      ]
+    },
+    {
+      "term": "establecido",
+      "aspect_key_sugerido": "establecido",
+      "reviews_mencion": 3,
+      "oraciones_mencion": 3,
+      "pos": 2,
+      "neg": 0,
+      "neu": 1,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "llegó en el tiempo establecido muy bien empacado.",
+        "este producto siempre excelente, llega bien empacado y en los tiempos establecidos.",
+        "el producto es tal cual lo esperado y dentro de los tiempos establecidos."
+      ]
+    },
+    {
+      "term": "frescura",
+      "aspect_key_sugerido": "frescura",
+      "reviews_mencion": 3,
+      "oraciones_mencion": 3,
+      "pos": 2,
+      "neg": 0,
+      "neu": 1,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "excelente calidad, frescura y sabor.",
+        "creó que perdió la frescura, o tenía mucha tiempo.",
+        "excelente café, tiene una tostion ideal, resalta muy bien su dulzor y una pequeña acidez, no es para nada amargo y tiene unas notas algo especiadas, solo le falta la fecha de tostión, aún asi siento que todavía tiene fre"
+      ]
+    },
+    {
+      "term": "cafe puro",
+      "aspect_key_sugerido": "cafe_puro",
+      "reviews_mencion": 3,
+      "oraciones_mencion": 3,
+      "pos": 1,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "me sorprendió el café puro, buen sabor.",
+        "el olor a cafe puro se siente al instante y el empaque es muy seguro.",
+        "café con buen sabor, un aroma super bueno, café puro, muy poco ácido casi imperceptible."
+      ]
+    },
+    {
+      "term": "consumir",
+      "aspect_key_sugerido": "consumir",
+      "reviews_mencion": 3,
+      "oraciones_mencion": 3,
+      "pos": 2,
+      "neg": 0,
+      "neu": 1,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "de los mejores cafés que he consumido uff deliciosoo.",
+        "de los mejores café procesados que he consumido, altamente recomendable.",
+        "mi paquete no era tostion media, más bien tirando a alta, lo que le quita calidad al momento de consumir."
+      ]
+    },
+    {
+      "term": "grano entero",
+      "aspect_key_sugerido": "grano_entero",
+      "reviews_mencion": 3,
+      "oraciones_mencion": 3,
+      "pos": 0,
+      "neg": 0,
+      "neu": 3,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "pense que seria de mejor calidad , me decepciono tal vez la opcion de granos enteros sea mejor, no se.",
+        "granos enteros, mismo color, lo único es que no indican la fecha de tostón.",
+        "se siente cafe especial de grano entero."
+      ]
+    },
+    {
+      "term": "supermercado",
+      "aspect_key_sugerido": "supermercado",
+      "reviews_mencion": 3,
+      "oraciones_mencion": 3,
+      "pos": 0,
+      "neg": 0,
+      "neu": 3,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "más económico que el los supermercados,",
+        "cage en granos, es más económico que comprar en supermercados o en las mismas tiendas de café quindio.",
+        "parece un café barato de supermercado reempaquetado y vendido como “orgánico”."
+      ]
+    },
+    {
+      "term": "exquisito sabor",
+      "aspect_key_sugerido": "exquisito_sabor",
+      "reviews_mencion": 3,
+      "oraciones_mencion": 3,
+      "pos": 1,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "exquisito sabor de cafe colombiano.",
+        "es la primera vez que lo compro excelente aroma y exquisito sabor.",
+        "exquisito sabor."
+      ]
+    },
+    {
+      "term": "normal",
+      "aspect_key_sugerido": "normal",
+      "reviews_mencion": 3,
+      "oraciones_mencion": 3,
+      "pos": 0,
+      "neg": 3,
+      "neu": 0,
+      "polaridad_neta": -1.0,
+      "examples": [
+        "buen café, pero la verdad esperaba un sabor mejor, no diferencie el sabor del café quindío normal es muy similar, pero si se nota que no lo queman tanto, es mas café, que café oscuro.",
+        "granos parejos, tostión media, no encontré granos defectuosos, es un café normal.",
+        "el café es regular, no parece que fuera puro, de este café debí usar el doble de café, para hacer mi tinto normal del día, así que me quedo usando mi café de siempre."
+      ]
+    },
+    {
+      "term": "premium",
+      "aspect_key_sugerido": "premium",
+      "reviews_mencion": 3,
+      "oraciones_mencion": 3,
+      "pos": 2,
+      "neg": 0,
+      "neu": 1,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "es maluco ese café, no tiene cuerpo ni matices, es increíble pagar tanto por un café que de premium no tiene nada, esta reeepasado de tostado.",
+        "calidad premium.",
+        "excelente café premium."
+      ]
+    },
+    {
+      "term": "desagradable",
+      "aspect_key_sugerido": "desagradable",
+      "reviews_mencion": 3,
+      "oraciones_mencion": 3,
+      "pos": 0,
+      "neg": 0,
+      "neu": 3,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "en comparación con su presentación en grano, el sabor y olor de este café es casi desagradable.",
+        "sabia a viejo no se cuanto tiempo de tostion tenia pero tenia un sabor desagradable.",
+        "que desagradable recibir un producto resellado con cinta adhesiva."
+      ]
+    },
+    {
+      "term": "ratio",
+      "aspect_key_sugerido": "ratio",
+      "reviews_mencion": 3,
+      "oraciones_mencion": 3,
+      "pos": 1,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "no es un café terrible y sigo buscando el ratio ideal para prepararlo, con lo que espero que la experiencia mejore, pero de momento no lo volvería a comprar.",
+        "yo lo preparo con 18 grs de molienda fina nivel 4 en mi molino electrico (tiene 32 así que es bastante fino), homogenizo con wdt, nivelo con giro y tampeo con autonivelante ranurado a 15 lbs, puck screen y ratio 1:1.",
+        "lo prepare con el método chemex, con un ratio de 16, con buen cuerpo, balanceado y acides media."
+      ]
+    },
+    {
+      "term": "sabor aceptable",
+      "aspect_key_sugerido": "sabor_aceptable",
+      "reviews_mencion": 3,
+      "oraciones_mencion": 3,
+      "pos": 3,
+      "neg": 0,
+      "neu": 0,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "sabor aceptable, tipo promedio de sabor.",
+        "sabor aceptable, sabor promedio.",
+        "granos disparejos, sin aroma destacados, el sabor aceptable, los granos si dejan mucho que desear con hongos y afectados por bichos, tostión dispareja."
+      ]
+    },
+    {
+      "term": "moderado",
+      "aspect_key_sugerido": "moderado",
+      "reviews_mencion": 3,
+      "oraciones_mencion": 3,
+      "pos": 1,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "sabor y calidad excepcional a un precio moderado.",
+        "café tonos moderados, un poco.",
+        "café de buen olor y sabor a un precio moderado."
+      ]
+    },
+    {
+      "term": "cliente",
+      "aspect_key_sugerido": "cliente",
+      "reviews_mencion": 3,
+      "oraciones_mencion": 3,
+      "pos": 1,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "a los clientes de mi negocio les gusta mucho.",
+        "cliente fiel.",
+        "excelente, soy cliente."
+      ]
+    },
+    {
+      "term": "defectuoso",
+      "aspect_key_sugerido": "defectuoso",
+      "reviews_mencion": 3,
+      "oraciones_mencion": 3,
+      "pos": 0,
+      "neg": 1,
+      "neu": 2,
+      "polaridad_neta": -1.0,
+      "examples": [
+        "trae gran cantidad de granos pequeños y defectuosos.",
+        "granos parejos, tostión media, no encontré granos defectuosos, es un café normal.",
+        "porcentaje de 2% de granos defectuosos en 1 libra."
+      ]
+    },
+    {
+      "term": "pequeno",
+      "aspect_key_sugerido": "pequeno",
+      "reviews_mencion": 3,
+      "oraciones_mencion": 3,
+      "pos": 2,
+      "neg": 0,
+      "neu": 1,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "trae gran cantidad de granos pequeños y defectuosos.",
+        "la tostion es buena aunque los granos son algo pequeños y no muy parejos.",
+        "excelente café, tiene una tostion ideal, resalta muy bien su dulzor y una pequeña acidez, no es para nada amargo y tiene unas notas algo especiadas, solo le falta la fecha de tostión, aún asi siento que todavía tiene fre"
+      ]
+    },
+    {
+      "term": "importante",
+      "aspect_key_sugerido": "importante",
+      "reviews_mencion": 3,
+      "oraciones_mencion": 3,
+      "pos": 2,
+      "neg": 0,
+      "neu": 1,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "el único detalle es la fecha de tostión, no viene especificada en el empaque y considero que es algo importante.",
+        "huele muy rico, no lo he probado pero si empaqué es hermoso y con los datos importantes para probarlo.",
+        "no todos los granos eran grandes, pero lo importante es que casi todos estaban muy bien."
+      ]
+    },
+    {
+      "term": "basico",
+      "aspect_key_sugerido": "basico",
+      "reviews_mencion": 3,
+      "oraciones_mencion": 3,
+      "pos": 0,
+      "neg": 0,
+      "neu": 3,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "es un café de básico con buen sabor.",
+        "es un café básico, no menciona la variedad, lo cual confirma su sabor.",
+        "pues un café realmente básico, el proceso de tueste se nota que es rústico ya que vienen diversos niveles de tueste en los granos, granos quemado y otros amarillos."
+      ]
+    },
+    {
+      "term": "grano parejo",
+      "aspect_key_sugerido": "grano_parejo",
+      "reviews_mencion": 3,
+      "oraciones_mencion": 3,
+      "pos": 0,
+      "neg": 1,
+      "neu": 2,
+      "polaridad_neta": -1.0,
+      "examples": [
+        "granos parejos.",
+        "el café tiene granos muy parejos y un sabor bastante equilibrado, no es muy ácido y eso me gusta.",
+        "granos parejos, tostión media, no encontré granos defectuosos, es un café normal."
+      ]
+    },
+    {
+      "term": "grueso",
+      "aspect_key_sugerido": "grueso",
+      "reviews_mencion": 3,
+      "oraciones_mencion": 3,
+      "pos": 1,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "huele muy bien, buen sabor, ideal para molienda gruesa para usar en presan francesa.",
+        "no importa si la molienda es gruesa o fina, el sabor es amargo.",
+        "es un buen p4oducto tiene un molido un poco mas grueso que el tradicional y tiene un aroma delicioso."
+      ]
+    },
+    {
+      "term": "acido",
+      "aspect_key_sugerido": "acido",
+      "reviews_mencion": 3,
+      "oraciones_mencion": 3,
+      "pos": 0,
+      "neg": 0,
+      "neu": 3,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "el café tiene granos muy parejos y un sabor bastante equilibrado, no es muy ácido y eso me gusta.",
+        "recomendado sabor ácido delicioso.",
+        "medio ácido."
+      ]
+    },
+    {
+      "term": "media",
+      "aspect_key_sugerido": "media",
+      "reviews_mencion": 3,
+      "oraciones_mencion": 3,
+      "pos": 2,
+      "neg": 1,
+      "neu": 0,
+      "polaridad_neta": 0.333,
+      "examples": [
+        "en lo personal me parece que la tostión fue alta a pesar de que decía media, sin embargo, los granos y el sabor, de buena calidad.",
+        "granos parejos, tostión media, no encontré granos defectuosos, es un café normal.",
+        "cafe de tostion media, con un sabor equilibrado entre dulzor y acides muy suave para nada amargo, llega bastante fresco ya que al solo agarrar la bolsa suelta un aroma delicioso, super feliz de la compra y mas con ese pr"
+      ]
+    },
+    {
+      "term": "expreso",
+      "aspect_key_sugerido": "expreso",
+      "reviews_mencion": 3,
+      "oraciones_mencion": 3,
+      "pos": 1,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "un café agradable al gusto y con buen aroma, lo hago en máquina de expreso con una molienda fina.",
+        "delicioso, fuerte como me gusta; aunque si lo pueden hacer un poco más fuerte estilo expreso mejor.",
+        "bueno para cafetera expreso."
+      ]
+    },
+    {
+      "term": "delicios",
+      "aspect_key_sugerido": "delicios",
+      "reviews_mencion": 3,
+      "oraciones_mencion": 3,
+      "pos": 0,
+      "neg": 0,
+      "neu": 3,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "muy fresco y con un sabor y tonalidad deliciosa.",
+        "tostion media y buen sabor, aroma deliciosa.",
+        "deliciosa."
+      ]
+    },
+    {
+      "term": "barato",
+      "aspect_key_sugerido": "barato",
+      "reviews_mencion": 3,
+      "oraciones_mencion": 3,
+      "pos": 1,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "bueno, bonito y barato.",
+        "el empaque se ve barato viejo era para un regalo y se ve barato.",
+        "parece un café barato de supermercado reempaquetado y vendido como “orgánico”."
+      ]
+    },
+    {
+      "term": "espresso",
+      "aspect_key_sugerido": "espresso",
+      "reviews_mencion": 3,
+      "oraciones_mencion": 3,
+      "pos": 1,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "el café sale un poco aguado en máquina de espresso.",
+        "preparado en una máquina de espresso sencilla con filtro presurizado y aún así queda muy muy rico.",
+        "excelente cafe, fresco, gran aroma en preparación espresso produce buena crema, recomendado."
+      ]
+    },
+    {
+      "term": "especial",
+      "aspect_key_sugerido": "especial",
+      "reviews_mencion": 3,
+      "oraciones_mencion": 3,
+      "pos": 0,
+      "neg": 0,
+      "neu": 3,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "da una espuma especial.",
+        "su proceso con prensa francesa le da un toque especial buenísimo.",
+        "se siente cafe especial de grano entero."
+      ]
+    },
+    {
+      "term": "organico",
+      "aspect_key_sugerido": "organico",
+      "reviews_mencion": 3,
+      "oraciones_mencion": 3,
+      "pos": 0,
+      "neg": 0,
+      "neu": 3,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "me gusta el aroma, su sabor y sobre todo que sea un producto orgánico.",
+        "buen precio y buen producto, suponiendo que en verdad el grano sea orgánico.",
+        "parece un café barato de supermercado reempaquetado y vendido como “orgánico”."
+      ]
+    },
+    {
+      "term": "sentido",
+      "aspect_key_sugerido": "sentido",
+      "reviews_mencion": 3,
+      "oraciones_mencion": 3,
+      "pos": 1,
+      "neg": 1,
+      "neu": 1,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "si eres amante del buen café, este definitivamente tienes que probarlo, exquisito en todo el sentido de la palabra.",
+        "malo en todos los sentidos.",
+        "excelente producto, tiene una fragancia y aroma que te envuelve los sentidos, ni hablar de sus notas dulces que te cautivan."
+      ]
+    },
+    {
+      "term": "excelente cafe recomendado",
+      "aspect_key_sugerido": "excelente_cafe_recomendado",
+      "reviews_mencion": 3,
+      "oraciones_mencion": 3,
+      "pos": 3,
+      "neg": 0,
+      "neu": 0,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "excelente café, muy recomendado.",
+        "excelente cafe, recomendado.",
+        "excelente café, recomendado."
+      ]
+    },
+    {
+      "term": "cafe recomendado",
+      "aspect_key_sugerido": "cafe_recomendado",
+      "reviews_mencion": 3,
+      "oraciones_mencion": 3,
+      "pos": 1,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "muy bien café recomendado.",
+        "buen café, recomendado.",
+        "el mejor café recomendado."
+      ]
+    },
+    {
+      "term": "estrella",
+      "aspect_key_sugerido": "estrella",
+      "reviews_mencion": 3,
+      "oraciones_mencion": 3,
+      "pos": 0,
+      "neg": 1,
+      "neu": 2,
+      "polaridad_neta": -1.0,
+      "examples": [
+        "delicioso café se que tomo café real 5 estrellas .",
+        "delicioso, antes le había puesto 2 estrellas, pero realmente es que estaba usando una mala proporción, con una granera y usando 16ml de agua por gramo de café, quedó perfecto.",
+        "5 estrellas y súper recomendado."
+      ]
+    },
+    {
+      "term": "acid",
+      "aspect_key_sugerido": "acid",
+      "reviews_mencion": 3,
+      "oraciones_mencion": 3,
+      "pos": 1,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "muy buen sabor, textura y acides agradables.",
+        "cafe de tostion media, con un sabor equilibrado entre dulzor y acides muy suave para nada amargo, llega bastante fresco ya que al solo agarrar la bolsa suelta un aroma delicioso, super feliz de la compra y mas con ese pr",
+        "lo prepare con el método chemex, con un ratio de 16, con buen cuerpo, balanceado y acides media."
+      ]
+    },
+    {
+      "term": "dulzor",
+      "aspect_key_sugerido": "dulzor",
+      "reviews_mencion": 3,
+      "oraciones_mencion": 3,
+      "pos": 3,
+      "neg": 0,
+      "neu": 0,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "excelente café, tiene una tostion ideal, resalta muy bien su dulzor y una pequeña acidez, no es para nada amargo y tiene unas notas algo especiadas, solo le falta la fecha de tostión, aún asi siento que todavía tiene fre",
+        "es un café bueno pero en lo personal esperaba algo más de acidez y dulzor en su sabor.",
+        "cafe de tostion media, con un sabor equilibrado entre dulzor y acides muy suave para nada amargo, llega bastante fresco ya que al solo agarrar la bolsa suelta un aroma delicioso, super feliz de la compra y mas con ese pr"
+      ]
+    },
+    {
+      "term": "pasilla",
+      "aspect_key_sugerido": "pasilla",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 3,
+      "pos": 1,
+      "neg": 1,
+      "neu": 1,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "le hice pruebas y es pura pasilla el cafe queda negro y debe de quedar cafe cuando es de buena calidad.",
+        "no volveré a comprar esa pasilla ni sabor ni olor.",
+        "es mezcla de pasilla y malla 14 y 16."
+      ]
+    },
+    {
+      "term": "cafe exquisito",
+      "aspect_key_sugerido": "cafe_exquisito",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 0,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "es un café muy exquisito.",
+        "un café exquisito!!!!."
+      ]
+    },
+    {
+      "term": "sabor excelente",
+      "aspect_key_sugerido": "sabor_excelente",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 2,
+      "neg": 0,
+      "neu": 0,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "un sabor excelente.",
+        "un sabor excelente."
+      ]
+    },
+    {
+      "term": "domicilio",
+      "aspect_key_sugerido": "domicilio",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 1,
+      "neg": 0,
+      "neu": 1,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "todo muy bien el producto llegó rápido a mi domicilio.",
+        "buen grano y buen olor pero el empaque es muy delicado se debe de tener más cuidado cuando se pida a domicilio por qué la transportadora no sabe que el empaque debe ser delicado."
+      ]
+    },
+    {
+      "term": "superior",
+      "aspect_key_sugerido": "superior",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 2,
+      "neg": 0,
+      "neu": 0,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "el mejor café en relación calidad precio, si buen es cierto hay algunos superiores también el precio es muy superior, este café de notas suaves, de tueste medio es superior.",
+        "se nota lo fresco y de gran calidad (superior a los comerciales)."
+      ]
+    },
+    {
+      "term": "asequible",
+      "aspect_key_sugerido": "asequible",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 2,
+      "neg": 0,
+      "neu": 0,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "es un café con buen balance y buena acidez a un precio asequible.",
+        "tiene un tueste medio el grano es delicioso grande escogido muy delicioso al igual subí otras fotos y otras recomendaciones para que el consumidor las compare pero todas esas opciones son muy buenas ya las he probado rec"
+      ]
+    },
+    {
+      "term": "pais",
+      "aspect_key_sugerido": "pais",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 0,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "de lo mejor de nuestro país.",
+        "el cafe quindío es uno de los mejores cafés del país."
+      ]
+    },
+    {
+      "term": "riquisimo",
+      "aspect_key_sugerido": "riquisimo",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 0,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "riquísimo como todos los productos de juan valdez.",
+        "riquísimo el café, olor agradable,."
+      ]
+    },
+    {
+      "term": "cafetero",
+      "aspect_key_sugerido": "cafetero",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 1,
+      "neg": 0,
+      "neu": 1,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "molido, complicado si no hay cafetera con filtros.",
+        "bueno para cafetera expreso."
+      ]
+    },
+    {
+      "term": "filtro",
+      "aspect_key_sugerido": "filtro",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 0,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "molido, complicado si no hay cafetera con filtros.",
+        "preparado en una máquina de espresso sencilla con filtro presurizado y aún así queda muy muy rico."
+      ]
+    },
+    {
+      "term": "gracias",
+      "aspect_key_sugerido": "gracias",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 1,
+      "neg": 0,
+      "neu": 1,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "es el mejor gracias un poco demorado pero bien.",
+        "su sabor es tal cual como se describe, muchas gracias a café rubí por tanta calidad, saludos desde cartagena de indias."
+      ]
+    },
+    {
+      "term": "precio justo",
+      "aspect_key_sugerido": "precio_justo",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 1,
+      "neg": 0,
+      "neu": 1,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "hay mejores opciones en el mercado, con precios mas justos.",
+        "un precio justo y la mejor calidad ."
+      ]
+    },
+    {
+      "term": "cantidad",
+      "aspect_key_sugerido": "cantidad",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 1,
+      "neg": 0,
+      "neu": 1,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "cantidad y calidad muy revomendado.",
+        "trae gran cantidad de granos pequeños y defectuosos."
+      ]
+    },
+    {
+      "term": "tiempo establecido",
+      "aspect_key_sugerido": "tiempo_establecido",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 1,
+      "neg": 0,
+      "neu": 1,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "llegó en el tiempo establecido muy bien empacado.",
+        "el producto es tal cual lo esperado y dentro de los tiempos establecidos."
+      ]
+    },
+    {
+      "term": "maravilloso",
+      "aspect_key_sugerido": "maravilloso",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 0,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "maravilloso!!!.",
+        "maravilloso."
+      ]
+    },
+    {
+      "term": "indicado",
+      "aspect_key_sugerido": "indicado",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 1,
+      "neg": 0,
+      "neu": 1,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "el producto cumple con lo indicado.",
+        "llegó puntual, peso indicado , el sabor le faltó."
+      ]
+    },
+    {
+      "term": "amargor",
+      "aspect_key_sugerido": "amargor",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 1,
+      "neg": 0,
+      "neu": 1,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "delicioso amargor.",
+        "se nota la calidad en cada sorbo, sin amargor fuerte y con un final muy agradable."
+      ]
+    },
+    {
+      "term": "paladar",
+      "aspect_key_sugerido": "paladar",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 1,
+      "neg": 0,
+      "neu": 1,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "excelente el café quindío gourmet con un aroma espectacular, sabor muy agradable al paladar, tostado a su medida.",
+        "muy tostado para paladares que gustan de un buen café en la mañana."
+      ]
+    },
+    {
+      "term": "aroma espectacular",
+      "aspect_key_sugerido": "aroma_espectacular",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 2,
+      "neg": 0,
+      "neu": 0,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "excelente el café quindío gourmet con un aroma espectacular, sabor muy agradable al paladar, tostado a su medida.",
+        "aroma espectacular, de sabor claro y notas bien definidas."
+      ]
+    },
+    {
+      "term": "electrico",
+      "aspect_key_sugerido": "electrico",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 1,
+      "neg": 0,
+      "neu": 1,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "es bueno entre los que he probado de este estilo, lo usaba para preparar en cafetera eléctrica, 12 gr 400 ml de agua y otro de 24 gr 800 ml de agua.",
+        "yo lo preparo con 18 grs de molienda fina nivel 4 en mi molino electrico (tiene 32 así que es bastante fino), homogenizo con wdt, nivelo con giro y tampeo con autonivelante ranurado a 15 lbs, puck screen y ratio 1:1."
+      ]
+    },
+    {
+      "term": "estilo",
+      "aspect_key_sugerido": "estilo",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 1,
+      "neg": 0,
+      "neu": 1,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "es bueno entre los que he probado de este estilo, lo usaba para preparar en cafetera eléctrica, 12 gr 400 ml de agua y otro de 24 gr 800 ml de agua.",
+        "delicioso, fuerte como me gusta; aunque si lo pueden hacer un poco más fuerte estilo expreso mejor."
+      ]
+    },
+    {
+      "term": "tipico",
+      "aspect_key_sugerido": "tipico",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 0,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "delicioso, típico café colombiano.",
+        "típicos del café colombiano lo volvería a comprar."
+      ]
+    },
+    {
+      "term": "gente",
+      "aspect_key_sugerido": "gente",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 0,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "a mucha gente alrededor le encanta como lo preparo.",
+        "super recomendado para la gente que esté iniciando en el tema del café."
+      ]
+    },
+    {
+      "term": "suavidad",
+      "aspect_key_sugerido": "suavidad",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 2,
+      "neg": 0,
+      "neu": 0,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "es un café balanceado entre sabor y aroma, tostión media que conlleva a la suavidad, la calidad es excelente.",
+        "sabor increíble, suavidad fenomenal."
+      ]
+    },
+    {
+      "term": "error",
+      "aspect_key_sugerido": "error",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 1,
+      "neg": 0,
+      "neu": 1,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "lo único es revisar muy bien yo lo quería pedir en grano y por error lo pedí molido.",
+        "lo compré por error al confundirlo con su presentación en grano y desde el primer vistazo se apreció una gran diferencia."
+      ]
+    },
+    {
+      "term": "manana",
+      "aspect_key_sugerido": "manana",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 0,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "muy tostado para paladares que gustan de un buen café en la mañana.",
+        "un muy buen café para empezar la mañana, lo volveré a comprar."
+      ]
+    },
+    {
+      "term": "cafe colombiano",
+      "aspect_key_sugerido": "cafe_colombiano",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 0,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "exquisito sabor de cafe colombiano.",
+        "típicos del café colombiano lo volvería a comprar."
+      ]
+    },
+    {
+      "term": "sabor delicioso",
+      "aspect_key_sugerido": "sabor_delicioso",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 1,
+      "neg": 0,
+      "neu": 1,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "excelente producto, sabor delicioso.",
+        "me encantó,su sabor muy delicioso."
+      ]
+    },
+    {
+      "term": "cafe comercial",
+      "aspect_key_sugerido": "cafe_comercial",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 0,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "de los cafés \"comerciales\"",
+        "la verdad mil veces mejor que los cafés comerciales."
+      ]
+    },
+    {
+      "term": "exelente cafe",
+      "aspect_key_sugerido": "exelente_cafe",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 0,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "exelente café.",
+        "exelente café ."
+      ]
+    },
+    {
+      "term": "colombia",
+      "aspect_key_sugerido": "colombia",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 0,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "de los mejores cafés de colombia.",
+        "uno de los mejores cafés suaves de colombia."
+      ]
+    },
+    {
+      "term": "envio",
+      "aspect_key_sugerido": "envio",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 1,
+      "neg": 1,
+      "neu": 0,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "excelente producto envío rápido muy satisfecho con toda la logística",
+        "malo el granos salió húmedo al molerlo no molía bien envío foto sin aroma y sin sabor."
+      ]
+    },
+    {
+      "term": "amante",
+      "aspect_key_sugerido": "amante",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 1,
+      "neg": 0,
+      "neu": 1,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "para personas amantes a un buen café y de calidad hay mejores opciones.",
+        "si eres amante del buen café, este definitivamente tienes que probarlo, exquisito en todo el sentido de la palabra."
+      ]
+    },
+    {
+      "term": "abierto",
+      "aspect_key_sugerido": "abierto",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 1,
+      "neg": 1,
+      "neu": 0,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "el producto no es malo y lo he comprado ya dos veces pero esta última vez uno de los paquetes me llegó abierto.",
+        "y excelente el cambio de empaque para mantener la calidad del café después de abierto."
+      ]
+    },
+    {
+      "term": "viejo",
+      "aspect_key_sugerido": "viejo",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 0,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "sabia a viejo no se cuanto tiempo de tostion tenia pero tenia un sabor desagradable.",
+        "el empaque se ve barato viejo era para un regalo y se ve barato."
+      ]
+    },
+    {
+      "term": "tipo",
+      "aspect_key_sugerido": "tipo",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 1,
+      "neg": 0,
+      "neu": 1,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "sabor aceptable, tipo promedio de sabor.",
+        "solo no es mi tipo de café."
+      ]
+    },
+    {
+      "term": "promedio",
+      "aspect_key_sugerido": "promedio",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 2,
+      "neg": 0,
+      "neu": 0,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "sabor aceptable, tipo promedio de sabor.",
+        "sabor aceptable, sabor promedio."
+      ]
+    },
+    {
+      "term": "mejor caf",
+      "aspect_key_sugerido": "mejor_caf",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 1,
+      "neg": 0,
+      "neu": 1,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "es muy bueno, de los mejores cafes.",
+        "uno de los mejores cafes que he probado."
+      ]
+    },
+    {
+      "term": "caf",
+      "aspect_key_sugerido": "caf",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 1,
+      "neg": 0,
+      "neu": 1,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "es muy bueno, de los mejores cafes.",
+        "uno de los mejores cafes que he probado."
+      ]
+    },
+    {
+      "term": "delicia",
+      "aspect_key_sugerido": "delicia",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 1,
+      "neg": 0,
+      "neu": 1,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "delicia de café, lo hago en chemex muy aromático, le encucuentro notas muy frutales.",
+        "delicioso, además de tener buen precio, manejan buena calidad, no dudes en comprar estas delicia."
+      ]
+    },
+    {
+      "term": "chemex",
+      "aspect_key_sugerido": "chemex",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 0,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "delicia de café, lo hago en chemex muy aromático, le encucuentro notas muy frutales.",
+        "lo prepare con el método chemex, con un ratio de 16, con buen cuerpo, balanceado y acides media."
+      ]
+    },
+    {
+      "term": "precio moderado",
+      "aspect_key_sugerido": "precio_moderado",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 1,
+      "neg": 0,
+      "neu": 1,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "sabor y calidad excepcional a un precio moderado.",
+        "café de buen olor y sabor a un precio moderado."
+      ]
+    },
+    {
+      "term": "excepcional",
+      "aspect_key_sugerido": "excepcional",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 1,
+      "neg": 0,
+      "neu": 1,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "sabor y calidad excepcional a un precio moderado.",
+        "un café con sabor excepcional y un aroma espectacular!."
+      ]
+    },
+    {
+      "term": "sabroso",
+      "aspect_key_sugerido": "sabroso",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 0,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "café muy suave y sabroso.",
+        "muy rico y sabroso."
+      ]
+    },
+    {
+      "term": "excelente cafe colombiano",
+      "aspect_key_sugerido": "excelente_cafe_colombiano",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 2,
+      "neg": 0,
+      "neu": 0,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "excelente café colombiano.",
+        "un excelente café colombiano, muy recomendado."
+      ]
+    },
+    {
+      "term": "regalo",
+      "aspect_key_sugerido": "regalo",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 0,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "lo envíe de regalo para el exterior y les encantó.",
+        "el empaque se ve barato viejo era para un regalo y se ve barato."
+      ]
+    },
+    {
+      "term": "comprado",
+      "aspect_key_sugerido": "comprado",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 0,
+      "neg": 1,
+      "neu": 1,
+      "polaridad_neta": -1.0,
+      "examples": [
+        "el producto es bueno, lo malo es el empaque, ya que llegó en la misma bolsa con otros elementos comprados y se maltrató el producto.",
+        "el mejor café artesanal comprado en mercado libre que he probado hasta ahora, y van 4 ya."
+      ]
+    },
+    {
+      "term": "finca",
+      "aspect_key_sugerido": "finca",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 2,
+      "neg": 0,
+      "neu": 0,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "café correcto, pero si buscas una experiencia diferente es mejor comprar café de especialidad, directos de finca.",
+        "excelente producto, café de finca, con una tostion perfecta y un sabor y olor a campo indescriptible."
+      ]
+    },
+    {
+      "term": "gramo",
+      "aspect_key_sugerido": "gramo",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 1,
+      "neg": 1,
+      "neu": 0,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "excelente relación precio por gramo.",
+        "delicioso, antes le había puesto 2 estrellas, pero realmente es que estaba usando una mala proporción, con una granera y usando 16ml de agua por gramo de café, quedó perfecto."
+      ]
+    },
+    {
+      "term": "cambio",
+      "aspect_key_sugerido": "cambio",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 1,
+      "neg": 0,
+      "neu": 1,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "no lo cambio por ninguno.",
+        "y excelente el cambio de empaque para mantener la calidad del café después de abierto."
+      ]
+    },
+    {
+      "term": "grano quemado",
+      "aspect_key_sugerido": "grano_quemado",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 0,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "es el mejor café ! está tostado en un todo uniforme no hay granos quemados ! mi nuevo favorito .",
+        "el sabor lo daña los granos quemados."
+      ]
+    },
+    {
+      "term": "feliz",
+      "aspect_key_sugerido": "feliz",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 1,
+      "neg": 0,
+      "neu": 1,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "feliz de que me llegue a la casa y a muy buen precio.",
+        "cafe de tostion media, con un sabor equilibrado entre dulzor y acides muy suave para nada amargo, llega bastante fresco ya que al solo agarrar la bolsa suelta un aroma delicioso, super feliz de la compra y mas con ese pr"
+      ]
+    },
+    {
+      "term": "foto",
+      "aspect_key_sugerido": "foto",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 1,
+      "neg": 1,
+      "neu": 0,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "tiene un tueste medio el grano es delicioso grande escogido muy delicioso al igual subí otras fotos y otras recomendaciones para que el consumidor las compare pero todas esas opciones son muy buenas ya las he probado rec",
+        "malo el granos salió húmedo al molerlo no molía bien envío foto sin aroma y sin sabor."
+      ]
+    },
+    {
+      "term": "citrico",
+      "aspect_key_sugerido": "citrico",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 0,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "sentí notas a panela y algo citrico.",
+        "sabor dulce y cítrico, con aroma frutal muy ligero."
+      ]
+    },
+    {
+      "term": "excelente opcion",
+      "aspect_key_sugerido": "excelente_opcion",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 2,
+      "neg": 0,
+      "neu": 0,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "excelente opción.",
+        "el café es rico, fresco, por su precio una excelente opción."
+      ]
+    },
+    {
+      "term": "beneficio",
+      "aspect_key_sugerido": "beneficio",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 2,
+      "neg": 0,
+      "neu": 0,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "excelente producto en relación costo beneficio.",
+        "esta muy bien, en general buen equilibrio costo beneficio."
+      ]
+    },
+    {
+      "term": "personal",
+      "aspect_key_sugerido": "personal",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 2,
+      "neg": 0,
+      "neu": 0,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "en lo personal me parece que la tostión fue alta a pesar de que decía media, sin embargo, los granos y el sabor, de buena calidad.",
+        "es un café bueno pero en lo personal esperaba algo más de acidez y dulzor en su sabor."
+      ]
+    },
+    {
+      "term": "mezcla",
+      "aspect_key_sugerido": "mezcla",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 1,
+      "neg": 1,
+      "neu": 0,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "una buena mezcla de variedades.",
+        "es mezcla de pasilla y malla 14 y 16."
+      ]
+    },
+    {
+      "term": "preparacion",
+      "aspect_key_sugerido": "preparacion",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 2,
+      "neg": 0,
+      "neu": 0,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "compré este café en grano porque tiene buenas calificaciones, aún no lo pruebo, pero viene en buen empaque de papel, estaré actualizando esta review una vez lo pruebe con diferentes métodos de preparación.",
+        "excelente cafe, fresco, gran aroma en preparación espresso produce buena crema, recomendado."
+      ]
+    },
+    {
+      "term": "ligero",
+      "aspect_key_sugerido": "ligero",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 0,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "es un café de un aroma y sabor suave, sus granos no son muy granos y tiene una tostión ligera, buen café pero no extraordinario.",
+        "sabor dulce y cítrico, con aroma frutal muy ligero."
+      ]
+    },
+    {
+      "term": "grano defectuoso",
+      "aspect_key_sugerido": "grano_defectuoso",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 0,
+      "neg": 1,
+      "neu": 1,
+      "polaridad_neta": -1.0,
+      "examples": [
+        "granos parejos, tostión media, no encontré granos defectuosos, es un café normal.",
+        "porcentaje de 2% de granos defectuosos en 1 libra."
+      ]
+    },
+    {
+      "term": "caracteristica",
+      "aspect_key_sugerido": "caracteristica",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 0,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "no viene con descripciones de sus características, el sabor es bastante fuerte y sin fragancias.",
+        "lo mejor en la bolsa trae una etiqueta con la trazabilidad y las características del café, muchos no la traen."
+      ]
+    },
+    {
+      "term": "regular",
+      "aspect_key_sugerido": "regular",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 0,
+      "neg": 1,
+      "neu": 1,
+      "polaridad_neta": -1.0,
+      "examples": [
+        "el producto es bueno, lo regular fue el empaque, ya que venía con otras compras y se maltrató el producto.",
+        "el café es regular, no parece que fuera puro, de este café debí usar el doble de café, para hacer mi tinto normal del día, así que me quedo usando mi café de siempre."
+      ]
+    },
+    {
+      "term": "aroma delicioso",
+      "aspect_key_sugerido": "aroma_delicioso",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 1,
+      "neg": 0,
+      "neu": 1,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "es un buen p4oducto tiene un molido un poco mas grueso que el tradicional y tiene un aroma delicioso.",
+        "cafe de tostion media, con un sabor equilibrado entre dulzor y acides muy suave para nada amargo, llega bastante fresco ya que al solo agarrar la bolsa suelta un aroma delicioso, super feliz de la compra y mas con ese pr"
+      ]
+    },
+    {
+      "term": "pesimo",
+      "aspect_key_sugerido": "pesimo",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 0,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "pésimo cafe.",
+        "pésimo sabor a quemado y granos muy irregulares."
+      ]
+    },
+    {
+      "term": "espuma",
+      "aspect_key_sugerido": "espuma",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 0,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "da una espuma especial.",
+        "que tal la espuma, el olor."
+      ]
+    },
+    {
+      "term": "caturra",
+      "aspect_key_sugerido": "caturra",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 0,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "sabe a caturra :v.",
+        "definitivamente el caturra es mi favorito para el día a día."
+      ]
+    },
+    {
+      "term": "cafe fresco rico",
+      "aspect_key_sugerido": "cafe_fresco_rico",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 0,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "gracias por enviarme un cafe fresco y rico.",
+        "gracias por enviarme un cafe fresco y rico."
+      ]
+    },
+    {
+      "term": "burbon rosado",
+      "aspect_key_sugerido": "burbon_rosado",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 1,
+      "neg": 0,
+      "neu": 1,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "está bien, pero prefiero el burbón rosado de la misma marca.",
+        "solo me quedo con el \"burbon rosado\" de la marca."
+      ]
+    },
+    {
+      "term": "rosado",
+      "aspect_key_sugerido": "rosado",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 1,
+      "neg": 0,
+      "neu": 1,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "está bien, pero prefiero el burbón rosado de la misma marca.",
+        "solo me quedo con el \"burbon rosado\" de la marca."
+      ]
+    },
+    {
+      "term": "burbon",
+      "aspect_key_sugerido": "burbon",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 1,
+      "neg": 0,
+      "neu": 1,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "está bien, pero prefiero el burbón rosado de la misma marca.",
+        "solo me quedo con el \"burbon rosado\" de la marca."
+      ]
+    },
+    {
+      "term": "disparejo",
+      "aspect_key_sugerido": "disparejo",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 1,
+      "neg": 0,
+      "neu": 1,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "tiene bn sabor pero la tostion está algo dispareja.",
+        "granos disparejos, sin aroma destacados, el sabor aceptable, los granos si dejan mucho que desear con hongos y afectados por bichos, tostión dispareja."
+      ]
+    },
+    {
+      "term": "sorbo",
+      "aspect_key_sugerido": "sorbo",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 2,
+      "neg": 0,
+      "neu": 0,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "probé este café y simplemente superó todas mis expectativas: presentación, aroma intenso, sabor equilibrado y una calidad que se siente en cada sorbo, sin palabras.",
+        "se nota la calidad en cada sorbo, sin amargor fuerte y con un final muy agradable."
+      ]
+    },
+    {
+      "term": "toque",
+      "aspect_key_sugerido": "toque",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 0,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "su proceso con prensa francesa le da un toque especial buenísimo.",
+        "sabor algo acaramelado, con un toque de acidez exquisito."
+      ]
+    },
+    {
+      "term": "delicioso aroma",
+      "aspect_key_sugerido": "delicioso_aroma",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 0,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "súper delicioso aroma y sabor.",
+        "delicioso aroma."
+      ]
+    },
+    {
+      "term": "tostion perfecto",
+      "aspect_key_sugerido": "tostion_perfecto",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 2,
+      "neg": 0,
+      "neu": 0,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "excelente producto, café de finca, con una tostion perfecta y un sabor y olor a campo indescriptible.",
+        "tostion perfecta, la mejor taza."
+      ]
+    },
+    {
+      "term": "rico cafe recomendado",
+      "aspect_key_sugerido": "rico_cafe_recomendado",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 0,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "muy rico este café recomendado.",
+        "muy rico cafe, recomendado."
+      ]
+    },
+    {
+      "term": "alternativa",
+      "aspect_key_sugerido": "alternativa",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 2,
+      "neg": 0,
+      "neu": 0,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "tiene buenas notas y un tueste fresco, mejor que muchas alternativas que existen en el mercado si les gusta el café de especialidad y calidad.",
+        "está bien pero no destaca en nada (tened en cuanta que lo comparo con cafe de especialidad), aunque por el precio hay alternativas mejores."
+      ]
+    },
+    {
+      "term": "cafe basico",
+      "aspect_key_sugerido": "cafe_basico",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 0,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "es un café básico, no menciona la variedad, lo cual confirma su sabor.",
+        "pues un café realmente básico, el proceso de tueste se nota que es rústico ya que vienen diversos niveles de tueste en los granos, granos quemado y otros amarillos."
+      ]
+    },
+    {
+      "term": "crema",
+      "aspect_key_sugerido": "crema",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 1,
+      "neg": 0,
+      "neu": 1,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "genera una crema espesa y consiste, sabor frutal y acidez media que lo hace disfrutable a cualquier hora del día.",
+        "excelente cafe, fresco, gran aroma en preparación espresso produce buena crema, recomendado."
+      ]
+    },
+    {
+      "term": "resultado",
+      "aspect_key_sugerido": "resultado",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 1,
+      "neg": 0,
+      "neu": 1,
+      "polaridad_neta": 1.0,
+      "examples": [
+        "resultados garantizados.",
+        "excelente, lo uso en métodos y e mi máquina gaggia, los resultados son buenísimos."
+      ]
+    },
+    {
+      "term": "ofertado",
+      "aspect_key_sugerido": "ofertado",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 0,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "corresponde con lo ofertado.",
+        "corresponde con lo ofertado."
+      ]
+    },
+    {
+      "term": "aspecto",
+      "aspect_key_sugerido": "aspecto",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 0,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "un producto de muy mala calidad, en todos los aspectos gran parte del producto esta quemado, ni el empaque cumple con las mínimas condiciones.",
+        "grano de muy buen aspecto, tueste ajustado a lo descrito, con un aroma muy agradable."
+      ]
+    },
+    {
+      "term": "bourbon",
+      "aspect_key_sugerido": "bourbon",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 0,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "cuando recibí el paquete senti su fragancia sin igual de un delicioso bourbon.",
+        "el nivel del proceso del bourbon presente en este café es insuperable, gracias."
+      ]
+    },
+    {
+      "term": "insuperable",
+      "aspect_key_sugerido": "insuperable",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 0,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "el nivel del proceso del bourbon presente en este café es insuperable, gracias.",
+        "precio insuperable."
+      ]
+    },
+    {
+      "term": "practico",
+      "aspect_key_sugerido": "practico",
+      "reviews_mencion": 2,
+      "oraciones_mencion": 2,
+      "pos": 0,
+      "neg": 0,
+      "neu": 2,
+      "polaridad_neta": 0.0,
+      "examples": [
+        "el empaque es muy práctico.",
+        "presentación sobria y práctica."
+      ]
+    }
+  ]
+}

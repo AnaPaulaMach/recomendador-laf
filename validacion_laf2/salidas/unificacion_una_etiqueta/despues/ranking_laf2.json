@@ -1,0 +1,2795 @@
+{
+  "fase": "despues",
+  "snapshots": {
+    "historico": "mlm_mlm194329_20260528_142014",
+    "instantaneo": "mlm_mlm194329_20260805_191308",
+    "grano_molido": "mlm_mlm194335_20260805_185233"
+  },
+  "evaluator_setting": "recommender.services.evaluators.LAFHttpRecommendationEvaluator",
+  "decision_model": "post_laf_multicriteria_v1",
+  "productos": {
+    "MLM19566313": {
+      "snapshot": "historico",
+      "dataset_key": "mlm_mlm194329_20260528_142014",
+      "publicaciones_esperadas": 26,
+      "todo_bastante": {
+        "evaluation_status": "validated",
+        "evaluator_version": "laf-http-api-single-label-laf2-3.0.0",
+        "publicaciones": 26,
+        "condiciones_sin_evidencia": [
+          "cuotas",
+          "factura",
+          "garantia"
+        ],
+        "condiciones_con_programa": [
+          "descuento",
+          "envio",
+          "precio",
+          "tienda_oficial"
+        ],
+        "ranking": [
+          {
+            "posicion": 1,
+            "entity_id": "MLM2552802793",
+            "final_score": 0.615825,
+            "status": "recommended",
+            "confidence": 0.893611,
+            "preference": 0.67,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "descuento",
+                "normalized_weight": 0.25,
+                "laf_score": 0.4743,
+                "contribution": 0.118575
+              },
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.72675,
+                "contribution": 0.181688
+              },
+              {
+                "aspect": "precio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.5355,
+                "contribution": 0.133875
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.25,
+                "laf_score": 0.72675,
+                "contribution": 0.181688
+              }
+            ]
+          },
+          {
+            "posicion": 2,
+            "entity_id": "MLM4468329986",
+            "final_score": 0.51255,
+            "status": "recommended",
+            "confidence": 0.888761,
+            "preference": 0.67,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "descuento",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              },
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.72675,
+                "contribution": 0.181688
+              },
+              {
+                "aspect": "precio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.5967,
+                "contribution": 0.149175
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.25,
+                "laf_score": 0.72675,
+                "contribution": 0.181688
+              }
+            ]
+          },
+          {
+            "posicion": 3,
+            "entity_id": "MLM2479322051",
+            "final_score": 0.506812,
+            "status": "recommended",
+            "confidence": 0.88791,
+            "preference": 0.67,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "descuento",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              },
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.72675,
+                "contribution": 0.181688
+              },
+              {
+                "aspect": "precio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.57375,
+                "contribution": 0.143437
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.25,
+                "laf_score": 0.72675,
+                "contribution": 0.181688
+              }
+            ]
+          },
+          {
+            "posicion": 4,
+            "entity_id": "MLM3140707206",
+            "final_score": 0.501075,
+            "status": "recommended",
+            "confidence": 0.88706,
+            "preference": 0.67,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "descuento",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              },
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.72675,
+                "contribution": 0.181688
+              },
+              {
+                "aspect": "precio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.5508,
+                "contribution": 0.1377
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.25,
+                "laf_score": 0.72675,
+                "contribution": 0.181688
+              }
+            ]
+          },
+          {
+            "posicion": 5,
+            "entity_id": "MLM1494089883",
+            "final_score": 0.4896,
+            "status": "recommended",
+            "confidence": 0.885359,
+            "preference": 0.67,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "descuento",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              },
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.72675,
+                "contribution": 0.181688
+              },
+              {
+                "aspect": "precio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.5049,
+                "contribution": 0.126225
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.25,
+                "laf_score": 0.72675,
+                "contribution": 0.181688
+              }
+            ]
+          },
+          {
+            "posicion": 6,
+            "entity_id": "MLM1649958450",
+            "final_score": 0.363375,
+            "status": "recommended",
+            "confidence": 0.866649,
+            "preference": 0.67,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "descuento",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              },
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              },
+              {
+                "aspect": "precio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.72675,
+                "contribution": 0.181688
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.25,
+                "laf_score": 0.72675,
+                "contribution": 0.181688
+              }
+            ]
+          },
+          {
+            "posicion": 7,
+            "entity_id": "MLM3607232064",
+            "final_score": 0.361462,
+            "status": "recommended",
+            "confidence": 0.865177,
+            "preference": 0.67,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "descuento",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              },
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              },
+              {
+                "aspect": "precio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.7191,
+                "contribution": 0.179775
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.25,
+                "laf_score": 0.72675,
+                "contribution": 0.181688
+              }
+            ]
+          },
+          {
+            "posicion": 8,
+            "entity_id": "MLM2130464857",
+            "final_score": 0.357638,
+            "status": "recommended",
+            "confidence": 0.862232,
+            "preference": 0.67,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "descuento",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              },
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              },
+              {
+                "aspect": "precio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.7038,
+                "contribution": 0.17595
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.25,
+                "laf_score": 0.72675,
+                "contribution": 0.181688
+              }
+            ]
+          },
+          {
+            "posicion": 9,
+            "entity_id": "MLM4957271440",
+            "final_score": 0.327038,
+            "status": "recommended",
+            "confidence": 0.838669,
+            "preference": 0.67,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "descuento",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              },
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.72675,
+                "contribution": 0.181688
+              },
+              {
+                "aspect": "precio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.5814,
+                "contribution": 0.14535
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          },
+          {
+            "posicion": 10,
+            "entity_id": "MLM1991154456",
+            "final_score": 0.325125,
+            "status": "recommended",
+            "confidence": 0.837197,
+            "preference": 0.67,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "descuento",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              },
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.72675,
+                "contribution": 0.181688
+              },
+              {
+                "aspect": "precio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.57375,
+                "contribution": 0.143437
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          },
+          {
+            "posicion": 11,
+            "entity_id": "MLM2479347871",
+            "final_score": 0.325125,
+            "status": "recommended",
+            "confidence": 0.837197,
+            "preference": 0.67,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "descuento",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              },
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.72675,
+                "contribution": 0.181688
+              },
+              {
+                "aspect": "precio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.57375,
+                "contribution": 0.143437
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          },
+          {
+            "posicion": 12,
+            "entity_id": "MLM4354086592",
+            "final_score": 0.325125,
+            "status": "recommended",
+            "confidence": 0.837197,
+            "preference": 0.67,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "descuento",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              },
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.72675,
+                "contribution": 0.181688
+              },
+              {
+                "aspect": "precio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.57375,
+                "contribution": 0.143437
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          },
+          {
+            "posicion": 13,
+            "entity_id": "MLM4925077838",
+            "final_score": 0.325125,
+            "status": "recommended",
+            "confidence": 0.837197,
+            "preference": 0.67,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "descuento",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              },
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.72675,
+                "contribution": 0.181688
+              },
+              {
+                "aspect": "precio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.57375,
+                "contribution": 0.143437
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          },
+          {
+            "posicion": 14,
+            "entity_id": "MLM5172133566",
+            "final_score": 0.325125,
+            "status": "recommended",
+            "confidence": 0.837197,
+            "preference": 0.67,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "descuento",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              },
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.72675,
+                "contribution": 0.181688
+              },
+              {
+                "aspect": "precio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.57375,
+                "contribution": 0.143437
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          },
+          {
+            "posicion": 15,
+            "entity_id": "MLM2370451767",
+            "final_score": 0.31365,
+            "status": "recommended",
+            "confidence": 0.828361,
+            "preference": 0.67,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "descuento",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              },
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.72675,
+                "contribution": 0.181688
+              },
+              {
+                "aspect": "precio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.52785,
+                "contribution": 0.131962
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          },
+          {
+            "posicion": 16,
+            "entity_id": "MLM5132285828",
+            "final_score": 0.31365,
+            "status": "recommended",
+            "confidence": 0.828361,
+            "preference": 0.67,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "descuento",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              },
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.72675,
+                "contribution": 0.181688
+              },
+              {
+                "aspect": "precio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.52785,
+                "contribution": 0.131962
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          },
+          {
+            "posicion": 17,
+            "entity_id": "MLM2906277033",
+            "final_score": 0.311738,
+            "status": "recommended",
+            "confidence": 0.826888,
+            "preference": 0.67,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "descuento",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              },
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.72675,
+                "contribution": 0.181688
+              },
+              {
+                "aspect": "precio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.5202,
+                "contribution": 0.13005
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          },
+          {
+            "posicion": 18,
+            "entity_id": "MLM5035699430",
+            "final_score": 0.311738,
+            "status": "recommended",
+            "confidence": 0.826888,
+            "preference": 0.67,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "descuento",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              },
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.72675,
+                "contribution": 0.181688
+              },
+              {
+                "aspect": "precio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.5202,
+                "contribution": 0.13005
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          },
+          {
+            "posicion": 19,
+            "entity_id": "MLM2852622541",
+            "final_score": 0.307912,
+            "status": "recommended",
+            "confidence": 0.823943,
+            "preference": 0.67,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "descuento",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              },
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.72675,
+                "contribution": 0.181688
+              },
+              {
+                "aspect": "precio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.5049,
+                "contribution": 0.126225
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          },
+          {
+            "posicion": 20,
+            "entity_id": "MLM3498948492",
+            "final_score": 0.307912,
+            "status": "recommended",
+            "confidence": 0.823943,
+            "preference": 0.67,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "descuento",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              },
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.72675,
+                "contribution": 0.181688
+              },
+              {
+                "aspect": "precio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.5049,
+                "contribution": 0.126225
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          },
+          {
+            "posicion": 21,
+            "entity_id": "MLM3870777402",
+            "final_score": 0.307912,
+            "status": "recommended",
+            "confidence": 0.823943,
+            "preference": 0.67,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "descuento",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              },
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.72675,
+                "contribution": 0.181688
+              },
+              {
+                "aspect": "precio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.5049,
+                "contribution": 0.126225
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          },
+          {
+            "posicion": 22,
+            "entity_id": "MLM4612094968",
+            "final_score": 0.304088,
+            "status": "recommended",
+            "confidence": 0.820998,
+            "preference": 0.67,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "descuento",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              },
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.72675,
+                "contribution": 0.181688
+              },
+              {
+                "aspect": "precio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.4896,
+                "contribution": 0.1224
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          },
+          {
+            "posicion": 23,
+            "entity_id": "MLM2700501437",
+            "final_score": 0.256275,
+            "status": "recommended",
+            "confidence": 0.784182,
+            "preference": 0.67,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "descuento",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              },
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.72675,
+                "contribution": 0.181688
+              },
+              {
+                "aspect": "precio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.29835,
+                "contribution": 0.074588
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          },
+          {
+            "posicion": 24,
+            "entity_id": "MLM2941006159",
+            "final_score": 0.239063,
+            "status": "recommended",
+            "confidence": 0.770929,
+            "preference": 0.67,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "descuento",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              },
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.72675,
+                "contribution": 0.181688
+              },
+              {
+                "aspect": "precio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.2295,
+                "contribution": 0.057375
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          },
+          {
+            "posicion": 25,
+            "entity_id": "MLM5154556164",
+            "final_score": 0.239063,
+            "status": "recommended",
+            "confidence": 0.770929,
+            "preference": 0.67,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "descuento",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              },
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.72675,
+                "contribution": 0.181688
+              },
+              {
+                "aspect": "precio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.2295,
+                "contribution": 0.057375
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          },
+          {
+            "posicion": 26,
+            "entity_id": "MLM2016344939",
+            "final_score": 0.177863,
+            "status": "recommended",
+            "confidence": 0.71145,
+            "preference": 0.67,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "descuento",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              },
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              },
+              {
+                "aspect": "precio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.71145,
+                "contribution": 0.177863
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          }
+        ]
+      },
+      "solo_precio": {
+        "evaluation_status": "validated",
+        "evaluator_version": "laf-http-api-single-label-laf2-3.0.0",
+        "publicaciones": 26,
+        "condiciones_sin_evidencia": [],
+        "condiciones_con_programa": [
+          "precio"
+        ],
+        "ranking": [
+          {
+            "posicion": 1,
+            "entity_id": "MLM1649958450",
+            "final_score": 0.72675,
+            "status": "recommended",
+            "confidence": 0.866649,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "precio",
+                "normalized_weight": 1.0,
+                "laf_score": 0.72675,
+                "contribution": 0.72675
+              }
+            ]
+          },
+          {
+            "posicion": 2,
+            "entity_id": "MLM3607232064",
+            "final_score": 0.7191,
+            "status": "recommended",
+            "confidence": 0.865177,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "precio",
+                "normalized_weight": 1.0,
+                "laf_score": 0.7191,
+                "contribution": 0.7191
+              }
+            ]
+          },
+          {
+            "posicion": 3,
+            "entity_id": "MLM2016344939",
+            "final_score": 0.71145,
+            "status": "recommended",
+            "confidence": 0.71145,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "precio",
+                "normalized_weight": 1.0,
+                "laf_score": 0.71145,
+                "contribution": 0.71145
+              }
+            ]
+          },
+          {
+            "posicion": 4,
+            "entity_id": "MLM2130464857",
+            "final_score": 0.7038,
+            "status": "recommended",
+            "confidence": 0.862232,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "precio",
+                "normalized_weight": 1.0,
+                "laf_score": 0.7038,
+                "contribution": 0.7038
+              }
+            ]
+          },
+          {
+            "posicion": 5,
+            "entity_id": "MLM4468329986",
+            "final_score": 0.5967,
+            "status": "recommended",
+            "confidence": 0.888761,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "precio",
+                "normalized_weight": 1.0,
+                "laf_score": 0.5967,
+                "contribution": 0.5967
+              }
+            ]
+          },
+          {
+            "posicion": 6,
+            "entity_id": "MLM4957271440",
+            "final_score": 0.5814,
+            "status": "recommended",
+            "confidence": 0.838669,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "precio",
+                "normalized_weight": 1.0,
+                "laf_score": 0.5814,
+                "contribution": 0.5814
+              }
+            ]
+          },
+          {
+            "posicion": 7,
+            "entity_id": "MLM2479322051",
+            "final_score": 0.57375,
+            "status": "recommended",
+            "confidence": 0.88791,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "precio",
+                "normalized_weight": 1.0,
+                "laf_score": 0.57375,
+                "contribution": 0.57375
+              }
+            ]
+          },
+          {
+            "posicion": 8,
+            "entity_id": "MLM1991154456",
+            "final_score": 0.57375,
+            "status": "recommended",
+            "confidence": 0.837197,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "precio",
+                "normalized_weight": 1.0,
+                "laf_score": 0.57375,
+                "contribution": 0.57375
+              }
+            ]
+          },
+          {
+            "posicion": 9,
+            "entity_id": "MLM2479347871",
+            "final_score": 0.57375,
+            "status": "recommended",
+            "confidence": 0.837197,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "precio",
+                "normalized_weight": 1.0,
+                "laf_score": 0.57375,
+                "contribution": 0.57375
+              }
+            ]
+          },
+          {
+            "posicion": 10,
+            "entity_id": "MLM4354086592",
+            "final_score": 0.57375,
+            "status": "recommended",
+            "confidence": 0.837197,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "precio",
+                "normalized_weight": 1.0,
+                "laf_score": 0.57375,
+                "contribution": 0.57375
+              }
+            ]
+          },
+          {
+            "posicion": 11,
+            "entity_id": "MLM4925077838",
+            "final_score": 0.57375,
+            "status": "recommended",
+            "confidence": 0.837197,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "precio",
+                "normalized_weight": 1.0,
+                "laf_score": 0.57375,
+                "contribution": 0.57375
+              }
+            ]
+          },
+          {
+            "posicion": 12,
+            "entity_id": "MLM5172133566",
+            "final_score": 0.57375,
+            "status": "recommended",
+            "confidence": 0.837197,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "precio",
+                "normalized_weight": 1.0,
+                "laf_score": 0.57375,
+                "contribution": 0.57375
+              }
+            ]
+          },
+          {
+            "posicion": 13,
+            "entity_id": "MLM3140707206",
+            "final_score": 0.5508,
+            "status": "recommended",
+            "confidence": 0.88706,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "precio",
+                "normalized_weight": 1.0,
+                "laf_score": 0.5508,
+                "contribution": 0.5508
+              }
+            ]
+          },
+          {
+            "posicion": 14,
+            "entity_id": "MLM2552802793",
+            "final_score": 0.5355,
+            "status": "recommended",
+            "confidence": 0.893611,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "precio",
+                "normalized_weight": 1.0,
+                "laf_score": 0.5355,
+                "contribution": 0.5355
+              }
+            ]
+          },
+          {
+            "posicion": 15,
+            "entity_id": "MLM2370451767",
+            "final_score": 0.52785,
+            "status": "recommended",
+            "confidence": 0.828361,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "precio",
+                "normalized_weight": 1.0,
+                "laf_score": 0.52785,
+                "contribution": 0.52785
+              }
+            ]
+          },
+          {
+            "posicion": 16,
+            "entity_id": "MLM5132285828",
+            "final_score": 0.52785,
+            "status": "recommended",
+            "confidence": 0.828361,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "precio",
+                "normalized_weight": 1.0,
+                "laf_score": 0.52785,
+                "contribution": 0.52785
+              }
+            ]
+          },
+          {
+            "posicion": 17,
+            "entity_id": "MLM2906277033",
+            "final_score": 0.5202,
+            "status": "recommended",
+            "confidence": 0.826888,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "precio",
+                "normalized_weight": 1.0,
+                "laf_score": 0.5202,
+                "contribution": 0.5202
+              }
+            ]
+          },
+          {
+            "posicion": 18,
+            "entity_id": "MLM5035699430",
+            "final_score": 0.5202,
+            "status": "recommended",
+            "confidence": 0.826888,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "precio",
+                "normalized_weight": 1.0,
+                "laf_score": 0.5202,
+                "contribution": 0.5202
+              }
+            ]
+          },
+          {
+            "posicion": 19,
+            "entity_id": "MLM1494089883",
+            "final_score": 0.5049,
+            "status": "recommended",
+            "confidence": 0.885359,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "precio",
+                "normalized_weight": 1.0,
+                "laf_score": 0.5049,
+                "contribution": 0.5049
+              }
+            ]
+          },
+          {
+            "posicion": 20,
+            "entity_id": "MLM2852622541",
+            "final_score": 0.5049,
+            "status": "recommended",
+            "confidence": 0.823943,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "precio",
+                "normalized_weight": 1.0,
+                "laf_score": 0.5049,
+                "contribution": 0.5049
+              }
+            ]
+          },
+          {
+            "posicion": 21,
+            "entity_id": "MLM3498948492",
+            "final_score": 0.5049,
+            "status": "recommended",
+            "confidence": 0.823943,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "precio",
+                "normalized_weight": 1.0,
+                "laf_score": 0.5049,
+                "contribution": 0.5049
+              }
+            ]
+          },
+          {
+            "posicion": 22,
+            "entity_id": "MLM3870777402",
+            "final_score": 0.5049,
+            "status": "recommended",
+            "confidence": 0.823943,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "precio",
+                "normalized_weight": 1.0,
+                "laf_score": 0.5049,
+                "contribution": 0.5049
+              }
+            ]
+          },
+          {
+            "posicion": 23,
+            "entity_id": "MLM4612094968",
+            "final_score": 0.4896,
+            "status": "recommended",
+            "confidence": 0.820998,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "precio",
+                "normalized_weight": 1.0,
+                "laf_score": 0.4896,
+                "contribution": 0.4896
+              }
+            ]
+          },
+          {
+            "posicion": 24,
+            "entity_id": "MLM2700501437",
+            "final_score": 0.29835,
+            "status": "recommended",
+            "confidence": 0.784182,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "precio",
+                "normalized_weight": 1.0,
+                "laf_score": 0.29835,
+                "contribution": 0.29835
+              }
+            ]
+          },
+          {
+            "posicion": 25,
+            "entity_id": "MLM2941006159",
+            "final_score": 0.2295,
+            "status": "recommended",
+            "confidence": 0.770929,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "precio",
+                "normalized_weight": 1.0,
+                "laf_score": 0.2295,
+                "contribution": 0.2295
+              }
+            ]
+          },
+          {
+            "posicion": 26,
+            "entity_id": "MLM5154556164",
+            "final_score": 0.2295,
+            "status": "recommended",
+            "confidence": 0.770929,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "precio",
+                "normalized_weight": 1.0,
+                "laf_score": 0.2295,
+                "contribution": 0.2295
+              }
+            ]
+          }
+        ]
+      },
+      "envio_y_oficial_prioridad": {
+        "evaluation_status": "validated",
+        "evaluator_version": "laf-http-api-single-label-laf2-3.0.0",
+        "publicaciones": 26,
+        "condiciones_sin_evidencia": [],
+        "condiciones_con_programa": [
+          "envio",
+          "tienda_oficial"
+        ],
+        "ranking": [
+          {
+            "posicion": 1,
+            "entity_id": "MLM2552802793",
+            "final_score": 0.72675,
+            "status": "recommended",
+            "confidence": 0.893611,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.5,
+                "laf_score": 0.72675,
+                "contribution": 0.363375
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.5,
+                "laf_score": 0.72675,
+                "contribution": 0.363375
+              }
+            ]
+          },
+          {
+            "posicion": 2,
+            "entity_id": "MLM4468329986",
+            "final_score": 0.72675,
+            "status": "recommended",
+            "confidence": 0.888761,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.5,
+                "laf_score": 0.72675,
+                "contribution": 0.363375
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.5,
+                "laf_score": 0.72675,
+                "contribution": 0.363375
+              }
+            ]
+          },
+          {
+            "posicion": 3,
+            "entity_id": "MLM2479322051",
+            "final_score": 0.72675,
+            "status": "recommended",
+            "confidence": 0.88791,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.5,
+                "laf_score": 0.72675,
+                "contribution": 0.363375
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.5,
+                "laf_score": 0.72675,
+                "contribution": 0.363375
+              }
+            ]
+          },
+          {
+            "posicion": 4,
+            "entity_id": "MLM3140707206",
+            "final_score": 0.72675,
+            "status": "recommended",
+            "confidence": 0.88706,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.5,
+                "laf_score": 0.72675,
+                "contribution": 0.363375
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.5,
+                "laf_score": 0.72675,
+                "contribution": 0.363375
+              }
+            ]
+          },
+          {
+            "posicion": 5,
+            "entity_id": "MLM1494089883",
+            "final_score": 0.72675,
+            "status": "recommended",
+            "confidence": 0.885359,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.5,
+                "laf_score": 0.72675,
+                "contribution": 0.363375
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.5,
+                "laf_score": 0.72675,
+                "contribution": 0.363375
+              }
+            ]
+          },
+          {
+            "posicion": 6,
+            "entity_id": "MLM1649958450",
+            "final_score": 0.363375,
+            "status": "recommended",
+            "confidence": 0.866649,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.5,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.5,
+                "laf_score": 0.72675,
+                "contribution": 0.363375
+              }
+            ]
+          },
+          {
+            "posicion": 7,
+            "entity_id": "MLM3607232064",
+            "final_score": 0.363375,
+            "status": "recommended",
+            "confidence": 0.865177,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.5,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.5,
+                "laf_score": 0.72675,
+                "contribution": 0.363375
+              }
+            ]
+          },
+          {
+            "posicion": 8,
+            "entity_id": "MLM2130464857",
+            "final_score": 0.363375,
+            "status": "recommended",
+            "confidence": 0.862232,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.5,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.5,
+                "laf_score": 0.72675,
+                "contribution": 0.363375
+              }
+            ]
+          },
+          {
+            "posicion": 9,
+            "entity_id": "MLM4957271440",
+            "final_score": 0.363375,
+            "status": "recommended",
+            "confidence": 0.838669,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.5,
+                "laf_score": 0.72675,
+                "contribution": 0.363375
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.5,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          },
+          {
+            "posicion": 10,
+            "entity_id": "MLM1991154456",
+            "final_score": 0.363375,
+            "status": "recommended",
+            "confidence": 0.837197,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.5,
+                "laf_score": 0.72675,
+                "contribution": 0.363375
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.5,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          },
+          {
+            "posicion": 11,
+            "entity_id": "MLM2479347871",
+            "final_score": 0.363375,
+            "status": "recommended",
+            "confidence": 0.837197,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.5,
+                "laf_score": 0.72675,
+                "contribution": 0.363375
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.5,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          },
+          {
+            "posicion": 12,
+            "entity_id": "MLM4354086592",
+            "final_score": 0.363375,
+            "status": "recommended",
+            "confidence": 0.837197,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.5,
+                "laf_score": 0.72675,
+                "contribution": 0.363375
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.5,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          },
+          {
+            "posicion": 13,
+            "entity_id": "MLM4925077838",
+            "final_score": 0.363375,
+            "status": "recommended",
+            "confidence": 0.837197,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.5,
+                "laf_score": 0.72675,
+                "contribution": 0.363375
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.5,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          },
+          {
+            "posicion": 14,
+            "entity_id": "MLM5172133566",
+            "final_score": 0.363375,
+            "status": "recommended",
+            "confidence": 0.837197,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.5,
+                "laf_score": 0.72675,
+                "contribution": 0.363375
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.5,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          },
+          {
+            "posicion": 15,
+            "entity_id": "MLM2370451767",
+            "final_score": 0.363375,
+            "status": "recommended",
+            "confidence": 0.828361,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.5,
+                "laf_score": 0.72675,
+                "contribution": 0.363375
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.5,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          },
+          {
+            "posicion": 16,
+            "entity_id": "MLM5132285828",
+            "final_score": 0.363375,
+            "status": "recommended",
+            "confidence": 0.828361,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.5,
+                "laf_score": 0.72675,
+                "contribution": 0.363375
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.5,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          },
+          {
+            "posicion": 17,
+            "entity_id": "MLM2906277033",
+            "final_score": 0.363375,
+            "status": "recommended",
+            "confidence": 0.826888,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.5,
+                "laf_score": 0.72675,
+                "contribution": 0.363375
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.5,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          },
+          {
+            "posicion": 18,
+            "entity_id": "MLM5035699430",
+            "final_score": 0.363375,
+            "status": "recommended",
+            "confidence": 0.826888,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.5,
+                "laf_score": 0.72675,
+                "contribution": 0.363375
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.5,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          },
+          {
+            "posicion": 19,
+            "entity_id": "MLM2852622541",
+            "final_score": 0.363375,
+            "status": "recommended",
+            "confidence": 0.823943,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.5,
+                "laf_score": 0.72675,
+                "contribution": 0.363375
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.5,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          },
+          {
+            "posicion": 20,
+            "entity_id": "MLM3498948492",
+            "final_score": 0.363375,
+            "status": "recommended",
+            "confidence": 0.823943,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.5,
+                "laf_score": 0.72675,
+                "contribution": 0.363375
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.5,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          },
+          {
+            "posicion": 21,
+            "entity_id": "MLM3870777402",
+            "final_score": 0.363375,
+            "status": "recommended",
+            "confidence": 0.823943,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.5,
+                "laf_score": 0.72675,
+                "contribution": 0.363375
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.5,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          },
+          {
+            "posicion": 22,
+            "entity_id": "MLM4612094968",
+            "final_score": 0.363375,
+            "status": "recommended",
+            "confidence": 0.820998,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.5,
+                "laf_score": 0.72675,
+                "contribution": 0.363375
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.5,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          },
+          {
+            "posicion": 23,
+            "entity_id": "MLM2700501437",
+            "final_score": 0.363375,
+            "status": "recommended",
+            "confidence": 0.784182,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.5,
+                "laf_score": 0.72675,
+                "contribution": 0.363375
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.5,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          },
+          {
+            "posicion": 24,
+            "entity_id": "MLM2941006159",
+            "final_score": 0.363375,
+            "status": "recommended",
+            "confidence": 0.770929,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.5,
+                "laf_score": 0.72675,
+                "contribution": 0.363375
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.5,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          },
+          {
+            "posicion": 25,
+            "entity_id": "MLM5154556164",
+            "final_score": 0.363375,
+            "status": "recommended",
+            "confidence": 0.770929,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.5,
+                "laf_score": 0.72675,
+                "contribution": 0.363375
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.5,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          },
+          {
+            "posicion": 26,
+            "entity_id": "MLM2016344939",
+            "final_score": 0.0,
+            "status": "not_recommended",
+            "confidence": 0.71145,
+            "preference": 0.0,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": []
+          }
+        ]
+      }
+    },
+    "MLM41148521": {
+      "snapshot": "grano_molido",
+      "dataset_key": "mlm_mlm194335_20260805_185233",
+      "publicaciones_esperadas": 9,
+      "todo_bastante": {
+        "evaluation_status": "validated",
+        "evaluator_version": "laf-http-api-single-label-laf2-3.0.0",
+        "publicaciones": 9,
+        "condiciones_sin_evidencia": [
+          "cuotas",
+          "factura",
+          "garantia"
+        ],
+        "condiciones_con_programa": [
+          "descuento",
+          "envio",
+          "precio",
+          "tienda_oficial"
+        ],
+        "ranking": [
+          {
+            "posicion": 1,
+            "entity_id": "MLM2151158225",
+            "final_score": 0.669375,
+            "status": "recommended",
+            "confidence": 0.897127,
+            "preference": 0.67,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "descuento",
+                "normalized_weight": 0.25,
+                "laf_score": 0.49725,
+                "contribution": 0.124313
+              },
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.72675,
+                "contribution": 0.181688
+              },
+              {
+                "aspect": "precio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.72675,
+                "contribution": 0.181688
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.25,
+                "laf_score": 0.72675,
+                "contribution": 0.181688
+              }
+            ]
+          },
+          {
+            "posicion": 2,
+            "entity_id": "MLM3582500384",
+            "final_score": 0.460912,
+            "status": "recommended",
+            "confidence": 0.881107,
+            "preference": 0.67,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "descuento",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              },
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.72675,
+                "contribution": 0.181688
+              },
+              {
+                "aspect": "precio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.39015,
+                "contribution": 0.097537
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.25,
+                "laf_score": 0.72675,
+                "contribution": 0.181688
+              }
+            ]
+          },
+          {
+            "posicion": 3,
+            "entity_id": "MLM3247026917",
+            "final_score": 0.292612,
+            "status": "recommended",
+            "confidence": 0.812162,
+            "preference": 0.67,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "descuento",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              },
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.72675,
+                "contribution": 0.181688
+              },
+              {
+                "aspect": "precio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.4437,
+                "contribution": 0.110925
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          },
+          {
+            "posicion": 4,
+            "entity_id": "MLM5601446840",
+            "final_score": 0.292612,
+            "status": "recommended",
+            "confidence": 0.812162,
+            "preference": 0.67,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "descuento",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              },
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.72675,
+                "contribution": 0.181688
+              },
+              {
+                "aspect": "precio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.4437,
+                "contribution": 0.110925
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          },
+          {
+            "posicion": 5,
+            "entity_id": "MLM4111335334",
+            "final_score": 0.284963,
+            "status": "recommended",
+            "confidence": 0.806272,
+            "preference": 0.67,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "descuento",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              },
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.72675,
+                "contribution": 0.181688
+              },
+              {
+                "aspect": "precio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.4131,
+                "contribution": 0.103275
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          },
+          {
+            "posicion": 6,
+            "entity_id": "MLM2176425355",
+            "final_score": 0.2601,
+            "status": "recommended",
+            "confidence": 0.787128,
+            "preference": 0.67,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "descuento",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              },
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.72675,
+                "contribution": 0.181688
+              },
+              {
+                "aspect": "precio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.31365,
+                "contribution": 0.078412
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          },
+          {
+            "posicion": 7,
+            "entity_id": "MLM5393016838",
+            "final_score": 0.239063,
+            "status": "recommended",
+            "confidence": 0.770929,
+            "preference": 0.67,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "descuento",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              },
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.72675,
+                "contribution": 0.181688
+              },
+              {
+                "aspect": "precio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.2295,
+                "contribution": 0.057375
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          },
+          {
+            "posicion": 8,
+            "entity_id": "MLM3542758966",
+            "final_score": 0.149175,
+            "status": "recommended",
+            "confidence": 0.5967,
+            "preference": 0.67,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "descuento",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              },
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              },
+              {
+                "aspect": "precio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.5967,
+                "contribution": 0.149175
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          },
+          {
+            "posicion": 9,
+            "entity_id": "MLM4943867012",
+            "final_score": 0.149175,
+            "status": "recommended",
+            "confidence": 0.5967,
+            "preference": 0.67,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "descuento",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              },
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              },
+              {
+                "aspect": "precio",
+                "normalized_weight": 0.25,
+                "laf_score": 0.5967,
+                "contribution": 0.149175
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.25,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          }
+        ]
+      },
+      "solo_precio": {
+        "evaluation_status": "validated",
+        "evaluator_version": "laf-http-api-single-label-laf2-3.0.0",
+        "publicaciones": 9,
+        "condiciones_sin_evidencia": [],
+        "condiciones_con_programa": [
+          "precio"
+        ],
+        "ranking": [
+          {
+            "posicion": 1,
+            "entity_id": "MLM2151158225",
+            "final_score": 0.72675,
+            "status": "recommended",
+            "confidence": 0.897127,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "precio",
+                "normalized_weight": 1.0,
+                "laf_score": 0.72675,
+                "contribution": 0.72675
+              }
+            ]
+          },
+          {
+            "posicion": 2,
+            "entity_id": "MLM3542758966",
+            "final_score": 0.5967,
+            "status": "recommended",
+            "confidence": 0.5967,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "precio",
+                "normalized_weight": 1.0,
+                "laf_score": 0.5967,
+                "contribution": 0.5967
+              }
+            ]
+          },
+          {
+            "posicion": 3,
+            "entity_id": "MLM4943867012",
+            "final_score": 0.5967,
+            "status": "recommended",
+            "confidence": 0.5967,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "precio",
+                "normalized_weight": 1.0,
+                "laf_score": 0.5967,
+                "contribution": 0.5967
+              }
+            ]
+          },
+          {
+            "posicion": 4,
+            "entity_id": "MLM3247026917",
+            "final_score": 0.4437,
+            "status": "recommended",
+            "confidence": 0.812162,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "precio",
+                "normalized_weight": 1.0,
+                "laf_score": 0.4437,
+                "contribution": 0.4437
+              }
+            ]
+          },
+          {
+            "posicion": 5,
+            "entity_id": "MLM5601446840",
+            "final_score": 0.4437,
+            "status": "recommended",
+            "confidence": 0.812162,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "precio",
+                "normalized_weight": 1.0,
+                "laf_score": 0.4437,
+                "contribution": 0.4437
+              }
+            ]
+          },
+          {
+            "posicion": 6,
+            "entity_id": "MLM4111335334",
+            "final_score": 0.4131,
+            "status": "recommended",
+            "confidence": 0.806272,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "precio",
+                "normalized_weight": 1.0,
+                "laf_score": 0.4131,
+                "contribution": 0.4131
+              }
+            ]
+          },
+          {
+            "posicion": 7,
+            "entity_id": "MLM3582500384",
+            "final_score": 0.39015,
+            "status": "recommended",
+            "confidence": 0.881107,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "precio",
+                "normalized_weight": 1.0,
+                "laf_score": 0.39015,
+                "contribution": 0.39015
+              }
+            ]
+          },
+          {
+            "posicion": 8,
+            "entity_id": "MLM2176425355",
+            "final_score": 0.31365,
+            "status": "recommended",
+            "confidence": 0.787128,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "precio",
+                "normalized_weight": 1.0,
+                "laf_score": 0.31365,
+                "contribution": 0.31365
+              }
+            ]
+          },
+          {
+            "posicion": 9,
+            "entity_id": "MLM5393016838",
+            "final_score": 0.2295,
+            "status": "recommended",
+            "confidence": 0.770929,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "precio",
+                "normalized_weight": 1.0,
+                "laf_score": 0.2295,
+                "contribution": 0.2295
+              }
+            ]
+          }
+        ]
+      },
+      "envio_y_oficial_prioridad": {
+        "evaluation_status": "validated",
+        "evaluator_version": "laf-http-api-single-label-laf2-3.0.0",
+        "publicaciones": 9,
+        "condiciones_sin_evidencia": [],
+        "condiciones_con_programa": [
+          "envio",
+          "tienda_oficial"
+        ],
+        "ranking": [
+          {
+            "posicion": 1,
+            "entity_id": "MLM2151158225",
+            "final_score": 0.72675,
+            "status": "recommended",
+            "confidence": 0.897127,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.5,
+                "laf_score": 0.72675,
+                "contribution": 0.363375
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.5,
+                "laf_score": 0.72675,
+                "contribution": 0.363375
+              }
+            ]
+          },
+          {
+            "posicion": 2,
+            "entity_id": "MLM3582500384",
+            "final_score": 0.72675,
+            "status": "recommended",
+            "confidence": 0.881107,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.5,
+                "laf_score": 0.72675,
+                "contribution": 0.363375
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.5,
+                "laf_score": 0.72675,
+                "contribution": 0.363375
+              }
+            ]
+          },
+          {
+            "posicion": 3,
+            "entity_id": "MLM3247026917",
+            "final_score": 0.363375,
+            "status": "recommended",
+            "confidence": 0.812162,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.5,
+                "laf_score": 0.72675,
+                "contribution": 0.363375
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.5,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          },
+          {
+            "posicion": 4,
+            "entity_id": "MLM5601446840",
+            "final_score": 0.363375,
+            "status": "recommended",
+            "confidence": 0.812162,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.5,
+                "laf_score": 0.72675,
+                "contribution": 0.363375
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.5,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          },
+          {
+            "posicion": 5,
+            "entity_id": "MLM4111335334",
+            "final_score": 0.363375,
+            "status": "recommended",
+            "confidence": 0.806272,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.5,
+                "laf_score": 0.72675,
+                "contribution": 0.363375
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.5,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          },
+          {
+            "posicion": 6,
+            "entity_id": "MLM2176425355",
+            "final_score": 0.363375,
+            "status": "recommended",
+            "confidence": 0.787128,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.5,
+                "laf_score": 0.72675,
+                "contribution": 0.363375
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.5,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          },
+          {
+            "posicion": 7,
+            "entity_id": "MLM5393016838",
+            "final_score": 0.363375,
+            "status": "recommended",
+            "confidence": 0.770929,
+            "preference": 0.25,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": [
+              {
+                "aspect": "envio",
+                "normalized_weight": 0.5,
+                "laf_score": 0.72675,
+                "contribution": 0.363375
+              },
+              {
+                "aspect": "tienda_oficial",
+                "normalized_weight": 0.5,
+                "laf_score": 0.0,
+                "contribution": 0.0
+              }
+            ]
+          },
+          {
+            "posicion": 8,
+            "entity_id": "MLM3542758966",
+            "final_score": 0.0,
+            "status": "not_recommended",
+            "confidence": 0.5967,
+            "preference": 0.0,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": []
+          },
+          {
+            "posicion": 9,
+            "entity_id": "MLM4943867012",
+            "final_score": 0.0,
+            "status": "not_recommended",
+            "confidence": 0.5967,
+            "preference": 0.0,
+            "label_count": 1,
+            "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+            "contribuciones": []
+          }
+        ]
+      }
+    }
+  }
+}

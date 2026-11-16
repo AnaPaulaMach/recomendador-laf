@@ -1,0 +1,83 @@
+{% load static %}
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Compará productos y encontrá la opción de compra que mejor va con vos.">
+  <meta name="htmx-config" content='{"allowEval":false,"selfRequestsOnly":true}'>
+  <title>{% block title %}Recomendador de productos{% endblock %}</title>
+  <link rel="icon" type="image/svg+xml" href="{% static 'favicon.svg' %}?v=20260911">
+  <link rel="stylesheet" href="{% static 'dist/app.css' %}?v=20260910-ui58">
+  <script type="module" src="{% static 'dist/app.js' %}?v=20260910-ui58"></script>
+</head>
+<body class="min-h-screen antialiased">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="app-header">
+    <div class="app-header-inner">
+      <a href="{% url 'recommender:home' %}" class="site-name" aria-label="Recomendador de productos, inicio">
+        Recomendador de productos
+      </a>
+      <nav aria-label="Navegación principal" class="app-navigation">
+        {% with active_market=request.session.catalog_market|default:"mx" %}
+        <details class="catalog-market">
+          <summary aria-label="Cambiar catálogo">
+            {% if active_market == "co" %}
+              <img class="catalog-flag" src="{% static 'flags/colombia.svg' %}" alt="" width="24" height="17"><span class="catalog-market-name">Colombia</span>
+            {% elif active_market == "ar" %}
+              <img class="catalog-flag" src="{% static 'flags/argentina.svg' %}" alt="" width="24" height="17"><span class="catalog-market-name">Argentina</span>
+            {% else %}
+              <img class="catalog-flag" src="{% static 'flags/mexico.svg' %}?v=20260909" alt="" width="24" height="17"><span class="catalog-market-name">México</span>
+            {% endif %}
+          </summary>
+          <div class="catalog-market-menu">
+            <p class="catalog-market-menu-title">Elegí un país</p>
+            <a href="{% url 'recommender:home' %}?market=mx" class="catalog-market-option" {% if active_market != "co" %}aria-current="page"{% endif %}>
+              <span class="catalog-market-option-label"><img class="catalog-flag" src="{% static 'flags/mexico.svg' %}?v=20260909" alt="" width="24" height="17"><span>México</span></span>
+              {% if active_market != "co" %}<span class="catalog-market-check" aria-hidden="true">✓</span>{% endif %}
+            </a>
+            <a href="{% url 'recommender:home' %}?market=co" class="catalog-market-option" {% if active_market == "co" %}aria-current="page"{% endif %}>
+              <span class="catalog-market-option-label"><img class="catalog-flag" src="{% static 'flags/colombia.svg' %}" alt="" width="24" height="17"><span>Colombia</span></span>
+              {% if active_market == "co" %}<span class="catalog-market-check" aria-hidden="true">✓</span>{% endif %}
+            </a>
+            <a href="{% url 'recommender:home' %}?market=ar" class="catalog-market-option" {% if active_market == "ar" %}aria-current="page"{% endif %}>
+              <span class="catalog-market-option-label"><img class="catalog-flag" src="{% static 'flags/argentina.svg' %}" alt="" width="24" height="17"><span>Argentina</span></span>
+              {% if active_market == "ar" %}<span class="catalog-market-check" aria-hidden="true">✓</span>{% endif %}
+            </a>
+          </div>
+        </details>
+        {% endwith %}
+        {% block header_reset %}
+        <a class="button button-primary button-sm header-reset" href="{% url 'recommender:home' %}" aria-label="Buscar otro producto">
+          <span class="header-reset-desktop">Buscar otro producto</span>
+          <span class="header-reset-mobile">Otra búsqueda</span>
+        </a>
+        {% endblock %}
+      </nav>
+    </div>
+  </header>
+
+  {% block banner %}{% endblock %}
+
+  {% if messages %}
+    <div class="mx-auto max-w-7xl px-5 pt-4 lg:px-8" aria-live="polite">
+      {% for message in messages %}<p class="notice">{{ message }}</p>{% endfor %}
+    </div>
+  {% endif %}
+
+  <main id="contenido" tabindex="-1">{% block content %}{% endblock %}</main>
+
+  <footer class="app-footer">
+    <div class="app-footer-inner">
+      <div>
+        <p class="footer-title">Recomendador de productos</p>
+        <p class="footer-copy">Ordena productos y opciones de compra según tus preferencias.</p>
+      </div>
+      <div class="footer-links">
+        <a class="footer-link" href="{% url 'recommender:methodology' %}">Cómo funciona</a>
+        {% if flow.laf1_result or flow.laf2_result %}<a class="footer-link" href="{% url 'recommender:traceability' flow.id %}">Datos y transparencia</a>{% endif %}
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

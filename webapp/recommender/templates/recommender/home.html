@@ -1,0 +1,86 @@
+{% extends "recommender/base.html" %}
+{% block title %}Recomendador de productos{% endblock %}
+{% block header_reset %}{% endblock %}
+{% block content %}
+<section class="home-page">
+  <div class="home-hero">
+    <div class="home-hero-inner tool-intro">
+      <h1 id="product-search-title">¿Qué producto estás buscando?</h1>
+      <p>Elegí una categoría y encontrá productos según tus preferencias.</p>
+    </div>
+  </div>
+
+  <div class="home-main">
+    <section class="category-search-section" aria-labelledby="product-search-title">
+      <div class="category-picker" data-category-picker>
+      <label class="sr-only" for="category-search">Buscar una categoría</label>
+      <input
+        id="category-search"
+        class="category-search-input"
+        type="search"
+        placeholder="{% if catalog_market_available %}Buscar una categoría...{% else %}Todavía no hay productos para {{ catalog_market_name }}{% endif %}"
+        autocomplete="off"
+        role="combobox"
+        aria-autocomplete="list"
+        aria-controls="category-options"
+        aria-expanded="false"
+        {% if not catalog_market_available %}disabled aria-disabled="true"{% endif %}
+      >
+      <div id="category-options" class="category-options" role="listbox" aria-label="Categorías disponibles" hidden>
+      {% for option in category_options %}
+        <form class="category-option-form" method="post" action="{% url 'recommender:start' %}" role="presentation">
+          {% csrf_token %}
+          <input type="hidden" name="domain" value="{{ option.domain.key }}">
+          <input type="hidden" name="dataset_key" value="{{ option.dataset.key }}">
+          <input type="hidden" name="strategy" value="D">
+          <button
+            id="category-option-{{ option.option_id }}"
+            class="category-option"
+            type="submit"
+            role="option"
+            aria-selected="false"
+            data-category-option
+            data-search="{{ option.display_name }} {{ option.detail }}"
+          >
+            <span class="category-option-copy">
+              <span>{{ option.display_name }}</span>
+              <span class="category-option-detail">{{ option.detail }}</span>
+            </span>
+            <span class="category-availability">Elegir</span>
+          </button>
+        </form>
+      {% empty %}
+        <p class="empty-category">{% if catalog_error %}{{ catalog_error }}. Probá de nuevo en unos minutos.{% else %}Todavía no hay productos procesados disponibles para {{ catalog_market_name }}.{% endif %}</p>
+      {% endfor %}
+        <p class="category-no-results" data-category-no-results hidden>No encontramos esa categoría.</p>
+      </div>
+      </div>
+    </section>
+
+    {% if catalog_market_available %}
+    <section class="home-context" aria-label="Sobre las recomendaciones">
+      <div class="home-context-section">
+        <h2>De dónde salen los productos</h2>
+        <p>Usamos una selección de productos de Mercado Libre {{ catalog_market_name }} y las opiniones de quienes los compraron.</p>
+      </div>
+      <div class="home-context-section">
+        <h2>Cómo los ordenamos</h2>
+        <p>Vos elegís qué te importa. Con esas preferencias ordenamos los productos y te mostramos qué se valora y qué conviene revisar.</p>
+      </div>
+    </section>
+    {% else %}
+    <section class="home-market-empty" aria-labelledby="market-empty-title"{% if catalog_error %} role="alert"{% endif %}>
+      {% if catalog_error %}
+      <h2 id="market-empty-title">{{ catalog_error }}</h2>
+      <p>Las recomendaciones se calculan con los catálogos guardados en la base de datos y en este momento no responde. No mostramos datos de demostración en su lugar. Probá de nuevo en unos minutos.</p>
+      <a class="subtle-link" href="{% url 'recommender:home' %}?market={{ catalog_market }}">Reintentar</a>
+      {% else %}
+      <h2 id="market-empty-title">El catálogo de {{ catalog_market_name }} todavía no está disponible</h2>
+      <p>Todavía no hay un snapshot completamente procesado para este país.</p>
+      <a class="subtle-link" href="{% url 'recommender:home' %}?market=mx">Usar el catálogo de México</a>
+      {% endif %}
+    </section>
+    {% endif %}
+  </div>
+</section>
+{% endblock %}

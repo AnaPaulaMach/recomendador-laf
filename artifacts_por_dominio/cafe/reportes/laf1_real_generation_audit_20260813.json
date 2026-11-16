@@ -1,0 +1,617 @@
+{
+  "generated_at": "2026-08-13T14:25:28.841750+00:00",
+  "domain": "cafe",
+  "strategy": "D",
+  "datasets": [
+    {
+      "dataset_key": "mco_mco409413_20260805_184739",
+      "category_label": "Cafe en granos y molido",
+      "site_id": "MCO",
+      "description": "Colombia - grano/molido",
+      "preferences_ui": {
+        "passed": true,
+        "scenarios": [
+          {
+            "name": "neutral",
+            "passed": true,
+            "sliders": 14,
+            "exceptions": []
+          },
+          {
+            "name": "sensorial_alta",
+            "passed": true,
+            "sliders": 14,
+            "exceptions": []
+          },
+          {
+            "name": "uso_preparacion_alta",
+            "passed": true,
+            "sliders": 14,
+            "exceptions": []
+          }
+        ]
+      },
+      "included_products": 16,
+      "scenarios": [
+        {
+          "passed": true,
+          "checks": {
+            "dataset_key": true,
+            "frozen_methodology": true,
+            "catalog_products_only": true,
+            "preferences_header": true,
+            "facts_trust_and_preferences": true,
+            "frozen_rules": true
+          },
+          "products": 16,
+          "products_with_facts": 15,
+          "products_without_facts": [
+            "mcou4152714259"
+          ],
+          "facts": 114,
+          "rules": 64,
+          "active_aspects": [
+            "acidez",
+            "aroma",
+            "caducidad",
+            "dulzor",
+            "intensidad",
+            "molienda",
+            "originalidad",
+            "preparacion",
+            "presentacion",
+            "rendimiento",
+            "sabor",
+            "tamano",
+            "tueste",
+            "variedad"
+          ],
+          "unexpected_products": [],
+          "missing_products": [],
+          "unexpected_facts": [],
+          "missing_facts": [],
+          "unexpected_rules": [],
+          "missing_rules": [],
+          "name": "neutral",
+          "program": "artifacts_por_dominio\\cafe\\programas_laf\\auditoria_generacion_20260813\\mco_mco409413_20260805_184739__neutral.txt"
+        },
+        {
+          "passed": true,
+          "checks": {
+            "dataset_key": true,
+            "frozen_methodology": true,
+            "catalog_products_only": true,
+            "preferences_header": true,
+            "facts_trust_and_preferences": true,
+            "frozen_rules": true
+          },
+          "products": 16,
+          "products_with_facts": 15,
+          "products_without_facts": [
+            "mcou4152714259"
+          ],
+          "facts": 114,
+          "rules": 64,
+          "active_aspects": [
+            "acidez",
+            "aroma",
+            "caducidad",
+            "dulzor",
+            "intensidad",
+            "molienda",
+            "originalidad",
+            "preparacion",
+            "presentacion",
+            "rendimiento",
+            "sabor",
+            "tamano",
+            "tueste",
+            "variedad"
+          ],
+          "unexpected_products": [],
+          "missing_products": [],
+          "unexpected_facts": [],
+          "missing_facts": [],
+          "unexpected_rules": [],
+          "missing_rules": [],
+          "name": "sensorial_alta"
+        },
+        {
+          "passed": true,
+          "checks": {
+            "dataset_key": true,
+            "frozen_methodology": true,
+            "catalog_products_only": true,
+            "preferences_header": true,
+            "facts_trust_and_preferences": true,
+            "frozen_rules": true
+          },
+          "products": 16,
+          "products_with_facts": 15,
+          "products_without_facts": [
+            "mcou4152714259"
+          ],
+          "facts": 114,
+          "rules": 64,
+          "active_aspects": [
+            "acidez",
+            "aroma",
+            "caducidad",
+            "dulzor",
+            "intensidad",
+            "molienda",
+            "originalidad",
+            "preparacion",
+            "presentacion",
+            "rendimiento",
+            "sabor",
+            "tamano",
+            "tueste",
+            "variedad"
+          ],
+          "unexpected_products": [],
+          "missing_products": [],
+          "unexpected_facts": [],
+          "missing_facts": [],
+          "unexpected_rules": [],
+          "missing_rules": [],
+          "name": "uso_preparacion_alta"
+        }
+      ]
+    },
+    {
+      "dataset_key": "mlm_mlm194329_20260528_142014",
+      "category_label": "Cafe",
+      "site_id": "MLM",
+      "description": "Mexico - historico mixto",
+      "preferences_ui": {
+        "passed": true,
+        "scenarios": [
+          {
+            "name": "neutral",
+            "passed": true,
+            "sliders": 14,
+            "exceptions": []
+          },
+          {
+            "name": "sensorial_alta",
+            "passed": true,
+            "sliders": 14,
+            "exceptions": []
+          },
+          {
+            "name": "uso_preparacion_alta",
+            "passed": true,
+            "sliders": 14,
+            "exceptions": []
+          }
+        ]
+      },
+      "included_products": 18,
+      "scenarios": [
+        {
+          "passed": true,
+          "checks": {
+            "dataset_key": true,
+            "frozen_methodology": true,
+            "catalog_products_only": true,
+            "preferences_header": true,
+            "facts_trust_and_preferences": true,
+            "frozen_rules": true
+          },
+          "products": 18,
+          "products_with_facts": 18,
+          "products_without_facts": [],
+          "facts": 258,
+          "rules": 64,
+          "active_aspects": [
+            "acidez",
+            "aroma",
+            "caducidad",
+            "dulzor",
+            "intensidad",
+            "molienda",
+            "originalidad",
+            "preparacion",
+            "presentacion",
+            "rendimiento",
+            "sabor",
+            "tamano",
+            "tueste",
+            "variedad"
+          ],
+          "unexpected_products": [],
+          "missing_products": [],
+          "unexpected_facts": [],
+          "missing_facts": [],
+          "unexpected_rules": [],
+          "missing_rules": [],
+          "name": "neutral",
+          "program": "artifacts_por_dominio\\cafe\\programas_laf\\auditoria_generacion_20260813\\mlm_mlm194329_20260528_142014__neutral.txt"
+        },
+        {
+          "passed": true,
+          "checks": {
+            "dataset_key": true,
+            "frozen_methodology": true,
+            "catalog_products_only": true,
+            "preferences_header": true,
+            "facts_trust_and_preferences": true,
+            "frozen_rules": true
+          },
+          "products": 18,
+          "products_with_facts": 18,
+          "products_without_facts": [],
+          "facts": 258,
+          "rules": 64,
+          "active_aspects": [
+            "acidez",
+            "aroma",
+            "caducidad",
+            "dulzor",
+            "intensidad",
+            "molienda",
+            "originalidad",
+            "preparacion",
+            "presentacion",
+            "rendimiento",
+            "sabor",
+            "tamano",
+            "tueste",
+            "variedad"
+          ],
+          "unexpected_products": [],
+          "missing_products": [],
+          "unexpected_facts": [],
+          "missing_facts": [],
+          "unexpected_rules": [],
+          "missing_rules": [],
+          "name": "sensorial_alta"
+        },
+        {
+          "passed": true,
+          "checks": {
+            "dataset_key": true,
+            "frozen_methodology": true,
+            "catalog_products_only": true,
+            "preferences_header": true,
+            "facts_trust_and_preferences": true,
+            "frozen_rules": true
+          },
+          "products": 18,
+          "products_with_facts": 18,
+          "products_without_facts": [],
+          "facts": 258,
+          "rules": 64,
+          "active_aspects": [
+            "acidez",
+            "aroma",
+            "caducidad",
+            "dulzor",
+            "intensidad",
+            "molienda",
+            "originalidad",
+            "preparacion",
+            "presentacion",
+            "rendimiento",
+            "sabor",
+            "tamano",
+            "tueste",
+            "variedad"
+          ],
+          "unexpected_products": [],
+          "missing_products": [],
+          "unexpected_facts": [],
+          "missing_facts": [],
+          "unexpected_rules": [],
+          "missing_rules": [],
+          "name": "uso_preparacion_alta"
+        }
+      ]
+    },
+    {
+      "dataset_key": "mlm_mlm194329_20260805_191308",
+      "category_label": "Cafe instantaneo",
+      "site_id": "MLM",
+      "description": "Mexico - instantaneo",
+      "preferences_ui": {
+        "passed": true,
+        "scenarios": [
+          {
+            "name": "neutral",
+            "passed": true,
+            "sliders": 14,
+            "exceptions": []
+          },
+          {
+            "name": "sensorial_alta",
+            "passed": true,
+            "sliders": 14,
+            "exceptions": []
+          },
+          {
+            "name": "uso_preparacion_alta",
+            "passed": true,
+            "sliders": 14,
+            "exceptions": []
+          }
+        ]
+      },
+      "included_products": 16,
+      "scenarios": [
+        {
+          "passed": true,
+          "checks": {
+            "dataset_key": true,
+            "frozen_methodology": true,
+            "catalog_products_only": true,
+            "preferences_header": true,
+            "facts_trust_and_preferences": true,
+            "frozen_rules": true
+          },
+          "products": 16,
+          "products_with_facts": 16,
+          "products_without_facts": [],
+          "facts": 205,
+          "rules": 64,
+          "active_aspects": [
+            "acidez",
+            "aroma",
+            "caducidad",
+            "dulzor",
+            "intensidad",
+            "molienda",
+            "originalidad",
+            "preparacion",
+            "presentacion",
+            "rendimiento",
+            "sabor",
+            "tamano",
+            "tueste",
+            "variedad"
+          ],
+          "unexpected_products": [],
+          "missing_products": [],
+          "unexpected_facts": [],
+          "missing_facts": [],
+          "unexpected_rules": [],
+          "missing_rules": [],
+          "name": "neutral",
+          "program": "artifacts_por_dominio\\cafe\\programas_laf\\auditoria_generacion_20260813\\mlm_mlm194329_20260805_191308__neutral.txt"
+        },
+        {
+          "passed": true,
+          "checks": {
+            "dataset_key": true,
+            "frozen_methodology": true,
+            "catalog_products_only": true,
+            "preferences_header": true,
+            "facts_trust_and_preferences": true,
+            "frozen_rules": true
+          },
+          "products": 16,
+          "products_with_facts": 16,
+          "products_without_facts": [],
+          "facts": 205,
+          "rules": 64,
+          "active_aspects": [
+            "acidez",
+            "aroma",
+            "caducidad",
+            "dulzor",
+            "intensidad",
+            "molienda",
+            "originalidad",
+            "preparacion",
+            "presentacion",
+            "rendimiento",
+            "sabor",
+            "tamano",
+            "tueste",
+            "variedad"
+          ],
+          "unexpected_products": [],
+          "missing_products": [],
+          "unexpected_facts": [],
+          "missing_facts": [],
+          "unexpected_rules": [],
+          "missing_rules": [],
+          "name": "sensorial_alta"
+        },
+        {
+          "passed": true,
+          "checks": {
+            "dataset_key": true,
+            "frozen_methodology": true,
+            "catalog_products_only": true,
+            "preferences_header": true,
+            "facts_trust_and_preferences": true,
+            "frozen_rules": true
+          },
+          "products": 16,
+          "products_with_facts": 16,
+          "products_without_facts": [],
+          "facts": 205,
+          "rules": 64,
+          "active_aspects": [
+            "acidez",
+            "aroma",
+            "caducidad",
+            "dulzor",
+            "intensidad",
+            "molienda",
+            "originalidad",
+            "preparacion",
+            "presentacion",
+            "rendimiento",
+            "sabor",
+            "tamano",
+            "tueste",
+            "variedad"
+          ],
+          "unexpected_products": [],
+          "missing_products": [],
+          "unexpected_facts": [],
+          "missing_facts": [],
+          "unexpected_rules": [],
+          "missing_rules": [],
+          "name": "uso_preparacion_alta"
+        }
+      ]
+    },
+    {
+      "dataset_key": "mlm_mlm194335_20260805_185233",
+      "category_label": "Cafe en granos y molido",
+      "site_id": "MLM",
+      "description": "Mexico - grano/molido",
+      "preferences_ui": {
+        "passed": true,
+        "scenarios": [
+          {
+            "name": "neutral",
+            "passed": true,
+            "sliders": 14,
+            "exceptions": []
+          },
+          {
+            "name": "sensorial_alta",
+            "passed": true,
+            "sliders": 14,
+            "exceptions": []
+          },
+          {
+            "name": "uso_preparacion_alta",
+            "passed": true,
+            "sliders": 14,
+            "exceptions": []
+          }
+        ]
+      },
+      "included_products": 19,
+      "scenarios": [
+        {
+          "passed": true,
+          "checks": {
+            "dataset_key": true,
+            "frozen_methodology": true,
+            "catalog_products_only": true,
+            "preferences_header": true,
+            "facts_trust_and_preferences": true,
+            "frozen_rules": true
+          },
+          "products": 19,
+          "products_with_facts": 19,
+          "products_without_facts": [],
+          "facts": 275,
+          "rules": 64,
+          "active_aspects": [
+            "acidez",
+            "aroma",
+            "caducidad",
+            "dulzor",
+            "intensidad",
+            "molienda",
+            "originalidad",
+            "preparacion",
+            "presentacion",
+            "rendimiento",
+            "sabor",
+            "tamano",
+            "tueste",
+            "variedad"
+          ],
+          "unexpected_products": [],
+          "missing_products": [],
+          "unexpected_facts": [],
+          "missing_facts": [],
+          "unexpected_rules": [],
+          "missing_rules": [],
+          "name": "neutral",
+          "program": "artifacts_por_dominio\\cafe\\programas_laf\\auditoria_generacion_20260813\\mlm_mlm194335_20260805_185233__neutral.txt"
+        },
+        {
+          "passed": true,
+          "checks": {
+            "dataset_key": true,
+            "frozen_methodology": true,
+            "catalog_products_only": true,
+            "preferences_header": true,
+            "facts_trust_and_preferences": true,
+            "frozen_rules": true
+          },
+          "products": 19,
+          "products_with_facts": 19,
+          "products_without_facts": [],
+          "facts": 275,
+          "rules": 64,
+          "active_aspects": [
+            "acidez",
+            "aroma",
+            "caducidad",
+            "dulzor",
+            "intensidad",
+            "molienda",
+            "originalidad",
+            "preparacion",
+            "presentacion",
+            "rendimiento",
+            "sabor",
+            "tamano",
+            "tueste",
+            "variedad"
+          ],
+          "unexpected_products": [],
+          "missing_products": [],
+          "unexpected_facts": [],
+          "missing_facts": [],
+          "unexpected_rules": [],
+          "missing_rules": [],
+          "name": "sensorial_alta"
+        },
+        {
+          "passed": true,
+          "checks": {
+            "dataset_key": true,
+            "frozen_methodology": true,
+            "catalog_products_only": true,
+            "preferences_header": true,
+            "facts_trust_and_preferences": true,
+            "frozen_rules": true
+          },
+          "products": 19,
+          "products_with_facts": 19,
+          "products_without_facts": [],
+          "facts": 275,
+          "rules": 64,
+          "active_aspects": [
+            "acidez",
+            "aroma",
+            "caducidad",
+            "dulzor",
+            "intensidad",
+            "molienda",
+            "originalidad",
+            "preparacion",
+            "presentacion",
+            "rendimiento",
+            "sabor",
+            "tamano",
+            "tueste",
+            "variedad"
+          ],
+          "unexpected_products": [],
+          "missing_products": [],
+          "unexpected_facts": [],
+          "missing_facts": [],
+          "unexpected_rules": [],
+          "missing_rules": [],
+          "name": "uso_preparacion_alta"
+        }
+      ]
+    }
+  ],
+  "methodology_sha256": "4be8a4f128dbac3d40b88dfa9204458b2bcfda40015608cf678bc69494062767",
+  "artifact_retention": "Se conserva el programa neutral de cada dataset. Los otros escenarios se verificaron y permanecen resumidos en este reporte.",
+  "coverage_note": "Se verificaron México histórico mixto, México instantáneo, México grano/molido y Colombia grano/molido. No existe actualmente un snapshot real de café instantáneo de Colombia en la tabla `datasets`.",
+  "passed": true
+}

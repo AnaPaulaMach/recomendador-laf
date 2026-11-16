@@ -1,0 +1,4979 @@
+{
+ "dataset_key": "mlm_mlm194329_20260528_142014",
+ "producto": {
+  "entity_id": "MLM19566313",
+  "entity_name": "Cafe Capuccino Vainilla Francesa En Polvo Members Mark 1.8 Kg",
+  "position": 5,
+  "final_score": 0.27248136117167393,
+  "confidence": 0.8588920482827641,
+  "preference": 1.0,
+  "status": "recommended",
+  "evidence_count": 555,
+  "arguments_for": [
+   {
+    "argument_id": "aroma:F26",
+    "title": "resenaPositivaAroma(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo)",
+    "aspect": "aroma",
+    "polarity": "positive",
+    "confidence": 0.7,
+    "preference": 0.7,
+    "evidence_count": 18,
+    "summary": "Derivado del grafo LAF."
+   },
+   {
+    "argument_id": "caducidad:F48",
+    "title": "resenaPositivaCaducidad(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo)",
+    "aspect": "caducidad",
+    "polarity": "positive",
+    "confidence": 0.56,
+    "preference": 0.56,
+    "evidence_count": 5,
+    "summary": "Derivado del grafo LAF."
+   },
+   {
+    "argument_id": "dulzor:F56",
+    "title": "resenaPositivaDulzor(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo)",
+    "aspect": "dulzor",
+    "polarity": "positive",
+    "confidence": 0.64,
+    "preference": 0.64,
+    "evidence_count": 28,
+    "summary": "Derivado del grafo LAF."
+   },
+   {
+    "argument_id": "intensidad:F54",
+    "title": "resenaPositivaIntensidad(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo)",
+    "aspect": "intensidad",
+    "polarity": "positive",
+    "confidence": 0.59,
+    "preference": 0.59,
+    "evidence_count": 8,
+    "summary": "Derivado del grafo LAF."
+   },
+   {
+    "argument_id": "originalidad:F66",
+    "title": "resenaPositivaOriginalidad(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo)",
+    "aspect": "originalidad",
+    "polarity": "positive",
+    "confidence": 0.56,
+    "preference": 0.56,
+    "evidence_count": 4,
+    "summary": "Derivado del grafo LAF."
+   },
+   {
+    "argument_id": "preparacion:F20",
+    "title": "resenaPositivaPreparacion(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo)",
+    "aspect": "preparacion",
+    "polarity": "positive",
+    "confidence": 0.65,
+    "preference": 0.65,
+    "evidence_count": 12,
+    "summary": "Derivado del grafo LAF."
+   },
+   {
+    "argument_id": "presentacion:F10",
+    "title": "resenaPositivaPresentacion(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo)",
+    "aspect": "presentacion",
+    "polarity": "positive",
+    "confidence": 0.72,
+    "preference": 0.72,
+    "evidence_count": 25,
+    "summary": "Derivado del grafo LAF."
+   },
+   {
+    "argument_id": "rendimiento:F33",
+    "title": "resenaPositivaRendimiento(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo)",
+    "aspect": "rendimiento",
+    "polarity": "positive",
+    "confidence": 0.76,
+    "preference": 0.76,
+    "evidence_count": 35,
+    "summary": "Derivado del grafo LAF."
+   },
+   {
+    "argument_id": "sabor:F45",
+    "title": "resenaPositivaSabor(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo)",
+    "aspect": "sabor",
+    "polarity": "positive",
+    "confidence": 0.95,
+    "preference": 0.95,
+    "evidence_count": 353,
+    "summary": "Derivado del grafo LAF."
+   },
+   {
+    "argument_id": "tamano:F55",
+    "title": "resenaPositivaTamano(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo)",
+    "aspect": "tamano",
+    "polarity": "positive",
+    "confidence": 0.67,
+    "preference": 0.67,
+    "evidence_count": 16,
+    "summary": "Derivado del grafo LAF."
+   },
+   {
+    "argument_id": "variedad:F38",
+    "title": "resenaPositivaVariedad(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo)",
+    "aspect": "variedad",
+    "polarity": "positive",
+    "confidence": 0.71,
+    "preference": 0.71,
+    "evidence_count": 35,
+    "summary": "Derivado del grafo LAF."
+   }
+  ],
+  "arguments_against": [
+   {
+    "argument_id": "dulzor:F12",
+    "title": "resenaNegativaDulzor(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo)",
+    "aspect": "dulzor",
+    "polarity": "negative",
+    "confidence": 0.36,
+    "preference": 0.36,
+    "evidence_count": 7,
+    "summary": "Derivado del grafo LAF."
+   },
+   {
+    "argument_id": "presentacion:F40",
+    "title": "resenaNegativaPresentacion(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo)",
+    "aspect": "presentacion",
+    "polarity": "negative",
+    "confidence": 0.28,
+    "preference": 0.28,
+    "evidence_count": 2,
+    "summary": "Derivado del grafo LAF."
+   },
+   {
+    "argument_id": "rendimiento:F30",
+    "title": "resenaNegativaRendimiento(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo)",
+    "aspect": "rendimiento",
+    "polarity": "negative",
+    "confidence": 0.24,
+    "preference": 0.24,
+    "evidence_count": 1,
+    "summary": "Derivado del grafo LAF."
+   },
+   {
+    "argument_id": "sabor:F65",
+    "title": "resenaNegativaSabor(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo)",
+    "aspect": "sabor",
+    "polarity": "negative",
+    "confidence": 0.05,
+    "preference": 0.05,
+    "evidence_count": 4,
+    "summary": "Derivado del grafo LAF."
+   },
+   {
+    "argument_id": "variedad:F35",
+    "title": "resenaNegativaVariedad(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo)",
+    "aspect": "variedad",
+    "polarity": "negative",
+    "confidence": 0.29,
+    "preference": 0.29,
+    "evidence_count": 2,
+    "summary": "Derivado del grafo LAF."
+   }
+  ],
+  "metadata": {
+   "product_id": "MLM19566313",
+   "source_position": 17,
+   "price_min": 287.99,
+   "price_max": 645.0,
+   "items_count": 26,
+   "laf_argument": "mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo",
+   "laf_node_id": "aroma:F66",
+   "confidence": 0.8588920482827641,
+   "preference": 1.0,
+   "score_projection": "sum(normalized_user_weight * per_aspect_laf_confidence)",
+   "label_count": 1,
+   "decision_model": "post_laf_multicriteria_v1",
+   "source_laf_confidence": 0.8588920482827641,
+   "source_laf_preference": 1.0,
+   "active_aspects": [
+    "acidez",
+    "aroma",
+    "caducidad",
+    "dulzor",
+    "intensidad",
+    "molienda",
+    "originalidad",
+    "preparacion",
+    "presentacion",
+    "rendimiento",
+    "sabor",
+    "tamano",
+    "tueste",
+    "variedad"
+   ],
+   "disabled_aspects": [],
+   "aspect_contributions": [
+    {
+     "aspect": "acidez",
+     "weight": 0.67,
+     "normalized_weight": 0.07142857142857142,
+     "laf_score": 0.0,
+     "contribution": 0.0
+    },
+    {
+     "aspect": "aroma",
+     "weight": 0.67,
+     "normalized_weight": 0.07142857142857142,
+     "laf_score": 0.45517499999999994,
+     "contribution": 0.03251249999999999
+    },
+    {
+     "aspect": "caducidad",
+     "weight": 0.67,
+     "normalized_weight": 0.07142857142857142,
+     "laf_score": 0.31558800000000004,
+     "contribution": 0.022542
+    },
+    {
+     "aspect": "dulzor",
+     "weight": 0.67,
+     "normalized_weight": 0.07142857142857142,
+     "laf_score": 0.21485213943499093,
+     "contribution": 0.015346581388213636
+    },
+    {
+     "aspect": "intensidad",
+     "weight": 0.67,
+     "normalized_weight": 0.07142857142857142,
+     "laf_score": 0.36108,
+     "contribution": 0.02579142857142857
+    },
+    {
+     "aspect": "molienda",
+     "weight": 0.67,
+     "normalized_weight": 0.07142857142857142,
+     "laf_score": 0.0,
+     "contribution": 0.0
+    },
+    {
+     "aspect": "originalidad",
+     "weight": 0.67,
+     "normalized_weight": 0.07142857142857142,
+     "laf_score": 0.32672640000000003,
+     "contribution": 0.0233376
+    },
+    {
+     "aspect": "preparacion",
+     "weight": 0.67,
+     "normalized_weight": 0.07142857142857142,
+     "laf_score": 0.3315,
+     "contribution": 0.023678571428571427
+    },
+    {
+     "aspect": "presentacion",
+     "weight": 0.67,
+     "normalized_weight": 0.07142857142857142,
+     "laf_score": 0.25406449121452024,
+     "contribution": 0.018147463658180017
+    },
+    {
+     "aspect": "rendimiento",
+     "weight": 0.67,
+     "normalized_weight": 0.07142857142857142,
+     "laf_score": 0.3489689764072079,
+     "contribution": 0.024926355457657708
+    },
+    {
+     "aspect": "sabor",
+     "weight": 0.67,
+     "normalized_weight": 0.07142857142857142,
+     "laf_score": 0.6411670615376318,
+     "contribution": 0.045797647252687985
+    },
+    {
+     "aspect": "tamano",
+     "weight": 0.67,
+     "normalized_weight": 0.07142857142857142,
+     "laf_score": 0.3417,
+     "contribution": 0.024407142857142856
+    },
+    {
+     "aspect": "tueste",
+     "weight": 0.67,
+     "normalized_weight": 0.07142857142857142,
+     "laf_score": 0.0,
+     "contribution": 0.0
+    },
+    {
+     "aspect": "variedad",
+     "weight": 0.67,
+     "normalized_weight": 0.07142857142857142,
+     "laf_score": 0.22391698780908392,
+     "contribution": 0.015994070557791708
+    }
+   ],
+   "explanation_source": "stored_single_label_aspect_runs",
+   "aspect_node_ids": {
+    "aroma": "F66",
+    "caducidad": "F53",
+    "dulzor": "F76",
+    "intensidad": "F94",
+    "originalidad": "F81",
+    "preparacion": "F71",
+    "presentacion": "F104",
+    "rendimiento": "F74",
+    "sabor": "F123",
+    "tamano": "F74",
+    "variedad": "F47"
+   }
+  }
+ },
+ "condiciones_ofrecidas": [
+  "precio",
+  "descuento",
+  "tienda_oficial",
+  "envio"
+ ],
+ "perfiles": {
+  "todo_bastante": {
+   "evaluation_status": "validated",
+   "decision_model": "post_laf_multicriteria_v1",
+   "methodology_sha256": "735f9b0cfde030c5d855d11262e73d460d15b5be7dba20a30d3d2157c41432fb",
+   "generated_at": "2026-09-10T16:27:08.918074-03:00",
+   "sin_evidencia": [],
+   "preferencias": {
+    "precio": 0.67,
+    "descuento": 0.67,
+    "tienda_oficial": 0.67,
+    "envio": 0.67
+   },
+   "publicaciones": [
+    {
+     "puesto": 1,
+     "entity_id": "MLM2552802793",
+     "score": 0.6158,
+     "score_exacto": 0.615825,
+     "score_formula": 0.61575,
+     "desvio": 7.5e-05,
+     "rotulo": "Mejor opción para vos",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$426,55",
+      "shipping": "Gratis",
+      "warranty": "No informada",
+      "is_official_store": true,
+      "has_discount": true,
+      "discount_pct": 0.05
+     },
+     "vendedor": "Vendedor 272093102",
+     "condiciones": [
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "Gratis",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: Gratis. LAF resolvió esta condición en 0,727; multiplicado por 0,67 aporta 0,487 a la suma del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "Sí",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: Sí. LAF resolvió esta condición en 0,727; multiplicado por 0,67 aporta 0,487 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$426,55",
+       "laf": 0.535,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $426,55. LAF resolvió esta condición en 0,535; multiplicado por 0,67 aporta 0,358 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "Sí, 5 %",
+       "laf": 0.474,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: Sí, 5 %. LAF resolvió esta condición en 0,474; multiplicado por 0,67 aporta 0,318 a la suma del puntaje."
+      }
+     ],
+     "cierre": "Quedó 1º de 26. El resultado LAF más alto es el de envío y tienda oficial (0,727) y el más bajo el de descuento (0,474). Les diste el mismo peso a todas, así que el orden lo decidieron esos resultados.",
+     "desempate": ""
+    },
+    {
+     "puesto": 2,
+     "entity_id": "MLM4468329986",
+     "score": 0.5125,
+     "score_exacto": 0.51255,
+     "score_formula": 0.51275,
+     "desvio": 0.0002,
+     "rotulo": "Buena coincidencia",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$380",
+      "shipping": "Gratis",
+      "warranty": "No informada",
+      "is_official_store": true,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 158181548",
+     "condiciones": [
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "Gratis",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: Gratis. LAF resolvió esta condición en 0,727; multiplicado por 0,67 aporta 0,487 a la suma del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "Sí",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: Sí. LAF resolvió esta condición en 0,727; multiplicado por 0,67 aporta 0,487 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$380",
+       "laf": 0.597,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $380. LAF resolvió esta condición en 0,597; multiplicado por 0,67 aporta 0,400 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 2º de 26. El resultado LAF más alto es el de envío y tienda oficial (0,727) y el más bajo el de descuento (0,000). Les diste el mismo peso a todas, así que el orden lo decidieron esos resultados.",
+     "desempate": ""
+    },
+    {
+     "puesto": 3,
+     "entity_id": "MLM2479322051",
+     "score": 0.5068,
+     "score_exacto": 0.5068125,
+     "score_formula": 0.507,
+     "desvio": 0.000188,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$398",
+      "shipping": "Gratis",
+      "warranty": "30 días",
+      "is_official_store": true,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 1886609027",
+     "condiciones": [
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "Gratis",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: Gratis. LAF resolvió esta condición en 0,727; multiplicado por 0,67 aporta 0,487 a la suma del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "Sí",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: Sí. LAF resolvió esta condición en 0,727; multiplicado por 0,67 aporta 0,487 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$398",
+       "laf": 0.574,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $398. LAF resolvió esta condición en 0,574; multiplicado por 0,67 aporta 0,385 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 3º de 26. El resultado LAF más alto es el de envío y tienda oficial (0,727) y el más bajo el de descuento (0,000). Les diste el mismo peso a todas, así que el orden lo decidieron esos resultados.",
+     "desempate": ""
+    },
+    {
+     "puesto": 4,
+     "entity_id": "MLM3140707206",
+     "score": 0.5011,
+     "score_exacto": 0.501075,
+     "score_formula": 0.50125,
+     "desvio": 0.000175,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$414,87",
+      "shipping": "Gratis",
+      "warranty": "30 días",
+      "is_official_store": true,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 1012612797",
+     "condiciones": [
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "Gratis",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: Gratis. LAF resolvió esta condición en 0,727; multiplicado por 0,67 aporta 0,487 a la suma del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "Sí",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: Sí. LAF resolvió esta condición en 0,727; multiplicado por 0,67 aporta 0,487 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$414,87",
+       "laf": 0.551,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $414,87. LAF resolvió esta condición en 0,551; multiplicado por 0,67 aporta 0,369 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 4º de 26. El resultado LAF más alto es el de envío y tienda oficial (0,727) y el más bajo el de descuento (0,000). Les diste el mismo peso a todas, así que el orden lo decidieron esos resultados.",
+     "desempate": ""
+    },
+    {
+     "puesto": 5,
+     "entity_id": "MLM1494089883",
+     "score": 0.4896,
+     "score_exacto": 0.4896,
+     "score_formula": 0.48975,
+     "desvio": 0.00015,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$450",
+      "shipping": "Gratis",
+      "warranty": "1 mes",
+      "is_official_store": true,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 30719238",
+     "condiciones": [
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "Gratis",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: Gratis. LAF resolvió esta condición en 0,727; multiplicado por 0,67 aporta 0,487 a la suma del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "Sí",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: Sí. LAF resolvió esta condición en 0,727; multiplicado por 0,67 aporta 0,487 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$450",
+       "laf": 0.505,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $450. LAF resolvió esta condición en 0,505; multiplicado por 0,67 aporta 0,338 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 5º de 26. El resultado LAF más alto es el de envío y tienda oficial (0,727) y el más bajo el de descuento (0,000). Les diste el mismo peso a todas, así que el orden lo decidieron esos resultados.",
+     "desempate": ""
+    },
+    {
+     "puesto": 6,
+     "entity_id": "MLM1649958450",
+     "score": 0.3634,
+     "score_exacto": 0.363375,
+     "score_formula": 0.3635,
+     "desvio": 0.000125,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$287,99",
+      "shipping": "No informado",
+      "warranty": "1 mes",
+      "is_official_store": true,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 206710930",
+     "condiciones": [
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$287,99",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $287,99. LAF resolvió esta condición en 0,727; multiplicado por 0,67 aporta 0,487 a la suma del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "Sí",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: Sí. LAF resolvió esta condición en 0,727; multiplicado por 0,67 aporta 0,487 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      },
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 6º de 26. El resultado LAF más alto es el de precio y tienda oficial (0,727) y el más bajo el de descuento y envío (0,000). Les diste el mismo peso a todas, así que el orden lo decidieron esos resultados.",
+     "desempate": ""
+    },
+    {
+     "puesto": 7,
+     "entity_id": "MLM3607232064",
+     "score": 0.3615,
+     "score_exacto": 0.36146249999999996,
+     "score_formula": 0.3615,
+     "desvio": 3.8e-05,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$295",
+      "shipping": "No informado",
+      "warranty": "No informada",
+      "is_official_store": true,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 266969627",
+     "condiciones": [
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "Sí",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: Sí. LAF resolvió esta condición en 0,727; multiplicado por 0,67 aporta 0,487 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$295",
+       "laf": 0.719,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $295. LAF resolvió esta condición en 0,719; multiplicado por 0,67 aporta 0,482 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      },
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 7º de 26. El resultado LAF más alto es el de tienda oficial (0,727) y el más bajo el de descuento y envío (0,000). Les diste el mismo peso a todas, así que el orden lo decidieron esos resultados.",
+     "desempate": ""
+    },
+    {
+     "puesto": 8,
+     "entity_id": "MLM2130464857",
+     "score": 0.3576,
+     "score_exacto": 0.35763750000000005,
+     "score_formula": 0.35775,
+     "desvio": 0.000112,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$304",
+      "shipping": "No informado",
+      "warranty": "No informada",
+      "is_official_store": true,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 574385317",
+     "condiciones": [
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "Sí",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: Sí. LAF resolvió esta condición en 0,727; multiplicado por 0,67 aporta 0,487 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$304",
+       "laf": 0.704,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $304. LAF resolvió esta condición en 0,704; multiplicado por 0,67 aporta 0,472 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      },
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 8º de 26. El resultado LAF más alto es el de tienda oficial (0,727) y el más bajo el de descuento y envío (0,000). Les diste el mismo peso a todas, así que el orden lo decidieron esos resultados.",
+     "desempate": ""
+    },
+    {
+     "puesto": 9,
+     "entity_id": "MLM4957271440",
+     "score": 0.327,
+     "score_exacto": 0.32703750000000004,
+     "score_formula": 0.327,
+     "desvio": 3.8e-05,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$395",
+      "shipping": "Gratis",
+      "warranty": "No informada",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 302708109",
+     "condiciones": [
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "Gratis",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: Gratis. LAF resolvió esta condición en 0,727; multiplicado por 0,67 aporta 0,487 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$395",
+       "laf": 0.581,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $395. LAF resolvió esta condición en 0,581; multiplicado por 0,67 aporta 0,389 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 9º de 26. El resultado LAF más alto es el de envío (0,727) y el más bajo el de descuento y tienda oficial (0,000). Les diste el mismo peso a todas, así que el orden lo decidieron esos resultados.",
+     "desempate": ""
+    },
+    {
+     "puesto": 10,
+     "entity_id": "MLM1991154456",
+     "score": 0.3251,
+     "score_exacto": 0.325125,
+     "score_formula": 0.32525,
+     "desvio": 0.000125,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$399",
+      "shipping": "Gratis",
+      "warranty": "No informada",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 304841922",
+     "condiciones": [
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "Gratis",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: Gratis. LAF resolvió esta condición en 0,727; multiplicado por 0,67 aporta 0,487 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$399",
+       "laf": 0.574,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $399. LAF resolvió esta condición en 0,574; multiplicado por 0,67 aporta 0,385 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 10º de 26. El resultado LAF más alto es el de envío (0,727) y el más bajo el de descuento y tienda oficial (0,000). Les diste el mismo peso a todas, así que el orden lo decidieron esos resultados.",
+     "desempate": "Empata en puntaje con otras 4 publicaciones. A igual puntaje ordenamos por la confianza del programa completo, que ya incorpora el precio (esta publicación: 0,84); si también empata, por el identificador de la publicación."
+    },
+    {
+     "puesto": 11,
+     "entity_id": "MLM2479347871",
+     "score": 0.3251,
+     "score_exacto": 0.325125,
+     "score_formula": 0.32525,
+     "desvio": 0.000125,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$399",
+      "shipping": "Gratis",
+      "warranty": "31 días",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 2282946306",
+     "condiciones": [
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "Gratis",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: Gratis. LAF resolvió esta condición en 0,727; multiplicado por 0,67 aporta 0,487 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$399",
+       "laf": 0.574,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $399. LAF resolvió esta condición en 0,574; multiplicado por 0,67 aporta 0,385 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 11º de 26. El resultado LAF más alto es el de envío (0,727) y el más bajo el de descuento y tienda oficial (0,000). Les diste el mismo peso a todas, así que el orden lo decidieron esos resultados.",
+     "desempate": "Empata en puntaje con otras 4 publicaciones. A igual puntaje ordenamos por la confianza del programa completo, que ya incorpora el precio (esta publicación: 0,84); si también empata, por el identificador de la publicación."
+    },
+    {
+     "puesto": 12,
+     "entity_id": "MLM4354086592",
+     "score": 0.3251,
+     "score_exacto": 0.325125,
+     "score_formula": 0.32525,
+     "desvio": 0.000125,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$399",
+      "shipping": "Gratis",
+      "warranty": "No informada",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 1084233612",
+     "condiciones": [
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "Gratis",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: Gratis. LAF resolvió esta condición en 0,727; multiplicado por 0,67 aporta 0,487 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$399",
+       "laf": 0.574,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $399. LAF resolvió esta condición en 0,574; multiplicado por 0,67 aporta 0,385 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 12º de 26. El resultado LAF más alto es el de envío (0,727) y el más bajo el de descuento y tienda oficial (0,000). Les diste el mismo peso a todas, así que el orden lo decidieron esos resultados.",
+     "desempate": "Empata en puntaje con otras 4 publicaciones. A igual puntaje ordenamos por la confianza del programa completo, que ya incorpora el precio (esta publicación: 0,84); si también empata, por el identificador de la publicación."
+    },
+    {
+     "puesto": 13,
+     "entity_id": "MLM4925077838",
+     "score": 0.3251,
+     "score_exacto": 0.325125,
+     "score_formula": 0.32525,
+     "desvio": 0.000125,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$399",
+      "shipping": "Gratis",
+      "warranty": "30 días",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 2922849906",
+     "condiciones": [
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "Gratis",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: Gratis. LAF resolvió esta condición en 0,727; multiplicado por 0,67 aporta 0,487 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$399",
+       "laf": 0.574,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $399. LAF resolvió esta condición en 0,574; multiplicado por 0,67 aporta 0,385 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 13º de 26. El resultado LAF más alto es el de envío (0,727) y el más bajo el de descuento y tienda oficial (0,000). Les diste el mismo peso a todas, así que el orden lo decidieron esos resultados.",
+     "desempate": "Empata en puntaje con otras 4 publicaciones. A igual puntaje ordenamos por la confianza del programa completo, que ya incorpora el precio (esta publicación: 0,84); si también empata, por el identificador de la publicación."
+    },
+    {
+     "puesto": 14,
+     "entity_id": "MLM5172133566",
+     "score": 0.3251,
+     "score_exacto": 0.325125,
+     "score_formula": 0.32525,
+     "desvio": 0.000125,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$399",
+      "shipping": "Gratis",
+      "warranty": "No informada",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 1191546617",
+     "condiciones": [
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "Gratis",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: Gratis. LAF resolvió esta condición en 0,727; multiplicado por 0,67 aporta 0,487 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$399",
+       "laf": 0.574,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $399. LAF resolvió esta condición en 0,574; multiplicado por 0,67 aporta 0,385 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 14º de 26. El resultado LAF más alto es el de envío (0,727) y el más bajo el de descuento y tienda oficial (0,000). Les diste el mismo peso a todas, así que el orden lo decidieron esos resultados.",
+     "desempate": "Empata en puntaje con otras 4 publicaciones. A igual puntaje ordenamos por la confianza del programa completo, que ya incorpora el precio (esta publicación: 0,84); si también empata, por el identificador de la publicación."
+    },
+    {
+     "puesto": 15,
+     "entity_id": "MLM2370451767",
+     "score": 0.3136,
+     "score_exacto": 0.31365,
+     "score_formula": 0.31375,
+     "desvio": 0.0001,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$430",
+      "shipping": "Gratis",
+      "warranty": "20 días",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 64016368",
+     "condiciones": [
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "Gratis",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: Gratis. LAF resolvió esta condición en 0,727; multiplicado por 0,67 aporta 0,487 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$430",
+       "laf": 0.528,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $430. LAF resolvió esta condición en 0,528; multiplicado por 0,67 aporta 0,354 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 15º de 26. El resultado LAF más alto es el de envío (0,727) y el más bajo el de descuento y tienda oficial (0,000). Les diste el mismo peso a todas, así que el orden lo decidieron esos resultados.",
+     "desempate": "Empata en puntaje con otra publicación. A igual puntaje ordenamos por la confianza del programa completo, que ya incorpora el precio (esta publicación: 0,83); si también empata, por el identificador de la publicación."
+    },
+    {
+     "puesto": 16,
+     "entity_id": "MLM5132285828",
+     "score": 0.3136,
+     "score_exacto": 0.31365,
+     "score_formula": 0.31375,
+     "desvio": 0.0001,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$429",
+      "shipping": "Gratis",
+      "warranty": "No informada",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 222683503",
+     "condiciones": [
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "Gratis",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: Gratis. LAF resolvió esta condición en 0,727; multiplicado por 0,67 aporta 0,487 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$429",
+       "laf": 0.528,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $429. LAF resolvió esta condición en 0,528; multiplicado por 0,67 aporta 0,354 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 16º de 26. El resultado LAF más alto es el de envío (0,727) y el más bajo el de descuento y tienda oficial (0,000). Les diste el mismo peso a todas, así que el orden lo decidieron esos resultados.",
+     "desempate": "Empata en puntaje con otra publicación. A igual puntaje ordenamos por la confianza del programa completo, que ya incorpora el precio (esta publicación: 0,83); si también empata, por el identificador de la publicación."
+    },
+    {
+     "puesto": 17,
+     "entity_id": "MLM2906277033",
+     "score": 0.3117,
+     "score_exacto": 0.3117375,
+     "score_formula": 0.31175,
+     "desvio": 1.3e-05,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$437,25",
+      "shipping": "Gratis",
+      "warranty": "30 días",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 158278316",
+     "condiciones": [
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "Gratis",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: Gratis. LAF resolvió esta condición en 0,727; multiplicado por 0,67 aporta 0,487 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$437,25",
+       "laf": 0.52,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $437,25. LAF resolvió esta condición en 0,520; multiplicado por 0,67 aporta 0,348 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 17º de 26. El resultado LAF más alto es el de envío (0,727) y el más bajo el de descuento y tienda oficial (0,000). Les diste el mismo peso a todas, así que el orden lo decidieron esos resultados.",
+     "desempate": "Empata en puntaje con otra publicación. A igual puntaje ordenamos por la confianza del programa completo, que ya incorpora el precio (esta publicación: 0,83); si también empata, por el identificador de la publicación."
+    },
+    {
+     "puesto": 18,
+     "entity_id": "MLM5035699430",
+     "score": 0.3117,
+     "score_exacto": 0.3117375,
+     "score_formula": 0.31175,
+     "desvio": 1.3e-05,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$438",
+      "shipping": "Gratis",
+      "warranty": "15 días",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 830355354",
+     "condiciones": [
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "Gratis",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: Gratis. LAF resolvió esta condición en 0,727; multiplicado por 0,67 aporta 0,487 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$438",
+       "laf": 0.52,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $438. LAF resolvió esta condición en 0,520; multiplicado por 0,67 aporta 0,348 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 18º de 26. El resultado LAF más alto es el de envío (0,727) y el más bajo el de descuento y tienda oficial (0,000). Les diste el mismo peso a todas, así que el orden lo decidieron esos resultados.",
+     "desempate": "Empata en puntaje con otra publicación. A igual puntaje ordenamos por la confianza del programa completo, que ya incorpora el precio (esta publicación: 0,83); si también empata, por el identificador de la publicación."
+    },
+    {
+     "puesto": 19,
+     "entity_id": "MLM2852622541",
+     "score": 0.3079,
+     "score_exacto": 0.3079125,
+     "score_formula": 0.308,
+     "desvio": 8.8e-05,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$447",
+      "shipping": "Gratis",
+      "warranty": "12 días",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 1136705958",
+     "condiciones": [
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "Gratis",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: Gratis. LAF resolvió esta condición en 0,727; multiplicado por 0,67 aporta 0,487 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$447",
+       "laf": 0.505,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $447. LAF resolvió esta condición en 0,505; multiplicado por 0,67 aporta 0,338 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 19º de 26. El resultado LAF más alto es el de envío (0,727) y el más bajo el de descuento y tienda oficial (0,000). Les diste el mismo peso a todas, así que el orden lo decidieron esos resultados.",
+     "desempate": "Empata en puntaje con otras 2 publicaciones. A igual puntaje ordenamos por la confianza del programa completo, que ya incorpora el precio (esta publicación: 0,82); si también empata, por el identificador de la publicación."
+    },
+    {
+     "puesto": 20,
+     "entity_id": "MLM3498948492",
+     "score": 0.3079,
+     "score_exacto": 0.3079125,
+     "score_formula": 0.308,
+     "desvio": 8.8e-05,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$450",
+      "shipping": "Gratis",
+      "warranty": "No informada",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 24469806",
+     "condiciones": [
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "Gratis",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: Gratis. LAF resolvió esta condición en 0,727; multiplicado por 0,67 aporta 0,487 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$450",
+       "laf": 0.505,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $450. LAF resolvió esta condición en 0,505; multiplicado por 0,67 aporta 0,338 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 20º de 26. El resultado LAF más alto es el de envío (0,727) y el más bajo el de descuento y tienda oficial (0,000). Les diste el mismo peso a todas, así que el orden lo decidieron esos resultados.",
+     "desempate": "Empata en puntaje con otras 2 publicaciones. A igual puntaje ordenamos por la confianza del programa completo, que ya incorpora el precio (esta publicación: 0,82); si también empata, por el identificador de la publicación."
+    },
+    {
+     "puesto": 21,
+     "entity_id": "MLM3870777402",
+     "score": 0.3079,
+     "score_exacto": 0.3079125,
+     "score_formula": 0.308,
+     "desvio": 8.8e-05,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$449",
+      "shipping": "Gratis",
+      "warranty": "No informada",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 713241482",
+     "condiciones": [
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "Gratis",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: Gratis. LAF resolvió esta condición en 0,727; multiplicado por 0,67 aporta 0,487 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$449",
+       "laf": 0.505,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $449. LAF resolvió esta condición en 0,505; multiplicado por 0,67 aporta 0,338 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 21º de 26. El resultado LAF más alto es el de envío (0,727) y el más bajo el de descuento y tienda oficial (0,000). Les diste el mismo peso a todas, así que el orden lo decidieron esos resultados.",
+     "desempate": "Empata en puntaje con otras 2 publicaciones. A igual puntaje ordenamos por la confianza del programa completo, que ya incorpora el precio (esta publicación: 0,82); si también empata, por el identificador de la publicación."
+    },
+    {
+     "puesto": 22,
+     "entity_id": "MLM4612094968",
+     "score": 0.3041,
+     "score_exacto": 0.3040875,
+     "score_formula": 0.30425,
+     "desvio": 0.000163,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$459",
+      "shipping": "Gratis",
+      "warranty": "No informada",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 37795821",
+     "condiciones": [
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "Gratis",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: Gratis. LAF resolvió esta condición en 0,727; multiplicado por 0,67 aporta 0,487 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$459",
+       "laf": 0.49,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $459. LAF resolvió esta condición en 0,490; multiplicado por 0,67 aporta 0,328 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 22º de 26. El resultado LAF más alto es el de envío (0,727) y el más bajo el de descuento y tienda oficial (0,000). Les diste el mismo peso a todas, así que el orden lo decidieron esos resultados.",
+     "desempate": ""
+    },
+    {
+     "puesto": 23,
+     "entity_id": "MLM2700501437",
+     "score": 0.2563,
+     "score_exacto": 0.256275,
+     "score_formula": 0.25625,
+     "desvio": 2.5e-05,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$598",
+      "shipping": "Gratis",
+      "warranty": "No informada",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 2198949852",
+     "condiciones": [
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "Gratis",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: Gratis. LAF resolvió esta condición en 0,727; multiplicado por 0,67 aporta 0,487 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$598",
+       "laf": 0.298,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $598. LAF resolvió esta condición en 0,298; multiplicado por 0,67 aporta 0,200 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 23º de 26. El resultado LAF más alto es el de envío (0,727) y el más bajo el de descuento y tienda oficial (0,000). Les diste el mismo peso a todas, así que el orden lo decidieron esos resultados.",
+     "desempate": ""
+    },
+    {
+     "puesto": 24,
+     "entity_id": "MLM2941006159",
+     "score": 0.2391,
+     "score_exacto": 0.2390625,
+     "score_formula": 0.23925,
+     "desvio": 0.000187,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$645",
+      "shipping": "Gratis",
+      "warranty": "30 días",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 131891689",
+     "condiciones": [
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "Gratis",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: Gratis. LAF resolvió esta condición en 0,727; multiplicado por 0,67 aporta 0,487 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$645",
+       "laf": 0.23,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $645. LAF resolvió esta condición en 0,230; multiplicado por 0,67 aporta 0,154 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 24º de 26. El resultado LAF más alto es el de envío (0,727) y el más bajo el de descuento y tienda oficial (0,000). Les diste el mismo peso a todas, así que el orden lo decidieron esos resultados.",
+     "desempate": "Empata en puntaje con otra publicación. A igual puntaje ordenamos por la confianza del programa completo, que ya incorpora el precio (esta publicación: 0,77); si también empata, por el identificador de la publicación."
+    },
+    {
+     "puesto": 25,
+     "entity_id": "MLM5154556164",
+     "score": 0.2391,
+     "score_exacto": 0.2390625,
+     "score_formula": 0.23925,
+     "desvio": 0.000187,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$645",
+      "shipping": "Gratis",
+      "warranty": "No informada",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 114438513",
+     "condiciones": [
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "Gratis",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: Gratis. LAF resolvió esta condición en 0,727; multiplicado por 0,67 aporta 0,487 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$645",
+       "laf": 0.23,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $645. LAF resolvió esta condición en 0,230; multiplicado por 0,67 aporta 0,154 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 25º de 26. El resultado LAF más alto es el de envío (0,727) y el más bajo el de descuento y tienda oficial (0,000). Les diste el mismo peso a todas, así que el orden lo decidieron esos resultados.",
+     "desempate": "Empata en puntaje con otra publicación. A igual puntaje ordenamos por la confianza del programa completo, que ya incorpora el precio (esta publicación: 0,77); si también empata, por el identificador de la publicación."
+    },
+    {
+     "puesto": 26,
+     "entity_id": "MLM2016344939",
+     "score": 0.1779,
+     "score_exacto": 0.1778625,
+     "score_formula": 0.17775,
+     "desvio": 0.000113,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$298,99",
+      "shipping": "No informado",
+      "warranty": "No informada",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 126308880",
+     "condiciones": [
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$298,99",
+       "laf": 0.711,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $298,99. LAF resolvió esta condición en 0,711; multiplicado por 0,67 aporta 0,476 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      },
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 26º de 26. El resultado LAF más alto es el de precio (0,711) y el más bajo el de descuento, envío y tienda oficial (0,000). Les diste el mismo peso a todas, así que el orden lo decidieron esos resultados.",
+     "desempate": ""
+    }
+   ]
+  },
+  "solo_precio": {
+   "evaluation_status": "validated",
+   "decision_model": "post_laf_multicriteria_v1",
+   "methodology_sha256": "735f9b0cfde030c5d855d11262e73d460d15b5be7dba20a30d3d2157c41432fb",
+   "generated_at": "2026-09-10T16:27:33.453233-03:00",
+   "sin_evidencia": [],
+   "preferencias": {
+    "precio": 1.0,
+    "descuento": 0.0,
+    "tienda_oficial": 0.0,
+    "envio": 0.0
+   },
+   "publicaciones": [
+    {
+     "puesto": 1,
+     "entity_id": "MLM1649958450",
+     "score": 0.7268,
+     "score_exacto": 0.72675,
+     "score_formula": 0.727,
+     "desvio": 0.00025,
+     "rotulo": "Entre las mejores opciones para vos",
+     "nota_rotulo": "Las 2 primeras opciones quedaron a menos de 0,01 de puntaje: el orden entre ellas no es concluyente",
+     "declaradas": {
+      "price_label": "$287,99",
+      "shipping": "No informado",
+      "warranty": "1 mes",
+      "is_official_store": true,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 206710930",
+     "condiciones": [
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "$287,99",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: $287,99. LAF resolvió esta condición en 0,727; multiplicado por 1,00 aporta 0,727 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "Sí",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      }
+     ],
+     "cierre": "Quedó 1º de 26. La única condición que elegiste es precio, con 0,727.",
+     "desempate": ""
+    },
+    {
+     "puesto": 2,
+     "entity_id": "MLM3607232064",
+     "score": 0.7191,
+     "score_exacto": 0.7191,
+     "score_formula": 0.719,
+     "desvio": 0.0001,
+     "rotulo": "Entre las mejores opciones para vos",
+     "nota_rotulo": "Las 2 primeras opciones quedaron a menos de 0,01 de puntaje: el orden entre ellas no es concluyente",
+     "declaradas": {
+      "price_label": "$295",
+      "shipping": "No informado",
+      "warranty": "No informada",
+      "is_official_store": true,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 266969627",
+     "condiciones": [
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "$295",
+       "laf": 0.719,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: $295. LAF resolvió esta condición en 0,719; multiplicado por 1,00 aporta 0,719 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "Sí",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      }
+     ],
+     "cierre": "Quedó 2º de 26. La única condición que elegiste es precio, con 0,719.",
+     "desempate": ""
+    },
+    {
+     "puesto": 3,
+     "entity_id": "MLM2016344939",
+     "score": 0.7115,
+     "score_exacto": 0.71145,
+     "score_formula": 0.711,
+     "desvio": 0.00045,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$298,99",
+      "shipping": "No informado",
+      "warranty": "No informada",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 126308880",
+     "condiciones": [
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "$298,99",
+       "laf": 0.711,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: $298,99. LAF resolvió esta condición en 0,711; multiplicado por 1,00 aporta 0,711 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      }
+     ],
+     "cierre": "Quedó 3º de 26. La única condición que elegiste es precio, con 0,711.",
+     "desempate": ""
+    },
+    {
+     "puesto": 4,
+     "entity_id": "MLM2130464857",
+     "score": 0.7038,
+     "score_exacto": 0.7038000000000001,
+     "score_formula": 0.704,
+     "desvio": 0.0002,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$304",
+      "shipping": "No informado",
+      "warranty": "No informada",
+      "is_official_store": true,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 574385317",
+     "condiciones": [
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "$304",
+       "laf": 0.704,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: $304. LAF resolvió esta condición en 0,704; multiplicado por 1,00 aporta 0,704 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "Sí",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      }
+     ],
+     "cierre": "Quedó 4º de 26. La única condición que elegiste es precio, con 0,704.",
+     "desempate": ""
+    },
+    {
+     "puesto": 5,
+     "entity_id": "MLM4468329986",
+     "score": 0.5967,
+     "score_exacto": 0.5967,
+     "score_formula": 0.597,
+     "desvio": 0.0003,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$380",
+      "shipping": "Gratis",
+      "warranty": "No informada",
+      "is_official_store": true,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 158181548",
+     "condiciones": [
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "$380",
+       "laf": 0.597,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: $380. LAF resolvió esta condición en 0,597; multiplicado por 1,00 aporta 0,597 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "Sí",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "Gratis",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      }
+     ],
+     "cierre": "Quedó 5º de 26. La única condición que elegiste es precio, con 0,597.",
+     "desempate": ""
+    },
+    {
+     "puesto": 6,
+     "entity_id": "MLM4957271440",
+     "score": 0.5814,
+     "score_exacto": 0.5814,
+     "score_formula": 0.581,
+     "desvio": 0.0004,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$395",
+      "shipping": "Gratis",
+      "warranty": "No informada",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 302708109",
+     "condiciones": [
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "$395",
+       "laf": 0.581,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: $395. LAF resolvió esta condición en 0,581; multiplicado por 1,00 aporta 0,581 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "Gratis",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      }
+     ],
+     "cierre": "Quedó 6º de 26. La única condición que elegiste es precio, con 0,581.",
+     "desempate": ""
+    },
+    {
+     "puesto": 7,
+     "entity_id": "MLM2479322051",
+     "score": 0.5737,
+     "score_exacto": 0.57375,
+     "score_formula": 0.574,
+     "desvio": 0.00025,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$398",
+      "shipping": "Gratis",
+      "warranty": "30 días",
+      "is_official_store": true,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 1886609027",
+     "condiciones": [
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "$398",
+       "laf": 0.574,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: $398. LAF resolvió esta condición en 0,574; multiplicado por 1,00 aporta 0,574 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "Sí",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "Gratis",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      }
+     ],
+     "cierre": "Quedó 7º de 26. La única condición que elegiste es precio, con 0,574.",
+     "desempate": "Empata en puntaje con otras 5 publicaciones. A igual puntaje ordenamos por la confianza del programa completo, que ya incorpora el precio (esta publicación: 0,89); si también empata, por el identificador de la publicación."
+    },
+    {
+     "puesto": 8,
+     "entity_id": "MLM1991154456",
+     "score": 0.5737,
+     "score_exacto": 0.57375,
+     "score_formula": 0.574,
+     "desvio": 0.00025,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$399",
+      "shipping": "Gratis",
+      "warranty": "No informada",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 304841922",
+     "condiciones": [
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "$399",
+       "laf": 0.574,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: $399. LAF resolvió esta condición en 0,574; multiplicado por 1,00 aporta 0,574 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "Gratis",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      }
+     ],
+     "cierre": "Quedó 8º de 26. La única condición que elegiste es precio, con 0,574.",
+     "desempate": "Empata en puntaje con otras 5 publicaciones. A igual puntaje ordenamos por la confianza del programa completo, que ya incorpora el precio (esta publicación: 0,84); si también empata, por el identificador de la publicación."
+    },
+    {
+     "puesto": 9,
+     "entity_id": "MLM2479347871",
+     "score": 0.5737,
+     "score_exacto": 0.57375,
+     "score_formula": 0.574,
+     "desvio": 0.00025,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$399",
+      "shipping": "Gratis",
+      "warranty": "31 días",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 2282946306",
+     "condiciones": [
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "$399",
+       "laf": 0.574,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: $399. LAF resolvió esta condición en 0,574; multiplicado por 1,00 aporta 0,574 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "Gratis",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      }
+     ],
+     "cierre": "Quedó 9º de 26. La única condición que elegiste es precio, con 0,574.",
+     "desempate": "Empata en puntaje con otras 5 publicaciones. A igual puntaje ordenamos por la confianza del programa completo, que ya incorpora el precio (esta publicación: 0,84); si también empata, por el identificador de la publicación."
+    },
+    {
+     "puesto": 10,
+     "entity_id": "MLM4354086592",
+     "score": 0.5737,
+     "score_exacto": 0.57375,
+     "score_formula": 0.574,
+     "desvio": 0.00025,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$399",
+      "shipping": "Gratis",
+      "warranty": "No informada",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 1084233612",
+     "condiciones": [
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "$399",
+       "laf": 0.574,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: $399. LAF resolvió esta condición en 0,574; multiplicado por 1,00 aporta 0,574 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "Gratis",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      }
+     ],
+     "cierre": "Quedó 10º de 26. La única condición que elegiste es precio, con 0,574.",
+     "desempate": "Empata en puntaje con otras 5 publicaciones. A igual puntaje ordenamos por la confianza del programa completo, que ya incorpora el precio (esta publicación: 0,84); si también empata, por el identificador de la publicación."
+    },
+    {
+     "puesto": 11,
+     "entity_id": "MLM4925077838",
+     "score": 0.5737,
+     "score_exacto": 0.57375,
+     "score_formula": 0.574,
+     "desvio": 0.00025,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$399",
+      "shipping": "Gratis",
+      "warranty": "30 días",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 2922849906",
+     "condiciones": [
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "$399",
+       "laf": 0.574,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: $399. LAF resolvió esta condición en 0,574; multiplicado por 1,00 aporta 0,574 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "Gratis",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      }
+     ],
+     "cierre": "Quedó 11º de 26. La única condición que elegiste es precio, con 0,574.",
+     "desempate": "Empata en puntaje con otras 5 publicaciones. A igual puntaje ordenamos por la confianza del programa completo, que ya incorpora el precio (esta publicación: 0,84); si también empata, por el identificador de la publicación."
+    },
+    {
+     "puesto": 12,
+     "entity_id": "MLM5172133566",
+     "score": 0.5737,
+     "score_exacto": 0.57375,
+     "score_formula": 0.574,
+     "desvio": 0.00025,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$399",
+      "shipping": "Gratis",
+      "warranty": "No informada",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 1191546617",
+     "condiciones": [
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "$399",
+       "laf": 0.574,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: $399. LAF resolvió esta condición en 0,574; multiplicado por 1,00 aporta 0,574 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "Gratis",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      }
+     ],
+     "cierre": "Quedó 12º de 26. La única condición que elegiste es precio, con 0,574.",
+     "desempate": "Empata en puntaje con otras 5 publicaciones. A igual puntaje ordenamos por la confianza del programa completo, que ya incorpora el precio (esta publicación: 0,84); si también empata, por el identificador de la publicación."
+    },
+    {
+     "puesto": 13,
+     "entity_id": "MLM3140707206",
+     "score": 0.5508,
+     "score_exacto": 0.5508,
+     "score_formula": 0.551,
+     "desvio": 0.0002,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$414,87",
+      "shipping": "Gratis",
+      "warranty": "30 días",
+      "is_official_store": true,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 1012612797",
+     "condiciones": [
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "$414,87",
+       "laf": 0.551,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: $414,87. LAF resolvió esta condición en 0,551; multiplicado por 1,00 aporta 0,551 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "Sí",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "Gratis",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      }
+     ],
+     "cierre": "Quedó 13º de 26. La única condición que elegiste es precio, con 0,551.",
+     "desempate": ""
+    },
+    {
+     "puesto": 14,
+     "entity_id": "MLM2552802793",
+     "score": 0.5355,
+     "score_exacto": 0.5355,
+     "score_formula": 0.535,
+     "desvio": 0.0005,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$426,55",
+      "shipping": "Gratis",
+      "warranty": "No informada",
+      "is_official_store": true,
+      "has_discount": true,
+      "discount_pct": 0.05
+     },
+     "vendedor": "Vendedor 272093102",
+     "condiciones": [
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "$426,55",
+       "laf": 0.535,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: $426,55. LAF resolvió esta condición en 0,535; multiplicado por 1,00 aporta 0,535 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "Sí, 5 %",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "Sí",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "Gratis",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      }
+     ],
+     "cierre": "Quedó 14º de 26. La única condición que elegiste es precio, con 0,535.",
+     "desempate": ""
+    },
+    {
+     "puesto": 15,
+     "entity_id": "MLM2370451767",
+     "score": 0.5278,
+     "score_exacto": 0.5278499999999999,
+     "score_formula": 0.528,
+     "desvio": 0.00015,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$430",
+      "shipping": "Gratis",
+      "warranty": "20 días",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 64016368",
+     "condiciones": [
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "$430",
+       "laf": 0.528,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: $430. LAF resolvió esta condición en 0,528; multiplicado por 1,00 aporta 0,528 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "Gratis",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      }
+     ],
+     "cierre": "Quedó 15º de 26. La única condición que elegiste es precio, con 0,528.",
+     "desempate": "Empata en puntaje con otra publicación. A igual puntaje ordenamos por la confianza del programa completo, que ya incorpora el precio (esta publicación: 0,83); si también empata, por el identificador de la publicación."
+    },
+    {
+     "puesto": 16,
+     "entity_id": "MLM5132285828",
+     "score": 0.5278,
+     "score_exacto": 0.5278499999999999,
+     "score_formula": 0.528,
+     "desvio": 0.00015,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$429",
+      "shipping": "Gratis",
+      "warranty": "No informada",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 222683503",
+     "condiciones": [
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "$429",
+       "laf": 0.528,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: $429. LAF resolvió esta condición en 0,528; multiplicado por 1,00 aporta 0,528 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "Gratis",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      }
+     ],
+     "cierre": "Quedó 16º de 26. La única condición que elegiste es precio, con 0,528.",
+     "desempate": "Empata en puntaje con otra publicación. A igual puntaje ordenamos por la confianza del programa completo, que ya incorpora el precio (esta publicación: 0,83); si también empata, por el identificador de la publicación."
+    },
+    {
+     "puesto": 17,
+     "entity_id": "MLM2906277033",
+     "score": 0.5202,
+     "score_exacto": 0.5202000000000001,
+     "score_formula": 0.52,
+     "desvio": 0.0002,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$437,25",
+      "shipping": "Gratis",
+      "warranty": "30 días",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 158278316",
+     "condiciones": [
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "$437,25",
+       "laf": 0.52,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: $437,25. LAF resolvió esta condición en 0,520; multiplicado por 1,00 aporta 0,520 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "Gratis",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      }
+     ],
+     "cierre": "Quedó 17º de 26. La única condición que elegiste es precio, con 0,520.",
+     "desempate": "Empata en puntaje con otra publicación. A igual puntaje ordenamos por la confianza del programa completo, que ya incorpora el precio (esta publicación: 0,83); si también empata, por el identificador de la publicación."
+    },
+    {
+     "puesto": 18,
+     "entity_id": "MLM5035699430",
+     "score": 0.5202,
+     "score_exacto": 0.5202000000000001,
+     "score_formula": 0.52,
+     "desvio": 0.0002,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$438",
+      "shipping": "Gratis",
+      "warranty": "15 días",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 830355354",
+     "condiciones": [
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "$438",
+       "laf": 0.52,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: $438. LAF resolvió esta condición en 0,520; multiplicado por 1,00 aporta 0,520 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "Gratis",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      }
+     ],
+     "cierre": "Quedó 18º de 26. La única condición que elegiste es precio, con 0,520.",
+     "desempate": "Empata en puntaje con otra publicación. A igual puntaje ordenamos por la confianza del programa completo, que ya incorpora el precio (esta publicación: 0,83); si también empata, por el identificador de la publicación."
+    },
+    {
+     "puesto": 19,
+     "entity_id": "MLM1494089883",
+     "score": 0.5049,
+     "score_exacto": 0.5049,
+     "score_formula": 0.505,
+     "desvio": 0.0001,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$450",
+      "shipping": "Gratis",
+      "warranty": "1 mes",
+      "is_official_store": true,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 30719238",
+     "condiciones": [
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "$450",
+       "laf": 0.505,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: $450. LAF resolvió esta condición en 0,505; multiplicado por 1,00 aporta 0,505 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "Sí",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "Gratis",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      }
+     ],
+     "cierre": "Quedó 19º de 26. La única condición que elegiste es precio, con 0,505.",
+     "desempate": "Empata en puntaje con otras 3 publicaciones. A igual puntaje ordenamos por la confianza del programa completo, que ya incorpora el precio (esta publicación: 0,89); si también empata, por el identificador de la publicación."
+    },
+    {
+     "puesto": 20,
+     "entity_id": "MLM2852622541",
+     "score": 0.5049,
+     "score_exacto": 0.5049,
+     "score_formula": 0.505,
+     "desvio": 0.0001,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$447",
+      "shipping": "Gratis",
+      "warranty": "12 días",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 1136705958",
+     "condiciones": [
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "$447",
+       "laf": 0.505,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: $447. LAF resolvió esta condición en 0,505; multiplicado por 1,00 aporta 0,505 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "Gratis",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      }
+     ],
+     "cierre": "Quedó 20º de 26. La única condición que elegiste es precio, con 0,505.",
+     "desempate": "Empata en puntaje con otras 3 publicaciones. A igual puntaje ordenamos por la confianza del programa completo, que ya incorpora el precio (esta publicación: 0,82); si también empata, por el identificador de la publicación."
+    },
+    {
+     "puesto": 21,
+     "entity_id": "MLM3498948492",
+     "score": 0.5049,
+     "score_exacto": 0.5049,
+     "score_formula": 0.505,
+     "desvio": 0.0001,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$450",
+      "shipping": "Gratis",
+      "warranty": "No informada",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 24469806",
+     "condiciones": [
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "$450",
+       "laf": 0.505,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: $450. LAF resolvió esta condición en 0,505; multiplicado por 1,00 aporta 0,505 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "Gratis",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      }
+     ],
+     "cierre": "Quedó 21º de 26. La única condición que elegiste es precio, con 0,505.",
+     "desempate": "Empata en puntaje con otras 3 publicaciones. A igual puntaje ordenamos por la confianza del programa completo, que ya incorpora el precio (esta publicación: 0,82); si también empata, por el identificador de la publicación."
+    },
+    {
+     "puesto": 22,
+     "entity_id": "MLM3870777402",
+     "score": 0.5049,
+     "score_exacto": 0.5049,
+     "score_formula": 0.505,
+     "desvio": 0.0001,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$449",
+      "shipping": "Gratis",
+      "warranty": "No informada",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 713241482",
+     "condiciones": [
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "$449",
+       "laf": 0.505,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: $449. LAF resolvió esta condición en 0,505; multiplicado por 1,00 aporta 0,505 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "Gratis",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      }
+     ],
+     "cierre": "Quedó 22º de 26. La única condición que elegiste es precio, con 0,505.",
+     "desempate": "Empata en puntaje con otras 3 publicaciones. A igual puntaje ordenamos por la confianza del programa completo, que ya incorpora el precio (esta publicación: 0,82); si también empata, por el identificador de la publicación."
+    },
+    {
+     "puesto": 23,
+     "entity_id": "MLM4612094968",
+     "score": 0.4896,
+     "score_exacto": 0.48960000000000004,
+     "score_formula": 0.49,
+     "desvio": 0.0004,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$459",
+      "shipping": "Gratis",
+      "warranty": "No informada",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 37795821",
+     "condiciones": [
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "$459",
+       "laf": 0.49,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: $459. LAF resolvió esta condición en 0,490; multiplicado por 1,00 aporta 0,490 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "Gratis",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      }
+     ],
+     "cierre": "Quedó 23º de 26. La única condición que elegiste es precio, con 0,490.",
+     "desempate": ""
+    },
+    {
+     "puesto": 24,
+     "entity_id": "MLM2700501437",
+     "score": 0.2984,
+     "score_exacto": 0.29835,
+     "score_formula": 0.298,
+     "desvio": 0.00035,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$598",
+      "shipping": "Gratis",
+      "warranty": "No informada",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 2198949852",
+     "condiciones": [
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "$598",
+       "laf": 0.298,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: $598. LAF resolvió esta condición en 0,298; multiplicado por 1,00 aporta 0,298 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "Gratis",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      }
+     ],
+     "cierre": "Quedó 24º de 26. La única condición que elegiste es precio, con 0,298.",
+     "desempate": ""
+    },
+    {
+     "puesto": 25,
+     "entity_id": "MLM2941006159",
+     "score": 0.2295,
+     "score_exacto": 0.2295,
+     "score_formula": 0.23,
+     "desvio": 0.0005,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$645",
+      "shipping": "Gratis",
+      "warranty": "30 días",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 131891689",
+     "condiciones": [
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "$645",
+       "laf": 0.23,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: $645. LAF resolvió esta condición en 0,230; multiplicado por 1,00 aporta 0,230 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "Gratis",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      }
+     ],
+     "cierre": "Quedó 25º de 26. La única condición que elegiste es precio, con 0,230.",
+     "desempate": "Empata en puntaje con otra publicación. A igual puntaje ordenamos por la confianza del programa completo, que ya incorpora el precio (esta publicación: 0,77); si también empata, por el identificador de la publicación."
+    },
+    {
+     "puesto": 26,
+     "entity_id": "MLM5154556164",
+     "score": 0.2295,
+     "score_exacto": 0.2295,
+     "score_formula": 0.23,
+     "desvio": 0.0005,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$645",
+      "shipping": "Gratis",
+      "warranty": "No informada",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 114438513",
+     "condiciones": [
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "$645",
+       "laf": 0.23,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: $645. LAF resolvió esta condición en 0,230; multiplicado por 1,00 aporta 0,230 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "No informado",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      },
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "no_me_importa",
+       "peso": 0.0,
+       "valor": "Gratis",
+       "laf": null,
+       "oracion": "La pusiste en «No me importa»: no participa del puntaje."
+      }
+     ],
+     "cierre": "Quedó 26º de 26. La única condición que elegiste es precio, con 0,230.",
+     "desempate": "Empata en puntaje con otra publicación. A igual puntaje ordenamos por la confianza del programa completo, que ya incorpora el precio (esta publicación: 0,77); si también empata, por el identificador de la publicación."
+    }
+   ]
+  },
+  "envio_y_oficial_prioridad": {
+   "evaluation_status": "validated",
+   "decision_model": "post_laf_multicriteria_v1",
+   "methodology_sha256": "735f9b0cfde030c5d855d11262e73d460d15b5be7dba20a30d3d2157c41432fb",
+   "generated_at": "2026-09-10T16:27:57.887516-03:00",
+   "sin_evidencia": [],
+   "preferencias": {
+    "precio": 0.67,
+    "descuento": 0.67,
+    "tienda_oficial": 1.0,
+    "envio": 1.0
+   },
+   "publicaciones": [
+    {
+     "puesto": 1,
+     "entity_id": "MLM2552802793",
+     "score": 0.6377,
+     "score_exacto": 0.6377443113772456,
+     "score_formula": 0.637734,
+     "desvio": 1.1e-05,
+     "rotulo": "Mejor opción para vos",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$426,55",
+      "shipping": "Gratis",
+      "warranty": "No informada",
+      "is_official_store": true,
+      "has_discount": true,
+      "discount_pct": 0.05
+     },
+     "vendedor": "Vendedor 272093102",
+     "condiciones": [
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "Gratis",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: Gratis. LAF resolvió esta condición en 0,727; multiplicado por 1,00 aporta 0,727 a la suma del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "Sí",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: Sí. LAF resolvió esta condición en 0,727; multiplicado por 1,00 aporta 0,727 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$426,55",
+       "laf": 0.535,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $426,55. LAF resolvió esta condición en 0,535; multiplicado por 0,67 aporta 0,358 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "Sí, 5 %",
+       "laf": 0.474,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: Sí, 5 %. LAF resolvió esta condición en 0,474; multiplicado por 0,67 aporta 0,318 a la suma del puntaje."
+      }
+     ],
+     "cierre": "Quedó 1º de 26. El resultado LAF más alto es el de envío y tienda oficial (0,727) y el más bajo el de descuento (0,474). Como no les diste el mismo peso, a la suma entra peso × resultado: el aporte más alto es el de envío y tienda oficial (0,727 cada una).",
+     "desempate": ""
+    },
+    {
+     "puesto": 2,
+     "entity_id": "MLM4468329986",
+     "score": 0.5549,
+     "score_exacto": 0.5548769461077845,
+     "score_formula": 0.555087,
+     "desvio": 0.00021,
+     "rotulo": "Buena coincidencia",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$380",
+      "shipping": "Gratis",
+      "warranty": "No informada",
+      "is_official_store": true,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 158181548",
+     "condiciones": [
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "Gratis",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: Gratis. LAF resolvió esta condición en 0,727; multiplicado por 1,00 aporta 0,727 a la suma del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "Sí",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: Sí. LAF resolvió esta condición en 0,727; multiplicado por 1,00 aporta 0,727 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$380",
+       "laf": 0.597,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $380. LAF resolvió esta condición en 0,597; multiplicado por 0,67 aporta 0,400 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 2º de 26. El resultado LAF más alto es el de envío y tienda oficial (0,727) y el más bajo el de descuento (0,000). Como no les diste el mismo peso, a la suma entra peso × resultado: el aporte más alto es el de envío y tienda oficial (0,727 cada una).",
+     "desempate": ""
+    },
+    {
+     "puesto": 3,
+     "entity_id": "MLM2479322051",
+     "score": 0.5503,
+     "score_exacto": 0.5502732035928144,
+     "score_formula": 0.550473,
+     "desvio": 0.0002,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$398",
+      "shipping": "Gratis",
+      "warranty": "30 días",
+      "is_official_store": true,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 1886609027",
+     "condiciones": [
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "Gratis",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: Gratis. LAF resolvió esta condición en 0,727; multiplicado por 1,00 aporta 0,727 a la suma del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "Sí",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: Sí. LAF resolvió esta condición en 0,727; multiplicado por 1,00 aporta 0,727 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$398",
+       "laf": 0.574,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $398. LAF resolvió esta condición en 0,574; multiplicado por 0,67 aporta 0,385 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 3º de 26. El resultado LAF más alto es el de envío y tienda oficial (0,727) y el más bajo el de descuento (0,000). Como no les diste el mismo peso, a la suma entra peso × resultado: el aporte más alto es el de envío y tienda oficial (0,727 cada una).",
+     "desempate": ""
+    },
+    {
+     "puesto": 4,
+     "entity_id": "MLM3140707206",
+     "score": 0.5457,
+     "score_exacto": 0.5456694610778443,
+     "score_formula": 0.545859,
+     "desvio": 0.00019,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$414,87",
+      "shipping": "Gratis",
+      "warranty": "30 días",
+      "is_official_store": true,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 1012612797",
+     "condiciones": [
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "Gratis",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: Gratis. LAF resolvió esta condición en 0,727; multiplicado por 1,00 aporta 0,727 a la suma del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "Sí",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: Sí. LAF resolvió esta condición en 0,727; multiplicado por 1,00 aporta 0,727 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$414,87",
+       "laf": 0.551,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $414,87. LAF resolvió esta condición en 0,551; multiplicado por 0,67 aporta 0,369 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 4º de 26. El resultado LAF más alto es el de envío y tienda oficial (0,727) y el más bajo el de descuento (0,000). Como no les diste el mismo peso, a la suma entra peso × resultado: el aporte más alto es el de envío y tienda oficial (0,727 cada una).",
+     "desempate": ""
+    },
+    {
+     "puesto": 5,
+     "entity_id": "MLM1494089883",
+     "score": 0.5365,
+     "score_exacto": 0.5364619760479042,
+     "score_formula": 0.536632,
+     "desvio": 0.00017,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$450",
+      "shipping": "Gratis",
+      "warranty": "1 mes",
+      "is_official_store": true,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 30719238",
+     "condiciones": [
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "Gratis",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: Gratis. LAF resolvió esta condición en 0,727; multiplicado por 1,00 aporta 0,727 a la suma del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "Sí",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: Sí. LAF resolvió esta condición en 0,727; multiplicado por 1,00 aporta 0,727 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$450",
+       "laf": 0.505,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $450. LAF resolvió esta condición en 0,505; multiplicado por 0,67 aporta 0,338 a la suma del puntaje."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 5º de 26. El resultado LAF más alto es el de envío y tienda oficial (0,727) y el más bajo el de descuento (0,000). Como no les diste el mismo peso, a la suma entra peso × resultado: el aporte más alto es el de envío y tienda oficial (0,727 cada una).",
+     "desempate": ""
+    },
+    {
+     "puesto": 6,
+     "entity_id": "MLM1649958450",
+     "score": 0.3634,
+     "score_exacto": 0.363375,
+     "score_formula": 0.3635,
+     "desvio": 0.000125,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$287,99",
+      "shipping": "No informado",
+      "warranty": "1 mes",
+      "is_official_store": true,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 206710930",
+     "condiciones": [
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "Sí",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: Sí. LAF resolvió esta condición en 0,727; multiplicado por 1,00 aporta 0,727 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$287,99",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $287,99. LAF resolvió esta condición en 0,727; multiplicado por 0,67 aporta 0,487 a la suma del puntaje."
+      },
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 1,00 sigue en el divisor."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 6º de 26. El resultado LAF más alto es el de tienda oficial y precio (0,727) y el más bajo el de envío y descuento (0,000). Como no les diste el mismo peso, a la suma entra peso × resultado: el aporte más alto es el de tienda oficial (1,00 × 0,727 = 0,727).",
+     "desempate": ""
+    },
+    {
+     "puesto": 7,
+     "entity_id": "MLM3607232064",
+     "score": 0.3618,
+     "score_exacto": 0.3618404191616767,
+     "score_formula": 0.361895,
+     "desvio": 5.5e-05,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$295",
+      "shipping": "No informado",
+      "warranty": "No informada",
+      "is_official_store": true,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 266969627",
+     "condiciones": [
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "Sí",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: Sí. LAF resolvió esta condición en 0,727; multiplicado por 1,00 aporta 0,727 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$295",
+       "laf": 0.719,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $295. LAF resolvió esta condición en 0,719; multiplicado por 0,67 aporta 0,482 a la suma del puntaje."
+      },
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 1,00 sigue en el divisor."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 7º de 26. El resultado LAF más alto es el de tienda oficial (0,727) y el más bajo el de envío y descuento (0,000). Como no les diste el mismo peso, a la suma entra peso × resultado: el aporte más alto es el de tienda oficial (1,00 × 0,727 = 0,727).",
+     "desempate": ""
+    },
+    {
+     "puesto": 8,
+     "entity_id": "MLM2130464857",
+     "score": 0.3588,
+     "score_exacto": 0.35877125748502997,
+     "score_formula": 0.358886,
+     "desvio": 0.000115,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$304",
+      "shipping": "No informado",
+      "warranty": "No informada",
+      "is_official_store": true,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 574385317",
+     "condiciones": [
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "Sí",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: Sí. LAF resolvió esta condición en 0,727; multiplicado por 1,00 aporta 0,727 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$304",
+       "laf": 0.704,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $304. LAF resolvió esta condición en 0,704; multiplicado por 0,67 aporta 0,472 a la suma del puntaje."
+      },
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 1,00 sigue en el divisor."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 8º de 26. El resultado LAF más alto es el de tienda oficial (0,727) y el más bajo el de envío y descuento (0,000). Como no les diste el mismo peso, a la suma entra peso × resultado: el aporte más alto es el de tienda oficial (1,00 × 0,727 = 0,727).",
+     "desempate": ""
+    },
+    {
+     "puesto": 9,
+     "entity_id": "MLM4957271440",
+     "score": 0.3342,
+     "score_exacto": 0.3342179640718563,
+     "score_formula": 0.334213,
+     "desvio": 5e-06,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$395",
+      "shipping": "Gratis",
+      "warranty": "No informada",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 302708109",
+     "condiciones": [
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "Gratis",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: Gratis. LAF resolvió esta condición en 0,727; multiplicado por 1,00 aporta 0,727 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$395",
+       "laf": 0.581,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $395. LAF resolvió esta condición en 0,581; multiplicado por 0,67 aporta 0,389 a la suma del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 1,00 sigue en el divisor."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 9º de 26. El resultado LAF más alto es el de envío (0,727) y el más bajo el de tienda oficial y descuento (0,000). Como no les diste el mismo peso, a la suma entra peso × resultado: el aporte más alto es el de envío (1,00 × 0,727 = 0,727).",
+     "desempate": ""
+    },
+    {
+     "puesto": 10,
+     "entity_id": "MLM1991154456",
+     "score": 0.3327,
+     "score_exacto": 0.33268338323353297,
+     "score_formula": 0.332808,
+     "desvio": 0.000125,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$399",
+      "shipping": "Gratis",
+      "warranty": "No informada",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 304841922",
+     "condiciones": [
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "Gratis",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: Gratis. LAF resolvió esta condición en 0,727; multiplicado por 1,00 aporta 0,727 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$399",
+       "laf": 0.574,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $399. LAF resolvió esta condición en 0,574; multiplicado por 0,67 aporta 0,385 a la suma del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 1,00 sigue en el divisor."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 10º de 26. El resultado LAF más alto es el de envío (0,727) y el más bajo el de tienda oficial y descuento (0,000). Como no les diste el mismo peso, a la suma entra peso × resultado: el aporte más alto es el de envío (1,00 × 0,727 = 0,727).",
+     "desempate": "Empata en puntaje con otras 4 publicaciones. A igual puntaje ordenamos por la confianza del programa completo, que ya incorpora el precio (esta publicación: 0,84); si también empata, por el identificador de la publicación."
+    },
+    {
+     "puesto": 11,
+     "entity_id": "MLM2479347871",
+     "score": 0.3327,
+     "score_exacto": 0.33268338323353297,
+     "score_formula": 0.332808,
+     "desvio": 0.000125,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$399",
+      "shipping": "Gratis",
+      "warranty": "31 días",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 2282946306",
+     "condiciones": [
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "Gratis",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: Gratis. LAF resolvió esta condición en 0,727; multiplicado por 1,00 aporta 0,727 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$399",
+       "laf": 0.574,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $399. LAF resolvió esta condición en 0,574; multiplicado por 0,67 aporta 0,385 a la suma del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 1,00 sigue en el divisor."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 11º de 26. El resultado LAF más alto es el de envío (0,727) y el más bajo el de tienda oficial y descuento (0,000). Como no les diste el mismo peso, a la suma entra peso × resultado: el aporte más alto es el de envío (1,00 × 0,727 = 0,727).",
+     "desempate": "Empata en puntaje con otras 4 publicaciones. A igual puntaje ordenamos por la confianza del programa completo, que ya incorpora el precio (esta publicación: 0,84); si también empata, por el identificador de la publicación."
+    },
+    {
+     "puesto": 12,
+     "entity_id": "MLM4354086592",
+     "score": 0.3327,
+     "score_exacto": 0.33268338323353297,
+     "score_formula": 0.332808,
+     "desvio": 0.000125,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$399",
+      "shipping": "Gratis",
+      "warranty": "No informada",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 1084233612",
+     "condiciones": [
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "Gratis",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: Gratis. LAF resolvió esta condición en 0,727; multiplicado por 1,00 aporta 0,727 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$399",
+       "laf": 0.574,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $399. LAF resolvió esta condición en 0,574; multiplicado por 0,67 aporta 0,385 a la suma del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 1,00 sigue en el divisor."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 12º de 26. El resultado LAF más alto es el de envío (0,727) y el más bajo el de tienda oficial y descuento (0,000). Como no les diste el mismo peso, a la suma entra peso × resultado: el aporte más alto es el de envío (1,00 × 0,727 = 0,727).",
+     "desempate": "Empata en puntaje con otras 4 publicaciones. A igual puntaje ordenamos por la confianza del programa completo, que ya incorpora el precio (esta publicación: 0,84); si también empata, por el identificador de la publicación."
+    },
+    {
+     "puesto": 13,
+     "entity_id": "MLM4925077838",
+     "score": 0.3327,
+     "score_exacto": 0.33268338323353297,
+     "score_formula": 0.332808,
+     "desvio": 0.000125,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$399",
+      "shipping": "Gratis",
+      "warranty": "30 días",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 2922849906",
+     "condiciones": [
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "Gratis",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: Gratis. LAF resolvió esta condición en 0,727; multiplicado por 1,00 aporta 0,727 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$399",
+       "laf": 0.574,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $399. LAF resolvió esta condición en 0,574; multiplicado por 0,67 aporta 0,385 a la suma del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 1,00 sigue en el divisor."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 13º de 26. El resultado LAF más alto es el de envío (0,727) y el más bajo el de tienda oficial y descuento (0,000). Como no les diste el mismo peso, a la suma entra peso × resultado: el aporte más alto es el de envío (1,00 × 0,727 = 0,727).",
+     "desempate": "Empata en puntaje con otras 4 publicaciones. A igual puntaje ordenamos por la confianza del programa completo, que ya incorpora el precio (esta publicación: 0,84); si también empata, por el identificador de la publicación."
+    },
+    {
+     "puesto": 14,
+     "entity_id": "MLM5172133566",
+     "score": 0.3327,
+     "score_exacto": 0.33268338323353297,
+     "score_formula": 0.332808,
+     "desvio": 0.000125,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$399",
+      "shipping": "Gratis",
+      "warranty": "No informada",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 1191546617",
+     "condiciones": [
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "Gratis",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: Gratis. LAF resolvió esta condición en 0,727; multiplicado por 1,00 aporta 0,727 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$399",
+       "laf": 0.574,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $399. LAF resolvió esta condición en 0,574; multiplicado por 0,67 aporta 0,385 a la suma del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 1,00 sigue en el divisor."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 14º de 26. El resultado LAF más alto es el de envío (0,727) y el más bajo el de tienda oficial y descuento (0,000). Como no les diste el mismo peso, a la suma entra peso × resultado: el aporte más alto es el de envío (1,00 × 0,727 = 0,727).",
+     "desempate": "Empata en puntaje con otras 4 publicaciones. A igual puntaje ordenamos por la confianza del programa completo, que ya incorpora el precio (esta publicación: 0,84); si también empata, por el identificador de la publicación."
+    },
+    {
+     "puesto": 15,
+     "entity_id": "MLM2370451767",
+     "score": 0.3235,
+     "score_exacto": 0.32347589820359285,
+     "score_formula": 0.323581,
+     "desvio": 0.000105,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$430",
+      "shipping": "Gratis",
+      "warranty": "20 días",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 64016368",
+     "condiciones": [
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "Gratis",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: Gratis. LAF resolvió esta condición en 0,727; multiplicado por 1,00 aporta 0,727 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$430",
+       "laf": 0.528,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $430. LAF resolvió esta condición en 0,528; multiplicado por 0,67 aporta 0,354 a la suma del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 1,00 sigue en el divisor."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 15º de 26. El resultado LAF más alto es el de envío (0,727) y el más bajo el de tienda oficial y descuento (0,000). Como no les diste el mismo peso, a la suma entra peso × resultado: el aporte más alto es el de envío (1,00 × 0,727 = 0,727).",
+     "desempate": "Empata en puntaje con otra publicación. A igual puntaje ordenamos por la confianza del programa completo, que ya incorpora el precio (esta publicación: 0,83); si también empata, por el identificador de la publicación."
+    },
+    {
+     "puesto": 16,
+     "entity_id": "MLM5132285828",
+     "score": 0.3235,
+     "score_exacto": 0.32347589820359285,
+     "score_formula": 0.323581,
+     "desvio": 0.000105,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$429",
+      "shipping": "Gratis",
+      "warranty": "No informada",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 222683503",
+     "condiciones": [
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "Gratis",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: Gratis. LAF resolvió esta condición en 0,727; multiplicado por 1,00 aporta 0,727 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$429",
+       "laf": 0.528,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $429. LAF resolvió esta condición en 0,528; multiplicado por 0,67 aporta 0,354 a la suma del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 1,00 sigue en el divisor."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 16º de 26. El resultado LAF más alto es el de envío (0,727) y el más bajo el de tienda oficial y descuento (0,000). Como no les diste el mismo peso, a la suma entra peso × resultado: el aporte más alto es el de envío (1,00 × 0,727 = 0,727).",
+     "desempate": "Empata en puntaje con otra publicación. A igual puntaje ordenamos por la confianza del programa completo, que ya incorpora el precio (esta publicación: 0,83); si también empata, por el identificador de la publicación."
+    },
+    {
+     "puesto": 17,
+     "entity_id": "MLM2906277033",
+     "score": 0.3219,
+     "score_exacto": 0.3219413173652695,
+     "score_formula": 0.321976,
+     "desvio": 3.5e-05,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$437,25",
+      "shipping": "Gratis",
+      "warranty": "30 días",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 158278316",
+     "condiciones": [
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "Gratis",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: Gratis. LAF resolvió esta condición en 0,727; multiplicado por 1,00 aporta 0,727 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$437,25",
+       "laf": 0.52,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $437,25. LAF resolvió esta condición en 0,520; multiplicado por 0,67 aporta 0,348 a la suma del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 1,00 sigue en el divisor."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 17º de 26. El resultado LAF más alto es el de envío (0,727) y el más bajo el de tienda oficial y descuento (0,000). Como no les diste el mismo peso, a la suma entra peso × resultado: el aporte más alto es el de envío (1,00 × 0,727 = 0,727).",
+     "desempate": "Empata en puntaje con otra publicación. A igual puntaje ordenamos por la confianza del programa completo, que ya incorpora el precio (esta publicación: 0,83); si también empata, por el identificador de la publicación."
+    },
+    {
+     "puesto": 18,
+     "entity_id": "MLM5035699430",
+     "score": 0.3219,
+     "score_exacto": 0.3219413173652695,
+     "score_formula": 0.321976,
+     "desvio": 3.5e-05,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$438",
+      "shipping": "Gratis",
+      "warranty": "15 días",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 830355354",
+     "condiciones": [
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "Gratis",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: Gratis. LAF resolvió esta condición en 0,727; multiplicado por 1,00 aporta 0,727 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$438",
+       "laf": 0.52,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $438. LAF resolvió esta condición en 0,520; multiplicado por 0,67 aporta 0,348 a la suma del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 1,00 sigue en el divisor."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 18º de 26. El resultado LAF más alto es el de envío (0,727) y el más bajo el de tienda oficial y descuento (0,000). Como no les diste el mismo peso, a la suma entra peso × resultado: el aporte más alto es el de envío (1,00 × 0,727 = 0,727).",
+     "desempate": "Empata en puntaje con otra publicación. A igual puntaje ordenamos por la confianza del programa completo, que ya incorpora el precio (esta publicación: 0,83); si también empata, por el identificador de la publicación."
+    },
+    {
+     "puesto": 19,
+     "entity_id": "MLM2852622541",
+     "score": 0.3189,
+     "score_exacto": 0.3188721556886228,
+     "score_formula": 0.318967,
+     "desvio": 9.5e-05,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$447",
+      "shipping": "Gratis",
+      "warranty": "12 días",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 1136705958",
+     "condiciones": [
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "Gratis",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: Gratis. LAF resolvió esta condición en 0,727; multiplicado por 1,00 aporta 0,727 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$447",
+       "laf": 0.505,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $447. LAF resolvió esta condición en 0,505; multiplicado por 0,67 aporta 0,338 a la suma del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 1,00 sigue en el divisor."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 19º de 26. El resultado LAF más alto es el de envío (0,727) y el más bajo el de tienda oficial y descuento (0,000). Como no les diste el mismo peso, a la suma entra peso × resultado: el aporte más alto es el de envío (1,00 × 0,727 = 0,727).",
+     "desempate": "Empata en puntaje con otras 2 publicaciones. A igual puntaje ordenamos por la confianza del programa completo, que ya incorpora el precio (esta publicación: 0,82); si también empata, por el identificador de la publicación."
+    },
+    {
+     "puesto": 20,
+     "entity_id": "MLM3498948492",
+     "score": 0.3189,
+     "score_exacto": 0.3188721556886228,
+     "score_formula": 0.318967,
+     "desvio": 9.5e-05,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$450",
+      "shipping": "Gratis",
+      "warranty": "No informada",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 24469806",
+     "condiciones": [
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "Gratis",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: Gratis. LAF resolvió esta condición en 0,727; multiplicado por 1,00 aporta 0,727 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$450",
+       "laf": 0.505,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $450. LAF resolvió esta condición en 0,505; multiplicado por 0,67 aporta 0,338 a la suma del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 1,00 sigue en el divisor."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 20º de 26. El resultado LAF más alto es el de envío (0,727) y el más bajo el de tienda oficial y descuento (0,000). Como no les diste el mismo peso, a la suma entra peso × resultado: el aporte más alto es el de envío (1,00 × 0,727 = 0,727).",
+     "desempate": "Empata en puntaje con otras 2 publicaciones. A igual puntaje ordenamos por la confianza del programa completo, que ya incorpora el precio (esta publicación: 0,82); si también empata, por el identificador de la publicación."
+    },
+    {
+     "puesto": 21,
+     "entity_id": "MLM3870777402",
+     "score": 0.3189,
+     "score_exacto": 0.3188721556886228,
+     "score_formula": 0.318967,
+     "desvio": 9.5e-05,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$449",
+      "shipping": "Gratis",
+      "warranty": "No informada",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 713241482",
+     "condiciones": [
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "Gratis",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: Gratis. LAF resolvió esta condición en 0,727; multiplicado por 1,00 aporta 0,727 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$449",
+       "laf": 0.505,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $449. LAF resolvió esta condición en 0,505; multiplicado por 0,67 aporta 0,338 a la suma del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 1,00 sigue en el divisor."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 21º de 26. El resultado LAF más alto es el de envío (0,727) y el más bajo el de tienda oficial y descuento (0,000). Como no les diste el mismo peso, a la suma entra peso × resultado: el aporte más alto es el de envío (1,00 × 0,727 = 0,727).",
+     "desempate": "Empata en puntaje con otras 2 publicaciones. A igual puntaje ordenamos por la confianza del programa completo, que ya incorpora el precio (esta publicación: 0,82); si también empata, por el identificador de la publicación."
+    },
+    {
+     "puesto": 22,
+     "entity_id": "MLM4612094968",
+     "score": 0.3158,
+     "score_exacto": 0.3158029940119761,
+     "score_formula": 0.315958,
+     "desvio": 0.000155,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$459",
+      "shipping": "Gratis",
+      "warranty": "No informada",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 37795821",
+     "condiciones": [
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "Gratis",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: Gratis. LAF resolvió esta condición en 0,727; multiplicado por 1,00 aporta 0,727 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$459",
+       "laf": 0.49,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $459. LAF resolvió esta condición en 0,490; multiplicado por 0,67 aporta 0,328 a la suma del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 1,00 sigue en el divisor."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 22º de 26. El resultado LAF más alto es el de envío (0,727) y el más bajo el de tienda oficial y descuento (0,000). Como no les diste el mismo peso, a la suma entra peso × resultado: el aporte más alto es el de envío (1,00 × 0,727 = 0,727).",
+     "desempate": ""
+    },
+    {
+     "puesto": 23,
+     "entity_id": "MLM2700501437",
+     "score": 0.2774,
+     "score_exacto": 0.27743847305389224,
+     "score_formula": 0.277443,
+     "desvio": 5e-06,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$598",
+      "shipping": "Gratis",
+      "warranty": "No informada",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 2198949852",
+     "condiciones": [
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "Gratis",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: Gratis. LAF resolvió esta condición en 0,727; multiplicado por 1,00 aporta 0,727 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$598",
+       "laf": 0.298,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $598. LAF resolvió esta condición en 0,298; multiplicado por 0,67 aporta 0,200 a la suma del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 1,00 sigue en el divisor."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 23º de 26. El resultado LAF más alto es el de envío (0,727) y el más bajo el de tienda oficial y descuento (0,000). Como no les diste el mismo peso, a la suma entra peso × resultado: el aporte más alto es el de envío (1,00 × 0,727 = 0,727).",
+     "desempate": ""
+    },
+    {
+     "puesto": 24,
+     "entity_id": "MLM2941006159",
+     "score": 0.2636,
+     "score_exacto": 0.2636272455089821,
+     "score_formula": 0.263802,
+     "desvio": 0.000175,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$645",
+      "shipping": "Gratis",
+      "warranty": "30 días",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 131891689",
+     "condiciones": [
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "Gratis",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: Gratis. LAF resolvió esta condición en 0,727; multiplicado por 1,00 aporta 0,727 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$645",
+       "laf": 0.23,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $645. LAF resolvió esta condición en 0,230; multiplicado por 0,67 aporta 0,154 a la suma del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 1,00 sigue en el divisor."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 24º de 26. El resultado LAF más alto es el de envío (0,727) y el más bajo el de tienda oficial y descuento (0,000). Como no les diste el mismo peso, a la suma entra peso × resultado: el aporte más alto es el de envío (1,00 × 0,727 = 0,727).",
+     "desempate": "Empata en puntaje con otra publicación. A igual puntaje ordenamos por la confianza del programa completo, que ya incorpora el precio (esta publicación: 0,77); si también empata, por el identificador de la publicación."
+    },
+    {
+     "puesto": 25,
+     "entity_id": "MLM5154556164",
+     "score": 0.2636,
+     "score_exacto": 0.2636272455089821,
+     "score_formula": 0.263802,
+     "desvio": 0.000175,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$645",
+      "shipping": "Gratis",
+      "warranty": "No informada",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 114438513",
+     "condiciones": [
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "Gratis",
+       "laf": 0.727,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación declara: Gratis. LAF resolvió esta condición en 0,727; multiplicado por 1,00 aporta 0,727 a la suma del puntaje."
+      },
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$645",
+       "laf": 0.23,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $645. LAF resolvió esta condición en 0,230; multiplicado por 0,67 aporta 0,154 a la suma del puntaje."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 1,00 sigue en el divisor."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 25º de 26. El resultado LAF más alto es el de envío (0,727) y el más bajo el de tienda oficial y descuento (0,000). Como no les diste el mismo peso, a la suma entra peso × resultado: el aporte más alto es el de envío (1,00 × 0,727 = 0,727).",
+     "desempate": "Empata en puntaje con otra publicación. A igual puntaje ordenamos por la confianza del programa completo, que ya incorpora el precio (esta publicación: 0,77); si también empata, por el identificador de la publicación."
+    },
+    {
+     "puesto": 26,
+     "entity_id": "MLM2016344939",
+     "score": 0.1427,
+     "score_exacto": 0.14271601796407188,
+     "score_formula": 0.142626,
+     "desvio": 9e-05,
+     "rotulo": "Coincidencia media",
+     "nota_rotulo": "",
+     "declaradas": {
+      "price_label": "$298,99",
+      "shipping": "No informado",
+      "warranty": "No informada",
+      "is_official_store": false,
+      "has_discount": false,
+      "discount_pct": 0.0
+     },
+     "vendedor": "Vendedor 126308880",
+     "condiciones": [
+      {
+       "clave": "precio",
+       "etiqueta": "Precio bajo (menor precio = mejor)",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "$298,99",
+       "laf": 0.711,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación declara: $298,99. LAF resolvió esta condición en 0,711; multiplicado por 0,67 aporta 0,476 a la suma del puntaje."
+      },
+      {
+       "clave": "envio",
+       "etiqueta": "Envío gratuito",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 1,00 sigue en el divisor."
+      },
+      {
+       "clave": "tienda_oficial",
+       "etiqueta": "Tienda oficial del fabricante",
+       "estado": "participa",
+       "peso": 1.0,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «es prioridad» (1,00). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 1,00 sigue en el divisor."
+      },
+      {
+       "clave": "descuento",
+       "etiqueta": "Descuento sobre precio original",
+       "estado": "participa",
+       "peso": 0.67,
+       "valor": "No informado",
+       "laf": 0.0,
+       "oracion": "Le diste importancia «bastante» (0,67). La publicación no informa esta condición, así que no hay hecho que la sostenga: entra en la cuenta con 0,000 y su peso 0,67 sigue en el divisor."
+      }
+     ],
+     "cierre": "Quedó 26º de 26. El resultado LAF más alto es el de precio (0,711) y el más bajo el de envío, tienda oficial y descuento (0,000). Como no les diste el mismo peso, a la suma entra peso × resultado: el aporte más alto es el de precio (0,67 × 0,711 = 0,476).",
+     "desempate": ""
+    }
+   ]
+  }
+ }
+}

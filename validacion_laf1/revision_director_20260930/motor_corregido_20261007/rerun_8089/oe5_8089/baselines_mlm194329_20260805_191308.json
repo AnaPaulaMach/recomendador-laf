@@ -1,0 +1,193 @@
+{
+ "dataset_key": "mlm_mlm194329_20260805_191308",
+ "umbral_pos": 4,
+ "provisional": "version de trust actual, previo a la decision R3/fila 13",
+ "n_productos": 16,
+ "n_reviews_leidas": 10600,
+ "por_producto": {
+  "MLM19566313": {
+   "n_rate": 1311,
+   "b1_estrella_media": 4.908466819221968,
+   "b2_positivas_conteo": 1291,
+   "b3_positivas_prop": 0.984744469870328,
+   "n_neg": 8,
+   "nombre": "Cafe Capuccino Vainilla Francesa En Polvo Members Mark 1.8 Kg"
+  },
+  "MLM23633481": {
+   "n_rate": 584,
+   "b1_estrella_media": 4.847602739726027,
+   "b2_positivas_conteo": 562,
+   "b3_positivas_prop": 0.9623287671232876,
+   "n_neg": 10,
+   "nombre": "Nescafé Clásico ICE Café Soluble en Frío Frasco de 170gr"
+  },
+  "MLM16207894": {
+   "n_rate": 779,
+   "b1_estrella_media": 4.925545571245186,
+   "b2_positivas_conteo": 771,
+   "b3_positivas_prop": 0.9897304236200257,
+   "n_neg": 4,
+   "nombre": "Nescafé Reserva Xiapan Café 100% Soluble Liofilizado de Origen Chiapaneco con Notas Amaderadas en Frasco de 180g"
+  },
+  "MLM20999002": {
+   "n_rate": 729,
+   "b1_estrella_media": 4.903978052126201,
+   "b2_positivas_conteo": 718,
+   "b3_positivas_prop": 0.9849108367626886,
+   "n_neg": 7,
+   "nombre": "Café Soluble Nescafé Clásico Nestlé Professional Bote de 1Kg"
+  },
+  "MLM16207893": {
+   "n_rate": 77,
+   "b1_estrella_media": 4.714285714285714,
+   "b2_positivas_conteo": 70,
+   "b3_positivas_prop": 0.9090909090909091,
+   "n_neg": 6,
+   "nombre": "Café instantáneo clásico Nescafé sin gluten frasco 60 g"
+  },
+  "MLM19535763": {
+   "n_rate": 731,
+   "b1_estrella_media": 4.909712722298222,
+   "b2_positivas_conteo": 723,
+   "b3_positivas_prop": 0.9890560875512996,
+   "n_neg": 3,
+   "nombre": "Cafe Puro Soluble Colombiano Liofilizado Members Mark 300 Gr"
+  },
+  "MLM19663240": {
+   "n_rate": 1092,
+   "b1_estrella_media": 4.916666666666667,
+   "b2_positivas_conteo": 1076,
+   "b3_positivas_prop": 0.9853479853479854,
+   "n_neg": 6,
+   "nombre": "Nescafé Clásico Café 100% Puro Soluble Frasco de 200g"
+  },
+  "MLM21827563": {
+   "n_rate": 191,
+   "b1_estrella_media": 4.93717277486911,
+   "b2_positivas_conteo": 190,
+   "b3_positivas_prop": 0.9947643979057592,
+   "n_neg": 1,
+   "nombre": "Nescafé Reserva Oahan Café 100% Soluble Liofilizado Origen Oaxaqueño con Notas Amaderadas Frasco de 180g"
+  },
+  "MLM50307832": {
+   "n_rate": 144,
+   "b1_estrella_media": 4.555555555555555,
+   "b2_positivas_conteo": 126,
+   "b3_positivas_prop": 0.875,
+   "n_neg": 9,
+   "nombre": "Café Capuchino Instantáneo para Máquinas Vending | Sabor Crema Irlandesa | 1 kilo | Etnia 52"
+  },
+  "MLM55879706": {
+   "n_rate": 103,
+   "b1_estrella_media": 4.922330097087379,
+   "b2_positivas_conteo": 101,
+   "b3_positivas_prop": 0.9805825242718447,
+   "n_neg": 0,
+   "nombre": "Café Soluble Nescafé Clásico Frasco 200g + Taza Futbolera Coleccionable"
+  },
+  "MLM16207862": {
+   "n_rate": 1525,
+   "b1_estrella_media": 4.8859016393442625,
+   "b2_positivas_conteo": 1486,
+   "b3_positivas_prop": 0.9744262295081967,
+   "n_neg": 16,
+   "nombre": "Nescafé Taster's Choice Vainilla Café 100% Puro Soluble Frasco de 100g"
+  },
+  "MLM19791561": {
+   "n_rate": 477,
+   "b1_estrella_media": 4.823899371069182,
+   "b2_positivas_conteo": 454,
+   "b3_positivas_prop": 0.9517819706498952,
+   "n_neg": 9,
+   "nombre": "Café Nescafe Cappuccino Original 1 Sobre De 20 Gramos"
+  },
+  "MLM41148521": {
+   "n_rate": 523,
+   "b1_estrella_media": 4.925430210325048,
+   "b2_positivas_conteo": 516,
+   "b3_positivas_prop": 0.9866156787762906,
+   "n_neg": 2,
+   "nombre": "Café Gourmet Molido Espresso 400g Blasón"
+  },
+  "MLM19544520": {
+   "n_rate": 1563,
+   "b1_estrella_media": 4.8816378758797185,
+   "b2_positivas_conteo": 1525,
+   "b3_positivas_prop": 0.9756877799104287,
+   "n_neg": 12,
+   "nombre": "Cafe Capuccino Moka Members Mark 1.8 Kg en polvo"
+  },
+  "MLM16207863": {
+   "n_rate": 512,
+   "b1_estrella_media": 4.83984375,
+   "b2_positivas_conteo": 497,
+   "b3_positivas_prop": 0.970703125,
+   "n_neg": 9,
+   "nombre": "Nescafé Café de Olla 100% Café Soluble Sabor Canela y Piloncillo | Granos Robusta Frasco de 170g"
+  },
+  "MLM16207890": {
+   "n_rate": 259,
+   "b1_estrella_media": 4.884169884169884,
+   "b2_positivas_conteo": 252,
+   "b3_positivas_prop": 0.972972972972973,
+   "n_neg": 2,
+   "nombre": "Nescafé Reserva Verarica Café 100% Soluble Liofilizado Origen Veracruzano con Notas Afrutadas en Frasco de 180g"
+  }
+ },
+ "orden": {
+  "b1_estrella_media": [
+   "MLM21827563",
+   "MLM16207894",
+   "MLM41148521",
+   "MLM55879706",
+   "MLM19663240",
+   "MLM19535763",
+   "MLM19566313",
+   "MLM20999002",
+   "MLM16207862",
+   "MLM16207890",
+   "MLM19544520",
+   "MLM23633481",
+   "MLM16207863",
+   "MLM19791561",
+   "MLM16207893",
+   "MLM50307832"
+  ],
+  "b2_positivas_conteo": [
+   "MLM19544520",
+   "MLM16207862",
+   "MLM19566313",
+   "MLM19663240",
+   "MLM16207894",
+   "MLM19535763",
+   "MLM20999002",
+   "MLM23633481",
+   "MLM41148521",
+   "MLM16207863",
+   "MLM19791561",
+   "MLM16207890",
+   "MLM21827563",
+   "MLM50307832",
+   "MLM55879706",
+   "MLM16207893"
+  ],
+  "b3_positivas_prop": [
+   "MLM21827563",
+   "MLM16207894",
+   "MLM19535763",
+   "MLM41148521",
+   "MLM19663240",
+   "MLM20999002",
+   "MLM19566313",
+   "MLM55879706",
+   "MLM19544520",
+   "MLM16207862",
+   "MLM16207890",
+   "MLM16207863",
+   "MLM23633481",
+   "MLM19791561",
+   "MLM16207893",
+   "MLM50307832"
+  ]
+ }
+}

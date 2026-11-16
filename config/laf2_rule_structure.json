@@ -1,0 +1,64 @@
+{
+  "methodology_version": 1,
+  "scope": "shared",
+  "description": "Reglas de condiciones de compra compartidas por las categorias actuales.",
+  "fact_parameters": {
+    "binary_confidence": 0.95,
+    "long_warranty_months": 6,
+    "price_confidence": {
+      "minimum_price": 0.95,
+      "maximum_price": 0.30,
+      "equal_price": 0.70
+    }
+  },
+  "conditions": {
+    "precio": {
+      "fact_predicate": "precioBueno",
+      "rule_confidence": 0.85,
+      "status": "implemented"
+    },
+    "descuento": {
+      "fact_predicate": "tieneDescuento",
+      "rule_confidence": 0.85,
+      "status": "implemented"
+    },
+    "cuotas": {
+      "fact_predicate": "tieneCuotas",
+      "rule_confidence": 0.85,
+      "status": "implemented"
+    },
+    "garantia": {
+      "fact_predicate": "tieneGarantiaLarga",
+      "rule_confidence": 0.85,
+      "status": "implemented"
+    },
+    "tienda_oficial": {
+      "fact_predicate": "esTiendaOficial",
+      "rule_confidence": 0.85,
+      "status": "implemented"
+    },
+    "factura": {
+      "fact_predicate": "tieneFactura",
+      "rule_confidence": 0.85,
+      "status": "implemented"
+    },
+    "envio": {
+      "fact_predicate": "tieneEnvioGratis",
+      "rule_confidence": 0.85,
+      "status": "implemented",
+      "source_field": "items_raw.shipping_free_shipping"
+    }
+  },
+  "recommendation": {
+    "body_predicate": "compraBuena",
+    "head_predicate": "recomendar",
+    "confidence": 0.90,
+    "preference_keys": [
+      "precio",
+      "cuotas",
+      "garantia",
+      "tienda_oficial"
+    ],
+    "preference_aggregation": "mean"
+  }
+}

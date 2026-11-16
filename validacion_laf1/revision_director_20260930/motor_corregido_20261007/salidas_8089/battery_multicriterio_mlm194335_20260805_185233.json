@@ -1,0 +1,582 @@
+{
+ "neutral": [
+  {
+   "product": "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+   "score": 0.3823272427465799,
+   "reviews": 752,
+   "neg_aspects": 4
+  },
+  {
+   "product": "mlm41148521_cafe_gourmet_molido_espresso_400g_blason",
+   "score": 0.3642009073933372,
+   "reviews": 320,
+   "neg_aspects": 1
+  },
+  {
+   "product": "mlm20502238_cafe_folgers_classic_roast_clasico_bote",
+   "score": 0.3232513661973359,
+   "reviews": 548,
+   "neg_aspects": 6
+  },
+  {
+   "product": "mlm25263480_cafe_gourmet_tostado_y_molido_americano",
+   "score": 0.31685250862152614,
+   "reviews": 431,
+   "neg_aspects": 2
+  },
+  {
+   "product": "mlm65430742_cafe_veracruzano_artesanal_calidad_gourmet_100",
+   "score": 0.31505640599994406,
+   "reviews": 494,
+   "neg_aspects": 8
+  },
+  {
+   "product": "mlm43006788_cafe_molido_gourmet_espresso_robusto_900g",
+   "score": 0.3042101428571429,
+   "reviews": 160,
+   "neg_aspects": 0
+  },
+  {
+   "product": "mlm19543513_cafe_molido_la_parroquia_puro_1",
+   "score": 0.30173389443790943,
+   "reviews": 740,
+   "neg_aspects": 10
+  },
+  {
+   "product": "mlm19535969_nescafe_taster_s_choice_gourmet_roast",
+   "score": 0.2891084961417282,
+   "reviews": 311,
+   "neg_aspects": 7
+  },
+  {
+   "product": "mlm19777103_cafe_la_parroquia_de_veracruz_molido",
+   "score": 0.26758262226720647,
+   "reviews": 198,
+   "neg_aspects": 3
+  },
+  {
+   "product": "mlm43007251_cafe_molido_100_arabico_gourmet_americano",
+   "score": 0.24904101428571432,
+   "reviews": 88,
+   "neg_aspects": 0
+  },
+  {
+   "product": "mlm68722805_cafe_santa_elena_artesanal_de_veracruz",
+   "score": 0.2399221475916626,
+   "reviews": 97,
+   "neg_aspects": 2
+  },
+  {
+   "product": "mlm45641721_cafe_espresso_en_grano_100_arabica",
+   "score": 0.22296001565798734,
+   "reviews": 92,
+   "neg_aspects": 1
+  },
+  {
+   "product": "mlm46938408_cafe_de_chiapas_mezcla_caracolillo_bourbon",
+   "score": 0.2206109435404005,
+   "reviews": 226,
+   "neg_aspects": 7
+  },
+  {
+   "product": "mlm26204244_cafe_la_parroquia_de_veracruz_en",
+   "score": 0.1932351507062269,
+   "reviews": 84,
+   "neg_aspects": 3
+  },
+  {
+   "product": "mlm19543517_cafe_puro_tostado_y_molido_veracruz",
+   "score": 0.191811723626645,
+   "reviews": 179,
+   "neg_aspects": 5
+  },
+  {
+   "product": "mlm34739841_cafe_en_grano_de_altura_gourmet",
+   "score": 0.18091953427336355,
+   "reviews": 50,
+   "neg_aspects": 1
+  },
+  {
+   "product": "mlm60041718_cafe_en_grano_don_justo_no",
+   "score": 0.15547378538080184,
+   "reviews": 64,
+   "neg_aspects": 3
+  },
+  {
+   "product": "mlm34232599_cafe_etnia_52_molido_de_altura",
+   "score": 0.14812784413224847,
+   "reviews": 100,
+   "neg_aspects": 7
+  },
+  {
+   "product": "mlm52303869_cafe_premium_pluma_oaxaca_tostado_y",
+   "score": 0.13470557142857145,
+   "reviews": 54,
+   "neg_aspects": 1
+  }
+ ],
+ "solo_sabor": [
+  {
+   "product": "mlm25263480_cafe_gourmet_tostado_y_molido_americano",
+   "score": 0.6471899999999999,
+   "reviews": 431,
+   "neg_aspects": 2
+  },
+  {
+   "product": "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+   "score": 0.647154046997389,
+   "reviews": 752,
+   "neg_aspects": 4
+  },
+  {
+   "product": "mlm41148521_cafe_gourmet_molido_espresso_400g_blason",
+   "score": 0.626535,
+   "reviews": 320,
+   "neg_aspects": 1
+  },
+  {
+   "product": "mlm19543513_cafe_molido_la_parroquia_puro_1",
+   "score": 0.6205364806866954,
+   "reviews": 740,
+   "neg_aspects": 10
+  },
+  {
+   "product": "mlm20502238_cafe_folgers_classic_roast_clasico_bote",
+   "score": 0.6019672131147541,
+   "reviews": 548,
+   "neg_aspects": 6
+  },
+  {
+   "product": "mlm43006788_cafe_molido_gourmet_espresso_robusto_900g",
+   "score": 0.585225,
+   "reviews": 160,
+   "neg_aspects": 0
+  },
+  {
+   "product": "mlm19535969_nescafe_taster_s_choice_gourmet_roast",
+   "score": 0.5626787741203179,
+   "reviews": 311,
+   "neg_aspects": 7
+  },
+  {
+   "product": "mlm46938408_cafe_de_chiapas_mezcla_caracolillo_bourbon",
+   "score": 0.5626787741203179,
+   "reviews": 226,
+   "neg_aspects": 7
+  },
+  {
+   "product": "mlm65430742_cafe_veracruzano_artesanal_calidad_gourmet_100",
+   "score": 0.5626787741203179,
+   "reviews": 494,
+   "neg_aspects": 8
+  },
+  {
+   "product": "mlm45641721_cafe_espresso_en_grano_100_arabica",
+   "score": 0.5508000000000001,
+   "reviews": 92,
+   "neg_aspects": 1
+  },
+  {
+   "product": "mlm43007251_cafe_molido_100_arabico_gourmet_americano",
+   "score": 0.543915,
+   "reviews": 88,
+   "neg_aspects": 0
+  },
+  {
+   "product": "mlm19777103_cafe_la_parroquia_de_veracruz_molido",
+   "score": 0.541875,
+   "reviews": 198,
+   "neg_aspects": 3
+  },
+  {
+   "product": "mlm19543517_cafe_puro_tostado_y_molido_veracruz",
+   "score": 0.5202361275088547,
+   "reviews": 179,
+   "neg_aspects": 5
+  },
+  {
+   "product": "mlm52303869_cafe_premium_pluma_oaxaca_tostado_y",
+   "score": 0.49572,
+   "reviews": 54,
+   "neg_aspects": 1
+  },
+  {
+   "product": "mlm26204244_cafe_la_parroquia_de_veracruz_en",
+   "score": 0.46213797389683026,
+   "reviews": 84,
+   "neg_aspects": 3
+  },
+  {
+   "product": "mlm68722805_cafe_santa_elena_artesanal_de_veracruz",
+   "score": 0.44977386934673375,
+   "reviews": 97,
+   "neg_aspects": 2
+  },
+  {
+   "product": "mlm34232599_cafe_etnia_52_molido_de_altura",
+   "score": 0.43714285714285717,
+   "reviews": 100,
+   "neg_aspects": 7
+  },
+  {
+   "product": "mlm60041718_cafe_en_grano_don_justo_no",
+   "score": 0.41104477611940293,
+   "reviews": 64,
+   "neg_aspects": 3
+  },
+  {
+   "product": "mlm34739841_cafe_en_grano_de_altura_gourmet",
+   "score": 0.27778097982708944,
+   "reviews": 50,
+   "neg_aspects": 1
+  }
+ ],
+ "solo_aroma": [
+  {
+   "product": "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+   "score": 0.585225,
+   "reviews": 752,
+   "neg_aspects": 4
+  },
+  {
+   "product": "mlm19543513_cafe_molido_la_parroquia_puro_1",
+   "score": 0.5773741201949106,
+   "reviews": 740,
+   "neg_aspects": 10
+  },
+  {
+   "product": "mlm25263480_cafe_gourmet_tostado_y_molido_americano",
+   "score": 0.5722200000000001,
+   "reviews": 431,
+   "neg_aspects": 2
+  },
+  {
+   "product": "mlm20502238_cafe_folgers_classic_roast_clasico_bote",
+   "score": 0.5409612141652613,
+   "reviews": 548,
+   "neg_aspects": 6
+  },
+  {
+   "product": "mlm65430742_cafe_veracruzano_artesanal_calidad_gourmet_100",
+   "score": 0.5409612141652613,
+   "reviews": 494,
+   "neg_aspects": 8
+  },
+  {
+   "product": "mlm19777103_cafe_la_parroquia_de_veracruz_molido",
+   "score": 0.5332049999999999,
+   "reviews": 198,
+   "neg_aspects": 3
+  },
+  {
+   "product": "mlm46938408_cafe_de_chiapas_mezcla_caracolillo_bourbon",
+   "score": 0.5202000000000001,
+   "reviews": 226,
+   "neg_aspects": 7
+  },
+  {
+   "product": "mlm19535969_nescafe_taster_s_choice_gourmet_roast",
+   "score": 0.5016540035067212,
+   "reviews": 311,
+   "neg_aspects": 7
+  },
+  {
+   "product": "mlm41148521_cafe_gourmet_molido_espresso_400g_blason",
+   "score": 0.5016540035067212,
+   "reviews": 320,
+   "neg_aspects": 1
+  },
+  {
+   "product": "mlm68722805_cafe_santa_elena_artesanal_de_veracruz",
+   "score": 0.4876875,
+   "reviews": 97,
+   "neg_aspects": 2
+  },
+  {
+   "product": "mlm43006788_cafe_molido_gourmet_espresso_robusto_900g",
+   "score": 0.47468249999999995,
+   "reviews": 160,
+   "neg_aspects": 0
+  },
+  {
+   "product": "mlm19543517_cafe_puro_tostado_y_molido_veracruz",
+   "score": 0.4700602409638555,
+   "reviews": 179,
+   "neg_aspects": 5
+  },
+  {
+   "product": "mlm43007251_cafe_molido_100_arabico_gourmet_americano",
+   "score": 0.4486724999999999,
+   "reviews": 88,
+   "neg_aspects": 0
+  },
+  {
+   "product": "mlm45641721_cafe_espresso_en_grano_100_arabica",
+   "score": 0.4486724999999999,
+   "reviews": 92,
+   "neg_aspects": 1
+  },
+  {
+   "product": "mlm52303869_cafe_premium_pluma_oaxaca_tostado_y",
+   "score": 0.4356675,
+   "reviews": 54,
+   "neg_aspects": 1
+  },
+  {
+   "product": "mlm60041718_cafe_en_grano_don_justo_no",
+   "score": 0.4291650000000001,
+   "reviews": 64,
+   "neg_aspects": 3
+  },
+  {
+   "product": "mlm34739841_cafe_en_grano_de_altura_gourmet",
+   "score": 0.4226625,
+   "reviews": 50,
+   "neg_aspects": 1
+  },
+  {
+   "product": "mlm26204244_cafe_la_parroquia_de_veracruz_en",
+   "score": 0.34912751677852344,
+   "reviews": 84,
+   "neg_aspects": 3
+  },
+  {
+   "product": "mlm34232599_cafe_etnia_52_molido_de_altura",
+   "score": 0.2926582278481013,
+   "reviews": 100,
+   "neg_aspects": 7
+  }
+ ],
+ "sensorial": [
+  {
+   "product": "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+   "score": 0.4719890126213342,
+   "reviews": 752,
+   "neg_aspects": 4
+  },
+  {
+   "product": "mlm41148521_cafe_gourmet_molido_espresso_400g_blason",
+   "score": 0.4502352505844535,
+   "reviews": 320,
+   "neg_aspects": 1
+  },
+  {
+   "product": "mlm19543513_cafe_molido_la_parroquia_puro_1",
+   "score": 0.4387404893953943,
+   "reviews": 740,
+   "neg_aspects": 10
+  },
+  {
+   "product": "mlm20502238_cafe_folgers_classic_roast_clasico_bote",
+   "score": 0.4261614993818827,
+   "reviews": 548,
+   "neg_aspects": 6
+  },
+  {
+   "product": "mlm43006788_cafe_molido_gourmet_espresso_robusto_900g",
+   "score": 0.41915625000000006,
+   "reviews": 160,
+   "neg_aspects": 0
+  },
+  {
+   "product": "mlm25263480_cafe_gourmet_tostado_y_molido_americano",
+   "score": 0.4063166034502277,
+   "reviews": 431,
+   "neg_aspects": 2
+  },
+  {
+   "product": "mlm43007251_cafe_molido_100_arabico_gourmet_americano",
+   "score": 0.39257250000000005,
+   "reviews": 88,
+   "neg_aspects": 0
+  },
+  {
+   "product": "mlm19777103_cafe_la_parroquia_de_veracruz_molido",
+   "score": 0.38618321862348176,
+   "reviews": 198,
+   "neg_aspects": 3
+  },
+  {
+   "product": "mlm19535969_nescafe_taster_s_choice_gourmet_roast",
+   "score": 0.37717268140630833,
+   "reviews": 311,
+   "neg_aspects": 7
+  },
+  {
+   "product": "mlm65430742_cafe_veracruzano_artesanal_calidad_gourmet_100",
+   "score": 0.36948153495148023,
+   "reviews": 494,
+   "neg_aspects": 8
+  },
+  {
+   "product": "mlm68722805_cafe_santa_elena_artesanal_de_veracruz",
+   "score": 0.36800734438054605,
+   "reviews": 97,
+   "neg_aspects": 2
+  },
+  {
+   "product": "mlm46938408_cafe_de_chiapas_mezcla_caracolillo_bourbon",
+   "score": 0.3139066387863861,
+   "reviews": 226,
+   "neg_aspects": 7
+  },
+  {
+   "product": "mlm34739841_cafe_en_grano_de_altura_gourmet",
+   "score": 0.28236307997118154,
+   "reviews": 50,
+   "neg_aspects": 1
+  },
+  {
+   "product": "mlm60041718_cafe_en_grano_don_justo_no",
+   "score": 0.2708701658885376,
+   "reviews": 64,
+   "neg_aspects": 3
+  },
+  {
+   "product": "mlm52303869_cafe_premium_pluma_oaxaca_tostado_y",
+   "score": 0.26641125000000004,
+   "reviews": 54,
+   "neg_aspects": 1
+  },
+  {
+   "product": "mlm19543517_cafe_puro_tostado_y_molido_veracruz",
+   "score": 0.2531441551288383,
+   "reviews": 179,
+   "neg_aspects": 5
+  },
+  {
+   "product": "mlm45641721_cafe_espresso_en_grano_100_arabica",
+   "score": 0.24303520320197047,
+   "reviews": 92,
+   "neg_aspects": 1
+  },
+  {
+   "product": "mlm26204244_cafe_la_parroquia_de_veracruz_en",
+   "score": 0.2137073683145294,
+   "reviews": 84,
+   "neg_aspects": 3
+  },
+  {
+   "product": "mlm34232599_cafe_etnia_52_molido_de_altura",
+   "score": 0.17875351416515972,
+   "reviews": 100,
+   "neg_aspects": 7
+  }
+ ],
+ "pert_sabor_0.6": [
+  {
+   "product": "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+   "score": 0.386057197736028,
+   "reviews": 752,
+   "neg_aspects": 4
+  },
+  {
+   "product": "mlm41148521_cafe_gourmet_molido_espresso_400g_blason",
+   "score": 0.36789575376807904,
+   "reviews": 320,
+   "neg_aspects": 1
+  },
+  {
+   "product": "mlm20502238_cafe_folgers_classic_roast_clasico_bote",
+   "score": 0.327176941506032,
+   "reviews": 548,
+   "neg_aspects": 6
+  },
+  {
+   "product": "mlm25263480_cafe_gourmet_tostado_y_molido_americano",
+   "score": 0.32150514934516666,
+   "reviews": 431,
+   "neg_aspects": 2
+  },
+  {
+   "product": "mlm65430742_cafe_veracruzano_artesanal_calidad_gourmet_100",
+   "score": 0.318544044987555,
+   "reviews": 494,
+   "neg_aspects": 8
+  },
+  {
+   "product": "mlm43006788_cafe_molido_gourmet_espresso_robusto_900g",
+   "score": 0.3081680985915493,
+   "reviews": 160,
+   "neg_aspects": 0
+  },
+  {
+   "product": "mlm19543513_cafe_molido_la_parroquia_puro_1",
+   "score": 0.3062240717090191,
+   "reviews": 740,
+   "neg_aspects": 10
+  },
+  {
+   "product": "mlm19535969_nescafe_taster_s_choice_gourmet_roast",
+   "score": 0.2929615986484689,
+   "reviews": 311,
+   "neg_aspects": 7
+  },
+  {
+   "product": "mlm19777103_cafe_la_parroquia_de_veracruz_molido",
+   "score": 0.2714458951930205,
+   "reviews": 198,
+   "neg_aspects": 3
+  },
+  {
+   "product": "mlm43007251_cafe_molido_100_arabico_gourmet_americano",
+   "score": 0.25319416901408454,
+   "reviews": 88,
+   "neg_aspects": 0
+  },
+  {
+   "product": "mlm68722805_cafe_santa_elena_artesanal_de_veracruz",
+   "score": 0.24287780564455094,
+   "reviews": 97,
+   "neg_aspects": 2
+  },
+  {
+   "product": "mlm45641721_cafe_espresso_en_grano_100_arabica",
+   "score": 0.2275774802261847,
+   "reviews": 92,
+   "neg_aspects": 1
+  },
+  {
+   "product": "mlm46938408_cafe_de_chiapas_mezcla_caracolillo_bourbon",
+   "score": 0.22542880030913176,
+   "reviews": 226,
+   "neg_aspects": 7
+  },
+  {
+   "product": "mlm26204244_cafe_la_parroquia_de_veracruz_en",
+   "score": 0.1970225144131368,
+   "reviews": 84,
+   "neg_aspects": 3
+  },
+  {
+   "product": "mlm19543517_cafe_puro_tostado_y_molido_veracruz",
+   "score": 0.19643741945597193,
+   "reviews": 179,
+   "neg_aspects": 5
+  },
+  {
+   "product": "mlm34739841_cafe_en_grano_de_altura_gourmet",
+   "score": 0.1822837799853879,
+   "reviews": 50,
+   "neg_aspects": 1
+  },
+  {
+   "product": "mlm60041718_cafe_en_grano_don_justo_no",
+   "score": 0.15907337679965539,
+   "reviews": 64,
+   "neg_aspects": 3
+  },
+  {
+   "product": "mlm34232599_cafe_etnia_52_molido_de_altura",
+   "score": 0.1521984781183134,
+   "reviews": 100,
+   "neg_aspects": 7
+  },
+  {
+   "product": "mlm52303869_cafe_premium_pluma_oaxaca_tostado_y",
+   "score": 0.13979028169014085,
+   "reviews": 54,
+   "neg_aspects": 1
+  }
+ ]
+}

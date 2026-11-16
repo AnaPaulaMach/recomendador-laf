@@ -1,0 +1,486 @@
+{
+  "domain_key": "freidora_de_aire",
+  "display_name": "Freidora de Aire",
+  "product_label": "producto",
+  "item_label": "publicacion",
+  "quality_aspects": {
+    "bandeja": {
+      "label": "bandeja/canastilla y facilidad de uso/limpieza",
+      "icon": ""
+    },
+    "capacidad": {
+      "label": "Capacidad (cantidad/porciones)",
+      "icon": ""
+    },
+    "coccion": {
+      "label": "Cocción / Potencia de cocción",
+      "icon": ""
+    },
+    "consumo": {
+      "label": "energía/consumo energético",
+      "icon": ""
+    },
+    "rapidez": {
+      "label": "Rapidez",
+      "icon": ""
+    },
+    "componentes": {
+      "label": "Parrilla / rejilla / puerta",
+      "icon": ""
+    },
+    "funcionamiento": {
+      "label": "Funcionamiento/calidad de operación",
+      "icon": ""
+    },
+    "limpieza": {
+      "label": "Facilidad de limpieza",
+      "icon": ""
+    },
+    "material": {
+      "label": "Materiales/calidad de materiales",
+      "icon": ""
+    },
+    "ruido": {
+      "label": "ruido",
+      "icon": ""
+    },
+    "facilidad_uso": {
+      "label": "Facilidad de Uso",
+      "icon": ""
+    },
+    "uso_aceite": {
+      "label": "Uso de aceite",
+      "icon": ""
+    },
+    "diseno": {
+      "label": "Diseño / Atractivo visual y tamaño percibido",
+      "icon": ""
+    },
+    "temperatura_control": {
+      "label": "Temperatura / control",
+      "icon": ""
+    }
+  },
+  "purchase_aspects": {
+    "precio": "Precio bajo (menor precio = mejor)",
+    "descuento": "Descuento sobre precio original",
+    "cuotas": "Financiacion (cuotas sin interes)",
+    "garantia": "Garantia",
+    "tienda_oficial": "Tienda oficial",
+    "factura": "Factura",
+    "envio": "Envio gratuito"
+  },
+  "catalog_aspect_map": {},
+  "ui": {
+    "laf1_page_title": "Que buscas en Freidora de Aire?",
+    "laf1_title": "Que buscas en Freidora de Aire?",
+    "laf1_caption": "Indica que tan importante es cada aspecto para vos.",
+    "laf1_next_info": "Ahora corre `python src/08_laf1_generate.py` para ver el ranking de productos.",
+    "laf2_page_title": "Como queres comprarlo?",
+    "laf2_title": "Como queres comprarlo?",
+    "laf2_purchase_title": "Que condiciones de compra te importan?",
+    "laf2_next_info": "Ahora corre `python src/10_laf2_generate.py` para ver el ranking de publicaciones."
+  },
+  "laf": {
+    "system_description": "Sistema argumentativo de recomendacion - Freidora de Aire",
+    "author_line": "Trabajo Final - Ana Paula Machado - UNSE"
+  },
+  "laf1_rule_structure": {
+    "mode": "hierarchical",
+    "beta_semantics": "user_only_structural_neutral",
+    "_preference_notes": "Todos los beta estructurales valen 1.0; la preferencia proviene unicamente de los sliders del usuario.",
+    "unassigned_aspect_policy": "direct",
+    "dimensions": {
+      "desempeno": {
+        "label": "Desempeno",
+        "aspects": [
+          {
+            "aspect": "coccion",
+            "confidence": 0.85,
+            "preference": 1.0
+          },
+          {
+            "aspect": "funcionamiento",
+            "confidence": 0.85,
+            "preference": 1.0,
+            "negative_confidence": 0.9
+          },
+          {
+            "aspect": "temperatura_control",
+            "confidence": 0.8,
+            "preference": 1.0
+          },
+          {
+            "aspect": "rapidez",
+            "confidence": 0.8,
+            "preference": 1.0
+          }
+        ],
+        "recommend": {
+          "confidence": 0.9,
+          "preference": 1.0
+        },
+        "not_recommend": {
+          "confidence": 0.9,
+          "preference": 1.0
+        }
+      },
+      "uso_mantenimiento": {
+        "label": "Uso y mantenimiento",
+        "aspects": [
+          {
+            "aspect": "facilidad_uso",
+            "confidence": 0.8,
+            "preference": 1.0
+          },
+          {
+            "aspect": "limpieza",
+            "confidence": 0.85,
+            "preference": 1.0
+          },
+          {
+            "aspect": "bandeja",
+            "confidence": 0.75,
+            "preference": 1.0
+          }
+        ],
+        "recommend": {
+          "confidence": 0.8,
+          "preference": 1.0
+        }
+      },
+      "construccion": {
+        "label": "Construccion",
+        "aspects": [
+          {
+            "aspect": "material",
+            "confidence": 0.75,
+            "preference": 1.0
+          },
+          {
+            "aspect": "componentes",
+            "confidence": 0.75,
+            "preference": 1.0
+          }
+        ],
+        "recommend": {
+          "confidence": 0.75,
+          "preference": 1.0
+        },
+        "not_recommend": {
+          "confidence": 0.75,
+          "preference": 1.0
+        }
+      },
+      "eficiencia_salud": {
+        "label": "Eficiencia y salud",
+        "aspects": [
+          {
+            "aspect": "uso_aceite",
+            "confidence": 0.75,
+            "preference": 1.0
+          },
+          {
+            "aspect": "consumo",
+            "confidence": 0.7,
+            "preference": 1.0
+          }
+        ],
+        "recommend": {
+          "confidence": 0.7,
+          "preference": 1.0
+        }
+      },
+      "experiencia_secundaria": {
+        "label": "Experiencia secundaria",
+        "aspects": [
+          {
+            "aspect": "ruido",
+            "confidence": 0.65,
+            "preference": 1.0
+          },
+          {
+            "aspect": "diseno",
+            "confidence": 0.6,
+            "preference": 1.0
+          }
+        ],
+        "recommend": {
+          "confidence": 0.55,
+          "preference": 1.0
+        }
+      },
+      "capacidad_adecuacion": {
+        "label": "Capacidad / adecuacion",
+        "aspects": [
+          {
+            "aspect": "capacidad",
+            "confidence": 0.8,
+            "preference": 1.0
+          }
+        ],
+        "recommend": {
+          "confidence": 0.75,
+          "preference": 1.0
+        }
+      }
+    }
+  },
+  "lexicon": {
+    "aspects": {
+      "bandeja": [
+        "bandeja",
+        "bandeja muy grande",
+        "ventana de la bandeja",
+        "fondo de la bandeja",
+        "canasta",
+        "charola"
+      ],
+      "capacidad": [
+        "capacidad",
+        "porcion",
+        "espacios",
+        "espaciosa",
+        "muy espaciosa",
+        "tiene buen tamaño",
+        "muy buen tamaño",
+        "espacioso",
+        "tamano",
+        "pequeno",
+        "espacio",
+        "amplio",
+        "mediano",
+        "chica",
+        "chico"
+      ],
+      "coccion": [
+        "dorado",
+        "dorado por fuera",
+        "dorado por fuera/jugoso por dentro",
+        "comida dorada",
+        "quedaron doradas",
+        "quedan doradas",
+        "coccion",
+        "calentar",
+        "uniforme",
+        "potencia",
+        "cocido",
+        "frie"
+      ],
+      "consumo": [
+        "luz",
+        "energia",
+        "energía",
+        "gastar"
+      ],
+      "rapidez": [
+        "coccion rapido",
+        "cocción rápida",
+        "rapidez"
+      ],
+      "componentes": [
+        "rejilla",
+        "parrilla",
+        "parilla",
+        "puerta"
+      ],
+      "funcionamiento": [
+        "funcionamiento",
+        "funcionar"
+      ],
+      "limpieza": [
+        "limpieza",
+        "limpiar",
+        "limpieza facil",
+        "limpieza: muy fácil de lavar",
+        "limpieza: fácil de limpiar",
+        "limpieza: fácil",
+        "lavar"
+      ],
+      "material": [
+        "material",
+        "buen material",
+        "materiales",
+        "traia manuales y equipamiento y los materiales",
+        "buenos materiales",
+        "plastico"
+      ],
+      "ruido": [
+        "ruido"
+      ],
+      "facilidad_uso": [
+        "facil",
+        "practico",
+        "sencillo",
+        "practica"
+      ],
+      "uso_aceite": [
+        "aceite",
+        "sin tanto aceite",
+        "ocupar mucho aceite",
+        "no es necesario ocupar mucho aceite",
+        "aceites"
+      ],
+      "diseno": [
+        "color"
+      ],
+      "temperatura_control": [
+        "temperatura",
+        "pantalla",
+        "boton"
+      ]
+    },
+    "positive": [
+      "aceptable",
+      "barbaro",
+      "bárbaro",
+      "bien",
+      "bonita",
+      "bonito",
+      "buena",
+      "bueno",
+      "calidad",
+      "clara",
+      "claro",
+      "comodo",
+      "cómodo",
+      "conforme",
+      "contenta",
+      "contento",
+      "correcta",
+      "correcto",
+      "cumple",
+      "cumple expectativas",
+      "cumplio expectativas",
+      "cumplir",
+      "destacado",
+      "duradero",
+      "eficiente",
+      "excelente",
+      "fluida",
+      "fluido",
+      "genial",
+      "hermoso",
+      "ideal",
+      "impecable",
+      "increible",
+      "increíble",
+      "linda",
+      "lindo",
+      "me encanta",
+      "muy bien",
+      "perfecta",
+      "perfecto",
+      "potente",
+      "rapida",
+      "rápida",
+      "rapido",
+      "rápido",
+      "recomendable",
+      "recomiendo",
+      "resistente",
+      "satisfecho",
+      "satisfecha",
+      "satisfechos",
+      "satisfechas",
+      "sobresaliente",
+      "supera expectativas",
+      "supero expectativas",
+      "superar",
+      "suficiente",
+      "excelente tamano",
+      "sano",
+      "maravilloso",
+      "fascinado",
+      "delicioso",
+      "feliz",
+      "util",
+      "útil",
+      "muy útil",
+      "util y potente",
+      "accesorio",
+      "opcion",
+      "maravilla",
+      "alita",
+      "pena",
+      "saludable",
+      "limpio",
+      "rico",
+      "encantado",
+      "padre",
+      "completo",
+      "mejor",
+      "excelente freidora",
+      "adecuado",
+      "execelente",
+      "coccion excelente",
+      "diseno excelente"
+    ],
+    "negative": [
+      "deficiente",
+      "defecto",
+      "decepcion",
+      "decepción",
+      "decepcionante",
+      "decepcionada",
+      "decepcionado",
+      "débil",
+      "debil",
+      "demora",
+      "descarga",
+      "falla",
+      "fallado",
+      "fallando",
+      "feo",
+      "fragil",
+      "frágil",
+      "horrible",
+      "insuficiente",
+      "lag",
+      "lenta",
+      "lento",
+      "mal",
+      "mala",
+      "malo",
+      "mediocre",
+      "molesto",
+      "no cumple expectativas",
+      "no cumplio expectativas",
+      "no estoy contento",
+      "no estoy contenta",
+      "no satisfecho",
+      "no satisfecha",
+      "no sirve",
+      "pobre",
+      "problema",
+      "recalienta",
+      "se apaga",
+      "se cuelga",
+      "se descarga",
+      "se tilda",
+      "se traba",
+      "tarda",
+      "trabado",
+      "traba",
+      "dificil",
+      "tardar",
+      "incompleto",
+      "crudo"
+    ],
+    "negation": [
+      "jamas",
+      "jamás",
+      "nada",
+      "nadie",
+      "ni",
+      "ningun",
+      "ningún",
+      "ninguna",
+      "ninguno",
+      "no",
+      "nunca",
+      "sin",
+      "tampoco"
+    ]
+  }
+}

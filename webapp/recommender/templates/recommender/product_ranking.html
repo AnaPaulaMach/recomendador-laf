@@ -1,0 +1,82 @@
+{% extends "recommender/base.html" %}
+{% block title %}Ranking de productos · Recomendador de productos{% endblock %}
+{% block banner %}{% if result.evaluation_status == "mock" %}{% include "recommender/partials/demo_banner.html" %}{% endif %}{% endblock %}
+{% block content %}
+<section class="page-shell">
+  {% include "recommender/partials/flow_steps.html" with step=2 %}
+  <div class="ranking-heading">
+    <div class="page-heading">
+      {% if no_preferences_selected and not result.ranking %}
+        <h1 class="page-title">Todavía no elegiste qué te importa</h1>
+        <p class="page-copy">Para ordenar los cafés necesitamos al menos una característica que te interese. Marcá una y volvé a ver el ranking.</p>
+      {% elif result.evaluation_status == "pending" %}
+        {% if result.program_status == "generated" %}
+          <h1 class="page-title">No pudimos ordenar los cafés ahora</h1>
+          <p class="page-copy">El servicio que evalúa las reseñas no respondió, así que no mostramos un orden en vez de mostrar uno sin validar. Tus preferencias quedaron guardadas: volvé a enviarlas para intentar otra vez.</p>
+          <p class="mt-4"><a class="button button-primary" href="{% url 'recommender:quality' flow.id %}">Volver a intentar {% include "recommender/partials/icon_arrow_right.html" %}</a></p>
+        {% else %}
+          <h1 class="page-title">Todavía no podemos ordenar este catálogo</h1>
+          <p class="page-copy">Tus preferencias quedaron guardadas. El ranking aparecerá cuando la evaluación esté disponible.</p>
+        {% endif %}
+      {% else %}
+        <h1 class="page-title">{{ result.ranking|length }} cafés ordenados para vos</h1>
+        <p class="page-copy">Los ordenamos según lo que dicen las reseñas sobre cada característica y lo que marcaste como importante.</p>
+      {% endif %}
+      <a class="adjust-preferences-link" href="{% url 'recommender:quality' flow.id %}"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="14" cy="6" r="2"/><path d="M4 6h8M16 6h4"/><circle cx="8" cy="12" r="2"/><path d="M4 12h2M10 12h10"/><circle cx="17" cy="18" r="2"/><path d="M4 18h11M19 18h1"/></svg><span>Cambiar preferencias</span></a>
+    </div>
+  </div>
+  <div class="ranking-list">
+    {% for item in result.ranking %}
+      <article class="ranking-card {% if forloop.first %}ranking-card-first{% endif %}">
+        <div class="ranking-product-visual">
+          {% include "recommender/partials/product_image.html" with item=item image_class="product-image-ranking" eager=forloop.first %}
+        </div>
+        <div class="ranking-product-info">
+          <h2 class="ranking-title"><span class="ranking-pos" aria-hidden="true">{{ item.position }}.</span>{{ item.entity_name }}</h2>
+          <p class="ranking-meta">
+            {% if item.metadata.price_range %}<strong>{{ item.metadata.price_range }}</strong>{% endif %}
+            {% if item.metadata.type %}<span>{{ item.metadata.type }}</span>{% endif %}
+            {% if item.metadata.coverage_display %}<span>{{ item.metadata.coverage_display }}</span>{% endif %}
+            <span>{{ item.evidence_count }} menciones en reseñas</span>
+          </p>
+          {% if item.metadata.support_note %}<p class="ranking-support-note">{{ item.metadata.support_note }}</p>{% endif %}
+          <ul class="ranking-reasons" aria-label="Menciones por característica">
+            {% for line in item.metadata.aspect_mention_lines %}<li class="reason-mentions">{{ line.text }}</li>{% endfor %}
+          </ul>
+        </div>
+        <div class="ranking-score-panel">
+          <div class="score-lockup">
+            <strong class="primary-match-label">{{ item.metadata.match_label }}</strong>
+          </div>
+          <form method="post" action="{% url 'recommender:select-product' flow.id item.entity_id %}" class="ranking-select-form">
+            {% csrf_token %}
+            <button class="button button-primary" type="submit">Elegir producto {% include "recommender/partials/icon_arrow_right.html" %}</button>
+          </form>
+          <a class="ranking-explanation-link" href="{% url 'recommender:product-detail' flow.id item.entity_id %}">Ver por qué lo recomendamos</a>
+        </div>
+      </article>
+    {% empty %}
+      {% if no_preferences_selected %}
+        <div class="empty-state"><strong>No seleccionaste ninguna preferencia</strong><p>Cuando todo queda en «No me importa», no hay con qué comparar los cafés. Elegí al menos una característica y armamos el orden al instante.</p><a class="button button-primary" href="{% url 'recommender:quality' flow.id %}">Elegir qué me importa {% include "recommender/partials/icon_arrow_right.html" %}</a></div>
+      {% elif result.program_status == "generated" %}
+        <div class="empty-state"><strong>No pudimos ordenar los cafés ahora</strong><p>El servicio que evalúa las reseñas no respondió. Los {{ result.products_count }} cafés revisados de este catálogo siguen guardados, igual que tus preferencias; podés intentar de nuevo en un momento.</p><a class="button button-primary" href="{% url 'recommender:quality' flow.id %}">Volver a intentar {% include "recommender/partials/icon_arrow_right.html" %}</a></div>
+      {% else %}
+        <div class="empty-state"><strong>No mostramos productos de otro catálogo.</strong><p>Cuando la evaluación termine, vas a ver solamente productos correspondientes al país y al tipo de café que elegiste.</p></div>
+      {% endif %}
+    {% endfor %}
+  </div>
+  {% if result.ranking or laf2_audit_enabled %}
+  <details class="technical-details mt-8">
+    <summary>{% if result.ranking %}Información técnica de esta recomendación{% else %}Información técnica de esta corrida{% endif %}</summary>
+    <p>Corrida <code>{{ result.run_id }}</code> · Estrategia {{ result.strategy }} · Perfil {{ result.operator_profile }}</p>
+    {% if result.ranking.0.metadata.decision_model %}<p>Decisión final <code>{{ result.ranking.0.metadata.decision_model }}</code> · los aspectos con peso 0 no participan.</p>{% endif %}
+    {% if result.program_status == "generated" %}
+      {% if result.aspect_programs %}<p>{{ result.aspect_programs|length }} programas independientes · una etiqueta de confianza. Respaldo completo: {{ result.products_count }} productos · {{ result.facts_count }} hechos · {{ result.rules_count }} reglas.</p>{% else %}<p>Programa 08 generado · {{ result.products_count }} productos · {{ result.facts_count }} hechos · {{ result.rules_count }} reglas</p>{% endif %}
+      <a href="{% url 'recommender:export-laf1-program' flow.id %}{% if result.aspect_programs %}?used=1{% endif %}">{% if result.aspect_programs %}Descargar programas LAF1{% else %}Descargar programa LAF1{% endif %}</a><span aria-hidden="true"> · </span>
+      {% if laf2_audit_enabled %}<a href="{% url 'recommender:audit-laf2-product' flow.id %}">Probar LAF2 con un producto controlado</a><span aria-hidden="true"> · </span>{% endif %}
+    {% endif %}
+    <a href="{% url 'recommender:traceability' flow.id %}">Ver datos y trazabilidad</a>
+  </details>
+  {% endif %}
+</section>
+{% endblock %}

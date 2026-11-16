@@ -1,0 +1,9 @@
+{
+  "fecha_local": "2026-09-30",
+  "endpoint": "http://localhost:8088/api/graph",
+  "container": "extraccionargumentos-laf-api-1",
+  "image_id": "sha256:92f7447b519d6372e4f0508b8bebef7a2d4439be86e56c75742bfec51e5ac26d",
+  "explainabilityEnabled": false,
+  "perfil_operadores": "budan_2017",
+  "uso": "Calculador local existente; sin modificar imagen ni configuracion de produccion"
+}

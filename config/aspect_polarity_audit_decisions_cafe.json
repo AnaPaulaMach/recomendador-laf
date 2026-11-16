@@ -1,0 +1,458 @@
+{
+  "domain_key": "cafe",
+  "dataset_key": "mlm_mlm194329_20260528_142014",
+  "status": "provisional_ai_assisted_pending_author_confirmation",
+  "reviewer_role": "auditoria tecnica asistida por IA",
+  "methodology": [
+    "Se revisaron los 33 segmentos multiaspecto con senales lexicas positivas y negativas.",
+    "Se agrego una muestra aleatoria deterministica de 40 segmentos multiaspecto (semilla 20260730).",
+    "La etiqueta corresponde a la opinion expresada sobre cada aspecto, no a si el atributo es objetivamente bueno para toda persona.",
+    "Un aspecto puede conservar polaridades positiva y negativa cuando el mismo texto expresa ambas posturas.",
+    "Los casos cuyo sentido no puede resolverse de manera fiable con el fragmento disponible se marcan ambiguous y no entran en la exactitud.",
+    "Estas decisiones deben ser confirmadas por la autora antes de presentarlas como gold standard humano."
+  ],
+  "decisions": [
+    {
+      "group_id": "1137613680|MLM20075768|ef58e698c375",
+      "decision_status": "included",
+      "expected": {"presentacion": "neg", "sabor": "neg", "tamano": "neg"},
+      "note": "Critica menor cantidad, semejanza de sabor/calidad y mala presentacion."
+    },
+    {
+      "group_id": "1176642342|MLM23633481|613d1d6adc36",
+      "decision_status": "included",
+      "expected": {"preparacion": "pos", "sabor": "pos"},
+      "note": "Disolucion perfecta, ausencia de grumos y sabor excelente."
+    },
+    {
+      "group_id": "1191875096|MLM23633481|ab7ab881445d",
+      "decision_status": "included",
+      "expected": {"intensidad": "pos", "tamano": "pos"},
+      "note": "Poca cantidad alcanza para obtener un cafe rico y cargado."
+    },
+    {
+      "group_id": "136216472|MLM19543513|f82c215470a5",
+      "decision_status": "included",
+      "expected": {"presentacion": "neg", "rendimiento": "neg"},
+      "note": "Solicita mejorar la bolsa y afirma que el cierre dura poco y se rompe."
+    },
+    {
+      "group_id": "1396499622|MLM27068249|7c098b5f6d15",
+      "decision_status": "included",
+      "expected": {"sabor": "pos", "variedad": "pos"},
+      "note": "Producto excelente; vainilla favorita y negacion explicita de que los otros sabores sean malos."
+    },
+    {
+      "group_id": "1504994046|MLM23633481|b198ea44a5ae",
+      "decision_status": "ambiguous",
+      "expected": {},
+      "note": "La redaccion sobre grumos puede describir ausencia o aparicion; no se fuerza etiqueta."
+    },
+    {
+      "group_id": "1643705584|MLM20075768|749ab0e054f2",
+      "decision_status": "included",
+      "expected": {"sabor": "pos", "tamano": "neg"},
+      "note": "Sabor bueno, pero contenido real menor al declarado."
+    },
+    {
+      "group_id": "1715870351|MLM16207890|718084ff2d4e",
+      "decision_status": "included",
+      "expected": {"aroma": "pos", "sabor": "pos"},
+      "note": "Buen cafe, buen sabor y aroma; sin duda no es negacion semantica."
+    },
+    {
+      "group_id": "1976401977|MLM19544520|0d7c0e61d26d",
+      "decision_status": "included",
+      "expected": {"dulzor": "neu", "sabor": ["neg", "pos"]},
+      "note": "Expresa sabor agradable y, tras pero, escaso gusto a cafe."
+    },
+    {
+      "group_id": "2082097986|MLM16250244|3f24318d4be4",
+      "decision_status": "included",
+      "expected": {"aroma": "pos", "sabor": "pos"},
+      "note": "Recomendacion inequivoca y sabor/aroma exquisitos."
+    },
+    {
+      "group_id": "2151757023|MLM19544520|e2368df0a6bb",
+      "decision_status": "included",
+      "expected": {"sabor": ["neg", "pos"], "variedad": "neg"},
+      "note": "Reconoce que puede lograrse buen sabor, pero no le gusto y percibe chocolate en polvo en lugar de cafe moka."
+    },
+    {
+      "group_id": "2193976718|MLM16207863|7a4ee6d56caf",
+      "decision_status": "included",
+      "expected": {"intensidad": "neu", "sabor": "neg"},
+      "note": "Rechaza el sabor canela; fuerte describe el producto alternativo preferido."
+    },
+    {
+      "group_id": "2471498649|MLM19544520|d1a782967305",
+      "decision_status": "included",
+      "expected": {"sabor": ["neg", "pos"], "variedad": "neg"},
+      "note": "Lo considera rico, pero casi sin gusto a cafe y demasiado parecido a chocolate."
+    },
+    {
+      "group_id": "2512995076|MLM16207894|215094c90c4b",
+      "decision_status": "ambiguous",
+      "expected": {},
+      "note": "La recomendacion es condicional a buscar intensidad; no se fuerza una polaridad independiente del usuario."
+    },
+    {
+      "group_id": "2541427302|MLM25263480|0217fd1fc1fc",
+      "decision_status": "ambiguous",
+      "expected": {},
+      "note": "El fragmento esta truncado y mezcla preparacion, cantidad, dulzor y variedad; se excluye de exactitud."
+    },
+    {
+      "group_id": "2559982207|MLM20075768|8694c16aaaad",
+      "decision_status": "included",
+      "expected": {"aroma": "pos", "sabor": "pos", "tamano": "pos"},
+      "note": "El no inicial funciona como respuesta aislada; luego elogia tamano, sabor y aroma."
+    },
+    {
+      "group_id": "2605475365|MLM27068249|ddfd164d1736",
+      "decision_status": "included",
+      "expected": {"presentacion": "pos", "sabor": "pos"},
+      "ambiguous_aspects": ["presentacion"],
+      "note": "Le encantaron los sabores y valora tanto los frascos que lamenta desecharlos."
+    },
+    {
+      "group_id": "2640140849|MLM16250244|d95563a5c56b",
+      "decision_status": "included",
+      "expected": {"aroma": "pos", "dulzor": "pos", "sabor": "pos"},
+      "note": "Aroma y sabor agradables; no quemado ni amargo se expresa como cualidad favorable."
+    },
+    {
+      "group_id": "2662897370|MLM25263480|2b4ddafd78d2",
+      "decision_status": "included",
+      "expected": {"dulzor": "neu", "sabor": "pos"},
+      "ambiguous_aspects": ["dulzor"],
+      "note": "El rechazo al azucar expresa preferencia personal; el sabor del producto se elogia."
+    },
+    {
+      "group_id": "2667873659|MLM19543513|dde29f4f55c6",
+      "decision_status": "included",
+      "expected": {"originalidad": "neg", "sabor": "neg"},
+      "note": "Afirma que no es original y sabe a quemado; el elogio corresponde a una compra anterior."
+    },
+    {
+      "group_id": "2683584613|MLM19544520|44c73070e9d0",
+      "decision_status": "included",
+      "expected": {"dulzor": "neg", "rendimiento": "pos", "sabor": ["neg", "pos"], "variedad": "neg"},
+      "note": "Demasiado dulce y sin gusto a cafe/moka, aunque sabroso y rendidor."
+    },
+    {
+      "group_id": "2686985769|MLM19544520|7cb3a94ee288",
+      "decision_status": "included",
+      "expected": {"caducidad": "pos", "presentacion": ["neg", "pos"]},
+      "note": "Critica la falta de medidor, pero elogia sellado y caducidad."
+    },
+    {
+      "group_id": "2711235644|MLM19566313|156a515eeb64",
+      "decision_status": "included",
+      "expected": {"dulzor": "pos", "preparacion": "pos", "sabor": "pos"},
+      "note": "Rico, facil de disolver, sin grumos, excelente y consumible sin azucar."
+    },
+    {
+      "group_id": "2722696662|MLM19566313|8879c6d3ca21",
+      "decision_status": "included",
+      "expected": {"aroma": "pos", "dulzor": "pos", "presentacion": "pos", "sabor": "pos"},
+      "note": "Todos los aspectos mencionados se valoran favorablemente."
+    },
+    {
+      "group_id": "2723106851|MLM26912881|26f45cb04aac",
+      "decision_status": "included",
+      "expected": {"aroma": "pos", "dulzor": "pos", "sabor": "pos"},
+      "note": "Buen aroma/sabor y ausencia de amargor, con recomendacion explicita."
+    },
+    {
+      "group_id": "2775484447|MLM19544520|bf5c2be94b22",
+      "decision_status": "included",
+      "expected": {"sabor": "pos", "tamano": "pos"},
+      "note": "Con poca cantidad obtiene mucho sabor; ambas menciones son favorables."
+    },
+    {
+      "group_id": "2794770907|MLM16250244|18f4bb446aa9",
+      "decision_status": "included",
+      "expected": {"dulzor": "neu", "sabor": "pos"},
+      "ambiguous_aspects": ["dulzor"],
+      "note": "No muy dulce es descriptivo; no sabe mal equivale a una valoracion favorable moderada."
+    },
+    {
+      "group_id": "2850824796|MLM19566313|4fdbc79e9627",
+      "decision_status": "included",
+      "expected": {"preparacion": "neg", "sabor": ["neg", "pos"]},
+      "note": "Sabe bien, pero sin leche o crema queda aguado."
+    },
+    {
+      "group_id": "2857358883|MLM19566313|bd8755b6f29a",
+      "decision_status": "included",
+      "expected": {"dulzor": "neg", "variedad": "pos"},
+      "note": "Capuchino sabroso, pero el alto azucar se objeta para personas diabeticas."
+    },
+    {
+      "group_id": "2881731391|MLM16250244|0fb0df4c900d",
+      "decision_status": "included",
+      "expected": {"aroma": "pos", "dulzor": "neg", "intensidad": "neg"},
+      "note": "Aroma excelente; al cargarlo demasiado se vuelve amargo y feo."
+    },
+    {
+      "group_id": "2896130615|MLM16207894|1296b29abfc5",
+      "decision_status": "included",
+      "expected": {"aroma": "pos", "dulzor": "neu", "sabor": "pos"},
+      "ambiguous_aspects": ["dulzor"],
+      "note": "Sabor y aroma deliciosos; con o sin azucar no juzga por si solo el dulzor."
+    },
+    {
+      "group_id": "324073016|MLM16250244|c1ad72348f6e",
+      "decision_status": "included",
+      "expected": {"intensidad": "pos", "molienda": "neu", "preparacion": "neu", "sabor": "pos"},
+      "note": "Elogia el soluble; molienda y preparacion aparecen en la comparacion con cafe de grano."
+    },
+    {
+      "group_id": "922109119|MLM20999002|71d4136f0107",
+      "decision_status": "included",
+      "expected": {"intensidad": "pos", "sabor": "pos"},
+      "note": "Nunca falla, buen sabor, intensidad ajustable y recomendacion explicita."
+    },
+    {
+      "group_id": "133221348|MLM19543513|bea72605a42e",
+      "decision_status": "included",
+      "expected": {"aroma": "pos", "sabor": "pos"},
+      "note": "Me gusto se aplica tanto a sabor como a olor."
+    },
+    {
+      "group_id": "150859751|MLM19543513|8bf36b936bcc",
+      "decision_status": "included",
+      "expected": {"intensidad": "pos", "sabor": "pos"},
+      "note": "Producto excelente con sabor fuerte y definido."
+    },
+    {
+      "group_id": "1565080888|MLM19543513|dce675f3b00d",
+      "decision_status": "included",
+      "expected": {"aroma": "neg", "intensidad": "neg", "sabor": "neg"},
+      "note": "Sabor muy bajo, casi sin aroma y decision de no volver a comprar."
+    },
+    {
+      "group_id": "1633639724|MLM19543513|eec458da9cdf",
+      "decision_status": "included",
+      "expected": {"aroma": "pos", "intensidad": "pos", "sabor": "pos"},
+      "note": "Excelente producto con aroma suave y sabor intenso valorados favorablemente."
+    },
+    {
+      "group_id": "1645672866|MLM20999002|9262952d8492",
+      "decision_status": "included",
+      "expected": {"presentacion": "pos", "tamano": "pos"},
+      "note": "Le gusta expresamente la presentacion de un kilo."
+    },
+    {
+      "group_id": "2494106382|MLM19543513|49c89f9bc17f",
+      "decision_status": "included",
+      "expected": {"presentacion": "pos", "tamano": "pos"},
+      "note": "Le encanta la presentacion de un kilo y la recomienda."
+    },
+    {
+      "group_id": "2497486967|MLM19663240|2488ab0be933",
+      "decision_status": "included",
+      "expected": {"aroma": "pos", "sabor": "pos"},
+      "note": "Me encanta gobierna aroma y sabor coordinados."
+    },
+    {
+      "group_id": "2500376547|MLM16250244|c08fc2e48e16",
+      "decision_status": "included",
+      "expected": {"aroma": "pos", "sabor": "pos"},
+      "note": "Delicioso, favorito, recomendado y exquisito."
+    },
+    {
+      "group_id": "2521821886|MLM16207863|e367b8c6e6c4",
+      "decision_status": "included",
+      "expected": {"aroma": "pos", "sabor": "pos"},
+      "note": "Rico modifica olor y sabor coordinados."
+    },
+    {
+      "group_id": "2540106137|MLM26912881|9ebc7d542f76",
+      "decision_status": "included",
+      "expected": {"aroma": "pos", "sabor": "pos"},
+      "note": "Aroma y sabor muy ricos."
+    },
+    {
+      "group_id": "2544380255|MLM19544520|0e35b26a656b",
+      "decision_status": "included",
+      "expected": {"preparacion": "pos", "sabor": "pos", "tamano": "pos"},
+      "note": "Facil preparacion, buen sabor y mucho contenido."
+    },
+    {
+      "group_id": "2557032478|MLM16250252|37db96d4092b",
+      "decision_status": "ambiguous",
+      "expected": {},
+      "note": "El fragmento guardado esta truncado antes del termino que origino presentacion; se excluye para no evaluar con contexto incompleto."
+    },
+    {
+      "group_id": "2559919416|MLM16207894|d41c0484e149",
+      "decision_status": "included",
+      "expected": {"originalidad": "pos", "sabor": "pos"},
+      "note": "Delicioso y original."
+    },
+    {
+      "group_id": "2570204378|MLM43007251|40a29e41f2a6",
+      "decision_status": "included",
+      "expected": {"aroma": "pos", "sabor": "pos"},
+      "note": "Buen sabor y aroma."
+    },
+    {
+      "group_id": "2600686553|MLM20999002|dd8d4e48544f",
+      "decision_status": "included",
+      "expected": {"caducidad": "pos", "presentacion": "pos"},
+      "note": "Excelente caducidad, sellado y satisfaccion de compra."
+    },
+    {
+      "group_id": "2614517972|MLM19543513|c4fd41d12328",
+      "decision_status": "ambiguous",
+      "expected": {},
+      "note": "El final 'si, si sabor' es textual y semanticamente ambiguo; no se fuerza etiqueta."
+    },
+    {
+      "group_id": "2647147229|MLM25263480|4aa3fb26dfdd",
+      "decision_status": "included",
+      "expected": {"aroma": "pos", "sabor": "pos"},
+      "note": "Buen sabor y aroma."
+    },
+    {
+      "group_id": "2679549359|MLM25263480|941fe9c832b9",
+      "decision_status": "included",
+      "expected": {"aroma": "pos", "intensidad": "pos", "sabor": "pos"},
+      "note": "Excelente gobierna la enumeracion de sabor, cuerpo y aroma."
+    },
+    {
+      "group_id": "2683487124|MLM26912881|f932cb65128a",
+      "decision_status": "included",
+      "expected": {"aroma": "pos", "sabor": "pos"},
+      "note": "Aroma y sabor muy buenos."
+    },
+    {
+      "group_id": "2715318976|MLM26912881|9cd95b1a92cb",
+      "decision_status": "included",
+      "expected": {"intensidad": "pos", "sabor": "pos"},
+      "note": "Cumplidor y perfil intenso adecuado para cafe negro."
+    },
+    {
+      "group_id": "2721512124|MLM19544520|3bb1b5766203",
+      "decision_status": "included",
+      "expected": {"caducidad": "pos", "presentacion": "pos"},
+      "note": "Bien sellado y buena caducidad."
+    },
+    {
+      "group_id": "2722693948|MLM16250252|72ce48d50a2c",
+      "decision_status": "included",
+      "expected": {"aroma": "pos", "presentacion": "pos", "sabor": "pos", "tamano": "pos"},
+      "note": "Elogios locales para los cuatro aspectos."
+    },
+    {
+      "group_id": "2724444881|MLM19663240|f25d3a60c72e",
+      "decision_status": "included",
+      "expected": {"aroma": "pos", "preparacion": "pos"},
+      "note": "Disolucion facil y buen aroma."
+    },
+    {
+      "group_id": "2727192752|MLM19566313|c4ea2770b104",
+      "decision_status": "included",
+      "expected": {"sabor": "pos", "tamano": "pos"},
+      "note": "Cantidad valorada por su relacion con precio y sabor bueno."
+    },
+    {
+      "group_id": "2735541944|MLM19544520|a48a0e14180e",
+      "decision_status": "included",
+      "expected": {"dulzor": "neg", "sabor": "pos"},
+      "note": "Le gusto el sabor, pero resulto demasiado dulce."
+    },
+    {
+      "group_id": "2785260902|MLM19544520|e8db51b72d42",
+      "decision_status": "included",
+      "expected": {"sabor": "pos", "tamano": "pos"},
+      "note": "Excelente sabor y muy buen tamano."
+    },
+    {
+      "group_id": "2796472462|MLM19544520|ce5b3d90bd3a",
+      "decision_status": "included",
+      "expected": {"dulzor": "pos", "sabor": "pos"},
+      "note": "Buen sabor y ausencia favorable de exceso de dulzor."
+    },
+    {
+      "group_id": "2821271059|MLM26912881|3f754d6ad2e6",
+      "decision_status": "included",
+      "expected": {"aroma": "pos", "intensidad": "pos", "sabor": "pos"},
+      "note": "Buenisimo, intensidad moderada aceptada y aroma excelente."
+    },
+    {
+      "group_id": "2836540916|MLM16207894|12b584d9f7cd",
+      "decision_status": "included",
+      "expected": {"caducidad": "pos", "sabor": "pos"},
+      "note": "Buen sabor y frescura."
+    },
+    {
+      "group_id": "2854837382|MLM19543513|81fa9df5e030",
+      "decision_status": "included",
+      "expected": {"originalidad": "pos", "sabor": "pos"},
+      "note": "Cien por ciento original y delicioso."
+    },
+    {
+      "group_id": "2858924749|MLM20999002|7f74856bddd2",
+      "decision_status": "included",
+      "expected": {"originalidad": "pos", "rendimiento": "pos"},
+      "note": "Se declara original y rinde varias semanas en uso comercial."
+    },
+    {
+      "group_id": "2880118367|MLM25263480|efe5cf14ab28",
+      "decision_status": "included",
+      "expected": {"aroma": "pos", "presentacion": "pos", "sabor": "pos", "tamano": "pos"},
+      "note": "Valoracion favorable explicita de sabor, aroma, empaque y kilo completo."
+    },
+    {
+      "group_id": "2880126984|MLM19544520|16fe705328ca",
+      "decision_status": "included",
+      "expected": {"caducidad": "pos", "sabor": "pos"},
+      "note": "Buena caducidad y buen sabor."
+    },
+    {
+      "group_id": "2884316176|MLM19543513|993a9a759bda",
+      "decision_status": "included",
+      "expected": {"aroma": "pos", "sabor": "pos"},
+      "note": "Delicioso sabor y aroma que llena el lugar."
+    },
+    {
+      "group_id": "2900587836|MLM41148521|8fb0ed32a807",
+      "decision_status": "included",
+      "expected": {"intensidad": "pos", "sabor": "pos"},
+      "note": "Lo considera el mas sabroso y disfruta su sabor intenso."
+    },
+    {
+      "group_id": "2900967528|MLM19663240|ff2e840cea6a",
+      "decision_status": "included",
+      "expected": {"intensidad": "pos", "sabor": "pos"},
+      "note": "Bastante bueno con sabor intenso."
+    },
+    {
+      "group_id": "2904522017|MLM19663240|8fb4a622636c",
+      "decision_status": "included",
+      "expected": {"aroma": "pos", "sabor": "pos"},
+      "note": "Rico sabor, olor y recomendacion total."
+    },
+    {
+      "group_id": "652001496|MLM19544520|13f930c250b4",
+      "decision_status": "included",
+      "expected": {"sabor": "neg", "variedad": "neu"},
+      "note": "En contexto de cafe, que sepa practicamente a chocolate en polvo critica el sabor; chocolate identifica variedad."
+    },
+    {
+      "group_id": "88148319|MLM16207863|c8694db94c6a",
+      "decision_status": "included",
+      "expected": {"aroma": "pos", "sabor": "pos"},
+      "note": "Aroma agradable y gran sabor."
+    },
+    {
+      "group_id": "950572615|MLM16250244|65b54f4dd0c1",
+      "decision_status": "included",
+      "expected": {"aroma": "pos", "sabor": "pos"},
+      "note": "Excelente aroma y sabor."
+    }
+  ]
+}

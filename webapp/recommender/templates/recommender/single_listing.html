@@ -1,0 +1,36 @@
+{% extends "recommender/base.html" %}
+{% block title %}{{ flow.selected_product_name }} · Única opción de compra · Recomendador de productos{% endblock %}
+{% block content %}
+<section class="page-shell listing-page single-listing-page">
+  {% include "recommender/partials/flow_steps.html" with step=4 %}
+  <div class="page-heading single-listing-heading">
+    <h1 class="page-title">Encontramos una sola opción de compra</h1>
+    <p class="page-copy">Este café se vende en una sola publicación, así que no hay nada que comparar ni condiciones de compra que elegir: acá están sus datos.</p>
+  </div>
+
+  <article class="single-listing-card">
+    <div class="single-listing-product">
+      {% include "recommender/partials/product_image.html" with item=selected_product image_class="product-image-detail" eager=True %}
+      <div>
+        <p class="single-listing-label">Única publicación disponible</p>
+        <h2>{{ flow.selected_product_name }}</h2>
+        <p>{{ item.metadata.listing_title|default:item.metadata.seller }}</p>
+      </div>
+    </div>
+    <dl class="single-listing-facts">
+      <div><dt>Precio</dt><dd>{{ item.metadata.price_label }}</dd></div>
+      {% if item.metadata.installments != "No informadas" %}<div><dt>Cuotas</dt><dd>{{ item.metadata.installments }}</dd></div>{% endif %}
+      <div><dt>Garantía</dt><dd>{{ item.metadata.warranty }}</dd></div>
+      <div><dt>Envío</dt><dd>{{ item.metadata.shipping }}</dd></div>
+    </dl>
+    <a class="button button-primary single-listing-button" href="{{ item.metadata.purchase_url }}" target="_blank" rel="noopener noreferrer">
+      {% if item.metadata.purchase_url_is_fallback %}Ver opciones en Mercado Libre{% else %}Ver publicación en Mercado Libre{% endif %}
+      <span aria-hidden="true">↗</span>
+    </a>
+  </article>
+
+  <div class="single-listing-actions">
+    <a class="button button-secondary" href="{% url 'recommender:product-ranking' flow.id %}">{% include "recommender/partials/icon_arrow_left.html" %} Elegir otro producto</a>
+  </div>
+</section>
+{% endblock %}

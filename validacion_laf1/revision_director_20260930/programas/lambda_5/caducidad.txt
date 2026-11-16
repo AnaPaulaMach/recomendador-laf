@@ -1,0 +1,163 @@
+% =====================================================================
+% PROGRAMA LAF 1 - RANKING DE PRODUCTOS
+% Sistema argumentativo de recomendacion de cafe
+% Trabajo Final - Ana Paula Machado - UNSE
+% =====================================================================
+
+% Estrategia de balanceo: D - Contraccion hacia una media a priori
+% Dominio: Cafe
+% Dataset key: mlm_mlm194329_20260528_142014
+% Productos analizados: 18
+
+% Productos y rango de precios:
+%   # 1 mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble  $121-$410  (9 publicaciones)
+%   # 2 mlm20075768_nescafe_clasico_cafe_100_puro_soluble  $265-$265  (1 publicaciones)
+%   # 4 mlm26912881_cafe_blason_espresso_robusto_tostado_y  $277-$277  (1 publicaciones)
+%   # 5 mlm16250252_nescafe_clasico_de_cafe_sin_gluten  $255-$1,465  (11 publicaciones)
+%   # 6 mlm25263480_cafe_gourmet_tostado_y_molido_americano  $268-$590  (3 publicaciones)
+%   # 7 mlm19544520_cafe_capuccino_moka_members_mark_1  $284-$790  (26 publicaciones)
+%   # 8 mlm16250244_nescafe_taster_s_choice_caramel_dark  $139-$447  (7 publicaciones)
+%   # 9 mlm23633481_nescafe_clasico_ice_cafe_soluble_en  $165-$447  (12 publicaciones)
+%   #10 mlm16207863_nescafe_cafe_de_olla_100_cafe      $77-$400  (11 publicaciones)
+%   #11 mlm16250253_nescafe_decaf_cafe_100_puro_soluble  $132-$390  (6 publicaciones)
+%   #12 mlm41148521_cafe_gourmet_molido_espresso_400g_blason  $120-$482  (7 publicaciones)
+%   #13 mlm43007251_cafe_molido_100_arabico_gourmet_americano  $245-$942  (6 publicaciones)
+%   #15 mlm19663240_nescafe_clasico_cafe_100_puro_soluble  $179-$410  (16 publicaciones)
+%   #16 mlm16207890_nescafe_reserva_verarica_cafe_100_soluble  $182-$447  (8 publicaciones)
+%   #17 mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo  $288-$645  (26 publicaciones)
+%   #18 mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional  $484-$799  (6 publicaciones)
+%   #19 mlm27068249_tripack_juan_valdez_cafe_soluble_95gr  $473-$473  (1 publicaciones)
+%   #20 mlm19543513_cafe_molido_la_parroquia_puro_1    $280-$790  (12 publicaciones)
+
+% Preferencias del usuario:
+%   sabor: 0.67
+%   aroma: 0.67
+%   intensidad: 0.67
+%   dulzor: 0.67
+%   tueste: 0.67
+%   acidez: 0.67
+%   presentacion: 0.67
+%   rendimiento: 0.67
+%   variedad: 0.67
+%   preparacion: 0.67
+%   molienda: 0.67
+%   originalidad: 0.67
+%   tamano: 0.67
+%   caducidad: 0.67
+
+% Estructura argumentativa LAF 1:
+%   resena -> aspecto -> dimension -> recomendar
+%   beta de reglas = 1.00 (neutral); la preferencia proviene solo del usuario
+%   sensorial: sabor, aroma, intensidad, dulzor, tueste, acidez
+%   valor: rendimiento, tamano
+%   producto: originalidad, presentacion, variedad
+%   elaboracion: preparacion, molienda
+%   conservacion: caducidad
+
+% ============================================================
+% HECHOS - un hecho por (producto, aspecto, polaridad)
+% Variable X identifica al producto.
+% ============================================================
+
+% Nescafé Reserva Xiapan Café 100% Soluble
+% n=1
+resenaPositivaCaducidad(mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble). {0.49}
+% n=1
+resenaNegativaCaducidad(mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble). {0.51}
+
+% Nescafé Clásico Café 100% Puro Soluble B
+% n=9
+resenaPositivaCaducidad(mlm20075768_nescafe_clasico_cafe_100_puro_soluble). {0.71}
+
+% Café Blasón Espresso Robusto Tostado Y M
+% n=7
+resenaPositivaCaducidad(mlm26912881_cafe_blason_espresso_robusto_tostado_y). {0.66}
+
+% Nescafé Clásico de café sin gluten con 4
+% n=6
+resenaPositivaCaducidad(mlm16250252_nescafe_clasico_de_cafe_sin_gluten). {0.65}
+
+% Café Gourmet Tostado y Molido Americano 
+% n=9
+resenaPositivaCaducidad(mlm25263480_cafe_gourmet_tostado_y_molido_americano). {0.66}
+
+% Cafe Capuccino Moka Members Mark 1.8 Kg 
+% n=5
+resenaPositivaCaducidad(mlm19544520_cafe_capuccino_moka_members_mark_1). {0.64}
+
+% Nescafé Taster's Choice Caramel Dark Cho
+% n=4
+resenaPositivaCaducidad(mlm16250244_nescafe_taster_s_choice_caramel_dark). {0.60}
+
+% Nescafé Clásico ICE Café Soluble en Frío
+% n=4
+resenaPositivaCaducidad(mlm23633481_nescafe_clasico_ice_cafe_soluble_en). {0.61}
+
+% Nescafé Café de Olla 100% Café Soluble S
+% n=2
+resenaPositivaCaducidad(mlm16207863_nescafe_cafe_de_olla_100_cafe). {0.56}
+
+% Nescafé Decaf Café 100% Puro Soluble Des
+% n=3
+resenaPositivaCaducidad(mlm16250253_nescafe_decaf_cafe_100_puro_soluble). {0.58}
+
+% Café Gourmet Molido Espresso 400g Blasón
+% n=6
+resenaPositivaCaducidad(mlm41148521_cafe_gourmet_molido_espresso_400g_blason). {0.62}
+
+% Café Molido 100% Arábico Gourmet America
+
+% Nescafé Clásico Café 100% Puro Soluble F
+% n=9
+resenaPositivaCaducidad(mlm19663240_nescafe_clasico_cafe_100_puro_soluble). {0.68}
+
+% Nescafé Reserva Verarica Café 100% Solub
+
+% Cafe Capuccino Vainilla Francesa En Polv
+% n=5
+resenaPositivaCaducidad(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo). {0.61}
+
+% Café Soluble Nescafé Clásico Nestlé Prof
+% n=6
+resenaPositivaCaducidad(mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional). {0.63}
+
+% Tripack Juan Valdez Café Soluble 95gr 3 
+
+% Café Molido La Parroquia Puro 1 Kg Tradi
+% n=11
+resenaPositivaCaducidad(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.65}
+% n=2
+resenaNegativaCaducidad(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.35}
+
+% ============================================================
+% REGLAS DE AGREGACION POR ASPECTO
+% ============================================================
+
+caducidadBueno(X) :- resenaPositivaCaducidad(X). {0.85}
+~caducidadBueno(X) :- resenaNegativaCaducidad(X). {0.85}
+
+% ============================================================
+% REGLAS INTERMEDIAS POR DIMENSION
+% Cada dimension agrupa aspectos relacionados antes de recomendar.
+% ============================================================
+
+% Conservacion
+conservacionBueno(X) :- caducidadBueno(X). {0.85}
+~conservacionBueno(X) :- ~caducidadBueno(X). {0.92}
+
+% ============================================================
+% REGLAS DE RECOMENDACION
+% X = producto candidato
+% ============================================================
+
+recomendar(X) :- conservacionBueno(X). {0.78}
+~recomendar(X) :- ~conservacionBueno(X). {0.92}
+
+% ============================================================
+% ============================================================
+% Atributo 1 - Confianza:
+%   producto = X*Y     suma = X+Y-X*Y     debilitamiento = (X-Y)/(1-Y) si X>=Y, sino 0
+% Atributo 2 - Preferencia del usuario:
+%   producto = min(X,Y)     suma = min(X+Y,1)     debilitamiento = max(X-Y,0)
+%
+% Fuente: Budan et al. (2017) IJAR 82:242-269, Ejemplo 1 pp.249-250

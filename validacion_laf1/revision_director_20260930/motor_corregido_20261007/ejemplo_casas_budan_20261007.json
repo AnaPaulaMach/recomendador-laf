@@ -1,0 +1,781 @@
+{
+ "nota": "Ejemplo 1 de Budan et al. 2017 (arXiv pp.14-16), intervalos fijados como Fig.7 (vecinos A=0.5, vecinos B=0), r1-r12 casa A y r13-r21 casa B. Valores (trust, preference): mu | delta.",
+ "nodos": {
+  "basicServices(houseA)": {
+   "motor_actual_8088": [
+    [
+     0.75,
+     0.95
+    ],
+    [
+     0.75,
+     0.95
+    ]
+   ],
+   "motor_delta_8089": [
+    [
+     0.75,
+     0.95
+    ],
+    [
+     0.75,
+     0.95
+    ]
+   ],
+   "fig7_paper": null
+  },
+  "buy(houseA)": {
+   "motor_actual_8088": [
+    [
+     1.0,
+     1.0
+    ],
+    [
+     1.0,
+     0.5
+    ]
+   ],
+   "motor_delta_8089": [
+    [
+     1.0,
+     1.0
+    ],
+    [
+     1.0,
+     0.5
+    ]
+   ],
+   "fig7_paper": [
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     0.5
+    ]
+   ]
+  },
+  "electricalProblem(houseA)": {
+   "motor_actual_8088": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "motor_delta_8089": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "fig7_paper": null
+  },
+  "gangOperate(houseA)": {
+   "motor_actual_8088": [
+    [
+     0.5,
+     1.0
+    ],
+    [
+     0.492,
+     0.0
+    ]
+   ],
+   "motor_delta_8089": [
+    [
+     0.5,
+     1.0
+    ],
+    [
+     0.5,
+     0.0
+    ]
+   ],
+   "fig7_paper": null
+  },
+  "goodArea(houseA)": {
+   "motor_actual_8088": [
+    [
+     0.747,
+     1.0
+    ],
+    [
+     0.711,
+     0.0
+    ]
+   ],
+   "motor_delta_8089": [
+    [
+     0.747,
+     1.0
+    ],
+    [
+     0.719,
+     1.0
+    ]
+   ],
+   "fig7_paper": [
+    [
+     0.74,
+     1
+    ],
+    [
+     0.68,
+     1
+    ]
+   ]
+  },
+  "goodLight(houseA)": {
+   "motor_actual_8088": [
+    [
+     1.0,
+     0.4
+    ],
+    [
+     1.0,
+     0.4
+    ]
+   ],
+   "motor_delta_8089": [
+    [
+     1.0,
+     0.4
+    ],
+    [
+     1.0,
+     0.4
+    ]
+   ],
+   "fig7_paper": null
+  },
+  "goodNeighbors(houseA)": {
+   "motor_actual_8088": [
+    [
+     0.75,
+     0.9
+    ],
+    [
+     0.75,
+     0.9
+    ]
+   ],
+   "motor_delta_8089": [
+    [
+     0.75,
+     0.9
+    ],
+    [
+     0.75,
+     0.9
+    ]
+   ],
+   "fig7_paper": null
+  },
+  "goodOrientation(houseA)": {
+   "motor_actual_8088": [
+    [
+     1.0,
+     0.4
+    ],
+    [
+     1.0,
+     0.4
+    ]
+   ],
+   "motor_delta_8089": [
+    [
+     1.0,
+     0.4
+    ],
+    [
+     1.0,
+     0.4
+    ]
+   ],
+   "fig7_paper": null
+  },
+  "goodVentilation(houseA)": {
+   "motor_actual_8088": [
+    [
+     1.0,
+     0.4
+    ],
+    [
+     1.0,
+     0.4
+    ]
+   ],
+   "motor_delta_8089": [
+    [
+     1.0,
+     0.4
+    ],
+    [
+     1.0,
+     0.4
+    ]
+   ],
+   "fig7_paper": null
+  },
+  "highCostRenovation(houseA)": {
+   "motor_actual_8088": [
+    [
+     0.25,
+     0.5
+    ],
+    [
+     0.25,
+     0.5
+    ]
+   ],
+   "motor_delta_8089": [
+    [
+     0.25,
+     0.5
+    ],
+    [
+     0.25,
+     0.5
+    ]
+   ],
+   "fig7_paper": null
+  },
+  "insecureArea(houseA)": {
+   "motor_actual_8088": [
+    [
+     0.25,
+     1.0
+    ],
+    [
+     0.2,
+     0.0
+    ]
+   ],
+   "motor_delta_8089": [
+    [
+     0.25,
+     1.0
+    ],
+    [
+     0.2,
+     0.0
+    ]
+   ],
+   "fig7_paper": null
+  },
+  "quietArea(houseA)": {
+   "motor_actual_8088": [
+    [
+     0.562,
+     0.9
+    ],
+    [
+     0.562,
+     0.9
+    ]
+   ],
+   "motor_delta_8089": [
+    [
+     0.562,
+     0.9
+    ],
+    [
+     0.562,
+     0.9
+    ]
+   ],
+   "fig7_paper": null
+  },
+  "reinforcePolice(houseA)": {
+   "motor_actual_8088": [
+    [
+     0.25,
+     1.0
+    ],
+    [
+     0.25,
+     1.0
+    ]
+   ],
+   "motor_delta_8089": [
+    [
+     0.25,
+     1.0
+    ],
+    [
+     0.25,
+     1.0
+    ]
+   ],
+   "fig7_paper": null
+  },
+  "roofProblem(houseA)": {
+   "motor_actual_8088": [
+    [
+     0.5,
+     0.6
+    ],
+    [
+     0.5,
+     0.6
+    ]
+   ],
+   "motor_delta_8089": [
+    [
+     0.5,
+     0.6
+    ],
+    [
+     0.5,
+     0.6
+    ]
+   ],
+   "fig7_paper": null
+  },
+  "~buy(houseA)": {
+   "motor_actual_8088": [
+    [
+     0.125,
+     0.5
+    ],
+    [
+     0.0,
+     0.0
+    ]
+   ],
+   "motor_delta_8089": [
+    [
+     0.125,
+     0.5
+    ],
+    [
+     0.0,
+     0.0
+    ]
+   ],
+   "fig7_paper": null
+  },
+  "~gangOperate(houseA)": {
+   "motor_actual_8088": [
+    [
+     0.016,
+     1.0
+    ],
+    [
+     0.0,
+     0.0
+    ]
+   ],
+   "motor_delta_8089": [
+    [
+     0.0,
+     1.0
+    ],
+    [
+     0.0,
+     0.0
+    ]
+   ],
+   "fig7_paper": null
+  },
+  "~goodArea(houseA)": {
+   "motor_actual_8088": [
+    [
+     0.125,
+     1.0
+    ],
+    [
+     0.0,
+     0.0
+    ]
+   ],
+   "motor_delta_8089": [
+    [
+     0.1,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ]
+   ],
+   "fig7_paper": [
+    [
+     0.2,
+     0
+    ],
+    [
+     0,
+     0
+    ]
+   ]
+  },
+  "~insecureArea(houseA)": {
+   "motor_actual_8088": [
+    [
+     0.062,
+     1.0
+    ],
+    [
+     0.0,
+     0.0
+    ]
+   ],
+   "motor_delta_8089": [
+    [
+     0.062,
+     1.0
+    ],
+    [
+     0.0,
+     0.0
+    ]
+   ],
+   "fig7_paper": null
+  },
+  "adequateFooting(houseB)": {
+   "motor_actual_8088": [
+    [
+     1.0,
+     0.7
+    ],
+    [
+     1.0,
+     0.7
+    ]
+   ],
+   "motor_delta_8089": [
+    [
+     1.0,
+     0.7
+    ],
+    [
+     1.0,
+     0.7
+    ]
+   ],
+   "fig7_paper": null
+  },
+  "buy(houseB)": {
+   "motor_actual_8088": [
+    [
+     1.0,
+     0.8
+    ],
+    [
+     1.0,
+     0.3
+    ]
+   ],
+   "motor_delta_8089": [
+    [
+     1.0,
+     0.8
+    ],
+    [
+     1.0,
+     0.3
+    ]
+   ],
+   "fig7_paper": [
+    [
+     1,
+     0.85
+    ],
+    [
+     1,
+     0.35
+    ]
+   ]
+  },
+  "goodArea(houseB)": {
+   "motor_actual_8088": [
+    [
+     0.438,
+     1.0
+    ],
+    [
+     0.0,
+     0.05
+    ]
+   ],
+   "motor_delta_8089": [
+    [
+     0.438,
+     1.0
+    ],
+    [
+     0.0,
+     0.05
+    ]
+   ],
+   "fig7_paper": [
+    [
+     0.44,
+     1
+    ],
+    [
+     0,
+     0.05
+    ]
+   ]
+  },
+  "goodConstruction(houseB)": {
+   "motor_actual_8088": [
+    [
+     1.0,
+     1.0
+    ],
+    [
+     1.0,
+     1.0
+    ]
+   ],
+   "motor_delta_8089": [
+    [
+     1.0,
+     1.0
+    ],
+    [
+     1.0,
+     1.0
+    ]
+   ],
+   "fig7_paper": null
+  },
+  "lowPollution(houseB)": {
+   "motor_actual_8088": [
+    [
+     0.5,
+     0.85
+    ],
+    [
+     0.5,
+     0.85
+    ]
+   ],
+   "motor_delta_8089": [
+    [
+     0.5,
+     0.85
+    ],
+    [
+     0.5,
+     0.85
+    ]
+   ],
+   "fig7_paper": null
+  },
+  "precariousServices(houseB)": {
+   "motor_actual_8088": [
+    [
+     0.75,
+     0.95
+    ],
+    [
+     0.75,
+     0.95
+    ]
+   ],
+   "motor_delta_8089": [
+    [
+     0.75,
+     0.95
+    ],
+    [
+     0.75,
+     0.95
+    ]
+   ],
+   "fig7_paper": null
+  },
+  "propertyTaxDebt(houseB)": {
+   "motor_actual_8088": [
+    [
+     0.75,
+     0.5
+    ],
+    [
+     0.75,
+     0.5
+    ]
+   ],
+   "motor_delta_8089": [
+    [
+     0.75,
+     0.5
+    ],
+    [
+     0.75,
+     0.5
+    ]
+   ],
+   "fig7_paper": null
+  },
+  "qualityMaterials(houseB)": {
+   "motor_actual_8088": [
+    [
+     1.0,
+     0.6
+    ],
+    [
+     1.0,
+     0.6
+    ]
+   ],
+   "motor_delta_8089": [
+    [
+     1.0,
+     0.6
+    ],
+    [
+     1.0,
+     0.6
+    ]
+   ],
+   "fig7_paper": null
+  },
+  "reinforcePolice(houseB)": {
+   "motor_actual_8088": [
+    [
+     0.0,
+     1.0
+    ],
+    [
+     0.0,
+     1.0
+    ]
+   ],
+   "motor_delta_8089": [
+    [
+     0.0,
+     1.0
+    ],
+    [
+     0.0,
+     1.0
+    ]
+   ],
+   "fig7_paper": null
+  },
+  "safeArea(houseB)": {
+   "motor_actual_8088": [
+    [
+     0.5,
+     1.0
+    ],
+    [
+     0.5,
+     1.0
+    ]
+   ],
+   "motor_delta_8089": [
+    [
+     0.5,
+     1.0
+    ],
+    [
+     0.5,
+     1.0
+    ]
+   ],
+   "fig7_paper": null
+  },
+  "solidFoundation(houseB)": {
+   "motor_actual_8088": [
+    [
+     1.0,
+     0.7
+    ],
+    [
+     1.0,
+     0.7
+    ]
+   ],
+   "motor_delta_8089": [
+    [
+     1.0,
+     0.7
+    ],
+    [
+     1.0,
+     0.7
+    ]
+   ],
+   "fig7_paper": null
+  },
+  "~buy(houseB)": {
+   "motor_actual_8088": [
+    [
+     0.562,
+     0.5
+    ],
+    [
+     0.0,
+     0.0
+    ]
+   ],
+   "motor_delta_8089": [
+    [
+     0.562,
+     0.5
+    ],
+    [
+     0.0,
+     0.0
+    ]
+   ],
+   "fig7_paper": [
+    [
+     0.56,
+     0.5
+    ],
+    [
+     0,
+     0
+    ]
+   ]
+  },
+  "~goodArea(houseB)": {
+   "motor_actual_8088": [
+    [
+     0.562,
+     0.95
+    ],
+    [
+     0.222,
+     0.0
+    ]
+   ],
+   "motor_delta_8089": [
+    [
+     0.562,
+     0.95
+    ],
+    [
+     0.222,
+     0.0
+    ]
+   ],
+   "fig7_paper": [
+    [
+     0.56,
+     0.95
+    ],
+    [
+     0.21,
+     0
+    ]
+   ]
+  }
+ }
+}

@@ -1,0 +1,2175 @@
+{
+ "dataset_key": "mlm_mlm194329_20260528_142014",
+ "generated_at": "2026-10-14T20:38:23.463022",
+ "laf_api": "http://localhost:8088/api/graph",
+ "control_sintetico_b": [
+  0.45
+ ],
+ "inputs_sha256": "a1cffee71fbb3f11a7c3474ec5ff0a8c6b2255dd1ce93473ba7f94b8a5c88152",
+ "bateria_oficial": "validacion_laf1\\salidas\\battery_multicriterio_mlm194329_20260528_142014.json",
+ "bateria_sha256": "4589204ef2c8ac4567ee3d5332c01655a3e7c5879944eb2953fdf8aae84a83a3",
+ "trust_sha256": "834408a769e6f71acb1ea6052717c3a130a5961edfe198cd9ef571cb038c34b8",
+ "generador_sha256": "0065392c97ede34d0c871f524b2a56bab6245fa68078843b61cd0e1b62420599",
+ "config_sha256": "05968e84b55c2c2c78d1f3c94ee50db055f7a0d3990aa19721b83a3055665781",
+ "formula": "alpha = (W+ + lambda*pi)/(W + lambda); negativo usa 1-pi",
+ "perfiles": {
+  "neutro": {
+   "sabor": 0.67,
+   "aroma": 0.67,
+   "intensidad": 0.67,
+   "dulzor": 0.67,
+   "tueste": 0.67,
+   "acidez": 0.67,
+   "presentacion": 0.67,
+   "rendimiento": 0.67,
+   "variedad": 0.67,
+   "preparacion": 0.67,
+   "molienda": 0.67,
+   "originalidad": 0.67,
+   "tamano": 0.67,
+   "caducidad": 0.67
+  },
+  "solo_sabor": {
+   "sabor": 1.0,
+   "aroma": 0.0,
+   "intensidad": 0.0,
+   "dulzor": 0.0,
+   "tueste": 0.0,
+   "acidez": 0.0,
+   "presentacion": 0.0,
+   "rendimiento": 0.0,
+   "variedad": 0.0,
+   "preparacion": 0.0,
+   "molienda": 0.0,
+   "originalidad": 0.0,
+   "tamano": 0.0,
+   "caducidad": 0.0
+  }
+ },
+ "nombres": {
+  "mlm26912881_cafe_blason_espresso_robusto_tostado_y": "Café Blasón Espresso Robusto Tostado Y Molido 1kg",
+  "mlm25263480_cafe_gourmet_tostado_y_molido_americano": "Café Gourmet Tostado y Molido Americano Blasón 1 kg",
+  "mlm19544520_cafe_capuccino_moka_members_mark_1": "Cafe Capuccino Moka Members Mark 1.8 Kg en polvo",
+  "mlm23633481_nescafe_clasico_ice_cafe_soluble_en": "Nescafé Clásico ICE Café Soluble en Frío Frasco de 170gr",
+  "mlm16250253_nescafe_decaf_cafe_100_puro_soluble": "Nescafé Decaf Café 100% Puro Soluble Descafeinado | Granos Arábica y Robusta en Frasco de 170g",
+  "mlm41148521_cafe_gourmet_molido_espresso_400g_blason": "Café Gourmet Molido Espresso 400g Blasón",
+  "mlm19663240_nescafe_clasico_cafe_100_puro_soluble": "Nescafé Clásico Café 100% Puro Soluble Frasco de 200g",
+  "mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo": "Cafe Capuccino Vainilla Francesa En Polvo Members Mark 1.8 Kg",
+  "mlm27068249_tripack_juan_valdez_cafe_soluble_95gr": "Tripack Juan Valdez Café Soluble 95gr 3 Sabores",
+  "mlm19543513_cafe_molido_la_parroquia_puro_1": "Café Molido La Parroquia Puro 1 Kg Tradicional Gourmet",
+  "mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble": "Nescafé Reserva Xiapan Café 100% Soluble Liofilizado de Origen Chiapaneco con Notas Amaderadas en Frasco de 180g",
+  "mlm20075768_nescafe_clasico_cafe_100_puro_soluble": "Nescafé Clásico Café 100% Puro Soluble Bolsa de 400g",
+  "mlm16250252_nescafe_clasico_de_cafe_sin_gluten": "Nescafé Clásico de café sin gluten con 400g",
+  "mlm16250244_nescafe_taster_s_choice_caramel_dark": "Nescafé Taster's Choice Caramel Dark Chocolate Café 100% Puro Soluble Frasco de 100g",
+  "mlm16207863_nescafe_cafe_de_olla_100_cafe": "Nescafé Café de Olla 100% Café Soluble Sabor Canela y Piloncillo | Granos Robusta Frasco de 170g",
+  "mlm43007251_cafe_molido_100_arabico_gourmet_americano": "Café Molido 100% Arábico Gourmet Americano 900g Blasón",
+  "mlm16207890_nescafe_reserva_verarica_cafe_100_soluble": "Nescafé Reserva Verarica Café 100% Soluble Liofilizado Origen Veracruzano con Notas Afrutadas en Frasco de 180g",
+  "mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional": "Café Soluble Nescafé Clásico Nestlé Professional Bote de 1Kg"
+ },
+ "configuraciones": {
+  "lambda_0_pi_0.5": {
+   "lambda": 0.0,
+   "pi": 0.5,
+   "hechos_D": 259,
+   "rankings": {
+    "neutro": [
+     [
+      "mlm41148521_cafe_gourmet_molido_espresso_400g_blason",
+      0.580762543234995
+     ],
+     [
+      "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+      0.5728118409244207
+     ],
+     [
+      "mlm19543513_cafe_molido_la_parroquia_puro_1",
+      0.5159361693267257
+     ],
+     [
+      "mlm16250244_nescafe_taster_s_choice_caramel_dark",
+      0.5004673542641203
+     ],
+     [
+      "mlm25263480_cafe_gourmet_tostado_y_molido_americano",
+      0.4967770910694584
+     ],
+     [
+      "mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble",
+      0.44467586325486796
+     ],
+     [
+      "mlm19544520_cafe_capuccino_moka_members_mark_1",
+      0.44008221086724925
+     ],
+     [
+      "mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo",
+      0.4318799259140673
+     ],
+     [
+      "mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional",
+      0.4172502150958286
+     ],
+     [
+      "mlm16250253_nescafe_decaf_cafe_100_puro_soluble",
+      0.4088135714285714
+     ],
+     [
+      "mlm23633481_nescafe_clasico_ice_cafe_soluble_en",
+      0.38745674703550753
+     ],
+     [
+      "mlm16207863_nescafe_cafe_de_olla_100_cafe",
+      0.3788056227458357
+     ],
+     [
+      "mlm19663240_nescafe_clasico_cafe_100_puro_soluble",
+      0.37329571428571434
+     ],
+     [
+      "mlm16250252_nescafe_clasico_de_cafe_sin_gluten",
+      0.36403479753066503
+     ],
+     [
+      "mlm27068249_tripack_juan_valdez_cafe_soluble_95gr",
+      0.3622792087965034
+     ],
+     [
+      "mlm43007251_cafe_molido_100_arabico_gourmet_americano",
+      0.3454885714285714
+     ],
+     [
+      "mlm16207890_nescafe_reserva_verarica_cafe_100_soluble",
+      0.3349003122973848
+     ],
+     [
+      "mlm20075768_nescafe_clasico_cafe_100_puro_soluble",
+      0.3212381420458621
+     ]
+    ],
+    "solo_sabor": [
+     [
+      "mlm16250253_nescafe_decaf_cafe_100_puro_soluble",
+      0.6885
+     ],
+     [
+      "mlm19663240_nescafe_clasico_cafe_100_puro_soluble",
+      0.6885
+     ],
+     [
+      "mlm25263480_cafe_gourmet_tostado_y_molido_americano",
+      0.6885
+     ],
+     [
+      "mlm41148521_cafe_gourmet_molido_espresso_400g_blason",
+      0.6885
+     ],
+     [
+      "mlm43007251_cafe_molido_100_arabico_gourmet_americano",
+      0.6885
+     ],
+     [
+      "mlm16207890_nescafe_reserva_verarica_cafe_100_soluble",
+      0.6805143721633888
+     ],
+     [
+      "mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo",
+      0.6805143721633888
+     ],
+     [
+      "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+      0.6805143721633888
+     ],
+     [
+      "mlm19544520_cafe_capuccino_moka_members_mark_1",
+      0.6723906408952187
+     ],
+     [
+      "mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional",
+      0.6723906408952187
+     ],
+     [
+      "mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble",
+      0.6641251924063623
+     ],
+     [
+      "mlm16250244_nescafe_taster_s_choice_caramel_dark",
+      0.6641251924063623
+     ],
+     [
+      "mlm19543513_cafe_molido_la_parroquia_puro_1",
+      0.6557142857142857
+     ],
+     [
+      "mlm27068249_tripack_juan_valdez_cafe_soluble_95gr",
+      0.6557142857142857
+     ],
+     [
+      "mlm16207863_nescafe_cafe_de_olla_100_cafe",
+      0.647154046997389
+     ],
+     [
+      "mlm16250252_nescafe_clasico_de_cafe_sin_gluten",
+      0.647154046997389
+     ],
+     [
+      "mlm23633481_nescafe_clasico_ice_cafe_soluble_en",
+      0.6205364806866954
+     ],
+     [
+      "mlm20075768_nescafe_clasico_cafe_100_puro_soluble",
+      0.5727824620573355
+     ]
+    ]
+   },
+   "comparacion_vigente": {
+    "neutro": {
+     "ganador": "mlm41148521_cafe_gourmet_molido_espresso_400g_blason",
+     "top3": [
+      "mlm41148521_cafe_gourmet_molido_espresso_400g_blason",
+      "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+      "mlm19543513_cafe_molido_la_parroquia_puro_1"
+     ],
+     "rho_orden": 0.9607843137254902,
+     "productos_cambian_puesto": 12,
+     "ganador_igual": false,
+     "top3_mismo_conjunto": false,
+     "top3_mismo_orden": false,
+     "max_delta_score": 0.22920040188022434,
+     "margen_primero_segundo": 0.007950702310574265
+    },
+    "solo_sabor": {
+     "ganador": "mlm16250253_nescafe_decaf_cafe_100_puro_soluble",
+     "top3": [
+      "mlm16250253_nescafe_decaf_cafe_100_puro_soluble",
+      "mlm19663240_nescafe_clasico_cafe_100_puro_soluble",
+      "mlm25263480_cafe_gourmet_tostado_y_molido_americano"
+     ],
+     "rho_orden": 0.4179566563467492,
+     "productos_cambian_puesto": 17,
+     "ganador_igual": false,
+     "top3_mismo_conjunto": false,
+     "top3_mismo_orden": false,
+     "max_delta_score": 0.18501607310055873,
+     "margen_primero_segundo": 0.0
+    }
+   }
+  },
+  "lambda_2_pi_0.5": {
+   "lambda": 2.0,
+   "pi": 0.5,
+   "hechos_D": 259,
+   "rankings": {
+    "neutro": [
+     [
+      "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+      0.4690349217370424
+     ],
+     [
+      "mlm41148521_cafe_gourmet_molido_espresso_400g_blason",
+      0.42356610941140405
+     ],
+     [
+      "mlm19543513_cafe_molido_la_parroquia_puro_1",
+      0.40927186067916044
+     ],
+     [
+      "mlm16250244_nescafe_taster_s_choice_caramel_dark",
+      0.3936787141702146
+     ],
+     [
+      "mlm25263480_cafe_gourmet_tostado_y_molido_americano",
+      0.3873920356601394
+     ],
+     [
+      "mlm19544520_cafe_capuccino_moka_members_mark_1",
+      0.3729767874716727
+     ],
+     [
+      "mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo",
+      0.3654266279470087
+     ],
+     [
+      "mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble",
+      0.343283432441957
+     ],
+     [
+      "mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional",
+      0.33250188449346163
+     ],
+     [
+      "mlm19663240_nescafe_clasico_cafe_100_puro_soluble",
+      0.31497988571428576
+     ],
+     [
+      "mlm16250252_nescafe_clasico_de_cafe_sin_gluten",
+      0.2895464658311328
+     ],
+     [
+      "mlm16250253_nescafe_decaf_cafe_100_puro_soluble",
+      0.28769379285714286
+     ],
+     [
+      "mlm16207863_nescafe_cafe_de_olla_100_cafe",
+      0.2767244802774657
+     ],
+     [
+      "mlm23633481_nescafe_clasico_ice_cafe_soluble_en",
+      0.268013555396049
+     ],
+     [
+      "mlm27068249_tripack_juan_valdez_cafe_soluble_95gr",
+      0.26526173532327596
+     ],
+     [
+      "mlm20075768_nescafe_clasico_cafe_100_puro_soluble",
+      0.2571744182772266
+     ],
+     [
+      "mlm43007251_cafe_molido_100_arabico_gourmet_americano",
+      0.24474280714285718
+     ],
+     [
+      "mlm16207890_nescafe_reserva_verarica_cafe_100_soluble",
+      0.23620409740328163
+     ]
+    ],
+    "solo_sabor": [
+     [
+      "mlm25263480_cafe_gourmet_tostado_y_molido_americano",
+      0.67473
+     ],
+     [
+      "mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo",
+      0.6723906408952187
+     ],
+     [
+      "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+      0.6723906408952187
+     ],
+     [
+      "mlm41148521_cafe_gourmet_molido_espresso_400g_blason",
+      0.667845
+     ],
+     [
+      "mlm19544520_cafe_capuccino_moka_members_mark_1",
+      0.6641251924063623
+     ],
+     [
+      "mlm19663240_nescafe_clasico_cafe_100_puro_soluble",
+      0.66096
+     ],
+     [
+      "mlm16250244_nescafe_taster_s_choice_caramel_dark",
+      0.6557142857142857
+     ],
+     [
+      "mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble",
+      0.647154046997389
+     ],
+     [
+      "mlm19543513_cafe_molido_la_parroquia_puro_1",
+      0.647154046997389
+     ],
+     [
+      "mlm16207890_nescafe_reserva_verarica_cafe_100_soluble",
+      0.6384404636459431
+     ],
+     [
+      "mlm16250253_nescafe_decaf_cafe_100_puro_soluble",
+      0.6334200000000001
+     ],
+     [
+      "mlm43007251_cafe_molido_100_arabico_gourmet_americano",
+      0.6334200000000001
+     ],
+     [
+      "mlm16207863_nescafe_cafe_de_olla_100_cafe",
+      0.6295693779904306
+     ],
+     [
+      "mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional",
+      0.6295693779904306
+     ],
+     [
+      "mlm27068249_tripack_juan_valdez_cafe_soluble_95gr",
+      0.6295693779904306
+     ],
+     [
+      "mlm16250252_nescafe_clasico_de_cafe_sin_gluten",
+      0.6019672131147541
+     ],
+     [
+      "mlm23633481_nescafe_clasico_ice_cafe_soluble_en",
+      0.5826948775055679
+     ],
+     [
+      "mlm20075768_nescafe_clasico_cafe_100_puro_soluble",
+      0.5311630625365285
+     ]
+    ]
+   },
+   "comparacion_vigente": {
+    "neutro": {
+     "ganador": "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+     "top3": [
+      "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+      "mlm41148521_cafe_gourmet_molido_espresso_400g_blason",
+      "mlm19543513_cafe_molido_la_parroquia_puro_1"
+     ],
+     "rho_orden": 0.9814241486068112,
+     "productos_cambian_puesto": 9,
+     "ganador_igual": true,
+     "top3_mismo_conjunto": false,
+     "top3_mismo_orden": false,
+     "max_delta_score": 0.116994692233648,
+     "margen_primero_segundo": 0.045468812325638375
+    },
+    "solo_sabor": {
+     "ganador": "mlm25263480_cafe_gourmet_tostado_y_molido_americano",
+     "top3": [
+      "mlm25263480_cafe_gourmet_tostado_y_molido_americano",
+      "mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo",
+      "mlm26912881_cafe_blason_espresso_robusto_tostado_y"
+     ],
+     "rho_orden": 0.913312693498452,
+     "productos_cambian_puesto": 16,
+     "ganador_igual": false,
+     "top3_mismo_conjunto": false,
+     "top3_mismo_orden": false,
+     "max_delta_score": 0.13982923921792384,
+     "margen_primero_segundo": 0.0023393591047813356
+    }
+   }
+  },
+  "lambda_5_pi_0.5": {
+   "lambda": 5.0,
+   "pi": 0.5,
+   "hechos_D": 259,
+   "rankings": {
+    "neutro": [
+     [
+      "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+      0.4143238286959527
+     ],
+     [
+      "mlm41148521_cafe_gourmet_molido_espresso_400g_blason",
+      0.37990450301605316
+     ],
+     [
+      "mlm19543513_cafe_molido_la_parroquia_puro_1",
+      0.34187713401186554
+     ],
+     [
+      "mlm16250244_nescafe_taster_s_choice_caramel_dark",
+      0.3387101311445828
+     ],
+     [
+      "mlm25263480_cafe_gourmet_tostado_y_molido_americano",
+      0.3386949814592443
+     ],
+     [
+      "mlm19544520_cafe_capuccino_moka_members_mark_1",
+      0.32803166161227254
+     ],
+     [
+      "mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo",
+      0.3215891209534882
+     ],
+     [
+      "mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble",
+      0.2967674479213679
+     ],
+     [
+      "mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional",
+      0.29328839623361863
+     ],
+     [
+      "mlm19663240_nescafe_clasico_cafe_100_puro_soluble",
+      0.2791240928571429
+     ],
+     [
+      "mlm16250253_nescafe_decaf_cafe_100_puro_soluble",
+      0.25470735714285714
+     ],
+     [
+      "mlm16250252_nescafe_clasico_de_cafe_sin_gluten",
+      0.2505928877755918
+     ],
+     [
+      "mlm16207863_nescafe_cafe_de_olla_100_cafe",
+      0.23993830975689537
+     ],
+     [
+      "mlm27068249_tripack_juan_valdez_cafe_soluble_95gr",
+      0.23755306067328524
+     ],
+     [
+      "mlm23633481_nescafe_clasico_ice_cafe_soluble_en",
+      0.23709670887686182
+     ],
+     [
+      "mlm20075768_nescafe_clasico_cafe_100_puro_soluble",
+      0.21790183648733538
+     ],
+     [
+      "mlm43007251_cafe_molido_100_arabico_gourmet_americano",
+      0.21775506428571426
+     ],
+     [
+      "mlm16207890_nescafe_reserva_verarica_cafe_100_soluble",
+      0.21271768410754055
+     ]
+    ],
+    "solo_sabor": [
+     [
+      "mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo",
+      0.6641251924063623
+     ],
+     [
+      "mlm25263480_cafe_gourmet_tostado_y_molido_americano",
+      0.66096
+     ],
+     [
+      "mlm19544520_cafe_capuccino_moka_members_mark_1",
+      0.6557142857142857
+     ],
+     [
+      "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+      0.6557142857142857
+     ],
+     [
+      "mlm16250244_nescafe_taster_s_choice_caramel_dark",
+      0.647154046997389
+     ],
+     [
+      "mlm41148521_cafe_gourmet_molido_espresso_400g_blason",
+      0.640305
+     ],
+     [
+      "mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble",
+      0.6295693779904306
+     ],
+     [
+      "mlm19543513_cafe_molido_la_parroquia_puro_1",
+      0.6295693779904306
+     ],
+     [
+      "mlm19663240_nescafe_clasico_cafe_100_puro_soluble",
+      0.61965
+     ],
+     [
+      "mlm16207863_nescafe_cafe_de_olla_100_cafe",
+      0.6019672131147541
+     ],
+     [
+      "mlm27068249_tripack_juan_valdez_cafe_soluble_95gr",
+      0.6019672131147541
+     ],
+     [
+      "mlm16207890_nescafe_reserva_verarica_cafe_100_soluble",
+      0.5826948775055679
+     ],
+     [
+      "mlm16250253_nescafe_decaf_cafe_100_puro_soluble",
+      0.57834
+     ],
+     [
+      "mlm43007251_cafe_molido_100_arabico_gourmet_americano",
+      0.57834
+     ],
+     [
+      "mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional",
+      0.5727824620573355
+     ],
+     [
+      "mlm16250252_nescafe_clasico_de_cafe_sin_gluten",
+      0.541875
+     ],
+     [
+      "mlm23633481_nescafe_clasico_ice_cafe_soluble_en",
+      0.541875
+     ],
+     [
+      "mlm20075768_nescafe_clasico_cafe_100_puro_soluble",
+      0.47424354243542444
+     ]
+    ]
+   },
+   "comparacion_vigente": {
+    "neutro": {
+     "ganador": "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+     "top3": [
+      "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+      "mlm41148521_cafe_gourmet_molido_espresso_400g_blason",
+      "mlm19543513_cafe_molido_la_parroquia_puro_1"
+     ],
+     "rho_orden": 0.9793601651186791,
+     "productos_cambian_puesto": 8,
+     "ganador_igual": true,
+     "top3_mismo_conjunto": false,
+     "top3_mismo_orden": false,
+     "max_delta_score": 0.0495999655663531,
+     "margen_primero_segundo": 0.034419325679899526
+    },
+    "solo_sabor": {
+     "ganador": "mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo",
+     "top3": [
+      "mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo",
+      "mlm25263480_cafe_gourmet_tostado_y_molido_americano",
+      "mlm19544520_cafe_capuccino_moka_members_mark_1"
+     ],
+     "rho_orden": 0.9855521155830753,
+     "productos_cambian_puesto": 8,
+     "ganador_igual": true,
+     "top3_mismo_conjunto": true,
+     "top3_mismo_orden": true,
+     "max_delta_score": 0.07973702610316974,
+     "margen_primero_segundo": 0.0031651924063622605
+    }
+   }
+  },
+  "lambda_10_pi_0.5": {
+   "lambda": 10.0,
+   "pi": 0.5,
+   "hechos_D": 259,
+   "rankings": {
+    "neutro": [
+     [
+      "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+      0.3719300474952832
+     ],
+     [
+      "mlm41148521_cafe_gourmet_molido_espresso_400g_blason",
+      0.35156214135477065
+     ],
+     [
+      "mlm25263480_cafe_gourmet_tostado_y_molido_americano",
+      0.3057427611833625
+     ],
+     [
+      "mlm16250244_nescafe_taster_s_choice_caramel_dark",
+      0.29699358599052306
+     ],
+     [
+      "mlm19543513_cafe_molido_la_parroquia_puro_1",
+      0.29227716844551244
+     ],
+     [
+      "mlm19544520_cafe_capuccino_moka_members_mark_1",
+      0.286109795569353
+     ],
+     [
+      "mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo",
+      0.28477586327256776
+     ],
+     [
+      "mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble",
+      0.26591298180983447
+     ],
+     [
+      "mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional",
+      0.2626466391525285
+     ],
+     [
+      "mlm19663240_nescafe_clasico_cafe_100_puro_soluble",
+      0.25272054285714285
+     ],
+     [
+      "mlm16250253_nescafe_decaf_cafe_100_puro_soluble",
+      0.2363582857142857
+     ],
+     [
+      "mlm16250252_nescafe_clasico_de_cafe_sin_gluten",
+      0.21698316296925557
+     ],
+     [
+      "mlm23633481_nescafe_clasico_ice_cafe_soluble_en",
+      0.21648345936004376
+     ],
+     [
+      "mlm16207863_nescafe_cafe_de_olla_100_cafe",
+      0.21638760421782452
+     ],
+     [
+      "mlm27068249_tripack_juan_valdez_cafe_soluble_95gr",
+      0.21576466149830437
+     ],
+     [
+      "mlm43007251_cafe_molido_100_arabico_gourmet_americano",
+      0.20220297857142858
+     ],
+     [
+      "mlm16207890_nescafe_reserva_verarica_cafe_100_soluble",
+      0.19648373260925117
+     ],
+     [
+      "mlm20075768_nescafe_clasico_cafe_100_puro_soluble",
+      0.1814108057395516
+     ]
+    ],
+    "solo_sabor": [
+     [
+      "mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo",
+      0.647154046997389
+     ],
+     [
+      "mlm25263480_cafe_gourmet_tostado_y_molido_americano",
+      0.640305
+     ],
+     [
+      "mlm19544520_cafe_capuccino_moka_members_mark_1",
+      0.6384404636459431
+     ],
+     [
+      "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+      0.6384404636459431
+     ],
+     [
+      "mlm16250244_nescafe_taster_s_choice_caramel_dark",
+      0.6295693779904306
+     ],
+     [
+      "mlm19543513_cafe_molido_la_parroquia_puro_1",
+      0.6205364806866954
+     ],
+     [
+      "mlm41148521_cafe_gourmet_molido_espresso_400g_blason",
+      0.6058800000000001
+     ],
+     [
+      "mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble",
+      0.6019672131147541
+     ],
+     [
+      "mlm19663240_nescafe_clasico_cafe_100_puro_soluble",
+      0.57834
+     ],
+     [
+      "mlm16207863_nescafe_cafe_de_olla_100_cafe",
+      0.5626787741203179
+     ],
+     [
+      "mlm27068249_tripack_juan_valdez_cafe_soluble_95gr",
+      0.552378223495702
+     ],
+     [
+      "mlm16250253_nescafe_decaf_cafe_100_puro_soluble",
+      0.5232600000000001
+     ],
+     [
+      "mlm43007251_cafe_molido_100_arabico_gourmet_americano",
+      0.5232600000000001
+     ],
+     [
+      "mlm16207890_nescafe_reserva_verarica_cafe_100_soluble",
+      0.5090876565295169
+     ],
+     [
+      "mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional",
+      0.4977108433734941
+     ],
+     [
+      "mlm23633481_nescafe_clasico_ice_cafe_soluble_en",
+      0.47424354243542444
+     ],
+     [
+      "mlm16250252_nescafe_clasico_de_cafe_sin_gluten",
+      0.46213797389683026
+     ],
+     [
+      "mlm20075768_nescafe_clasico_cafe_100_puro_soluble",
+      0.39755905511811024
+     ]
+    ]
+   },
+   "comparacion_vigente": {
+    "neutro": {
+     "ganador": "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+     "top3": [
+      "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+      "mlm41148521_cafe_gourmet_molido_espresso_400g_blason",
+      "mlm25263480_cafe_gourmet_tostado_y_molido_americano"
+     ],
+     "rho_orden": 1.0,
+     "productos_cambian_puesto": 0,
+     "ganador_igual": true,
+     "top3_mismo_conjunto": true,
+     "top3_mismo_orden": true,
+     "max_delta_score": 0.0,
+     "margen_primero_segundo": 0.020367906140512537
+    },
+    "solo_sabor": {
+     "ganador": "mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo",
+     "top3": [
+      "mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo",
+      "mlm25263480_cafe_gourmet_tostado_y_molido_americano",
+      "mlm19544520_cafe_capuccino_moka_members_mark_1"
+     ],
+     "rho_orden": 1.0,
+     "productos_cambian_puesto": 0,
+     "ganador_igual": true,
+     "top3_mismo_conjunto": true,
+     "top3_mismo_orden": true,
+     "max_delta_score": 0.0,
+     "margen_primero_segundo": 0.0068490469973889745
+    }
+   }
+  },
+  "lambda_20_pi_0.5": {
+   "lambda": 20.0,
+   "pi": 0.5,
+   "hechos_D": 259,
+   "rankings": {
+    "neutro": [
+     [
+      "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+      0.33467283726921115
+     ],
+     [
+      "mlm41148521_cafe_gourmet_molido_espresso_400g_blason",
+      0.3269811726270374
+     ],
+     [
+      "mlm25263480_cafe_gourmet_tostado_y_molido_americano",
+      0.2757118553998925
+     ],
+     [
+      "mlm16250244_nescafe_taster_s_choice_caramel_dark",
+      0.26025614960859605
+     ],
+     [
+      "mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo",
+      0.24448083431808307
+     ],
+     [
+      "mlm19544520_cafe_capuccino_moka_members_mark_1",
+      0.24338407052966746
+     ],
+     [
+      "mlm19543513_cafe_molido_la_parroquia_puro_1",
+      0.24015272733857684
+     ],
+     [
+      "mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble",
+      0.2372638573898229
+     ],
+     [
+      "mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional",
+      0.23427286984587314
+     ],
+     [
+      "mlm19663240_nescafe_clasico_cafe_100_puro_soluble",
+      0.2300600285714286
+     ],
+     [
+      "mlm16250253_nescafe_decaf_cafe_100_puro_soluble",
+      0.22409776428571426
+     ],
+     [
+      "mlm27068249_tripack_juan_valdez_cafe_soluble_95gr",
+      0.1975151515261896
+     ],
+     [
+      "mlm23633481_nescafe_clasico_ice_cafe_soluble_en",
+      0.1970046142592741
+     ],
+     [
+      "mlm16207863_nescafe_cafe_de_olla_100_cafe",
+      0.19533179077713717
+     ],
+     [
+      "mlm43007251_cafe_molido_100_arabico_gourmet_americano",
+      0.19074655714285713
+     ],
+     [
+      "mlm16207890_nescafe_reserva_verarica_cafe_100_soluble",
+      0.18216107686567162
+     ],
+     [
+      "mlm16250252_nescafe_clasico_de_cafe_sin_gluten",
+      0.18184974996546877
+     ],
+     [
+      "mlm20075768_nescafe_clasico_cafe_100_puro_soluble",
+      0.14588741584257625
+     ]
+    ],
+    "solo_sabor": [
+     [
+      "mlm19544520_cafe_capuccino_moka_members_mark_1",
+      0.6113373037357879
+     ],
+     [
+      "mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo",
+      0.6113373037357879
+     ],
+     [
+      "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+      0.6019672131147541
+     ],
+     [
+      "mlm25263480_cafe_gourmet_tostado_y_molido_americano",
+      0.5989949999999999
+     ],
+     [
+      "mlm16250244_nescafe_taster_s_choice_caramel_dark",
+      0.5924214009928296
+     ],
+     [
+      "mlm19543513_cafe_molido_la_parroquia_puro_1",
+      0.5826948775055679
+     ],
+     [
+      "mlm41148521_cafe_gourmet_molido_espresso_400g_blason",
+      0.5576850000000001
+     ],
+     [
+      "mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble",
+      0.541875
+     ],
+     [
+      "mlm19663240_nescafe_clasico_cafe_100_puro_soluble",
+      0.516375
+     ],
+     [
+      "mlm16207863_nescafe_cafe_de_olla_100_cafe",
+      0.4977108433734941
+     ],
+     [
+      "mlm27068249_tripack_juan_valdez_cafe_soluble_95gr",
+      0.4706960845245495
+     ],
+     [
+      "mlm16250253_nescafe_decaf_cafe_100_puro_soluble",
+      0.4681800000000001
+     ],
+     [
+      "mlm43007251_cafe_molido_100_arabico_gourmet_americano",
+      0.46129500000000007
+     ],
+     [
+      "mlm16207890_nescafe_reserva_verarica_cafe_100_soluble",
+      0.41104477611940293
+     ],
+     [
+      "mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional",
+      0.39755905511811024
+     ],
+     [
+      "mlm23633481_nescafe_clasico_ice_cafe_soluble_en",
+      0.38376907763769075
+     ],
+     [
+      "mlm16250252_nescafe_clasico_de_cafe_sin_gluten",
+      0.3696644295302013
+     ],
+     [
+      "mlm20075768_nescafe_clasico_cafe_100_puro_soluble",
+      0.2940213523131673
+     ]
+    ]
+   },
+   "comparacion_vigente": {
+    "neutro": {
+     "ganador": "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+     "top3": [
+      "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+      "mlm41148521_cafe_gourmet_molido_espresso_400g_blason",
+      "mlm25263480_cafe_gourmet_tostado_y_molido_americano"
+     ],
+     "rho_orden": 0.9545923632610939,
+     "productos_cambian_puesto": 6,
+     "ganador_igual": true,
+     "top3_mismo_conjunto": true,
+     "top3_mismo_orden": true,
+     "max_delta_score": 0.05212444110693559,
+     "margen_primero_segundo": 0.007691664642173746
+    },
+    "solo_sabor": {
+     "ganador": "mlm19544520_cafe_capuccino_moka_members_mark_1",
+     "top3": [
+      "mlm19544520_cafe_capuccino_moka_members_mark_1",
+      "mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo",
+      "mlm26912881_cafe_blason_espresso_robusto_tostado_y"
+     ],
+     "rho_orden": 0.9896800825593395,
+     "productos_cambian_puesto": 4,
+     "ganador_igual": false,
+     "top3_mismo_conjunto": false,
+     "top3_mismo_orden": false,
+     "max_delta_score": 0.10353770280494295,
+     "margen_primero_segundo": 0.0
+    }
+   }
+  },
+  "lambda_50_pi_0.5": {
+   "lambda": 50.0,
+   "pi": 0.5,
+   "hechos_D": 259,
+   "rankings": {
+    "neutro": [
+     [
+      "mlm41148521_cafe_gourmet_molido_espresso_400g_blason",
+      0.30154646546105357
+     ],
+     [
+      "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+      0.29159434078729596
+     ],
+     [
+      "mlm25263480_cafe_gourmet_tostado_y_molido_americano",
+      0.24740232682100746
+     ],
+     [
+      "mlm16250244_nescafe_taster_s_choice_caramel_dark",
+      0.2189124264213726
+     ],
+     [
+      "mlm16250253_nescafe_decaf_cafe_100_puro_soluble",
+      0.21281170714285713
+     ],
+     [
+      "mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble",
+      0.21001571881147738
+     ],
+     [
+      "mlm19663240_nescafe_clasico_cafe_100_puro_soluble",
+      0.20805644285714284
+     ],
+     [
+      "mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional",
+      0.20398368828625552
+     ],
+     [
+      "mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo",
+      0.20285409537938076
+     ],
+     [
+      "mlm19544520_cafe_capuccino_moka_members_mark_1",
+      0.195452056641355
+     ],
+     [
+      "mlm19543513_cafe_molido_la_parroquia_puro_1",
+      0.18749199703668634
+     ],
+     [
+      "mlm43007251_cafe_molido_100_arabico_gourmet_americano",
+      0.1810897071428571
+     ],
+     [
+      "mlm16207863_nescafe_cafe_de_olla_100_cafe",
+      0.1770819969311877
+     ],
+     [
+      "mlm27068249_tripack_juan_valdez_cafe_soluble_95gr",
+      0.1748991554278094
+     ],
+     [
+      "mlm23633481_nescafe_clasico_ice_cafe_soluble_en",
+      0.1737010508506673
+     ],
+     [
+      "mlm16207890_nescafe_reserva_verarica_cafe_100_soluble",
+      0.16654687539856203
+     ],
+     [
+      "mlm16250252_nescafe_clasico_de_cafe_sin_gluten",
+      0.14443178055669892
+     ],
+     [
+      "mlm20075768_nescafe_clasico_cafe_100_puro_soluble",
+      0.10835324205761382
+     ]
+    ],
+    "solo_sabor": [
+     [
+      "mlm19544520_cafe_capuccino_moka_members_mark_1",
+      0.541875
+     ],
+     [
+      "mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo",
+      0.5311630625365285
+     ],
+     [
+      "mlm25263480_cafe_gourmet_tostado_y_molido_americano",
+      0.530145
+     ],
+     [
+      "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+      0.5202361275088547
+     ],
+     [
+      "mlm16250244_nescafe_taster_s_choice_caramel_dark",
+      0.5090876565295169
+     ],
+     [
+      "mlm19543513_cafe_molido_la_parroquia_puro_1",
+      0.5090876565295169
+     ],
+     [
+      "mlm41148521_cafe_gourmet_molido_espresso_400g_blason",
+      0.48195
+     ],
+     [
+      "mlm19663240_nescafe_clasico_cafe_100_puro_soluble",
+      0.44064000000000003
+     ],
+     [
+      "mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble",
+      0.43714285714285717
+     ],
+     [
+      "mlm16250253_nescafe_decaf_cafe_100_puro_soluble",
+      0.406215
+     ],
+     [
+      "mlm43007251_cafe_molido_100_arabico_gourmet_americano",
+      0.406215
+     ],
+     [
+      "mlm16207863_nescafe_cafe_de_olla_100_cafe",
+      0.3696644295302013
+     ],
+     [
+      "mlm27068249_tripack_juan_valdez_cafe_soluble_95gr",
+      0.325350938151494
+     ],
+     [
+      "mlm16207890_nescafe_reserva_verarica_cafe_100_soluble",
+      0.2611378555798687
+     ],
+     [
+      "mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional",
+      0.24407680945347118
+     ],
+     [
+      "mlm23633481_nescafe_clasico_ice_cafe_soluble_en",
+      0.24407680945347118
+     ],
+     [
+      "mlm16250252_nescafe_clasico_de_cafe_sin_gluten",
+      0.22658189977561705
+     ],
+     [
+      "mlm20075768_nescafe_clasico_cafe_100_puro_soluble",
+      0.17132192846034208
+     ]
+    ]
+   },
+   "comparacion_vigente": {
+    "neutro": {
+     "ganador": "mlm41148521_cafe_gourmet_molido_espresso_400g_blason",
+     "top3": [
+      "mlm41148521_cafe_gourmet_molido_espresso_400g_blason",
+      "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+      "mlm25263480_cafe_gourmet_tostado_y_molido_americano"
+     ],
+     "rho_orden": 0.8390092879256966,
+     "productos_cambian_puesto": 15,
+     "ganador_igual": false,
+     "top3_mismo_conjunto": true,
+     "top3_mismo_orden": false,
+     "max_delta_score": 0.1047851714088261,
+     "margen_primero_segundo": 0.009952124673757612
+    },
+    "solo_sabor": {
+     "ganador": "mlm19544520_cafe_capuccino_moka_members_mark_1",
+     "top3": [
+      "mlm19544520_cafe_capuccino_moka_members_mark_1",
+      "mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo",
+      "mlm25263480_cafe_gourmet_tostado_y_molido_americano"
+     ],
+     "rho_orden": 0.9752321981424149,
+     "productos_cambian_puesto": 9,
+     "ganador_igual": false,
+     "top3_mismo_conjunto": true,
+     "top3_mismo_orden": false,
+     "max_delta_score": 0.2536340339200229,
+     "margen_primero_segundo": 0.010711937463471544
+    }
+   }
+  },
+  "lambda_10_pi_0.3": {
+   "lambda": 10.0,
+   "pi": 0.3,
+   "hechos_D": 259,
+   "rankings": {
+    "neutro": [
+     [
+      "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+      0.2773032545001034
+     ],
+     [
+      "mlm41148521_cafe_gourmet_molido_espresso_400g_blason",
+      0.258028201198466
+     ],
+     [
+      "mlm25263480_cafe_gourmet_tostado_y_molido_americano",
+      0.22448883528069374
+     ],
+     [
+      "mlm19544520_cafe_capuccino_moka_members_mark_1",
+      0.20986989230770967
+     ],
+     [
+      "mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo",
+      0.20808369134693674
+     ],
+     [
+      "mlm16250244_nescafe_taster_s_choice_caramel_dark",
+      0.20687047020789381
+     ],
+     [
+      "mlm19663240_nescafe_clasico_cafe_100_puro_soluble",
+      0.20458625714285714
+     ],
+     [
+      "mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional",
+      0.19665930390686923
+     ],
+     [
+      "mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble",
+      0.18893191157552394
+     ],
+     [
+      "mlm19543513_cafe_molido_la_parroquia_puro_1",
+      0.17586070560098002
+     ],
+     [
+      "mlm16250253_nescafe_decaf_cafe_100_puro_soluble",
+      0.16684480000000002
+     ],
+     [
+      "mlm16207863_nescafe_cafe_de_olla_100_cafe",
+      0.16003463053634676
+     ],
+     [
+      "mlm27068249_tripack_juan_valdez_cafe_soluble_95gr",
+      0.1552416142944092
+     ],
+     [
+      "mlm23633481_nescafe_clasico_ice_cafe_soluble_en",
+      0.1490656440695912
+     ],
+     [
+      "mlm16250252_nescafe_clasico_de_cafe_sin_gluten",
+      0.14593155596509705
+     ],
+     [
+      "mlm43007251_cafe_molido_100_arabico_gourmet_americano",
+      0.14415186428571428
+     ],
+     [
+      "mlm16207890_nescafe_reserva_verarica_cafe_100_soluble",
+      0.13969540001833855
+     ],
+     [
+      "mlm20075768_nescafe_clasico_cafe_100_puro_soluble",
+      0.1149945526422577
+     ]
+    ],
+    "solo_sabor": [
+     [
+      "mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo",
+      0.6295693779904306
+     ],
+     [
+      "mlm19544520_cafe_capuccino_moka_members_mark_1",
+      0.6205364806866954
+     ],
+     [
+      "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+      0.6205364806866954
+     ],
+     [
+      "mlm25263480_cafe_gourmet_tostado_y_molido_americano",
+      0.61965
+     ],
+     [
+      "mlm16250244_nescafe_taster_s_choice_caramel_dark",
+      0.6113373037357879
+     ],
+     [
+      "mlm19543513_cafe_molido_la_parroquia_puro_1",
+      0.6019672131147541
+     ],
+     [
+      "mlm41148521_cafe_gourmet_molido_espresso_400g_blason",
+      0.57834
+     ],
+     [
+      "mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble",
+      0.5727824620573355
+     ],
+     [
+      "mlm19663240_nescafe_clasico_cafe_100_puro_soluble",
+      0.530145
+     ],
+     [
+      "mlm16207863_nescafe_cafe_de_olla_100_cafe",
+      0.5202361275088547
+     ],
+     [
+      "mlm27068249_tripack_juan_valdez_cafe_soluble_95gr",
+      0.4860986001217285
+     ],
+     [
+      "mlm16250253_nescafe_decaf_cafe_100_puro_soluble",
+      0.46129500000000007
+     ],
+     [
+      "mlm43007251_cafe_molido_100_arabico_gourmet_americano",
+      0.45441000000000004
+     ],
+     [
+      "mlm16207890_nescafe_reserva_verarica_cafe_100_soluble",
+      0.42423620025673947
+     ],
+     [
+      "mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional",
+      0.39755905511811024
+     ],
+     [
+      "mlm23633481_nescafe_clasico_ice_cafe_soluble_en",
+      0.38852362204724405
+     ],
+     [
+      "mlm16250252_nescafe_clasico_de_cafe_sin_gluten",
+      0.355234215885947
+     ],
+     [
+      "mlm20075768_nescafe_clasico_cafe_100_puro_soluble",
+      0.27778097982708944
+     ]
+    ]
+   },
+   "comparacion_vigente": {
+    "neutro": {
+     "ganador": "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+     "top3": [
+      "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+      "mlm41148521_cafe_gourmet_molido_espresso_400g_blason",
+      "mlm25263480_cafe_gourmet_tostado_y_molido_americano"
+     ],
+     "rho_orden": 0.9318885448916409,
+     "productos_cambian_puesto": 11,
+     "ganador_igual": true,
+     "top3_mismo_conjunto": true,
+     "top3_mismo_orden": true,
+     "max_delta_score": 0.11641646284453241,
+     "margen_primero_segundo": 0.019275053301637424
+    },
+    "solo_sabor": {
+     "ganador": "mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo",
+     "top3": [
+      "mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo",
+      "mlm19544520_cafe_capuccino_moka_members_mark_1",
+      "mlm26912881_cafe_blason_espresso_robusto_tostado_y"
+     ],
+     "rho_orden": 0.9938080495356038,
+     "productos_cambian_puesto": 3,
+     "ganador_igual": true,
+     "top3_mismo_conjunto": false,
+     "top3_mismo_orden": false,
+     "max_delta_score": 0.1197780752910208,
+     "margen_primero_segundo": 0.009032897303735132
+    }
+   }
+  },
+  "lambda_10_pi_0.4": {
+   "lambda": 10.0,
+   "pi": 0.4,
+   "hechos_D": 259,
+   "rankings": {
+    "neutro": [
+     [
+      "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+      0.32700391051278666
+     ],
+     [
+      "mlm41148521_cafe_gourmet_molido_espresso_400g_blason",
+      0.30510698731890706
+     ],
+     [
+      "mlm25263480_cafe_gourmet_tostado_y_molido_americano",
+      0.2609702617113315
+     ],
+     [
+      "mlm19544520_cafe_capuccino_moka_members_mark_1",
+      0.24969510317200763
+     ],
+     [
+      "mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo",
+      0.24719397601051732
+     ],
+     [
+      "mlm16250244_nescafe_taster_s_choice_caramel_dark",
+      0.24492460055837664
+     ],
+     [
+      "mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional",
+      0.23081449970165552
+     ],
+     [
+      "mlm19663240_nescafe_clasico_cafe_100_puro_soluble",
+      0.22881004285714282
+     ],
+     [
+      "mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble",
+      0.22355561938823432
+     ],
+     [
+      "mlm19543513_cafe_molido_la_parroquia_puro_1",
+      0.21633131355758684
+     ],
+     [
+      "mlm16250253_nescafe_decaf_cafe_100_puro_soluble",
+      0.2015504214285714
+     ],
+     [
+      "mlm16207863_nescafe_cafe_de_olla_100_cafe",
+      0.18343449285714286
+     ],
+     [
+      "mlm27068249_tripack_juan_valdez_cafe_soluble_95gr",
+      0.18277408400678374
+     ],
+     [
+      "mlm23633481_nescafe_clasico_ice_cafe_soluble_en",
+      0.18200618914182792
+     ],
+     [
+      "mlm16250252_nescafe_clasico_de_cafe_sin_gluten",
+      0.18162051782656685
+     ],
+     [
+      "mlm43007251_cafe_molido_100_arabico_gourmet_americano",
+      0.17356793571428572
+     ],
+     [
+      "mlm16207890_nescafe_reserva_verarica_cafe_100_soluble",
+      0.168805967316816
+     ],
+     [
+      "mlm20075768_nescafe_clasico_cafe_100_puro_soluble",
+      0.14145651927860425
+     ]
+    ],
+    "solo_sabor": [
+     [
+      "mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo",
+      0.6384404636459431
+     ],
+     [
+      "mlm19544520_cafe_capuccino_moka_members_mark_1",
+      0.6295693779904306
+     ],
+     [
+      "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+      0.6295693779904306
+     ],
+     [
+      "mlm25263480_cafe_gourmet_tostado_y_molido_americano",
+      0.626535
+     ],
+     [
+      "mlm16250244_nescafe_taster_s_choice_caramel_dark",
+      0.6205364806866954
+     ],
+     [
+      "mlm19543513_cafe_molido_la_parroquia_puro_1",
+      0.6113373037357879
+     ],
+     [
+      "mlm41148521_cafe_gourmet_molido_espresso_400g_blason",
+      0.59211
+     ],
+     [
+      "mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble",
+      0.5826948775055679
+     ],
+     [
+      "mlm19663240_nescafe_clasico_cafe_100_puro_soluble",
+      0.5508000000000001
+     ],
+     [
+      "mlm16207863_nescafe_cafe_de_olla_100_cafe",
+      0.541875
+     ],
+     [
+      "mlm27068249_tripack_juan_valdez_cafe_soluble_95gr",
+      0.5202361275088547
+     ],
+     [
+      "mlm16250253_nescafe_decaf_cafe_100_puro_soluble",
+      0.4888349999999999
+     ],
+     [
+      "mlm43007251_cafe_molido_100_arabico_gourmet_americano",
+      0.4888349999999999
+     ],
+     [
+      "mlm16207890_nescafe_reserva_verarica_cafe_100_soluble",
+      0.47424354243542444
+     ],
+     [
+      "mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional",
+      0.44977386934673375
+     ],
+     [
+      "mlm23633481_nescafe_clasico_ice_cafe_soluble_en",
+      0.43714285714285717
+     ],
+     [
+      "mlm16250252_nescafe_clasico_de_cafe_sin_gluten",
+      0.41104477611940293
+     ],
+     [
+      "mlm20075768_nescafe_clasico_cafe_100_puro_soluble",
+      0.340467032967033
+     ]
+    ]
+   },
+   "comparacion_vigente": {
+    "neutro": {
+     "ganador": "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+     "top3": [
+      "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+      "mlm41148521_cafe_gourmet_molido_espresso_400g_blason",
+      "mlm25263480_cafe_gourmet_tostado_y_molido_americano"
+     ],
+     "rho_orden": 0.9339525283797729,
+     "productos_cambian_puesto": 11,
+     "ganador_igual": true,
+     "top3_mismo_conjunto": true,
+     "top3_mismo_orden": true,
+     "max_delta_score": 0.0759458548879256,
+     "margen_primero_segundo": 0.02189692319387959
+    },
+    "solo_sabor": {
+     "ganador": "mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo",
+     "top3": [
+      "mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo",
+      "mlm19544520_cafe_capuccino_moka_members_mark_1",
+      "mlm26912881_cafe_blason_espresso_robusto_tostado_y"
+     ],
+     "rho_orden": 0.9938080495356038,
+     "productos_cambian_puesto": 3,
+     "ganador_igual": true,
+     "top3_mismo_conjunto": false,
+     "top3_mismo_orden": false,
+     "max_delta_score": 0.057092022151077226,
+     "margen_primero_segundo": 0.008871085655512534
+    }
+   }
+  },
+  "lambda_10_pi_0.6": {
+   "lambda": 10.0,
+   "pi": 0.6,
+   "hechos_D": 259,
+   "rankings": {
+    "neutro": [
+     [
+      "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+      0.41736803910889003
+     ],
+     [
+      "mlm41148521_cafe_gourmet_molido_espresso_400g_blason",
+      0.39839895739333725
+     ],
+     [
+      "mlm19543513_cafe_molido_la_parroquia_puro_1",
+      0.35665826803818496
+     ],
+     [
+      "mlm16250244_nescafe_taster_s_choice_caramel_dark",
+      0.3529542870278105
+     ],
+     [
+      "mlm25263480_cafe_gourmet_tostado_y_molido_americano",
+      0.3492183479418304
+     ],
+     [
+      "mlm19544520_cafe_capuccino_moka_members_mark_1",
+      0.32186873560715346
+     ],
+     [
+      "mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo",
+      0.31791976466306915
+     ],
+     [
+      "mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble",
+      0.3177769160706671
+     ],
+     [
+      "mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional",
+      0.2951330133390705
+     ],
+     [
+      "mlm19663240_nescafe_clasico_cafe_100_puro_soluble",
+      0.2764452571428571
+     ],
+     [
+      "mlm16250253_nescafe_decaf_cafe_100_puro_soluble",
+      0.27042300714285716
+     ],
+     [
+      "mlm16207863_nescafe_cafe_de_olla_100_cafe",
+      0.26269667895877497
+     ],
+     [
+      "mlm16250252_nescafe_clasico_de_cafe_sin_gluten",
+      0.2602678726063746
+     ],
+     [
+      "mlm23633481_nescafe_clasico_ice_cafe_soluble_en",
+      0.2574465785430666
+     ],
+     [
+      "mlm27068249_tripack_juan_valdez_cafe_soluble_95gr",
+      0.2483297829739568
+     ],
+     [
+      "mlm20075768_nescafe_clasico_cafe_100_puro_soluble",
+      0.23429499087926128
+     ],
+     [
+      "mlm43007251_cafe_molido_100_arabico_gourmet_americano",
+      0.2307651642857143
+     ],
+     [
+      "mlm16207890_nescafe_reserva_verarica_cafe_100_soluble",
+      0.22475024453540732
+     ]
+    ],
+    "solo_sabor": [
+     [
+      "mlm25263480_cafe_gourmet_tostado_y_molido_americano",
+      0.6471899999999999
+     ],
+     [
+      "mlm19544520_cafe_capuccino_moka_members_mark_1",
+      0.647154046997389
+     ],
+     [
+      "mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo",
+      0.647154046997389
+     ],
+     [
+      "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+      0.647154046997389
+     ],
+     [
+      "mlm16250244_nescafe_taster_s_choice_caramel_dark",
+      0.6384404636459431
+     ],
+     [
+      "mlm41148521_cafe_gourmet_molido_espresso_400g_blason",
+      0.626535
+     ],
+     [
+      "mlm19543513_cafe_molido_la_parroquia_puro_1",
+      0.6205364806866954
+     ],
+     [
+      "mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble",
+      0.6113373037357879
+     ],
+     [
+      "mlm19663240_nescafe_clasico_cafe_100_puro_soluble",
+      0.5989949999999999
+     ],
+     [
+      "mlm16207863_nescafe_cafe_de_olla_100_cafe",
+      0.5826948775055679
+     ],
+     [
+      "mlm27068249_tripack_juan_valdez_cafe_soluble_95gr",
+      0.5727824620573355
+     ],
+     [
+      "mlm16250253_nescafe_decaf_cafe_100_puro_soluble",
+      0.5576850000000001
+     ],
+     [
+      "mlm43007251_cafe_molido_100_arabico_gourmet_americano",
+      0.5576850000000001
+     ],
+     [
+      "mlm16207890_nescafe_reserva_verarica_cafe_100_soluble",
+      0.552378223495702
+     ],
+     [
+      "mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional",
+      0.541875
+     ],
+     [
+      "mlm16250252_nescafe_clasico_de_cafe_sin_gluten",
+      0.5090876565295169
+     ],
+     [
+      "mlm23633481_nescafe_clasico_ice_cafe_soluble_en",
+      0.5090876565295169
+     ],
+     [
+      "mlm20075768_nescafe_clasico_cafe_100_puro_soluble",
+      0.44977386934673375
+     ]
+    ]
+   },
+   "comparacion_vigente": {
+    "neutro": {
+     "ganador": "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+     "top3": [
+      "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+      "mlm41148521_cafe_gourmet_molido_espresso_400g_blason",
+      "mlm19543513_cafe_molido_la_parroquia_puro_1"
+     ],
+     "rho_orden": 0.9793601651186791,
+     "productos_cambian_puesto": 8,
+     "ganador_igual": true,
+     "top3_mismo_conjunto": false,
+     "top3_mismo_orden": false,
+     "max_delta_score": 0.06438109959267252,
+     "margen_primero_segundo": 0.018969081715552782
+    },
+    "solo_sabor": {
+     "ganador": "mlm25263480_cafe_gourmet_tostado_y_molido_americano",
+     "top3": [
+      "mlm25263480_cafe_gourmet_tostado_y_molido_americano",
+      "mlm19544520_cafe_capuccino_moka_members_mark_1",
+      "mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo"
+     ],
+     "rho_orden": 0.9896800825593395,
+     "productos_cambian_puesto": 7,
+     "ganador_igual": false,
+     "top3_mismo_conjunto": true,
+     "top3_mismo_orden": false,
+     "max_delta_score": 0.05221481422862351,
+     "margen_primero_segundo": 3.595300261094447e-05
+    }
+   }
+  },
+  "lambda_10_pi_0.7": {
+   "lambda": 10.0,
+   "pi": 0.7,
+   "hechos_D": 259,
+   "rankings": {
+    "neutro": [
+     [
+      "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+      0.4595335417137366
+     ],
+     [
+      "mlm41148521_cafe_gourmet_molido_espresso_400g_blason",
+      0.444188079583233
+     ],
+     [
+      "mlm19543513_cafe_molido_la_parroquia_puro_1",
+      0.41703176816442594
+     ],
+     [
+      "mlm16250244_nescafe_taster_s_choice_caramel_dark",
+      0.4051170920430377
+     ],
+     [
+      "mlm25263480_cafe_gourmet_tostado_y_molido_americano",
+      0.3916612975232764
+     ],
+     [
+      "mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble",
+      0.3677894924198483
+     ],
+     [
+      "mlm19544520_cafe_capuccino_moka_members_mark_1",
+      0.3552801342749954
+     ],
+     [
+      "mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo",
+      0.35202408282044084
+     ],
+     [
+      "mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional",
+      0.32579261990544617
+     ],
+     [
+      "mlm16250253_nescafe_decaf_cafe_100_puro_soluble",
+      0.30527944285714287
+     ],
+     [
+      "mlm16207863_nescafe_cafe_de_olla_100_cafe",
+      0.302718458654889
+     ],
+     [
+      "mlm19663240_nescafe_clasico_cafe_100_puro_soluble",
+      0.30065568571428575
+     ],
+     [
+      "mlm16250252_nescafe_clasico_de_cafe_sin_gluten",
+      0.2995140857171981
+     ],
+     [
+      "mlm23633481_nescafe_clasico_ice_cafe_soluble_en",
+      0.2972540915209048
+     ],
+     [
+      "mlm27068249_tripack_juan_valdez_cafe_soluble_95gr",
+      0.2800657508450755
+     ],
+     [
+      "mlm20075768_nescafe_clasico_cafe_100_puro_soluble",
+      0.2782238336321248
+     ],
+     [
+      "mlm43007251_cafe_molido_100_arabico_gourmet_americano",
+      0.2597313428571429
+     ],
+     [
+      "mlm16207890_nescafe_reserva_verarica_cafe_100_soluble",
+      0.25314325721377356
+     ]
+    ],
+    "solo_sabor": [
+     [
+      "mlm25263480_cafe_gourmet_tostado_y_molido_americano",
+      0.66096
+     ],
+     [
+      "mlm19544520_cafe_capuccino_moka_members_mark_1",
+      0.6557142857142857
+     ],
+     [
+      "mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo",
+      0.6557142857142857
+     ],
+     [
+      "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+      0.6557142857142857
+     ],
+     [
+      "mlm16250244_nescafe_taster_s_choice_caramel_dark",
+      0.647154046997389
+     ],
+     [
+      "mlm41148521_cafe_gourmet_molido_espresso_400g_blason",
+      0.640305
+     ],
+     [
+      "mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble",
+      0.6295693779904306
+     ],
+     [
+      "mlm19543513_cafe_molido_la_parroquia_puro_1",
+      0.6295693779904306
+     ],
+     [
+      "mlm19663240_nescafe_clasico_cafe_100_puro_soluble",
+      0.61965
+     ],
+     [
+      "mlm16207863_nescafe_cafe_de_olla_100_cafe",
+      0.6019672131147541
+     ],
+     [
+      "mlm27068249_tripack_juan_valdez_cafe_soluble_95gr",
+      0.6019672131147541
+     ],
+     [
+      "mlm16207890_nescafe_reserva_verarica_cafe_100_soluble",
+      0.5924214009928296
+     ],
+     [
+      "mlm16250253_nescafe_decaf_cafe_100_puro_soluble",
+      0.59211
+     ],
+     [
+      "mlm43007251_cafe_molido_100_arabico_gourmet_americano",
+      0.59211
+     ],
+     [
+      "mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional",
+      0.5727824620573355
+     ],
+     [
+      "mlm16250252_nescafe_clasico_de_cafe_sin_gluten",
+      0.552378223495702
+     ],
+     [
+      "mlm23633481_nescafe_clasico_ice_cafe_soluble_en",
+      0.552378223495702
+     ],
+     [
+      "mlm20075768_nescafe_clasico_cafe_100_puro_soluble",
+      0.4977108433734941
+     ]
+    ]
+   },
+   "comparacion_vigente": {
+    "neutro": {
+     "ganador": "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+     "top3": [
+      "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+      "mlm41148521_cafe_gourmet_molido_espresso_400g_blason",
+      "mlm19543513_cafe_molido_la_parroquia_puro_1"
+     ],
+     "rho_orden": 0.9628482972136223,
+     "productos_cambian_puesto": 13,
+     "ganador_igual": true,
+     "top3_mismo_conjunto": false,
+     "top3_mismo_orden": false,
+     "max_delta_score": 0.1247545997189135,
+     "margen_primero_segundo": 0.01534546213050364
+    },
+    "solo_sabor": {
+     "ganador": "mlm25263480_cafe_gourmet_tostado_y_molido_americano",
+     "top3": [
+      "mlm25263480_cafe_gourmet_tostado_y_molido_americano",
+      "mlm19544520_cafe_capuccino_moka_members_mark_1",
+      "mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo"
+     ],
+     "rho_orden": 0.9793601651186791,
+     "productos_cambian_puesto": 11,
+     "ganador_igual": false,
+     "top3_mismo_conjunto": true,
+     "top3_mismo_orden": false,
+     "max_delta_score": 0.10015178825538384,
+     "margen_primero_segundo": 0.005245714285714298
+    }
+   }
+  },
+  "lambda_10_pi_0.8": {
+   "lambda": 10.0,
+   "pi": 0.8,
+   "hechos_D": 259,
+   "rankings": {
+    "neutro": [
+     [
+      "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+      0.5006428274381474
+     ],
+     [
+      "mlm41148521_cafe_gourmet_molido_espresso_400g_blason",
+      0.49056521572820794
+     ],
+     [
+      "mlm19543513_cafe_molido_la_parroquia_puro_1",
+      0.47011017769933106
+     ],
+     [
+      "mlm16250244_nescafe_taster_s_choice_caramel_dark",
+      0.45240955068029975
+     ],
+     [
+      "mlm25263480_cafe_gourmet_tostado_y_molido_americano",
+      0.4315093106345277
+     ],
+     [
+      "mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble",
+      0.41194437010124024
+     ],
+     [
+      "mlm19544520_cafe_capuccino_moka_members_mark_1",
+      0.38690624490215275
+     ],
+     [
+      "mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo",
+      0.38331972900682154
+     ],
+     [
+      "mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional",
+      0.35757378555956915
+     ],
+     [
+      "mlm16207863_nescafe_cafe_de_olla_100_cafe",
+      0.34110109784228504
+     ],
+     [
+      "mlm16250253_nescafe_decaf_cafe_100_puro_soluble",
+      0.33951355714285714
+     ],
+     [
+      "mlm16250252_nescafe_clasico_de_cafe_sin_gluten",
+      0.3354248795049814
+     ],
+     [
+      "mlm23633481_nescafe_clasico_ice_cafe_soluble_en",
+      0.3342160467126455
+     ],
+     [
+      "mlm19663240_nescafe_clasico_cafe_100_puro_soluble",
+      0.3256605
+     ],
+     [
+      "mlm20075768_nescafe_clasico_cafe_100_puro_soluble",
+      0.31910795460668806
+     ],
+     [
+      "mlm27068249_tripack_juan_valdez_cafe_soluble_95gr",
+      0.31047016992255283
+     ],
+     [
+      "mlm43007251_cafe_molido_100_arabico_gourmet_americano",
+      0.2878746
+     ],
+     [
+      "mlm16207890_nescafe_reserva_verarica_cafe_100_soluble",
+      0.2798886629061925
+     ]
+    ],
+    "solo_sabor": [
+     [
+      "mlm25263480_cafe_gourmet_tostado_y_molido_americano",
+      0.667845
+     ],
+     [
+      "mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo",
+      0.6641251924063623
+     ],
+     [
+      "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+      0.6641251924063623
+     ],
+     [
+      "mlm16250244_nescafe_taster_s_choice_caramel_dark",
+      0.6557142857142857
+     ],
+     [
+      "mlm19544520_cafe_capuccino_moka_members_mark_1",
+      0.6557142857142857
+     ],
+     [
+      "mlm41148521_cafe_gourmet_molido_espresso_400g_blason",
+      0.6540750000000001
+     ],
+     [
+      "mlm19663240_nescafe_clasico_cafe_100_puro_soluble",
+      0.640305
+     ],
+     [
+      "mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble",
+      0.6384404636459431
+     ],
+     [
+      "mlm19543513_cafe_molido_la_parroquia_puro_1",
+      0.6384404636459431
+     ],
+     [
+      "mlm16207863_nescafe_cafe_de_olla_100_cafe",
+      0.6205364806866954
+     ],
+     [
+      "mlm16207890_nescafe_reserva_verarica_cafe_100_soluble",
+      0.6205364806866954
+     ],
+     [
+      "mlm27068249_tripack_juan_valdez_cafe_soluble_95gr",
+      0.6205364806866954
+     ],
+     [
+      "mlm16250253_nescafe_decaf_cafe_100_puro_soluble",
+      0.61965
+     ],
+     [
+      "mlm43007251_cafe_molido_100_arabico_gourmet_americano",
+      0.61965
+     ],
+     [
+      "mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional",
+      0.6113373037357879
+     ],
+     [
+      "mlm16250252_nescafe_clasico_de_cafe_sin_gluten",
+      0.5924214009928296
+     ],
+     [
+      "mlm23633481_nescafe_clasico_ice_cafe_soluble_en",
+      0.5826948775055679
+     ],
+     [
+      "mlm20075768_nescafe_clasico_cafe_100_puro_soluble",
+      0.541875
+     ]
+    ]
+   },
+   "comparacion_vigente": {
+    "neutro": {
+     "ganador": "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+     "top3": [
+      "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+      "mlm41148521_cafe_gourmet_molido_espresso_400g_blason",
+      "mlm19543513_cafe_molido_la_parroquia_puro_1"
+     ],
+     "rho_orden": 0.9401444788441693,
+     "productos_cambian_puesto": 11,
+     "ganador_igual": true,
+     "top3_mismo_conjunto": false,
+     "top3_mismo_orden": false,
+     "max_delta_score": 0.17783300925381862,
+     "margen_primero_segundo": 0.010077611709939427
+    },
+    "solo_sabor": {
+     "ganador": "mlm25263480_cafe_gourmet_tostado_y_molido_americano",
+     "top3": [
+      "mlm25263480_cafe_gourmet_tostado_y_molido_americano",
+      "mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo",
+      "mlm26912881_cafe_blason_espresso_robusto_tostado_y"
+     ],
+     "rho_orden": 0.9628482972136223,
+     "productos_cambian_puesto": 14,
+     "ganador_igual": false,
+     "top3_mismo_conjunto": false,
+     "top3_mismo_orden": false,
+     "max_delta_score": 0.14431594488188976,
+     "margen_primero_segundo": 0.0037198075936377695
+    }
+   }
+  }
+ },
+ "control_bateria": {
+  "neutro": {
+   "orden_identico": true,
+   "max_delta_score": 5.551115123125783e-17
+  },
+  "solo_sabor": {
+   "orden_identico": true,
+   "max_delta_score": 0.0
+  }
+ },
+ "resumen": {
+  "neutro": {
+   "ganador_cambia_en": [
+    "lambda_0_pi_0.5",
+    "lambda_50_pi_0.5"
+   ],
+   "top3_conjunto_cambia_en": [
+    "lambda_0_pi_0.5",
+    "lambda_2_pi_0.5",
+    "lambda_5_pi_0.5",
+    "lambda_10_pi_0.6",
+    "lambda_10_pi_0.7",
+    "lambda_10_pi_0.8"
+   ],
+   "rho_min": 0.8390092879256966
+  },
+  "solo_sabor": {
+   "ganador_cambia_en": [
+    "lambda_0_pi_0.5",
+    "lambda_2_pi_0.5",
+    "lambda_20_pi_0.5",
+    "lambda_50_pi_0.5",
+    "lambda_10_pi_0.6",
+    "lambda_10_pi_0.7",
+    "lambda_10_pi_0.8"
+   ],
+   "top3_conjunto_cambia_en": [
+    "lambda_0_pi_0.5",
+    "lambda_2_pi_0.5",
+    "lambda_20_pi_0.5",
+    "lambda_10_pi_0.3",
+    "lambda_10_pi_0.4",
+    "lambda_10_pi_0.8"
+   ],
+   "rho_min": 0.4179566563467492
+  }
+ }
+}

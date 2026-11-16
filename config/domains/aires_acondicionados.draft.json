@@ -1,0 +1,282 @@
+{
+  "_draft_notes": [
+    "Borrador generado automaticamente desde resenas.",
+    "El experto debe agrupar, renombrar y eliminar candidatos antes de usarlo como perfil final.",
+    "Para activarlo, revisar y guardar como config/domains/aires_acondicionados.json."
+  ],
+  "domain_key": "aires_acondicionados",
+  "display_name": "Aires Acondicionados",
+  "product_label": "producto",
+  "item_label": "publicacion",
+  "quality_aspects": {
+    "funcionar": {
+      "label": "Funcionar",
+      "icon": ""
+    },
+    "precio": {
+      "label": "Precio",
+      "icon": ""
+    },
+    "instalar": {
+      "label": "Instalar",
+      "icon": ""
+    },
+    "cuarto": {
+      "label": "Cuarto",
+      "icon": ""
+    },
+    "ruido": {
+      "label": "Ruido",
+      "icon": ""
+    },
+    "enfrio": {
+      "label": "Enfrio",
+      "icon": ""
+    },
+    "aire": {
+      "label": "Aire",
+      "icon": ""
+    },
+    "marca": {
+      "label": "Marca",
+      "icon": ""
+    },
+    "facil": {
+      "label": "Facil",
+      "icon": ""
+    },
+    "silencioso": {
+      "label": "Silencioso",
+      "icon": ""
+    },
+    "habitacion": {
+      "label": "Habitacion",
+      "icon": ""
+    },
+    "pequeno": {
+      "label": "Pequeno",
+      "icon": ""
+    },
+    "funcion": {
+      "label": "Funcion",
+      "icon": ""
+    },
+    "instalacion": {
+      "label": "Instalacion",
+      "icon": ""
+    },
+    "calor": {
+      "label": "Calor",
+      "icon": ""
+    },
+    "luz": {
+      "label": "Luz",
+      "icon": ""
+    },
+    "enfriar": {
+      "label": "Enfriar",
+      "icon": ""
+    },
+    "clima": {
+      "label": "Clima",
+      "icon": ""
+    },
+    "ruidoso": {
+      "label": "Ruidoso",
+      "icon": ""
+    },
+    "frio": {
+      "label": "Frio",
+      "icon": ""
+    }
+  },
+  "purchase_aspects": {
+    "precio": "Precio bajo (menor precio = mejor)",
+    "descuento": "Descuento sobre precio original",
+    "cuotas": "Financiacion (cuotas sin interes)",
+    "garantia": "Garantia",
+    "tienda_oficial": "Tienda oficial",
+    "factura": "Factura",
+    "envio": "Envio"
+  },
+  "catalog_aspect_map": {},
+  "ui": {
+    "laf1_page_title": "Que buscas en Aires Acondicionados?",
+    "laf1_title": "Que buscas en Aires Acondicionados?",
+    "laf1_caption": "Indica que tan importante es cada aspecto para vos.",
+    "laf2_page_title": "Como queres comprarlo?",
+    "laf2_title": "Como queres comprarlo?",
+    "laf2_purchase_title": "Que condiciones de compra te importan?"
+  },
+  "laf": {
+    "system_description": "Sistema argumentativo de recomendacion - Aires Acondicionados",
+    "author_line": "Trabajo Final - Ana Paula Machado - UNSE"
+  },
+  "lexicon": {
+    "aspects": {
+      "funcionar": [
+        "funcionar"
+      ],
+      "precio": [
+        "precio"
+      ],
+      "instalar": [
+        "instalar"
+      ],
+      "cuarto": [
+        "cuarto"
+      ],
+      "ruido": [
+        "ruido"
+      ],
+      "enfrio": [
+        "enfrio"
+      ],
+      "aire": [
+        "aire"
+      ],
+      "marca": [
+        "marca"
+      ],
+      "facil": [
+        "facil"
+      ],
+      "silencioso": [
+        "silencioso"
+      ],
+      "habitacion": [
+        "habitacion"
+      ],
+      "pequeno": [
+        "pequeno"
+      ],
+      "funcion": [
+        "funcion"
+      ],
+      "instalacion": [
+        "instalacion"
+      ],
+      "calor": [
+        "calor"
+      ],
+      "luz": [
+        "luz"
+      ],
+      "enfriar": [
+        "enfriar"
+      ],
+      "clima": [
+        "clima"
+      ],
+      "ruidoso": [
+        "ruidoso"
+      ],
+      "frio": [
+        "frio"
+      ]
+    },
+    "positive": [
+      "aceptable",
+      "barbaro",
+      "bárbaro",
+      "bien",
+      "bonita",
+      "bonito",
+      "buena",
+      "bueno",
+      "calidad",
+      "clara",
+      "claro",
+      "comodo",
+      "cómodo",
+      "conforme",
+      "correcta",
+      "correcto",
+      "cumple",
+      "destacado",
+      "duradero",
+      "eficiente",
+      "excelente",
+      "fluida",
+      "fluido",
+      "genial",
+      "hermoso",
+      "ideal",
+      "impecable",
+      "increible",
+      "increíble",
+      "linda",
+      "lindo",
+      "me encanta",
+      "muy bien",
+      "perfecta",
+      "perfecto",
+      "potente",
+      "rapida",
+      "rápida",
+      "rapido",
+      "rápido",
+      "recomendable",
+      "recomiendo",
+      "resistente",
+      "satisfecho",
+      "satisfecha",
+      "sobresaliente",
+      "suficiente"
+    ],
+    "negative": [
+      "deficiente",
+      "defecto",
+      "decepcion",
+      "decepción",
+      "decepcionante",
+      "débil",
+      "debil",
+      "demora",
+      "descarga",
+      "falla",
+      "fallado",
+      "fallando",
+      "feo",
+      "fragil",
+      "frágil",
+      "horrible",
+      "insuficiente",
+      "lag",
+      "lenta",
+      "lento",
+      "mal",
+      "mala",
+      "malo",
+      "mediocre",
+      "molesto",
+      "no sirve",
+      "pobre",
+      "problema",
+      "recalienta",
+      "se apaga",
+      "se cuelga",
+      "se descarga",
+      "se tilda",
+      "se traba",
+      "tarda",
+      "trabado",
+      "traba"
+    ],
+    "negation": [
+      "jamas",
+      "jamás",
+      "nada",
+      "nadie",
+      "ni",
+      "ningun",
+      "ningún",
+      "ninguna",
+      "ninguno",
+      "no",
+      "nunca",
+      "sin",
+      "tampoco"
+    ]
+  }
+}

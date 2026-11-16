@@ -1,0 +1,171 @@
+{% extends "recommender/base.html" %}
+{% block title %}{{ product.metadata.listing_title|default:product.metadata.seller }} · Por qué lo recomendamos · Recomendador de productos{% endblock %}
+{% block banner %}{% if result.evaluation_status == "mock" %}{% include "recommender/partials/demo_banner.html" %}{% endif %}{% endblock %}
+{% block content %}
+<section class="page-shell product-detail-page listing-explanation-page">
+  <a class="back-link" href="{% url 'recommender:listing-ranking' flow.id %}">{% include "recommender/partials/icon_arrow_left.html" %} Volver a dónde comprar</a>
+  <div class="product-detail-layout mt-7">
+    <div>
+      <div class="product-detail-heading">
+        <div class="rank-medallion"><small>Opción</small><strong>{{ product.position }}</strong></div>
+        {% include "recommender/partials/product_image.html" with item=product image_class="product-image-detail" eager=True %}
+        <div>
+          <h1 class="product-detail-title">{{ product.metadata.listing_title|default:product.metadata.seller }}</h1>
+          <p class="mt-3 text-slate-600">{{ flow.selected_product_name }}</p>
+        </div>
+      </div>
+      <dl class="listing-explanation-facts mt-9">
+        <div><dt>Precio</dt><dd>{{ product.metadata.price_label }}</dd></div>
+        {% if product.metadata.installments and product.metadata.installments != "No informadas" %}<div><dt>Cuotas</dt><dd>{{ product.metadata.installments }}</dd></div>{% endif %}
+        <div><dt>Garantía</dt><dd>{{ product.metadata.warranty }}</dd></div>
+        <div><dt>Envío</dt><dd>{{ product.metadata.shipping }}</dd></div>
+      </dl>
+    </div>
+    <aside class="lg:sticky lg:top-6 lg:self-start">
+      <div class="panel p-6">
+        <h2 class="text-xl font-bold">¿Querés comprar esta opción?</h2>
+        <p class="mt-3 text-sm leading-6 text-slate-600">Podés abrir la publicación y comprobar el precio y las condiciones actuales.</p>
+        <a class="button button-primary w-full mt-6" href="{{ product.metadata.purchase_url }}" target="_blank" rel="noopener noreferrer">
+          {% if product.metadata.purchase_url_is_fallback %}Ver opciones en Mercado Libre{% else %}Ver publicación en Mercado Libre{% endif %}
+          <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section id="explicacion" class="graph-page product-graph-section" aria-label="Por qué recomendamos esta publicación">
+  <div class="laf-explanation-inner mx-auto px-4 pt-5 pb-12 sm:px-6">
+    <div class="flex flex-wrap items-center justify-end gap-x-4 gap-y-2">
+      <p class="text-xs text-slate-500">Esta explicación corresponde solo a esta publicación.</p>
+      <a class="button button-secondary button-sm" href="{% url 'recommender:export-laf2-program' flow.id %}{% if result.aspect_programs %}?used=1{% endif %}" download>Descargar programas utilizados <span aria-hidden="true">↓</span></a>
+    </div>
+
+    <div class="laf-graph-layout mt-7">
+      <div class="graph-stage">
+        <div class="graph-view-switcher" role="group" aria-label="Cómo ver la explicación">
+          <button type="button" data-graph-mode="summary" aria-pressed="true">Resumen</button>
+          <button type="button" data-graph-mode="ranking" aria-pressed="false">Comparar con las demás</button>
+        </div>
+
+        <section class="contribution-figure" data-summary-figure aria-label="Cómo se ordenó esta publicación">
+          <ol class="how-process" aria-label="Cómo ordenamos las publicaciones">
+            <li><span class="how-process-n">1</span><div><strong>Partimos de {{ process_steps.listings }} {% if process_steps.listings == 1 %}publicación{% else %}publicaciones{% endif %} del producto</strong><small>{{ flow.selected_product_name }}</small></div></li>
+            <li><span class="how-process-n">2</span><div><strong>Miramos las condiciones que te importan</strong><small>{% if process_steps.condition_names %}{{ process_steps.condition_names }}{% else %}No elegiste ninguna condición{% endif %}</small></div></li>
+            <li><span class="how-process-n">3</span><div><strong>Quedó {{ process_steps.position }}º de {{ process_steps.total }}</strong><small>Ordenamos por cuánto cumple esas condiciones y la importancia que les diste.</small></div></li>
+          </ol>
+
+          {% if reason_rows %}
+          <div class="purchase-reasons">
+            <h3>Qué encontramos en esta publicación</h3>
+            <p>En cada fila: la condición, la importancia que le diste, lo que la publicación declara y el resultado LAF que entra en la suma de abajo. Tocá una para ver el grafo de su corrida.</p>
+          </div>
+          <ul class="claim-ledger" aria-label="Condiciones de compra de esta publicación">
+            {% for row in reason_rows %}
+            <li class="claim-row claim-condition-{{ row.state }}">
+              {% if row.node_id %}
+              <button type="button" class="claim-open"
+                      data-aspect-node="{{ row.node_id }}"
+                      data-aspect-key="{{ row.key }}"
+                      data-aspect-label="{{ row.label }}"
+                      data-aspect-narr="{{ row.narrative }}"
+                      aria-expanded="false">
+                <span class="claim-name">{{ row.label }}<small>{{ row.importance }}</small></span>
+                <span class="claim-mentions">{{ row.value }}</span>
+                <span class="claim-laf">{{ row.laf_display }}</span>
+                <span class="claim-toggle" aria-hidden="true"></span>
+              </button>
+              {% else %}
+              <span class="claim-plain">
+                <span class="claim-name">{{ row.label }}<small>{{ row.importance }}</small></span>
+                <span class="claim-mentions">{{ row.value }}</span>
+                <span class="claim-laf">{{ row.laf_display }}</span>
+              </span>
+              {% endif %}
+            </li>
+            {% endfor %}
+          </ul>
+
+          {% if condition_graph_url %}
+          <div class="aspect-panel" data-aspect-panel hidden
+               data-aspect-graph-url="{{ condition_graph_url }}"
+               data-graph-entity="{{ entity_id }}">
+            <div class="aspect-panel-head">
+              <strong data-aspect-title>Condición</strong>
+            </div>
+            <div class="aspect-studio" data-aspect-studio>
+              <p class="aspect-studio-intro">Vista por condición: la sub-derivación y el resultado <strong>exactos</strong> que el sistema calculó para esta condición, aislada de las demás para que se lea.</p>
+              <div class="aspect-graph-controls">
+                <button type="button" class="icon-button" data-aspect-zoom-in title="Acercar" aria-label="Acercar">＋</button>
+                <button type="button" class="icon-button" data-aspect-zoom-out title="Alejar" aria-label="Alejar">−</button>
+                <button type="button" class="button button-secondary button-sm" data-aspect-fit>Ajustar</button>
+              </div>
+              <div class="graph-loading" data-aspect-loading hidden><span></span>Cargando el grafo…</div>
+              <div class="aspect-graph" data-aspect-graph></div>
+              <div class="mg-legend" aria-label="Qué significa cada elemento del grafo">
+                <span><i class="mg-sw mg-sw-fact"></i><strong>Hecho</strong>: lo que declara la publicación</span>
+                <span><i class="mg-sw mg-sw-rule"></i><strong>Regla</strong>: la lógica del sistema</span>
+                <span><i class="mg-sw mg-sw-conc"></i><strong>Resultado</strong> de esta condición</span>
+                <span><i class="mg-sw mg-sw-op"></i><strong>dMP</strong>: combina un hecho con una regla</span>
+                <span><i class="mg-sw mg-sw-ca"></i><strong>CA</strong>: compara lo que está a favor y en contra</span>
+                <span><i class="edge-swatch edge-support"></i> apoya</span>
+              </div>
+            </div>
+            <div class="aspect-plain" data-aspect-plain></div>
+          </div>
+          {% endif %}
+          {% endif %}
+
+          {% if breakdown and breakdown.is_multicriteria %}
+          <div class="score-breakdown score-breakdown-wide">
+            <div class="score-sum">
+              <p class="score-sum-head"><span>Cuánto te importa</span><span>Resultado LAF de cada condición</span><span>Aporte a la suma</span></p>
+              <ol class="score-sum-rows">
+                {% for group in score_groups %}
+                <li>
+                  <span class="score-sum-level">{{ group.level }}<em>suma {{ group.total|floatformat:3 }} × {{ group.weight|floatformat:2 }}</em></span>
+                  <span class="score-sum-terms">{% for row in group.rows %}<span class="score-term"><i>{{ row.label|lower }}</i>{{ row.laf_score|floatformat:3 }}</span>{% endfor %}</span>
+                  <span class="score-sum-value">{{ group.subtotal|floatformat:3 }}<i style="--share: {{ group.share }}%" title="{{ group.share }} % de la suma de aportes" aria-hidden="true"></i></span>
+                </li>
+                {% endfor %}
+              </ol>
+              <dl class="score-sum-total">
+              <div><dt>Suma de aportes</dt><dd>{{ breakdown.weighted_total|floatformat:2 }}</dd></div>
+              <div><dt>÷ suma de pesos</dt><dd>{{ breakdown.weights_total|floatformat:2 }}</dd></div>
+              <div class="score-sum-final"><dt>Puntaje</dt><dd class="score-big">{{ breakdown.final_score|floatformat:2 }}</dd></div>
+            </dl>
+            </div>
+            {% if score_equation %}<p class="score-equation">{{ score_equation }}</p>{% endif %}
+            {% if score_story %}<p class="score-story">{{ score_story }}</p>{% endif %}
+            <p class="score-note">LAF resolvió cada condición por separado: esos son los números de adentro de los corchetes en la cuenta escrita. Cada uno se multiplicó por la importancia que le diste y se sumaron las {{ breakdown.contributions|length }} que participan ({{ breakdown.weighted_total|floatformat:2 }}); dividido por la suma de esas importancias, {{ breakdown.weights_total|floatformat:2 }}, queda {{ breakdown.final_score|floatformat:2 }}. Las que pusiste en «No me importa» no participan. Los números se muestran redondeados para leerse; el puntaje es el que ordenó el ranking.</p>
+            {% if tie_note %}<p class="score-note">{{ tie_note }}</p>{% endif %}
+          </div>
+          {% endif %}
+        </section>
+
+        <section class="contribution-figure ranking-figure" data-ranking-figure hidden aria-labelledby="purchase-ranking-title">
+          <div class="contribution-heading">
+            <div>
+              <h2 id="purchase-ranking-title">Cómo se compara con las demás</h2>
+              <p>Las publicaciones están ordenadas por cuánto cumplen las condiciones que elegiste y la importancia que les diste.</p>
+            </div>
+          </div>
+          <ol class="vs2-list vs2-list-simple mt-5">
+            {% for row in ranking %}
+            <li class="{% if row.is_selected %}vs2-selected{% endif %}">
+              <a href="{% url 'recommender:explanation' flow.id %}?entity_id={{ row.entity_id|urlencode }}">
+                <span class="vs2-name"><span class="vs2-pos">{{ row.position }}</span>{% for item in result.ranking %}{% if item.entity_id == row.entity_id %}{{ item.metadata.listing_title|default:item.metadata.seller }}{% endif %}{% endfor %}{% if row.is_selected %} · estás viendo{% endif %}</span>
+                <span class="vs2-cell"><span class="vs2-track"><span class="vs2-fill vs2-conf" style="width: {% widthratio row.final_score ranking_top_score 100 %}%"></span></span></span>
+                <span class="vs2-score">{{ row.final_score|floatformat:2 }}</span>
+              </a>
+            </li>
+            {% endfor %}
+          </ol>
+        </section>
+      </div>
+    </div>
+
+    <p class="mt-6"><a href="{% url 'recommender:traceability' flow.id %}">Ver datos utilizados</a></p>
+  </div>
+</section>
+{% endblock %}

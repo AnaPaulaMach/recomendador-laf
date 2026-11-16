@@ -1,0 +1,1240 @@
+{
+  "edges": [
+    {
+      "from": "F1",
+      "kind": "SUPPORT",
+      "to": "F28"
+    },
+    {
+      "from": "F2",
+      "kind": "SUPPORT",
+      "to": "F40"
+    },
+    {
+      "from": "F3",
+      "kind": "SUPPORT",
+      "to": "F19"
+    },
+    {
+      "from": "F4",
+      "kind": "SUPPORT",
+      "to": "F15"
+    },
+    {
+      "from": "R1",
+      "kind": "SUPPORT",
+      "to": "F22"
+    },
+    {
+      "from": "R1",
+      "kind": "SUPPORT",
+      "to": "F17"
+    },
+    {
+      "from": "R1",
+      "kind": "SUPPORT",
+      "to": "F4"
+    },
+    {
+      "from": "R1",
+      "kind": "SUPPORT",
+      "to": "F8"
+    },
+    {
+      "from": "R1",
+      "kind": "SUPPORT",
+      "to": "F30"
+    },
+    {
+      "from": "R1",
+      "kind": "SUPPORT",
+      "to": "F24"
+    },
+    {
+      "from": "R1",
+      "kind": "SUPPORT",
+      "to": "F19"
+    },
+    {
+      "from": "R1",
+      "kind": "SUPPORT",
+      "to": "F1"
+    },
+    {
+      "from": "R1",
+      "kind": "SUPPORT",
+      "to": "F34"
+    },
+    {
+      "from": "R1",
+      "kind": "SUPPORT",
+      "to": "F10"
+    },
+    {
+      "from": "F5",
+      "kind": "SUPPORT",
+      "to": "F12"
+    },
+    {
+      "from": "F6",
+      "kind": "SUPPORT",
+      "to": "F10"
+    },
+    {
+      "from": "F7",
+      "kind": "SUPPORT",
+      "to": "F11"
+    },
+    {
+      "from": "F8",
+      "kind": "SUPPORT",
+      "to": "F29"
+    },
+    {
+      "from": "F9",
+      "kind": "SUPPORT",
+      "to": "F8"
+    },
+    {
+      "from": "F10",
+      "kind": "SUPPORT",
+      "to": "F20"
+    },
+    {
+      "from": "R2",
+      "kind": "SUPPORT",
+      "to": "F21"
+    },
+    {
+      "from": "R2",
+      "kind": "SUPPORT",
+      "to": "F25"
+    },
+    {
+      "from": "R2",
+      "kind": "SUPPORT",
+      "to": "F15"
+    },
+    {
+      "from": "R2",
+      "kind": "SUPPORT",
+      "to": "F29"
+    },
+    {
+      "from": "R2",
+      "kind": "SUPPORT",
+      "to": "F35"
+    },
+    {
+      "from": "R2",
+      "kind": "SUPPORT",
+      "to": "F37"
+    },
+    {
+      "from": "R2",
+      "kind": "SUPPORT",
+      "to": "F39"
+    },
+    {
+      "from": "R2",
+      "kind": "SUPPORT",
+      "to": "F28"
+    },
+    {
+      "from": "R2",
+      "kind": "SUPPORT",
+      "to": "F38"
+    },
+    {
+      "from": "R2",
+      "kind": "SUPPORT",
+      "to": "F20"
+    },
+    {
+      "from": "F11",
+      "kind": "SUPPORT",
+      "to": "F41"
+    },
+    {
+      "from": "F12",
+      "kind": "SUPPORT",
+      "to": "F27"
+    },
+    {
+      "from": "F13",
+      "kind": "SUPPORT",
+      "to": "F34"
+    },
+    {
+      "from": "F14",
+      "kind": "SUPPORT",
+      "to": "F22"
+    },
+    {
+      "from": "F15",
+      "kind": "SUPPORT",
+      "to": "F42"
+    },
+    {
+      "from": "F16",
+      "kind": "SUPPORT",
+      "to": "F24"
+    },
+    {
+      "from": "F17",
+      "kind": "SUPPORT",
+      "to": "F25"
+    },
+    {
+      "from": "F18",
+      "kind": "SUPPORT",
+      "to": "F30"
+    },
+    {
+      "from": "F19",
+      "kind": "SUPPORT",
+      "to": "F39"
+    },
+    {
+      "from": "R3",
+      "kind": "SUPPORT",
+      "to": "F7"
+    },
+    {
+      "from": "R3",
+      "kind": "SUPPORT",
+      "to": "F12"
+    },
+    {
+      "from": "R3",
+      "kind": "SUPPORT",
+      "to": "F31"
+    },
+    {
+      "from": "F20",
+      "kind": "SUPPORT",
+      "to": "F43"
+    },
+    {
+      "from": "F21",
+      "kind": "SUPPORT",
+      "to": "F44"
+    },
+    {
+      "from": "F22",
+      "kind": "SUPPORT",
+      "to": "F21"
+    },
+    {
+      "from": "F23",
+      "kind": "SUPPORT",
+      "to": "F7"
+    },
+    {
+      "from": "F24",
+      "kind": "SUPPORT",
+      "to": "F37"
+    },
+    {
+      "from": "F25",
+      "kind": "SUPPORT",
+      "to": "F45"
+    },
+    {
+      "from": "F26",
+      "kind": "SUPPORT",
+      "to": "F4"
+    },
+    {
+      "from": "F27",
+      "kind": "SUPPORT",
+      "to": "F46"
+    },
+    {
+      "from": "F28",
+      "kind": "SUPPORT",
+      "to": "F47"
+    },
+    {
+      "from": "R4",
+      "kind": "SUPPORT",
+      "to": "F11"
+    },
+    {
+      "from": "R4",
+      "kind": "SUPPORT",
+      "to": "F27"
+    },
+    {
+      "from": "R4",
+      "kind": "SUPPORT",
+      "to": "F2"
+    },
+    {
+      "from": "F29",
+      "kind": "SUPPORT",
+      "to": "F48"
+    },
+    {
+      "from": "F30",
+      "kind": "SUPPORT",
+      "to": "F35"
+    },
+    {
+      "from": "R5",
+      "kind": "SUPPORT",
+      "to": "F44"
+    },
+    {
+      "from": "R5",
+      "kind": "SUPPORT",
+      "to": "F45"
+    },
+    {
+      "from": "R5",
+      "kind": "SUPPORT",
+      "to": "F42"
+    },
+    {
+      "from": "R5",
+      "kind": "SUPPORT",
+      "to": "F48"
+    },
+    {
+      "from": "R5",
+      "kind": "SUPPORT",
+      "to": "F49"
+    },
+    {
+      "from": "R5",
+      "kind": "SUPPORT",
+      "to": "F50"
+    },
+    {
+      "from": "R5",
+      "kind": "SUPPORT",
+      "to": "F51"
+    },
+    {
+      "from": "R5",
+      "kind": "SUPPORT",
+      "to": "F47"
+    },
+    {
+      "from": "R5",
+      "kind": "SUPPORT",
+      "to": "F52"
+    },
+    {
+      "from": "R5",
+      "kind": "SUPPORT",
+      "to": "F43"
+    },
+    {
+      "from": "F31",
+      "kind": "SUPPORT",
+      "to": "F2"
+    },
+    {
+      "from": "F32",
+      "kind": "SUPPORT",
+      "to": "F17"
+    },
+    {
+      "from": "F33",
+      "kind": "SUPPORT",
+      "to": "F31"
+    },
+    {
+      "from": "F34",
+      "kind": "SUPPORT",
+      "to": "F38"
+    },
+    {
+      "from": "F35",
+      "kind": "SUPPORT",
+      "to": "F49"
+    },
+    {
+      "from": "F36",
+      "kind": "SUPPORT",
+      "to": "F1"
+    },
+    {
+      "from": "R6",
+      "kind": "SUPPORT",
+      "to": "F41"
+    },
+    {
+      "from": "R6",
+      "kind": "SUPPORT",
+      "to": "F46"
+    },
+    {
+      "from": "R6",
+      "kind": "SUPPORT",
+      "to": "F40"
+    },
+    {
+      "from": "F37",
+      "kind": "SUPPORT",
+      "to": "F50"
+    },
+    {
+      "from": "F38",
+      "kind": "SUPPORT",
+      "to": "F52"
+    },
+    {
+      "from": "F39",
+      "kind": "SUPPORT",
+      "to": "F51"
+    },
+    {
+      "from": "F7",
+      "kind": "CONFLICT",
+      "to": "F8"
+    },
+    {
+      "from": "F8",
+      "kind": "CONFLICT",
+      "to": "F7"
+    },
+    {
+      "from": "F11",
+      "kind": "CONFLICT",
+      "to": "F29"
+    },
+    {
+      "from": "F29",
+      "kind": "CONFLICT",
+      "to": "F11"
+    },
+    {
+      "from": "F41",
+      "kind": "CONFLICT",
+      "to": "F48"
+    },
+    {
+      "from": "F48",
+      "kind": "CONFLICT",
+      "to": "F41"
+    },
+    {
+      "from": "F12",
+      "kind": "CONFLICT",
+      "to": "F30"
+    },
+    {
+      "from": "F30",
+      "kind": "CONFLICT",
+      "to": "F12"
+    },
+    {
+      "from": "F27",
+      "kind": "CONFLICT",
+      "to": "F35"
+    },
+    {
+      "from": "F35",
+      "kind": "CONFLICT",
+      "to": "F27"
+    },
+    {
+      "from": "F46",
+      "kind": "CONFLICT",
+      "to": "F49"
+    },
+    {
+      "from": "F49",
+      "kind": "CONFLICT",
+      "to": "F46"
+    },
+    {
+      "from": "F31",
+      "kind": "CONFLICT",
+      "to": "F1"
+    },
+    {
+      "from": "F1",
+      "kind": "CONFLICT",
+      "to": "F31"
+    },
+    {
+      "from": "F2",
+      "kind": "CONFLICT",
+      "to": "F28"
+    },
+    {
+      "from": "F28",
+      "kind": "CONFLICT",
+      "to": "F2"
+    },
+    {
+      "from": "F40",
+      "kind": "CONFLICT",
+      "to": "F47"
+    },
+    {
+      "from": "F47",
+      "kind": "CONFLICT",
+      "to": "F40"
+    }
+  ],
+  "nodes": [
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.6034999999999999"
+      ],
+      "deltaAttributes": [
+        "0.4737889847378898"
+      ],
+      "id": "F1",
+      "label": "variedadBueno(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo)",
+      "sourceKey": null,
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.0"
+      ],
+      "deltaAttributes": [
+        "0.0"
+      ],
+      "id": "F2",
+      "label": "~productoBueno(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo)",
+      "sourceKey": null,
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.55"
+      ],
+      "deltaAttributes": [
+        "0.55"
+      ],
+      "id": "F3",
+      "label": "resenaPositivaVariedad(mlm41148521_cafe_gourmet_molido_espresso_400g_blason)",
+      "sourceKey": "FACT|resenaPositivaVariedad|mlm41148521_cafe_gourmet_molido_espresso_400g_blason",
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.442"
+      ],
+      "deltaAttributes": [
+        "0.442"
+      ],
+      "id": "F4",
+      "label": "variedadBueno(mlm16250252_nescafe_clasico_de_cafe_sin_gluten)",
+      "sourceKey": null,
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.85"
+      ],
+      "deltaAttributes": [
+        "0.85"
+      ],
+      "id": "R1",
+      "label": "variedadBueno(X) :- resenaPositivaVariedad(X).",
+      "sourceKey": "RULE|line:18",
+      "type": "RULE"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.29"
+      ],
+      "deltaAttributes": [
+        "0.29"
+      ],
+      "id": "F5",
+      "label": "resenaNegativaVariedad(mlm16250244_nescafe_taster_s_choice_caramel_dark)",
+      "sourceKey": "FACT|resenaNegativaVariedad|mlm16250244_nescafe_taster_s_choice_caramel_dark",
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.54"
+      ],
+      "deltaAttributes": [
+        "0.54"
+      ],
+      "id": "F6",
+      "label": "resenaPositivaVariedad(mlm19543513_cafe_molido_la_parroquia_puro_1)",
+      "sourceKey": "FACT|resenaPositivaVariedad|mlm19543513_cafe_molido_la_parroquia_puro_1",
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.1955"
+      ],
+      "deltaAttributes": [
+        "0.0"
+      ],
+      "id": "F7",
+      "label": "~variedadBueno(mlm19544520_cafe_capuccino_moka_members_mark_1)",
+      "sourceKey": null,
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.6545"
+      ],
+      "deltaAttributes": [
+        "0.5705407085146053"
+      ],
+      "id": "F8",
+      "label": "variedadBueno(mlm19544520_cafe_capuccino_moka_members_mark_1)",
+      "sourceKey": null,
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.77"
+      ],
+      "deltaAttributes": [
+        "0.77"
+      ],
+      "id": "F9",
+      "label": "resenaPositivaVariedad(mlm19544520_cafe_capuccino_moka_members_mark_1)",
+      "sourceKey": "FACT|resenaPositivaVariedad|mlm19544520_cafe_capuccino_moka_members_mark_1",
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.459"
+      ],
+      "deltaAttributes": [
+        "0.459"
+      ],
+      "id": "F10",
+      "label": "variedadBueno(mlm19543513_cafe_molido_la_parroquia_puro_1)",
+      "sourceKey": null,
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.75"
+      ],
+      "deltaAttributes": [
+        "0.75"
+      ],
+      "id": "R2",
+      "label": "productoBueno(X) :- variedadBueno(X).",
+      "sourceKey": "RULE|line:20",
+      "type": "RULE"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.0"
+      ],
+      "deltaAttributes": [
+        "0.0"
+      ],
+      "id": "F11",
+      "label": "~productoBueno(mlm19544520_cafe_capuccino_moka_members_mark_1)",
+      "sourceKey": null,
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.24649999999999997"
+      ],
+      "deltaAttributes": [
+        "0.0"
+      ],
+      "id": "F12",
+      "label": "~variedadBueno(mlm16250244_nescafe_taster_s_choice_caramel_dark)",
+      "sourceKey": null,
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.7"
+      ],
+      "deltaAttributes": [
+        "0.7"
+      ],
+      "id": "F13",
+      "label": "resenaPositivaVariedad(mlm27068249_tripack_juan_valdez_cafe_soluble_95gr)",
+      "sourceKey": "FACT|resenaPositivaVariedad|mlm27068249_tripack_juan_valdez_cafe_soluble_95gr",
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.54"
+      ],
+      "deltaAttributes": [
+        "0.54"
+      ],
+      "id": "F14",
+      "label": "resenaPositivaVariedad(mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble)",
+      "sourceKey": "FACT|resenaPositivaVariedad|mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble",
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.3315"
+      ],
+      "deltaAttributes": [
+        "0.3315"
+      ],
+      "id": "F15",
+      "label": "productoBueno(mlm16250252_nescafe_clasico_de_cafe_sin_gluten)",
+      "sourceKey": null,
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.59"
+      ],
+      "deltaAttributes": [
+        "0.59"
+      ],
+      "id": "F16",
+      "label": "resenaPositivaVariedad(mlm16250253_nescafe_decaf_cafe_100_puro_soluble)",
+      "sourceKey": "FACT|resenaPositivaVariedad|mlm16250253_nescafe_decaf_cafe_100_puro_soluble",
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.48449999999999993"
+      ],
+      "deltaAttributes": [
+        "0.48449999999999993"
+      ],
+      "id": "F17",
+      "label": "variedadBueno(mlm26912881_cafe_blason_espresso_robusto_tostado_y)",
+      "sourceKey": null,
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.71"
+      ],
+      "deltaAttributes": [
+        "0.71"
+      ],
+      "id": "F18",
+      "label": "resenaPositivaVariedad(mlm16250244_nescafe_taster_s_choice_caramel_dark)",
+      "sourceKey": "FACT|resenaPositivaVariedad|mlm16250244_nescafe_taster_s_choice_caramel_dark",
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.4675"
+      ],
+      "deltaAttributes": [
+        "0.4675"
+      ],
+      "id": "F19",
+      "label": "variedadBueno(mlm41148521_cafe_gourmet_molido_espresso_400g_blason)",
+      "sourceKey": null,
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.85"
+      ],
+      "deltaAttributes": [
+        "0.85"
+      ],
+      "id": "R3",
+      "label": "~variedadBueno(X) :- resenaNegativaVariedad(X).",
+      "sourceKey": "RULE|line:19",
+      "type": "RULE"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.34425"
+      ],
+      "deltaAttributes": [
+        "0.34425"
+      ],
+      "id": "F20",
+      "label": "productoBueno(mlm19543513_cafe_molido_la_parroquia_puro_1)",
+      "sourceKey": null,
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.34425"
+      ],
+      "deltaAttributes": [
+        "0.34425"
+      ],
+      "id": "F21",
+      "label": "productoBueno(mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble)",
+      "sourceKey": null,
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.459"
+      ],
+      "deltaAttributes": [
+        "0.459"
+      ],
+      "id": "F22",
+      "label": "variedadBueno(mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble)",
+      "sourceKey": null,
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.23"
+      ],
+      "deltaAttributes": [
+        "0.23"
+      ],
+      "id": "F23",
+      "label": "resenaNegativaVariedad(mlm19544520_cafe_capuccino_moka_members_mark_1)",
+      "sourceKey": "FACT|resenaNegativaVariedad|mlm19544520_cafe_capuccino_moka_members_mark_1",
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.5015"
+      ],
+      "deltaAttributes": [
+        "0.5015"
+      ],
+      "id": "F24",
+      "label": "variedadBueno(mlm16250253_nescafe_decaf_cafe_100_puro_soluble)",
+      "sourceKey": null,
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.36337499999999995"
+      ],
+      "deltaAttributes": [
+        "0.36337499999999995"
+      ],
+      "id": "F25",
+      "label": "productoBueno(mlm26912881_cafe_blason_espresso_robusto_tostado_y)",
+      "sourceKey": null,
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.52"
+      ],
+      "deltaAttributes": [
+        "0.52"
+      ],
+      "id": "F26",
+      "label": "resenaPositivaVariedad(mlm16250252_nescafe_clasico_de_cafe_sin_gluten)",
+      "sourceKey": "FACT|resenaPositivaVariedad|mlm16250252_nescafe_clasico_de_cafe_sin_gluten",
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.0"
+      ],
+      "deltaAttributes": [
+        "0.0"
+      ],
+      "id": "F27",
+      "label": "~productoBueno(mlm16250244_nescafe_taster_s_choice_caramel_dark)",
+      "sourceKey": null,
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.35534173855341733"
+      ],
+      "deltaAttributes": [
+        "0.35534173855341733"
+      ],
+      "id": "F28",
+      "label": "productoBueno(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo)",
+      "sourceKey": null,
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.75"
+      ],
+      "deltaAttributes": [
+        "0.75"
+      ],
+      "id": "R4",
+      "label": "~productoBueno(X) :- ~variedadBueno(X).",
+      "sourceKey": "RULE|line:21",
+      "type": "RULE"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.42790553138595394"
+      ],
+      "deltaAttributes": [
+        "0.42790553138595394"
+      ],
+      "id": "F29",
+      "label": "productoBueno(mlm19544520_cafe_capuccino_moka_members_mark_1)",
+      "sourceKey": null,
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.6034999999999999"
+      ],
+      "deltaAttributes": [
+        "0.4737889847378898"
+      ],
+      "id": "F30",
+      "label": "variedadBueno(mlm16250244_nescafe_taster_s_choice_caramel_dark)",
+      "sourceKey": null,
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.78"
+      ],
+      "deltaAttributes": [
+        "0.78"
+      ],
+      "id": "R5",
+      "label": "recomendar(X) :- productoBueno(X).",
+      "sourceKey": "RULE|line:22",
+      "type": "RULE"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.24649999999999997"
+      ],
+      "deltaAttributes": [
+        "0.0"
+      ],
+      "id": "F31",
+      "label": "~variedadBueno(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo)",
+      "sourceKey": null,
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.57"
+      ],
+      "deltaAttributes": [
+        "0.57"
+      ],
+      "id": "F32",
+      "label": "resenaPositivaVariedad(mlm26912881_cafe_blason_espresso_robusto_tostado_y)",
+      "sourceKey": "FACT|resenaPositivaVariedad|mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.29"
+      ],
+      "deltaAttributes": [
+        "0.29"
+      ],
+      "id": "F33",
+      "label": "resenaNegativaVariedad(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo)",
+      "sourceKey": "FACT|resenaNegativaVariedad|mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo",
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.595"
+      ],
+      "deltaAttributes": [
+        "0.595"
+      ],
+      "id": "F34",
+      "label": "variedadBueno(mlm27068249_tripack_juan_valdez_cafe_soluble_95gr)",
+      "sourceKey": null,
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.35534173855341733"
+      ],
+      "deltaAttributes": [
+        "0.35534173855341733"
+      ],
+      "id": "F35",
+      "label": "productoBueno(mlm16250244_nescafe_taster_s_choice_caramel_dark)",
+      "sourceKey": null,
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.71"
+      ],
+      "deltaAttributes": [
+        "0.71"
+      ],
+      "id": "F36",
+      "label": "resenaPositivaVariedad(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo)",
+      "sourceKey": "FACT|resenaPositivaVariedad|mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo",
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.90"
+      ],
+      "deltaAttributes": [
+        "0.90"
+      ],
+      "id": "R6",
+      "label": "~recomendar(X) :- ~productoBueno(X).",
+      "sourceKey": "RULE|line:23",
+      "type": "RULE"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.37612499999999993"
+      ],
+      "deltaAttributes": [
+        "0.37612499999999993"
+      ],
+      "id": "F37",
+      "label": "productoBueno(mlm16250253_nescafe_decaf_cafe_100_puro_soluble)",
+      "sourceKey": null,
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.44625"
+      ],
+      "deltaAttributes": [
+        "0.44625"
+      ],
+      "id": "F38",
+      "label": "productoBueno(mlm27068249_tripack_juan_valdez_cafe_soluble_95gr)",
+      "sourceKey": null,
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.350625"
+      ],
+      "deltaAttributes": [
+        "0.350625"
+      ],
+      "id": "F39",
+      "label": "productoBueno(mlm41148521_cafe_gourmet_molido_espresso_400g_blason)",
+      "sourceKey": null,
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.0"
+      ],
+      "deltaAttributes": [
+        "0.0"
+      ],
+      "id": "F40",
+      "label": "~recomendar(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo)",
+      "sourceKey": null,
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.0"
+      ],
+      "deltaAttributes": [
+        "0.0"
+      ],
+      "id": "F41",
+      "label": "~recomendar(mlm19544520_cafe_capuccino_moka_members_mark_1)",
+      "sourceKey": null,
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.25857"
+      ],
+      "deltaAttributes": [
+        "0.25857"
+      ],
+      "id": "F42",
+      "label": "recomendar(mlm16250252_nescafe_clasico_de_cafe_sin_gluten)",
+      "sourceKey": null,
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.268515"
+      ],
+      "deltaAttributes": [
+        "0.268515"
+      ],
+      "id": "F43",
+      "label": "recomendar(mlm19543513_cafe_molido_la_parroquia_puro_1)",
+      "sourceKey": null,
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.268515"
+      ],
+      "deltaAttributes": [
+        "0.268515"
+      ],
+      "id": "F44",
+      "label": "recomendar(mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble)",
+      "sourceKey": null,
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.2834325"
+      ],
+      "deltaAttributes": [
+        "0.2834325"
+      ],
+      "id": "F45",
+      "label": "recomendar(mlm26912881_cafe_blason_espresso_robusto_tostado_y)",
+      "sourceKey": null,
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.0"
+      ],
+      "deltaAttributes": [
+        "0.0"
+      ],
+      "id": "F46",
+      "label": "~recomendar(mlm16250244_nescafe_taster_s_choice_caramel_dark)",
+      "sourceKey": null,
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.2771665560716655"
+      ],
+      "deltaAttributes": [
+        "0.2771665560716655"
+      ],
+      "id": "F47",
+      "label": "recomendar(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo)",
+      "sourceKey": null,
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.3337663144810441"
+      ],
+      "deltaAttributes": [
+        "0.3337663144810441"
+      ],
+      "id": "F48",
+      "label": "recomendar(mlm19544520_cafe_capuccino_moka_members_mark_1)",
+      "sourceKey": null,
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.2771665560716655"
+      ],
+      "deltaAttributes": [
+        "0.2771665560716655"
+      ],
+      "id": "F49",
+      "label": "recomendar(mlm16250244_nescafe_taster_s_choice_caramel_dark)",
+      "sourceKey": null,
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.29337749999999996"
+      ],
+      "deltaAttributes": [
+        "0.29337749999999996"
+      ],
+      "id": "F50",
+      "label": "recomendar(mlm16250253_nescafe_decaf_cafe_100_puro_soluble)",
+      "sourceKey": null,
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.27348750000000005"
+      ],
+      "deltaAttributes": [
+        "0.27348750000000005"
+      ],
+      "id": "F51",
+      "label": "recomendar(mlm41148521_cafe_gourmet_molido_espresso_400g_blason)",
+      "sourceKey": null,
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.348075"
+      ],
+      "deltaAttributes": [
+        "0.348075"
+      ],
+      "id": "F52",
+      "label": "recomendar(mlm27068249_tripack_juan_valdez_cafe_soluble_95gr)",
+      "sourceKey": null,
+      "type": "FACT"
+    }
+  ]
+}

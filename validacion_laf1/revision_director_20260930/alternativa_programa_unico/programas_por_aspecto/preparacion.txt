@@ -1,0 +1,29 @@
+% Referencia independiente por aspecto: preparacion
+% Preparado offline; verificado después con API local. Ver comparacion_motor_local.json.
+% Fuente: validacion_laf1/salidas/recongelado_20260910/despues/programa_laf1_D.txt
+% Una etiqueta de confianza; preferencias como pesos externos.
+resenaPositivaPreparacion(mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble). {0.63}
+resenaPositivaPreparacion(mlm20075768_nescafe_clasico_cafe_100_puro_soluble). {0.50}
+resenaNegativaPreparacion(mlm20075768_nescafe_clasico_cafe_100_puro_soluble). {0.50}
+resenaPositivaPreparacion(mlm26912881_cafe_blason_espresso_robusto_tostado_y). {0.51}
+resenaPositivaPreparacion(mlm16250252_nescafe_clasico_de_cafe_sin_gluten). {0.56}
+resenaPositivaPreparacion(mlm19544520_cafe_capuccino_moka_members_mark_1). {0.68}
+resenaNegativaPreparacion(mlm19544520_cafe_capuccino_moka_members_mark_1). {0.32}
+resenaPositivaPreparacion(mlm16250244_nescafe_taster_s_choice_caramel_dark). {0.57}
+resenaPositivaPreparacion(mlm23633481_nescafe_clasico_ice_cafe_soluble_en). {0.76}
+resenaNegativaPreparacion(mlm23633481_nescafe_clasico_ice_cafe_soluble_en). {0.24}
+resenaPositivaPreparacion(mlm16207863_nescafe_cafe_de_olla_100_cafe). {0.53}
+resenaPositivaPreparacion(mlm16250253_nescafe_decaf_cafe_100_puro_soluble). {0.52}
+resenaPositivaPreparacion(mlm41148521_cafe_gourmet_molido_espresso_400g_blason). {0.53}
+resenaPositivaPreparacion(mlm19663240_nescafe_clasico_cafe_100_puro_soluble). {0.57}
+resenaPositivaPreparacion(mlm16207890_nescafe_reserva_verarica_cafe_100_soluble). {0.52}
+resenaPositivaPreparacion(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo). {0.65}
+resenaPositivaPreparacion(mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional). {0.58}
+resenaPositivaPreparacion(mlm27068249_tripack_juan_valdez_cafe_soluble_95gr). {0.52}
+resenaPositivaPreparacion(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.55}
+preparacionBueno(X) :- resenaPositivaPreparacion(X). {0.85}
+~preparacionBueno(X) :- resenaNegativaPreparacion(X). {0.85}
+elaboracionBueno(X) :- preparacionBueno(X). {0.80}
+~elaboracionBueno(X) :- ~preparacionBueno(X). {0.85}
+recomendar(X) :- elaboracionBueno(X). {0.75}
+~recomendar(X) :- ~elaboracionBueno(X). {0.75}

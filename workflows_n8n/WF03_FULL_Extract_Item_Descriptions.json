@@ -1,0 +1,305 @@
+{
+  "name": "WF03_FULL_Extract_Item_Descriptions",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -144,
+        -256
+      ],
+      "id": "6c885ad3-72cf-4848-a604-78222504ba5c",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        400,
+        -256
+      ],
+      "id": "d68b29bc-c88d-4174-bdec-0c8e182ead05",
+      "name": "Loop Over Items"
+    },
+    {
+      "parameters": {
+        "url": "=https://api.mercadolibre.com/items/{{ $json.item_id }}/description",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "oAuth2Api",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {}
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        576,
+        -144
+      ],
+      "id": "adad92fa-27ef-4de2-b907-bf58c3fe7877",
+      "name": "Get Item Description",
+      "credentials": {
+        "oAuth2Api": {
+          "id": "Yxudi71RA9ggHlDN",
+          "name": "Unnamed credential"
+        }
+      },
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "content": "# Qué hace?\n## Extrae descripciones de publicaciones (nivel item)\n## 1 Lee dataset activo ; 2 Obtiene item_id desde items_raw\n## 3 Itera items  ; 4 Consulta API de descripciones\n## 5 Reasocia con product_id ; 6 Guarda en item_descriptions_raw\n\n## Extra: - Continúa ante errores",
+        "height": 336,
+        "width": 1152
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -176,
+        -688
+      ],
+      "id": "5bf181b0-b866-449a-b853-6a70683a4b8d",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "operation": "getAll",
+        "tableId": "items_raw",
+        "returnAll": true,
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "dataset_key",
+              "condition": "eq",
+              "keyValue": "={{$json.active_dataset_key}}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        224,
+        -256
+      ],
+      "id": "b8769582-33b1-44cc-ba8d-332c107d1330",
+      "name": "Get many rows",
+      "credentials": {
+        "supabaseApi": {
+          "id": "R4VGp7PiljOL7AgF",
+          "name": "Supabase account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "tableId": "item_descriptions_raw",
+        "fieldsUi": {
+          "fieldValues": [
+            {
+              "fieldId": "dataset_key",
+              "fieldValue": "={{ $json.dataset_key }}"
+            },
+            {
+              "fieldId": "product_id",
+              "fieldValue": "={{ $json.product_id }}"
+            },
+            {
+              "fieldId": "item_id",
+              "fieldValue": "={{ $json.item_id }}"
+            },
+            {
+              "fieldId": "extraction_date",
+              "fieldValue": "={{ $json.extraction_date }}"
+            },
+            {
+              "fieldId": "text",
+              "fieldValue": "={{ $json.text }}"
+            },
+            {
+              "fieldId": "plain_text",
+              "fieldValue": "={{ $json.plain_text }}"
+            },
+            {
+              "fieldId": "last_updated",
+              "fieldValue": "={{ $json.last_updated }}"
+            },
+            {
+              "fieldId": "date_created",
+              "fieldValue": "={{ $json.date_created }}"
+            },
+            {
+              "fieldId": "snapshot",
+              "fieldValue": "={{ $json.snapshot }}"
+            },
+            {
+              "fieldId": "raw_json",
+              "fieldValue": "={{ $json.raw_json }}"
+            },
+            {
+              "fieldId": "last_sync",
+              "fieldValue": "={{ $json.last_sync }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        944,
+        -144
+      ],
+      "id": "c1f19372-d380-4b18-a1b1-eb6d86451718",
+      "name": "Append to item_descriptions_raw",
+      "credentials": {
+        "supabaseApi": {
+          "id": "R4VGp7PiljOL7AgF",
+          "name": "Supabase account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "tableId": "workflow_control",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "id",
+              "keyValue": "1"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        48,
+        -256
+      ],
+      "id": "6c617288-b407-4931-b4a6-b25bc2d9d5ed",
+      "name": "Get Active Dataset",
+      "credentials": {
+        "supabaseApi": {
+          "id": "R4VGp7PiljOL7AgF",
+          "name": "Supabase account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "return items.map(item => {\n  const d = item.json;\n\n  return {\n    json: {\n      dataset_key: $('Get Active Dataset').item.json.active_dataset_key,\n      item_id: $('Loop Over Items').item.json.item_id,\n      product_id: $('Loop Over Items').item.json.product_id,\n      extraction_date: new Date().toISOString(),\n      last_sync: new Date().toISOString(),\n      text: d.text ?? null,\n      plain_text: d.plain_text ?? null,\n      last_updated: d.last_updated ?? null,\n      date_created: d.date_created ?? null,\n      snapshot: d.snapshot ?? {},\n      raw_json: d\n    }\n  };\n});"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        768,
+        -144
+      ],
+      "id": "bf4a888a-b570-492e-b771-9e906c5f1497",
+      "name": "Build Item Description RAW Row"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Get Active Dataset",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items": {
+      "main": [
+        [],
+        [
+          {
+            "node": "Get Item Description",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Item Description": {
+      "main": [
+        [
+          {
+            "node": "Build Item Description RAW Row",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get many rows": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Append to item_descriptions_raw": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Active Dataset": {
+      "main": [
+        [
+          {
+            "node": "Get many rows",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build Item Description RAW Row": {
+      "main": [
+        [
+          {
+            "node": "Append to item_descriptions_raw",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "dc724c5d-635e-4c24-85b1-75b5c46979fc",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": ""
+  },
+  "nodeGroups": [],
+  "id": "mnXRuyzKDFh4ASoN",
+  "tags": []
+}

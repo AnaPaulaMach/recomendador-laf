@@ -1,0 +1,124 @@
+{
+  "edges": [
+    {
+      "from": "R1",
+      "kind": "SUPPORT",
+      "to": "F3"
+    },
+    {
+      "from": "F1",
+      "kind": "SUPPORT",
+      "to": "F4"
+    },
+    {
+      "from": "F2",
+      "kind": "SUPPORT",
+      "to": "F3"
+    },
+    {
+      "from": "R2",
+      "kind": "SUPPORT",
+      "to": "F4"
+    },
+    {
+      "from": "F1",
+      "kind": "CONFLICT",
+      "to": "F2"
+    },
+    {
+      "from": "F2",
+      "kind": "CONFLICT",
+      "to": "F1"
+    },
+    {
+      "from": "F4",
+      "kind": "CONFLICT",
+      "to": "F3"
+    },
+    {
+      "from": "F3",
+      "kind": "CONFLICT",
+      "to": "F4"
+    }
+  ],
+  "nodes": [
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "1"
+      ],
+      "deltaAttributes": [
+        "1"
+      ],
+      "id": "R1",
+      "label": "recomendarPorSabor(X) :- saborBueno(X).",
+      "sourceKey": "RULE|line:5",
+      "type": "RULE"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.2"
+      ],
+      "deltaAttributes": [
+        "0.0"
+      ],
+      "id": "F1",
+      "label": "~saborBueno(ejemplo)",
+      "sourceKey": "FACT|~saborBueno|ejemplo",
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.8"
+      ],
+      "deltaAttributes": [
+        "0.7500000000000001"
+      ],
+      "id": "F2",
+      "label": "saborBueno(ejemplo)",
+      "sourceKey": "FACT|saborBueno|ejemplo",
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "1"
+      ],
+      "deltaAttributes": [
+        "1"
+      ],
+      "id": "R2",
+      "label": "~recomendarPorSabor(X) :- ~saborBueno(X).",
+      "sourceKey": "RULE|line:6",
+      "type": "RULE"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.7500000000000001"
+      ],
+      "deltaAttributes": [
+        "0.7500000000000001"
+      ],
+      "id": "F3",
+      "label": "recomendarPorSabor(ejemplo)",
+      "sourceKey": null,
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.0"
+      ],
+      "deltaAttributes": [
+        "0.0"
+      ],
+      "id": "F4",
+      "label": "~recomendarPorSabor(ejemplo)",
+      "sourceKey": null,
+      "type": "FACT"
+    }
+  ]
+}

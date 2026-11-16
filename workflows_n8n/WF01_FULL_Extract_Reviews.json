@@ -1,0 +1,671 @@
+{
+  "name": "WF01_FULL_Extract_Reviews",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -1104,
+        -16
+      ],
+      "id": "4e7f0837-28e0-47fa-b650-1239c532cd20",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "url": "=https://api.mercadolibre.com/reviews/item/{{ $json.item_id }}?limit={{ $json.limit }}&offset={{ $json.offset }}",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "oAuth2Api",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {}
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        208,
+        80
+      ],
+      "id": "9e04993c-453e-4a71-a365-df06f8f4db67",
+      "name": "Get Reviews Meli",
+      "retryOnFail": false,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "oAuth2Api": {
+          "id": "Yxudi71RA9ggHlDN",
+          "name": "Unnamed credential"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "1aaf854b-94dc-4635-a2c6-b2a5d1e6834c",
+              "leftValue": "={{ $('Get Reviews Meli').item.json.paging.offset  +  $('Get Reviews Meli').item.json.paging.limit }}",
+              "rightValue": "={{ $('Get Reviews Meli').item.json.paging.total }}",
+              "operator": {
+                "type": "number",
+                "operation": "lt"
+              }
+            },
+            {
+              "id": "35fb7a73-eae0-4a60-b493-204177c73e65",
+              "leftValue": "={{ $('Get Reviews Meli').item.json.paging.offset }}",
+              "rightValue": 1900,
+              "operator": {
+                "type": "number",
+                "operation": "lt"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        192,
+        -192
+      ],
+      "id": "bdeed799-b600-4e35-8ca1-10e731555fb5",
+      "name": "If - Check More Pages"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "331fd0e2-7a46-47a7-b810-8976b86a3400",
+              "name": "offset",
+              "value": "={{ $('Get Reviews Meli').item.json.paging.offset + $('Get Reviews Meli').item.json.paging.limit }}",
+              "type": "number"
+            },
+            {
+              "id": "0e5826d6-f1e4-42fb-acbe-3d5f34f08a44",
+              "name": "limit",
+              "value": "={{ $('Get Reviews Meli').item.json.paging.limit }}",
+              "type": "number"
+            },
+            {
+              "id": "706100c2-dd79-4661-b8f8-801adb05464e",
+              "name": "item_id",
+              "value": "={{ $('Init Pagination').item.json.item_id }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        384,
+        -208
+      ],
+      "id": "bc09aa4e-c62b-4077-89b7-3c6071dc04fc",
+      "name": "Increase Offset"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        -224,
+        -16
+      ],
+      "id": "49114297-f6b0-48f0-9f6d-854dca6a2a0f",
+      "name": "Loop Over Items"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "540abfc9-2308-4e61-a7c0-91d31abcc826",
+              "name": "product_id",
+              "value": "={{ $json.product_id }}",
+              "type": "string"
+            },
+            {
+              "id": "505c9753-7760-486d-a152-7a70c63d52fa",
+              "name": "item_id",
+              "value": "={{ $json.item_id }}",
+              "type": "string"
+            },
+            {
+              "id": "43e9d447-71b0-414d-b952-ebf574937641",
+              "name": "offset",
+              "value": 0,
+              "type": "number"
+            },
+            {
+              "id": "22186d55-9d42-46ad-8f29-6b3e31b1967d",
+              "name": "limit",
+              "value": 100,
+              "type": "number"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -16,
+        80
+      ],
+      "id": "e274554f-14f5-481c-b45e-44c186118f4d",
+      "name": "Init Pagination"
+    },
+    {
+      "parameters": {
+        "content": "# Que hace?\n## Extrae resenias por producto\n## 1 Lee dataset activo desde workflow_control    ;    2 Obtiene items del dataset\n## 3 Filtra un item por producto (evita duplicados de reseñas)\n## 4 Itera con paginación (limit + offset)  ;  5 Consulta API de reseñas de Meli\n## 6 Guarda reseñas en reviews_raw\n\n## Extra: - Límite offset < 1900 (restricción API) - Wait para evitar rate limit",
+        "height": 304,
+        "width": 1264
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -1040,
+        -544
+      ],
+      "id": "bf752aa5-af3c-476a-bc6d-fc9953bbd8eb",
+      "name": "Sticky Note3"
+    },
+    {
+      "parameters": {
+        "operation": "getAll",
+        "tableId": "items_raw",
+        "returnAll": true,
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "dataset_key",
+              "condition": "eq",
+              "keyValue": "={{ $json.active_dataset_key }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        -608,
+        -16
+      ],
+      "id": "134d6291-8e49-4e9b-9097-2089118d8da1",
+      "name": "Get many rows",
+      "credentials": {
+        "supabaseApi": {
+          "id": "R4VGp7PiljOL7AgF",
+          "name": "Supabase account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "tableId": "workflow_control",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "id",
+              "keyValue": "1"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        -784,
+        -16
+      ],
+      "id": "b459a124-05fd-464e-b3b9-6d1b5c17158b",
+      "name": "Get Active Dataset",
+      "credentials": {
+        "supabaseApi": {
+          "id": "R4VGp7PiljOL7AgF",
+          "name": "Supabase account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "amount": 4
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        400,
+        304
+      ],
+      "id": "1ede73a6-26c8-4398-9458-5727a1a97c45",
+      "name": "Wait",
+      "webhookId": "8a114d90-cfd2-48d4-b99a-0e3df8a9cb17"
+    },
+    {
+      "parameters": {
+        "tableId": "reviews_raw",
+        "fieldsUi": {
+          "fieldValues": [
+            {
+              "fieldId": "dataset_key",
+              "fieldValue": "={{ $json.dataset_key }}"
+            },
+            {
+              "fieldId": "review_id",
+              "fieldValue": "={{ $json.review_id }}"
+            },
+            {
+              "fieldId": "product_id",
+              "fieldValue": "={{ $json.product_id }}"
+            },
+            {
+              "fieldId": "item_id",
+              "fieldValue": "={{ $json.item_id }}"
+            },
+            {
+              "fieldId": "extraction_date",
+              "fieldValue": "={{ $json.extraction_date }}"
+            },
+            {
+              "fieldId": "date_created",
+              "fieldValue": "={{ $json.date_created }}"
+            },
+            {
+              "fieldId": "buying_date",
+              "fieldValue": "={{ $json.buying_date }}"
+            },
+            {
+              "fieldId": "rate",
+              "fieldValue": "={{ $json.rate }}"
+            },
+            {
+              "fieldId": "title",
+              "fieldValue": "={{ $json.title }}"
+            },
+            {
+              "fieldId": "content",
+              "fieldValue": "={{ $json.content }}"
+            },
+            {
+              "fieldId": "likes",
+              "fieldValue": "={{ $json.likes }}"
+            },
+            {
+              "fieldId": "dislikes",
+              "fieldValue": "={{ $json.dislikes }}"
+            },
+            {
+              "fieldId": "relevance",
+              "fieldValue": "={{ $json.relevance }}"
+            },
+            {
+              "fieldId": "reviewer_id",
+              "fieldValue": "={{ $json.reviewer_id }}"
+            },
+            {
+              "fieldId": "reviewable_object",
+              "fieldValue": "={{ $json.reviewable_object }}"
+            },
+            {
+              "fieldId": "valorization",
+              "fieldValue": "={{ $json.valorization }}"
+            },
+            {
+              "fieldId": "forbidden_words",
+              "fieldValue": "={{ $json.forbidden_words }}"
+            },
+            {
+              "fieldId": "attributes",
+              "fieldValue": "={{ $json.attributes }}"
+            },
+            {
+              "fieldId": "media",
+              "fieldValue": "={{ $json.media }}"
+            },
+            {
+              "fieldId": "reactions",
+              "fieldValue": "={{ $json.reactions }}"
+            },
+            {
+              "fieldId": "attributes_variation",
+              "fieldValue": "={{ $json.attributes_variation }}"
+            },
+            {
+              "fieldId": "translations",
+              "fieldValue": "={{ $json.translations }}"
+            },
+            {
+              "fieldId": "item_condition",
+              "fieldValue": "={{ $json.item_condition }}"
+            },
+            {
+              "fieldId": "catalog_listing",
+              "fieldValue": "={{ $json.catalog_listing }}"
+            },
+            {
+              "fieldId": "variation_id",
+              "fieldValue": "={{ $json.variation_id }}"
+            },
+            {
+              "fieldId": "has_order_id",
+              "fieldValue": "={{ $json.has_order_id }}"
+            },
+            {
+              "fieldId": "item_status",
+              "fieldValue": "={{ $json.item_status }}"
+            },
+            {
+              "fieldId": "last_sync",
+              "fieldValue": "={{ $json.last_sync }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        1328,
+        80
+      ],
+      "id": "e6e3e90d-0b12-4bdf-a031-35f6cda2c6c7",
+      "name": "Insert Reviews RAW",
+      "credentials": {
+        "supabaseApi": {
+          "id": "R4VGp7PiljOL7AgF",
+          "name": "Supabase account"
+        }
+      },
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "jsCode": "\nconst seen = new Set();\nreturn items.filter(item => {\n  const product = item.json.product_id;\n  if (seen.has(product)) return false;  // descarta todos los demás\n  seen.add(product);\n  return true;\n});"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -432,
+        -16
+      ],
+      "id": "68fb253a-e007-4826-aab2-1d3f8f390595",
+      "name": "Keep One Item Per Product"
+    },
+    {
+      "parameters": {
+        "jsCode": "const input = items[0].json;\n\nconst reviews = input.reviews ?? [];\nconst productId = input.product_id;\nconst itemId = input.item_id;\n\nif (!reviews.length) {\n  return [];\n}\n\nreturn reviews.map(r => ({\n  json: {\n    ...r,\n    product_id: productId,\n    item_id: itemId\n  }\n}));"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        896,
+        80
+      ],
+      "id": "f1b00abd-b1cb-41d1-a457-9111a52fdfa7",
+      "name": "Split Reviews"
+    },
+    {
+      "parameters": {
+        "jsCode": "const datasetKey = $('Get Active Dataset').first().json.active_dataset_key;\n\nreturn items.map(item => {\n  const r = item.json;\n\n  return {\n    json: {\n      dataset_key: datasetKey,\n      review_id: String(r.id),\n      product_id: r.product_id,\n      item_id: r.item_id,\n      extraction_date: new Date().toISOString(),\n      last_sync: new Date().toISOString(),\n      date_created: r.date_created ?? null,\n      buying_date: r.buying_date ?? null,\n      rate: r.rate ?? null,\n      title: r.title ?? null,\n      content: r.content ?? null,\n      likes: r.likes ?? null,\n      dislikes: r.dislikes ?? null,\n      relevance: r.relevance ?? null,\n      reviewer_id: r.reviewer_id ?? null,\n      reviewable_object: r.reviewable_object ?? {},\n      valorization: r.valorization ?? {},\n      forbidden_words: r.forbidden_words ?? [],\n      attributes: r.attributes ?? [],\n      media: r.media ?? [],\n      reactions: r.reactions ?? {},\n      attributes_variation: r.attributes_variation ?? [],\n      translations: r.translations ?? {},\n      item_condition: r.condition ?? null,\n      catalog_listing: r.catalog_listing ?? null,\n      variation_id: r.variation_id != null ? String(r.variation_id) : null,\n      has_order_id: r.order_id != null,\n      item_status: r.item_status ?? null\n    }\n  };\n});"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1136,
+        80
+      ],
+      "id": "61e6e718-b20d-4da5-869a-270f51cff365",
+      "name": "Build Reviews RAW Row"
+    },
+    {
+      "parameters": {
+        "jsCode": "const response = items[0].json;\n\nreturn [\n  {\n    json: {\n      ...response,\n      product_id: $('Init Pagination').first().json.product_id,\n      item_id: $('Init Pagination').first().json.item_id\n    }\n  }\n];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        656,
+        80
+      ],
+      "id": "5242e93a-5854-4c5e-9f5a-59b895cae96c",
+      "name": "Attach Product and Item IDs"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "92a2e7a7-2ab7-498c-940c-05635ab2f6ae",
+              "name": "site_id",
+              "value": "MLA",
+              "type": "string"
+            },
+            {
+              "id": "93bf5756-e138-4338-bd81-e62cfb5a0a1b",
+              "name": "",
+              "value": "",
+              "type": "string"
+            },
+            {
+              "id": "d0ece109-f7fa-46f3-b136-78957b5bdcf3",
+              "name": "",
+              "value": "",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -944,
+        -16
+      ],
+      "id": "490e4459-9a64-4e75-8536-d68ea4b0cc19",
+      "name": "Initialize Category Input"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Initialize Category Input",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Reviews Meli": {
+      "main": [
+        [
+          {
+            "node": "Attach Product and Item IDs",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Wait",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If - Check More Pages": {
+      "main": [
+        [
+          {
+            "node": "Increase Offset",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Increase Offset": {
+      "main": [
+        [
+          {
+            "node": "Get Reviews Meli",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items": {
+      "main": [
+        [],
+        [
+          {
+            "node": "Init Pagination",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Init Pagination": {
+      "main": [
+        [
+          {
+            "node": "Get Reviews Meli",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get many rows": {
+      "main": [
+        [
+          {
+            "node": "Keep One Item Per Product",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Active Dataset": {
+      "main": [
+        [
+          {
+            "node": "Get many rows",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait": {
+      "main": [
+        [
+          {
+            "node": "If - Check More Pages",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Keep One Item Per Product": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Reviews": {
+      "main": [
+        [
+          {
+            "node": "Build Reviews RAW Row",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build Reviews RAW Row": {
+      "main": [
+        [
+          {
+            "node": "Insert Reviews RAW",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Attach Product and Item IDs": {
+      "main": [
+        [
+          {
+            "node": "Split Reviews",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Initialize Category Input": {
+      "main": [
+        [
+          {
+            "node": "Get Active Dataset",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "85e9f10d-30db-4898-9c26-a693f9f23204",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": ""
+  },
+  "nodeGroups": [],
+  "id": "3EUxNrMIvryZAKIu",
+  "tags": []
+}

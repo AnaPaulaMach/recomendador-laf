@@ -1,0 +1,126 @@
+{
+  "edges": [
+    {
+      "from": "R1",
+      "kind": "SUPPORT",
+      "to": "F3"
+    },
+    {
+      "from": "F1",
+      "kind": "SUPPORT",
+      "to": "F4"
+    },
+    {
+      "from": "R2",
+      "kind": "SUPPORT",
+      "to": "F4"
+    },
+    {
+      "from": "F2",
+      "kind": "SUPPORT",
+      "to": "F3"
+    },
+    {
+      "from": "F4",
+      "kind": "CONFLICT",
+      "to": "F3"
+    },
+    {
+      "from": "F3",
+      "kind": "CONFLICT",
+      "to": "F4"
+    }
+  ],
+  "nodes": [
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "1",
+        "0.40"
+      ],
+      "deltaAttributes": [
+        "1",
+        "0.40"
+      ],
+      "id": "R1",
+      "label": "aspectoBueno(X) :- positivo(X).",
+      "sourceKey": "RULE|line:4",
+      "type": "RULE"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.3",
+        "1.0"
+      ],
+      "deltaAttributes": [
+        "0.3",
+        "1.0"
+      ],
+      "id": "F1",
+      "label": "negativo(ejemplo)",
+      "sourceKey": "FACT|negativo|ejemplo",
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "1",
+        "0.40"
+      ],
+      "deltaAttributes": [
+        "1",
+        "0.40"
+      ],
+      "id": "R2",
+      "label": "~aspectoBueno(X) :- negativo(X).",
+      "sourceKey": "RULE|line:5",
+      "type": "RULE"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.8",
+        "1.0"
+      ],
+      "deltaAttributes": [
+        "0.8",
+        "1.0"
+      ],
+      "id": "F2",
+      "label": "positivo(ejemplo)",
+      "sourceKey": "FACT|positivo|ejemplo",
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.8",
+        "0.4"
+      ],
+      "deltaAttributes": [
+        "0.7142857142857143",
+        "0.0"
+      ],
+      "id": "F3",
+      "label": "aspectoBueno(ejemplo)",
+      "sourceKey": null,
+      "type": "FACT"
+    },
+    {
+      "attributeIntervals": null,
+      "attributes": [
+        "0.3",
+        "0.4"
+      ],
+      "deltaAttributes": [
+        "0.0",
+        "0.0"
+      ],
+      "id": "F4",
+      "label": "~aspectoBueno(ejemplo)",
+      "sourceKey": null,
+      "type": "FACT"
+    }
+  ]
+}

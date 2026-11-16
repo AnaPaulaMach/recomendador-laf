@@ -1,0 +1,403 @@
+{
+  "aspects": {
+    "bateria": [
+      "autonomia",
+      "autonomía",
+      "bateria",
+      "batería",
+      "carga",
+      "cargar",
+      "duracion",
+      "duración",
+      "mah",
+      "pila",
+      "se descarga"
+    ],
+    "camara": [
+      "camara",
+      "cámara",
+      "foto",
+      "fotos",
+      "fotografia",
+      "fotografía",
+      "lente",
+      "megapixel",
+      "mpx",
+      "retrato",
+      "selfie",
+      "video"
+    ],
+    "pantalla": [
+      "brillo",
+      "display",
+      "hd",
+      "imagen",
+      "panel",
+      "pantalla",
+      "pixeles",
+      "píxeles",
+      "resolucion",
+      "resolución",
+      "tactil",
+      "táctil"
+    ],
+    "rendimiento": [
+      "fluidez",
+      "lag",
+      "lento",
+      "procesador",
+      "ram",
+      "rapidez",
+      "rapido",
+      "rápido",
+      "rendimiento",
+      "se cuelga",
+      "se traba",
+      "velocidad"
+    ],
+    "almacenamiento": [
+      "almacenamiento",
+      "capacidad",
+      "espacio",
+      "gb",
+      "gigas",
+      "memoria",
+      "memoria interna",
+      "micro sd",
+      "microsd",
+      "sd",
+      "storage"
+    ],
+    "diseño": [
+      "acabado",
+      "bonito",
+      "construccion",
+      "construcción",
+      "diseño",
+      "diseno",
+      "liviano",
+      "peso",
+      "terminacion",
+      "terminación",
+      "tamaño",
+      "tamano"
+    ],
+    "software": [
+      "actualizacion",
+      "actualización",
+      "android",
+      "app",
+      "aplicacion",
+      "aplicación",
+      "interfaz",
+      "sistema",
+      "sistema operativo",
+      "software",
+      "version",
+      "versión"
+    ],
+    "señal": [
+      "4g",
+      "5g",
+      "bluetooth",
+      "conexion",
+      "conexión",
+      "conectividad",
+      "datos",
+      "internet",
+      "nfc",
+      "senal",
+      "señal",
+      "wifi"
+    ],
+    "sonido": [
+      "audio",
+      "auricular",
+      "auriculares",
+      "microfono",
+      "micrófono",
+      "parlante",
+      "parlantes",
+      "sonido",
+      "volumen"
+    ],
+    "calidad": [
+      "calidad",
+      "defecto",
+      "durabilidad",
+      "falla",
+      "fragil",
+      "frágil",
+      "material",
+      "materiales",
+      "resistente",
+      "robusto"
+    ]
+  },
+  "positive": [
+    "aceptable",
+    "barbaro",
+    "bárbaro",
+    "bien",
+    "bonita",
+    "bonito",
+    "buena",
+    "bueno",
+    "calidad",
+    "clara",
+    "claro",
+    "comodo",
+    "cómodo",
+    "conforme",
+    "contenta",
+    "contento",
+    "correcta",
+    "correcto",
+    "cumple",
+    "cumple expectativas",
+    "cumplio expectativas",
+    "cumplir",
+    "destacado",
+    "duradero",
+    "eficiente",
+    "excelente",
+    "fluida",
+    "fluido",
+    "genial",
+    "hermoso",
+    "ideal",
+    "impecable",
+    "increible",
+    "increíble",
+    "linda",
+    "lindo",
+    "me encanta",
+    "muy bien",
+    "perfecta",
+    "perfecto",
+    "potente",
+    "rapida",
+    "rápida",
+    "rapido",
+    "rápido",
+    "recomendable",
+    "recomiendo",
+    "resistente",
+    "satisfecho",
+    "satisfecha",
+    "satisfechos",
+    "satisfechas",
+    "sobresaliente",
+    "supera expectativas",
+    "supero expectativas",
+    "superar",
+    "suficiente"
+  ],
+  "negative": [
+    "deficiente",
+    "defecto",
+    "decepcion",
+    "decepción",
+    "decepcionante",
+    "decepcionada",
+    "decepcionado",
+    "débil",
+    "debil",
+    "demora",
+    "descarga",
+    "falla",
+    "fallado",
+    "fallando",
+    "feo",
+    "fragil",
+    "frágil",
+    "horrible",
+    "insuficiente",
+    "lag",
+    "lenta",
+    "lento",
+    "mal",
+    "mala",
+    "malo",
+    "mediocre",
+    "molesto",
+    "no cumple expectativas",
+    "no cumplio expectativas",
+    "no estoy contento",
+    "no estoy contenta",
+    "no satisfecho",
+    "no satisfecha",
+    "no sirve",
+    "pobre",
+    "problema",
+    "recalienta",
+    "se apaga",
+    "se cuelga",
+    "se descarga",
+    "se tilda",
+    "se traba",
+    "tarda",
+    "trabado",
+    "traba"
+  ],
+  "negation": [
+    "jamas",
+    "jamás",
+    "nada",
+    "nadie",
+    "ni",
+    "ningun",
+    "ningún",
+    "ninguna",
+    "ninguno",
+    "no",
+    "nunca",
+    "sin",
+    "tampoco"
+  ],
+  "curation_rules": {
+    "term_actions": [
+      {
+        "terms": [
+          "expectativas",
+          "cumple expectativas",
+          "cumplio expectativas",
+          "cumpliÃ³ expectativas",
+          "supera expectativas",
+          "supero expectativas",
+          "superÃ³ expectativas"
+        ],
+        "action": "dudoso",
+        "group": "cumplimiento_expectativas",
+        "label": "Cumplimiento de expectativas",
+        "reason": "Puede funcionar como aspecto evaluativo global: indica si el producto cumple o supera lo esperado. Revisar ejemplos antes de aceptarlo."
+      },
+      {
+        "terms": [
+          "contenta",
+          "contentos",
+          "contentas",
+          "satisfecho",
+          "satisfecha",
+          "satisfechos",
+          "satisfechas"
+        ],
+        "action": "dudoso",
+        "group": "satisfaccion",
+        "label": "Satisfaccion general",
+        "reason": "Puede ser polaridad positiva o aspecto evaluativo global de satisfaccion. Revisar si conviene agruparlo como satisfaccion."
+      },
+      {
+        "terms": [
+          "consumo",
+          "consumo de electricidad",
+          "consumo de la luz",
+          "consumo mensual",
+          "consumo mensual de energía",
+          "consumo de energía",
+          "gasta",
+          "recibo de luz"
+        ],
+        "action": "aspecto",
+        "group": "consumo",
+        "label": "consumo energético/eléctrico",
+        "reason": "Describe el atributo de gasto/consumo eléctrico observado en reseñas; corresponde al aspecto recomendado “consumo/energía”."
+      },
+      {
+        "terms": [
+          "energia",
+          "energía",
+          "gasta energía",
+          "energía gasta",
+          "recibo de luz",
+          "energía 500 bimestral",
+          "consumo de energía"
+        ],
+        "action": "aspecto",
+        "group": "consumo",
+        "label": "energía/consumo energético",
+        "reason": "Se refiere a gasto de energía/recibo de luz, que es parte del aspecto consumo energético."
+      },
+      {
+        "terms": [
+          "gastar",
+          "gasta",
+          "gasta menos luz",
+          "gasta menos",
+          "gasta energía"
+        ],
+        "action": "aspecto",
+        "group": "consumo",
+        "label": "consumo/energía (gastar luz/energía)",
+        "reason": "Se usa para describir consumo/energía: “energía gasta”, “gasta menos luz”. Aunque a veces mezcla opinión, el núcleo del término es consumo."
+      },
+      {
+        "terms": [
+          "ahorrador"
+        ],
+        "action": "aspecto",
+        "group": "consumo",
+        "label": "consumo_ahorro_energia",
+        "reason": "Se usa explícitamente como cualidad de ahorro/consumo de energía (ej. “no es inverter por lo tanto no es ahorrador”; “excelente… ahorrador y eficiente”)."
+      },
+      {
+        "terms": [
+          "instalar"
+        ],
+        "action": "aspecto",
+        "group": "instalacion",
+        "label": "instalación",
+        "reason": "Relacionado con la facilidad/proceso de instalación del equipo: mapea al aspecto 'instalacion' (preferido en la guía). Las oraciones mencionan 'fácil de instalar' y 'lo instaló', por lo que es un aspecto de producto."
+      },
+      {
+        "terms": [
+          "instalacion",
+          "fácil instalación",
+          "instalar",
+          "instalado"
+        ],
+        "action": "aspecto",
+        "group": "instalacion",
+        "label": "Facilidad de instalación",
+        "reason": "Aparece explícitamente como facilidad/instalación y materiales/insumos para instalar (\"fácil instalación\", \"trae todo los insumos para su instalación\")."
+      },
+      {
+        "terms": [
+          "ruido",
+          "silencioso"
+        ],
+        "action": "aspecto",
+        "group": "ruido",
+        "label": "ruido",
+        "reason": "Directamente refiere al nivel sonoro del equipo (ruidoso/silencioso). Corresponde al aspecto 'ruido' según ejemplos y guía."
+      },
+      {
+        "terms": [
+          "ruidoso"
+        ],
+        "action": "aspecto",
+        "group": "ruido",
+        "label": "Ruido",
+        "reason": "Se usa explícitamente para describir nivel de ruido (nada ruidoso / no es ruidoso)."
+      },
+      {
+        "terms": [
+          "expectativa"
+        ],
+        "action": "aspecto",
+        "group": "cumplimiento_expectativas",
+        "label": "Cumplimiento de expectativas",
+        "reason": "“Expectativa(s)” expresa satisfacción/benchmark, no un aspecto medible (enfriamiento, ruido, consumo, etc.)."
+      },
+      {
+        "terms": [
+          "contento"
+        ],
+        "action": "aspecto",
+        "group": "satisfaccion",
+        "label": "Satisfaccion general",
+        "reason": "No es un aspecto de calidad; es satisfacción general."
+      }
+    ]
+  }
+}

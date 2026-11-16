@@ -1,0 +1,210 @@
+<div class="laf-explanation-inner mx-auto px-4 pt-5 pb-12 sm:px-6">
+  <div class="flex flex-wrap items-center justify-end gap-x-4 gap-y-2">
+    <p class="text-xs text-slate-500">Esta explicación corresponde solo a este producto.</p>
+    <a class="button button-secondary button-sm" href="{% url 'recommender:export-laf1-program' flow.id %}?used=1" download title="Descargar en un TXT los programas LAF utilizados para este ranking">Descargar programas LAF <span aria-hidden="true">↓</span></a>
+  </div>
+
+  <div class="laf-graph-layout mt-7">
+    <div class="graph-stage">
+      <div class="graph-view-switcher" role="group" aria-label="Cómo ver la explicación">
+        <button type="button" data-graph-mode="summary" aria-pressed="true">Resumen</button>
+        <button type="button" data-graph-mode="ranking" aria-pressed="false">Comparar con los demás</button>
+      </div>
+      <section class="contribution-figure" data-summary-figure aria-labelledby="contribution-title">
+        <div class="contribution-heading">
+          <div>
+            <h3 id="contribution-title">Por qué está en este lugar</h3>
+            {% if not breakdown.is_multicriteria %}
+            <p>El puntaje es el <strong>menor</strong> de dos medidas: apoyo de las reseñas (confianza) y ajuste a lo que priorizaste (preferencia).</p>
+            {% endif %}
+          </div>
+          {% if not breakdown.is_multicriteria %}
+          <div class="contribution-result"><small>Resultado LAF</small><strong>{{ product.final_score|floatformat:2 }}</strong></div>
+          {% endif %}
+        </div>
+
+        {% if process_steps and breakdown.is_multicriteria %}
+        <ol class="how-process" aria-label="Cómo llegamos a esta recomendación, paso a paso">
+          <li>
+            <span class="how-process-n">1</span>
+            <div><strong>Partimos de las reseñas</strong><small>{{ process_steps.mentions }} menciones en reseñas</small></div>
+          </li>
+          <li>
+            <span class="how-process-n">2</span>
+            <div><strong>Vimos qué elogian y qué critican</strong><small>{{ process_steps.aspects_ok|add:process_steps.aspects_crit }} característica{{ process_steps.aspects_ok|add:process_steps.aspects_crit|pluralize }} con menciones</small></div>
+          </li>
+          <li>
+            <span class="how-process-n">3</span>
+            <div><strong>Lo cruzamos con lo que te importa</strong><small>Quedó {{ process_steps.position }}º de {{ process_steps.total }}</small></div>
+          </li>
+        </ol>
+        {% endif %}
+
+        {% if claims %}
+        <p class="claim-ledger-note">En cada fila: la característica, cuánto te importa a vos, las menciones que encontramos y el resultado LAF que entra en la suma de abajo. Tocá una para ver ejemplos y su grafo.</p>
+        <ul class="claim-ledger" aria-label="Reclamos del producto y resultado del debate de reseñas">
+          {% for row in claim_rows %}{% with c=row.claim %}
+          <li class="claim-row claim-{{ c.plain_status }}">
+            <button type="button" class="claim-open"
+                    data-aspect-node="{{ c.node_id }}"
+                    data-aspect-key="{{ c.key }}"
+                    data-aspect-label="{{ c.label }}"
+                    data-aspect-favor="{{ c.mentions_favor }}"
+                    data-aspect-against="{{ c.mentions_against }}"
+                    data-aspect-narr="{{ row.narrative }}"
+                    aria-expanded="false">
+              <span class="claim-name">{{ c.label }}<small>{{ c.priority_label }}</small></span>
+              <span class="claim-mentions">{{ c.mentions_favor }} a favor{% if c.mentions_against %} · {{ c.mentions_against }} en contra{% endif %}</span>
+              {% if row.laf_score is not None %}<span class="claim-laf">{{ row.laf_score|floatformat:3 }}</span>{% endif %}
+              <span class="claim-toggle" aria-hidden="true"></span>
+            </button>
+          </li>
+          {% endwith %}{% endfor %}
+        </ul>
+
+        <div class="aspect-panel" data-aspect-panel hidden
+             data-aspect-graph-url="{% url 'recommender:aspect-graph' flow.id %}"
+             data-graph-entity="{{ entity_id }}">
+          <div class="aspect-panel-head">
+            <strong data-aspect-title>Característica</strong>
+          </div>
+          <div class="aspect-studio" data-aspect-studio>
+            <p class="aspect-studio-intro">Vista por característica: la sub-derivación y el puntaje <strong>exactos</strong> que el sistema calcula para este punto, aislada de las demás para que se lea.</p>
+            <div class="aspect-graph-controls">
+              <button type="button" class="icon-button" data-aspect-zoom-in title="Acercar" aria-label="Acercar">＋</button>
+              <button type="button" class="icon-button" data-aspect-zoom-out title="Alejar" aria-label="Alejar">−</button>
+              <button type="button" class="button button-secondary button-sm" data-aspect-fit>Ajustar</button>
+            </div>
+            <div class="graph-loading" data-aspect-loading hidden><span></span>Cargando el grafo…</div>
+            <div class="aspect-graph" data-aspect-graph></div>
+            <div class="mg-legend" aria-label="Qué significa cada elemento del grafo">
+              <span><i class="mg-sw mg-sw-fact"></i><strong>Hecho</strong>: lo que dicen las reseñas</span>
+              <span><i class="mg-sw mg-sw-rule"></i><strong>Regla</strong>: la lógica del sistema</span>
+              <span><i class="mg-sw mg-sw-aspect"></i><strong>Punto evaluado</strong> (ej. "sabor bien valorado")</span>
+              <span><i class="mg-sw mg-sw-neg"></i><strong>En contra</strong>: crítica o punto cuestionado</span>
+              <span><i class="mg-sw mg-sw-conc"></i><strong>Resultado</strong> de este punto</span>
+              <span><i class="mg-sw mg-sw-op"></i><strong>dMP</strong>: combina un hecho con una regla</span>
+              <span><i class="mg-sw mg-sw-ca"></i><strong>CA</strong>: compara lo que está a favor y en contra</span>
+              <span><i class="edge-swatch edge-support"></i> apoya</span>
+              <span><i class="edge-swatch edge-conflict"></i> contradice</span>
+            </div>
+          </div>
+          <div class="aspect-plain" data-aspect-plain></div>
+          <div class="aspect-examples" data-aspect-examples data-quality-url="{% url 'recommender:traceability' flow.id %}#calidad-extraccion" hidden></div>
+        </div>
+
+        {% endif %}
+
+        {% if breakdown %}
+        <div class="score-breakdown{% if breakdown.is_multicriteria %} score-breakdown-wide{% endif %}">
+          {% if breakdown.is_multicriteria %}
+          <div class="score-sum">
+            <p class="score-sum-head"><span>Cuánto te importa</span><span>Resultado LAF de cada característica</span><span>Aporte a la suma</span></p>
+            <ol class="score-sum-rows">
+              {% for group in score_groups %}
+              <li>
+                <span class="score-sum-level">{{ group.level }}<em>suma {{ group.total|floatformat:3 }} × {{ group.weight|floatformat:2 }}</em></span>
+                <span class="score-sum-terms">{% for row in group.rows %}<span class="score-term"><i>{{ row.label|lower }}</i>{{ row.laf_score|floatformat:3 }}</span>{% endfor %}</span>
+                <span class="score-sum-value">{{ group.subtotal|floatformat:3 }}<i style="--share: {{ group.share }}%" title="{{ group.share }} % de la suma de aportes" aria-hidden="true"></i></span>
+              </li>
+              {% endfor %}
+            </ol>
+            <dl class="score-sum-total">
+              <div><dt>Suma de aportes</dt><dd>{{ breakdown.weighted_total|floatformat:2 }}</dd></div>
+              <div><dt>÷ suma de pesos</dt><dd>{{ breakdown.weights_total|floatformat:2 }}</dd></div>
+              <div class="score-sum-final"><dt>Puntaje</dt><dd class="score-big">{{ breakdown.final_score|floatformat:2 }}</dd></div>
+            </dl>
+          </div>
+          {% if score_equation %}<p class="score-equation">{{ score_equation }}</p>{% endif %}
+          {% if score_story %}<p class="score-story">{{ score_story }}</p>{% endif %}
+          <p class="score-note">LAF resolvió cada característica por separado: esos son los números de adentro de los corchetes en la cuenta escrita. Cada uno se multiplicó por el peso que le diste y se sumaron las {{ breakdown.contributions|length }} que participan ({{ breakdown.weighted_total|floatformat:2 }}); dividido por la suma de esos pesos, {{ breakdown.weights_total|floatformat:2 }}, queda {{ breakdown.final_score|floatformat:2 }}. Las que pusiste en «No me importa» no participan.</p>
+          {% else %}
+          <div class="gauge{% if breakdown.binding == 'confianza' %} gauge-binding{% endif %}">
+            <div class="gauge-head"><span><strong>Confianza</strong> <small>apoyo de reseñas, descontando lo negativo</small></span><span class="gauge-val">{{ breakdown.confidence|floatformat:2 }}</span></div>
+            <div class="gauge-track"><span class="gauge-fill gauge-conf" style="width: {{ breakdown.conf_pct }}%"></span></div>
+          </div>
+          <div class="gauge{% if breakdown.binding == 'preferencia' %} gauge-binding{% endif %}">
+            <div class="gauge-head"><span><strong>Preferencia</strong> <small>qué tanto cumple lo que priorizaste</small></span><span class="gauge-val">{{ breakdown.preference|floatformat:2 }}</span></div>
+            <div class="gauge-track"><span class="gauge-fill gauge-pref" style="width: {{ breakdown.pref_pct }}%"></span></div>
+          </div>
+          <div class="score-result">
+            <span class="score-eq">Puntaje = min({{ breakdown.confidence|floatformat:2 }}, {{ breakdown.preference|floatformat:2 }})</span>
+            <span class="score-big">{{ breakdown.final_score|floatformat:2 }}</span>
+          </div>
+          <p class="score-note"><strong>{{ breakdown.favor }} señales a favor</strong> · <span class="score-note-neg">{{ breakdown.against }} en contra ({{ breakdown.against_pct }}%)</span>. {% if breakdown.binding == 'confianza' %}Acá el puntaje lo marca la confianza.{% elif breakdown.binding == 'preferencia' %}Acá el puntaje lo marca tu preferencia: no alcanza con la confianza si no cumple lo que priorizaste.{% else %}Confianza y preferencia coinciden.{% endif %}</p>
+          {% endif %}
+        </div>
+        {% endif %}
+
+      </section>
+      <section class="contribution-figure ranking-figure" data-ranking-figure hidden aria-labelledby="ranking-title">
+        <div class="contribution-heading">
+          <div>
+            <h3 id="ranking-title">Cómo se compara con los demás</h3>
+            {% if breakdown.is_multicriteria %}<p>Ordenados por cuánto respaldan las reseñas a cada café en lo que marcaste como importante.</p>{% else %}<p>Cada producto por su puntaje = <strong>min(confianza, preferencia)</strong>. El ingrediente más bajo (resaltado) es el que lo define.</p>{% endif %}
+          </div>
+        </div>
+        {% if position_note %}<p class="position-note">{{ position_note }}</p>{% endif %}
+        {% if ranking %}
+          {% if breakdown.is_multicriteria %}
+          <ol class="vs2-list vs2-list-simple">
+            {% for row in ranking %}
+            <li class="{% if row.is_selected %}vs2-selected{% endif %}">
+              <a href="{% url 'recommender:product-detail' flow.id row.entity_id %}">
+                <span class="vs2-name"><span class="vs2-pos">{{ row.position }}</span>{{ row.entity_name }}{% if row.is_selected %} · estás viendo{% endif %}</span>
+                <span class="vs2-cell"><span class="vs2-track"><span class="vs2-fill vs2-conf" style="width: {% widthratio row.final_score ranking_top_score 100 %}%"></span></span></span>
+                <span class="vs2-score">{{ row.final_score|floatformat:2 }}</span>
+              </a>
+            </li>
+            {% endfor %}
+          </ol>
+          <p class="vs2-legend">La barra muestra el respaldo de las reseñas en lo que te importa, comparado con el café mejor ubicado.</p>
+          {% else %}
+          <div class="vs2-head" aria-hidden="true"><span>Producto</span><span>Confianza</span><span>Preferencia</span><span class="vs2-head-score">Puntaje</span></div>
+          <ol class="vs2-list">
+            {% for row in ranking %}
+              <li class="{% if row.is_selected %}vs2-selected{% endif %}">
+                <a href="{% url 'recommender:product-detail' flow.id row.entity_id %}">
+                  <span class="vs2-name"><span class="vs2-pos">{{ row.position }}</span>{{ row.entity_name }}{% if row.is_selected %} · estás viendo{% endif %}</span>
+                  <span class="vs2-cell{% if row.binding == 'confianza' %} vs2-cap{% endif %}"><span class="vs2-track"><span class="vs2-fill vs2-conf" style="width: {{ row.conf_pct }}%"></span></span><span class="vs2-val">{{ row.confidence|floatformat:2 }}</span></span>
+                  <span class="vs2-cell{% if row.binding == 'preferencia' %} vs2-cap{% endif %}"><span class="vs2-track"><span class="vs2-fill vs2-pref" style="width: {{ row.pref_pct }}%"></span></span><span class="vs2-val">{{ row.preference|floatformat:2 }}</span></span>
+                  <span class="vs2-score">{{ row.final_score|floatformat:2 }}</span>
+                </a>
+              </li>
+            {% endfor %}
+          </ol>
+          <p class="vs2-legend"><span class="vs2-key vs2-key-conf">Confianza</span><span class="vs2-key vs2-key-pref">Preferencia</span><span class="vs2-key vs2-key-cap">borde = lo que corta el puntaje</span></p>
+          {% endif %}
+        {% endif %}
+
+        {% if score_map %}
+        <figure class="score-map">
+          <figcaption>Mapa de los {{ product_count }} productos: <strong>confianza →</strong> × <strong>preferencia ↑</strong>. Arriba a la derecha, mejor.</figcaption>
+          <svg viewBox="0 0 {{ score_map.width }} {{ score_map.height }}" class="score-map-svg" role="img" aria-label="Mapa de productos por confianza y preferencia">
+            {% for t in score_map.y_ticks %}
+            <line x1="{{ score_map.x0 }}" y1="{{ t.y }}" x2="{{ score_map.x1 }}" y2="{{ t.y }}" class="map-grid"/>
+            <text x="{{ score_map.x0 }}" y="{{ t.y }}" dx="-8" dy="4" class="map-tick" text-anchor="end">{{ t.label }}</text>
+            {% endfor %}
+            {% for t in score_map.x_ticks %}
+            <text x="{{ t.x }}" y="{{ score_map.y1 }}" dy="18" class="map-tick" text-anchor="middle">{{ t.label }}</text>
+            {% endfor %}
+            <line x1="{{ score_map.x0 }}" y1="{{ score_map.y0 }}" x2="{{ score_map.x0 }}" y2="{{ score_map.y1 }}" class="map-axis"/>
+            <line x1="{{ score_map.x0 }}" y1="{{ score_map.y1 }}" x2="{{ score_map.x1 }}" y2="{{ score_map.y1 }}" class="map-axis"/>
+            <line x1="{{ score_map.x0 }}" y1="{{ score_map.band_y }}" x2="{{ score_map.x1 }}" y2="{{ score_map.band_y }}" class="map-band"/>
+            <text x="{{ score_map.x0 }}" y="{{ score_map.band_y }}" dx="6" dy="-6" class="map-band-label">preferencia llena (1.0): acá el puntaje = la confianza</text>
+            {% for p in score_map.points %}
+            <circle cx="{{ p.cx }}" cy="{{ p.cy }}" r="{% if p.is_selected %}7{% else %}5{% endif %}" class="map-dot map-dot-{{ p.binding }}{% if p.is_selected %} map-dot-selected{% endif %}"><title>{{ p.position }}º · {{ p.entity_name }}</title></circle>
+            {% endfor %}
+          </svg>
+          <div class="score-map-legend">
+            <span><i class="map-swatch map-dot-confianza"></i>Limitado por confianza</span>
+            <span><i class="map-swatch map-dot-preferencia"></i>Limitado por preferencia</span>
+            <span><i class="map-swatch map-dot-selected"></i>Este producto</span>
+          </div>
+        </figure>
+        {% endif %}
+      </section>
+    </div>
+
+  </div>
+</div>

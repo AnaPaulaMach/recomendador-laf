@@ -1,0 +1,577 @@
+{
+ "dataset_key": "mlm_mlm194329_20260528_142014",
+ "fecha": "2026-09-10",
+ "semilla": 20260910,
+ "replicas": 200,
+ "estrategia": "D",
+ "resenas_con_trust": 12050,
+ "menciones": 6862,
+ "productos": 18,
+ "segundos_por_replica": 0.217,
+ "perfiles": {
+  "neutro": {
+   "rho_media": 0.9289,
+   "rho_min": 0.8225,
+   "rho_p5": 0.8718,
+   "rho_p95": 0.9712,
+   "top3_conservado": 0.485,
+   "ganador_conservado": 0.945,
+   "cumple_criterio_fracaso": false,
+   "puestos": {
+    "mlm26912881_cafe_blason_espresso_robusto_tostado_y": {
+     "puesto_original": 1,
+     "mediana": 1.0,
+     "p5": 1.0,
+     "p95": 2.0
+    },
+    "mlm41148521_cafe_gourmet_molido_espresso_400g_blason": {
+     "puesto_original": 2,
+     "mediana": 2.0,
+     "p5": 2.0,
+     "p95": 4.0
+    },
+    "mlm25263480_cafe_gourmet_tostado_y_molido_americano": {
+     "puesto_original": 3,
+     "mediana": 3.0,
+     "p5": 2.0,
+     "p95": 6.0
+    },
+    "mlm16250244_nescafe_taster_s_choice_caramel_dark": {
+     "puesto_original": 4,
+     "mediana": 4.0,
+     "p5": 2.0,
+     "p95": 8.0
+    },
+    "mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo": {
+     "puesto_original": 5,
+     "mediana": 6.0,
+     "p5": 4.0,
+     "p95": 8.0
+    },
+    "mlm19544520_cafe_capuccino_moka_members_mark_1": {
+     "puesto_original": 6,
+     "mediana": 6.0,
+     "p5": 4.0,
+     "p95": 9.0
+    },
+    "mlm19543513_cafe_molido_la_parroquia_puro_1": {
+     "puesto_original": 7,
+     "mediana": 5.0,
+     "p5": 2.0,
+     "p95": 10.0
+    },
+    "mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble": {
+     "puesto_original": 8,
+     "mediana": 8.0,
+     "p5": 4.0,
+     "p95": 11.0
+    },
+    "mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional": {
+     "puesto_original": 9,
+     "mediana": 9.0,
+     "p5": 6.0,
+     "p95": 11.0
+    },
+    "mlm19663240_nescafe_clasico_cafe_100_puro_soluble": {
+     "puesto_original": 10,
+     "mediana": 9.0,
+     "p5": 8.0,
+     "p95": 10.0
+    },
+    "mlm16250253_nescafe_decaf_cafe_100_puro_soluble": {
+     "puesto_original": 11,
+     "mediana": 12.0,
+     "p5": 10.0,
+     "p95": 17.0
+    },
+    "mlm16207863_nescafe_cafe_de_olla_100_cafe": {
+     "puesto_original": 12,
+     "mediana": 12.0,
+     "p5": 9.0,
+     "p95": 17.0
+    },
+    "mlm23633481_nescafe_clasico_ice_cafe_soluble_en": {
+     "puesto_original": 13,
+     "mediana": 14.0,
+     "p5": 11.0,
+     "p95": 18.0
+    },
+    "mlm27068249_tripack_juan_valdez_cafe_soluble_95gr": {
+     "puesto_original": 14,
+     "mediana": 15.0,
+     "p5": 12.0,
+     "p95": 18.0
+    },
+    "mlm16250252_nescafe_clasico_de_cafe_sin_gluten": {
+     "puesto_original": 15,
+     "mediana": 13.0,
+     "p5": 9.0,
+     "p95": 17.0
+    },
+    "mlm43007251_cafe_molido_100_arabico_gourmet_americano": {
+     "puesto_original": 16,
+     "mediana": 16.0,
+     "p5": 13.0,
+     "p95": 18.0
+    },
+    "mlm16207890_nescafe_reserva_verarica_cafe_100_soluble": {
+     "puesto_original": 17,
+     "mediana": 17.0,
+     "p5": 14.0,
+     "p95": 18.0
+    },
+    "mlm20075768_nescafe_clasico_cafe_100_puro_soluble": {
+     "puesto_original": 18,
+     "mediana": 17.0,
+     "p5": 13.0,
+     "p95": 18.0
+    }
+   }
+  },
+  "solo_sabor": {
+   "rho_media": 0.9564,
+   "rho_min": 0.8665,
+   "rho_p5": 0.9073,
+   "rho_p95": 0.9897,
+   "top3_conservado": 0.495,
+   "ganador_conservado": 0.41,
+   "cumple_criterio_fracaso": false,
+   "puestos": {
+    "mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo": {
+     "puesto_original": 1,
+     "mediana": 2.0,
+     "p5": 1.0,
+     "p95": 4.0
+    },
+    "mlm25263480_cafe_gourmet_tostado_y_molido_americano": {
+     "puesto_original": 2,
+     "mediana": 2.0,
+     "p5": 1.0,
+     "p95": 3.0
+    },
+    "mlm19544520_cafe_capuccino_moka_members_mark_1": {
+     "puesto_original": 3,
+     "mediana": 3.0,
+     "p5": 1.0,
+     "p95": 5.0
+    },
+    "mlm26912881_cafe_blason_espresso_robusto_tostado_y": {
+     "puesto_original": 4,
+     "mediana": 4.0,
+     "p5": 1.0,
+     "p95": 6.0
+    },
+    "mlm16250244_nescafe_taster_s_choice_caramel_dark": {
+     "puesto_original": 5,
+     "mediana": 5.0,
+     "p5": 3.0,
+     "p95": 6.0
+    },
+    "mlm19543513_cafe_molido_la_parroquia_puro_1": {
+     "puesto_original": 6,
+     "mediana": 7.0,
+     "p5": 4.0,
+     "p95": 8.0
+    },
+    "mlm41148521_cafe_gourmet_molido_espresso_400g_blason": {
+     "puesto_original": 7,
+     "mediana": 6.0,
+     "p5": 5.0,
+     "p95": 7.0
+    },
+    "mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble": {
+     "puesto_original": 8,
+     "mediana": 8.0,
+     "p5": 7.0,
+     "p95": 10.0
+    },
+    "mlm19663240_nescafe_clasico_cafe_100_puro_soluble": {
+     "puesto_original": 9,
+     "mediana": 9.0,
+     "p5": 8.0,
+     "p95": 10.0
+    },
+    "mlm16207863_nescafe_cafe_de_olla_100_cafe": {
+     "puesto_original": 10,
+     "mediana": 11.0,
+     "p5": 9.0,
+     "p95": 13.0
+    },
+    "mlm27068249_tripack_juan_valdez_cafe_soluble_95gr": {
+     "puesto_original": 11,
+     "mediana": 12.0,
+     "p5": 10.0,
+     "p95": 15.0
+    },
+    "mlm16250253_nescafe_decaf_cafe_100_puro_soluble": {
+     "puesto_original": 12,
+     "mediana": 13.0,
+     "p5": 11.0,
+     "p95": 15.0
+    },
+    "mlm43007251_cafe_molido_100_arabico_gourmet_americano": {
+     "puesto_original": 13,
+     "mediana": 13.0,
+     "p5": 11.0,
+     "p95": 15.0
+    },
+    "mlm16207890_nescafe_reserva_verarica_cafe_100_soluble": {
+     "puesto_original": 14,
+     "mediana": 14.0,
+     "p5": 9.0,
+     "p95": 16.0
+    },
+    "mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional": {
+     "puesto_original": 15,
+     "mediana": 15.0,
+     "p5": 10.0,
+     "p95": 17.0
+    },
+    "mlm23633481_nescafe_clasico_ice_cafe_soluble_en": {
+     "puesto_original": 16,
+     "mediana": 16.0,
+     "p5": 15.0,
+     "p95": 17.0
+    },
+    "mlm16250252_nescafe_clasico_de_cafe_sin_gluten": {
+     "puesto_original": 17,
+     "mediana": 17.0,
+     "p5": 10.0,
+     "p95": 18.0
+    },
+    "mlm20075768_nescafe_clasico_cafe_100_puro_soluble": {
+     "puesto_original": 18,
+     "mediana": 18.0,
+     "p5": 17.0,
+     "p95": 18.0
+    }
+   }
+  }
+ },
+ "hechos_negativos_inestables": [
+  {
+   "product_id": "MLM23633481",
+   "aspect": "tamano",
+   "replicas_con_hecho_negativo": 113,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM19663240",
+   "aspect": "dulzor",
+   "replicas_con_hecho_negativo": 116,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM16250252",
+   "aspect": "intensidad",
+   "replicas_con_hecho_negativo": 117,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM20075768",
+   "aspect": "preparacion",
+   "replicas_con_hecho_negativo": 117,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM16250244",
+   "aspect": "tueste",
+   "replicas_con_hecho_negativo": 118,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM19543513",
+   "aspect": "acidez",
+   "replicas_con_hecho_negativo": 118,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM19543513",
+   "aspect": "intensidad",
+   "replicas_con_hecho_negativo": 118,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM16250252",
+   "aspect": "originalidad",
+   "replicas_con_hecho_negativo": 119,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM16250252",
+   "aspect": "presentacion",
+   "replicas_con_hecho_negativo": 119,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM16250244",
+   "aspect": "intensidad",
+   "replicas_con_hecho_negativo": 120,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM27068249",
+   "aspect": "presentacion",
+   "replicas_con_hecho_negativo": 121,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM41148521",
+   "aspect": "aroma",
+   "replicas_con_hecho_negativo": 121,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM19543513",
+   "aspect": "originalidad",
+   "replicas_con_hecho_negativo": 122,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM25263480",
+   "aspect": "dulzor",
+   "replicas_con_hecho_negativo": 123,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM20999002",
+   "aspect": "sabor",
+   "replicas_con_hecho_negativo": 124,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM16207863",
+   "aspect": "intensidad",
+   "replicas_con_hecho_negativo": 124,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM19566313",
+   "aspect": "rendimiento",
+   "replicas_con_hecho_negativo": 124,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM25263480",
+   "aspect": "intensidad",
+   "replicas_con_hecho_negativo": 125,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM20075768",
+   "aspect": "originalidad",
+   "replicas_con_hecho_negativo": 127,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM26912881",
+   "aspect": "presentacion",
+   "replicas_con_hecho_negativo": 127,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM23633481",
+   "aspect": "dulzor",
+   "replicas_con_hecho_negativo": 127,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM20075768",
+   "aspect": "dulzor",
+   "replicas_con_hecho_negativo": 128,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM16207863",
+   "aspect": "dulzor",
+   "replicas_con_hecho_negativo": 129,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM19544520",
+   "aspect": "presentacion",
+   "replicas_con_hecho_negativo": 129,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM26912881",
+   "aspect": "intensidad",
+   "replicas_con_hecho_negativo": 130,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM20075768",
+   "aspect": "aroma",
+   "replicas_con_hecho_negativo": 130,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM16250244",
+   "aspect": "variedad",
+   "replicas_con_hecho_negativo": 131,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM20999002",
+   "aspect": "presentacion",
+   "replicas_con_hecho_negativo": 131,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM19543513",
+   "aspect": "presentacion",
+   "replicas_con_hecho_negativo": 132,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM19543513",
+   "aspect": "rendimiento",
+   "replicas_con_hecho_negativo": 132,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM26912881",
+   "aspect": "tueste",
+   "replicas_con_hecho_negativo": 132,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM16207890",
+   "aspect": "sabor",
+   "replicas_con_hecho_negativo": 132,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM23633481",
+   "aspect": "preparacion",
+   "replicas_con_hecho_negativo": 136,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM16207894",
+   "aspect": "caducidad",
+   "replicas_con_hecho_negativo": 139,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM16207894",
+   "aspect": "dulzor",
+   "replicas_con_hecho_negativo": 140,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM16207894",
+   "aspect": "intensidad",
+   "replicas_con_hecho_negativo": 145,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM16250252",
+   "aspect": "sabor",
+   "replicas_con_hecho_negativo": 163,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM16250244",
+   "aspect": "dulzor",
+   "replicas_con_hecho_negativo": 168,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM19566313",
+   "aspect": "presentacion",
+   "replicas_con_hecho_negativo": 170,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM20075768",
+   "aspect": "molienda",
+   "replicas_con_hecho_negativo": 170,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM19544520",
+   "aspect": "dulzor",
+   "replicas_con_hecho_negativo": 172,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM19543513",
+   "aspect": "tamano",
+   "replicas_con_hecho_negativo": 173,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM19544520",
+   "aspect": "variedad",
+   "replicas_con_hecho_negativo": 174,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM16250252",
+   "aspect": "rendimiento",
+   "replicas_con_hecho_negativo": 175,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM19543513",
+   "aspect": "caducidad",
+   "replicas_con_hecho_negativo": 176,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM19544520",
+   "aspect": "rendimiento",
+   "replicas_con_hecho_negativo": 176,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM19566313",
+   "aspect": "variedad",
+   "replicas_con_hecho_negativo": 180,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM19544520",
+   "aspect": "preparacion",
+   "replicas_con_hecho_negativo": 182,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM16250244",
+   "aspect": "originalidad",
+   "replicas_con_hecho_negativo": 184,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM19543513",
+   "aspect": "aroma",
+   "replicas_con_hecho_negativo": 186,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM19543513",
+   "aspect": "molienda",
+   "replicas_con_hecho_negativo": 189,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM27068249",
+   "aspect": "sabor",
+   "replicas_con_hecho_negativo": 198,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM16207894",
+   "aspect": "sabor",
+   "replicas_con_hecho_negativo": 199,
+   "presente_en_original": true
+  },
+  {
+   "product_id": "MLM26912881",
+   "aspect": "sabor",
+   "replicas_con_hecho_negativo": 199,
+   "presente_en_original": true
+  }
+ ]
+}

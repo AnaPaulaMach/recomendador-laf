@@ -1,0 +1,750 @@
+% =====================================================================
+% PROGRAMA LAF 1 - RANKING DE PRODUCTOS
+% Sistema argumentativo de recomendacion de cafe
+% Trabajo Final - Ana Paula Machado - UNSE
+% =====================================================================
+
+% Estrategia de balanceo: D - Contraccion hacia una media a priori
+% Dominio: Cafe
+% Dataset key: mlm_mlm194335_20260805_185233
+% Metodologia congelada SHA-256: 4be8a4f128dbac3d40b88dfa9204458b2bcfda40015608cf678bc69494062767
+% Congelada en: 2026-08-13T14:15:42.644751+00:00
+% Productos analizados: 19
+
+% Productos y rango de precios:
+%   # 1 mlm41148521_cafe_gourmet_molido_espresso_400g_blason  $138-$600  (9 publicaciones)
+%   # 2 mlm19543513_cafe_molido_la_parroquia_puro_1    $330-$790  (12 publicaciones)
+%   # 3 mlm43006788_cafe_molido_gourmet_espresso_robusto_900g  $359-$765  (2 publicaciones)
+%   # 4 mlm26912881_cafe_blason_espresso_robusto_tostado_y  $345-$899  (2 publicaciones)
+%   # 5 mlm68722805_cafe_santa_elena_artesanal_de_veracruz  $260-$260  (1 publicaciones)
+%   # 6 mlm43007251_cafe_molido_100_arabico_gourmet_americano  $279-$1,024  (7 publicaciones)
+%   # 7 mlm45641721_cafe_espresso_en_grano_100_arabica  $186-$186  (1 publicaciones)
+%   # 8 mlm60041718_cafe_en_grano_don_justo_no         $198-$198  (1 publicaciones)
+%   # 9 mlm25263480_cafe_gourmet_tostado_y_molido_americano  $345-$890  (5 publicaciones)
+%   #10 mlm34232599_cafe_etnia_52_molido_de_altura     $193-$193  (1 publicaciones)
+%   #12 mlm19535969_nescafe_taster_s_choice_gourmet_roast  $360-$967  (11 publicaciones)
+%   #13 mlm19543517_cafe_puro_tostado_y_molido_veracruz  $298-$830  (26 publicaciones)
+%   #14 mlm20502238_cafe_folgers_classic_roast_clasico_bote  $535-$2,116  (26 publicaciones)
+%   #15 mlm19777103_cafe_la_parroquia_de_veracruz_molido  $185-$510  (7 publicaciones)
+%   #16 mlm52303869_cafe_premium_pluma_oaxaca_tostado_y  $139-$622  (5 publicaciones)
+%   #17 mlm46938408_cafe_de_chiapas_mezcla_caracolillo_bourbon  $362-$362  (1 publicaciones)
+%   #18 mlm65430742_cafe_veracruzano_artesanal_calidad_gourmet_100  $280-$280  (1 publicaciones)
+%   #19 mlm34739841_cafe_en_grano_de_altura_gourmet    $121-$121  (1 publicaciones)
+%   #20 mlm26204244_cafe_la_parroquia_de_veracruz_en   $355-$659  (2 publicaciones)
+
+% Preferencias del usuario:
+%   sabor: 0.50
+%   aroma: 0.50
+%   intensidad: 0.50
+%   dulzor: 0.50
+%   tueste: 0.50
+%   acidez: 0.50
+%   presentacion: 0.50
+%   rendimiento: 0.50
+%   variedad: 0.50
+%   preparacion: 0.50
+%   molienda: 0.50
+%   originalidad: 0.50
+%   tamano: 0.50
+%   caducidad: 0.50
+
+% Estructura argumentativa LAF 1:
+%   resena -> aspecto -> dimension -> recomendar
+%   beta de reglas = 1.00 (neutral); la preferencia proviene solo del slider
+%   sensorial: sabor, aroma, intensidad, dulzor, tueste, acidez
+%   valor: rendimiento, tamano
+%   producto: originalidad, presentacion, variedad
+%   elaboracion: preparacion, molienda
+%   conservacion: caducidad
+
+% ============================================================
+% HECHOS - un hecho por (producto, aspecto, polaridad)
+% Variable X identifica al producto.
+% ============================================================
+
+% Café Gourmet Molido Espresso 400g Blasón
+% n=3
+resenaPositivaAcidez(mlm41148521_cafe_gourmet_molido_espresso_400g_blason). {0.55; 0.50}
+% n=66
+resenaPositivaAroma(mlm41148521_cafe_gourmet_molido_espresso_400g_blason). {0.83; 0.50}
+% n=1
+resenaNegativaAroma(mlm41148521_cafe_gourmet_molido_espresso_400g_blason). {0.17; 0.50}
+% n=8
+resenaPositivaCaducidad(mlm41148521_cafe_gourmet_molido_espresso_400g_blason). {0.60; 0.50}
+% n=4
+resenaPositivaDulzor(mlm41148521_cafe_gourmet_molido_espresso_400g_blason). {0.56; 0.50}
+% n=52
+resenaPositivaIntensidad(mlm41148521_cafe_gourmet_molido_espresso_400g_blason). {0.81; 0.50}
+% n=6
+resenaPositivaMolienda(mlm41148521_cafe_gourmet_molido_espresso_400g_blason). {0.61; 0.50}
+% n=2
+resenaPositivaOriginalidad(mlm41148521_cafe_gourmet_molido_espresso_400g_blason). {0.53; 0.50}
+% n=2
+resenaPositivaPreparacion(mlm41148521_cafe_gourmet_molido_espresso_400g_blason). {0.53; 0.50}
+% n=11
+resenaPositivaPresentacion(mlm41148521_cafe_gourmet_molido_espresso_400g_blason). {0.64; 0.50}
+% n=2
+resenaPositivaRendimiento(mlm41148521_cafe_gourmet_molido_espresso_400g_blason). {0.53; 0.50}
+% n=144
+resenaPositivaSabor(mlm41148521_cafe_gourmet_molido_espresso_400g_blason). {0.90; 0.50}
+% n=1
+resenaPositivaTamano(mlm41148521_cafe_gourmet_molido_espresso_400g_blason). {0.51; 0.50}
+% n=3
+resenaPositivaTueste(mlm41148521_cafe_gourmet_molido_espresso_400g_blason). {0.57; 0.50}
+% n=4
+resenaPositivaVariedad(mlm41148521_cafe_gourmet_molido_espresso_400g_blason). {0.55; 0.50}
+
+% Café Molido La Parroquia Puro 1 Kg Tradi
+% n=13
+resenaPositivaAcidez(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.63; 0.50}
+% n=1
+resenaNegativaAcidez(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.37; 0.50}
+% n=188
+resenaPositivaAroma(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.92; 0.50}
+% n=3
+resenaNegativaAroma(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.08; 0.50}
+% n=13
+resenaPositivaCaducidad(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.62; 0.50}
+% n=2
+resenaNegativaCaducidad(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.38; 0.50}
+% n=6
+resenaPositivaDulzor(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.57; 0.50}
+% n=55
+resenaPositivaIntensidad(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.81; 0.50}
+% n=1
+resenaNegativaIntensidad(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.19; 0.50}
+% n=9
+resenaPositivaMolienda(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.58; 0.50}
+% n=3
+resenaNegativaMolienda(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.42; 0.50}
+% n=7
+resenaPositivaOriginalidad(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.54; 0.50}
+% n=2
+resenaNegativaOriginalidad(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.46; 0.50}
+% n=2
+resenaPositivaPreparacion(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.54; 0.50}
+% n=19
+resenaPositivaPresentacion(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.68; 0.50}
+% n=1
+resenaNegativaPresentacion(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.32; 0.50}
+% n=9
+resenaPositivaRendimiento(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.58; 0.50}
+% n=1
+resenaNegativaRendimiento(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.42; 0.50}
+% n=355
+resenaPositivaSabor(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.92; 0.50}
+% n=13
+resenaNegativaSabor(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.08; 0.50}
+% n=13
+resenaPositivaTamano(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.62; 0.50}
+% n=2
+resenaNegativaTamano(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.38; 0.50}
+% n=10
+resenaPositivaTueste(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.62; 0.50}
+% n=2
+resenaPositivaVariedad(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.54; 0.50}
+
+% Café Molido Gourmet Espresso Robusto 900
+% n=3
+resenaPositivaAcidez(mlm43006788_cafe_molido_gourmet_espresso_robusto_900g). {0.54; 0.50}
+% n=27
+resenaPositivaAroma(mlm43006788_cafe_molido_gourmet_espresso_robusto_900g). {0.73; 0.50}
+% n=1
+resenaPositivaCaducidad(mlm43006788_cafe_molido_gourmet_espresso_robusto_900g). {0.52; 0.50}
+% n=2
+resenaPositivaDulzor(mlm43006788_cafe_molido_gourmet_espresso_robusto_900g). {0.53; 0.50}
+% n=20
+resenaPositivaIntensidad(mlm43006788_cafe_molido_gourmet_espresso_robusto_900g). {0.70; 0.50}
+% n=5
+resenaPositivaMolienda(mlm43006788_cafe_molido_gourmet_espresso_robusto_900g). {0.57; 0.50}
+% n=5
+resenaPositivaPresentacion(mlm43006788_cafe_molido_gourmet_espresso_robusto_900g). {0.58; 0.50}
+% n=5
+resenaPositivaRendimiento(mlm43006788_cafe_molido_gourmet_espresso_robusto_900g). {0.56; 0.50}
+% n=81
+resenaPositivaSabor(mlm43006788_cafe_molido_gourmet_espresso_robusto_900g). {0.85; 0.50}
+% n=1
+resenaPositivaTamano(mlm43006788_cafe_molido_gourmet_espresso_robusto_900g). {0.51; 0.50}
+% n=3
+resenaPositivaTueste(mlm43006788_cafe_molido_gourmet_espresso_robusto_900g). {0.54; 0.50}
+% n=2
+resenaPositivaVariedad(mlm43006788_cafe_molido_gourmet_espresso_robusto_900g). {0.53; 0.50}
+
+% Café Blasón Espresso Robusto Tostado Y M
+% n=5
+resenaPositivaAcidez(mlm26912881_cafe_blason_espresso_robusto_tostado_y). {0.57; 0.50}
+% n=124
+resenaPositivaAroma(mlm26912881_cafe_blason_espresso_robusto_tostado_y). {0.90; 0.50}
+% n=7
+resenaPositivaCaducidad(mlm26912881_cafe_blason_espresso_robusto_tostado_y). {0.60; 0.50}
+% n=17
+resenaPositivaDulzor(mlm26912881_cafe_blason_espresso_robusto_tostado_y). {0.69; 0.50}
+% n=118
+resenaPositivaIntensidad(mlm26912881_cafe_blason_espresso_robusto_tostado_y). {0.89; 0.50}
+% n=1
+resenaNegativaIntensidad(mlm26912881_cafe_blason_espresso_robusto_tostado_y). {0.11; 0.50}
+% n=13
+resenaPositivaMolienda(mlm26912881_cafe_blason_espresso_robusto_tostado_y). {0.65; 0.50}
+% n=1
+resenaNegativaMolienda(mlm26912881_cafe_blason_espresso_robusto_tostado_y). {0.35; 0.50}
+% n=8
+resenaPositivaOriginalidad(mlm26912881_cafe_blason_espresso_robusto_tostado_y). {0.60; 0.50}
+% n=1
+resenaPositivaPreparacion(mlm26912881_cafe_blason_espresso_robusto_tostado_y). {0.51; 0.50}
+% n=15
+resenaPositivaPresentacion(mlm26912881_cafe_blason_espresso_robusto_tostado_y). {0.68; 0.50}
+% n=17
+resenaPositivaRendimiento(mlm26912881_cafe_blason_espresso_robusto_tostado_y). {0.67; 0.50}
+% n=367
+resenaPositivaSabor(mlm26912881_cafe_blason_espresso_robusto_tostado_y). {0.95; 0.50}
+% n=4
+resenaNegativaSabor(mlm26912881_cafe_blason_espresso_robusto_tostado_y). {0.05; 0.50}
+% n=9
+resenaPositivaTamano(mlm26912881_cafe_blason_espresso_robusto_tostado_y). {0.61; 0.50}
+% n=19
+resenaPositivaTueste(mlm26912881_cafe_blason_espresso_robusto_tostado_y). {0.66; 0.50}
+% n=1
+resenaNegativaTueste(mlm26912881_cafe_blason_espresso_robusto_tostado_y). {0.34; 0.50}
+% n=8
+resenaPositivaVariedad(mlm26912881_cafe_blason_espresso_robusto_tostado_y). {0.61; 0.50}
+
+% Café Santa Elena Artesanal De Veracruz 1
+% n=3
+resenaPositivaAcidez(mlm68722805_cafe_santa_elena_artesanal_de_veracruz). {0.53; 0.50}
+% n=25
+resenaPositivaAroma(mlm68722805_cafe_santa_elena_artesanal_de_veracruz). {0.74; 0.50}
+% n=1
+resenaPositivaCaducidad(mlm68722805_cafe_santa_elena_artesanal_de_veracruz). {0.52; 0.50}
+% n=1
+resenaPositivaDulzor(mlm68722805_cafe_santa_elena_artesanal_de_veracruz). {0.52; 0.50}
+% n=8
+resenaPositivaIntensidad(mlm68722805_cafe_santa_elena_artesanal_de_veracruz). {0.59; 0.50}
+% n=6
+resenaPositivaMolienda(mlm68722805_cafe_santa_elena_artesanal_de_veracruz). {0.59; 0.50}
+% n=2
+resenaPositivaPresentacion(mlm68722805_cafe_santa_elena_artesanal_de_veracruz). {0.54; 0.50}
+% n=30
+resenaPositivaSabor(mlm68722805_cafe_santa_elena_artesanal_de_veracruz). {0.76; 0.50}
+% n=1
+resenaPositivaTamano(mlm68722805_cafe_santa_elena_artesanal_de_veracruz). {0.52; 0.50}
+% n=13
+resenaPositivaTueste(mlm68722805_cafe_santa_elena_artesanal_de_veracruz). {0.63; 0.50}
+% n=1
+resenaNegativaTueste(mlm68722805_cafe_santa_elena_artesanal_de_veracruz). {0.37; 0.50}
+
+% Café Molido 100% Arábico Gourmet America
+% n=1
+resenaPositivaAcidez(mlm43007251_cafe_molido_100_arabico_gourmet_americano). {0.52; 0.50}
+% n=21
+resenaPositivaAroma(mlm43007251_cafe_molido_100_arabico_gourmet_americano). {0.69; 0.50}
+% n=1
+resenaPositivaDulzor(mlm43007251_cafe_molido_100_arabico_gourmet_americano). {0.52; 0.50}
+% n=5
+resenaPositivaIntensidad(mlm43007251_cafe_molido_100_arabico_gourmet_americano). {0.57; 0.50}
+% n=2
+resenaPositivaMolienda(mlm43007251_cafe_molido_100_arabico_gourmet_americano). {0.53; 0.50}
+% n=2
+resenaPositivaOriginalidad(mlm43007251_cafe_molido_100_arabico_gourmet_americano). {0.53; 0.50}
+% n=3
+resenaPositivaPresentacion(mlm43007251_cafe_molido_100_arabico_gourmet_americano). {0.54; 0.50}
+% n=47
+resenaPositivaSabor(mlm43007251_cafe_molido_100_arabico_gourmet_americano). {0.78; 0.50}
+% n=1
+resenaPositivaTamano(mlm43007251_cafe_molido_100_arabico_gourmet_americano). {0.52; 0.50}
+% n=3
+resenaPositivaTueste(mlm43007251_cafe_molido_100_arabico_gourmet_americano). {0.55; 0.50}
+
+% Café Espresso en grano 100% arábica 500 
+% n=18
+resenaPositivaAroma(mlm45641721_cafe_espresso_en_grano_100_arabica). {0.68; 0.50}
+% n=2
+resenaPositivaCaducidad(mlm45641721_cafe_espresso_en_grano_100_arabica). {0.52; 0.50}
+% n=9
+resenaPositivaIntensidad(mlm45641721_cafe_espresso_en_grano_100_arabica). {0.61; 0.50}
+% n=2
+resenaPositivaMolienda(mlm45641721_cafe_espresso_en_grano_100_arabica). {0.52; 0.50}
+% n=1
+resenaPositivaPreparacion(mlm45641721_cafe_espresso_en_grano_100_arabica). {0.51; 0.50}
+% n=1
+resenaPositivaPresentacion(mlm45641721_cafe_espresso_en_grano_100_arabica). {0.52; 0.50}
+% n=1
+resenaPositivaRendimiento(mlm45641721_cafe_espresso_en_grano_100_arabica). {0.52; 0.50}
+% n=48
+resenaPositivaSabor(mlm45641721_cafe_espresso_en_grano_100_arabica). {0.78; 0.50}
+% n=1
+resenaNegativaSabor(mlm45641721_cafe_espresso_en_grano_100_arabica). {0.22; 0.50}
+% n=3
+resenaPositivaTueste(mlm45641721_cafe_espresso_en_grano_100_arabica). {0.55; 0.50}
+% n=3
+resenaPositivaVariedad(mlm45641721_cafe_espresso_en_grano_100_arabica). {0.54; 0.50}
+
+% Café En Grano Don Justo No. 02 - Tueste 
+% n=3
+resenaPositivaAcidez(mlm60041718_cafe_en_grano_don_justo_no). {0.54; 0.50}
+% n=1
+resenaNegativaAcidez(mlm60041718_cafe_en_grano_don_justo_no). {0.46; 0.50}
+% n=16
+resenaPositivaAroma(mlm60041718_cafe_en_grano_don_justo_no). {0.67; 0.50}
+% n=1
+resenaNegativaDulzor(mlm60041718_cafe_en_grano_don_justo_no). {0.52; 0.50}
+% n=7
+resenaPositivaIntensidad(mlm60041718_cafe_en_grano_don_justo_no). {0.59; 0.50}
+% n=1
+resenaPositivaMolienda(mlm60041718_cafe_en_grano_don_justo_no). {0.52; 0.50}
+% n=2
+resenaPositivaPresentacion(mlm60041718_cafe_en_grano_don_justo_no). {0.53; 0.50}
+% n=26
+resenaPositivaSabor(mlm60041718_cafe_en_grano_don_justo_no). {0.72; 0.50}
+% n=1
+resenaNegativaSabor(mlm60041718_cafe_en_grano_don_justo_no). {0.28; 0.50}
+% n=2
+resenaPositivaTueste(mlm60041718_cafe_en_grano_don_justo_no). {0.53; 0.50}
+
+% Café Gourmet Tostado y Molido Americano 
+% n=3
+resenaPositivaAcidez(mlm25263480_cafe_gourmet_tostado_y_molido_americano). {0.53; 0.50}
+% n=102
+resenaPositivaAroma(mlm25263480_cafe_gourmet_tostado_y_molido_americano). {0.89; 0.50}
+% n=15
+resenaPositivaCaducidad(mlm25263480_cafe_gourmet_tostado_y_molido_americano). {0.65; 0.50}
+% n=3
+resenaPositivaDulzor(mlm25263480_cafe_gourmet_tostado_y_molido_americano). {0.55; 0.50}
+% n=1
+resenaNegativaDulzor(mlm25263480_cafe_gourmet_tostado_y_molido_americano). {0.45; 0.50}
+% n=28
+resenaPositivaIntensidad(mlm25263480_cafe_gourmet_tostado_y_molido_americano). {0.71; 0.50}
+% n=1
+resenaNegativaIntensidad(mlm25263480_cafe_gourmet_tostado_y_molido_americano). {0.29; 0.50}
+% n=5
+resenaPositivaMolienda(mlm25263480_cafe_gourmet_tostado_y_molido_americano). {0.57; 0.50}
+% n=3
+resenaPositivaOriginalidad(mlm25263480_cafe_gourmet_tostado_y_molido_americano). {0.55; 0.50}
+% n=17
+resenaPositivaPresentacion(mlm25263480_cafe_gourmet_tostado_y_molido_americano). {0.69; 0.50}
+% n=11
+resenaPositivaRendimiento(mlm25263480_cafe_gourmet_tostado_y_molido_americano). {0.62; 0.50}
+% n=222
+resenaPositivaSabor(mlm25263480_cafe_gourmet_tostado_y_molido_americano). {0.94; 0.50}
+% n=5
+resenaPositivaTamano(mlm25263480_cafe_gourmet_tostado_y_molido_americano). {0.59; 0.50}
+% n=9
+resenaPositivaTueste(mlm25263480_cafe_gourmet_tostado_y_molido_americano). {0.62; 0.50}
+
+% Café ETNIA 52 Molido de Altura Chiapas |
+% n=20
+resenaPositivaAroma(mlm34232599_cafe_etnia_52_molido_de_altura). {0.67; 0.50}
+% n=2
+resenaNegativaAroma(mlm34232599_cafe_etnia_52_molido_de_altura). {0.33; 0.50}
+% n=1
+resenaPositivaCaducidad(mlm34232599_cafe_etnia_52_molido_de_altura). {0.52; 0.50}
+% n=1
+resenaPositivaDulzor(mlm34232599_cafe_etnia_52_molido_de_altura). {0.50; 0.50}
+% n=1
+resenaNegativaDulzor(mlm34232599_cafe_etnia_52_molido_de_altura). {0.50; 0.50}
+% n=6
+resenaPositivaIntensidad(mlm34232599_cafe_etnia_52_molido_de_altura). {0.57; 0.50}
+% n=1
+resenaNegativaMolienda(mlm34232599_cafe_etnia_52_molido_de_altura). {0.53; 0.50}
+% n=3
+resenaPositivaOriginalidad(mlm34232599_cafe_etnia_52_molido_de_altura). {0.55; 0.50}
+% n=5
+resenaPositivaPresentacion(mlm34232599_cafe_etnia_52_molido_de_altura). {0.57; 0.50}
+% n=1
+resenaNegativaPresentacion(mlm34232599_cafe_etnia_52_molido_de_altura). {0.43; 0.50}
+% n=51
+resenaPositivaSabor(mlm34232599_cafe_etnia_52_molido_de_altura). {0.75; 0.50}
+% n=4
+resenaNegativaSabor(mlm34232599_cafe_etnia_52_molido_de_altura). {0.25; 0.50}
+% n=2
+resenaPositivaTamano(mlm34232599_cafe_etnia_52_molido_de_altura). {0.53; 0.50}
+% n=1
+resenaNegativaTueste(mlm34232599_cafe_etnia_52_molido_de_altura). {0.51; 0.50}
+% n=2
+resenaNegativaVariedad(mlm34232599_cafe_etnia_52_molido_de_altura). {0.53; 0.50}
+
+% Nescafé Taster's Choice Gourmet Roast Am
+% n=3
+resenaPositivaAcidez(mlm19535969_nescafe_taster_s_choice_gourmet_roast). {0.52; 0.50}
+% n=1
+resenaNegativaAcidez(mlm19535969_nescafe_taster_s_choice_gourmet_roast). {0.48; 0.50}
+% n=68
+resenaPositivaAroma(mlm19535969_nescafe_taster_s_choice_gourmet_roast). {0.83; 0.50}
+% n=2
+resenaNegativaAroma(mlm19535969_nescafe_taster_s_choice_gourmet_roast). {0.17; 0.50}
+% n=4
+resenaPositivaCaducidad(mlm19535969_nescafe_taster_s_choice_gourmet_roast). {0.54; 0.50}
+% n=1
+resenaNegativaCaducidad(mlm19535969_nescafe_taster_s_choice_gourmet_roast). {0.46; 0.50}
+% n=2
+resenaPositivaDulzor(mlm19535969_nescafe_taster_s_choice_gourmet_roast). {0.53; 0.50}
+% n=26
+resenaPositivaIntensidad(mlm19535969_nescafe_taster_s_choice_gourmet_roast). {0.73; 0.50}
+% n=5
+resenaPositivaMolienda(mlm19535969_nescafe_taster_s_choice_gourmet_roast). {0.57; 0.50}
+% n=15
+resenaPositivaOriginalidad(mlm19535969_nescafe_taster_s_choice_gourmet_roast). {0.66; 0.50}
+% n=1
+resenaNegativaOriginalidad(mlm19535969_nescafe_taster_s_choice_gourmet_roast). {0.34; 0.50}
+% n=10
+resenaPositivaPreparacion(mlm19535969_nescafe_taster_s_choice_gourmet_roast). {0.59; 0.50}
+% n=1
+resenaNegativaPreparacion(mlm19535969_nescafe_taster_s_choice_gourmet_roast). {0.41; 0.50}
+% n=9
+resenaPositivaPresentacion(mlm19535969_nescafe_taster_s_choice_gourmet_roast). {0.61; 0.50}
+% n=4
+resenaPositivaRendimiento(mlm19535969_nescafe_taster_s_choice_gourmet_roast). {0.56; 0.50}
+% n=138
+resenaPositivaSabor(mlm19535969_nescafe_taster_s_choice_gourmet_roast). {0.85; 0.50}
+% n=7
+resenaNegativaSabor(mlm19535969_nescafe_taster_s_choice_gourmet_roast). {0.15; 0.50}
+% n=5
+resenaPositivaTamano(mlm19535969_nescafe_taster_s_choice_gourmet_roast). {0.58; 0.50}
+% n=6
+resenaPositivaTueste(mlm19535969_nescafe_taster_s_choice_gourmet_roast). {0.59; 0.50}
+% n=1
+resenaPositivaVariedad(mlm19535969_nescafe_taster_s_choice_gourmet_roast). {0.52; 0.50}
+
+% Cafe Puro Tostado Y Molido Veracruz Chia
+% n=51
+resenaPositivaAroma(mlm19543517_cafe_puro_tostado_y_molido_veracruz). {0.81; 0.50}
+% n=1
+resenaNegativaAroma(mlm19543517_cafe_puro_tostado_y_molido_veracruz). {0.19; 0.50}
+% n=3
+resenaPositivaDulzor(mlm19543517_cafe_puro_tostado_y_molido_veracruz). {0.50; 0.50}
+% n=2
+resenaNegativaDulzor(mlm19543517_cafe_puro_tostado_y_molido_veracruz). {0.50; 0.50}
+% n=16
+resenaPositivaIntensidad(mlm19543517_cafe_puro_tostado_y_molido_veracruz). {0.66; 0.50}
+% n=2
+resenaPositivaOriginalidad(mlm19543517_cafe_puro_tostado_y_molido_veracruz). {0.53; 0.50}
+% n=1
+resenaNegativaPreparacion(mlm19543517_cafe_puro_tostado_y_molido_veracruz). {0.52; 0.50}
+% n=3
+resenaPositivaPresentacion(mlm19543517_cafe_puro_tostado_y_molido_veracruz). {0.54; 0.50}
+% n=1
+resenaPositivaRendimiento(mlm19543517_cafe_puro_tostado_y_molido_veracruz). {0.52; 0.50}
+% n=83
+resenaPositivaSabor(mlm19543517_cafe_puro_tostado_y_molido_veracruz). {0.82; 0.50}
+% n=5
+resenaNegativaSabor(mlm19543517_cafe_puro_tostado_y_molido_veracruz). {0.18; 0.50}
+% n=1
+resenaPositivaTamano(mlm19543517_cafe_puro_tostado_y_molido_veracruz). {0.52; 0.50}
+% n=5
+resenaPositivaTueste(mlm19543517_cafe_puro_tostado_y_molido_veracruz). {0.56; 0.50}
+% n=1
+resenaNegativaTueste(mlm19543517_cafe_puro_tostado_y_molido_veracruz). {0.44; 0.50}
+
+% Cafe Folgers Classic Roast Clasico Bote 
+% n=3
+resenaPositivaAcidez(mlm20502238_cafe_folgers_classic_roast_clasico_bote). {0.54; 0.50}
+% n=115
+resenaPositivaAroma(mlm20502238_cafe_folgers_classic_roast_clasico_bote). {0.87; 0.50}
+% n=4
+resenaNegativaAroma(mlm20502238_cafe_folgers_classic_roast_clasico_bote). {0.13; 0.50}
+% n=6
+resenaPositivaCaducidad(mlm20502238_cafe_folgers_classic_roast_clasico_bote). {0.56; 0.50}
+% n=2
+resenaNegativaCaducidad(mlm20502238_cafe_folgers_classic_roast_clasico_bote). {0.44; 0.50}
+% n=1
+resenaPositivaDulzor(mlm20502238_cafe_folgers_classic_roast_clasico_bote). {0.51; 0.50}
+% n=28
+resenaPositivaIntensidad(mlm20502238_cafe_folgers_classic_roast_clasico_bote). {0.71; 0.50}
+% n=1
+resenaNegativaIntensidad(mlm20502238_cafe_folgers_classic_roast_clasico_bote). {0.29; 0.50}
+% n=3
+resenaPositivaMolienda(mlm20502238_cafe_folgers_classic_roast_clasico_bote). {0.55; 0.50}
+% n=29
+resenaPositivaOriginalidad(mlm20502238_cafe_folgers_classic_roast_clasico_bote). {0.64; 0.50}
+% n=9
+resenaNegativaOriginalidad(mlm20502238_cafe_folgers_classic_roast_clasico_bote). {0.36; 0.50}
+% n=2
+resenaPositivaPreparacion(mlm20502238_cafe_folgers_classic_roast_clasico_bote). {0.53; 0.50}
+% n=23
+resenaPositivaPresentacion(mlm20502238_cafe_folgers_classic_roast_clasico_bote). {0.72; 0.50}
+% n=1
+resenaNegativaPresentacion(mlm20502238_cafe_folgers_classic_roast_clasico_bote). {0.28; 0.50}
+% n=23
+resenaPositivaRendimiento(mlm20502238_cafe_folgers_classic_roast_clasico_bote). {0.71; 0.50}
+% n=253
+resenaPositivaSabor(mlm20502238_cafe_folgers_classic_roast_clasico_bote). {0.90; 0.50}
+% n=11
+resenaNegativaSabor(mlm20502238_cafe_folgers_classic_roast_clasico_bote). {0.10; 0.50}
+% n=17
+resenaPositivaTamano(mlm20502238_cafe_folgers_classic_roast_clasico_bote). {0.68; 0.50}
+% n=10
+resenaPositivaTueste(mlm20502238_cafe_folgers_classic_roast_clasico_bote). {0.63; 0.50}
+
+% Café La Parroquia De Veracruz Molido Gou
+% n=3
+resenaPositivaAcidez(mlm19777103_cafe_la_parroquia_de_veracruz_molido). {0.55; 0.50}
+% n=48
+resenaPositivaAroma(mlm19777103_cafe_la_parroquia_de_veracruz_molido). {0.82; 0.50}
+% n=2
+resenaNegativaCaducidad(mlm19777103_cafe_la_parroquia_de_veracruz_molido). {0.55; 0.50}
+% n=4
+resenaPositivaDulzor(mlm19777103_cafe_la_parroquia_de_veracruz_molido). {0.55; 0.50}
+% n=1
+resenaNegativaDulzor(mlm19777103_cafe_la_parroquia_de_veracruz_molido). {0.45; 0.50}
+% n=23
+resenaPositivaIntensidad(mlm19777103_cafe_la_parroquia_de_veracruz_molido). {0.72; 0.50}
+% n=1
+resenaPositivaMolienda(mlm19777103_cafe_la_parroquia_de_veracruz_molido). {0.51; 0.50}
+% n=1
+resenaPositivaOriginalidad(mlm19777103_cafe_la_parroquia_de_veracruz_molido). {0.51; 0.50}
+% n=3
+resenaPositivaPresentacion(mlm19777103_cafe_la_parroquia_de_veracruz_molido). {0.57; 0.50}
+% n=2
+resenaPositivaRendimiento(mlm19777103_cafe_la_parroquia_de_veracruz_molido). {0.52; 0.50}
+% n=95
+resenaPositivaSabor(mlm19777103_cafe_la_parroquia_de_veracruz_molido). {0.84; 0.50}
+% n=3
+resenaNegativaSabor(mlm19777103_cafe_la_parroquia_de_veracruz_molido). {0.16; 0.50}
+% n=2
+resenaPositivaTueste(mlm19777103_cafe_la_parroquia_de_veracruz_molido). {0.53; 0.50}
+% n=2
+resenaPositivaVariedad(mlm19777103_cafe_la_parroquia_de_veracruz_molido). {0.54; 0.50}
+
+% Café Premium Pluma Oaxaca Tostado y Moli
+% n=17
+resenaPositivaAroma(mlm52303869_cafe_premium_pluma_oaxaca_tostado_y). {0.67; 0.50}
+% n=1
+resenaPositivaCaducidad(mlm52303869_cafe_premium_pluma_oaxaca_tostado_y). {0.51; 0.50}
+% n=1
+resenaPositivaDulzor(mlm52303869_cafe_premium_pluma_oaxaca_tostado_y). {0.52; 0.50}
+% n=5
+resenaPositivaIntensidad(mlm52303869_cafe_premium_pluma_oaxaca_tostado_y). {0.56; 0.50}
+% n=28
+resenaPositivaSabor(mlm52303869_cafe_premium_pluma_oaxaca_tostado_y). {0.72; 0.50}
+% n=1
+resenaNegativaTamano(mlm52303869_cafe_premium_pluma_oaxaca_tostado_y). {0.52; 0.50}
+
+% Café De Chiapas Mezcla Caracolillo Bourb
+% n=7
+resenaPositivaAcidez(mlm46938408_cafe_de_chiapas_mezcla_caracolillo_bourbon). {0.58; 0.50}
+% n=1
+resenaNegativaAcidez(mlm46938408_cafe_de_chiapas_mezcla_caracolillo_bourbon). {0.42; 0.50}
+% n=52
+resenaPositivaAroma(mlm46938408_cafe_de_chiapas_mezcla_caracolillo_bourbon). {0.81; 0.50}
+% n=4
+resenaPositivaCaducidad(mlm46938408_cafe_de_chiapas_mezcla_caracolillo_bourbon). {0.56; 0.50}
+% n=2
+resenaPositivaDulzor(mlm46938408_cafe_de_chiapas_mezcla_caracolillo_bourbon). {0.52; 0.50}
+% n=1
+resenaNegativaDulzor(mlm46938408_cafe_de_chiapas_mezcla_caracolillo_bourbon). {0.48; 0.50}
+% n=27
+resenaPositivaIntensidad(mlm46938408_cafe_de_chiapas_mezcla_caracolillo_bourbon). {0.73; 0.50}
+% n=1
+resenaNegativaIntensidad(mlm46938408_cafe_de_chiapas_mezcla_caracolillo_bourbon). {0.27; 0.50}
+% n=1
+resenaPositivaMolienda(mlm46938408_cafe_de_chiapas_mezcla_caracolillo_bourbon). {0.49; 0.50}
+% n=2
+resenaNegativaMolienda(mlm46938408_cafe_de_chiapas_mezcla_caracolillo_bourbon). {0.51; 0.50}
+% n=2
+resenaPositivaPreparacion(mlm46938408_cafe_de_chiapas_mezcla_caracolillo_bourbon). {0.53; 0.50}
+% n=4
+resenaPositivaPresentacion(mlm46938408_cafe_de_chiapas_mezcla_caracolillo_bourbon). {0.54; 0.50}
+% n=1
+resenaNegativaPresentacion(mlm46938408_cafe_de_chiapas_mezcla_caracolillo_bourbon). {0.46; 0.50}
+% n=97
+resenaPositivaSabor(mlm46938408_cafe_de_chiapas_mezcla_caracolillo_bourbon). {0.86; 0.50}
+% n=3
+resenaNegativaSabor(mlm46938408_cafe_de_chiapas_mezcla_caracolillo_bourbon). {0.14; 0.50}
+% n=2
+resenaPositivaTamano(mlm46938408_cafe_de_chiapas_mezcla_caracolillo_bourbon). {0.54; 0.50}
+% n=13
+resenaPositivaTueste(mlm46938408_cafe_de_chiapas_mezcla_caracolillo_bourbon). {0.64; 0.50}
+% n=1
+resenaNegativaTueste(mlm46938408_cafe_de_chiapas_mezcla_caracolillo_bourbon). {0.36; 0.50}
+% n=2
+resenaPositivaVariedad(mlm46938408_cafe_de_chiapas_mezcla_caracolillo_bourbon). {0.54; 0.50}
+
+% Café Veracruzano Artesanal Calidad Gourm
+% n=10
+resenaPositivaAcidez(mlm65430742_cafe_veracruzano_artesanal_calidad_gourmet_100). {0.61; 0.50}
+% n=2
+resenaNegativaAcidez(mlm65430742_cafe_veracruzano_artesanal_calidad_gourmet_100). {0.39; 0.50}
+% n=111
+resenaPositivaAroma(mlm65430742_cafe_veracruzano_artesanal_calidad_gourmet_100). {0.87; 0.50}
+% n=4
+resenaNegativaAroma(mlm65430742_cafe_veracruzano_artesanal_calidad_gourmet_100). {0.13; 0.50}
+% n=15
+resenaPositivaCaducidad(mlm65430742_cafe_veracruzano_artesanal_calidad_gourmet_100). {0.69; 0.50}
+% n=3
+resenaPositivaDulzor(mlm65430742_cafe_veracruzano_artesanal_calidad_gourmet_100). {0.51; 0.50}
+% n=1
+resenaNegativaDulzor(mlm65430742_cafe_veracruzano_artesanal_calidad_gourmet_100). {0.49; 0.50}
+% n=31
+resenaPositivaIntensidad(mlm65430742_cafe_veracruzano_artesanal_calidad_gourmet_100). {0.74; 0.50}
+% n=1
+resenaNegativaIntensidad(mlm65430742_cafe_veracruzano_artesanal_calidad_gourmet_100). {0.26; 0.50}
+% n=13
+resenaPositivaMolienda(mlm65430742_cafe_veracruzano_artesanal_calidad_gourmet_100). {0.65; 0.50}
+% n=1
+resenaPositivaOriginalidad(mlm65430742_cafe_veracruzano_artesanal_calidad_gourmet_100). {0.52; 0.50}
+% n=2
+resenaPositivaPreparacion(mlm65430742_cafe_veracruzano_artesanal_calidad_gourmet_100). {0.53; 0.50}
+% n=11
+resenaPositivaPresentacion(mlm65430742_cafe_veracruzano_artesanal_calidad_gourmet_100). {0.62; 0.50}
+% n=1
+resenaNegativaPresentacion(mlm65430742_cafe_veracruzano_artesanal_calidad_gourmet_100). {0.38; 0.50}
+% n=2
+resenaPositivaRendimiento(mlm65430742_cafe_veracruzano_artesanal_calidad_gourmet_100). {0.53; 0.50}
+% n=180
+resenaPositivaSabor(mlm65430742_cafe_veracruzano_artesanal_calidad_gourmet_100). {0.85; 0.50}
+% n=16
+resenaNegativaSabor(mlm65430742_cafe_veracruzano_artesanal_calidad_gourmet_100). {0.15; 0.50}
+% n=6
+resenaPositivaTamano(mlm65430742_cafe_veracruzano_artesanal_calidad_gourmet_100). {0.57; 0.50}
+% n=1
+resenaNegativaTamano(mlm65430742_cafe_veracruzano_artesanal_calidad_gourmet_100). {0.43; 0.50}
+% n=60
+resenaPositivaTueste(mlm65430742_cafe_veracruzano_artesanal_calidad_gourmet_100). {0.81; 0.50}
+% n=3
+resenaNegativaTueste(mlm65430742_cafe_veracruzano_artesanal_calidad_gourmet_100). {0.19; 0.50}
+% n=4
+resenaPositivaVariedad(mlm65430742_cafe_veracruzano_artesanal_calidad_gourmet_100). {0.56; 0.50}
+
+% Café en Grano de Altura Gourmet | 250gr 
+% n=1
+resenaPositivaAcidez(mlm34739841_cafe_en_grano_de_altura_gourmet). {0.51; 0.50}
+% n=15
+resenaPositivaAroma(mlm34739841_cafe_en_grano_de_altura_gourmet). {0.65; 0.50}
+% n=2
+resenaPositivaCaducidad(mlm34739841_cafe_en_grano_de_altura_gourmet). {0.53; 0.50}
+% n=3
+resenaPositivaIntensidad(mlm34739841_cafe_en_grano_de_altura_gourmet). {0.54; 0.50}
+% n=2
+resenaPositivaPresentacion(mlm34739841_cafe_en_grano_de_altura_gourmet). {0.54; 0.50}
+% n=22
+resenaPositivaSabor(mlm34739841_cafe_en_grano_de_altura_gourmet). {0.63; 0.50}
+% n=3
+resenaNegativaSabor(mlm34739841_cafe_en_grano_de_altura_gourmet). {0.37; 0.50}
+% n=1
+resenaPositivaTueste(mlm34739841_cafe_en_grano_de_altura_gourmet). {0.51; 0.50}
+% n=1
+resenaPositivaVariedad(mlm34739841_cafe_en_grano_de_altura_gourmet). {0.51; 0.50}
+
+% Café La Parroquia De Veracruz En Grano, 
+% n=22
+resenaPositivaAroma(mlm26204244_cafe_la_parroquia_de_veracruz_en). {0.70; 0.50}
+% n=1
+resenaNegativaAroma(mlm26204244_cafe_la_parroquia_de_veracruz_en). {0.30; 0.50}
+% n=2
+resenaPositivaCaducidad(mlm26204244_cafe_la_parroquia_de_veracruz_en). {0.53; 0.50}
+% n=10
+resenaPositivaIntensidad(mlm26204244_cafe_la_parroquia_de_veracruz_en). {0.63; 0.50}
+% n=3
+resenaPositivaMolienda(mlm26204244_cafe_la_parroquia_de_veracruz_en). {0.55; 0.50}
+% n=1
+resenaPositivaOriginalidad(mlm26204244_cafe_la_parroquia_de_veracruz_en). {0.52; 0.50}
+% n=1
+resenaPositivaPreparacion(mlm26204244_cafe_la_parroquia_de_veracruz_en). {0.52; 0.50}
+% n=2
+resenaPositivaPresentacion(mlm26204244_cafe_la_parroquia_de_veracruz_en). {0.53; 0.50}
+% n=37
+resenaPositivaSabor(mlm26204244_cafe_la_parroquia_de_veracruz_en). {0.76; 0.50}
+% n=1
+resenaNegativaSabor(mlm26204244_cafe_la_parroquia_de_veracruz_en). {0.24; 0.50}
+% n=2
+resenaPositivaTueste(mlm26204244_cafe_la_parroquia_de_veracruz_en). {0.54; 0.50}
+% n=1
+resenaNegativaTueste(mlm26204244_cafe_la_parroquia_de_veracruz_en). {0.46; 0.50}
+
+% ============================================================
+% REGLAS DE AGREGACION POR ASPECTO
+% ============================================================
+
+acidezBueno(X) :- resenaPositivaAcidez(X). {0.85; 1.00}
+~acidezBueno(X) :- resenaNegativaAcidez(X). {0.85; 1.00}
+aromaBueno(X) :- resenaPositivaAroma(X). {0.85; 1.00}
+~aromaBueno(X) :- resenaNegativaAroma(X). {0.85; 1.00}
+caducidadBueno(X) :- resenaPositivaCaducidad(X). {0.85; 1.00}
+~caducidadBueno(X) :- resenaNegativaCaducidad(X). {0.85; 1.00}
+dulzorBueno(X) :- resenaPositivaDulzor(X). {0.85; 1.00}
+~dulzorBueno(X) :- resenaNegativaDulzor(X). {0.85; 1.00}
+intensidadBueno(X) :- resenaPositivaIntensidad(X). {0.85; 1.00}
+~intensidadBueno(X) :- resenaNegativaIntensidad(X). {0.85; 1.00}
+moliendaBueno(X) :- resenaPositivaMolienda(X). {0.85; 1.00}
+~moliendaBueno(X) :- resenaNegativaMolienda(X). {0.85; 1.00}
+originalidadBueno(X) :- resenaPositivaOriginalidad(X). {0.85; 1.00}
+~originalidadBueno(X) :- resenaNegativaOriginalidad(X). {0.85; 1.00}
+preparacionBueno(X) :- resenaPositivaPreparacion(X). {0.85; 1.00}
+~preparacionBueno(X) :- resenaNegativaPreparacion(X). {0.85; 1.00}
+presentacionBueno(X) :- resenaPositivaPresentacion(X). {0.85; 1.00}
+~presentacionBueno(X) :- resenaNegativaPresentacion(X). {0.85; 1.00}
+rendimientoBueno(X) :- resenaPositivaRendimiento(X). {0.85; 1.00}
+~rendimientoBueno(X) :- resenaNegativaRendimiento(X). {0.85; 1.00}
+saborBueno(X) :- resenaPositivaSabor(X). {0.85; 1.00}
+~saborBueno(X) :- resenaNegativaSabor(X). {0.85; 1.00}
+tamanoBueno(X) :- resenaPositivaTamano(X). {0.85; 1.00}
+~tamanoBueno(X) :- resenaNegativaTamano(X). {0.85; 1.00}
+tuesteBueno(X) :- resenaPositivaTueste(X). {0.85; 1.00}
+~tuesteBueno(X) :- resenaNegativaTueste(X). {0.85; 1.00}
+variedadBueno(X) :- resenaPositivaVariedad(X). {0.85; 1.00}
+~variedadBueno(X) :- resenaNegativaVariedad(X). {0.85; 1.00}
+
+% ============================================================
+% REGLAS INTERMEDIAS POR DIMENSION
+% Cada dimension agrupa aspectos relacionados antes de recomendar.
+% ============================================================
+
+% Experiencia sensorial
+sensorialBueno(X) :- saborBueno(X). {0.90; 1.00}
+~sensorialBueno(X) :- ~saborBueno(X). {0.92; 1.00}
+sensorialBueno(X) :- aromaBueno(X). {0.85; 1.00}
+~sensorialBueno(X) :- ~aromaBueno(X). {0.85; 1.00}
+sensorialBueno(X) :- intensidadBueno(X). {0.80; 1.00}
+~sensorialBueno(X) :- ~intensidadBueno(X). {0.80; 1.00}
+sensorialBueno(X) :- dulzorBueno(X). {0.80; 1.00}
+~sensorialBueno(X) :- ~dulzorBueno(X). {0.80; 1.00}
+sensorialBueno(X) :- tuesteBueno(X). {0.85; 1.00}
+~sensorialBueno(X) :- ~tuesteBueno(X). {0.88; 1.00}
+sensorialBueno(X) :- acidezBueno(X). {0.85; 1.00}
+~sensorialBueno(X) :- ~acidezBueno(X). {0.85; 1.00}
+
+% Rendimiento y valor
+valorBueno(X) :- rendimientoBueno(X). {0.85; 1.00}
+~valorBueno(X) :- ~rendimientoBueno(X). {0.85; 1.00}
+valorBueno(X) :- tamanoBueno(X). {0.75; 1.00}
+~valorBueno(X) :- ~tamanoBueno(X). {0.75; 1.00}
+
+% Producto y presentacion
+productoBueno(X) :- originalidadBueno(X). {0.88; 1.00}
+~productoBueno(X) :- ~originalidadBueno(X). {0.90; 1.00}
+productoBueno(X) :- presentacionBueno(X). {0.80; 1.00}
+~productoBueno(X) :- ~presentacionBueno(X). {0.80; 1.00}
+productoBueno(X) :- variedadBueno(X). {0.75; 1.00}
+~productoBueno(X) :- ~variedadBueno(X). {0.75; 1.00}
+
+% Preparacion y molienda
+elaboracionBueno(X) :- preparacionBueno(X). {0.80; 1.00}
+~elaboracionBueno(X) :- ~preparacionBueno(X). {0.85; 1.00}
+elaboracionBueno(X) :- moliendaBueno(X). {0.80; 1.00}
+~elaboracionBueno(X) :- ~moliendaBueno(X). {0.85; 1.00}
+
+% Conservacion
+conservacionBueno(X) :- caducidadBueno(X). {0.85; 1.00}
+~conservacionBueno(X) :- ~caducidadBueno(X). {0.92; 1.00}
+
+% ============================================================
+% REGLAS DE RECOMENDACION
+% X = producto candidato
+% ============================================================
+
+recomendar(X) :- sensorialBueno(X). {0.90; 1.00}
+~recomendar(X) :- ~sensorialBueno(X). {0.92; 1.00}
+recomendar(X) :- valorBueno(X). {0.80; 1.00}
+recomendar(X) :- productoBueno(X). {0.78; 1.00}
+~recomendar(X) :- ~productoBueno(X). {0.90; 1.00}
+recomendar(X) :- elaboracionBueno(X). {0.75; 1.00}
+recomendar(X) :- conservacionBueno(X). {0.78; 1.00}
+~recomendar(X) :- ~conservacionBueno(X). {0.92; 1.00}
+
+% ============================================================
+% ============================================================
+% Atributo 1 - Confianza:
+%   producto = X*Y     suma = X+Y-X*Y     debilitamiento = (X-Y)/(1-Y) si X>=Y, sino 0
+% Atributo 2 - Preferencia del usuario:
+%   producto = min(X,Y)     suma = min(X+Y,1)     debilitamiento = max(X-Y,0)
+%
+% Fuente: Budan et al. (2017) IJAR 82:242-269, Ejemplo 1 pp.249-250

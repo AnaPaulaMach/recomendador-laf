@@ -1,0 +1,40 @@
+# Prototipo completo para prueba local: interfaz web + evaluador LAF.
+# Uso:  docker compose up --build
+# Luego abrir http://localhost:8000
+#
+# El evaluador LAF vive en otro repositorio (AnaPaulaMach/LAF). Por defecto se
+# asume clonado al lado de este, en ../../LAF; cambiar con LAF_API_CONTEXT.
+services:
+  laf-api:
+    build:
+      context: ${LAF_API_CONTEXT:-../../LAF/API}
+    environment:
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+    ports:
+      # Mismo puerto que usabas con el contenedor suelto: los scripts de
+      # validacion siguen apuntando a http://127.0.0.1:8088/api/graph.
+      - "${LAF_API_PORT:-8088}:8080"
+    restart: unless-stopped
+
+  web:
+    build:
+      context: .
+    ports:
+      - "${WEB_PORT:-8000}:8000"
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      DJANGO_DEBUG: "0"
+      DJANGO_ALLOWED_HOSTS: "localhost,127.0.0.1"
+      LAF_API_URL: "http://laf-api:8080/api/graph"
+      LAF_API_RESULTS_VALIDATED: "1"
+      DJANGO_DB_PATH: /data/db.sqlite3
+    volumes:
+      - web-data:/data
+    depends_on:
+      - laf-api
+    restart: unless-stopped
+
+volumes:
+  web-data:

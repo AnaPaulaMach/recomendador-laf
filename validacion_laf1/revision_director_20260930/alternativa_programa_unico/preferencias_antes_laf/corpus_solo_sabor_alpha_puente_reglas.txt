@@ -1,0 +1,98 @@
+% NUEVA PRUEBA ACOTADA: una etiqueta; peso continuo antes LAF.
+resenaPositivaSabor(mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble). {0.9}
+resenaNegativaSabor(mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble). {0.1}
+resenaPositivaSabor(mlm20075768_nescafe_clasico_cafe_100_puro_soluble). {0.72}
+resenaNegativaSabor(mlm20075768_nescafe_clasico_cafe_100_puro_soluble). {0.28}
+resenaPositivaSabor(mlm26912881_cafe_blason_espresso_robusto_tostado_y). {0.94}
+resenaNegativaSabor(mlm26912881_cafe_blason_espresso_robusto_tostado_y). {0.06}
+resenaPositivaSabor(mlm16250252_nescafe_clasico_de_cafe_sin_gluten). {0.77}
+resenaNegativaSabor(mlm16250252_nescafe_clasico_de_cafe_sin_gluten). {0.23}
+resenaPositivaSabor(mlm25263480_cafe_gourmet_tostado_y_molido_americano). {0.93}
+resenaPositivaSabor(mlm19544520_cafe_capuccino_moka_members_mark_1). {0.94}
+resenaNegativaSabor(mlm19544520_cafe_capuccino_moka_members_mark_1). {0.06}
+resenaPositivaSabor(mlm16250244_nescafe_taster_s_choice_caramel_dark). {0.93}
+resenaNegativaSabor(mlm16250244_nescafe_taster_s_choice_caramel_dark). {0.07}
+resenaPositivaSabor(mlm23633481_nescafe_clasico_ice_cafe_soluble_en). {0.78}
+resenaNegativaSabor(mlm23633481_nescafe_clasico_ice_cafe_soluble_en). {0.22}
+resenaPositivaSabor(mlm16207863_nescafe_cafe_de_olla_100_cafe). {0.86}
+resenaNegativaSabor(mlm16207863_nescafe_cafe_de_olla_100_cafe). {0.14}
+resenaPositivaSabor(mlm16250253_nescafe_decaf_cafe_100_puro_soluble). {0.76}
+resenaPositivaSabor(mlm41148521_cafe_gourmet_molido_espresso_400g_blason). {0.88}
+resenaPositivaSabor(mlm43007251_cafe_molido_100_arabico_gourmet_americano). {0.76}
+resenaPositivaSabor(mlm19663240_nescafe_clasico_cafe_100_puro_soluble). {0.84}
+resenaPositivaSabor(mlm16207890_nescafe_reserva_verarica_cafe_100_soluble). {0.81}
+resenaNegativaSabor(mlm16207890_nescafe_reserva_verarica_cafe_100_soluble). {0.19}
+resenaPositivaSabor(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo). {0.95}
+resenaNegativaSabor(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo). {0.05}
+resenaPositivaSabor(mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional). {0.8}
+resenaNegativaSabor(mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional). {0.2}
+resenaPositivaSabor(mlm27068249_tripack_juan_valdez_cafe_soluble_95gr). {0.85}
+resenaNegativaSabor(mlm27068249_tripack_juan_valdez_cafe_soluble_95gr). {0.15}
+resenaPositivaSabor(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.92}
+resenaNegativaSabor(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.08}
+acidezBueno(X) :- resenaPositivaAcidez(X). {0.85}
+~acidezBueno(X) :- resenaNegativaAcidez(X). {0.85}
+aromaBueno(X) :- resenaPositivaAroma(X). {0.85}
+~aromaBueno(X) :- resenaNegativaAroma(X). {0.85}
+caducidadBueno(X) :- resenaPositivaCaducidad(X). {0.85}
+~caducidadBueno(X) :- resenaNegativaCaducidad(X). {0.85}
+dulzorBueno(X) :- resenaPositivaDulzor(X). {0.85}
+~dulzorBueno(X) :- resenaNegativaDulzor(X). {0.85}
+intensidadBueno(X) :- resenaPositivaIntensidad(X). {0.85}
+~intensidadBueno(X) :- resenaNegativaIntensidad(X). {0.85}
+moliendaBueno(X) :- resenaPositivaMolienda(X). {0.85}
+~moliendaBueno(X) :- resenaNegativaMolienda(X). {0.85}
+originalidadBueno(X) :- resenaPositivaOriginalidad(X). {0.85}
+~originalidadBueno(X) :- resenaNegativaOriginalidad(X). {0.85}
+preparacionBueno(X) :- resenaPositivaPreparacion(X). {0.85}
+~preparacionBueno(X) :- resenaNegativaPreparacion(X). {0.85}
+presentacionBueno(X) :- resenaPositivaPresentacion(X). {0.85}
+~presentacionBueno(X) :- resenaNegativaPresentacion(X). {0.85}
+rendimientoBueno(X) :- resenaPositivaRendimiento(X). {0.85}
+~rendimientoBueno(X) :- resenaNegativaRendimiento(X). {0.85}
+saborBueno(X) :- resenaPositivaSabor(X). {0.85}
+~saborBueno(X) :- resenaNegativaSabor(X). {0.85}
+tamanoBueno(X) :- resenaPositivaTamano(X). {0.85}
+~tamanoBueno(X) :- resenaNegativaTamano(X). {0.85}
+tuesteBueno(X) :- resenaPositivaTueste(X). {0.85}
+~tuesteBueno(X) :- resenaNegativaTueste(X). {0.85}
+variedadBueno(X) :- resenaPositivaVariedad(X). {0.85}
+~variedadBueno(X) :- resenaNegativaVariedad(X). {0.85}
+sensorialBueno(X) :- saborBueno(X). {0.9}
+~sensorialBueno(X) :- ~saborBueno(X). {0.92}
+sensorialBueno(X) :- aromaBueno(X). {0}
+~sensorialBueno(X) :- ~aromaBueno(X). {0}
+sensorialBueno(X) :- intensidadBueno(X). {0}
+~sensorialBueno(X) :- ~intensidadBueno(X). {0}
+sensorialBueno(X) :- dulzorBueno(X). {0}
+~sensorialBueno(X) :- ~dulzorBueno(X). {0}
+sensorialBueno(X) :- tuesteBueno(X). {0}
+~sensorialBueno(X) :- ~tuesteBueno(X). {0}
+sensorialBueno(X) :- acidezBueno(X). {0}
+~sensorialBueno(X) :- ~acidezBueno(X). {0}
+valorBueno(X) :- rendimientoBueno(X). {0}
+~valorBueno(X) :- ~rendimientoBueno(X). {0}
+valorBueno(X) :- tamanoBueno(X). {0}
+~valorBueno(X) :- ~tamanoBueno(X). {0}
+productoBueno(X) :- originalidadBueno(X). {0}
+~productoBueno(X) :- ~originalidadBueno(X). {0}
+productoBueno(X) :- presentacionBueno(X). {0}
+~productoBueno(X) :- ~presentacionBueno(X). {0}
+productoBueno(X) :- variedadBueno(X). {0}
+~productoBueno(X) :- ~variedadBueno(X). {0}
+elaboracionBueno(X) :- preparacionBueno(X). {0}
+~elaboracionBueno(X) :- ~preparacionBueno(X). {0}
+elaboracionBueno(X) :- moliendaBueno(X). {0}
+~elaboracionBueno(X) :- ~moliendaBueno(X). {0}
+conservacionBueno(X) :- caducidadBueno(X). {0}
+~conservacionBueno(X) :- ~caducidadBueno(X). {0}
+recomendar(X) :- sensorialBueno(X). {0.9}
+~recomendar(X) :- ~sensorialBueno(X). {0.92}
+recomendar(X) :- valorBueno(X). {0.8}
+~recomendar(X) :- ~valorBueno(X). {0.8}
+recomendar(X) :- productoBueno(X). {0.78}
+~recomendar(X) :- ~productoBueno(X). {0.9}
+recomendar(X) :- elaboracionBueno(X). {0.75}
+~recomendar(X) :- ~elaboracionBueno(X). {0.75}
+recomendar(X) :- conservacionBueno(X). {0.78}
+~recomendar(X) :- ~conservacionBueno(X). {0.92}

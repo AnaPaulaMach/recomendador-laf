@@ -1,0 +1,208 @@
+{
+ "dataset_key": "mlm_mlm194329_20260805_191308",
+ "provisional": "trust actual, previo a R3/fila 13",
+ "nombres": {
+  "MLM19566313": "Cafe Capuccino Vainilla Francesa En Polvo Members Mark 1.8 Kg",
+  "MLM23633481": "Nescafé Clásico ICE Café Soluble en Frío Frasco de 170gr",
+  "MLM16207894": "Nescafé Reserva Xiapan Café 100% Soluble Liofilizado de Origen Chiapaneco con Notas Amaderadas en Frasco de 180g",
+  "MLM20999002": "Café Soluble Nescafé Clásico Nestlé Professional Bote de 1Kg",
+  "MLM16207893": "Café instantáneo clásico Nescafé sin gluten frasco 60 g",
+  "MLM19535763": "Cafe Puro Soluble Colombiano Liofilizado Members Mark 300 Gr",
+  "MLM19663240": "Nescafé Clásico Café 100% Puro Soluble Frasco de 200g",
+  "MLM21827563": "Nescafé Reserva Oahan Café 100% Soluble Liofilizado Origen Oaxaqueño con Notas Amaderadas Frasco de 180g",
+  "MLM50307832": "Café Capuchino Instantáneo para Máquinas Vending | Sabor Crema Irlandesa | 1 kilo | Etnia 52",
+  "MLM55879706": "Café Soluble Nescafé Clásico Frasco 200g + Taza Futbolera Coleccionable",
+  "MLM16207862": "Nescafé Taster's Choice Vainilla Café 100% Puro Soluble Frasco de 100g",
+  "MLM19791561": "Café Nescafe Cappuccino Original 1 Sobre De 20 Gramos",
+  "MLM41148521": "Café Gourmet Molido Espresso 400g Blasón",
+  "MLM19544520": "Cafe Capuccino Moka Members Mark 1.8 Kg en polvo",
+  "MLM16207863": "Nescafé Café de Olla 100% Café Soluble Sabor Canela y Piloncillo | Granos Robusta Frasco de 170g",
+  "MLM16207890": "Nescafé Reserva Verarica Café 100% Soluble Liofilizado Origen Veracruzano con Notas Afrutadas en Frasco de 180g"
+ },
+ "por_perfil": {
+  "neutral": {
+   "top5": [
+    "Café Gourmet Molido Espresso 400g Blasón",
+    "Cafe Puro Soluble Colombiano Liofilizado Members Mark 300 Gr",
+    "Nescafé Taster's Choice Vainilla Café 100% Puro Soluble Frasco de 100g",
+    "Nescafé Reserva Xiapan Café 100% Soluble Liofilizado de Origen Chiapaneco con Notas Amaderadas en Frasco de 180g",
+    "Cafe Capuccino Vainilla Francesa En Polvo Members Mark 1.8 Kg"
+   ],
+   "precision": {
+    "b1_estrella_media": {
+     "spearman": 0.535,
+     "prec@3": 0.333,
+     "prec@5": 0.4
+    },
+    "b2_positivas_conteo": {
+     "spearman": 0.768,
+     "prec@3": 0.333,
+     "prec@5": 0.6
+    },
+    "b3_positivas_prop": {
+     "spearman": 0.665,
+     "prec@3": 0.333,
+     "prec@5": 0.6
+    }
+   },
+   "cobertura": {
+    "laf_scores_distintos": 16,
+    "laf_en_cero": 0,
+    "n": 16,
+    "laf_rango": [
+     0.116,
+     0.364
+    ],
+    "estrella_rango": [
+     4.556,
+     4.937
+    ],
+    "pares_empatados_en_estrellas": 15,
+    "de_esos_LAF_separa": 15
+   },
+   "novedad": {
+    "laf_sesgo_popularidad": 0.768,
+    "b2_sesgo_popularidad": 1.0,
+    "b3_sesgo_popularidad": 0.374,
+    "laf_pop_media_top3": 926.3,
+    "b2_pop_media_top3": 1466.3,
+    "b3_pop_media_top3": 567.0
+   },
+   "coherencia": {
+    "i_interna_spearman_net": 0.838,
+    "i_interna_spearman_pos": 0.844,
+    "i_inversiones_duras": 23,
+    "i_peor_inversion": [
+     "MLM41148521",
+     "MLM19535763",
+     318,
+     385
+    ],
+    "ii_top5_con_evidencia_negativa": []
+   }
+  },
+  "solo_sabor": {
+   "top5": [
+    "Cafe Capuccino Moka Members Mark 1.8 Kg en polvo",
+    "Cafe Capuccino Vainilla Francesa En Polvo Members Mark 1.8 Kg",
+    "Nescafé Taster's Choice Vainilla Café 100% Puro Soluble Frasco de 100g",
+    "Café Gourmet Molido Espresso 400g Blasón",
+    "Nescafé Reserva Xiapan Café 100% Soluble Liofilizado de Origen Chiapaneco con Notas Amaderadas en Frasco de 180g"
+   ],
+   "precision": {
+    "b1_estrella_media": {
+     "spearman": 0.341,
+     "prec@3": 0.0,
+     "prec@5": 0.4
+    },
+    "b2_positivas_conteo": {
+     "spearman": 0.856,
+     "prec@3": 1.0,
+     "prec@5": 0.8
+    },
+    "b3_positivas_prop": {
+     "spearman": 0.444,
+     "prec@3": 0.0,
+     "prec@5": 0.4
+    }
+   },
+   "cobertura": {
+    "laf_scores_distintos": 13,
+    "laf_en_cero": 0,
+    "n": 16,
+    "laf_rango": [
+     0.355,
+     0.647
+    ],
+    "estrella_rango": [
+     4.556,
+     4.937
+    ],
+    "pares_empatados_en_estrellas": 15,
+    "de_esos_LAF_separa": 15
+   },
+   "novedad": {
+    "laf_sesgo_popularidad": 0.856,
+    "b2_sesgo_popularidad": 1.0,
+    "b3_sesgo_popularidad": 0.374,
+    "laf_pop_media_top3": 1466.3,
+    "b2_pop_media_top3": 1466.3,
+    "b3_pop_media_top3": 567.0
+   },
+   "coherencia": {
+    "i_interna_spearman_net": 0.964,
+    "i_interna_spearman_pos": 0.952,
+    "i_inversiones_duras": 9,
+    "i_peor_inversion": [
+     "MLM19566313",
+     "MLM16207862",
+     395,
+     424
+    ],
+    "ii_top5_con_evidencia_negativa": []
+   }
+  },
+  "solo_aroma": {
+   "top5": [
+    "Nescafé Taster's Choice Vainilla Café 100% Puro Soluble Frasco de 100g",
+    "Nescafé Reserva Xiapan Café 100% Soluble Liofilizado de Origen Chiapaneco con Notas Amaderadas en Frasco de 180g",
+    "Cafe Puro Soluble Colombiano Liofilizado Members Mark 300 Gr",
+    "Café Gourmet Molido Espresso 400g Blasón",
+    "Nescafé Reserva Verarica Café 100% Soluble Liofilizado Origen Veracruzano con Notas Afrutadas en Frasco de 180g"
+   ],
+   "precision": {
+    "b1_estrella_media": {
+     "spearman": 0.35,
+     "prec@3": 0.333,
+     "prec@5": 0.4
+    },
+    "b2_positivas_conteo": {
+     "spearman": 0.479,
+     "prec@3": 0.333,
+     "prec@5": 0.4
+    },
+    "b3_positivas_prop": {
+     "spearman": 0.446,
+     "prec@3": 0.667,
+     "prec@5": 0.6
+    }
+   },
+   "cobertura": {
+    "laf_scores_distintos": 13,
+    "laf_en_cero": 0,
+    "n": 15,
+    "laf_rango": [
+     0.358,
+     0.592
+    ],
+    "estrella_rango": [
+     4.556,
+     4.937
+    ],
+    "pares_empatados_en_estrellas": 15,
+    "de_esos_LAF_separa": 15
+   },
+   "novedad": {
+    "laf_sesgo_popularidad": 0.479,
+    "b2_sesgo_popularidad": 1.0,
+    "b3_sesgo_popularidad": 0.374,
+    "laf_pop_media_top3": 1011.7,
+    "b2_pop_media_top3": 1466.3,
+    "b3_pop_media_top3": 567.0
+   },
+   "coherencia": {
+    "i_interna_spearman_net": 0.979,
+    "i_interna_spearman_pos": 0.979,
+    "i_inversiones_duras": 0,
+    "i_peor_inversion": null,
+    "ii_top5_con_evidencia_negativa": []
+   }
+  }
+ },
+ "estabilidad_laf": {
+  "neutral_vs_perturbado_sabor0.6": 1.0,
+  "responsividad_neutral_vs_solo_sabor": 0.812,
+  "responsividad_neutral_vs_solo_aroma": 0.7,
+  "nota": "las bases son perfectamente estables (rho=1) pero perfectamente NO responsivas (rho=1): no dependen del perfil."
+ }
+}

@@ -1,0 +1,669 @@
+% =====================================================================
+% PROGRAMA LAF 1 - RANKING DE PRODUCTOS
+% Sistema argumentativo de recomendacion de cafe
+% Trabajo Final - Ana Paula Machado - UNSE
+% =====================================================================
+
+% Estrategia de balanceo: C - Catalogo como base garantizada
+% Dominio: Cafe
+% Productos analizados: 18
+
+% Productos y rango de precios:
+%   # 1 mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble  $121-$410  (9 publicaciones)
+%   # 2 mlm20075768_nescafe_clasico_cafe_100_puro_soluble  $265-$265  (1 publicaciones)
+%   # 4 mlm26912881_cafe_blason_espresso_robusto_tostado_y  $277-$277  (1 publicaciones)
+%   # 5 mlm16250252_nescafe_clasico_de_cafe_sin_gluten  $255-$1,465  (11 publicaciones)
+%   # 6 mlm25263480_cafe_gourmet_tostado_y_molido_americano  $268-$590  (3 publicaciones)
+%   # 7 mlm19544520_cafe_capuccino_moka_members_mark_1  $284-$790  (26 publicaciones)
+%   # 8 mlm16250244_nescafe_taster_s_choice_caramel_dark  $139-$447  (7 publicaciones)
+%   # 9 mlm23633481_nescafe_clasico_ice_cafe_soluble_en  $165-$447  (12 publicaciones)
+%   #10 mlm16207863_nescafe_cafe_de_olla_100_cafe      $77-$400  (11 publicaciones)
+%   #11 mlm16250253_nescafe_decaf_cafe_100_puro_soluble  $132-$390  (6 publicaciones)
+%   #12 mlm41148521_cafe_gourmet_molido_espresso_400g_blason  $120-$482  (7 publicaciones)
+%   #13 mlm43007251_cafe_molido_100_arabico_gourmet_americano  $245-$942  (6 publicaciones)
+%   #15 mlm19663240_nescafe_clasico_cafe_100_puro_soluble  $179-$410  (16 publicaciones)
+%   #16 mlm16207890_nescafe_reserva_verarica_cafe_100_soluble  $182-$447  (8 publicaciones)
+%   #17 mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo  $288-$645  (26 publicaciones)
+%   #18 mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional  $484-$799  (6 publicaciones)
+%   #19 mlm27068249_tripack_juan_valdez_cafe_soluble_95gr  $473-$473  (1 publicaciones)
+%   #20 mlm19543513_cafe_molido_la_parroquia_puro_1    $280-$790  (12 publicaciones)
+
+% Preferencias del usuario:
+%   sabor: 1.00
+%   aroma: 0.80
+%   intensidad: 0.60
+%   originalidad: 0.60
+%   dulzor: 0.50
+%   rendimiento: 0.50
+%   preparacion: 0.50
+%   molienda: 0.50
+%   caducidad: 0.40
+%   presentacion: 0.40
+%   variedad: 0.40
+%   tamano: 0.30
+
+% Estructura argumentativa LAF 1:
+%   resena -> aspecto -> dimension -> recomendar
+%   sensorial: sabor, aroma, intensidad, dulzor
+%   valor: rendimiento, tamano
+%   producto: originalidad, presentacion, variedad
+%   elaboracion: preparacion, molienda
+%   conservacion: caducidad
+
+% ============================================================
+% HECHOS - un hecho por (producto, aspecto, polaridad)
+% Variable X identifica al producto.
+% ============================================================
+
+% Nescafé Reserva Xiapan Café 100% Soluble
+% n=63
+resenaPositivaAroma(mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble). {1.00; 0.80}
+% n=1
+resenaPositivaCaducidad(mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble). {0.47; 0.40}
+% n=1
+resenaNegativaCaducidad(mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble). {0.53; 0.40}
+% n=6
+resenaPositivaDulzor(mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble). {0.86; 0.50}
+% n=1
+resenaNegativaDulzor(mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble). {0.14; 0.50}
+% n=13
+resenaPositivaIntensidad(mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble). {0.93; 0.60}
+% n=1
+resenaNegativaIntensidad(mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble). {0.07; 0.60}
+% n=7
+resenaPositivaOriginalidad(mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble). {1.00; 0.60}
+% n=12
+resenaPositivaPreparacion(mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble). {1.00; 0.50}
+% n=12
+resenaPositivaPresentacion(mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble). {1.00; 0.40}
+% n=3
+resenaPositivaRendimiento(mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble). {1.00; 0.50}
+% n=180
+resenaPositivaSabor(mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble). {0.96; 1.00}
+% n=7
+resenaNegativaSabor(mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble). {0.04; 1.00}
+% n=4
+resenaPositivaTamano(mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble). {1.00; 0.30}
+% n=3
+resenaPositivaVariedad(mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble). {1.00; 0.40}
+
+% Nescafé Clásico Café 100% Puro Soluble B
+% n=10
+resenaPositivaAroma(mlm20075768_nescafe_clasico_cafe_100_puro_soluble). {0.91; 0.80}
+% n=1
+resenaNegativaAroma(mlm20075768_nescafe_clasico_cafe_100_puro_soluble). {0.09; 0.80}
+% n=8
+resenaPositivaCaducidad(mlm20075768_nescafe_clasico_cafe_100_puro_soluble). {1.00; 0.40}
+% n=1
+resenaNegativaDulzor(mlm20075768_nescafe_clasico_cafe_100_puro_soluble). {1.00; 0.50}
+% n=6
+resenaPositivaIntensidad(mlm20075768_nescafe_clasico_cafe_100_puro_soluble). {1.00; 0.60}
+% n=3
+resenaPositivaMolienda(mlm20075768_nescafe_clasico_cafe_100_puro_soluble). {0.67; 0.50}
+% n=2
+resenaNegativaMolienda(mlm20075768_nescafe_clasico_cafe_100_puro_soluble). {0.33; 0.50}
+% n=25
+resenaPositivaOriginalidad(mlm20075768_nescafe_clasico_cafe_100_puro_soluble). {0.96; 0.60}
+% n=1
+resenaNegativaOriginalidad(mlm20075768_nescafe_clasico_cafe_100_puro_soluble). {0.04; 0.60}
+% n=1
+resenaPositivaPreparacion(mlm20075768_nescafe_clasico_cafe_100_puro_soluble). {0.56; 0.50}
+% n=1
+resenaNegativaPreparacion(mlm20075768_nescafe_clasico_cafe_100_puro_soluble). {0.44; 0.50}
+% n=54
+resenaPositivaPresentacion(mlm20075768_nescafe_clasico_cafe_100_puro_soluble). {0.89; 0.40}
+% n=6
+resenaNegativaPresentacion(mlm20075768_nescafe_clasico_cafe_100_puro_soluble). {0.11; 0.40}
+% n=19
+resenaPositivaRendimiento(mlm20075768_nescafe_clasico_cafe_100_puro_soluble). {1.00; 0.50}
+% n=45
+resenaPositivaSabor(mlm20075768_nescafe_clasico_cafe_100_puro_soluble). {0.88; 1.00}
+% n=7
+resenaNegativaSabor(mlm20075768_nescafe_clasico_cafe_100_puro_soluble). {0.12; 1.00}
+% n=25
+resenaPositivaTamano(mlm20075768_nescafe_clasico_cafe_100_puro_soluble). {0.69; 0.30}
+% n=10
+resenaNegativaTamano(mlm20075768_nescafe_clasico_cafe_100_puro_soluble). {0.31; 0.30}
+
+% Café Blasón Espresso Robusto Tostado Y M
+% n=107
+resenaPositivaAroma(mlm26912881_cafe_blason_espresso_robusto_tostado_y). {1.00; 0.80}
+% n=7
+resenaPositivaCaducidad(mlm26912881_cafe_blason_espresso_robusto_tostado_y). {1.00; 0.40}
+% n=15
+resenaPositivaDulzor(mlm26912881_cafe_blason_espresso_robusto_tostado_y). {1.00; 0.50}
+% n=104
+resenaPositivaIntensidad(mlm26912881_cafe_blason_espresso_robusto_tostado_y). {0.99; 0.60}
+% n=1
+resenaNegativaIntensidad(mlm26912881_cafe_blason_espresso_robusto_tostado_y). {0.01; 0.60}
+% n=12
+resenaPositivaMolienda(mlm26912881_cafe_blason_espresso_robusto_tostado_y). {0.95; 0.50}
+% n=1
+resenaNegativaMolienda(mlm26912881_cafe_blason_espresso_robusto_tostado_y). {0.05; 0.50}
+% n=7
+resenaPositivaOriginalidad(mlm26912881_cafe_blason_espresso_robusto_tostado_y). {1.00; 0.60}
+% n=1
+resenaPositivaPreparacion(mlm26912881_cafe_blason_espresso_robusto_tostado_y). {1.00; 0.50}
+% n=14
+resenaPositivaPresentacion(mlm26912881_cafe_blason_espresso_robusto_tostado_y). {1.00; 0.40}
+% n=15
+resenaPositivaRendimiento(mlm26912881_cafe_blason_espresso_robusto_tostado_y). {1.00; 0.50}
+% n=329
+resenaPositivaSabor(mlm26912881_cafe_blason_espresso_robusto_tostado_y). {0.99; 1.00}
+% n=4
+resenaNegativaSabor(mlm26912881_cafe_blason_espresso_robusto_tostado_y). {0.01; 1.00}
+% n=9
+resenaPositivaTamano(mlm26912881_cafe_blason_espresso_robusto_tostado_y). {1.00; 0.30}
+% n=5
+resenaPositivaVariedad(mlm26912881_cafe_blason_espresso_robusto_tostado_y). {1.00; 0.40}
+
+% Nescafé Clásico de café sin gluten con 4
+% n=11
+resenaPositivaAroma(mlm16250252_nescafe_clasico_de_cafe_sin_gluten). {1.00; 0.80}
+% n=7
+resenaPositivaCaducidad(mlm16250252_nescafe_clasico_de_cafe_sin_gluten). {1.00; 0.40}
+% n=2
+resenaPositivaIntensidad(mlm16250252_nescafe_clasico_de_cafe_sin_gluten). {0.60; 0.60}
+% n=1
+resenaNegativaIntensidad(mlm16250252_nescafe_clasico_de_cafe_sin_gluten). {0.40; 0.60}
+% n=20
+resenaPositivaOriginalidad(mlm16250252_nescafe_clasico_de_cafe_sin_gluten). {0.91; 0.60}
+% n=1
+resenaNegativaOriginalidad(mlm16250252_nescafe_clasico_de_cafe_sin_gluten). {0.09; 0.60}
+% n=3
+resenaPositivaPreparacion(mlm16250252_nescafe_clasico_de_cafe_sin_gluten). {1.00; 0.50}
+% n=32
+resenaPositivaPresentacion(mlm16250252_nescafe_clasico_de_cafe_sin_gluten). {1.00; 0.40}
+% n=27
+resenaPositivaRendimiento(mlm16250252_nescafe_clasico_de_cafe_sin_gluten). {0.96; 0.50}
+% n=1
+resenaNegativaRendimiento(mlm16250252_nescafe_clasico_de_cafe_sin_gluten). {0.04; 0.50}
+% n=51
+resenaPositivaSabor(mlm16250252_nescafe_clasico_de_cafe_sin_gluten). {0.92; 1.00}
+% n=3
+resenaNegativaSabor(mlm16250252_nescafe_clasico_de_cafe_sin_gluten). {0.08; 1.00}
+% n=19
+resenaPositivaTamano(mlm16250252_nescafe_clasico_de_cafe_sin_gluten). {1.00; 0.30}
+% n=1
+resenaPositivaVariedad(mlm16250252_nescafe_clasico_de_cafe_sin_gluten). {1.00; 0.40}
+
+% Café Gourmet Tostado y Molido Americano 
+% n=87
+resenaPositivaAroma(mlm25263480_cafe_gourmet_tostado_y_molido_americano). {1.00; 0.80}
+% n=9
+resenaPositivaCaducidad(mlm25263480_cafe_gourmet_tostado_y_molido_americano). {1.00; 0.40}
+% n=3
+resenaPositivaDulzor(mlm25263480_cafe_gourmet_tostado_y_molido_americano). {0.81; 0.50}
+% n=1
+resenaNegativaDulzor(mlm25263480_cafe_gourmet_tostado_y_molido_americano). {0.19; 0.50}
+% n=22
+resenaPositivaIntensidad(mlm25263480_cafe_gourmet_tostado_y_molido_americano). {0.94; 0.60}
+% n=1
+resenaNegativaIntensidad(mlm25263480_cafe_gourmet_tostado_y_molido_americano). {0.06; 0.60}
+% n=5
+resenaPositivaMolienda(mlm25263480_cafe_gourmet_tostado_y_molido_americano). {1.00; 0.50}
+% n=3
+resenaPositivaOriginalidad(mlm25263480_cafe_gourmet_tostado_y_molido_americano). {1.00; 0.60}
+% n=12
+resenaPositivaPresentacion(mlm25263480_cafe_gourmet_tostado_y_molido_americano). {1.00; 0.40}
+% n=9
+resenaPositivaRendimiento(mlm25263480_cafe_gourmet_tostado_y_molido_americano). {1.00; 0.50}
+% n=185
+resenaPositivaSabor(mlm25263480_cafe_gourmet_tostado_y_molido_americano). {1.00; 1.00}
+% n=5
+resenaPositivaTamano(mlm25263480_cafe_gourmet_tostado_y_molido_americano). {1.00; 0.30}
+
+% Cafe Capuccino Moka Members Mark 1.8 Kg 
+% n=6
+resenaPositivaAroma(mlm19544520_cafe_capuccino_moka_members_mark_1). {1.00; 0.80}
+% n=6
+resenaPositivaCaducidad(mlm19544520_cafe_capuccino_moka_members_mark_1). {1.00; 0.40}
+% n=37
+resenaPositivaDulzor(mlm19544520_cafe_capuccino_moka_members_mark_1). {0.94; 0.50}
+% n=2
+resenaNegativaDulzor(mlm19544520_cafe_capuccino_moka_members_mark_1). {0.06; 0.50}
+% n=10
+resenaPositivaIntensidad(mlm19544520_cafe_capuccino_moka_members_mark_1). {1.00; 0.60}
+% n=7
+resenaPositivaOriginalidad(mlm19544520_cafe_capuccino_moka_members_mark_1). {1.00; 0.60}
+% n=21
+resenaPositivaPreparacion(mlm19544520_cafe_capuccino_moka_members_mark_1). {0.94; 0.50}
+% n=2
+resenaNegativaPreparacion(mlm19544520_cafe_capuccino_moka_members_mark_1). {0.06; 0.50}
+% n=19
+resenaPositivaPresentacion(mlm19544520_cafe_capuccino_moka_members_mark_1). {0.97; 0.40}
+% n=1
+resenaNegativaPresentacion(mlm19544520_cafe_capuccino_moka_members_mark_1). {0.03; 0.40}
+% n=33
+resenaPositivaRendimiento(mlm19544520_cafe_capuccino_moka_members_mark_1). {0.96; 0.50}
+% n=2
+resenaNegativaRendimiento(mlm19544520_cafe_capuccino_moka_members_mark_1). {0.04; 0.50}
+% n=404
+resenaPositivaSabor(mlm19544520_cafe_capuccino_moka_members_mark_1). {0.96; 1.00}
+% n=15
+resenaNegativaSabor(mlm19544520_cafe_capuccino_moka_members_mark_1). {0.04; 1.00}
+% n=24
+resenaPositivaTamano(mlm19544520_cafe_capuccino_moka_members_mark_1). {1.00; 0.30}
+% n=43
+resenaPositivaVariedad(mlm19544520_cafe_capuccino_moka_members_mark_1). {0.85; 0.40}
+% n=8
+resenaNegativaVariedad(mlm19544520_cafe_capuccino_moka_members_mark_1). {0.15; 0.40}
+
+% Nescafé Taster's Choice Caramel Dark Cho
+% n=138
+resenaPositivaAroma(mlm16250244_nescafe_taster_s_choice_caramel_dark). {1.00; 0.80}
+% n=4
+resenaPositivaCaducidad(mlm16250244_nescafe_taster_s_choice_caramel_dark). {1.00; 0.40}
+% n=8
+resenaPositivaDulzor(mlm16250244_nescafe_taster_s_choice_caramel_dark). {0.88; 0.50}
+% n=1
+resenaNegativaDulzor(mlm16250244_nescafe_taster_s_choice_caramel_dark). {0.12; 0.50}
+% n=23
+resenaPositivaIntensidad(mlm16250244_nescafe_taster_s_choice_caramel_dark). {0.97; 0.60}
+% n=1
+resenaNegativaIntensidad(mlm16250244_nescafe_taster_s_choice_caramel_dark). {0.03; 0.60}
+% n=1
+resenaPositivaMolienda(mlm16250244_nescafe_taster_s_choice_caramel_dark). {1.00; 0.50}
+% n=14
+resenaPositivaOriginalidad(mlm16250244_nescafe_taster_s_choice_caramel_dark). {0.80; 0.60}
+% n=3
+resenaNegativaOriginalidad(mlm16250244_nescafe_taster_s_choice_caramel_dark). {0.20; 0.60}
+% n=5
+resenaPositivaPreparacion(mlm16250244_nescafe_taster_s_choice_caramel_dark). {1.00; 0.50}
+% n=24
+resenaPositivaPresentacion(mlm16250244_nescafe_taster_s_choice_caramel_dark). {1.00; 0.40}
+% n=4
+resenaPositivaRendimiento(mlm16250244_nescafe_taster_s_choice_caramel_dark). {1.00; 0.50}
+% n=330
+resenaPositivaSabor(mlm16250244_nescafe_taster_s_choice_caramel_dark). {0.96; 1.00}
+% n=11
+resenaNegativaSabor(mlm16250244_nescafe_taster_s_choice_caramel_dark). {0.04; 1.00}
+% n=11
+resenaPositivaTamano(mlm16250244_nescafe_taster_s_choice_caramel_dark). {1.00; 0.30}
+% n=28
+resenaPositivaVariedad(mlm16250244_nescafe_taster_s_choice_caramel_dark). {0.96; 0.40}
+% n=1
+resenaNegativaVariedad(mlm16250244_nescafe_taster_s_choice_caramel_dark). {0.04; 0.40}
+
+% Nescafé Clásico ICE Café Soluble en Frío
+% n=2
+resenaPositivaAroma(mlm23633481_nescafe_clasico_ice_cafe_soluble_en). {1.00; 0.80}
+% n=4
+resenaPositivaCaducidad(mlm23633481_nescafe_clasico_ice_cafe_soluble_en). {1.00; 0.40}
+% n=1
+resenaNegativaDulzor(mlm23633481_nescafe_clasico_ice_cafe_soluble_en). {1.00; 0.50}
+% n=2
+resenaPositivaIntensidad(mlm23633481_nescafe_clasico_ice_cafe_soluble_en). {1.00; 0.60}
+% n=1
+resenaPositivaMolienda(mlm23633481_nescafe_clasico_ice_cafe_soluble_en). {1.00; 0.50}
+% n=7
+resenaPositivaOriginalidad(mlm23633481_nescafe_clasico_ice_cafe_soluble_en). {1.00; 0.60}
+% n=35
+resenaPositivaPreparacion(mlm23633481_nescafe_clasico_ice_cafe_soluble_en). {0.97; 0.50}
+% n=1
+resenaNegativaPreparacion(mlm23633481_nescafe_clasico_ice_cafe_soluble_en). {0.03; 0.50}
+% n=6
+resenaPositivaPresentacion(mlm23633481_nescafe_clasico_ice_cafe_soluble_en). {1.00; 0.40}
+% n=1
+resenaPositivaRendimiento(mlm23633481_nescafe_clasico_ice_cafe_soluble_en). {1.00; 0.50}
+% n=68
+resenaPositivaSabor(mlm23633481_nescafe_clasico_ice_cafe_soluble_en). {0.90; 1.00}
+% n=7
+resenaNegativaSabor(mlm23633481_nescafe_clasico_ice_cafe_soluble_en). {0.10; 1.00}
+% n=2
+resenaPositivaTamano(mlm23633481_nescafe_clasico_ice_cafe_soluble_en). {0.72; 0.30}
+% n=1
+resenaNegativaTamano(mlm23633481_nescafe_clasico_ice_cafe_soluble_en). {0.28; 0.30}
+
+% Nescafé Café de Olla 100% Café Soluble S
+% n=30
+resenaPositivaAroma(mlm16207863_nescafe_cafe_de_olla_100_cafe). {1.00; 0.80}
+% n=2
+resenaPositivaCaducidad(mlm16207863_nescafe_cafe_de_olla_100_cafe). {1.00; 0.40}
+% n=3
+resenaPositivaDulzor(mlm16207863_nescafe_cafe_de_olla_100_cafe). {0.75; 0.50}
+% n=1
+resenaNegativaDulzor(mlm16207863_nescafe_cafe_de_olla_100_cafe). {0.25; 0.50}
+% n=4
+resenaPositivaIntensidad(mlm16207863_nescafe_cafe_de_olla_100_cafe). {0.74; 0.60}
+% n=1
+resenaNegativaIntensidad(mlm16207863_nescafe_cafe_de_olla_100_cafe). {0.26; 0.60}
+% n=7
+resenaPositivaOriginalidad(mlm16207863_nescafe_cafe_de_olla_100_cafe). {1.00; 0.60}
+% n=2
+resenaPositivaPreparacion(mlm16207863_nescafe_cafe_de_olla_100_cafe). {1.00; 0.50}
+% n=5
+resenaPositivaPresentacion(mlm16207863_nescafe_cafe_de_olla_100_cafe). {1.00; 0.40}
+% n=4
+resenaPositivaRendimiento(mlm16207863_nescafe_cafe_de_olla_100_cafe). {1.00; 0.50}
+% n=128
+resenaPositivaSabor(mlm16207863_nescafe_cafe_de_olla_100_cafe). {0.95; 1.00}
+% n=6
+resenaNegativaSabor(mlm16207863_nescafe_cafe_de_olla_100_cafe). {0.05; 1.00}
+% n=13
+resenaPositivaTamano(mlm16207863_nescafe_cafe_de_olla_100_cafe). {1.00; 0.30}
+
+% Nescafé Decaf Café 100% Puro Soluble Des
+% n=10
+resenaPositivaAroma(mlm16250253_nescafe_decaf_cafe_100_puro_soluble). {1.00; 0.80}
+% n=3
+resenaPositivaCaducidad(mlm16250253_nescafe_decaf_cafe_100_puro_soluble). {1.00; 0.40}
+% n=1
+resenaPositivaIntensidad(mlm16250253_nescafe_decaf_cafe_100_puro_soluble). {1.00; 0.60}
+% n=5
+resenaPositivaOriginalidad(mlm16250253_nescafe_decaf_cafe_100_puro_soluble). {1.00; 0.60}
+% n=1
+resenaPositivaPreparacion(mlm16250253_nescafe_decaf_cafe_100_puro_soluble). {1.00; 0.50}
+% n=4
+resenaPositivaPresentacion(mlm16250253_nescafe_decaf_cafe_100_puro_soluble). {1.00; 0.40}
+% n=2
+resenaPositivaRendimiento(mlm16250253_nescafe_decaf_cafe_100_puro_soluble). {1.00; 0.50}
+% n=41
+resenaPositivaSabor(mlm16250253_nescafe_decaf_cafe_100_puro_soluble). {1.00; 1.00}
+% n=5
+resenaPositivaTamano(mlm16250253_nescafe_decaf_cafe_100_puro_soluble). {1.00; 0.30}
+% n=7
+resenaPositivaVariedad(mlm16250253_nescafe_decaf_cafe_100_puro_soluble). {1.00; 0.40}
+
+% Café Gourmet Molido Espresso 400g Blasón
+% n=45
+resenaPositivaAroma(mlm41148521_cafe_gourmet_molido_espresso_400g_blason). {0.98; 0.80}
+% n=1
+resenaNegativaAroma(mlm41148521_cafe_gourmet_molido_espresso_400g_blason). {0.02; 0.80}
+% n=6
+resenaPositivaCaducidad(mlm41148521_cafe_gourmet_molido_espresso_400g_blason). {1.00; 0.40}
+% n=3
+resenaPositivaDulzor(mlm41148521_cafe_gourmet_molido_espresso_400g_blason). {1.00; 0.50}
+% n=36
+resenaPositivaIntensidad(mlm41148521_cafe_gourmet_molido_espresso_400g_blason). {1.00; 0.60}
+% n=4
+resenaPositivaMolienda(mlm41148521_cafe_gourmet_molido_espresso_400g_blason). {1.00; 0.50}
+% n=1
+resenaPositivaOriginalidad(mlm41148521_cafe_gourmet_molido_espresso_400g_blason). {1.00; 0.60}
+% n=2
+resenaPositivaPreparacion(mlm41148521_cafe_gourmet_molido_espresso_400g_blason). {1.00; 0.50}
+% n=6
+resenaPositivaPresentacion(mlm41148521_cafe_gourmet_molido_espresso_400g_blason). {1.00; 0.40}
+% n=2
+resenaPositivaRendimiento(mlm41148521_cafe_gourmet_molido_espresso_400g_blason). {1.00; 0.50}
+% n=109
+resenaPositivaSabor(mlm41148521_cafe_gourmet_molido_espresso_400g_blason). {1.00; 1.00}
+% n=1
+resenaPositivaTamano(mlm41148521_cafe_gourmet_molido_espresso_400g_blason). {1.00; 0.30}
+% n=4
+resenaPositivaVariedad(mlm41148521_cafe_gourmet_molido_espresso_400g_blason). {1.00; 0.40}
+
+% Café Molido 100% Arábico Gourmet America
+% n=16
+resenaPositivaAroma(mlm43007251_cafe_molido_100_arabico_gourmet_americano). {1.00; 0.80}
+% n=1
+resenaPositivaDulzor(mlm43007251_cafe_molido_100_arabico_gourmet_americano). {1.00; 0.50}
+% n=3
+resenaPositivaIntensidad(mlm43007251_cafe_molido_100_arabico_gourmet_americano). {1.00; 0.60}
+% n=2
+resenaPositivaMolienda(mlm43007251_cafe_molido_100_arabico_gourmet_americano). {1.00; 0.50}
+% n=2
+resenaPositivaOriginalidad(mlm43007251_cafe_molido_100_arabico_gourmet_americano). {1.00; 0.60}
+% n=3
+resenaPositivaPresentacion(mlm43007251_cafe_molido_100_arabico_gourmet_americano). {1.00; 0.40}
+% n=35
+resenaPositivaSabor(mlm43007251_cafe_molido_100_arabico_gourmet_americano). {1.00; 1.00}
+
+% Nescafé Clásico Café 100% Puro Soluble F
+% n=20
+resenaPositivaAroma(mlm19663240_nescafe_clasico_cafe_100_puro_soluble). {1.00; 0.80}
+% n=9
+resenaPositivaCaducidad(mlm19663240_nescafe_clasico_cafe_100_puro_soluble). {1.00; 0.40}
+% n=1
+resenaNegativaDulzor(mlm19663240_nescafe_clasico_cafe_100_puro_soluble). {1.00; 0.50}
+% n=4
+resenaPositivaIntensidad(mlm19663240_nescafe_clasico_cafe_100_puro_soluble). {1.00; 0.60}
+% n=29
+resenaPositivaOriginalidad(mlm19663240_nescafe_clasico_cafe_100_puro_soluble). {1.00; 0.60}
+% n=4
+resenaPositivaPreparacion(mlm19663240_nescafe_clasico_cafe_100_puro_soluble). {1.00; 0.50}
+% n=28
+resenaPositivaPresentacion(mlm19663240_nescafe_clasico_cafe_100_puro_soluble). {1.00; 0.40}
+% n=7
+resenaPositivaRendimiento(mlm19663240_nescafe_clasico_cafe_100_puro_soluble). {1.00; 0.50}
+% n=75
+resenaPositivaSabor(mlm19663240_nescafe_clasico_cafe_100_puro_soluble). {1.00; 1.00}
+% n=22
+resenaPositivaTamano(mlm19663240_nescafe_clasico_cafe_100_puro_soluble). {1.00; 0.30}
+
+% Nescafé Reserva Verarica Café 100% Solub
+% n=21
+resenaPositivaAroma(mlm16207890_nescafe_reserva_verarica_cafe_100_soluble). {1.00; 0.80}
+% n=1
+resenaPositivaDulzor(mlm16207890_nescafe_reserva_verarica_cafe_100_soluble). {1.00; 0.50}
+% n=2
+resenaPositivaIntensidad(mlm16207890_nescafe_reserva_verarica_cafe_100_soluble). {1.00; 0.60}
+% n=3
+resenaPositivaOriginalidad(mlm16207890_nescafe_reserva_verarica_cafe_100_soluble). {1.00; 0.60}
+% n=2
+resenaPositivaPreparacion(mlm16207890_nescafe_reserva_verarica_cafe_100_soluble). {1.00; 0.50}
+% n=2
+resenaPositivaPresentacion(mlm16207890_nescafe_reserva_verarica_cafe_100_soluble). {1.00; 0.40}
+% n=59
+resenaPositivaSabor(mlm16207890_nescafe_reserva_verarica_cafe_100_soluble). {0.99; 1.00}
+% n=1
+resenaNegativaSabor(mlm16207890_nescafe_reserva_verarica_cafe_100_soluble). {0.01; 1.00}
+% n=2
+resenaPositivaTamano(mlm16207890_nescafe_reserva_verarica_cafe_100_soluble). {1.00; 0.30}
+
+% Cafe Capuccino Vainilla Francesa En Polv
+% n=18
+resenaPositivaAroma(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo). {1.00; 0.80}
+% n=5
+resenaPositivaCaducidad(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo). {1.00; 0.40}
+% n=27
+resenaPositivaDulzor(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo). {0.84; 0.50}
+% n=5
+resenaNegativaDulzor(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo). {0.16; 0.50}
+% n=8
+resenaPositivaIntensidad(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo). {1.00; 0.60}
+% n=4
+resenaPositivaOriginalidad(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo). {1.00; 0.60}
+% n=13
+resenaPositivaPreparacion(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo). {1.00; 0.50}
+% n=25
+resenaPositivaPresentacion(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo). {0.95; 0.40}
+% n=2
+resenaNegativaPresentacion(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo). {0.05; 0.40}
+% n=35
+resenaPositivaRendimiento(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo). {0.98; 0.50}
+% n=1
+resenaNegativaRendimiento(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo). {0.02; 0.50}
+% n=347
+resenaPositivaSabor(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo). {0.98; 1.00}
+% n=5
+resenaNegativaSabor(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo). {0.02; 1.00}
+% n=16
+resenaPositivaTamano(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo). {1.00; 0.30}
+% n=32
+resenaPositivaVariedad(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo). {0.95; 0.40}
+% n=1
+resenaNegativaVariedad(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo). {0.05; 0.40}
+
+% Café Soluble Nescafé Clásico Nestlé Prof
+% n=8
+resenaPositivaAroma(mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional). {1.00; 0.80}
+% n=6
+resenaPositivaCaducidad(mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional). {1.00; 0.40}
+% n=5
+resenaPositivaIntensidad(mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional). {1.00; 0.60}
+% n=19
+resenaPositivaOriginalidad(mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional). {1.00; 0.60}
+% n=4
+resenaPositivaPreparacion(mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional). {1.00; 0.50}
+% n=34
+resenaPositivaPresentacion(mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional). {0.97; 0.40}
+% n=1
+resenaNegativaPresentacion(mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional). {0.03; 0.40}
+% n=33
+resenaPositivaRendimiento(mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional). {1.00; 0.50}
+% n=49
+resenaPositivaSabor(mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional). {0.98; 1.00}
+% n=1
+resenaNegativaSabor(mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional). {0.02; 1.00}
+% n=16
+resenaPositivaTamano(mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional). {1.00; 0.30}
+
+% Tripack Juan Valdez Café Soluble 95gr 3 
+% n=27
+resenaPositivaAroma(mlm27068249_tripack_juan_valdez_cafe_soluble_95gr). {1.00; 0.80}
+% n=1
+resenaPositivaDulzor(mlm27068249_tripack_juan_valdez_cafe_soluble_95gr). {1.00; 0.50}
+% n=6
+resenaPositivaIntensidad(mlm27068249_tripack_juan_valdez_cafe_soluble_95gr). {1.00; 0.60}
+% n=2
+resenaPositivaOriginalidad(mlm27068249_tripack_juan_valdez_cafe_soluble_95gr). {1.00; 0.60}
+% n=1
+resenaPositivaPreparacion(mlm27068249_tripack_juan_valdez_cafe_soluble_95gr). {1.00; 0.50}
+% n=8
+resenaPositivaPresentacion(mlm27068249_tripack_juan_valdez_cafe_soluble_95gr). {0.88; 0.40}
+% n=1
+resenaNegativaPresentacion(mlm27068249_tripack_juan_valdez_cafe_soluble_95gr). {0.12; 0.40}
+% n=99
+resenaPositivaSabor(mlm27068249_tripack_juan_valdez_cafe_soluble_95gr). {0.97; 1.00}
+% n=4
+resenaNegativaSabor(mlm27068249_tripack_juan_valdez_cafe_soluble_95gr). {0.03; 1.00}
+% n=1
+resenaPositivaTamano(mlm27068249_tripack_juan_valdez_cafe_soluble_95gr). {1.00; 0.30}
+% n=20
+resenaPositivaVariedad(mlm27068249_tripack_juan_valdez_cafe_soluble_95gr). {1.00; 0.40}
+
+% Café Molido La Parroquia Puro 1 Kg Tradi
+% n=171
+resenaPositivaAroma(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.98; 0.80}
+% n=3
+resenaNegativaAroma(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.02; 0.80}
+% n=11
+resenaPositivaCaducidad(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.83; 0.40}
+% n=2
+resenaNegativaCaducidad(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.17; 0.40}
+% n=6
+resenaPositivaDulzor(mlm19543513_cafe_molido_la_parroquia_puro_1). {1.00; 0.50}
+% n=51
+resenaPositivaIntensidad(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.97; 0.60}
+% n=1
+resenaNegativaIntensidad(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.03; 0.60}
+% n=8
+resenaPositivaMolienda(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.73; 0.50}
+% n=3
+resenaNegativaMolienda(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.27; 0.50}
+% n=6
+resenaPositivaOriginalidad(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.62; 0.60}
+% n=2
+resenaNegativaOriginalidad(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.38; 0.60}
+% n=2
+resenaPositivaPreparacion(mlm19543513_cafe_molido_la_parroquia_puro_1). {1.00; 0.50}
+% n=17
+resenaPositivaPresentacion(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.92; 0.40}
+% n=1
+resenaNegativaPresentacion(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.08; 0.40}
+% n=9
+resenaPositivaRendimiento(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.81; 0.50}
+% n=1
+resenaNegativaRendimiento(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.19; 0.50}
+% n=328
+resenaPositivaSabor(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.95; 1.00}
+% n=13
+resenaNegativaSabor(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.05; 1.00}
+% n=11
+resenaPositivaTamano(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.81; 0.30}
+% n=2
+resenaNegativaTamano(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.19; 0.30}
+% n=2
+resenaPositivaVariedad(mlm19543513_cafe_molido_la_parroquia_puro_1). {1.00; 0.40}
+
+% ============================================================
+% REGLAS DE AGREGACION POR ASPECTO
+% ============================================================
+
+aromaBueno(X) :- resenaPositivaAroma(X). {0.85; 0.80}
+~aromaBueno(X) :- resenaNegativaAroma(X). {0.85; 0.80}
+caducidadBueno(X) :- resenaPositivaCaducidad(X). {0.85; 0.40}
+~caducidadBueno(X) :- resenaNegativaCaducidad(X). {0.85; 0.40}
+dulzorBueno(X) :- resenaPositivaDulzor(X). {0.85; 0.50}
+~dulzorBueno(X) :- resenaNegativaDulzor(X). {0.85; 0.50}
+intensidadBueno(X) :- resenaPositivaIntensidad(X). {0.85; 0.60}
+~intensidadBueno(X) :- resenaNegativaIntensidad(X). {0.85; 0.60}
+moliendaBueno(X) :- resenaPositivaMolienda(X). {0.85; 0.50}
+~moliendaBueno(X) :- resenaNegativaMolienda(X). {0.85; 0.50}
+originalidadBueno(X) :- resenaPositivaOriginalidad(X). {0.85; 0.60}
+~originalidadBueno(X) :- resenaNegativaOriginalidad(X). {0.85; 0.60}
+preparacionBueno(X) :- resenaPositivaPreparacion(X). {0.85; 0.50}
+~preparacionBueno(X) :- resenaNegativaPreparacion(X). {0.85; 0.50}
+presentacionBueno(X) :- resenaPositivaPresentacion(X). {0.85; 0.40}
+~presentacionBueno(X) :- resenaNegativaPresentacion(X). {0.85; 0.40}
+rendimientoBueno(X) :- resenaPositivaRendimiento(X). {0.85; 0.50}
+~rendimientoBueno(X) :- resenaNegativaRendimiento(X). {0.85; 0.50}
+saborBueno(X) :- resenaPositivaSabor(X). {0.85; 1.00}
+~saborBueno(X) :- resenaNegativaSabor(X). {0.85; 1.00}
+tamanoBueno(X) :- resenaPositivaTamano(X). {0.85; 0.30}
+~tamanoBueno(X) :- resenaNegativaTamano(X). {0.85; 0.30}
+variedadBueno(X) :- resenaPositivaVariedad(X). {0.85; 0.40}
+~variedadBueno(X) :- resenaNegativaVariedad(X). {0.85; 0.40}
+
+% ============================================================
+% REGLAS INTERMEDIAS POR DIMENSION
+% Cada dimension agrupa aspectos relacionados antes de recomendar.
+% ============================================================
+
+% Experiencia sensorial
+sensorialBueno(X) :- saborBueno(X). {0.90; 1.00}
+~sensorialBueno(X) :- ~saborBueno(X). {0.92; 1.00}
+sensorialBueno(X) :- aromaBueno(X). {0.85; 0.85}
+~sensorialBueno(X) :- ~aromaBueno(X). {0.85; 0.85}
+sensorialBueno(X) :- intensidadBueno(X). {0.80; 0.75}
+~sensorialBueno(X) :- ~intensidadBueno(X). {0.80; 0.75}
+sensorialBueno(X) :- dulzorBueno(X). {0.80; 0.70}
+~sensorialBueno(X) :- ~dulzorBueno(X). {0.80; 0.70}
+
+% Rendimiento y valor
+valorBueno(X) :- rendimientoBueno(X). {0.85; 0.80}
+~valorBueno(X) :- ~rendimientoBueno(X). {0.85; 0.80}
+valorBueno(X) :- tamanoBueno(X). {0.75; 0.60}
+~valorBueno(X) :- ~tamanoBueno(X). {0.75; 0.60}
+
+% Producto y presentacion
+productoBueno(X) :- originalidadBueno(X). {0.88; 0.75}
+~productoBueno(X) :- ~originalidadBueno(X). {0.90; 0.75}
+productoBueno(X) :- presentacionBueno(X). {0.80; 0.60}
+~productoBueno(X) :- ~presentacionBueno(X). {0.80; 0.60}
+productoBueno(X) :- variedadBueno(X). {0.75; 0.55}
+~productoBueno(X) :- ~variedadBueno(X). {0.75; 0.55}
+
+% Preparacion y molienda
+elaboracionBueno(X) :- preparacionBueno(X). {0.80; 0.65}
+~elaboracionBueno(X) :- ~preparacionBueno(X). {0.85; 0.65}
+elaboracionBueno(X) :- moliendaBueno(X). {0.80; 0.60}
+~elaboracionBueno(X) :- ~moliendaBueno(X). {0.85; 0.60}
+
+% Conservacion
+conservacionBueno(X) :- caducidadBueno(X). {0.85; 0.75}
+~conservacionBueno(X) :- ~caducidadBueno(X). {0.92; 0.75}
+
+% ============================================================
+% REGLAS DE RECOMENDACION
+% X = producto candidato
+% ============================================================
+
+recomendar(X) :- sensorialBueno(X). {0.90; 1.00}
+~recomendar(X) :- ~sensorialBueno(X). {0.92; 1.00}
+recomendar(X) :- valorBueno(X). {0.80; 0.80}
+recomendar(X) :- productoBueno(X). {0.78; 0.70}
+~recomendar(X) :- ~productoBueno(X). {0.90; 0.75}
+recomendar(X) :- elaboracionBueno(X). {0.75; 0.65}
+recomendar(X) :- conservacionBueno(X). {0.78; 0.75}
+~recomendar(X) :- ~conservacionBueno(X). {0.92; 0.80}
+
+% ============================================================
+% ============================================================
+% Atributo 1 - Confianza:
+%   producto = X*Y     suma = X+Y-X*Y     debilitamiento = (X-Y)/(1-Y) si X>=Y, sino 0
+% Atributo 2 - Preferencia del usuario:
+%   producto = min(X,Y)     suma = min(X+Y,1)     debilitamiento = max(X-Y,0)
+%
+% Fuente: Budan et al. (2017) IJAR 82:242-269, Ejemplo 1 pp.249-250

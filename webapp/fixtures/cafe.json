@@ -1,0 +1,668 @@
+{
+  "datasets": [
+    {
+      "key": "cafe_top20_demo_2026",
+      "source_dataset_keys": [
+        "mlm_mlm194329_20260528_142014"
+      ],
+      "label": "Café · Top 20 más vendidos · demostración",
+      "description": "Snapshot reproducible basado en el corpus experimental del TFG."
+    }
+  ],
+  "product_names": {
+    "mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble": "Nescafé Reserva Xiapan 100% soluble",
+    "mlm26912881_cafe_blason_espresso_robusto_tostado_y": "Café Blasón Espresso Robusto",
+    "mlm19543513_cafe_molido_la_parroquia_puro_1": "Café molido La Parroquia Puro",
+    "mlm16250244_nescafe_taster_s_choice_caramel_dark": "Nescafé Taster’s Choice Caramel"
+  },
+  "products": [
+    {
+      "entity_id": "mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble",
+      "entity_name": "Nescafé Reserva Xiapan 100% soluble",
+      "position": 1,
+      "final_score": 0.82,
+      "confidence": 0.86,
+      "preference": 0.75,
+      "status": "recommended",
+      "evidence_count": 340,
+      "metadata": {
+        "type": "Café soluble",
+        "price_range": "$121–$410",
+        "coverage": "10 de 12 aspectos",
+        "limitation": "La evidencia se concentra en sabor y aroma; molienda tiene cobertura baja."
+      },
+      "arguments_for": [
+        {
+          "argument_id": "arg-xiapan-sabor-pos",
+          "title": "Sabor ampliamente valorado",
+          "aspect": "sabor",
+          "polarity": "positive",
+          "confidence": 0.91,
+          "preference": 1.0,
+          "evidence_count": 181,
+          "summary": "Las reseñas favorables sobre sabor forman la línea de soporte principal."
+        },
+        {
+          "argument_id": "arg-xiapan-aroma-pos",
+          "title": "Aroma consistente",
+          "aspect": "aroma",
+          "polarity": "positive",
+          "confidence": 0.84,
+          "preference": 0.8,
+          "evidence_count": 61,
+          "summary": "La evidencia positiva de aroma es numerosa y confiable."
+        },
+        {
+          "argument_id": "arg-xiapan-preparacion-pos",
+          "title": "Preparación sencilla",
+          "aspect": "preparacion",
+          "polarity": "positive",
+          "confidence": 0.67,
+          "preference": 0.5,
+          "evidence_count": 13,
+          "summary": "La disolución y preparación reciben respaldo moderado."
+        }
+      ],
+      "arguments_against": [
+        {
+          "argument_id": "arg-xiapan-sabor-neg",
+          "title": "Objeciones minoritarias al sabor",
+          "aspect": "sabor",
+          "polarity": "negative",
+          "confidence": 0.09,
+          "preference": 1.0,
+          "evidence_count": 3,
+          "summary": "Hay opiniones contrarias, aunque su fuerza agregada es baja."
+        },
+        {
+          "argument_id": "arg-xiapan-caducidad-neg",
+          "title": "Evidencia ambigua sobre frescura",
+          "aspect": "caducidad",
+          "polarity": "negative",
+          "confidence": 0.5,
+          "preference": 0.4,
+          "evidence_count": 1,
+          "summary": "Una observación negativa aislada limita la certeza de este aspecto."
+        }
+      ]
+    },
+    {
+      "entity_id": "mlm26912881_cafe_blason_espresso_robusto_tostado_y",
+      "entity_name": "Café Blasón Espresso Robusto",
+      "position": 2,
+      "final_score": 0.76,
+      "confidence": 0.78,
+      "preference": 0.72,
+      "status": "competitive",
+      "evidence_count": 198,
+      "metadata": {
+        "type": "Tostado y molido",
+        "price_range": "$277",
+        "coverage": "8 de 12 aspectos",
+        "limitation": "Una única publicación reduce la diversidad de condiciones de compra."
+      },
+      "arguments_for": [
+        {
+          "argument_id": "arg-blason-intensidad-pos",
+          "title": "Intensidad adecuada para espresso",
+          "aspect": "intensidad",
+          "polarity": "positive",
+          "confidence": 0.85,
+          "preference": 0.6,
+          "evidence_count": 72,
+          "summary": "El cuerpo del café sostiene su posición competitiva."
+        },
+        {
+          "argument_id": "arg-blason-aroma-pos",
+          "title": "Aroma bien evaluado",
+          "aspect": "aroma",
+          "polarity": "positive",
+          "confidence": 0.76,
+          "preference": 0.8,
+          "evidence_count": 54,
+          "summary": "Las menciones favorables de aroma son consistentes."
+        }
+      ],
+      "arguments_against": [
+        {
+          "argument_id": "arg-blason-dulzor-neg",
+          "title": "Perfil amargo para algunos usuarios",
+          "aspect": "dulzor",
+          "polarity": "negative",
+          "confidence": 0.31,
+          "preference": 0.5,
+          "evidence_count": 12,
+          "summary": "Una parte del corpus considera el perfil demasiado intenso."
+        }
+      ]
+    },
+    {
+      "entity_id": "mlm19543513_cafe_molido_la_parroquia_puro_1",
+      "entity_name": "Café molido La Parroquia Puro",
+      "position": 3,
+      "final_score": 0.71,
+      "confidence": 0.72,
+      "preference": 0.69,
+      "status": "competitive",
+      "evidence_count": 154,
+      "metadata": {
+        "type": "Tostado y molido",
+        "price_range": "$280–$790",
+        "coverage": "7 de 12 aspectos",
+        "limitation": "La cobertura de caducidad y autenticidad es insuficiente."
+      },
+      "arguments_for": [
+        {
+          "argument_id": "arg-parroquia-rendimiento-pos",
+          "title": "Buen rendimiento percibido",
+          "aspect": "rendimiento",
+          "polarity": "positive",
+          "confidence": 0.74,
+          "preference": 0.5,
+          "evidence_count": 46,
+          "summary": "Los usuarios señalan una relación favorable entre cantidad y preparación."
+        },
+        {
+          "argument_id": "arg-parroquia-sabor-pos",
+          "title": "Sabor tradicional",
+          "aspect": "sabor",
+          "polarity": "positive",
+          "confidence": 0.71,
+          "preference": 1.0,
+          "evidence_count": 69,
+          "summary": "El sabor aporta soporte relevante, con menor volumen que el primer puesto."
+        }
+      ],
+      "arguments_against": [
+        {
+          "argument_id": "arg-parroquia-presentacion-neg",
+          "title": "Presentación irregular",
+          "aspect": "presentacion",
+          "polarity": "negative",
+          "confidence": 0.34,
+          "preference": 0.4,
+          "evidence_count": 9,
+          "summary": "Algunas reseñas cuestionan el empaque."
+        }
+      ]
+    },
+    {
+      "entity_id": "mlm16250244_nescafe_taster_s_choice_caramel_dark",
+      "entity_name": "Nescafé Taster’s Choice Caramel",
+      "position": 4,
+      "final_score": 0.65,
+      "confidence": 0.68,
+      "preference": 0.61,
+      "status": "review",
+      "evidence_count": 121,
+      "metadata": {
+        "type": "Café soluble saborizado",
+        "price_range": "$139–$447",
+        "coverage": "7 de 12 aspectos",
+        "limitation": "El perfil saborizado provoca opiniones polarizadas."
+      },
+      "arguments_for": [
+        {
+          "argument_id": "arg-caramel-variedad-pos",
+          "title": "Variedad distintiva",
+          "aspect": "variedad",
+          "polarity": "positive",
+          "confidence": 0.73,
+          "preference": 0.4,
+          "evidence_count": 38,
+          "summary": "La variedad caramelizada diferencia al producto."
+        }
+      ],
+      "arguments_against": [
+        {
+          "argument_id": "arg-caramel-sabor-neg",
+          "title": "Sabor polarizante",
+          "aspect": "sabor",
+          "polarity": "negative",
+          "confidence": 0.48,
+          "preference": 1.0,
+          "evidence_count": 22,
+          "summary": "La preferencia alta por sabor amplifica esta objeción."
+        }
+      ]
+    }
+  ],
+  "listings": [
+    {
+      "entity_id": "placeholder-oferta-1",
+      "entity_name": "Publicación · Tienda oficial",
+      "seller": "Tienda oficial",
+      "position": 1,
+      "final_score": 0.84,
+      "confidence": 0.82,
+      "preference": 0.87,
+      "status": "recommended",
+      "evidence_count": 6,
+      "metadata": {
+        "seller": "Tienda oficial",
+        "price": 348,
+        "installments": "6 sin interés",
+        "warranty": "12 meses",
+        "official_store": true,
+        "invoice": true,
+        "shipping": "Envío gratuito"
+      },
+      "arguments_for": [
+        {
+          "argument_id": "arg-oferta-oficial",
+          "title": "Respaldo de tienda oficial",
+          "aspect": "tienda_oficial",
+          "polarity": "positive",
+          "confidence": 0.93,
+          "preference": 0.8,
+          "evidence_count": 1,
+          "summary": "La publicación declara y verifica su condición de tienda oficial."
+        },
+        {
+          "argument_id": "arg-oferta-cuotas",
+          "title": "Financiación sin interés",
+          "aspect": "cuotas",
+          "polarity": "positive",
+          "confidence": 0.9,
+          "preference": 0.7,
+          "evidence_count": 1,
+          "summary": "La oferta satisface la preferencia de financiación."
+        }
+      ],
+      "arguments_against": [
+        {
+          "argument_id": "arg-oferta-precio",
+          "title": "No es el precio mínimo",
+          "aspect": "precio",
+          "polarity": "negative",
+          "confidence": 0.78,
+          "preference": 0.9,
+          "evidence_count": 1,
+          "summary": "Existe una publicación más económica."
+        }
+      ]
+    },
+    {
+      "entity_id": "placeholder-oferta-2",
+      "entity_name": "Publicación · Café Central",
+      "seller": "Café Central",
+      "position": 2,
+      "final_score": 0.77,
+      "confidence": 0.8,
+      "preference": 0.72,
+      "status": "competitive",
+      "evidence_count": 5,
+      "metadata": {
+        "seller": "Café Central",
+        "price": 309,
+        "installments": "3 sin interés",
+        "warranty": "30 días",
+        "official_store": false,
+        "invoice": true,
+        "shipping": "Envío gratuito"
+      },
+      "arguments_for": [
+        {
+          "argument_id": "arg-central-precio",
+          "title": "Precio competitivo",
+          "aspect": "precio",
+          "polarity": "positive",
+          "confidence": 0.91,
+          "preference": 0.9,
+          "evidence_count": 1,
+          "summary": "El precio está cerca del mínimo observado."
+        }
+      ],
+      "arguments_against": [
+        {
+          "argument_id": "arg-central-no-oficial",
+          "title": "No pertenece a la tienda oficial",
+          "aspect": "tienda_oficial",
+          "polarity": "negative",
+          "confidence": 0.88,
+          "preference": 0.8,
+          "evidence_count": 1,
+          "summary": "La publicación no satisface la preferencia de tienda oficial."
+        }
+      ]
+    },
+    {
+      "entity_id": "placeholder-oferta-3",
+      "entity_name": "Publicación · Ahorro Market",
+      "seller": "Ahorro Market",
+      "position": 3,
+      "final_score": 0.69,
+      "confidence": 0.74,
+      "preference": 0.61,
+      "status": "review",
+      "evidence_count": 4,
+      "metadata": {
+        "seller": "Ahorro Market",
+        "price": 284,
+        "installments": "1 pago",
+        "warranty": "Sin información",
+        "official_store": false,
+        "invoice": false,
+        "shipping": "Con costo"
+      },
+      "arguments_for": [
+        {
+          "argument_id": "arg-ahorro-precio",
+          "title": "Menor precio observado",
+          "aspect": "precio",
+          "polarity": "positive",
+          "confidence": 0.95,
+          "preference": 0.9,
+          "evidence_count": 1,
+          "summary": "Es la alternativa de menor precio dentro del conjunto."
+        }
+      ],
+      "arguments_against": [
+        {
+          "argument_id": "arg-ahorro-factura",
+          "title": "No declara factura",
+          "aspect": "factura",
+          "polarity": "negative",
+          "confidence": 0.84,
+          "preference": 0.6,
+          "evidence_count": 1,
+          "summary": "La ausencia de factura debilita la recomendación."
+        },
+        {
+          "argument_id": "arg-ahorro-garantia",
+          "title": "Garantía no informada",
+          "aspect": "garantia",
+          "polarity": "negative",
+          "confidence": 0.72,
+          "preference": 0.7,
+          "evidence_count": 1,
+          "summary": "No hay respaldo estructurado sobre garantía."
+        }
+      ]
+    }
+  ],
+  "graph": {
+    "graph_id": "cafe-demo-argument-graph-v1",
+    "root_id": "conclusion:recomendar",
+    "total_nodes": 12540,
+    "total_edges": 24800,
+    "available_filters": {
+      "edge_types": ["support", "conflict"],
+      "node_types": ["fact", "aspect", "dimension", "rule", "conclusion"],
+      "polarities": ["positive", "negative", "neutral"]
+    },
+    "nodes": [
+      {
+        "id": "conclusion:recomendar",
+        "label": "Recomendar el producto elegido",
+        "node_type": "conclusion",
+        "literal": "recomendar(producto_elegido)",
+        "polarity": "positive",
+        "confidence": 0.86,
+        "preference": 0.75,
+        "accumulated_value": 0.91,
+        "weakened_value": 0.82,
+        "acceptability_status": "accepted",
+        "evidence_count": 340,
+        "metadata": {"product": "producto_elegido", "dimension": "global"}
+      },
+      {
+        "id": "dimension:sensorial",
+        "label": "Dimensión sensorial",
+        "node_type": "dimension",
+        "literal": "dimensionBuena(sensorial, producto_elegido)",
+        "polarity": "positive",
+        "confidence": 0.88,
+        "preference": 0.9,
+        "accumulated_value": 0.9,
+        "weakened_value": 0.84,
+        "acceptability_status": "accepted",
+        "evidence_count": 244,
+        "metadata": {"dimension": "sensorial"}
+      },
+      {
+        "id": "dimension:elaboracion",
+        "label": "Dimensión elaboración",
+        "node_type": "dimension",
+        "literal": "dimensionBuena(elaboracion, producto_elegido)",
+        "polarity": "positive",
+        "confidence": 0.67,
+        "preference": 0.5,
+        "accumulated_value": 0.72,
+        "weakened_value": 0.67,
+        "acceptability_status": "accepted",
+        "evidence_count": 19,
+        "metadata": {"dimension": "elaboracion"}
+      },
+      {
+        "id": "dimension:conservacion-neg",
+        "label": "Objeción de conservación",
+        "node_type": "dimension",
+        "literal": "dimensionMala(conservacion, producto_elegido)",
+        "polarity": "negative",
+        "confidence": 0.5,
+        "preference": 0.4,
+        "accumulated_value": 0.2,
+        "weakened_value": 0.09,
+        "acceptability_status": "weakened",
+        "evidence_count": 1,
+        "metadata": {"dimension": "conservacion"}
+      },
+      {
+        "id": "aspecto:sabor-pos",
+        "label": "Sabor favorable",
+        "node_type": "aspect",
+        "literal": "aspectoBueno(sabor, producto_elegido)",
+        "polarity": "positive",
+        "confidence": 0.91,
+        "preference": 1.0,
+        "accumulated_value": 0.94,
+        "weakened_value": 0.88,
+        "acceptability_status": "accepted",
+        "evidence_count": 181,
+        "metadata": {"aspect": "sabor", "dimension": "sensorial"}
+      },
+      {
+        "id": "aspecto:aroma-pos",
+        "label": "Aroma favorable",
+        "node_type": "aspect",
+        "literal": "aspectoBueno(aroma, producto_elegido)",
+        "polarity": "positive",
+        "confidence": 0.84,
+        "preference": 0.8,
+        "accumulated_value": 0.86,
+        "weakened_value": 0.84,
+        "acceptability_status": "accepted",
+        "evidence_count": 61,
+        "metadata": {"aspect": "aroma", "dimension": "sensorial"}
+      },
+      {
+        "id": "aspecto:intensidad-pos",
+        "label": "Intensidad favorable",
+        "node_type": "aspect",
+        "literal": "aspectoBueno(intensidad, producto_elegido)",
+        "polarity": "positive",
+        "confidence": 0.68,
+        "preference": 0.6,
+        "accumulated_value": 0.7,
+        "weakened_value": 0.68,
+        "acceptability_status": "accepted",
+        "evidence_count": 15,
+        "metadata": {"aspect": "intensidad", "dimension": "sensorial"}
+      },
+      {
+        "id": "aspecto:preparacion-pos",
+        "label": "Preparación favorable",
+        "node_type": "aspect",
+        "literal": "aspectoBueno(preparacion, producto_elegido)",
+        "polarity": "positive",
+        "confidence": 0.67,
+        "preference": 0.5,
+        "accumulated_value": 0.69,
+        "weakened_value": 0.67,
+        "acceptability_status": "accepted",
+        "evidence_count": 13,
+        "metadata": {"aspect": "preparacion", "dimension": "elaboracion"}
+      },
+      {
+        "id": "aspecto:sabor-neg",
+        "label": "Sabor desfavorable",
+        "node_type": "aspect",
+        "literal": "aspectoMalo(sabor, producto_elegido)",
+        "polarity": "negative",
+        "confidence": 0.09,
+        "preference": 1.0,
+        "accumulated_value": 0.09,
+        "weakened_value": 0.04,
+        "acceptability_status": "rejected",
+        "evidence_count": 3,
+        "metadata": {"aspect": "sabor", "dimension": "sensorial"}
+      },
+      {
+        "id": "aspecto:caducidad-neg",
+        "label": null,
+        "node_type": "aspect",
+        "literal": "aspectoMalo(caducidad, producto_elegido)",
+        "polarity": "negative",
+        "confidence": null,
+        "preference": 0.4,
+        "accumulated_value": 0.2,
+        "weakened_value": 0.09,
+        "acceptability_status": "undetermined",
+        "evidence_count": 1,
+        "metadata": {"aspect": "caducidad", "dimension": "conservacion"}
+      },
+      {
+        "id": "regla:sensorial-recomendar",
+        "label": "Regla: sensorial → recomendar",
+        "node_type": "rule",
+        "literal": "R-SEN-01",
+        "polarity": "neutral",
+        "confidence": 0.92,
+        "preference": 0.9,
+        "accumulated_value": 0.92,
+        "weakened_value": 0.92,
+        "acceptability_status": "accepted",
+        "evidence_count": 0,
+        "metadata": {"rule_id": "R-SEN-01"}
+      },
+      {
+        "id": "regla:sabor-dimension",
+        "label": "Regla: sabor → sensorial",
+        "node_type": "rule",
+        "literal": "R-SAB-01",
+        "polarity": "neutral",
+        "confidence": 0.94,
+        "preference": 1.0,
+        "accumulated_value": 0.94,
+        "weakened_value": 0.94,
+        "acceptability_status": "accepted",
+        "evidence_count": 0,
+        "metadata": {"rule_id": "R-SAB-01"}
+      },
+      {
+        "id": "hecho:sabor-1",
+        "label": "Reseñas positivas sobre sabor",
+        "node_type": "fact",
+        "literal": "resenaPositivaSabor(producto_elegido)",
+        "polarity": "positive",
+        "confidence": 0.91,
+        "preference": 1.0,
+        "accumulated_value": 0.91,
+        "weakened_value": 0.91,
+        "acceptability_status": "accepted",
+        "evidence_count": 181,
+        "metadata": {"aspect": "sabor", "source": "reviews"}
+      },
+      {
+        "id": "hecho:sabor-neg-1",
+        "label": "Reseñas negativas sobre sabor",
+        "node_type": "fact",
+        "literal": "resenaNegativaSabor(producto_elegido)",
+        "polarity": "negative",
+        "confidence": 0.09,
+        "preference": 1.0,
+        "accumulated_value": 0.09,
+        "weakened_value": 0.09,
+        "acceptability_status": "rejected",
+        "evidence_count": 3,
+        "metadata": {"aspect": "sabor", "source": "reviews"}
+      },
+      {
+        "id": "hecho:aroma-1",
+        "label": "Reseñas positivas sobre aroma",
+        "node_type": "fact",
+        "literal": "resenaPositivaAroma(producto_elegido)",
+        "polarity": "positive",
+        "confidence": 0.84,
+        "preference": 0.8,
+        "accumulated_value": 0.84,
+        "weakened_value": 0.84,
+        "acceptability_status": "accepted",
+        "evidence_count": 61,
+        "metadata": {"aspect": "aroma", "source": "reviews"}
+      },
+      {
+        "id": "hecho:intensidad-1",
+        "label": "Reseñas positivas sobre intensidad",
+        "node_type": "fact",
+        "literal": "resenaPositivaIntensidad(producto_elegido)",
+        "polarity": "positive",
+        "confidence": 0.68,
+        "preference": 0.6,
+        "accumulated_value": 0.68,
+        "weakened_value": 0.68,
+        "acceptability_status": "accepted",
+        "evidence_count": 15,
+        "metadata": {"aspect": "intensidad", "source": "reviews"}
+      },
+      {
+        "id": "hecho:preparacion-1",
+        "label": "Reseñas positivas sobre preparación",
+        "node_type": "fact",
+        "literal": "resenaPositivaPreparacion(producto_elegido)",
+        "polarity": "positive",
+        "confidence": 0.67,
+        "preference": 0.5,
+        "accumulated_value": 0.67,
+        "weakened_value": 0.67,
+        "acceptability_status": "accepted",
+        "evidence_count": 13,
+        "metadata": {"aspect": "preparacion", "source": "reviews"}
+      },
+      {
+        "id": "hecho:caducidad-neg-1",
+        "label": "",
+        "node_type": "fact",
+        "literal": null,
+        "polarity": null,
+        "confidence": null,
+        "preference": null,
+        "accumulated_value": null,
+        "weakened_value": null,
+        "acceptability_status": null,
+        "evidence_count": null,
+        "metadata": {"aspect": "caducidad", "source": "reviews"}
+      }
+    ],
+    "edges": [
+      {"id": "e1", "source": "regla:sensorial-recomendar", "target": "conclusion:recomendar", "edge_type": "support", "label": "aplica", "rule_id": "R-SEN-01", "metadata": {}},
+      {"id": "e2", "source": "dimension:sensorial", "target": "regla:sensorial-recomendar", "edge_type": "support", "label": "premisa", "rule_id": "R-SEN-01", "metadata": {}},
+      {"id": "e3", "source": "dimension:elaboracion", "target": "conclusion:recomendar", "edge_type": "support", "label": "soporta", "rule_id": "R-ELA-01", "metadata": {}},
+      {"id": "e4", "source": "dimension:conservacion-neg", "target": "conclusion:recomendar", "edge_type": "conflict", "label": "debilita", "rule_id": "R-CON-NEG-01", "metadata": {}},
+      {"id": "e5", "source": "regla:sabor-dimension", "target": "dimension:sensorial", "edge_type": "support", "label": "aplica", "rule_id": "R-SAB-01", "metadata": {}},
+      {"id": "e6", "source": "aspecto:sabor-pos", "target": "regla:sabor-dimension", "edge_type": "support", "label": "premisa", "rule_id": "R-SAB-01", "metadata": {}},
+      {"id": "e7", "source": "aspecto:aroma-pos", "target": "dimension:sensorial", "edge_type": "support", "label": "soporta", "rule_id": "R-ARO-01", "metadata": {}},
+      {"id": "e8", "source": "aspecto:intensidad-pos", "target": "dimension:sensorial", "edge_type": "support", "label": "soporta", "rule_id": "R-INT-01", "metadata": {}},
+      {"id": "e9", "source": "aspecto:preparacion-pos", "target": "dimension:elaboracion", "edge_type": "support", "label": "soporta", "rule_id": "R-PRE-01", "metadata": {}},
+      {"id": "e10", "source": "aspecto:sabor-neg", "target": "aspecto:sabor-pos", "edge_type": "conflict", "label": "conflicto", "rule_id": "C-SAB-01", "metadata": {}},
+      {"id": "e11", "source": "aspecto:caducidad-neg", "target": "dimension:conservacion-neg", "edge_type": "support", "label": "soporta objeción", "rule_id": "R-CAD-NEG-01", "metadata": {}},
+      {"id": "e12", "source": "hecho:sabor-1", "target": "aspecto:sabor-pos", "edge_type": "support", "label": "evidencia", "rule_id": "R-AGG-SAB-POS", "metadata": {}},
+      {"id": "e13", "source": "hecho:sabor-neg-1", "target": "aspecto:sabor-neg", "edge_type": "support", "label": "evidencia", "rule_id": "R-AGG-SAB-NEG", "metadata": {}},
+      {"id": "e14", "source": "hecho:aroma-1", "target": "aspecto:aroma-pos", "edge_type": "support", "label": "evidencia", "rule_id": "R-AGG-ARO-POS", "metadata": {}},
+      {"id": "e15", "source": "hecho:intensidad-1", "target": "aspecto:intensidad-pos", "edge_type": "support", "label": "evidencia", "rule_id": "R-AGG-INT-POS", "metadata": {}},
+      {"id": "e16", "source": "hecho:preparacion-1", "target": "aspecto:preparacion-pos", "edge_type": "support", "label": "evidencia", "rule_id": "R-AGG-PRE-POS", "metadata": {}},
+      {"id": "e17", "source": "hecho:caducidad-neg-1", "target": "aspecto:caducidad-neg", "edge_type": "support", "label": null, "rule_id": null, "metadata": {}}
+    ]
+  }
+}

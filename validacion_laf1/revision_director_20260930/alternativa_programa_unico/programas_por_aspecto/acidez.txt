@@ -1,0 +1,17 @@
+% Referencia independiente por aspecto: acidez
+% Preparado offline; verificado después con API local. Ver comparacion_motor_local.json.
+% Fuente: validacion_laf1/salidas/recongelado_20260910/despues/programa_laf1_D.txt
+% Una etiqueta de confianza; preferencias como pesos externos.
+resenaPositivaAcidez(mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble). {0.53}
+resenaPositivaAcidez(mlm26912881_cafe_blason_espresso_robusto_tostado_y). {0.56}
+resenaPositivaAcidez(mlm25263480_cafe_gourmet_tostado_y_molido_americano). {0.52}
+resenaPositivaAcidez(mlm16250244_nescafe_taster_s_choice_caramel_dark). {0.52}
+resenaPositivaAcidez(mlm41148521_cafe_gourmet_molido_espresso_400g_blason). {0.55}
+resenaPositivaAcidez(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.63}
+resenaNegativaAcidez(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.37}
+acidezBueno(X) :- resenaPositivaAcidez(X). {0.85}
+~acidezBueno(X) :- resenaNegativaAcidez(X). {0.85}
+sensorialBueno(X) :- acidezBueno(X). {0.85}
+~sensorialBueno(X) :- ~acidezBueno(X). {0.85}
+recomendar(X) :- sensorialBueno(X). {0.90}
+~recomendar(X) :- ~sensorialBueno(X). {0.92}

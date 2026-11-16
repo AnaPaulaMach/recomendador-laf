@@ -1,0 +1,215 @@
+{
+ "dataset_key": "mlm_mlm194329_20260528_142014",
+ "provisional": "trust actual, previo a R3/fila 13",
+ "nombres": {
+  "MLM16207890": "Nescafé Reserva Verarica Café 100% Soluble Liofilizado Origen Veracruzano con Notas Afrutadas en Frasco de 180g",
+  "MLM41148521": "Café Gourmet Molido Espresso 400g Blasón",
+  "MLM19663240": "Nescafé Clásico Café 100% Puro Soluble Frasco de 200g",
+  "MLM20999002": "Café Soluble Nescafé Clásico Nestlé Professional Bote de 1Kg",
+  "MLM16250253": "Nescafé Decaf Café 100% Puro Soluble Descafeinado | Granos Arábica y Robusta en Frasco de 170g",
+  "MLM19566313": "Cafe Capuccino Vainilla Francesa En Polvo Members Mark 1.8 Kg",
+  "MLM16207863": "Nescafé Café de Olla 100% Café Soluble Sabor Canela y Piloncillo | Granos Robusta Frasco de 170g",
+  "MLM19543513": "Café Molido La Parroquia Puro 1 Kg Tradicional Gourmet",
+  "MLM26912881": "Café Blasón Espresso Robusto Tostado Y Molido 1kg",
+  "MLM16207894": "Nescafé Reserva Xiapan Café 100% Soluble Liofilizado de Origen Chiapaneco con Notas Amaderadas en Frasco de 180g",
+  "MLM25263480": "Café Gourmet Tostado y Molido Americano Blasón 1 kg",
+  "MLM16250244": "Nescafé Taster's Choice Caramel Dark Chocolate Café 100% Puro Soluble Frasco de 100g",
+  "MLM23633481": "Nescafé Clásico ICE Café Soluble en Frío Frasco de 170gr",
+  "MLM27068249": "Tripack Juan Valdez Café Soluble 95gr 3 Sabores",
+  "MLM19544520": "Cafe Capuccino Moka Members Mark 1.8 Kg en polvo",
+  "MLM16250252": "Nescafé Clásico de café sin gluten con 400g",
+  "MLM20075768": "Nescafé Clásico Café 100% Puro Soluble Bolsa de 400g",
+  "MLM43007251": "Café Molido 100% Arábico Gourmet Americano 900g Blasón"
+ },
+ "por_perfil": {
+  "neutral": {
+   "top5": [
+    "Café Blasón Espresso Robusto Tostado Y Molido 1kg",
+    "Café Gourmet Molido Espresso 400g Blasón",
+    "Café Gourmet Tostado y Molido Americano Blasón 1 kg",
+    "Nescafé Taster's Choice Caramel Dark Chocolate Café 100% Puro Soluble Frasco de 100g",
+    "Café Molido La Parroquia Puro 1 Kg Tradicional Gourmet"
+   ],
+   "precision": {
+    "b1_estrella_media": {
+     "spearman": 0.424,
+     "prec@3": 0.667,
+     "prec@5": 0.6
+    },
+    "b2_positivas_conteo": {
+     "spearman": 0.583,
+     "prec@3": 0.0,
+     "prec@5": 0.6
+    },
+    "b3_positivas_prop": {
+     "spearman": 0.346,
+     "prec@3": 0.333,
+     "prec@5": 0.4
+    }
+   },
+   "cobertura": {
+    "laf_scores_distintos": 16,
+    "laf_en_cero": 0,
+    "n": 18,
+    "laf_rango": [
+     0.181,
+     0.372
+    ],
+    "estrella_rango": [
+     4.63,
+     4.961
+    ],
+    "pares_empatados_en_estrellas": 18,
+    "de_esos_LAF_separa": 17
+   },
+   "novedad": {
+    "laf_sesgo_popularidad": 0.583,
+    "b2_sesgo_popularidad": 1.0,
+    "b3_sesgo_popularidad": -0.158,
+    "laf_pop_media_top3": 688.3,
+    "b2_pop_media_top3": 1266.0,
+    "b3_pop_media_top3": 343.0
+   },
+   "coherencia": {
+    "i_interna_spearman_net": 0.822,
+    "i_interna_spearman_pos": 0.796,
+    "i_inversiones_duras": 29,
+    "i_peor_inversion": [
+     "MLM41148521",
+     "MLM25263480",
+     233,
+     355
+    ],
+    "ii_top5_con_evidencia_negativa": []
+   }
+  },
+  "solo_sabor": {
+   "top5": [
+    "Cafe Capuccino Vainilla Francesa En Polvo Members Mark 1.8 Kg",
+    "Café Gourmet Tostado y Molido Americano Blasón 1 kg",
+    "Cafe Capuccino Moka Members Mark 1.8 Kg en polvo",
+    "Café Blasón Espresso Robusto Tostado Y Molido 1kg",
+    "Nescafé Taster's Choice Caramel Dark Chocolate Café 100% Puro Soluble Frasco de 100g"
+   ],
+   "precision": {
+    "b1_estrella_media": {
+     "spearman": 0.434,
+     "prec@3": 0.333,
+     "prec@5": 0.4
+    },
+    "b2_positivas_conteo": {
+     "spearman": 0.583,
+     "prec@3": 0.667,
+     "prec@5": 0.8
+    },
+    "b3_positivas_prop": {
+     "spearman": 0.428,
+     "prec@3": 0.0,
+     "prec@5": 0.4
+    }
+   },
+   "cobertura": {
+    "laf_scores_distintos": 16,
+    "laf_en_cero": 0,
+    "n": 18,
+    "laf_rango": [
+     0.398,
+     0.647
+    ],
+    "estrella_rango": [
+     4.63,
+     4.961
+    ],
+    "pares_empatados_en_estrellas": 18,
+    "de_esos_LAF_separa": 18
+   },
+   "novedad": {
+    "laf_sesgo_popularidad": 0.583,
+    "b2_sesgo_popularidad": 1.0,
+    "b3_sesgo_popularidad": -0.158,
+    "laf_pop_media_top3": 1059.0,
+    "b2_pop_media_top3": 1266.0,
+    "b3_pop_media_top3": 343.0
+   },
+   "coherencia": {
+    "i_interna_spearman_net": 0.888,
+    "i_interna_spearman_pos": 0.877,
+    "i_inversiones_duras": 18,
+    "i_peor_inversion": [
+     "MLM19566313",
+     "MLM19544520",
+     355,
+     406
+    ],
+    "ii_top5_con_evidencia_negativa": []
+   }
+  },
+  "solo_aroma": {
+   "top5": [
+    "Nescafé Taster's Choice Caramel Dark Chocolate Café 100% Puro Soluble Frasco de 100g",
+    "Café Blasón Espresso Robusto Tostado Y Molido 1kg",
+    "Café Molido La Parroquia Puro 1 Kg Tradicional Gourmet",
+    "Café Gourmet Tostado y Molido Americano Blasón 1 kg",
+    "Nescafé Reserva Xiapan Café 100% Soluble Liofilizado de Origen Chiapaneco con Notas Amaderadas en Frasco de 180g"
+   ],
+   "precision": {
+    "b1_estrella_media": {
+     "spearman": 0.267,
+     "prec@3": 0.0,
+     "prec@5": 0.6
+    },
+    "b2_positivas_conteo": {
+     "spearman": 0.214,
+     "prec@3": 0.333,
+     "prec@5": 0.6
+    },
+    "b3_positivas_prop": {
+     "spearman": 0.176,
+     "prec@3": 0.0,
+     "prec@5": 0.4
+    }
+   },
+   "cobertura": {
+    "laf_scores_distintos": 17,
+    "laf_en_cero": 0,
+    "n": 18,
+    "laf_rango": [
+     0.162,
+     0.585
+    ],
+    "estrella_rango": [
+     4.63,
+     4.961
+    ],
+    "pares_empatados_en_estrellas": 18,
+    "de_esos_LAF_separa": 18
+   },
+   "novedad": {
+    "laf_sesgo_popularidad": 0.214,
+    "b2_sesgo_popularidad": 1.0,
+    "b3_sesgo_popularidad": -0.158,
+    "laf_pop_media_top3": 1133.3,
+    "b2_pop_media_top3": 1266.0,
+    "b3_pop_media_top3": 343.0
+   },
+   "coherencia": {
+    "i_interna_spearman_net": 0.944,
+    "i_interna_spearman_pos": 0.944,
+    "i_inversiones_duras": 9,
+    "i_peor_inversion": [
+     "MLM16250244",
+     "MLM19543513",
+     137,
+     169
+    ],
+    "ii_top5_con_evidencia_negativa": []
+   }
+  }
+ },
+ "estabilidad_laf": {
+  "neutral_vs_perturbado_sabor0.6": 0.983,
+  "responsividad_neutral_vs_solo_sabor": 0.789,
+  "responsividad_neutral_vs_solo_aroma": 0.486,
+  "nota": "las bases son perfectamente estables (rho=1) pero perfectamente NO responsivas (rho=1): no dependen del perfil."
+ }
+}

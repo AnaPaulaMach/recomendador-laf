@@ -1,0 +1,1421 @@
+{
+  "source_report": "artifacts_por_dominio/cafe/reportes/domain_discovery_cafe.json",
+  "dataset": {
+    "dataset_key": "mlm_mlm194329_20260528_142014",
+    "category_id": "MLM194329",
+    "category_label": "Cafe",
+    "site_id": "MLM"
+  },
+  "domain_key": "cafe",
+  "model": "gpt-5.5",
+  "generated_at": "2026-07-28 12:39:41",
+  "status": "complete",
+  "suggestions": [
+    {
+      "term": "sabor",
+      "decision": "include_aspect",
+      "category": "product_aspect",
+      "aspect_key": "sabor",
+      "aspect_label": "Sabor",
+      "add_terms": [],
+      "group_terms": [
+        "sabor"
+      ],
+      "lexicon_target": "aspect",
+      "discard_reason": "",
+      "confidence": 0.99,
+      "reason": "Es un aspecto central del dominio Cafe y coincide directamente con el aspecto preferido 'sabor'. Las menciones evalúan una característica organoléptica del producto."
+    },
+    {
+      "term": "cafe",
+      "decision": "reject",
+      "category": "too_generic",
+      "aspect_key": "",
+      "aspect_label": "",
+      "add_terms": [],
+      "group_terms": [],
+      "lexicon_target": "discard",
+      "discard_reason": "Es el nombre genérico del producto/categoría, no una característica de calidad evaluable por sí misma.",
+      "confidence": 0.95,
+      "reason": "En los ejemplos se usa para nombrar el producto ('este café', 'café soluble'), no como aspecto específico."
+    },
+    {
+      "term": "rico",
+      "decision": "positive_lexicon",
+      "category": "positive_word",
+      "aspect_key": "",
+      "aspect_label": "",
+      "add_terms": [],
+      "group_terms": [],
+      "lexicon_target": "positive",
+      "discard_reason": "",
+      "confidence": 0.96,
+      "reason": "Funciona como término de polaridad positiva, normalmente calificando sabor o el producto en general; no describe un aspecto independiente."
+    },
+    {
+      "term": "precio",
+      "decision": "reject",
+      "category": "purchase_context",
+      "aspect_key": "",
+      "aspect_label": "",
+      "add_terms": [],
+      "group_terms": [],
+      "lexicon_target": "discard",
+      "discard_reason": "Precio pertenece a condiciones de compra/contexto comercial y debe descartarse según las instrucciones de curaduría.",
+      "confidence": 0.99,
+      "reason": "Aunque aparece evaluado positivamente, no es una característica intrínseca del café."
+    },
+    {
+      "term": "delicioso",
+      "decision": "positive_lexicon",
+      "category": "positive_word",
+      "aspect_key": "",
+      "aspect_label": "",
+      "add_terms": [],
+      "group_terms": [],
+      "lexicon_target": "positive",
+      "discard_reason": "",
+      "confidence": 0.95,
+      "reason": "Es una valoración positiva, frecuentemente asociada al sabor, pero el término en sí expresa opinión/polaridad y no un aspecto de calidad."
+    },
+    {
+      "term": "aroma",
+      "decision": "include_aspect",
+      "category": "product_aspect",
+      "aspect_key": "aroma",
+      "aspect_label": "Aroma y olor",
+      "add_terms": [],
+      "group_terms": [
+        "aroma"
+      ],
+      "lexicon_target": "aspect",
+      "discard_reason": "",
+      "confidence": 0.99,
+      "reason": "Es un aspecto explícito del café y coincide con el aspecto preferido del dominio. Las reseñas lo evalúan junto con sabor y olor."
+    },
+    {
+      "term": "excelente sabor",
+      "decision": "include_aspect",
+      "category": "aspect_synonym",
+      "aspect_key": "sabor",
+      "aspect_label": "Sabor",
+      "add_terms": [
+        "sabor"
+      ],
+      "group_terms": [
+        "excelente sabor"
+      ],
+      "lexicon_target": "aspect",
+      "discard_reason": "",
+      "confidence": 0.93,
+      "reason": "La parte aspectual es 'sabor'; 'excelente' es polaridad positiva y no debe crear un aspecto separado. Debe agruparse bajo Sabor."
+    },
+    {
+      "term": "riquisimo",
+      "decision": "positive_lexicon",
+      "category": "positive_word",
+      "aspect_key": "",
+      "aspect_label": "",
+      "add_terms": [
+        "riquísimo"
+      ],
+      "group_terms": [],
+      "lexicon_target": "positive",
+      "discard_reason": "",
+      "confidence": 0.96,
+      "reason": "Expresa valoración positiva general, usualmente sobre el sabor, pero no nombra una característica del producto por sí mismo."
+    },
+    {
+      "term": "excelente cafe",
+      "decision": "positive_lexicon",
+      "category": "positive_word",
+      "aspect_key": "",
+      "aspect_label": "",
+      "add_terms": [
+        "excelente café",
+        "excelente"
+      ],
+      "group_terms": [],
+      "lexicon_target": "positive",
+      "discard_reason": "",
+      "confidence": 0.95,
+      "reason": "Es una opinión global positiva sobre el producto completo; no identifica un aspecto de calidad específico."
+    },
+    {
+      "term": "fuerte",
+      "decision": "include_aspect",
+      "category": "aspect_synonym",
+      "aspect_key": "intensidad",
+      "aspect_label": "Intensidad / cuerpo",
+      "add_terms": [],
+      "group_terms": [
+        "fuerte"
+      ],
+      "lexicon_target": "aspect",
+      "discard_reason": "",
+      "confidence": 0.9,
+      "reason": "En café, 'fuerte' describe intensidad, cuerpo o concentración. Aunque en algunos ejemplos puede modificar olor o canela, encaja con el aspecto preferido Intensidad / cuerpo."
+    },
+    {
+      "term": "sabroso",
+      "decision": "include_aspect",
+      "category": "aspect_synonym",
+      "aspect_key": "sabor",
+      "aspect_label": "Sabor",
+      "add_terms": [
+        "sabroso"
+      ],
+      "group_terms": [
+        "sabroso"
+      ],
+      "lexicon_target": "aspect",
+      "discard_reason": "",
+      "confidence": 0.76,
+      "reason": "Aunque tiene polaridad positiva, en café se usa directamente para evaluar el sabor del producto. Conviene agruparlo bajo el aspecto preferido 'sabor' y no crear un aspecto nuevo."
+    },
+    {
+      "term": "original",
+      "decision": "include_aspect",
+      "category": "aspect_synonym",
+      "aspect_key": "originalidad",
+      "aspect_label": "Originalidad / autenticidad",
+      "add_terms": [
+        "original"
+      ],
+      "group_terms": [
+        "original"
+      ],
+      "lexicon_target": "aspect",
+      "discard_reason": "",
+      "confidence": 0.9,
+      "reason": "Coincide con el aspecto preferido del dominio sobre autenticidad/originalidad. Los ejemplos indican si el producto es original, más allá de una opinión general."
+    },
+    {
+      "term": "marca",
+      "decision": "reject",
+      "category": "purchase_context",
+      "aspect_key": "",
+      "aspect_label": "",
+      "add_terms": [],
+      "group_terms": [],
+      "lexicon_target": "discard",
+      "discard_reason": "La marca/fabricante es contexto de compra o identificación comercial, no un aspecto de calidad del café como sabor, aroma, intensidad o frescura.",
+      "confidence": 0.86,
+      "reason": "Los ejemplos hablan de preferencia o confianza en la marca, no de una característica evaluable del producto en sí."
+    },
+    {
+      "term": "favorito",
+      "decision": "positive_lexicon",
+      "category": "positive_word",
+      "aspect_key": "",
+      "aspect_label": "",
+      "add_terms": [
+        "favorito"
+      ],
+      "group_terms": [],
+      "lexicon_target": "positive",
+      "discard_reason": "",
+      "confidence": 0.88,
+      "reason": "Expresa preferencia o satisfacción general. No nombra una característica del café; funciona mejor como término de polaridad positiva."
+    },
+    {
+      "term": "frio",
+      "decision": "uncertain",
+      "category": "usage_context",
+      "aspect_key": "preparacion",
+      "aspect_label": "Preparacion / disolucion",
+      "add_terms": [
+        "frio"
+      ],
+      "group_terms": [
+        "frio"
+      ],
+      "lexicon_target": "review",
+      "discard_reason": "",
+      "confidence": 0.58,
+      "reason": "Puede ser solo contexto de consumo o clima ('tiempo de frio', 'tomar frio'), pero también aparece ligado a preparación/disolución ('difícil mezclarlo si lo haces en frío'). Revisar ejemplos antes de aceptarlo como término del aspecto preparación."
+    },
+    {
+      "term": "excelente precio",
+      "decision": "reject",
+      "category": "purchase_context",
+      "aspect_key": "",
+      "aspect_label": "",
+      "add_terms": [],
+      "group_terms": [],
+      "lexicon_target": "discard",
+      "discard_reason": "Menciona precio, que pertenece a condición de compra, y además incluye una valoración general positiva; no describe una característica sensorial o de calidad del café.",
+      "confidence": 0.99,
+      "reason": "Aunque aparece con alta polaridad positiva, debe descartarse como aspecto por tratarse de precio."
+    },
+    {
+      "term": "tamano",
+      "decision": "include_aspect",
+      "category": "product_aspect",
+      "aspect_key": "tamano",
+      "aspect_label": "Tamano / cantidad",
+      "add_terms": [
+        "tamaño"
+      ],
+      "group_terms": [
+        "tamano"
+      ],
+      "lexicon_target": "aspect",
+      "discard_reason": "",
+      "confidence": 0.97,
+      "reason": "Describe tamaño o cantidad del producto, como frasco de 170 gramos o tamaño común; coincide con el aspecto preferido del dominio."
+    },
+    {
+      "term": "exquisito",
+      "decision": "positive_lexicon",
+      "category": "positive_word",
+      "aspect_key": "",
+      "aspect_label": "",
+      "add_terms": [],
+      "group_terms": [],
+      "lexicon_target": "positive",
+      "discard_reason": "",
+      "confidence": 0.95,
+      "reason": "Es una palabra de polaridad positiva que suele calificar sabor o aroma, pero por sí sola no nombra una característica del producto."
+    },
+    {
+      "term": "nescafe",
+      "decision": "reject",
+      "category": "too_generic",
+      "aspect_key": "",
+      "aspect_label": "",
+      "add_terms": [],
+      "group_terms": [],
+      "lexicon_target": "discard",
+      "discard_reason": "Es una marca o línea de producto, no un aspecto de calidad del café.",
+      "confidence": 0.98,
+      "reason": "Las menciones identifican el producto o fabricante; no describen sabor, aroma, intensidad, presentación u otra característica evaluable."
+    },
+    {
+      "term": "intenso",
+      "decision": "include_aspect",
+      "category": "aspect_synonym",
+      "aspect_key": "intensidad",
+      "aspect_label": "Intensidad / cuerpo",
+      "add_terms": [],
+      "group_terms": [
+        "intenso"
+      ],
+      "lexicon_target": "aspect",
+      "discard_reason": "",
+      "confidence": 0.98,
+      "reason": "Describe la intensidad o fuerza del sabor del café; coincide directamente con el aspecto preferido intensidad."
+    },
+    {
+      "term": "condicion",
+      "decision": "reject",
+      "category": "purchase_context",
+      "aspect_key": "",
+      "aspect_label": "",
+      "add_terms": [],
+      "group_terms": [],
+      "lexicon_target": "discard",
+      "discard_reason": "En los ejemplos se refiere al estado en que llegó/ fue recibido el producto ('llega en óptimas condiciones', 'perfectas condiciones'), es decir condición de entrega/recepción, no una característica intrínseca del café.",
+      "confidence": 0.96,
+      "reason": "No debe mapearse a caducidad/frescura ni presentación: el uso observado describe logística o recepción del pedido."
+    },
+    {
+      "term": "presentacion",
+      "decision": "include_aspect",
+      "category": "product_aspect",
+      "aspect_key": "presentacion",
+      "aspect_label": "Presentacion y empaque",
+      "add_terms": [],
+      "group_terms": [
+        "presentacion"
+      ],
+      "lexicon_target": "aspect",
+      "discard_reason": "",
+      "confidence": 0.98,
+      "reason": "Coincide directamente con el aspecto preferido del dominio. En los ejemplos evalúa la presentación/formato del café y puede relacionarse con economía por tamaño o formato, pero el núcleo del término es presentación del producto."
+    },
+    {
+      "term": "barato",
+      "decision": "reject",
+      "category": "purchase_context",
+      "aspect_key": "",
+      "aspect_label": "",
+      "add_terms": [],
+      "group_terms": [],
+      "lexicon_target": "discard",
+      "discard_reason": "Describe precio o conveniencia económica ('más barato'), que según las instrucciones debe descartarse como condición de compra, no aspecto de calidad del café.",
+      "confidence": 0.99,
+      "reason": "Aunque suele tener polaridad positiva, pertenece al contexto de precio y no a atributos como sabor, aroma, intensidad o presentación."
+    },
+    {
+      "term": "rico cafe",
+      "decision": "positive_lexicon",
+      "category": "positive_word",
+      "aspect_key": "",
+      "aspect_label": "",
+      "add_terms": [
+        "rico"
+      ],
+      "group_terms": [],
+      "lexicon_target": "positive",
+      "discard_reason": "",
+      "confidence": 0.86,
+      "reason": "La expresión comunica una evaluación positiva, normalmente asociada al sabor, pero 'rico café' no es un nombre de aspecto. Conviene usar 'rico' como término de polaridad positiva y dejar que el aspecto se active por términos como sabor/café si aparecen en contexto."
+    },
+    {
+      "term": "gracia",
+      "decision": "reject",
+      "category": "too_generic",
+      "aspect_key": "",
+      "aspect_label": "",
+      "add_terms": [],
+      "group_terms": [],
+      "lexicon_target": "discard",
+      "discard_reason": "Aparece como agradecimiento/cortesía ('gracias') y no describe una característica del producto ni una polaridad específica sobre el café.",
+      "confidence": 0.99,
+      "reason": "No aporta información ABSA de calidad del producto; suele estar ligado al cierre de reseñas o interacción de compra."
+    },
+    {
+      "term": "rendidor",
+      "decision": "include_aspect",
+      "category": "aspect_synonym",
+      "aspect_key": "rendimiento",
+      "aspect_label": "Rendimiento",
+      "add_terms": [
+        "rinde"
+      ],
+      "group_terms": [
+        "rendidor"
+      ],
+      "lexicon_target": "aspect",
+      "discard_reason": "",
+      "confidence": 0.98,
+      "reason": "Describe cuánto alcanza o dura el café; coincide directamente con el aspecto preferido rendimiento."
+    },
+    {
+      "term": "leche",
+      "decision": "reject",
+      "category": "usage_context",
+      "aspect_key": "",
+      "aspect_label": "",
+      "add_terms": [],
+      "group_terms": [],
+      "lexicon_target": "discard",
+      "discard_reason": "Es un contexto o forma de consumo/preparación del café, no una característica propia de calidad del producto.",
+      "confidence": 0.9,
+      "reason": "En los ejemplos aparece como acompañamiento o medio de consumo: 'en agua o leche', 'sabe bien con leche'."
+    },
+    {
+      "term": "frasco",
+      "decision": "include_aspect",
+      "category": "aspect_synonym",
+      "aspect_key": "presentacion",
+      "aspect_label": "Presentacion y empaque",
+      "add_terms": [],
+      "group_terms": [
+        "frasco",
+        "sellado"
+      ],
+      "lexicon_target": "aspect",
+      "discard_reason": "",
+      "confidence": 0.9,
+      "reason": "Se refiere al formato/envase del producto; coincide con el aspecto preferido presentacion y empaque."
+    },
+    {
+      "term": "agradable",
+      "decision": "positive_lexicon",
+      "category": "positive_word",
+      "aspect_key": "",
+      "aspect_label": "",
+      "add_terms": [],
+      "group_terms": [],
+      "lexicon_target": "positive",
+      "discard_reason": "",
+      "confidence": 0.95,
+      "reason": "Es una palabra de polaridad positiva que califica sabor o aroma, pero no nombra un aspecto del producto."
+    },
+    {
+      "term": "sellado",
+      "decision": "include_aspect",
+      "category": "aspect_synonym",
+      "aspect_key": "presentacion",
+      "aspect_label": "Presentacion y empaque",
+      "add_terms": [],
+      "group_terms": [
+        "frasco",
+        "sellado"
+      ],
+      "lexicon_target": "aspect",
+      "discard_reason": "",
+      "confidence": 0.88,
+      "reason": "Describe la integridad del cierre o empaque del producto; coincide con el aspecto preferido presentacion y empaque."
+    },
+    {
+      "term": "caliente",
+      "decision": "reject",
+      "category": "usage_context",
+      "aspect_key": "",
+      "aspect_label": "",
+      "add_terms": [],
+      "group_terms": [],
+      "lexicon_target": "discard",
+      "discard_reason": "En los ejemplos se usa como modo/temperatura de consumo del café (frío o caliente), no como una característica de calidad estable del producto.",
+      "confidence": 0.9,
+      "reason": "Aunque puede aparecer cerca de preparación, 'caliente' por sí solo describe contexto de uso o forma de tomarlo, no un aspecto de calidad del café."
+    },
+    {
+      "term": "rico sabor",
+      "decision": "include_aspect",
+      "category": "aspect_synonym",
+      "aspect_key": "sabor",
+      "aspect_label": "Sabor",
+      "add_terms": [],
+      "group_terms": [
+        "rico sabor"
+      ],
+      "lexicon_target": "aspect",
+      "discard_reason": "",
+      "confidence": 0.95,
+      "reason": "La frase menciona explícitamente el sabor del café. 'Rico' aporta polaridad positiva, pero el núcleo aspectual es 'sabor', que coincide con el aspecto preferido del dominio."
+    },
+    {
+      "term": "facil",
+      "decision": "uncertain",
+      "category": "uncertain",
+      "aspect_key": "preparacion",
+      "aspect_label": "Preparacion / disolucion",
+      "add_terms": [],
+      "group_terms": [],
+      "lexicon_target": "review",
+      "discard_reason": "",
+      "confidence": 0.62,
+      "reason": "El término aislado es demasiado genérico y funciona como modificador positivo. En los ejemplos aparece en frases como 'fácil de disolver' y 'fácil de preparar', que sí apuntan al aspecto preparación/disolución, pero conviene capturar la frase completa y no solo 'facil'."
+    },
+    {
+      "term": "duda",
+      "decision": "reject",
+      "category": "too_generic",
+      "aspect_key": "",
+      "aspect_label": "",
+      "add_terms": [],
+      "group_terms": [],
+      "lexicon_target": "discard",
+      "discard_reason": "Aparece en la locución 'sin duda', usada como énfasis de recomendación o recompra; no describe una característica del café.",
+      "confidence": 0.98,
+      "reason": "'Duda' no es aspecto del producto ni palabra de polaridad útil en este contexto."
+    },
+    {
+      "term": "economico",
+      "decision": "reject",
+      "category": "purchase_context",
+      "aspect_key": "",
+      "aspect_label": "",
+      "add_terms": [],
+      "group_terms": [],
+      "lexicon_target": "discard",
+      "discard_reason": "Se refiere a precio, ahorro o conveniencia de compra, que las instrucciones indican descartar como condición de compra y no como aspecto de calidad del café.",
+      "confidence": 0.96,
+      "reason": "Aunque suele tener polaridad positiva, no describe una propiedad sensorial o funcional del café."
+    },
+    {
+      "term": "olor",
+      "decision": "include_aspect",
+      "category": "aspect_synonym",
+      "aspect_key": "aroma",
+      "aspect_label": "Aroma y olor",
+      "add_terms": [
+        "olor"
+      ],
+      "group_terms": [
+        "olor"
+      ],
+      "lexicon_target": "aspect",
+      "discard_reason": "",
+      "confidence": 0.98,
+      "reason": "En café, 'olor' refiere directamente al aroma del producto. Los ejemplos lo coordinan con sabor y lo evalúan como atributo sensorial: 'olor y sabor único', 'su olor a piloncillo y canela'."
+    },
+    {
+      "term": "azucar",
+      "decision": "include_aspect",
+      "category": "aspect_synonym",
+      "aspect_key": "dulzor",
+      "aspect_label": "Dulzor / amargor",
+      "add_terms": [
+        "azúcar"
+      ],
+      "group_terms": [
+        "azucar"
+      ],
+      "lexicon_target": "aspect",
+      "discard_reason": "",
+      "confidence": 0.9,
+      "reason": "Aunque puede nombrar un ingrediente, en estas reseñas se usa para hablar del perfil dulce o contenido de azúcar del café: 'tiene azúcar', 'café con azúcar'. Encaja con el aspecto preferido Dulzor / amargor."
+    },
+    {
+      "term": "mejor",
+      "decision": "positive_lexicon",
+      "category": "positive_word",
+      "aspect_key": "",
+      "aspect_label": "",
+      "add_terms": [],
+      "group_terms": [],
+      "lexicon_target": "positive",
+      "discard_reason": "",
+      "confidence": 0.95,
+      "reason": "Es una palabra comparativa de valoración general positiva ('de los mejores'), no una característica específica del café. Debe ir al lexicón de polaridad positiva, no como aspecto."
+    },
+    {
+      "term": "casa",
+      "decision": "reject",
+      "category": "usage_context",
+      "aspect_key": "",
+      "aspect_label": "",
+      "add_terms": [],
+      "group_terms": [],
+      "lexicon_target": "discard",
+      "discard_reason": "No describe una cualidad del café. En los ejemplos indica contexto de consumo familiar o entrega a domicilio ('mi casa', 'puerta de la casa'), por lo que debe descartarse como aspecto.",
+      "confidence": 0.97,
+      "reason": "Es contexto de uso/compra, no atributo sensorial ni funcional del producto."
+    },
+    {
+      "term": "agua",
+      "decision": "reject",
+      "category": "usage_context",
+      "aspect_key": "",
+      "aspect_label": "",
+      "add_terms": [],
+      "group_terms": [],
+      "lexicon_target": "discard",
+      "discard_reason": "Es un medio de preparación o contexto de consumo ('en agua o leche') y también aparece en una expresión idiomática negativa ('agua de calcetín'), pero por sí solo no nombra una cualidad del café.",
+      "confidence": 0.82,
+      "reason": "Puede aparecer cerca de preparación o sabor, pero el término aislado es demasiado genérico para ser aspecto de calidad."
+    },
+    {
+      "term": "dulce",
+      "decision": "include_aspect",
+      "category": "aspect_synonym",
+      "aspect_key": "dulzor",
+      "aspect_label": "Dulzor / amargor",
+      "add_terms": [],
+      "group_terms": [
+        "dulce"
+      ],
+      "lexicon_target": "aspect",
+      "discard_reason": "",
+      "confidence": 0.98,
+      "reason": "En café, 'dulce' describe el nivel de dulzor del producto. Los ejemplos evalúan explícitamente si trae demasiado dulce o si debería tener menos dulzor, por lo que encaja con el aspecto preferido 'dulzor'."
+    },
+    {
+      "term": "suave",
+      "decision": "include_aspect",
+      "category": "aspect_synonym",
+      "aspect_key": "intensidad",
+      "aspect_label": "Intensidad / cuerpo",
+      "add_terms": [],
+      "group_terms": [
+        "suave"
+      ],
+      "lexicon_target": "aspect",
+      "discard_reason": "",
+      "confidence": 0.9,
+      "reason": "En el dominio café, 'suave' se usa para describir baja intensidad o cuerpo del café. Aunque en algunos ejemplos modifica 'sabor' o 'fragancia', sigue funcionando como atributo sensorial de intensidad y coincide con los términos preferidos del dominio."
+    },
+    {
+      "term": "cantidad",
+      "decision": "include_aspect",
+      "category": "aspect_synonym",
+      "aspect_key": "tamano",
+      "aspect_label": "Tamano / cantidad",
+      "add_terms": [],
+      "group_terms": [
+        "cantidad"
+      ],
+      "lexicon_target": "aspect",
+      "discard_reason": "",
+      "confidence": 0.96,
+      "reason": "El término refiere al contenido o volumen de producto recibido, como 'buena cantidad de producto'. Coincide directamente con el aspecto preferido 'Tamano / cantidad'."
+    },
+    {
+      "term": "manana",
+      "decision": "reject",
+      "category": "usage_context",
+      "aspect_key": "",
+      "aspect_label": "",
+      "add_terms": [],
+      "group_terms": [],
+      "lexicon_target": "discard",
+      "discard_reason": "Es contexto de consumo o momento de uso, no una característica de calidad del café.",
+      "confidence": 0.97,
+      "reason": "Las menciones indican cuándo se consume o prepara el café, por ejemplo 'en las mañanas' o 'por la mañana', pero no describen un atributo del producto."
+    },
+    {
+      "term": "gusto",
+      "decision": "uncertain",
+      "category": "uncertain",
+      "aspect_key": "sabor",
+      "aspect_label": "Sabor",
+      "add_terms": [],
+      "group_terms": [
+        "gusto"
+      ],
+      "lexicon_target": "review",
+      "discard_reason": "",
+      "confidence": 0.55,
+      "reason": "Puede aparecer como sinónimo de sabor en expresiones como 'gusto a chocolate', pero también funciona como preferencia subjetiva o satisfacción general en frases como 'cada gusto' o 'un verdadero gusto'. Conviene revisar más ejemplos antes de incorporarlo como sinónimo de 'sabor'."
+    },
+    {
+      "term": "bolsa",
+      "decision": "include_aspect",
+      "category": "product_aspect",
+      "aspect_key": "presentacion",
+      "aspect_label": "Presentacion y empaque",
+      "add_terms": [],
+      "group_terms": [
+        "bolsa"
+      ],
+      "lexicon_target": "aspect",
+      "discard_reason": "",
+      "confidence": 0.9,
+      "reason": "En las reseñas se usa para hablar del envase primario del café y su funcionalidad, por ejemplo bolsa resellable, zipper o alambre. Coincide con el aspecto preferido 'presentacion'. No debe confundirse con empaque de envío."
+    },
+    {
+      "term": "capuchino",
+      "decision": "include_aspect",
+      "category": "product_aspect",
+      "aspect_key": "variedad",
+      "aspect_label": "Variedad / tipo",
+      "add_terms": [],
+      "group_terms": [
+        "capuchino"
+      ],
+      "lexicon_target": "aspect",
+      "discard_reason": "",
+      "confidence": 0.95,
+      "reason": "Refiere a una variedad o tipo/sabor del café. Ya está contemplado en el aspecto preferido 'variedad'."
+    },
+    {
+      "term": "opcion",
+      "decision": "reject",
+      "category": "too_generic",
+      "aspect_key": "",
+      "aspect_label": "",
+      "add_terms": [],
+      "group_terms": [],
+      "lexicon_target": "discard",
+      "discard_reason": "Es una evaluación global o fórmula de recomendación como 'buena opción' o 'excelente opción', no una característica específica del café.",
+      "confidence": 0.88,
+      "reason": "No describe sabor, aroma, presentación, rendimiento ni otro atributo del producto; depende de adjetivos de polaridad para expresar opinión."
+    },
+    {
+      "term": "practico",
+      "decision": "positive_lexicon",
+      "category": "positive_word",
+      "aspect_key": "",
+      "aspect_label": "",
+      "add_terms": [
+        "práctico",
+        "practica",
+        "práctica"
+      ],
+      "group_terms": [],
+      "lexicon_target": "positive",
+      "discard_reason": "",
+      "confidence": 0.86,
+      "reason": "Funciona como valoración positiva general de conveniencia. Según la guía, 'practico' no debe tratarse como aspecto de calidad del café."
+    },
+    {
+      "term": "oferta",
+      "decision": "reject",
+      "category": "purchase_context",
+      "aspect_key": "",
+      "aspect_label": "",
+      "add_terms": [],
+      "group_terms": [],
+      "lexicon_target": "discard",
+      "discard_reason": "Se refiere a promoción/precio y condición de compra, no a una característica del café.",
+      "confidence": 0.96,
+      "reason": "Los ejemplos hablan de haber comprado en oferta o de precio; debe excluirse de aspectos ABSA del producto."
+    },
+    {
+      "term": "buenisimo",
+      "decision": "positive_lexicon",
+      "category": "positive_word",
+      "aspect_key": "",
+      "aspect_label": "",
+      "add_terms": [
+        "buenísimo"
+      ],
+      "group_terms": [],
+      "lexicon_target": "positive",
+      "discard_reason": "",
+      "confidence": 0.99,
+      "reason": "Es una palabra de polaridad positiva general; no describe una característica específica del café."
+    },
+    {
+      "term": "pena",
+      "decision": "reject",
+      "category": "general_opinion",
+      "aspect_key": "",
+      "aspect_label": "",
+      "add_terms": [],
+      "group_terms": [],
+      "lexicon_target": "discard",
+      "discard_reason": "Aparece como fragmento de la expresión 'vale la pena'/'no vale la pena', que expresa valoración global o conveniencia, no un aspecto de calidad del café.",
+      "confidence": 0.93,
+      "reason": "No conviene incorporarlo como aspecto ni como polaridad aislada porque 'pena' solo no porta una polaridad estable y depende de la frase completa."
+    },
+    {
+      "term": "cafetero",
+      "decision": "reject",
+      "category": "usage_context",
+      "aspect_key": "",
+      "aspect_label": "",
+      "add_terms": [],
+      "group_terms": [],
+      "lexicon_target": "discard",
+      "discard_reason": "En los ejemplos refiere a cafetera como equipo/preparación o a identidad del consumidor ('soy cafetera'), no a una característica del café.",
+      "confidence": 0.86,
+      "reason": "Puede aparecer cerca de preparación, pero el término candidato no representa por sí mismo un aspecto de calidad del producto café."
+    },
+    {
+      "term": "chocolate",
+      "decision": "include_aspect",
+      "category": "aspect_synonym",
+      "aspect_key": "variedad",
+      "aspect_label": "Variedad / tipo",
+      "add_terms": [],
+      "group_terms": [
+        "chocolate"
+      ],
+      "lexicon_target": "aspect",
+      "discard_reason": "",
+      "confidence": 0.97,
+      "reason": "Es una variedad o perfil de sabor observado en el dominio y ya está contemplado en el aspecto preferido 'variedad'."
+    },
+    {
+      "term": "taza",
+      "decision": "uncertain",
+      "category": "usage_context",
+      "aspect_key": "rendimiento",
+      "aspect_label": "Rendimiento",
+      "add_terms": [
+        "tazas"
+      ],
+      "group_terms": [
+        "taza",
+        "tazas"
+      ],
+      "lexicon_target": "review",
+      "discard_reason": "",
+      "confidence": 0.58,
+      "reason": "Puede indicar rendimiento cuando aparece en frases como 'rinde para muchas tazas', pero aislado suele ser recipiente o contexto de consumo, no un aspecto de calidad."
+    },
+    {
+      "term": "clasico",
+      "decision": "include_aspect",
+      "category": "aspect_synonym",
+      "aspect_key": "variedad",
+      "aspect_label": "Variedad / tipo",
+      "add_terms": [
+        "clásico"
+      ],
+      "group_terms": [
+        "clasico",
+        "clásico"
+      ],
+      "lexicon_target": "aspect",
+      "discard_reason": "",
+      "confidence": 0.78,
+      "reason": "En café, 'clásico' suele referir a una variedad o línea/tipo del producto, y en los ejemplos aparece como 'Nescafé clásico' o 'sabor clásico'. Encaja mejor con el aspecto preferido 'variedad' que como polaridad."
+    },
+    {
+      "term": "empaquetado",
+      "decision": "reject",
+      "category": "purchase_context",
+      "aspect_key": "",
+      "aspect_label": "",
+      "add_terms": [],
+      "group_terms": [],
+      "lexicon_target": "discard",
+      "discard_reason": "Los ejemplos refieren a cómo llegó empacado el pedido ('bien empaquetado'), una condición de envío/compra, no a una característica intrínseca del café. Además la instrucción indica descartar empaque cuando sea contexto de compra.",
+      "confidence": 0.95,
+      "reason": "Aunque el dominio tiene 'presentación y empaque', este candidato no evalúa envase, sello o conservación del producto, sino el empaquetado logístico del envío."
+    },
+    {
+      "term": "molido",
+      "decision": "include_aspect",
+      "category": "product_aspect",
+      "aspect_key": "molienda",
+      "aspect_label": "Molienda / grado de molido",
+      "add_terms": [
+        "molienda",
+        "molida"
+      ],
+      "group_terms": [
+        "molido"
+      ],
+      "lexicon_target": "aspect",
+      "discard_reason": "",
+      "confidence": 0.9,
+      "reason": "Describe una característica propia del café: si viene molido y el grado de molido. Los ejemplos mencionan 'muy molido', 'molido perfecto' y 'molido como lo solicité'."
+    },
+    {
+      "term": "familia",
+      "decision": "reject",
+      "category": "usage_context",
+      "aspect_key": "",
+      "aspect_label": "",
+      "add_terms": [],
+      "group_terms": [],
+      "lexicon_target": "discard",
+      "discard_reason": "Se refiere a quién consume o aprecia el producto ('a mi familia le encantó'), no a una característica de calidad del café.",
+      "confidence": 0.93,
+      "reason": "No representa un aspecto del producto; es contexto de uso o destinatario de la reseña."
+    },
+    {
+      "term": "unico",
+      "decision": "positive_lexicon",
+      "category": "positive_word",
+      "aspect_key": "",
+      "aspect_label": "",
+      "add_terms": [
+        "único"
+      ],
+      "group_terms": [],
+      "lexicon_target": "positive",
+      "discard_reason": "",
+      "confidence": 0.72,
+      "reason": "En los ejemplos funciona como descriptor valorativo positivo ('olor y sabor único', 'sabor muy único') y modifica aspectos como sabor u olor, pero por sí solo no es un aspecto de calidad."
+    },
+    {
+      "term": "cafe rico",
+      "decision": "positive_lexicon",
+      "category": "positive_word",
+      "aspect_key": "",
+      "aspect_label": "",
+      "add_terms": [
+        "rico"
+      ],
+      "group_terms": [],
+      "lexicon_target": "positive",
+      "discard_reason": "",
+      "confidence": 0.78,
+      "reason": "En los ejemplos expresa valoración positiva del café, usualmente asociada al gusto, pero la frase no nombra una característica separable del producto; conviene usar 'rico' como polaridad positiva y no como aspecto."
+    },
+    {
+      "term": "bote",
+      "decision": "include_aspect",
+      "category": "aspect_synonym",
+      "aspect_key": "presentacion",
+      "aspect_label": "Presentacion y empaque",
+      "add_terms": [
+        "botes"
+      ],
+      "group_terms": [
+        "bote",
+        "botes"
+      ],
+      "lexicon_target": "aspect",
+      "discard_reason": "",
+      "confidence": 0.82,
+      "reason": "Se refiere al contenedor/formato del producto, similar a frasco, tarro o lata. En reseñas de café puede afectar presentación, tamaño percibido y conservación; se agrupa bajo presentación/empaque."
+    },
+    {
+      "term": "empaque",
+      "decision": "include_aspect",
+      "category": "product_aspect",
+      "aspect_key": "presentacion",
+      "aspect_label": "Presentacion y empaque",
+      "add_terms": [],
+      "group_terms": [
+        "empaque"
+      ],
+      "lexicon_target": "aspect",
+      "discard_reason": "",
+      "confidence": 0.86,
+      "reason": "Aunque puede confundirse con logística, en los ejemplos se evalúa el empaque del producto: óptimas condiciones, bien cuidado o apariencia pirata. Coincide con el aspecto preferido 'presentacion'."
+    },
+    {
+      "term": "cuerpo",
+      "decision": "include_aspect",
+      "category": "product_aspect",
+      "aspect_key": "intensidad",
+      "aspect_label": "Intensidad / cuerpo",
+      "add_terms": [],
+      "group_terms": [
+        "cuerpo"
+      ],
+      "lexicon_target": "aspect",
+      "discard_reason": "",
+      "confidence": 0.97,
+      "reason": "Es un atributo organoléptico propio del café y ya está contemplado en el dominio como intensidad/cuerpo. Los ejemplos hablan de falta o presencia de cuerpo."
+    },
+    {
+      "term": "super rico",
+      "decision": "positive_lexicon",
+      "category": "positive_word",
+      "aspect_key": "",
+      "aspect_label": "",
+      "add_terms": [
+        "súper rico",
+        "super rico"
+      ],
+      "group_terms": [],
+      "lexicon_target": "positive",
+      "discard_reason": "",
+      "confidence": 0.8,
+      "reason": "Es una expresión de polaridad positiva, generalmente sobre el sabor, pero no nombra un aspecto. Debe alimentar el léxico positivo; 'super/súper' funciona como intensificador."
+    },
+    {
+      "term": "caducidad",
+      "decision": "include_aspect",
+      "category": "product_aspect",
+      "aspect_key": "caducidad",
+      "aspect_label": "Caducidad / frescura",
+      "add_terms": [],
+      "group_terms": [
+        "caducidad"
+      ],
+      "lexicon_target": "aspect",
+      "discard_reason": "",
+      "confidence": 0.96,
+      "reason": "Es un aspecto propio del café y ya existe en el dominio. En los ejemplos se refiere a la fecha de caducidad/vigencia del producto, no a una fecha logística de compra."
+    },
+    {
+      "term": "excelente aroma",
+      "decision": "include_aspect",
+      "category": "aspect_synonym",
+      "aspect_key": "aroma",
+      "aspect_label": "Aroma y olor",
+      "add_terms": [
+        "aroma"
+      ],
+      "group_terms": [
+        "excelente aroma"
+      ],
+      "lexicon_target": "aspect",
+      "discard_reason": "",
+      "confidence": 0.93,
+      "reason": "La frase contiene polaridad positiva ('excelente'), pero el núcleo evaluado es 'aroma', que corresponde al aspecto preferido Aroma y olor. Conviene agruparla bajo aroma y no crear un aspecto separado 'excelente_aroma'."
+    },
+    {
+      "term": "ano",
+      "decision": "reject",
+      "category": "usage_context",
+      "aspect_key": "",
+      "aspect_label": "",
+      "add_terms": [],
+      "group_terms": [],
+      "lexicon_target": "discard",
+      "discard_reason": "En los ejemplos alude a años comprando, segundo kilo en el año o antigüedad como cliente. Es contexto de uso/compra recurrente, no una característica de calidad del café.",
+      "confidence": 0.98,
+      "reason": "No describe sabor, aroma, intensidad, presentación ni otro atributo del producto; además parece una normalización sin tilde de 'año'."
+    },
+    {
+      "term": "vainilla",
+      "decision": "include_aspect",
+      "category": "aspect_synonym",
+      "aspect_key": "variedad",
+      "aspect_label": "Variedad / tipo",
+      "add_terms": [],
+      "group_terms": [
+        "vainilla"
+      ],
+      "lexicon_target": "aspect",
+      "discard_reason": "",
+      "confidence": 0.95,
+      "reason": "Es una variedad o sabor específico del café/capuchino y ya está contemplado en el aspecto preferido Variedad / tipo."
+    },
+    {
+      "term": "sabor rico",
+      "decision": "include_aspect",
+      "category": "aspect_synonym",
+      "aspect_key": "sabor",
+      "aspect_label": "Sabor",
+      "add_terms": [
+        "sabor"
+      ],
+      "group_terms": [
+        "sabor rico"
+      ],
+      "lexicon_target": "aspect",
+      "discard_reason": "",
+      "confidence": 0.92,
+      "reason": "La frase mezcla el aspecto 'sabor' con el modificador positivo 'rico'. Debe agruparse bajo Sabor y no crear un aspecto independiente 'sabor_rico'."
+    },
+    {
+      "term": "delicioso sabor",
+      "decision": "include_aspect",
+      "category": "product_aspect",
+      "aspect_key": "sabor",
+      "aspect_label": "Sabor",
+      "add_terms": [
+        "sabor"
+      ],
+      "group_terms": [
+        "delicioso sabor"
+      ],
+      "lexicon_target": "aspect",
+      "discard_reason": "",
+      "confidence": 0.97,
+      "reason": "El núcleo aspectual es 'sabor', que coincide con el aspecto preferido del dominio. 'Delicioso' aporta polaridad positiva, pero la frase debe mapearse al aspecto Sabor."
+    },
+    {
+      "term": "gramo",
+      "decision": "include_aspect",
+      "category": "aspect_synonym",
+      "aspect_key": "tamano",
+      "aspect_label": "Tamano / cantidad",
+      "add_terms": [
+        "gramos"
+      ],
+      "group_terms": [
+        "gramo"
+      ],
+      "lexicon_target": "aspect",
+      "discard_reason": "",
+      "confidence": 0.95,
+      "reason": "Se usa para hablar de la cantidad/contenido del café, por ejemplo 170 o 400 gramos. Coincide con el aspecto preferido Tamano / cantidad."
+    },
+    {
+      "term": "fresco",
+      "decision": "include_aspect",
+      "category": "aspect_synonym",
+      "aspect_key": "caducidad",
+      "aspect_label": "Caducidad / frescura",
+      "add_terms": [
+        "frescura"
+      ],
+      "group_terms": [
+        "fresco"
+      ],
+      "lexicon_target": "aspect",
+      "discard_reason": "",
+      "confidence": 0.86,
+      "reason": "En varios ejemplos describe frescura del producto ('viene súper fresco'), por lo que encaja con Caducidad / frescura. Hay un uso contextual no aspectual ('tiempos frescos'), pero el uso dominante es de calidad del café."
+    },
+    {
+      "term": "caro",
+      "decision": "reject",
+      "category": "purchase_context",
+      "aspect_key": "",
+      "aspect_label": "",
+      "add_terms": [],
+      "group_terms": [],
+      "lexicon_target": "discard",
+      "discard_reason": "Se refiere al precio o comparación de precio, que las instrucciones indican descartar como condición de compra, no como aspecto de calidad del café.",
+      "confidence": 0.98,
+      "reason": "Aunque expresa valoración negativa, no describe una característica organoléptica ni de calidad del producto."
+    },
+    {
+      "term": "empacado",
+      "decision": "reject",
+      "category": "purchase_context",
+      "aspect_key": "",
+      "aspect_label": "",
+      "add_terms": [],
+      "group_terms": [],
+      "lexicon_target": "discard",
+      "discard_reason": "Los ejemplos hablan de cómo llegó empacado para el envío y de que no se rompió; corresponde a logística/condición de compra, no a presentación propia del café.",
+      "confidence": 0.88,
+      "reason": "No hay evidencia suficiente de que se refiera al envase original o sellado del producto; parece empaque de entrega."
+    },
+    {
+      "term": "caf",
+      "decision": "reject",
+      "category": "too_generic",
+      "aspect_key": "",
+      "aspect_label": "",
+      "add_terms": [],
+      "group_terms": [],
+      "lexicon_target": "discard",
+      "discard_reason": "Es una forma truncada o mal codificada de 'café', es decir el producto/categoría en sí, no una característica de calidad evaluable.",
+      "confidence": 0.95,
+      "reason": "Las menciones apuntan al producto completo ('excelente café', 'este café me encanta') y no a un aspecto como sabor, aroma, cuerpo, empaque o frescura."
+    },
+    {
+      "term": "mercado",
+      "decision": "reject",
+      "category": "purchase_context",
+      "aspect_key": "",
+      "aspect_label": "",
+      "add_terms": [],
+      "group_terms": [],
+      "lexicon_target": "discard",
+      "discard_reason": "Refiere al canal/contexto de compra o a una comparación comercial ('mercado libre', 'del mercado'), no a un atributo del café.",
+      "confidence": 0.92,
+      "reason": "En los ejemplos aparece asociado a Mercado Libre o a 'mejor soluble del mercado'; no describe una cualidad intrínseca del producto."
+    },
+    {
+      "term": "consumo",
+      "decision": "reject",
+      "category": "usage_context",
+      "aspect_key": "",
+      "aspect_label": "",
+      "add_terms": [],
+      "group_terms": [],
+      "lexicon_target": "discard",
+      "discard_reason": "En este dominio y ejemplos describe hábito o frecuencia de uso/ingesta, no una característica de calidad del café.",
+      "confidence": 0.88,
+      "reason": "Frases como 'lo consumo seguido' y 'producto de consumo frecuente' hablan del contexto de uso. No corresponde arrastrar el aspecto de consumo energético de otro dominio."
+    },
+    {
+      "term": "relacion",
+      "decision": "reject",
+      "category": "purchase_context",
+      "aspect_key": "",
+      "aspect_label": "",
+      "add_terms": [],
+      "group_terms": [],
+      "lexicon_target": "discard",
+      "discard_reason": "Aparece como parte de 'relación calidad precio', que mezcla valoración comercial/precio y no es un aspecto sensorial o físico del café.",
+      "confidence": 0.9,
+      "reason": "Aunque puede expresar una evaluación positiva de valor, el criterio de curaduría indica descartar precio y condiciones de compra."
+    },
+    {
+      "term": "costo",
+      "decision": "reject",
+      "category": "purchase_context",
+      "aspect_key": "",
+      "aspect_label": "",
+      "add_terms": [],
+      "group_terms": [],
+      "lexicon_target": "discard",
+      "discard_reason": "Es precio/costo, una condición de compra, no un aspecto de calidad del producto.",
+      "confidence": 0.97,
+      "reason": "Los ejemplos evalúan el producto 'por el costo' o 'excelente costo y calidad'; debe descartarse como aspecto según las reglas."
+    }
+  ],
+  "groups": [
+    {
+      "aspect_key": "sabor",
+      "aspect_label": "Sabor",
+      "terms": [
+        "sabor",
+        "sabroso",
+        "rico sabor",
+        "sabor rico",
+        "delicioso sabor"
+      ],
+      "review_terms": [
+        "excelente sabor",
+        "gusto",
+        "sabor rico",
+        "delicioso sabor"
+      ],
+      "reason": "Único candidato del lote que corresponde claramente a un aspecto intrínseco del café. 'Rico' y 'delicioso' pueden modificarlo, pero se tratan mejor como polaridad positiva.",
+      "confidence": 0.99
+    },
+    {
+      "aspect_key": "aroma",
+      "aspect_label": "Aroma y olor",
+      "terms": [
+        "aroma",
+        "olor",
+        "excelente aroma"
+      ],
+      "review_terms": [
+        "aroma",
+        "olor",
+        "excelente aroma"
+      ],
+      "reason": "Términos que describen olor, fragancia o aroma del café.",
+      "confidence": 0.99
+    },
+    {
+      "aspect_key": "intensidad",
+      "aspect_label": "Intensidad / cuerpo",
+      "terms": [
+        "fuerte",
+        "intenso",
+        "suave",
+        "cuerpo"
+      ],
+      "review_terms": [
+        "fuerte",
+        "sabor muy intenso",
+        "no es intenso",
+        "cuerpo"
+      ],
+      "reason": "Agrupa menciones sobre fuerza, intensidad o cuerpo percibido en el café.",
+      "confidence": 0.98
+    },
+    {
+      "aspect_key": "originalidad",
+      "aspect_label": "Originalidad / autenticidad",
+      "terms": [
+        "original"
+      ],
+      "review_terms": [],
+      "reason": "Términos sobre autenticidad del producto, coincidentes con el aspecto preferido del dominio.",
+      "confidence": 0.9
+    },
+    {
+      "aspect_key": "preparacion",
+      "aspect_label": "Preparacion / disolucion",
+      "terms": [],
+      "review_terms": [
+        "frio",
+        "facil"
+      ],
+      "reason": "'facil' requiere revisión porque solo debería incorporarse cuando aparezca en frases aspectuales como 'fácil de preparar' o 'fácil de disolver'.",
+      "confidence": 0.62
+    },
+    {
+      "aspect_key": "tamano",
+      "aspect_label": "Tamano / cantidad",
+      "terms": [
+        "tamano",
+        "cantidad",
+        "gramo",
+        "gramos"
+      ],
+      "review_terms": [
+        "tamaño",
+        "frasco de 170 gramos",
+        "gramo"
+      ],
+      "reason": "Agrupa menciones sobre tamaño, contenido o cantidad del producto.",
+      "confidence": 0.97
+    },
+    {
+      "aspect_key": "presentacion",
+      "aspect_label": "Presentacion y empaque",
+      "terms": [
+        "presentacion",
+        "frasco",
+        "sellado",
+        "bolsa",
+        "bote",
+        "botes",
+        "empaque"
+      ],
+      "review_terms": [
+        "frasco",
+        "sellado",
+        "bote",
+        "empaque"
+      ],
+      "reason": "Único candidato del lote que corresponde claramente a un aspecto de calidad del dominio café y coincide con los aspectos preferidos.",
+      "confidence": 0.98
+    },
+    {
+      "aspect_key": "rendimiento",
+      "aspect_label": "Rendimiento",
+      "terms": [
+        "rendidor"
+      ],
+      "review_terms": [
+        "rendidor",
+        "taza",
+        "tazas"
+      ],
+      "reason": "Agrupa menciones sobre cuánto rinde o alcanza el café.",
+      "confidence": 0.98
+    },
+    {
+      "aspect_key": "dulzor",
+      "aspect_label": "Dulzor / amargor",
+      "terms": [
+        "azucar",
+        "dulce"
+      ],
+      "review_terms": [
+        "azucar"
+      ],
+      "reason": "Agrupa menciones sobre nivel de dulzor del café.",
+      "confidence": 0.98
+    },
+    {
+      "aspect_key": "variedad",
+      "aspect_label": "Variedad / tipo",
+      "terms": [
+        "capuchino",
+        "chocolate",
+        "clasico",
+        "clásico",
+        "vainilla"
+      ],
+      "review_terms": [
+        "clasico",
+        "vainilla"
+      ],
+      "reason": "El término identifica una variedad o perfil del café.",
+      "confidence": 0.97
+    },
+    {
+      "aspect_key": "molienda",
+      "aspect_label": "Molienda / grado de molido",
+      "terms": [
+        "molido"
+      ],
+      "review_terms": [
+        "molido"
+      ],
+      "reason": "Agrupa menciones sobre si el café viene molido y sobre la finura o adecuación del molido.",
+      "confidence": 0.9
+    },
+    {
+      "aspect_key": "caducidad",
+      "aspect_label": "Caducidad / frescura",
+      "terms": [
+        "caducidad",
+        "fresco",
+        "frescura"
+      ],
+      "review_terms": [
+        "caducidad",
+        "fresco"
+      ],
+      "reason": "Agrupa menciones sobre vigencia, vencimiento o frescura temporal del café.",
+      "confidence": 0.96
+    }
+  ],
+  "domain_notes": [
+    "'Agradable' conviene al lexicón positivo porque modifica aspectos como sabor o aroma sin nombrarlos.",
+    "'Cafe' es el producto/categoría y 'precio' es contexto de compra; ambos se descartan como aspectos.",
+    "'Caro' debe quedar fuera del lexicón de aspectos porque pertenece a precio.",
+    "'Empacado' solo debería mapearse a Presentacion y empaque si las reseñas hablan del envase original, sellado, bolsa, frasco o conservación del café; en este lote se usa como empaque de envío.",
+    "'Favorito' debe tratarse como polaridad positiva/preferencia, no como aspecto.",
+    "'Frio' es ambiguo: puede indicar temperatura de preparación/consumo o contexto climático, por eso no conviene aceptarlo automáticamente.",
+    "'Marca' no debe incorporarse como aspecto de calidad del café salvo que el proyecto tenga un eje explícito de marca, que aquí no aparece entre los aspectos preferidos.",
+    "'Molido' puede requerir un aspecto nuevo de molienda porque no encaja de forma precisa en preparación/disolución: describe el estado o grado físico del grano/café.",
+    "'Oferta' y precio/promoción deben quedar fuera de aspectos de producto.",
+    "'Opcion' y 'practico' son evaluaciones globales o polaridad/conveniencia, no aspectos específicos del café.",
+    "'ano/año' no debe incorporarse como aspecto porque refleja tiempo de compra o consumo recurrente, no una propiedad del café.",
+    "'riquisimo' y 'excelente cafe' deben alimentar el lexicón positivo, no el lexicón de aspectos.",
+    "'Único' aparece como polaridad positiva aplicada a sabor/aroma, no como aspecto independiente.",
+    "Adjetivos como 'rico' y 'delicioso' conviene agregarlos al léxico positivo, no como aspectos.",
+    "Aunque 'consumo' aparece en reglas configuradas de otros dominios como consumo energético, en café los ejemplos no sustentan ese aspecto; aquí se interpreta como uso/ingesta.",
+    "Conviene separar frases mixtas de aspecto y polaridad: en 'rico sabor', el aspecto es 'sabor' y 'rico' es valoración positiva.",
+    "En Cafe, los términos organolépticos como 'sabor' deben conservarse como aspectos cuando nombran la característica evaluada.",
+    "En café, 'leche' suele ser contexto de consumo y no debe tratarse como aspecto salvo que el análisis busque explícitamente recetas o maridajes.",
+    "En café, 'rico' suele funcionar como opinión positiva asociada al sabor, pero no conviene registrarlo como aspecto si aparece como adjetivo evaluativo.",
+    "En café, adjetivos como 'sabroso' pueden aportar señal de aspecto de sabor, pero conviene vigilar que no se mezclen con polaridad puramente general.",
+    "En café, adjetivos sensoriales como 'dulce' y 'suave' pueden expresar valores de aspecto y no solo polaridad; deben mapearse a dulzor e intensidad cuando describen el perfil del producto.",
+    "En café, expresiones como 'frío o caliente' suelen indicar modo de consumo, no calidad del producto.",
+    "En café, términos como intenso pueden ser aspectos descriptivos aunque la preferencia dependa del consumidor.",
+    "Expresiones como 'vale la pena' son evaluación global de conveniencia y no aspecto del producto.",
+    "Frases como 'excelente aroma' y 'sabor rico' deben separarse conceptualmente: el sustantivo indica el aspecto y el adjetivo aporta polaridad.",
+    "Las expresiones 'cafe rico' y 'super rico' deben tratarse como polaridad positiva; si la oración menciona explícitamente sabor, el aspecto será 'sabor'.",
+    "Los momentos de consumo como 'mañana' deben tratarse como contexto de uso y descartarse como aspecto.",
+    "No crear aspectos separados con modificadores de polaridad como 'excelente'. En frases como 'excelente sabor', el aspecto es 'sabor' y la polaridad es positiva.",
+    "No se consolidan grupos de aspecto en este lote porque los candidatos corresponden al producto genérico, canal de compra, precio/valor o contexto de consumo.",
+    "Palabras como exquisito deben ir al lexicón positivo, no al de aspectos.",
+    "Para 'empaque', distinguir empaque del producto de problemas de envío. En este lote los ejemplos apoyan el uso como aspecto de presentación.",
+    "Para café conviene distinguir 'empaque/envase' como característica del producto de 'empaquetado' como condición logística del envío; en este lote 'empaquetado' corresponde a envío y se descarta.",
+    "Para café, 'caducidad' debe conservarse como aspecto cuando aparece asociado a vencimiento o vigencia del producto, aunque contenga la palabra 'fecha'.",
+    "Para café, 'sabor', 'frescura' y 'cantidad en gramos' son aspectos de producto defendibles.",
+    "Para café, los candidatos sensoriales como olor/aroma y azúcar/dulzor deben mapearse a los aspectos preferidos existentes cuando coincidan.",
+    "Para café, sabores específicos como chocolate deben agruparse bajo 'variedad' cuando funcionan como tipo o perfil de sabor.",
+    "Para este dominio, 'bolsa' puede ser aspecto de presentación si refiere al envase del café; si refiere a envío o paquetería debe descartarse como contexto de compra.",
+    "Precio o conveniencia económica, como 'barato', debe quedar fuera del lexicón de aspectos del producto.",
+    "Precio y marcas como Nescafe deben descartarse como aspectos de calidad del producto.",
+    "Términos como 'condición' en este lote describen estado de llegada/entrega, no frescura ni caducidad del café.",
+    "Términos como 'mejor' son polaridad general y no deben convertirse en aspectos.",
+    "Términos de consumo como 'taza' requieren contexto de rendimiento; no deberían disparar aspecto por sí solos.",
+    "Términos de contexto como 'casa' o medios de preparación genéricos como 'agua' no son atributos de calidad por sí solos.",
+    "Términos de precio o conveniencia como 'económico' deben descartarse según las reglas de curaduría configuradas.",
+    "Términos polisémicos como 'gusto' requieren revisión contextual antes de agregarse al lexicón de aspectos."
+  ]
+}

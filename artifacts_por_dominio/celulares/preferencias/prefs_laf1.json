@@ -1,0 +1,10 @@
+{
+  "bateria": 0.8,
+  "camara": 0.75,
+  "pantalla": 0.65,
+  "rendimiento": 0.25,
+  "almacenamiento": 0.65,
+  "diseño": 0.3,
+  "software": 0.3,
+  "señal": 0.2
+}

@@ -1,0 +1,7 @@
+% EJEMPLO SINTETICO; no representa el corpus ni valida calidad.
+saborBueno(ejemplo). {0.80}
+~saborBueno(ejemplo). {0.20}
+aromaBueno(ejemplo). {0.60}
+recomendarPorSabor(X) :- saborBueno(X). {1}
+~recomendarPorSabor(X) :- ~saborBueno(X). {1}
+~recomendarPorSabor(X) :- aromaBueno(X). {0.50}

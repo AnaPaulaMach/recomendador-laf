@@ -1,0 +1,17 @@
+# Dependencias y estado local
+node_modules/
+.vite/
+db.sqlite3
+.env
+
+# Salidas generadas
+server.*.log
+recommender/static/dist/
+staticfiles/
+reports/*
+!reports/validated/
+!reports/validated/**
+
+# Tooling local
+coverage/
+*.tsbuildinfo

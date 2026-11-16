@@ -1,0 +1,36 @@
+{
+  "datasets": [
+    {
+      "key": "dominio_demo_2026",
+      "label": "Dataset de demostración",
+      "description": "Fixture genérico para comprobar la arquitectura multidominio."
+    }
+  ],
+  "product_names": {},
+  "products": [],
+  "listings": [],
+  "graph": {
+    "graph_id": "default-demo",
+    "root_id": "conclusion:recomendar",
+    "total_nodes": 1,
+    "total_edges": 0,
+    "available_filters": {},
+    "nodes": [
+      {
+        "id": "conclusion:recomendar",
+        "label": "Sin evaluación disponible",
+        "node_type": "conclusion",
+        "literal": "recomendar(producto)",
+        "polarity": "neutral",
+        "confidence": 0,
+        "preference": 0,
+        "accumulated_value": 0,
+        "weakened_value": 0,
+        "acceptability_status": "undetermined",
+        "evidence_count": 0,
+        "metadata": {}
+      }
+    ],
+    "edges": []
+  }
+}

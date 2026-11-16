@@ -1,0 +1,670 @@
+{
+  "_curation_notes": [
+    "Perfil de dominio Cafe curado a partir de domain_discovery_cafe.csv + llm_suggestions_cafe.json.",
+    "Curaduria propuesta por asistente para revision de la experta (paso 1b). Ajustar en 04_domain_review.py y documentar decisiones.",
+    "Decisiones v8 (redescubrimiento sobre corpus depurado): tras excluir 2 productos ajenos al dominio y analizar las 12050 resenas incluidas, el LLM propuso 'molienda/grado de molido'. La experta acepto incorporarlo: aparece en 47 resenas con ejemplos positivos y negativos claros y representa una caracteristica intrinseca del cafe molido. Se integra en la dimension elaboracion con peso conservador por su aplicabilidad parcial a productos solubles.",
+    "Decisiones v1: (1) sinonimos agrupados por aspecto; (2) palabras de OPINION (rico, delicioso, exquisito, sabroso, riquisimo, agradable) movidas a lexicon.positive; (3) ruido descartado (casa, gracia, duda, pena, condicion, agua, cafe-como-producto).",
+    "Decisiones v2 (tras LLM): (4) se agrego el aspecto 'caducidad/frescura' (relevante en alimentos, sugerido por el LLM); (5) se saco 'precio' de quality_aspects porque es condicion de compra (LAF 2), no atributo del producto (LAF 1); queda solo en purchase_aspects; (6) 'origen/procedencia' (Veracruz) queda como candidato no incluido por ahora.",
+    "El LLM (llm_suggestions_cafe.json) coincidio de forma independiente con la agrupacion manual y con mover rico/delicioso a polaridad positiva.",
+    "Decisiones v3 (tras 1a corrida de 05): la polaridad negativa daba 1% (rompe la dialectica). Un scan del corpus mostro quejas no capturadas. Se agregaron negativos de cafe (quemado, artificial, grumos, 'no me gusto', 'muy poco', 'no se disuelve', 'sabe mal', 'no recomiendo', etc.) y el verbo 'sabe' al aspecto sabor (sube cobertura). NO se agrego 'caro' porque es precio -> LAF 2.",
+    "Decisiones v5 (tras test de negacion): se agregaron 'buen' y 'gran' a positivos (apocopes muy frecuentes: 'buen sabor', 'gran aroma') que quedaban sin detectar y contaban como neutral. Se verifico que la negacion funciona: 'el sabor no es feo' -> positivo.",
+    "Decisiones v4 (evidencia del corpus): 'amargo' NO se trata como negativo fijo. En 46 oraciones con 'amargo', ~22 son positivas/neutras ('buen amargor', 'amargo pero riquisimo', 'sin ser amargo', 'equilibrio de amargor') y ~16 negativas ('extremadamente amargo', 'super amargo y feo'). Por eso 'amargo/amarga' queda SOLO como termino del aspecto 'dulzor'; la polaridad la deciden las palabras del contexto. Decision de curaduria basada en evidencia.",
+    "Decisiones v6 (reglas del experto, OE3): se agrego 'laf1_rule_structure' jerarquico con 5 dimensiones (sensorial, valor, producto, elaboracion, conservacion). La fuerza alpha modela confianza estructural y beta un umbral de importancia estructural definido por el experto; no es el slider del usuario. El nivel evidencia->aspecto queda en 0.85 constante (fiabilidad del pipeline, no del argumento). Asimetria positiva/negativa: sabor, originalidad y caducidad tienen negative_confidence mas alto porque un mal sabor, la adulteracion o el vencimiento son motivos fuertes de NO recomendar. El bucle experto se ejecuta offline: 06a materializa, 06b revisa, 06c compila y 06d valida/congela; luego 08 solo instancia la categoria para un usuario.",
+    "Decisiones v7 (revision LLM del Paso 3, 09): el LLM aprobo la arquitectura jerarquica (mantener las 5 dimensiones, la asimetria valor/elaboracion sin ataque, y la frontera LAF1/LAF2) y solo objeto que el nivel de AGREGACION (evidencia->aspecto, reglas aspectoBueno :- resenaPositivaAspecto) conserva alpha=0.85 y beta de preferencias del usuario, distinto de la config experta de los niveles superiores. DECISION EXPERTA: se RECHAZA esa sugerencia con fundamento. El alpha del nivel de agregacion NO modela importancia del aspecto sino la FIABILIDAD DE EXTRACCION del aspecto en las reseñas (procesamiento de texto), que es homogenea entre aspectos -> se mantiene 0.85 constante. La importancia/preferencia vive en los niveles superiores (aspecto->dimension y dimension->recomendar), que si llevan la config experta. Poner alpha por aspecto en agregacion confundiria 'importancia' con 'confianza de deteccion'. Es un caso de experto que anula una propuesta del LLM con justificacion (human-in-the-loop). Registrado en config/laf_rule_review_decisions.json.",
+    "Decisiones v9 (auditoria de polaridad multiaspecto): se corrigio el alcance de negacion para no cruzar puntuacion/coordinaciones ni interpretar 'sin duda' como negacion. Se priorizan frases completas sobre sus componentes ('no recomiendo' sobre 'recomiendo'), se separan conectores adversativos aun sin espacios y se asocian senales de opinion al aspecto mas cercano. Los fallbacks globales conservan menor confianza. La auditoria y su procedencia se registran en config/aspect_polarity_audit_decisions_cafe.json.",
+    "Decisiones v10 (preferencia exclusivamente del usuario): se neutralizan en 1.0 todos los beta estructurales de LAF 1. La experta conserva la definicion de la estructura y de alpha; la preferencia efectiva se origina unicamente en los sliders del paso 07. Esta decision reemplaza la semantica de beta experto documentada en v6-v7.",
+    "Decisiones v11 (familia de datasets): el corpus historico Cafe de Mexico contiene productos solubles y productos tostados/molidos. La metodologia se conserva como perfil comun de cafe; los snapshots nuevos se seleccionan por pais, tipo y fecha, sin mezclar paises ni tipos en un mismo ranking.",
+    "Decisiones v12 (auditoria grano/molido Mexico-Colombia): se incorporan tueste y acidez como aspectos sensoriales. Tueste aparece en 256 resenas y 18/19 productos de Mexico, y en 62 resenas y 14/16 productos de Colombia; acidez aparece en 104 resenas y 16/19 productos de Mexico, y en 13 resenas y 6/16 productos de Colombia. Ambos tienen usos valorativos y preferencias explicitas. Origen/procedencia no se incorpora: solo aparece en 2 resenas/2 productos de Mexico y 4 resenas/3 productos de Colombia. Cuerpo, molienda y frescura ya estaban cubiertos por intensidad, molienda y caducidad. Evidencia: reportes domain_discovery_cafe_grano_mx_20260805 y domain_discovery_cafe_grano_co_20260805.",
+    "Decisiones v13 (presentacion al usuario): los rótulos 'Calidad del tueste' y 'Valoracion de la acidez' aclaran que el slider pondera opiniones favorables y no selecciona un nivel. La app muestra un aspecto solo cuando product_aspect_trust contiene evidencia de la estrategia elegida en al menos 2 productos y 3 resenas agregadas del snapshot.",
+    "Decisiones v14 (validacion humana de extraccion): sobre 20 resenas y 47 extracciones, la experta identifico como debilidad principal la polaridad contextual. Se compone 'no sabe' con su descriptor para evitar contradicciones artificiales, las frases cerradas se restringen a su aspecto, una recomendacion puede alcanzar al unico aspecto de la clausula y se agregan 'practico/practica' como valoraciones positivas. Se excluyen explicitamente los contextos revisados 'rendimiento del bolsillo', 'no me sabe a caramelo' como sabor y 'no es como comprar autentico grano molido'. Las respuestas negativas breves pueden invertir la pregunta anterior y las senales sabroso/rico se vinculan semanticamente con sabor. Once pruebas de regresion representan estas decisiones y conviven con las pruebas previas. La omision 'exelente cafe' no se generaliza a sabor: una prueba de impacto mostro que esa regla agregaria 237 extracciones y confunde elogio general con atributo sensorial.",
+    "Decisiones v15 (segunda tanda de validacion, 20 resenas / 36 extracciones, 5 spurious): se corrigen tres falsos positivos que SI llegaban a LAF (los neutrales se descartan en 06_trust y no contaminan). (1) Idioma: se generaliza NEGATION_IDIOMS a locuciones de mas de dos palabras y se agrega 'no tiene pierde' para que 'no' no invierta el descriptor siguiente (caso 4, quitaba un sabor neg falso). (2) Composicion: 'no contiene/tiene azucar' se excluye del aspecto dulzor porque describe la composicion, no valora el dulzor (caso 13, quitaba un dulzor pos falso). Se deja fuera 'sin azucar' a secas para no perder positivos genuinos. (3) Comparacion: nuevo mecanismo 'comparison_reference_markers' que corta la clausula referida a OTRO producto ('este cafe sabe bueno y el nescafe normal sabe malo' -> solo se conserva la opinion del producto reseñado, caso 11, quitaba un sabor neg falso). El corte solo actua si existe una clausula previa del producto reseñado, para nunca descartar la opinion propia. Medicion de impacto sobre las 40 resenas de desarrollo: 3 extracciones quitadas (exactamente las 3 espurias objetivo), 0 colateral, 37/40 resenas identicas. Ocho pruebas de regresion nuevas. Se agrega un cuarto fix (caso 3, 155107): el marco 'lo (unico) malo/bueno es que ...' introduce una valoracion sobre la clausula que SIGUE a 'es que'; esa senal solo se asigna hacia adelante y no a un aspecto anterior ('...el sabor lo unico malo es que la publicidad...' ya no marca sabor neg). Medicion acumulada de los cuatro fixes sobre las 40 resenas: 4 extracciones quitadas (las 4 espurias objetivo), 0 colateral, 36/40 identicas. Limitaciones declaradas: la comparacion general requiere resolucion de entidades y aqui se cubre con marcadores lexicos (incluida la linea base 'nescafe normal/clasico' propia del dominio). PENDIENTE con decision de la experta: caso 9 (un 'muy malo' global se derrama por fallback sobre sustantivos-contenedor como bolsa/frasco). El fix principista (tratar bolsa/frasco/lata/tarro como terminos descriptivos que no absorben senal global) tambien afectaria el test aceptado en v14 'muy practico ... mi frasco de vidrio anterior' (donde 'frasco' es el envase propio de la usuaria, no del producto): ambos son el mismo fenomeno con distinto signo. No se aplica unilateralmente porque contradice una decision v14 documentada; requiere que la experta decida si 'practico ... frasco propio' tambien debe dejar de generar presentacion pos. Falta la corrida de impacto sobre el corpus completo (12050 resenas) via 05_aspects.py, que requiere Supabase.",
+    "Decisiones v16 (tras la tercera muestra ciega, 30 resenas): la muestra ciega midio polaridad 82% y casos completos 70% (bajo target 90/80), pero solo 6 de 20 errores corrompen LAF (el resto son neutrales que 06_trust descarta). Se corrigen dos patrones limpios detectados: (2) verbo positivo en pasado no lexicalizado: se agrega 'encanto'/'me encanto' a positivos ('me encanto el aroma, el sabor' ya no queda neutral; estaba solo 'encanta'). (3) 'mas a chocolate' se quita de negativos: describe el sabor, no valora negativamente la variedad; ahora 'sabe mas a chocolate' da variedad neutral (la variedad sigue siendo positiva/negativa si hay un descriptor local, p.ej. 'chocolate delicioso'). Nota de honestidad: las anotaciones de la experta se contradijeron en 'mas a chocolate' (caso 6 aceptado como variedad neg; casos 2 y 15 marcados como error); la experta decidio mantener el fix (variedad neutral uniforme) porque en los tres el resenador no critica la variedad. Medicion aislada de v16 sobre 70 resenas (40 desarrollo + 30 ciega): 5 resenas cambian, total sin cambio (141->141), solo correccion de polaridad; 0 extracciones netas agregadas o perdidas. Tres pruebas de regresion nuevas (52 en total). Pendiente NO abordado: patron de clausula condicional leida como negativa ('si no les gusta X no lo compren', casos 16 y 19) por ser dificil; y el caso 30 ('muy rico'->sabor implicito) NO se toca por ser el mismo tradeoff rechazado en v14. Tras v16 se reproceso y recongelo igual que v15.",
+    "Decisiones v17 (completar lexico tras la 4a muestra ciega): se agregan variantes morfologicas de positivos que ya estaban en el lexicon pero faltaban en su forma flexionada: 'agrada'/'me agrada' (verbo de 'agradable') y 'excelencia' (sustantivo de 'excelente'). Corrige sub-extracciones de la 4a muestra (casos 15 y 20) que quedaban neutrales. NO se agrega 'ok' porque es ambiguo ('esta ok' = mediocre) y no es variante de un positivo existente; queda como limitacion documentada. Decision metodologica: se detiene el ajuste de extraccion aqui. Dos muestras ciegas coinciden en ~83% de polaridad; el resto de los errores son fenomenos linguisticos dificiles (comparacion con otro producto, alcance de negacion, homonimos como 'se sabe que', lexico auto-polar dependiente de contexto como 'sellado'/'prefiero') que un extractor por reglas no resuelve sin resolucion de entidades ni desambiguacion, y perseguir el 90% seria sobreajustar a las muestras o gamear la metrica. El ~83% con su taxonomia de errores es el resultado honesto y defendible para un sistema explicable. v17 NO se re-mide con una 5a muestra: es completado de lexico, no una nueva iteracion. Se reproceso y recongelo."
+  ],
+  "domain_key": "cafe",
+  "display_name": "Cafe",
+  "dataset_category_labels": [
+    "Cafe",
+    "Cafe instantaneo",
+    "Cafe instantaneo c",
+    "Cafe en granos y molido"
+  ],
+  "product_label": "producto",
+  "item_label": "publicacion",
+  "quality_aspects": {
+    "sabor": {
+      "label": "Sabor",
+      "icon": ""
+    },
+    "aroma": {
+      "label": "Aroma y olor",
+      "icon": ""
+    },
+    "intensidad": {
+      "label": "Intensidad / cuerpo",
+      "icon": ""
+    },
+    "dulzor": {
+      "label": "Dulzor / amargor",
+      "icon": ""
+    },
+    "tueste": {
+      "label": "Calidad del tueste",
+      "icon": ""
+    },
+    "acidez": {
+      "label": "Valoración de la acidez",
+      "icon": ""
+    },
+    "presentacion": {
+      "label": "Presentacion y empaque",
+      "icon": ""
+    },
+    "rendimiento": {
+      "label": "Rendimiento",
+      "icon": ""
+    },
+    "variedad": {
+      "label": "Variedad / tipo",
+      "icon": ""
+    },
+    "preparacion": {
+      "label": "Preparacion / disolucion",
+      "icon": ""
+    },
+    "molienda": {
+      "label": "Molienda / grado de molido",
+      "icon": ""
+    },
+    "originalidad": {
+      "label": "Originalidad / autenticidad",
+      "icon": ""
+    },
+    "tamano": {
+      "label": "Tamano / cantidad",
+      "icon": ""
+    },
+    "caducidad": {
+      "label": "Caducidad / frescura",
+      "icon": ""
+    }
+  },
+  "purchase_aspects": {
+    "precio": "Precio bajo (menor precio = mejor)",
+    "descuento": "Descuento sobre precio original",
+    "cuotas": "Financiacion (cuotas sin interes)",
+    "garantia": "Garantia",
+    "tienda_oficial": "Tienda oficial del fabricante",
+    "factura": "Factura",
+    "envio": "Envio gratuito"
+  },
+  "catalog_aspect_map": {},
+  "ui": {
+    "laf1_page_title": "Que buscas en un cafe?",
+    "laf1_title": "Que buscas en un cafe?",
+    "laf1_caption": "Indica que tan importante es cada aspecto para vos. El sistema va a recomendar productos segun estas preferencias.",
+    "laf1_next_info": "Ahora corres python src/08_laf1_generate.py para ver el ranking de productos.",
+    "laf2_page_title": "Como queres comprarlo?",
+    "laf2_title": "Como queres comprarlo?",
+    "laf2_purchase_title": "Que condiciones de compra te importan?",
+    "laf2_next_info": "Ahora corres python src/10_laf2_generate.py para ver el ranking de publicaciones."
+  },
+  "laf": {
+    "system_description": "Sistema argumentativo de recomendacion de cafe",
+    "author_line": "Trabajo Final - Ana Paula Machado - UNSE"
+  },
+  "laf1_rule_structure": {
+    "mode": "hierarchical",
+    "beta_semantics": "user_only_structural_neutral",
+    "unassigned_aspect_policy": "direct",
+    "direct_recommendation_confidence": 0.75,
+    "_expert_notes": "La experta fija la estructura y alpha (confianza estructural). Todos los beta de reglas son neutrales (1.0): la preferencia proviene unicamente de los sliders del usuario en 07. 06c compila solo alpha.",
+    "dimensions": {
+      "sensorial": {
+        "label": "Experiencia sensorial",
+        "aspects": [
+          {
+            "aspect": "sabor",
+            "confidence": 0.9,
+            "preference": 1.0,
+            "negative_confidence": 0.92
+          },
+          {
+            "aspect": "aroma",
+            "confidence": 0.85,
+            "preference": 1.0
+          },
+          {
+            "aspect": "intensidad",
+            "confidence": 0.8,
+            "preference": 1.0
+          },
+          {
+            "aspect": "dulzor",
+            "confidence": 0.8,
+            "preference": 1.0
+          },
+          {
+            "aspect": "tueste",
+            "confidence": 0.85,
+            "preference": 1.0,
+            "negative_confidence": 0.88,
+            "negative_preference": 1.0
+          },
+          {
+            "aspect": "acidez",
+            "confidence": 0.85,
+            "preference": 1.0,
+            "negative_confidence": 0.85,
+            "negative_preference": 1.0
+          }
+        ],
+        "recommend": {
+          "confidence": 0.9,
+          "preference": 1.0
+        },
+        "not_recommend": {
+          "confidence": 0.92,
+          "preference": 1.0
+        }
+      },
+      "valor": {
+        "label": "Rendimiento y valor",
+        "aspects": [
+          {
+            "aspect": "rendimiento",
+            "confidence": 0.85,
+            "preference": 1.0
+          },
+          {
+            "aspect": "tamano",
+            "confidence": 0.75,
+            "preference": 1.0
+          }
+        ],
+        "recommend": {
+          "confidence": 0.8,
+          "preference": 1.0
+        },
+        "not_recommend": {
+          "confidence": 0.8,
+          "preference": 1.0
+        }
+      },
+      "producto": {
+        "label": "Producto y presentacion",
+        "aspects": [
+          {
+            "aspect": "originalidad",
+            "confidence": 0.88,
+            "preference": 1.0,
+            "negative_confidence": 0.9
+          },
+          {
+            "aspect": "presentacion",
+            "confidence": 0.8,
+            "preference": 1.0
+          },
+          {
+            "aspect": "variedad",
+            "confidence": 0.75,
+            "preference": 1.0
+          }
+        ],
+        "recommend": {
+          "confidence": 0.78,
+          "preference": 1.0
+        },
+        "not_recommend": {
+          "confidence": 0.9,
+          "preference": 1.0
+        }
+      },
+      "elaboracion": {
+        "label": "Preparacion y molienda",
+        "aspects": [
+          {
+            "aspect": "preparacion",
+            "confidence": 0.8,
+            "preference": 1.0,
+            "negative_confidence": 0.85
+          },
+          {
+            "aspect": "molienda",
+            "confidence": 0.8,
+            "preference": 1.0,
+            "negative_confidence": 0.85,
+            "negative_preference": 1.0
+          }
+        ],
+        "recommend": {
+          "confidence": 0.75,
+          "preference": 1.0
+        },
+        "not_recommend": {
+          "confidence": 0.75,
+          "preference": 1.0
+        }
+      },
+      "conservacion": {
+        "label": "Conservacion",
+        "aspects": [
+          {
+            "aspect": "caducidad",
+            "confidence": 0.85,
+            "preference": 1.0,
+            "negative_confidence": 0.92
+          }
+        ],
+        "recommend": {
+          "confidence": 0.78,
+          "preference": 1.0
+        },
+        "not_recommend": {
+          "confidence": 0.92,
+          "preference": 1.0
+        }
+      }
+    },
+    "_compiled_at": [
+      "2026-08-12T13:07:05 (1 modificadas, 0 nuevas)",
+      "2026-08-12T15:00:23 (2 modificadas, 0 nuevas)"
+    ]
+  },
+  "aspect_context_exclusions": {
+    "sabor": [
+      "no me sabe a caramelo",
+      "no sabe a caramelo"
+    ],
+    "dulzor": [
+      "no contiene azucar",
+      "no contiene azúcar",
+      "no tiene azucar",
+      "no tiene azúcar"
+    ],
+    "rendimiento": [
+      "rendimiento de su bolsillo",
+      "rendimiento de mi bolsillo",
+      "rendimiento de tu bolsillo",
+      "rendimiento del bolsillo"
+    ],
+    "molienda": [
+      "no es como comprar autentico grano molido",
+      "no es como comprar auténtico grano molido"
+    ],
+    "originalidad": [
+      "no es como comprar autentico grano molido",
+      "no es como comprar auténtico grano molido"
+    ]
+  },
+  "aspect_polarity_links": {
+    "originalidad": [
+      "presentacion"
+    ]
+  },
+  "comparison_reference_markers": [
+    "otro cafe",
+    "otros cafes",
+    "otro nescafe",
+    "otra marca",
+    "otras marcas",
+    "otro producto",
+    "el otro",
+    "la otra",
+    "el normal",
+    "el comun",
+    "el común",
+    "nescafe normal",
+    "nescafé normal",
+    "nescafe clasico",
+    "nescafé clásico",
+    "comparado con",
+    "en comparacion con",
+    "en comparación con",
+    "a diferencia de"
+  ],
+  "polarity_aspect_hints": {
+    "sabor": [
+      "rico",
+      "rica",
+      "riquisimo",
+      "riquísima",
+      "sabroso",
+      "sabrosa"
+    ]
+  },
+  "lexicon": {
+    "aspects": {
+      "sabor": [
+        "sabor",
+        "sabe",
+        "saborcito",
+        "paladar",
+        "sabores"
+      ],
+      "aroma": [
+        "aroma",
+        "aromatico",
+        "aromático",
+        "olor",
+        "fragancia",
+        "huele"
+      ],
+      "intensidad": [
+        "intensidad",
+        "fuerte",
+        "suave",
+        "intenso",
+        "cargado",
+        "ligero",
+        "concentrado",
+        "cuerpo",
+        "fuerza"
+      ],
+      "dulzor": [
+        "dulzor",
+        "dulce",
+        "azucar",
+        "azúcar",
+        "endulzado",
+        "amargo",
+        "amargor",
+        "amarga"
+      ],
+      "tueste": [
+        "tueste",
+        "tostado",
+        "tostada",
+        "tostion",
+        "tostión",
+        "nivel de tueste",
+        "nivel de tostion",
+        "nivel de tostión"
+      ],
+      "acidez": [
+        "acidez",
+        "acido",
+        "ácido",
+        "acida",
+        "ácida",
+        "acidito",
+        "acidita"
+      ],
+      "presentacion": [
+        "presentacion",
+        "presentación",
+        "empaque",
+        "sellado",
+        "sello",
+        "envase",
+        "bolsa",
+        "frasco",
+        "tarro",
+        "lata",
+        "paquete"
+      ],
+      "rendimiento": [
+        "rendimiento",
+        "rendidor",
+        "rinde",
+        "rendir",
+        "cunde",
+        "alcanza",
+        "dura"
+      ],
+      "variedad": [
+        "variedad",
+        "vainilla",
+        "chocolate",
+        "capuchino",
+        "moka",
+        "caramelo",
+        "avellana",
+        "descafeinado"
+      ],
+      "molienda": [
+        "molienda",
+        "molido",
+        "molida",
+        "grado de molienda",
+        "grado de molido"
+      ],
+      "preparacion": [
+        "preparacion",
+        "preparación",
+        "disuelve",
+        "disolver",
+        "soluble",
+        "instantaneo",
+        "instantáneo",
+        "espuma",
+        "grumos",
+        "crema"
+      ],
+      "originalidad": [
+        "originalidad",
+        "original",
+        "autentico",
+        "auténtico",
+        "autenticidad",
+        "falsificado",
+        "imitacion",
+        "imitación",
+        "pirata",
+        "adulterado"
+      ],
+      "tamano": [
+        "tamano",
+        "tamaño",
+        "cantidad",
+        "gramos",
+        "gramo",
+        "kilo",
+        "contenido"
+      ],
+      "caducidad": [
+        "caducidad",
+        "vencimiento",
+        "vencido",
+        "caduco",
+        "caducado",
+        "frescura",
+        "fresco",
+        "rancio"
+      ]
+    },
+    "positive": [
+      "aceptable",
+      "agrada",
+      "agradable",
+      "barbaro",
+      "bárbaro",
+      "bien",
+      "bonita",
+      "bonito",
+      "buen",
+      "buena",
+      "buenisimo",
+      "buenísimo",
+      "bueno",
+      "calidad",
+      "clara",
+      "claro",
+      "cero grumos",
+      "comodo",
+      "cómodo",
+      "conforme",
+      "contenta",
+      "contento",
+      "correcta",
+      "correcto",
+      "cumple",
+      "cumple expectativas",
+      "cumplio expectativas",
+      "cumplir",
+      "con poca cantidad",
+      "cumplidor",
+      "delicioso",
+      "deliciosa",
+      "destacado",
+      "duradero",
+      "eficiente",
+      "encanta",
+      "encanto",
+      "espectacular",
+      "excelente",
+      "excelencia",
+      "exelente",
+      "exquisito",
+      "exquisita",
+      "favorito",
+      "favorita",
+      "facil",
+      "fácil",
+      "facilmente",
+      "fácilmente",
+      "fresco",
+      "fresca",
+      "genial",
+      "gran",
+      "hermoso",
+      "ideal",
+      "impecable",
+      "increible",
+      "increíble",
+      "linda",
+      "lindo",
+      "me agrada",
+      "me encanta",
+      "me encanto",
+      "muy bien",
+      "perfecta",
+      "perfecto",
+      "practica",
+      "práctica",
+      "practico",
+      "práctico",
+      "marcado",
+      "marcada",
+      "original",
+      "rinde",
+      "me gusta",
+      "me gusto",
+      "me gustó",
+      "ni amargo",
+      "no amargo",
+      "no es amargo",
+      "no sabe mal",
+      "no sabe quemado",
+      "recomendable",
+      "recomiendo",
+      "rico",
+      "rica",
+      "riquisimo",
+      "riquísimo",
+      "riquisima",
+      "riquísima",
+      "sabroso",
+      "sabrosa",
+      "satisfecho",
+      "satisfecha",
+      "aromatico",
+      "aromático",
+      "sellado",
+      "sin amargor",
+      "sin grumos",
+      "satisfechos",
+      "satisfechas",
+      "sobresaliente",
+      "supera expectativas",
+      "supero expectativas",
+      "suficiente"
+    ],
+    "negative": [
+      "adulterado",
+      "aguado",
+      "apelmazado",
+      "artificial",
+      "caducado",
+      "decepcion",
+      "decepción",
+      "decepcionante",
+      "decepcionada",
+      "decepcionado",
+      "deficiente",
+      "defecto",
+      "desabrido",
+      "feo",
+      "falla",
+      "fallado",
+      "falsificado",
+      "grumos",
+      "grumoso",
+      "horrible",
+      "imitacion",
+      "imitación",
+      "insipido",
+      "insípido",
+      "insuficiente",
+      "mal",
+      "mala",
+      "malo",
+      "menos cantidad",
+      "menos producto",
+      "mediocre",
+      "molesto",
+      "muy bajo",
+      "muy poco",
+      "no cumple expectativas",
+      "no es la misma cantidad",
+      "no me gusta",
+      "no me gusto",
+      "no recomiendo",
+      "no sabe",
+      "no se disuelve",
+      "no sirve",
+      "no sustituye",
+      "no lo tomare",
+      "no lo tomaré",
+      "no volveria a comprar",
+      "no volvería a comprar",
+      "pesimo",
+      "pésimo",
+      "pirata",
+      "poca cantidad",
+      "pobre",
+      "problema",
+      "prefiero",
+      "pudieran mejorar",
+      "quemado",
+      "quimico",
+      "químico",
+      "rancio",
+      "rinde poco",
+      "rinde muy poco",
+      "rompe",
+      "solo son",
+      "rompiendose",
+      "rompiéndose",
+      "sabe mal",
+      "sin sabor",
+      "vencido"
+    ],
+    "negation": [
+      "cero",
+      "jamas",
+      "jamás",
+      "nada",
+      "nadie",
+      "ni",
+      "ningun",
+      "ningún",
+      "ninguna",
+      "ninguno",
+      "no",
+      "nunca",
+      "sin",
+      "tampoco"
+    ]
+  }
+}

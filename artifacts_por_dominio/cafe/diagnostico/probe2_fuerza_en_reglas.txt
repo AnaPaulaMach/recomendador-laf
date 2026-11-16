@@ -1,0 +1,7 @@
+% PRUEBA 2 - la fuerza esta en las REGLAS (estilo ejemplo del Studio).
+% Hechos casi iguales (0.5/0.5); soporte fuerte (0.85), ataque debil (0.2).
+% Si el motor usa la alpha de la REGLA: saborBueno debe GANAR (UNDEFEATED).
+resenaPositivaSabor(a). {0.5; 1.0}
+resenaNegativaSabor(a). {0.5; 1.0}
+saborBueno(X)  :- resenaPositivaSabor(X). {0.85; 1.0}
+~saborBueno(X) :- resenaNegativaSabor(X). {0.2; 1.0}

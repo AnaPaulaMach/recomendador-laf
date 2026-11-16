@@ -1,0 +1,71 @@
+{% extends "recommender/base.html" %}
+{% block title %}Dónde comprarlo · Recomendador de productos{% endblock %}
+{% block banner %}{% if result.evaluation_status == "mock" %}{% include "recommender/partials/demo_banner.html" %}{% endif %}{% endblock %}
+{% block content %}
+<section class="page-shell listing-page">
+  {% include "recommender/partials/flow_steps.html" with step=4 %}
+  <div class="ranking-heading">
+    <div class="page-heading max-w-3xl">
+      {% if result.evaluation_status == "pending" and result.program_status == "generated" %}
+        <h1 class="page-title">No pudimos ordenar las publicaciones ahora</h1>
+        <p class="page-copy">El servicio que compara las condiciones de compra no respondió. Guardamos tu presupuesto, las condiciones que elegiste y las {{ result.items_count }} publicaciones de este café: volvé a enviarlas para intentar otra vez.</p>
+        <p class="mt-4"><a class="button button-primary" href="{% url 'recommender:purchase' flow.id %}">Volver a intentar {% include "recommender/partials/icon_arrow_right.html" %}</a></p>
+      {% else %}
+        <h1 class="page-title">Dónde comprarlo</h1>
+        <p class="page-copy">Comparamos precio y condiciones de compra para {{ flow.selected_product_name }}.</p>
+      {% endif %}
+      <a class="adjust-preferences-link" href="{% url 'recommender:purchase' flow.id %}"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="14" cy="6" r="2"/><path d="M4 6h8M16 6h4"/><circle cx="8" cy="12" r="2"/><path d="M4 12h2M10 12h10"/><circle cx="17" cy="18" r="2"/><path d="M4 18h11M19 18h1"/></svg><span>Cambiar preferencias</span></a>
+    </div>
+  </div>
+  <div class="listing-ranking-list mt-10">
+    {% for item in result.ranking %}
+      <article class="listing-row {% if forloop.first %}listing-row-first{% endif %}">
+        <div class="listing-position"><small>N°</small><strong>{{ item.position }}</strong></div>
+        {% include "recommender/partials/product_image.html" with item=item image_class="product-image-listing-row" eager=forloop.first %}
+        <div class="listing-identity">
+          <h2>{{ item.metadata.listing_title|default:item.metadata.seller }}</h2>
+          <p>{{ flow.selected_product_name }}</p>
+          {% if item.metadata.item_id_display %}<p class="listing-item-id">{{ item.metadata.item_id_display }}</p>{% endif %}
+        </div>
+        <dl class="listing-row-facts">
+          <div><dt>Precio</dt><dd>{{ item.metadata.price_label }}</dd></div>
+          {% if show_installments %}<div><dt>Cuotas</dt><dd>{{ item.metadata.installments }}</dd></div>{% endif %}
+          <div><dt>Garantía</dt><dd>{{ item.metadata.warranty }}</dd></div>
+          <div><dt>Envío</dt><dd>{{ item.metadata.shipping }}</dd></div>
+        </dl>
+        <div class="listing-score">
+          <small>Resultado</small><strong class="listing-match-label">{{ item.metadata.match_label }}</strong>
+          <div class="listing-result-actions">
+            <a class="button button-primary button-sm listing-marketplace-button" href="{{ item.metadata.purchase_url }}" target="_blank" rel="noopener noreferrer">
+              {% if item.metadata.purchase_url_is_fallback %}Ver opciones en Mercado Libre{% else %}Ver publicación en Mercado Libre{% endif %}
+              <span aria-hidden="true">↗</span>
+            </a>
+            <a class="listing-explanation-link" href="{% url 'recommender:explanation' flow.id %}?entity_id={{ item.entity_id|urlencode }}">Ver por qué lo recomendamos</a>
+          </div>
+        </div>
+      </article>
+    {% empty %}
+      {% if no_purchase_preferences %}
+        <div class="empty-state"><strong>No elegiste ninguna condición de compra</strong><p>Cuando todo queda en «No me importa», no hay con qué comparar las publicaciones de este café. Elegí al menos una condición y armamos el orden al instante.</p><a class="button button-primary" href="{% url 'recommender:purchase' flow.id %}">Elegir qué condiciones me importan {% include "recommender/partials/icon_arrow_right.html" %}</a></div>
+      {% elif budget_left_nothing %}
+        <div class="empty-state"><strong>Ninguna publicación entra en tu presupuesto</strong><p>Con el rango que pusiste{% if budget_min_label and budget_max_label %} —entre {{ budget_min_label }} y {{ budget_max_label }}—{% elif budget_max_label %} —hasta {{ budget_max_label }}—{% elif budget_min_label %} —desde {{ budget_min_label }}—{% endif %} no quedó ninguna oferta de este café para comparar. Ampliá el rango y volvemos a ordenar.</p><a class="button button-primary" href="{% url 'recommender:purchase' flow.id %}">Cambiar el presupuesto {% include "recommender/partials/icon_arrow_right.html" %}</a></div>
+      {% elif result.program_status == "generated" %}
+        <div class="empty-state"><strong>No pudimos ordenar las publicaciones ahora</strong><p>El servicio que compara las condiciones de compra no respondió, y preferimos no mostrar un orden sin validar. Las {{ result.items_count }} publicaciones y tus condiciones siguen guardadas; podés intentar de nuevo en un momento.</p><a class="button button-primary" href="{% url 'recommender:purchase' flow.id %}">Volver a intentar {% include "recommender/partials/icon_arrow_right.html" %}</a></div>
+      {% else %}
+        <div class="empty-state"><strong>No pudimos preparar las publicaciones.</strong><p>Revisá el presupuesto, los datos del catálogo y la configuración del generador.</p></div>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <div class="mt-8 flex flex-wrap gap-3">
+    {% if result.ranking %}<a class="button button-primary" href="{% url 'recommender:compare-listings' flow.id %}">Comparar lado a lado</a>{% endif %}
+    <details class="technical-details w-full">
+      <summary>¿Cómo se calculó?</summary>
+      <div class="flex flex-wrap gap-4">
+        {% if result.ranking %}<a href="{% url 'recommender:explanation' flow.id %}?entity_id={{ result.ranking.0.entity_id|urlencode }}">Ver explicación</a>{% endif %}
+        {% if result.program_status == "generated" %}<a href="{% url 'recommender:export-laf2-program' flow.id %}">Descargar programa LAF 2</a>{% endif %}
+        <a href="{% url 'recommender:traceability' flow.id %}">Ver datos utilizados</a>
+      </div>
+    </details>
+  </div>
+</section>
+{% endblock %}

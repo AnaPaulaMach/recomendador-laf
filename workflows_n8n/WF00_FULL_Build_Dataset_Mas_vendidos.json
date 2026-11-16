@@ -1,0 +1,699 @@
+{
+  "name": "WF00_FULL_Build_Dataset Mas vendidos",
+  "nodes": [
+    {
+      "parameters": {
+        "content": "## Documentacion\nhttps://developers.mercadolibre.com.ar/es_ar/mas-vendidos-en-mercado-libre\n\nEj: https://www.mercadolibre.com.ar/mas-vendidos/MLA1051#origin=home&CATEGORY_ID=MLA1051&S=hc_mas-vendidos&c_tracking_id=5617ca30-230e-11f1-af81-cf4d0cb3b621\n\nDevuelve hasta 20, puede devolver menos. No especifica Criterio",
+        "height": 176,
+        "width": 1040
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        0,
+        336
+      ],
+      "id": "7a03cefa-5043-4810-a22d-24b79d80264a",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -48,
+        624
+      ],
+      "id": "31c5f5ad-dd6c-4064-8278-5f4b5804f0a7",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "mode": "raw",
+        "jsonOutput": "{\n  \"site_id\": \"MLB\",\n  \"category_id\": \"MLB5412\",\n  \"category_label\": \"Secadoras de Cabello\"\n}\n",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        144,
+        624
+      ],
+      "id": "89c15362-312f-4616-b118-e7ebedc7e136",
+      "name": "Initialize Category Input"
+    },
+    {
+      "parameters": {
+        "url": "=https://api.mercadolibre.com/highlights/{{ $('Initialize Category Input').item.json.site_id }}/category/{{ $('Initialize Category Input').item.json.category_id }}",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "oAuth2Api",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        944,
+        624
+      ],
+      "id": "71bddadb-dcc8-4317-b7ea-af0bee5f8055",
+      "name": "HTTP Request - Highlights",
+      "credentials": {
+        "oAuth2Api": {
+          "id": "Yxudi71RA9ggHlDN",
+          "name": "Unnamed credential"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "=https://api.mercadolibre.com/products/{{ $json.product_id }}/items",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "oAuth2Api",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        1696,
+        624
+      ],
+      "id": "280c82da-e960-425e-9537-4a32eb82296d",
+      "name": "HTTP Request - Items ID",
+      "credentials": {
+        "oAuth2Api": {
+          "id": "Yxudi71RA9ggHlDN",
+          "name": "Unnamed credential"
+        }
+      },
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "results",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        1888,
+        624
+      ],
+      "id": "e185cb46-524c-48a8-ad77-16df99db1c35",
+      "name": "Split Out"
+    },
+    {
+      "parameters": {
+        "content": "Cada product id tiene muchos items id\nTodos los items id devuelven las mismas resenias"
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        1136,
+        336
+      ],
+      "id": "e37ffcc7-54fb-4326-9df2-26d95a17f0df",
+      "name": "Sticky Note1"
+    },
+    {
+      "parameters": {
+        "content": "# Que hace?\n## Prepara el dataset base\n## 1 Define categoria y genera dataset_key  ; 2 Busca los mas vendidos \n## 3 Mapea producto con item ; \n## 4 Guarda:\n ###  - products_seed (nivel producto)\n ###  - items_raw (nivel item)",
+        "height": 304,
+        "width": 1040
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "03558082-7f6c-4cdc-91d4-5c121d12f30c",
+      "name": "Sticky Note2"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "298b91bb-8126-4626-a138-b1df0ca47099",
+              "name": "dataset_key",
+              "value": "={{ $('Build Dataset Key').item.json.dataset_key }}",
+              "type": "string"
+            },
+            {
+              "id": "f5ddfc07-4668-4aa8-add4-badbfd3e53dd",
+              "name": "product_id",
+              "value": "={{ $json.highlight_id }}",
+              "type": "string"
+            },
+            {
+              "id": "4548528a-fb29-4276-b968-a432ed7db19b",
+              "name": "site_id",
+              "value": "={{ $json.site_id }}",
+              "type": "string"
+            },
+            {
+              "id": "701c8874-0023-4c29-856c-847a4b4d5804",
+              "name": "category_id",
+              "value": "={{ $json.category_id }}",
+              "type": "string"
+            },
+            {
+              "id": "b6516dc9-213d-467f-8903-d669c4f9e8d9",
+              "name": "position",
+              "value": "={{ $json.position }}",
+              "type": "number"
+            },
+            {
+              "id": "520e34d2-cea1-4e2e-9355-dccb0be86488",
+              "name": "type",
+              "value": "={{ $json.type }}",
+              "type": "string"
+            },
+            {
+              "id": "ff0e6325-a830-4a70-b730-135020ed7aa2",
+              "name": "extraction_date",
+              "value": "={{ $now }}",
+              "type": "string"
+            },
+            {
+              "id": "742f3129-20ce-4beb-a884-5764451ec9a8",
+              "name": "last_sync",
+              "value": "={{ $now }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1328,
+        624
+      ],
+      "id": "0af53379-57a2-428e-8119-d7888fc623b0",
+      "name": "Set Product Seed Row"
+    },
+    {
+      "parameters": {
+        "jsCode": "const now = new Date();\nconst stamp = now.toISOString().replace(/[-:]/g, '').replace('T', '_').slice(0, 15);\n\nconst input = $input.first().json;\n\nreturn [{\n  json: {\n    site_id: input.site_id,\n    category_id: input.category_id,\n    category_label: input.category_label,\n    dataset_key: `${input.site_id.toLowerCase()}_${input.category_id.toLowerCase()}_${stamp}`\n  }\n}];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        352,
+        624
+      ],
+      "id": "e1fe6e34-48a1-4057-8131-3ae68e12225a",
+      "name": "Build Dataset Key"
+    },
+    {
+      "parameters": {
+        "jsCode": "return items.map(item => {\n  const j = item.json;\n\n  return {\n    json: {\n      dataset_key: $('Build Dataset Key').item.json.dataset_key,\n      product_id: j.product_id ?? null,\n      item_id: j.item_id,\n      extraction_date: new Date().toISOString(),\n      last_sync: new Date().toISOString(),\n\n      type: j.type ?? null,\n      site_id: j.site_id ?? null,\n      seller_id: j.seller_id ?? null,\n      accepts_mercadopago: j.accepts_mercadopago ?? null,\n      price: j.price ?? null,\n      category_id: j.category_id ?? null,\n      currency_id: j.currency_id ?? null,\n      warranty: j.warranty ?? null,\n      condition: j.condition ?? null,\n      listing_type_id: j.listing_type_id ?? null,\n      international_delivery_mode: j.international_delivery_mode ?? null,\n      tier: j.tier ?? null,\n      inventory_id: j.inventory_id ?? null,\n      official_store_id: j.official_store_id ?? null,\n      original_price: j.original_price ?? null,\n      user_product_id: j.user_product_id ?? null,\n      min_purchase_unit: j.min_purchase_unit ?? null,\n\n      shipping_free_shipping: j.shipping?.free_shipping ?? null,\n      shipping_store_pick_up: j.shipping?.store_pick_up ?? null,\n      shipping_local_pick_up: j.shipping?.local_pick_up ?? null,\n      shipping_mode: j.shipping?.mode ?? null,\n      shipping_logistic_type: j.shipping?.logistic_type ?? null,\n\n      tags: j.tags ?? [],\n      deal_ids: j.deal_ids ?? [],\n      shipping_tags: j.shipping?.tags ?? [],\n      seller_address: j.seller_address ?? {},\n      sale_terms: j.sale_terms ?? [],\n      raw_json: j\n    }\n  };\n});"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2064,
+        624
+      ],
+      "id": "16dc464c-bb04-4905-8c16-9f69a48d0200",
+      "name": "Set Item Raw Row"
+    },
+    {
+      "parameters": {
+        "tableId": "items_raw",
+        "fieldsUi": {
+          "fieldValues": [
+            {
+              "fieldId": "dataset_key",
+              "fieldValue": "={{ $json.dataset_key }}"
+            },
+            {
+              "fieldId": "product_id",
+              "fieldValue": "={{ $('Set Product Seed Row').item.json.product_id }}"
+            },
+            {
+              "fieldId": "item_id",
+              "fieldValue": "={{ $json.item_id }}"
+            },
+            {
+              "fieldId": "extraction_date",
+              "fieldValue": "={{ $json.extraction_date }}"
+            },
+            {
+              "fieldId": "site_id",
+              "fieldValue": "={{ $json.site_id }}"
+            },
+            {
+              "fieldId": "seller_id",
+              "fieldValue": "={{ $json.seller_id }}"
+            },
+            {
+              "fieldId": "accepts_mercadopago",
+              "fieldValue": "={{ $json.accepts_mercadopago }}"
+            },
+            {
+              "fieldId": "price",
+              "fieldValue": "={{ $json.price }}"
+            },
+            {
+              "fieldId": "category_id",
+              "fieldValue": "={{ $json.category_id }}"
+            },
+            {
+              "fieldId": "currency_id",
+              "fieldValue": "={{ $json.currency_id }}"
+            },
+            {
+              "fieldId": "warranty",
+              "fieldValue": "={{ $json.warranty }}"
+            },
+            {
+              "fieldId": "condition",
+              "fieldValue": "={{ $json.condition }}"
+            },
+            {
+              "fieldId": "listing_type_id",
+              "fieldValue": "={{ $json.listing_type_id }}"
+            },
+            {
+              "fieldId": "international_delivery_mode",
+              "fieldValue": "={{ $json.international_delivery_mode }}"
+            },
+            {
+              "fieldId": "tier",
+              "fieldValue": "={{ $json.tier }}"
+            },
+            {
+              "fieldId": "inventory_id",
+              "fieldValue": "={{ $json.inventory_id }}"
+            },
+            {
+              "fieldId": "official_store_id",
+              "fieldValue": "={{ $json.official_store_id }}"
+            },
+            {
+              "fieldId": "original_price",
+              "fieldValue": "={{ $json.original_price }}"
+            },
+            {
+              "fieldId": "shipping_free_shipping",
+              "fieldValue": "={{ $json.shipping_free_shipping }}"
+            },
+            {
+              "fieldId": "shipping_store_pick_up",
+              "fieldValue": "={{ $json.shipping_store_pick_up }}"
+            },
+            {
+              "fieldId": "shipping_local_pick_up",
+              "fieldValue": "={{ $json.shipping_local_pick_up }}"
+            },
+            {
+              "fieldId": "shipping_mode",
+              "fieldValue": "={{ $json.shipping_mode }}"
+            },
+            {
+              "fieldId": "shipping_logistic_type",
+              "fieldValue": "={{ $json.shipping_logistic_type }}"
+            },
+            {
+              "fieldId": "tags",
+              "fieldValue": "={{ $json.tags }}"
+            },
+            {
+              "fieldId": "deal_ids",
+              "fieldValue": "={{ $json.deal_ids }}"
+            },
+            {
+              "fieldId": "shipping_tags",
+              "fieldValue": "={{ $json.shipping_tags }}"
+            },
+            {
+              "fieldId": "seller_address",
+              "fieldValue": "={{ $json.seller_address }}"
+            },
+            {
+              "fieldId": "sale_terms",
+              "fieldValue": "={{ $json.sale_terms }}"
+            },
+            {
+              "fieldId": "raw_json",
+              "fieldValue": "={{ $json.raw_json }}"
+            },
+            {
+              "fieldId": "last_sync",
+              "fieldValue": "={{ $json.last_sync }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        2272,
+        624
+      ],
+      "id": "025c677a-6652-41eb-b922-5f8f8a70290a",
+      "name": "Insert Items RAW",
+      "credentials": {
+        "supabaseApi": {
+          "id": "R4VGp7PiljOL7AgF",
+          "name": "Supabase account"
+        }
+      },
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "tableId": "workflow_control",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "id",
+              "condition": "eq",
+              "keyValue": "1"
+            }
+          ]
+        },
+        "fieldsUi": {
+          "fieldValues": [
+            {
+              "fieldId": "active_dataset_key",
+              "fieldValue": "={{ $('Build Dataset Key').item.json.dataset_key }}"
+            },
+            {
+              "fieldId": "updated_at",
+              "fieldValue": "={{ $now }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        752,
+        624
+      ],
+      "id": "13017158-56b6-416f-b606-e124b4525c68",
+      "name": "Set Active Dataset",
+      "credentials": {
+        "supabaseApi": {
+          "id": "R4VGp7PiljOL7AgF",
+          "name": "Supabase account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "tableId": "products_seed",
+        "fieldsUi": {
+          "fieldValues": [
+            {
+              "fieldId": "dataset_key",
+              "fieldValue": "={{ $json.dataset_key }}"
+            },
+            {
+              "fieldId": "product_id",
+              "fieldValue": "={{ $json.product_id }}"
+            },
+            {
+              "fieldId": "site_id",
+              "fieldValue": "={{ $json.site_id }}"
+            },
+            {
+              "fieldId": "category_id",
+              "fieldValue": "={{ $json.category_id }}"
+            },
+            {
+              "fieldId": "position",
+              "fieldValue": "={{ $json.position }}"
+            },
+            {
+              "fieldId": "type",
+              "fieldValue": "={{ $json.type }}"
+            },
+            {
+              "fieldId": "extraction_date",
+              "fieldValue": "={{ $json.extraction_date }}"
+            },
+            {
+              "fieldId": "last_sync",
+              "fieldValue": "={{ $json.last_sync }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        1520,
+        624
+      ],
+      "id": "5457c39e-2da3-46a0-8f4a-ea865db3162e",
+      "name": "Insert Product Seed",
+      "credentials": {
+        "supabaseApi": {
+          "id": "R4VGp7PiljOL7AgF",
+          "name": "Supabase account"
+        }
+      },
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "jsCode": "const root = $input.first().json;\n\nconst categoryId = root.query_data?.id || \"\";\nconst content = root.content || [];\n\nreturn content.map(item => ({\n  json: {\n    site_id: categoryId.startsWith(\"MLA\") ? \"MLA\" : categoryId.startsWith(\"MLB\") ? \"MLB\" : \"\",\n    category_id: categoryId,\n    highlight_id: item.id,\n    position: item.position,\n    type: item.type\n  }\n}));\n\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1136,
+        624
+      ],
+      "id": "abd273fd-37c7-42cc-94df-5bdb828b6464",
+      "name": "Map Highlights to Products"
+    },
+    {
+      "parameters": {
+        "tableId": "datasets",
+        "fieldsUi": {
+          "fieldValues": [
+            {
+              "fieldId": "dataset_key",
+              "fieldValue": "={{ $json.dataset_key }}"
+            },
+            {
+              "fieldId": "category_id",
+              "fieldValue": "={{ $json.category_id }}"
+            },
+            {
+              "fieldId": "category_label",
+              "fieldValue": "={{ $json.category_label }}"
+            },
+            {
+              "fieldId": "site_id",
+              "fieldValue": "={{ $json.site_id }}"
+            },
+            {
+              "fieldId": "status",
+              "fieldValue": "active"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        560,
+        624
+      ],
+      "id": "a8cdb07b-b7eb-4e88-b0eb-5ae34fb9f3a7",
+      "name": "Insert dataset",
+      "credentials": {
+        "supabaseApi": {
+          "id": "R4VGp7PiljOL7AgF",
+          "name": "Supabase account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "content": "## Aqui creo que puedo hacer un get con el category id para sacar el nombre de la categoría y sea siempre el mismo"
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        1776,
+        -96
+      ],
+      "id": "a96d098c-8eb7-4c09-b96a-ef7ac23f396b",
+      "name": "Sticky Note3"
+    },
+    {
+      "parameters": {
+        "content": "cREO QUE EL NUM DE CATEGORIA SE MANTIENE IGUAL PARA TODOS LOS PAISES"
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        1232,
+        -512
+      ],
+      "id": "8015be78-642c-400b-b106-4662a2bebad9",
+      "name": "Sticky Note4"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Initialize Category Input",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Initialize Category Input": {
+      "main": [
+        [
+          {
+            "node": "Build Dataset Key",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request - Highlights": {
+      "main": [
+        [
+          {
+            "node": "Map Highlights to Products",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request - Items ID": {
+      "main": [
+        [
+          {
+            "node": "Split Out",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Out": {
+      "main": [
+        [
+          {
+            "node": "Set Item Raw Row",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set Product Seed Row": {
+      "main": [
+        [
+          {
+            "node": "Insert Product Seed",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build Dataset Key": {
+      "main": [
+        [
+          {
+            "node": "Insert dataset",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set Item Raw Row": {
+      "main": [
+        [
+          {
+            "node": "Insert Items RAW",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set Active Dataset": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request - Highlights",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Insert Product Seed": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request - Items ID",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Map Highlights to Products": {
+      "main": [
+        [
+          {
+            "node": "Set Product Seed Row",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Insert dataset": {
+      "main": [
+        [
+          {
+            "node": "Set Active Dataset",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Insert Items RAW": {
+      "main": [
+        []
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "a1aa1c07-0ee6-48da-bb0d-7f54c9784859",
+  "meta": {
+    "instanceId": ""
+  },
+  "nodeGroups": [],
+  "id": "fIIenhgmIo4D8gwn",
+  "tags": []
+}

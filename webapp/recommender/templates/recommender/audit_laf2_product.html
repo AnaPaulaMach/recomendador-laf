@@ -1,0 +1,35 @@
+{% extends "recommender/base.html" %}
+{% block title %}Auditoría LAF 2 · Recomendador de productos{% endblock %}
+{% block content %}
+<section class="page-shell max-w-4xl">
+  <header class="page-heading max-w-3xl">
+    <h1 class="page-title">Probar la generación de LAF 2</h1>
+    <p class="page-copy">Esta pantalla existe sólo en desarrollo. Permite elegir un producto revisado y probar preferencias de compra sin presentar ese producto como resultado de LAF 1.</p>
+  </header>
+
+  <div class="technical-warning mt-8">
+    <strong>Modo de auditoría local.</strong>
+    La selección sirve para verificar el programa 10. No representa una recomendación ni se muestra en el recorrido público.
+  </div>
+
+  {% if load_error %}
+    <div class="form-error mt-6">{{ load_error }}</div>
+  {% elif products %}
+    <form method="post" class="panel mt-6 p-6 sm:p-8">
+      {% csrf_token %}
+      <div class="form-field">
+        <label for="{{ form.product_id.id_for_label }}">{{ form.product_id.label }}</label>
+        {{ form.product_id }}
+        {% for error in form.product_id.errors %}<p class="field-error">{{ error }}</p>{% endfor %}
+      </div>
+      <p class="mt-4 text-sm leading-6 text-slate-600">Sólo aparecen productos incluidos por 01b, dentro del top 20 y con publicaciones disponibles.</p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <button class="button button-primary" type="submit">Continuar a preferencias de compra</button>
+        <a class="button button-secondary" href="{% url 'recommender:product-ranking' flow.id %}">Volver</a>
+      </div>
+    </form>
+  {% else %}
+    <div class="empty-state mt-6"><strong>No hay un producto controlado disponible.</strong><p>Revisá 01b y confirmá que el catálogo tenga publicaciones limpias.</p></div>
+  {% endif %}
+</section>
+{% endblock %}

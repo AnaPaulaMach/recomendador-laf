@@ -1,0 +1,153 @@
+{% extends "recommender/base.html" %}
+{% block title %}Trazabilidad · Recomendador de productos{% endblock %}
+{% block banner %}{% if result.evaluation_status == "mock" %}{% include "recommender/partials/demo_banner.html" %}{% endif %}{% endblock %}
+{% block content %}
+<section class="page-shell traceability-page">
+  <header class="page-heading traceability-heading">
+    <h1 class="page-title">Trazabilidad metodológica</h1>
+    <p class="page-copy">Información para reproducir esta corrida y distinguir una demostración de una evaluación validada.</p>
+  </header>
+
+  <section class="panel trace-record" aria-labelledby="trace-record-title">
+    <h2 id="trace-record-title" class="trace-panel-title">Datos de la corrida</h2>
+    <dl class="trace-list trace-list-grid">
+      <div><dt>Estado</dt><dd><span class="status-pill status-{{ result.evaluation_status }}">{% if result.evaluation_status == "mock" %}Simulada{% elif result.evaluation_status == "pending" %}Pendiente{% else %}Validada{% endif %}</span></dd></div>
+      <div>
+        <dt>Generado</dt>
+        <dd>
+          {% if generated_at_local %}
+            <time datetime="{{ result.generated_at }}">{{ generated_at_local|date:"j \d\e F \d\e Y, H:i" }} h</time>
+            <small>Hora de Argentina</small>
+          {% else %}
+            {{ result.generated_at }}
+          {% endif %}
+        </dd>
+      </div>
+      {% if result.program_status == "generated" %}
+        <div>
+          <dt>{% if result.aspect_programs %}Respaldo completo · {% endif %}Programa {% if is_laf2_program %}LAF 2{% else %}LAF 1{% endif %}</dt>
+          <dd>{% if is_laf2_program %}{{ result.items_count }} publicaciones{% else %}{{ result.products_count }} productos{% endif %} · {{ result.facts_count }} hechos · {{ result.rules_count }} reglas</dd>
+        </div>
+      {% endif %}
+      <div><dt>Estrategia</dt><dd><strong>{{ result.strategy }}</strong> · {% if result.strategy == "D" %}Contracción hacia una media a priori{% else %}Estrategia experimental A–E{% endif %}</dd></div>
+      <div><dt>Dominio</dt><dd>{{ domain.display_name }}</dd></div>
+      <div><dt>Perfil de operadores</dt><dd><code>{{ result.operator_profile }}</code></dd></div>
+      <div class="trace-item-wide"><dt>Catálogo analizado</dt><dd><code>{{ result.dataset_key }}</code></dd></div>
+      {% if is_laf2_program %}
+        <div><dt>Producto controlado</dt><dd>{{ flow.selected_product_name }}<small><code>{{ flow.selected_product_id }}</code></small></dd></div>
+        <div>
+          <dt>Presupuesto</dt>
+          <dd>
+            {% if budget_min_label or budget_max_label %}
+              {{ budget_min_label|default:"Sin mínimo" }} a {{ budget_max_label|default:"sin máximo" }}
+            {% else %}
+              Sin límites adicionales
+            {% endif %}
+          </dd>
+        </div>
+      {% endif %}
+      <div><dt>Versión del evaluador</dt><dd><code>{{ result.evaluator_version }}</code></dd></div>
+      <div><dt>Identificador de corrida</dt><dd><code>{{ result.run_id }}</code><small>Nombra esta corrida: permite pedir de nuevo los mismos archivos y citarla en un informe.</small></dd></div>
+      {% if result.program_status == "generated" %}
+        <div class="trace-item-wide"><dt>Configuración congelada</dt><dd><code class="trace-hash">{{ result.methodology_sha256 }}</code><small>Huella de la configuración con la que se calculó: si cambia, dos corridas no son comparables.</small></dd></div>
+        {% if result.aspect_programs %}
+        <div class="trace-item-wide trace-download"><dt>Archivo reproducible</dt><dd><a class="button button-secondary button-sm" href="{% if is_laf2_program %}{% url 'recommender:export-laf2-program' flow.id %}{% else %}{% url 'recommender:export-laf1-program' flow.id %}{% endif %}?used=1">Descargar los {{ result.aspect_programs|length }} programas que produjeron el ranking</a><small>Son las corridas independientes por {% if is_laf2_program %}condición de compra{% else %}aspecto{% endif %}{% if not is_laf2_program %}, una etiqueta: confianza{% endif %}. Cada bloque se ejecutó por separado; con ellas y los pesos registrados se reconstruye el orden.</small></dd></div>
+        <div class="trace-item-wide"><dt>Programa combinado</dt><dd><a href="{% if is_laf2_program %}{% url 'recommender:export-laf2-program' flow.id %}{% else %}{% url 'recommender:export-laf1-program' flow.id %}{% endif %}">Programa combinado (no interviene en el ranking; sólo referencia)</a><small>Reúne todo en una corrida única que no es la que ordenó el ranking. Se conserva porque documenta el camino anterior, no porque explique este resultado.</small></dd></div>
+        {% else %}
+        <div class="trace-item-wide trace-download"><dt>Archivo reproducible</dt><dd><a class="button button-secondary button-sm" href="{% if is_laf2_program %}{% url 'recommender:export-laf2-program' flow.id %}{% else %}{% url 'recommender:export-laf1-program' flow.id %}{% endif %}">Descargar programa {% if is_laf2_program %}LAF 2{% else %}LAF 1{% endif %}</a></dd></div>
+        {% endif %}
+      {% endif %}
+    </dl>
+  </section>
+
+  {% if extraction_quality %}
+  <section class="panel trace-extraction" id="calidad-extraccion" aria-labelledby="extraction-title">
+    <div class="trace-section-heading">
+      <h2 id="extraction-title">Calidad de la detección de aspectos</h2>
+      <p>Las menciones que alimentan la recomendación las detecta un extractor por reglas sobre el texto de las reseñas. Su desempeño se midió con revisión humana a ciegas: se toma un grupo de reseñas al azar —una <em>muestra</em>—, una persona las lee y decide qué debería haber detectado el extractor, y se comparan las dos lecturas. Hay más de una muestra porque cada corrección del extractor obliga a medir de nuevo con reseñas que no se habían visto: la última es la que vale, y las anteriores quedan a la vista para que se pueda comprobar que el resultado no depende de qué reseñas tocaron.</p>
+    </div>
+    <dl class="trace-list trace-list-grid">
+      <div><dt>Polaridad correcta</dt><dd>82,9 % <small>última muestra: 20 reseñas nuevas, la medición que vale</small></dd></div>
+      <div><dt>Aspecto pertinente</dt><dd>83,3 % <small>misma muestra</small></dd></div>
+      <div><dt>Decisiones estrictamente correctas</dt><dd>69,0 % <small>exige aspecto y polaridad y no omitir nada</small></dd></div>
+      <div><dt>Muestra anterior</dt><dd>82,1 % de polaridad <small>30 reseñas distintas, medidas antes: da casi lo mismo, así que el número no depende de qué reseñas salieron</small></dd></div>
+      <div class="trace-item-wide"><dt>Qué significa para el ranking</dt><dd>Las menciones neutrales se descartan antes de LAF. De los 14 errores clasificados en la muestra final, 8 podían llegar al razonador; el resto son neutrales inertes, positivos no capturados u omisiones. Las limitaciones que quedan —negación de largo alcance, comparación con otro producto, homónimos— están documentadas como límite del enfoque por reglas.</dd></div>
+      <div class="trace-item-wide"><dt>Cierre de la medición</dt><dd>1 de septiembre de 2026, sobre el corpus de café del conjunto <code>mlm_mlm194329_20260528_142014</code>. Las cifras corresponden a ese dominio.</dd></div>
+    </dl>
+  </section>
+  {% endif %}
+
+  <section class="panel trace-operators" aria-labelledby="operators-title">
+    <div class="trace-section-heading">
+      <h2 id="operators-title">Cómo se combinan los valores</h2>
+      <p>La confianza representa la fuerza de la evidencia. La preferencia representa cuánto te importa cada aspecto.</p>
+    </div>
+    <div class="operator-groups">
+      <section class="operator-group" aria-labelledby="confidence-operators-title">
+        <h3 id="confidence-operators-title">Confianza · dentro de LAF, por {% if is_laf2_program %}condición{% else %}característica{% endif %}</h3>
+        <p class="operator-note">En las tres fórmulas <strong>X</strong> e <strong>Y</strong> son las confianzas de los dos valores que el operador combina: en el soporte, la de la evidencia y la de la regla que se le aplica; en la agregación, las de dos argumentos que sostienen la misma conclusión; en el conflicto, la del argumento a favor (X) y la del que lo ataca (Y). El resultado es otra confianza, entre 0 y 1.</p>
+        <dl class="operator-list">
+          <div><dt>Soporte</dt><dd><span class="operator-formula">X × Y</span></dd></div>
+          <div><dt>Agregación</dt><dd><span class="operator-formula">X + Y − X × Y</span></dd></div>
+          <div><dt>Conflicto</dt><dd><span class="operator-formula">(X − Y) ÷ (1 − Y)</span><small>Si X ≥ Y; en otro caso, 0</small></dd></div>
+        </dl>
+      </section>
+      <section class="operator-group" aria-labelledby="preference-operators-title">
+        <h3 id="preference-operators-title">Preferencia · tu peso, fuera de LAF</h3>
+        <p class="operator-note">La preferencia <strong>no</strong> se combina con operadores dentro de LAF. Entra como <strong>peso</strong> en la suma ponderada final:</p>
+        <p class="operator-formula operator-formula-block">puntaje de la {% if is_laf2_program %}publicación{% else %}opción{% endif %} = Σ (tu peso × confianza LAF) ÷ Σ pesos</p>
+      </section>
+    </div>
+    <div class="trace-note">
+      El ranking usa la <strong>confianza de LAF por {% if is_laf2_program %}condición{% else %}característica{% endif %}</strong>, combinada por <strong>tus pesos</strong>. {% if result.aspect_programs %}{% if is_laf2_program %}Cada programa representa una condición de compra activa. El payload exacto y el grafo resultante quedan guardados con la corrida.{% else %}Cada programa contiene solo la evidencia de un aspecto y una etiqueta de confianza. Los pesos se aplican después de LAF.{% endif %}{% else %}En las corridas históricas se conservan dos etiquetas; el ranking multicriterio toma la confianza y aplica tus pesos después.{% endif %}
+    </div>
+  </section>
+
+  <section class="panel trace-preferences" aria-labelledby="preferences-title">
+    <div class="trace-section-heading">
+      <h2 id="preferences-title">Preferencias registradas</h2>
+      <p>Se muestran de mayor a menor importancia. La barra conserva el valor numérico utilizado por el programa generado.</p>
+    </div>
+    <div class="preference-groups">
+      <section aria-labelledby="quality-preferences-title">
+        <h3 id="quality-preferences-title" class="trace-section-title">Calidad del producto</h3>
+        <ol class="preference-meters">
+          {% for item in quality_preferences %}
+            <li class="preference-meter preference-meter-{{ item.level_key }}">
+              <div class="preference-meter-copy">
+                <span>{{ item.label }}</span>
+                <strong>{{ item.level }} <small>{{ item.value_display }}</small></strong>
+              </div>
+              <div class="preference-meter-track" role="img" aria-label="{{ item.label }}: {{ item.level }}, valor {{ item.value_display }}">
+                <i style="--preference-width: {{ item.percent }}%"></i>
+              </div>
+            </li>
+          {% empty %}
+            <li class="trace-empty-copy">Sin preferencias registradas.</li>
+          {% endfor %}
+        </ol>
+      </section>
+      <section aria-labelledby="purchase-preferences-title">
+        <h3 id="purchase-preferences-title" class="trace-section-title">Condiciones de compra</h3>
+        {% if purchase_preferences %}
+          <ol class="preference-meters">
+            {% for item in purchase_preferences %}
+              <li class="preference-meter preference-meter-{{ item.level_key }}">
+                <div class="preference-meter-copy">
+                  <span>{{ item.label }}</span>
+                  <strong>{{ item.level }} <small>{{ item.value_display }}</small></strong>
+                </div>
+                <div class="preference-meter-track" role="img" aria-label="{{ item.label }}: {{ item.level }}, valor {{ item.value_display }}">
+                  <i style="--preference-width: {{ item.percent }}%"></i>
+                </div>
+              </li>
+            {% endfor %}
+          </ol>
+        {% else %}
+          <p class="trace-empty-copy">Esta etapa todavía no fue completada.</p>
+        {% endif %}
+      </section>
+    </div>
+  </section>
+</section>
+{% endblock %}

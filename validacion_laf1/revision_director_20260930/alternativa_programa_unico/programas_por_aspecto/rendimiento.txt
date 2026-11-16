@@ -1,0 +1,29 @@
+% Referencia independiente por aspecto: rendimiento
+% Preparado offline; verificado después con API local. Ver comparacion_motor_local.json.
+% Fuente: validacion_laf1/salidas/recongelado_20260910/despues/programa_laf1_D.txt
+% Una etiqueta de confianza; preferencias como pesos externos.
+resenaPositivaRendimiento(mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble). {0.57}
+resenaPositivaRendimiento(mlm20075768_nescafe_clasico_cafe_100_puro_soluble). {0.69}
+resenaPositivaRendimiento(mlm26912881_cafe_blason_espresso_robusto_tostado_y). {0.66}
+resenaPositivaRendimiento(mlm16250252_nescafe_clasico_de_cafe_sin_gluten). {0.71}
+resenaNegativaRendimiento(mlm16250252_nescafe_clasico_de_cafe_sin_gluten). {0.29}
+resenaPositivaRendimiento(mlm25263480_cafe_gourmet_tostado_y_molido_americano). {0.60}
+resenaPositivaRendimiento(mlm19544520_cafe_capuccino_moka_members_mark_1). {0.74}
+resenaNegativaRendimiento(mlm19544520_cafe_capuccino_moka_members_mark_1). {0.26}
+resenaPositivaRendimiento(mlm16250244_nescafe_taster_s_choice_caramel_dark). {0.56}
+resenaPositivaRendimiento(mlm23633481_nescafe_clasico_ice_cafe_soluble_en). {0.51}
+resenaPositivaRendimiento(mlm16207863_nescafe_cafe_de_olla_100_cafe). {0.54}
+resenaPositivaRendimiento(mlm16250253_nescafe_decaf_cafe_100_puro_soluble). {0.53}
+resenaPositivaRendimiento(mlm41148521_cafe_gourmet_molido_espresso_400g_blason). {0.53}
+resenaPositivaRendimiento(mlm19663240_nescafe_clasico_cafe_100_puro_soluble). {0.59}
+resenaPositivaRendimiento(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo). {0.76}
+resenaNegativaRendimiento(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo). {0.24}
+resenaPositivaRendimiento(mlm20999002_cafe_soluble_nescafe_clasico_nestle_professional). {0.74}
+resenaPositivaRendimiento(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.58}
+resenaNegativaRendimiento(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.42}
+rendimientoBueno(X) :- resenaPositivaRendimiento(X). {0.85}
+~rendimientoBueno(X) :- resenaNegativaRendimiento(X). {0.85}
+valorBueno(X) :- rendimientoBueno(X). {0.85}
+~valorBueno(X) :- ~rendimientoBueno(X). {0.85}
+recomendar(X) :- valorBueno(X). {0.80}
+~recomendar(X) :- ~valorBueno(X). {0.80}

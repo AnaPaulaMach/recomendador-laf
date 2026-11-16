@@ -1,0 +1,88 @@
+{% extends "recommender/base.html" %}
+{% block title %}Preferencias de compra · Recomendador de productos{% endblock %}
+{% block content %}
+<section class="page-shell">
+  {% include "recommender/partials/flow_steps.html" with step=3 %}
+  <div class="mt-10 grid gap-10 lg:grid-cols-[1fr_22rem]">
+    <div>
+      <div class="page-heading max-w-3xl">
+        <h1 class="page-title">¿Cómo preferís comprarlo?</h1>
+        <p class="page-copy">Elegiste <strong class="text-slate-900">{{ flow.selected_product_name }}</strong>. Ahora contanos qué condiciones te importan.</p>
+      </div>
+      {% if audit_mode %}
+        <div class="technical-warning mt-6">
+          <strong>Modo de auditoría local.</strong>
+          Este producto fue elegido para probar 09/10; no fue recomendado por LAF 1.
+        </div>
+      {% endif %}
+      <form method="post" class="mt-9"
+            hx-post="{% url 'recommender:preference-summary' flow.id %}"
+            hx-trigger="input changed delay:250ms"
+            hx-target="#preference-summary"
+            hx-swap="innerHTML">
+        {% csrf_token %}
+        <input type="hidden" name="stage" value="purchase">
+        <div class="panel p-6 sm:p-8">
+          <h2 class="font-serif text-2xl font-semibold">Rango de presupuesto</h2>
+          {% if budget_range %}
+            <p class="budget-range-note">
+              {% if budget_range.count %}Encontramos {{ budget_range.count }} publicaciones para este producto: {% else %}Los precios observados van {% endif %}
+              de <strong>{{ budget_range.minimum_label }}</strong> a <strong>{{ budget_range.maximum_label }}</strong>.
+            </p>
+          {% endif %}
+          <div class="mt-5 grid gap-5 sm:grid-cols-2">
+            <div class="form-field"><label for="{{ form.budget_min.id_for_label }}">{{ form.budget_min.label }}</label>{{ form.budget_min }}{% for error in form.budget_min.errors %}<p class="field-error">{{ error }}</p>{% endfor %}</div>
+            <div class="form-field"><label for="{{ form.budget_max.id_for_label }}">{{ form.budget_max.label }}</label>{{ form.budget_max }}{% for error in form.budget_max.errors %}<p class="field-error">{{ error }}</p>{% endfor %}</div>
+          </div>
+          {% if form.non_field_errors %}<div class="form-error mt-4">{{ form.non_field_errors }}</div>{% endif %}
+        </div>
+        <h2 class="section-heading mt-8">Importancia de las condiciones</h2>
+        {% if unavailable_conditions %}
+          <p class="budget-range-note">Solo mostramos las condiciones disponibles para las publicaciones de este producto.</p>
+        {% endif %}
+        <div class="preference-list purchase-preference-list mt-4">
+          {% for field in form %}
+            {% if field.name != "budget_min" and field.name != "budget_max" %}
+              <fieldset class="preference-card preference-card-levels" aria-labelledby="label-{{ field.name }}">
+                <div class="preference-label">
+                  <span id="label-{{ field.name }}" class="preference-legend">{{ field.label }}</span>
+                </div>
+                <div class="preference-options">{{ field }}</div>
+                {% for error in field.errors %}<p class="field-error">{{ error }}</p>{% endfor %}
+              </fieldset>
+            {% endif %}
+          {% endfor %}
+        </div>
+        <details class="technical-details mt-6">
+          <summary>Cómo comparamos las opciones de compra</summary>
+          <div class="mt-4 text-sm leading-6 text-slate-700">
+            <ul class="list-disc space-y-2 pl-5">
+              <li>Primero mostramos únicamente las publicaciones dentro de tu presupuesto.</li>
+              <li>Una publicación mejora su posición cuando tiene las condiciones que elegiste: mejor precio, descuento, tienda oficial o envío gratuito.</li>
+              <li>Cuanto más importante sea una condición para vos, más influye en el orden.</li>
+              <li>Si ninguna publicación ofrece una condición, la ignoramos para que no altere injustamente el resultado.</li>
+              <li>Las publicaciones que no cumplen ninguna de tus condiciones aparecen al final.</li>
+            </ul>
+          </div>
+        </details>
+        <div class="flex flex-wrap items-center justify-between gap-4 pt-8">
+          <a class="button button-secondary" href="{% url 'recommender:product-ranking' flow.id %}">{% include "recommender/partials/icon_arrow_left.html" %} Volver a productos</a>
+          <button class="button button-primary" type="submit">{% if audit_mode %}Generar programa LAF 2{% else %}Ver dónde comprar{% endif %} {% include "recommender/partials/icon_arrow_right.html" %}</button>
+        </div>
+      </form>
+    </div>
+    <aside class="lg:sticky lg:top-6 lg:self-start">
+      <div class="panel p-6">
+        <h2 class="aside-title">Producto seleccionado</h2>
+        {% include "recommender/partials/product_image.html" with item=selected_product image_class="product-image-selected" eager=True %}
+        <p class="mt-3 font-serif text-xl font-semibold">{{ flow.selected_product_name }}</p>
+        <p class="mt-2 text-sm text-slate-500">Vamos a comparar precios y condiciones para este producto.</p>
+      </div>
+      <div class="panel mt-4 overflow-hidden">
+        <div class="border-b border-slate-200 px-6 py-5"><h2 class="aside-title">Lo más importante para vos</h2></div>
+        <div id="preference-summary" class="p-6" aria-live="polite"><p class="text-sm leading-6 text-slate-600">Elegí un nivel para ordenar tus condiciones de compra.</p></div>
+      </div>
+    </aside>
+  </div>
+</section>
+{% endblock %}

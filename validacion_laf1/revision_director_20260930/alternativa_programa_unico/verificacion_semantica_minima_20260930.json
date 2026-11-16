@@ -1,0 +1,270 @@
+{
+  "executed_at_utc": "2026-09-30T18:09:29.534377+00:00",
+  "scope": "Sintetico, dos hechos y dos reglas. Sin consultas a base de datos, sin reinicios ni cambios del motor.",
+  "endpoint": "http://localhost:8088/api/graph",
+  "program": "% Caso sintetico aislado; no representa el corpus.\nsabor(p). {0.8}\n~sabor(p). {0.6}\nrecomendar(X) :- sabor(X). {0.9}\n~recomendar(X) :- ~sabor(X). {0.9}\n",
+  "request_payload": {
+    "facts": [
+      {
+        "name": "sabor",
+        "argument": "p",
+        "attributes": [
+          "0.8"
+        ],
+        "attributeIntervals": [
+          null
+        ],
+        "sourceKey": "FACT|sabor|p"
+      },
+      {
+        "name": "~sabor",
+        "argument": "p",
+        "attributes": [
+          "0.6"
+        ],
+        "attributeIntervals": [
+          null
+        ],
+        "sourceKey": "FACT|~sabor|p"
+      }
+    ],
+    "rules": [
+      {
+        "headName": "recomendar",
+        "bodyLiterals": [
+          "sabor"
+        ],
+        "attributes": [
+          "0.9"
+        ],
+        "attributeIntervals": [
+          null
+        ],
+        "sourceKey": "RULE|line:4"
+      },
+      {
+        "headName": "~recomendar",
+        "bodyLiterals": [
+          "~sabor"
+        ],
+        "attributes": [
+          "0.9"
+        ],
+        "attributeIntervals": [
+          null
+        ],
+        "sourceKey": "RULE|line:5"
+      }
+    ],
+    "explainabilityEnabled": false,
+    "operations": {
+      "labels": [
+        {
+          "labelName": "confidence",
+          "supportFunction": "X * Y",
+          "aggregationFunction": "X + Y - X * Y",
+          "conflictFunction": "max((X-Y)/max(1-Y,0.000000001),0)"
+        }
+      ]
+    }
+  },
+  "formal_reference_manual_only": {
+    "not_executed_as_engine": true,
+    "recurrence": "Support uses weakened delta of premises as in Definition 8 and Algorithm 2 of https://arxiv.org/pdf/1903.01865",
+    "sabor_positive_delta": 0.5000000000000001,
+    "sabor_negative_delta": 0.0,
+    "recomendar_positive_mu": 0.4500000000000001,
+    "recomendar_negative_mu": 0.0,
+    "recomendar_positive_delta": 0.4500000000000001,
+    "formulas": [
+      "delta_sabor = (0.8-0.6)/(1-0.6) = 0.5",
+      "mu_recomendar = delta_sabor * 0.9 = 0.45",
+      "delta_recomendar = (0.45-0)/(1-0) = 0.45"
+    ]
+  },
+  "limitations": [
+    "La respuesta identifica el comportamiento de este endpoint local, no prueba la identidad binaria con otra instancia.",
+    "La recurrencia formal se calculo manualmente para este caso; no se ejecuto un motor formal de referencia.",
+    "El ensayo verifica procedimiento numerico, no calidad de recomendaciones del corpus."
+  ],
+  "status": "completed",
+  "response_graph": {
+    "edges": [
+      {
+        "from": "F1",
+        "kind": "SUPPORT",
+        "to": "F3"
+      },
+      {
+        "from": "R1",
+        "kind": "SUPPORT",
+        "to": "F4"
+      },
+      {
+        "from": "R2",
+        "kind": "SUPPORT",
+        "to": "F3"
+      },
+      {
+        "from": "F2",
+        "kind": "SUPPORT",
+        "to": "F4"
+      },
+      {
+        "from": "F2",
+        "kind": "CONFLICT",
+        "to": "F1"
+      },
+      {
+        "from": "F1",
+        "kind": "CONFLICT",
+        "to": "F2"
+      },
+      {
+        "from": "F4",
+        "kind": "CONFLICT",
+        "to": "F3"
+      },
+      {
+        "from": "F3",
+        "kind": "CONFLICT",
+        "to": "F4"
+      }
+    ],
+    "nodes": [
+      {
+        "attributeIntervals": null,
+        "attributes": [
+          "0.8"
+        ],
+        "deltaAttributes": [
+          "0.5000000000000001"
+        ],
+        "id": "F1",
+        "label": "sabor(p)",
+        "sourceKey": "FACT|sabor|p",
+        "type": "FACT"
+      },
+      {
+        "attributeIntervals": null,
+        "attributes": [
+          "0.9"
+        ],
+        "deltaAttributes": [
+          "0.9"
+        ],
+        "id": "R1",
+        "label": "~recomendar(X) :- ~sabor(X).",
+        "sourceKey": "RULE|line:5",
+        "type": "RULE"
+      },
+      {
+        "attributeIntervals": null,
+        "attributes": [
+          "0.9"
+        ],
+        "deltaAttributes": [
+          "0.9"
+        ],
+        "id": "R2",
+        "label": "recomendar(X) :- sabor(X).",
+        "sourceKey": "RULE|line:4",
+        "type": "RULE"
+      },
+      {
+        "attributeIntervals": null,
+        "attributes": [
+          "0.6"
+        ],
+        "deltaAttributes": [
+          "0.0"
+        ],
+        "id": "F2",
+        "label": "~sabor(p)",
+        "sourceKey": "FACT|~sabor|p",
+        "type": "FACT"
+      },
+      {
+        "attributeIntervals": null,
+        "attributes": [
+          "0.7200000000000001"
+        ],
+        "deltaAttributes": [
+          "0.3913043478260871"
+        ],
+        "id": "F3",
+        "label": "recomendar(p)",
+        "sourceKey": null,
+        "type": "FACT"
+      },
+      {
+        "attributeIntervals": null,
+        "attributes": [
+          "0.54"
+        ],
+        "deltaAttributes": [
+          "0.0"
+        ],
+        "id": "F4",
+        "label": "~recomendar(p)",
+        "sourceKey": null,
+        "type": "FACT"
+      }
+    ]
+  },
+  "fact_values": [
+    {
+      "id": "F1",
+      "label": "sabor(p)",
+      "attributes": [
+        "0.8"
+      ],
+      "deltaAttributes": [
+        "0.5000000000000001"
+      ]
+    },
+    {
+      "id": "F2",
+      "label": "~sabor(p)",
+      "attributes": [
+        "0.6"
+      ],
+      "deltaAttributes": [
+        "0.0"
+      ]
+    },
+    {
+      "id": "F3",
+      "label": "recomendar(p)",
+      "attributes": [
+        "0.7200000000000001"
+      ],
+      "deltaAttributes": [
+        "0.3913043478260871"
+      ]
+    },
+    {
+      "id": "F4",
+      "label": "~recomendar(p)",
+      "attributes": [
+        "0.54"
+      ],
+      "deltaAttributes": [
+        "0.0"
+      ]
+    }
+  ],
+  "mapper_result": [
+    {
+      "entity_id": "p",
+      "confidence": 0.3913043478260871,
+      "final_score": 0.3913043478260871
+    }
+  ],
+  "checks": {
+    "sabor(p)": true,
+    "~sabor(p)": true,
+    "recomendar(p)": true,
+    "~recomendar(p)": true
+  }
+}

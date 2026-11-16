@@ -1,0 +1,31 @@
+% Referencia independiente por aspecto: dulzor
+% Preparado offline; verificado después con API local. Ver comparacion_motor_local.json.
+% Fuente: validacion_laf1/salidas/recongelado_20260910/despues/programa_laf1_D.txt
+% Una etiqueta de confianza; preferencias como pesos externos.
+resenaPositivaDulzor(mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble). {0.56}
+resenaNegativaDulzor(mlm16207894_nescafe_reserva_xiapan_cafe_100_soluble). {0.44}
+resenaNegativaDulzor(mlm20075768_nescafe_clasico_cafe_100_puro_soluble). {0.51}
+resenaPositivaDulzor(mlm26912881_cafe_blason_espresso_robusto_tostado_y). {0.67}
+resenaPositivaDulzor(mlm25263480_cafe_gourmet_tostado_y_molido_americano). {0.56}
+resenaNegativaDulzor(mlm25263480_cafe_gourmet_tostado_y_molido_americano). {0.44}
+resenaPositivaDulzor(mlm19544520_cafe_capuccino_moka_members_mark_1). {0.73}
+resenaNegativaDulzor(mlm19544520_cafe_capuccino_moka_members_mark_1). {0.27}
+resenaPositivaDulzor(mlm16250244_nescafe_taster_s_choice_caramel_dark). {0.56}
+resenaNegativaDulzor(mlm16250244_nescafe_taster_s_choice_caramel_dark). {0.44}
+resenaNegativaDulzor(mlm23633481_nescafe_clasico_ice_cafe_soluble_en). {0.51}
+resenaPositivaDulzor(mlm16207863_nescafe_cafe_de_olla_100_cafe). {0.53}
+resenaNegativaDulzor(mlm16207863_nescafe_cafe_de_olla_100_cafe). {0.47}
+resenaPositivaDulzor(mlm41148521_cafe_gourmet_molido_espresso_400g_blason). {0.55}
+resenaPositivaDulzor(mlm43007251_cafe_molido_100_arabico_gourmet_americano). {0.52}
+resenaNegativaDulzor(mlm19663240_nescafe_clasico_cafe_100_puro_soluble). {0.52}
+resenaPositivaDulzor(mlm16207890_nescafe_reserva_verarica_cafe_100_soluble). {0.51}
+resenaPositivaDulzor(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo). {0.64}
+resenaNegativaDulzor(mlm19566313_cafe_capuccino_vainilla_francesa_en_polvo). {0.36}
+resenaPositivaDulzor(mlm27068249_tripack_juan_valdez_cafe_soluble_95gr). {0.51}
+resenaPositivaDulzor(mlm19543513_cafe_molido_la_parroquia_puro_1). {0.57}
+dulzorBueno(X) :- resenaPositivaDulzor(X). {0.85}
+~dulzorBueno(X) :- resenaNegativaDulzor(X). {0.85}
+sensorialBueno(X) :- dulzorBueno(X). {0.80}
+~sensorialBueno(X) :- ~dulzorBueno(X). {0.80}
+recomendar(X) :- sensorialBueno(X). {0.90}
+~recomendar(X) :- ~sensorialBueno(X). {0.92}

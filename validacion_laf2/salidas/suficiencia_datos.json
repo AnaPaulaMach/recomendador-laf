@@ -1,0 +1,1371 @@
+{
+ "historico": {
+  "summary": {
+   "snapshot": "historico",
+   "dataset_key": "mlm_mlm194329_20260528_142014",
+   "productos_incluidos_top20": 18,
+   "publicaciones_clean": 169,
+   "publicaciones_con_raw": 169,
+   "productos_con_1_publicacion": 3,
+   "productos_con_0_publicaciones": 0,
+   "productos_todos_mismo_vector": 0,
+   "productos_decide_solo_precio": 0,
+   "productos_con_mas_de_1_vector": 15,
+   "cobertura": {
+    "has_discount": {
+     "informado": 20,
+     "informado_pct": 11.8,
+     "cumple": 20,
+     "cumple_pct": 11.8
+    },
+    "has_cuotas": {
+     "informado": 169,
+     "informado_pct": 100.0,
+     "cumple": 0,
+     "cumple_pct": 0.0
+    },
+    "has_long_warranty": {
+     "informado": 63,
+     "informado_pct": 37.3,
+     "cumple": 5,
+     "cumple_pct": 3.0
+    },
+    "is_official_store": {
+     "informado": 36,
+     "informado_pct": 21.3,
+     "cumple": 36,
+     "cumple_pct": 21.3
+    },
+    "has_invoice": {
+     "informado": 0,
+     "informado_pct": 0.0,
+     "cumple": 0,
+     "cumple_pct": 0.0
+    },
+    "has_free_shipping": {
+     "informado": 169,
+     "informado_pct": 100.0,
+     "cumple": 112,
+     "cumple_pct": 66.3
+    }
+   },
+   "detalle_crudo": {
+    "shipping_free_shipping": {
+     "False": 57,
+     "True": 112
+    },
+    "official_store_id_null": 133,
+    "tags_top": [
+     [
+      "kvs_primary",
+      169
+     ],
+     [
+      "immediate_payment",
+      169
+     ],
+     [
+      "cart_eligible",
+      169
+     ],
+     [
+      "user_product_unify",
+      85
+     ],
+     [
+      "good_quality_thumbnail",
+      63
+     ],
+     [
+      "standard_price_by_quantity",
+      28
+     ],
+     [
+      "supermarket_eligible",
+      25
+     ],
+     [
+      "good_quality_picture",
+      12
+     ],
+     [
+      "dynamic_standard_price",
+      11
+     ],
+     [
+      "first_party",
+      9
+     ],
+     [
+      "brand_verified",
+      9
+     ],
+     [
+      "has_published_clips",
+      6
+     ]
+    ],
+    "sale_terms_ids": [
+     [
+      "WARRANTY_TYPE",
+      153
+     ],
+     [
+      "WARRANTY_TIME",
+      63
+     ]
+    ],
+    "warranty_values": [
+     [
+      "{\"unit\": \"días\", \"number\": 30}",
+      20
+     ],
+     [
+      "{\"unit\": \"días\", \"number\": 3}",
+      5
+     ],
+     [
+      "{\"unit\": \"días\", \"number\": 7}",
+      4
+     ],
+     [
+      "{\"unit\": \"meses\", \"number\": 1}",
+      4
+     ],
+     [
+      "{\"unit\": \"meses\", \"number\": 12}",
+      3
+     ],
+     [
+      "{\"unit\": \"días\", \"number\": 15}",
+      3
+     ],
+     [
+      "{\"unit\": \"días\", \"number\": 10}",
+      3
+     ],
+     [
+      "{\"unit\": \"días\", \"number\": 1}",
+      3
+     ]
+    ],
+    "invoice_values": []
+   }
+  },
+  "productos": [
+   {
+    "position": 1,
+    "product_id": "MLM16207894",
+    "name": "Nescafé Reserva Xiapan Café 100% Soluble Liof",
+    "pubs_clean": 9,
+    "pubs_con_raw": 9,
+    "vectores_binarios_distintos": 4,
+    "precio_min": 121.22,
+    "precio_max": 410.0,
+    "precios_distintos": 8,
+    "n_has_discount": 1,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 0,
+    "n_is_official_store": 2,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 4
+   },
+   {
+    "position": 2,
+    "product_id": "MLM20075768",
+    "name": "Nescafé Clásico Café 100% Puro Soluble Bolsa ",
+    "pubs_clean": 1,
+    "pubs_con_raw": 1,
+    "vectores_binarios_distintos": 1,
+    "precio_min": 265.0,
+    "precio_max": 265.0,
+    "precios_distintos": 1,
+    "n_has_discount": 0,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 0,
+    "n_is_official_store": 0,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 0
+   },
+   {
+    "position": 4,
+    "product_id": "MLM26912881",
+    "name": "Café Blasón Espresso Robusto Tostado Y Molido",
+    "pubs_clean": 1,
+    "pubs_con_raw": 1,
+    "vectores_binarios_distintos": 1,
+    "precio_min": 277.42,
+    "precio_max": 277.42,
+    "precios_distintos": 1,
+    "n_has_discount": 1,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 0,
+    "n_is_official_store": 1,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 1
+   },
+   {
+    "position": 5,
+    "product_id": "MLM16250252",
+    "name": "Nescafé Clásico de café sin gluten con 400g",
+    "pubs_clean": 11,
+    "pubs_con_raw": 11,
+    "vectores_binarios_distintos": 4,
+    "precio_min": 255.49,
+    "precio_max": 1465.0,
+    "precios_distintos": 11,
+    "n_has_discount": 2,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 2,
+    "n_is_official_store": 1,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 10
+   },
+   {
+    "position": 6,
+    "product_id": "MLM25263480",
+    "name": "Café Gourmet Tostado y Molido Americano Blasó",
+    "pubs_clean": 3,
+    "pubs_con_raw": 3,
+    "vectores_binarios_distintos": 3,
+    "precio_min": 267.66,
+    "precio_max": 589.88,
+    "precios_distintos": 3,
+    "n_has_discount": 1,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 0,
+    "n_is_official_store": 2,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 3
+   },
+   {
+    "position": 7,
+    "product_id": "MLM19544520",
+    "name": "Cafe Capuccino Moka Members Mark 1.8 Kg en po",
+    "pubs_clean": 26,
+    "pubs_con_raw": 26,
+    "vectores_binarios_distintos": 6,
+    "precio_min": 283.98,
+    "precio_max": 790.0,
+    "precios_distintos": 21,
+    "n_has_discount": 2,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 0,
+    "n_is_official_store": 5,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 21
+   },
+   {
+    "position": 8,
+    "product_id": "MLM16250244",
+    "name": "Nescafé Taster's Choice Caramel Dark Chocolat",
+    "pubs_clean": 7,
+    "pubs_con_raw": 7,
+    "vectores_binarios_distintos": 4,
+    "precio_min": 139.08,
+    "precio_max": 447.0,
+    "precios_distintos": 7,
+    "n_has_discount": 2,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 1,
+    "n_is_official_store": 2,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 5
+   },
+   {
+    "position": 9,
+    "product_id": "MLM23633481",
+    "name": "Nescafé Clásico ICE Café Soluble en Frío Fras",
+    "pubs_clean": 12,
+    "pubs_con_raw": 12,
+    "vectores_binarios_distintos": 4,
+    "precio_min": 165.0,
+    "precio_max": 447.0,
+    "precios_distintos": 11,
+    "n_has_discount": 0,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 1,
+    "n_is_official_store": 2,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 4
+   },
+   {
+    "position": 10,
+    "product_id": "MLM16207863",
+    "name": "Nescafé Café de Olla 100% Café Soluble Sabor ",
+    "pubs_clean": 11,
+    "pubs_con_raw": 11,
+    "vectores_binarios_distintos": 4,
+    "precio_min": 77.47,
+    "precio_max": 400.0,
+    "precios_distintos": 9,
+    "n_has_discount": 1,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 0,
+    "n_is_official_store": 2,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 4
+   },
+   {
+    "position": 11,
+    "product_id": "MLM16250253",
+    "name": "Nescafé Decaf Café 100% Puro Soluble Descafei",
+    "pubs_clean": 6,
+    "pubs_con_raw": 6,
+    "vectores_binarios_distintos": 3,
+    "precio_min": 131.52,
+    "precio_max": 390.0,
+    "precios_distintos": 6,
+    "n_has_discount": 1,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 0,
+    "n_is_official_store": 1,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 3
+   },
+   {
+    "position": 12,
+    "product_id": "MLM41148521",
+    "name": "Café Gourmet Molido Espresso 400g Blasón",
+    "pubs_clean": 7,
+    "pubs_con_raw": 7,
+    "vectores_binarios_distintos": 4,
+    "precio_min": 120.0,
+    "precio_max": 482.0,
+    "precios_distintos": 7,
+    "n_has_discount": 1,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 0,
+    "n_is_official_store": 2,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 4
+   },
+   {
+    "position": 13,
+    "product_id": "MLM43007251",
+    "name": "Café Molido 100% Arábico Gourmet Americano 90",
+    "pubs_clean": 6,
+    "pubs_con_raw": 6,
+    "vectores_binarios_distintos": 3,
+    "precio_min": 245.31,
+    "precio_max": 942.0,
+    "precios_distintos": 6,
+    "n_has_discount": 1,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 0,
+    "n_is_official_store": 1,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 5
+   },
+   {
+    "position": 15,
+    "product_id": "MLM19663240",
+    "name": "Nescafé Clásico Café 100% Puro Soluble Frasco",
+    "pubs_clean": 16,
+    "pubs_con_raw": 16,
+    "vectores_binarios_distintos": 5,
+    "precio_min": 179.0,
+    "precio_max": 410.0,
+    "precios_distintos": 16,
+    "n_has_discount": 3,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 0,
+    "n_is_official_store": 2,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 7
+   },
+   {
+    "position": 16,
+    "product_id": "MLM16207890",
+    "name": "Nescafé Reserva Verarica Café 100% Soluble Li",
+    "pubs_clean": 8,
+    "pubs_con_raw": 8,
+    "vectores_binarios_distintos": 3,
+    "precio_min": 181.9,
+    "precio_max": 447.0,
+    "precios_distintos": 8,
+    "n_has_discount": 0,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 0,
+    "n_is_official_store": 1,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 3
+   },
+   {
+    "position": 17,
+    "product_id": "MLM19566313",
+    "name": "Cafe Capuccino Vainilla Francesa En Polvo Mem",
+    "pubs_clean": 26,
+    "pubs_con_raw": 26,
+    "vectores_binarios_distintos": 5,
+    "precio_min": 287.99,
+    "precio_max": 645.0,
+    "precios_distintos": 20,
+    "n_has_discount": 1,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 0,
+    "n_is_official_store": 8,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 22
+   },
+   {
+    "position": 18,
+    "product_id": "MLM20999002",
+    "name": "Café Soluble Nescafé Clásico Nestlé Professio",
+    "pubs_clean": 6,
+    "pubs_con_raw": 6,
+    "vectores_binarios_distintos": 2,
+    "precio_min": 483.93,
+    "precio_max": 799.0,
+    "precios_distintos": 6,
+    "n_has_discount": 1,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 0,
+    "n_is_official_store": 1,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 5
+   },
+   {
+    "position": 19,
+    "product_id": "MLM27068249",
+    "name": "Tripack Juan Valdez Café Soluble 95gr 3 Sabor",
+    "pubs_clean": 1,
+    "pubs_con_raw": 1,
+    "vectores_binarios_distintos": 1,
+    "precio_min": 473.1,
+    "precio_max": 473.1,
+    "precios_distintos": 1,
+    "n_has_discount": 1,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 0,
+    "n_is_official_store": 1,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 0
+   },
+   {
+    "position": 20,
+    "product_id": "MLM19543513",
+    "name": "Café Molido La Parroquia Puro 1 Kg Tradiciona",
+    "pubs_clean": 12,
+    "pubs_con_raw": 12,
+    "vectores_binarios_distintos": 4,
+    "precio_min": 280.5,
+    "precio_max": 790.0,
+    "precios_distintos": 11,
+    "n_has_discount": 1,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 1,
+    "n_is_official_store": 2,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 11
+   }
+  ]
+ },
+ "instantaneo": {
+  "summary": {
+   "snapshot": "instantaneo",
+   "dataset_key": "mlm_mlm194329_20260805_191308",
+   "productos_incluidos_top20": 16,
+   "publicaciones_clean": 215,
+   "publicaciones_con_raw": 215,
+   "productos_con_1_publicacion": 1,
+   "productos_con_0_publicaciones": 0,
+   "productos_todos_mismo_vector": 1,
+   "productos_decide_solo_precio": 1,
+   "productos_con_mas_de_1_vector": 14,
+   "cobertura": {
+    "has_discount": {
+     "informado": 25,
+     "informado_pct": 11.6,
+     "cumple": 25,
+     "cumple_pct": 11.6
+    },
+    "has_cuotas": {
+     "informado": 215,
+     "informado_pct": 100.0,
+     "cumple": 0,
+     "cumple_pct": 0.0
+    },
+    "has_long_warranty": {
+     "informado": 74,
+     "informado_pct": 34.4,
+     "cumple": 7,
+     "cumple_pct": 3.3
+    },
+    "is_official_store": {
+     "informado": 36,
+     "informado_pct": 16.7,
+     "cumple": 36,
+     "cumple_pct": 16.7
+    },
+    "has_invoice": {
+     "informado": 0,
+     "informado_pct": 0.0,
+     "cumple": 0,
+     "cumple_pct": 0.0
+    },
+    "has_free_shipping": {
+     "informado": 215,
+     "informado_pct": 100.0,
+     "cumple": 146,
+     "cumple_pct": 67.9
+    }
+   },
+   "detalle_crudo": {
+    "shipping_free_shipping": {
+     "True": 146,
+     "False": 69
+    },
+    "official_store_id_null": 179,
+    "tags_top": [
+     [
+      "kvs_primary",
+      215
+     ],
+     [
+      "immediate_payment",
+      215
+     ],
+     [
+      "cart_eligible",
+      215
+     ],
+     [
+      "user_product_unify",
+      89
+     ],
+     [
+      "good_quality_thumbnail",
+      69
+     ],
+     [
+      "standard_price_by_quantity",
+      44
+     ],
+     [
+      "supermarket_eligible",
+      34
+     ],
+     [
+      "dynamic_standard_price",
+      14
+     ],
+     [
+      "good_quality_picture",
+      13
+     ],
+     [
+      "first_party",
+      10
+     ],
+     [
+      "brand_verified",
+      8
+     ],
+     [
+      "kit_component",
+      4
+     ]
+    ],
+    "sale_terms_ids": [
+     [
+      "WARRANTY_TYPE",
+      198
+     ],
+     [
+      "WARRANTY_TIME",
+      74
+     ]
+    ],
+    "warranty_values": [
+     [
+      "{\"unit\": \"días\", \"number\": 30}",
+      23
+     ],
+     [
+      "{\"unit\": \"meses\", \"number\": 1}",
+      10
+     ],
+     [
+      "{\"unit\": \"días\", \"number\": 7}",
+      6
+     ],
+     [
+      "{\"unit\": \"meses\", \"number\": 12}",
+      4
+     ],
+     [
+      "{\"unit\": \"días\", \"number\": 1}",
+      4
+     ],
+     [
+      "{\"unit\": \"días\", \"number\": 15}",
+      4
+     ],
+     [
+      "{\"unit\": \"meses\", \"number\": 3}",
+      3
+     ],
+     [
+      "{\"unit\": \"días\", \"number\": 4}",
+      3
+     ]
+    ],
+    "invoice_values": []
+   }
+  },
+  "productos": [
+   {
+    "position": 2,
+    "product_id": "MLM16207862",
+    "name": "Nescafé Taster's Choice Vainilla Café 100% Pu",
+    "pubs_clean": 16,
+    "pubs_con_raw": 16,
+    "vectores_binarios_distintos": 7,
+    "precio_min": 175.0,
+    "precio_max": 590.0,
+    "precios_distintos": 12,
+    "n_has_discount": 1,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 5,
+    "n_is_official_store": 2,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 10
+   },
+   {
+    "position": 3,
+    "product_id": "MLM16207894",
+    "name": "Nescafé Reserva Xiapan Café 100% Soluble Liof",
+    "pubs_clean": 11,
+    "pubs_con_raw": 11,
+    "vectores_binarios_distintos": 5,
+    "precio_min": 124.66,
+    "precio_max": 490.0,
+    "precios_distintos": 10,
+    "n_has_discount": 6,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 0,
+    "n_is_official_store": 1,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 5
+   },
+   {
+    "position": 4,
+    "product_id": "MLM19663240",
+    "name": "Nescafé Clásico Café 100% Puro Soluble Frasco",
+    "pubs_clean": 13,
+    "pubs_con_raw": 13,
+    "vectores_binarios_distintos": 6,
+    "precio_min": 147.0,
+    "precio_max": 446.0,
+    "precios_distintos": 13,
+    "n_has_discount": 2,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 0,
+    "n_is_official_store": 3,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 7
+   },
+   {
+    "position": 5,
+    "product_id": "MLM21827563",
+    "name": "Nescafé Reserva Oahan Café 100% Soluble Liofi",
+    "pubs_clean": 4,
+    "pubs_con_raw": 4,
+    "vectores_binarios_distintos": 4,
+    "precio_min": 125.16,
+    "precio_max": 350.0,
+    "precios_distintos": 4,
+    "n_has_discount": 2,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 0,
+    "n_is_official_store": 1,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 2
+   },
+   {
+    "position": 6,
+    "product_id": "MLM41148521",
+    "name": "Café Gourmet Molido Espresso 400g Blasón",
+    "pubs_clean": 9,
+    "pubs_con_raw": 9,
+    "vectores_binarios_distintos": 4,
+    "precio_min": 138.0,
+    "precio_max": 600.0,
+    "precios_distintos": 9,
+    "n_has_discount": 1,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 0,
+    "n_is_official_store": 2,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 7
+   },
+   {
+    "position": 7,
+    "product_id": "MLM16207893",
+    "name": "Café instantáneo clásico Nescafé sin gluten f",
+    "pubs_clean": 3,
+    "pubs_con_raw": 3,
+    "vectores_binarios_distintos": 3,
+    "precio_min": 90.9,
+    "precio_max": 197.0,
+    "precios_distintos": 3,
+    "n_has_discount": 1,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 0,
+    "n_is_official_store": 1,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 0
+   },
+   {
+    "position": 8,
+    "product_id": "MLM19544520",
+    "name": "Cafe Capuccino Moka Members Mark 1.8 Kg en po",
+    "pubs_clean": 38,
+    "pubs_con_raw": 38,
+    "vectores_binarios_distintos": 6,
+    "precio_min": 280.0,
+    "precio_max": 790.0,
+    "precios_distintos": 28,
+    "n_has_discount": 2,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 1,
+    "n_is_official_store": 5,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 34
+   },
+   {
+    "position": 9,
+    "product_id": "MLM19566313",
+    "name": "Cafe Capuccino Vainilla Francesa En Polvo Mem",
+    "pubs_clean": 33,
+    "pubs_con_raw": 33,
+    "vectores_binarios_distintos": 5,
+    "precio_min": 290.99,
+    "precio_max": 645.0,
+    "precios_distintos": 22,
+    "n_has_discount": 1,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 0,
+    "n_is_official_store": 6,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 30
+   },
+   {
+    "position": 11,
+    "product_id": "MLM50307832",
+    "name": "Café Capuchino Instantáneo para Máquinas Vend",
+    "pubs_clean": 1,
+    "pubs_con_raw": 1,
+    "vectores_binarios_distintos": 1,
+    "precio_min": 209.0,
+    "precio_max": 209.0,
+    "precios_distintos": 1,
+    "n_has_discount": 0,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 0,
+    "n_is_official_store": 1,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 0
+   },
+   {
+    "position": 13,
+    "product_id": "MLM20999002",
+    "name": "Café Soluble Nescafé Clásico Nestlé Professio",
+    "pubs_clean": 7,
+    "pubs_con_raw": 7,
+    "vectores_binarios_distintos": 3,
+    "precio_min": 612.0,
+    "precio_max": 799.0,
+    "precios_distintos": 6,
+    "n_has_discount": 2,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 0,
+    "n_is_official_store": 2,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 6
+   },
+   {
+    "position": 14,
+    "product_id": "MLM16207863",
+    "name": "Nescafé Café de Olla 100% Café Soluble Sabor ",
+    "pubs_clean": 12,
+    "pubs_con_raw": 12,
+    "vectores_binarios_distintos": 3,
+    "precio_min": 89.0,
+    "precio_max": 378.61,
+    "precios_distintos": 10,
+    "n_has_discount": 0,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 0,
+    "n_is_official_store": 2,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 4
+   },
+   {
+    "position": 15,
+    "product_id": "MLM55879706",
+    "name": "Café Soluble Nescafé Clásico Frasco 200g + Ta",
+    "pubs_clean": 3,
+    "pubs_con_raw": 3,
+    "vectores_binarios_distintos": 3,
+    "precio_min": 159.0,
+    "precio_max": 250.0,
+    "precios_distintos": 3,
+    "n_has_discount": 0,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 0,
+    "n_is_official_store": 1,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 2
+   },
+   {
+    "position": 16,
+    "product_id": "MLM16207890",
+    "name": "Nescafé Reserva Verarica Café 100% Soluble Li",
+    "pubs_clean": 11,
+    "pubs_con_raw": 11,
+    "vectores_binarios_distintos": 6,
+    "precio_min": 125.16,
+    "precio_max": 486.0,
+    "precios_distintos": 11,
+    "n_has_discount": 4,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 0,
+    "n_is_official_store": 2,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 6
+   },
+   {
+    "position": 18,
+    "product_id": "MLM19791561",
+    "name": "Café Nescafe Cappuccino Original 1 Sobre De 2",
+    "pubs_clean": 4,
+    "pubs_con_raw": 4,
+    "vectores_binarios_distintos": 1,
+    "precio_min": 49.0,
+    "precio_max": 100.0,
+    "precios_distintos": 4,
+    "n_has_discount": 0,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 0,
+    "n_is_official_store": 0,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 0
+   },
+   {
+    "position": 19,
+    "product_id": "MLM19535763",
+    "name": "Cafe Puro Soluble Colombiano Liofilizado Memb",
+    "pubs_clean": 32,
+    "pubs_con_raw": 32,
+    "vectores_binarios_distintos": 5,
+    "precio_min": 229.99,
+    "precio_max": 733.95,
+    "precios_distintos": 26,
+    "n_has_discount": 1,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 0,
+    "n_is_official_store": 4,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 25
+   },
+   {
+    "position": 20,
+    "product_id": "MLM23633481",
+    "name": "Nescafé Clásico ICE Café Soluble en Frío Fras",
+    "pubs_clean": 18,
+    "pubs_con_raw": 18,
+    "vectores_binarios_distintos": 5,
+    "precio_min": 119.0,
+    "precio_max": 486.0,
+    "precios_distintos": 15,
+    "n_has_discount": 2,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 1,
+    "n_is_official_store": 3,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 8
+   }
+  ]
+ },
+ "grano_molido": {
+  "summary": {
+   "snapshot": "grano_molido",
+   "dataset_key": "mlm_mlm194335_20260805_185233",
+   "productos_incluidos_top20": 19,
+   "publicaciones_clean": 121,
+   "publicaciones_con_raw": 121,
+   "productos_con_1_publicacion": 7,
+   "productos_con_0_publicaciones": 0,
+   "productos_todos_mismo_vector": 0,
+   "productos_decide_solo_precio": 0,
+   "productos_con_mas_de_1_vector": 12,
+   "cobertura": {
+    "has_discount": {
+     "informado": 10,
+     "informado_pct": 8.3,
+     "cumple": 10,
+     "cumple_pct": 8.3
+    },
+    "has_cuotas": {
+     "informado": 121,
+     "informado_pct": 100.0,
+     "cumple": 0,
+     "cumple_pct": 0.0
+    },
+    "has_long_warranty": {
+     "informado": 52,
+     "informado_pct": 43.0,
+     "cumple": 6,
+     "cumple_pct": 5.0
+    },
+    "is_official_store": {
+     "informado": 27,
+     "informado_pct": 22.3,
+     "cumple": 27,
+     "cumple_pct": 22.3
+    },
+    "has_invoice": {
+     "informado": 0,
+     "informado_pct": 0.0,
+     "cumple": 0,
+     "cumple_pct": 0.0
+    },
+    "has_free_shipping": {
+     "informado": 121,
+     "informado_pct": 100.0,
+     "cumple": 102,
+     "cumple_pct": 84.3
+    }
+   },
+   "detalle_crudo": {
+    "shipping_free_shipping": {
+     "True": 102,
+     "False": 19
+    },
+    "official_store_id_null": 94,
+    "tags_top": [
+     [
+      "kvs_primary",
+      121
+     ],
+     [
+      "immediate_payment",
+      121
+     ],
+     [
+      "cart_eligible",
+      121
+     ],
+     [
+      "user_product_unify",
+      64
+     ],
+     [
+      "good_quality_thumbnail",
+      40
+     ],
+     [
+      "supermarket_eligible",
+      22
+     ],
+     [
+      "standard_price_by_quantity",
+      22
+     ],
+     [
+      "has_published_clips",
+      11
+     ],
+     [
+      "catalog_boost",
+      11
+     ],
+     [
+      "good_quality_picture",
+      8
+     ],
+     [
+      "first_party",
+      7
+     ],
+     [
+      "dynamic_standard_price",
+      7
+     ]
+    ],
+    "sale_terms_ids": [
+     [
+      "WARRANTY_TYPE",
+      111
+     ],
+     [
+      "WARRANTY_TIME",
+      52
+     ]
+    ],
+    "warranty_values": [
+     [
+      "{\"unit\": \"meses\", \"number\": 1}",
+      13
+     ],
+     [
+      "{\"unit\": \"días\", \"number\": 30}",
+      13
+     ],
+     [
+      "{\"unit\": \"días\", \"number\": 7}",
+      8
+     ],
+     [
+      "{\"unit\": \"días\", \"number\": 10}",
+      6
+     ],
+     [
+      "{\"unit\": \"meses\", \"number\": 12}",
+      3
+     ],
+     [
+      "{\"unit\": \"años\", \"number\": 1}",
+      2
+     ],
+     [
+      "{\"unit\": \"días\", \"number\": 15}",
+      2
+     ],
+     [
+      "{\"unit\": \"meses\", \"number\": 6}",
+      1
+     ]
+    ],
+    "invoice_values": []
+   }
+  },
+  "productos": [
+   {
+    "position": 1,
+    "product_id": "MLM41148521",
+    "name": "Café Gourmet Molido Espresso 400g Blasón",
+    "pubs_clean": 9,
+    "pubs_con_raw": 9,
+    "vectores_binarios_distintos": 4,
+    "precio_min": 138.0,
+    "precio_max": 600.0,
+    "precios_distintos": 9,
+    "n_has_discount": 1,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 0,
+    "n_is_official_store": 2,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 7
+   },
+   {
+    "position": 2,
+    "product_id": "MLM19543513",
+    "name": "Café Molido La Parroquia Puro 1 Kg Tradiciona",
+    "pubs_clean": 12,
+    "pubs_con_raw": 12,
+    "vectores_binarios_distintos": 4,
+    "precio_min": 330.0,
+    "precio_max": 790.0,
+    "precios_distintos": 11,
+    "n_has_discount": 0,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 1,
+    "n_is_official_store": 2,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 11
+   },
+   {
+    "position": 3,
+    "product_id": "MLM43006788",
+    "name": "Café Molido Gourmet Espresso Robusto 900g Bla",
+    "pubs_clean": 2,
+    "pubs_con_raw": 2,
+    "vectores_binarios_distintos": 2,
+    "precio_min": 359.0,
+    "precio_max": 765.0,
+    "precios_distintos": 2,
+    "n_has_discount": 0,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 0,
+    "n_is_official_store": 0,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 1
+   },
+   {
+    "position": 4,
+    "product_id": "MLM26912881",
+    "name": "Café Blasón Espresso Robusto Tostado Y Molido",
+    "pubs_clean": 2,
+    "pubs_con_raw": 2,
+    "vectores_binarios_distintos": 2,
+    "precio_min": 345.0,
+    "precio_max": 899.0,
+    "precios_distintos": 2,
+    "n_has_discount": 1,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 0,
+    "n_is_official_store": 1,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 2
+   },
+   {
+    "position": 5,
+    "product_id": "MLM68722805",
+    "name": "Café Santa Elena Artesanal De Veracruz 1kg Gr",
+    "pubs_clean": 1,
+    "pubs_con_raw": 1,
+    "vectores_binarios_distintos": 1,
+    "precio_min": 260.0,
+    "precio_max": 260.0,
+    "precios_distintos": 1,
+    "n_has_discount": 0,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 0,
+    "n_is_official_store": 1,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 0
+   },
+   {
+    "position": 6,
+    "product_id": "MLM43007251",
+    "name": "Café Molido 100% Arábico Gourmet Americano 90",
+    "pubs_clean": 7,
+    "pubs_con_raw": 7,
+    "vectores_binarios_distintos": 3,
+    "precio_min": 279.0,
+    "precio_max": 1024.0,
+    "precios_distintos": 6,
+    "n_has_discount": 1,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 0,
+    "n_is_official_store": 1,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 5
+   },
+   {
+    "position": 7,
+    "product_id": "MLM45641721",
+    "name": "Café Espresso en grano 100% arábica 500 g Bla",
+    "pubs_clean": 1,
+    "pubs_con_raw": 1,
+    "vectores_binarios_distintos": 1,
+    "precio_min": 186.11,
+    "precio_max": 186.11,
+    "precios_distintos": 1,
+    "n_has_discount": 0,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 0,
+    "n_is_official_store": 1,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 1
+   },
+   {
+    "position": 8,
+    "product_id": "MLM60041718",
+    "name": "Café En Grano Don Justo No. 02 - Tueste Medio",
+    "pubs_clean": 1,
+    "pubs_con_raw": 1,
+    "vectores_binarios_distintos": 1,
+    "precio_min": 198.0,
+    "precio_max": 198.0,
+    "precios_distintos": 1,
+    "n_has_discount": 1,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 0,
+    "n_is_official_store": 1,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 0
+   },
+   {
+    "position": 9,
+    "product_id": "MLM25263480",
+    "name": "Café Gourmet Tostado y Molido Americano Blasó",
+    "pubs_clean": 5,
+    "pubs_con_raw": 5,
+    "vectores_binarios_distintos": 3,
+    "precio_min": 345.0,
+    "precio_max": 890.0,
+    "precios_distintos": 5,
+    "n_has_discount": 1,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 0,
+    "n_is_official_store": 2,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 5
+   },
+   {
+    "position": 10,
+    "product_id": "MLM34232599",
+    "name": "Café ETNIA 52 Molido de Altura Chiapas | 454g",
+    "pubs_clean": 1,
+    "pubs_con_raw": 1,
+    "vectores_binarios_distintos": 1,
+    "precio_min": 193.05,
+    "precio_max": 193.05,
+    "precios_distintos": 1,
+    "n_has_discount": 1,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 0,
+    "n_is_official_store": 1,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 0
+   },
+   {
+    "position": 12,
+    "product_id": "MLM19535969",
+    "name": "Nescafé Taster's Choice Gourmet Roast America",
+    "pubs_clean": 11,
+    "pubs_con_raw": 11,
+    "vectores_binarios_distintos": 4,
+    "precio_min": 359.99,
+    "precio_max": 966.9,
+    "precios_distintos": 9,
+    "n_has_discount": 1,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 4,
+    "n_is_official_store": 2,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 11
+   },
+   {
+    "position": 13,
+    "product_id": "MLM19543517",
+    "name": "Cafe Puro Tostado Y Molido Veracruz Chiapas O",
+    "pubs_clean": 26,
+    "pubs_con_raw": 26,
+    "vectores_binarios_distintos": 5,
+    "precio_min": 298.0,
+    "precio_max": 829.5,
+    "precios_distintos": 22,
+    "n_has_discount": 0,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 1,
+    "n_is_official_store": 5,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 23
+   },
+   {
+    "position": 14,
+    "product_id": "MLM20502238",
+    "name": "Cafe Folgers Classic Roast Clasico Bote Jumbo",
+    "pubs_clean": 26,
+    "pubs_con_raw": 26,
+    "vectores_binarios_distintos": 2,
+    "precio_min": 535.0,
+    "precio_max": 2116.0,
+    "precios_distintos": 24,
+    "n_has_discount": 0,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 0,
+    "n_is_official_store": 1,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 26
+   },
+   {
+    "position": 15,
+    "product_id": "MLM19777103",
+    "name": "Café La Parroquia De Veracruz Molido Gourmet ",
+    "pubs_clean": 7,
+    "pubs_con_raw": 7,
+    "vectores_binarios_distintos": 3,
+    "precio_min": 185.0,
+    "precio_max": 510.0,
+    "precios_distintos": 7,
+    "n_has_discount": 0,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 0,
+    "n_is_official_store": 1,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 5
+   },
+   {
+    "position": 16,
+    "product_id": "MLM52303869",
+    "name": "Café Premium Pluma Oaxaca Tostado y Molido Bl",
+    "pubs_clean": 5,
+    "pubs_con_raw": 5,
+    "vectores_binarios_distintos": 3,
+    "precio_min": 139.0,
+    "precio_max": 622.0,
+    "precios_distintos": 5,
+    "n_has_discount": 1,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 0,
+    "n_is_official_store": 2,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 4
+   },
+   {
+    "position": 17,
+    "product_id": "MLM46938408",
+    "name": "Café De Chiapas Mezcla Caracolillo Bourbon Ar",
+    "pubs_clean": 1,
+    "pubs_con_raw": 1,
+    "vectores_binarios_distintos": 1,
+    "precio_min": 361.77,
+    "precio_max": 361.77,
+    "precios_distintos": 1,
+    "n_has_discount": 1,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 0,
+    "n_is_official_store": 1,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 0
+   },
+   {
+    "position": 18,
+    "product_id": "MLM65430742",
+    "name": "Café Veracruzano Artesanal Calidad Gourmet 10",
+    "pubs_clean": 1,
+    "pubs_con_raw": 1,
+    "vectores_binarios_distintos": 1,
+    "precio_min": 280.0,
+    "precio_max": 280.0,
+    "precios_distintos": 1,
+    "n_has_discount": 0,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 0,
+    "n_is_official_store": 1,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 0
+   },
+   {
+    "position": 19,
+    "product_id": "MLM34739841",
+    "name": "Café en Grano de Altura Gourmet | 250gr | Tos",
+    "pubs_clean": 1,
+    "pubs_con_raw": 1,
+    "vectores_binarios_distintos": 1,
+    "precio_min": 120.78,
+    "precio_max": 120.78,
+    "precios_distintos": 1,
+    "n_has_discount": 1,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 0,
+    "n_is_official_store": 1,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 0
+   },
+   {
+    "position": 20,
+    "product_id": "MLM26204244",
+    "name": "Café La Parroquia De Veracruz En Grano, Tosta",
+    "pubs_clean": 2,
+    "pubs_con_raw": 2,
+    "vectores_binarios_distintos": 2,
+    "precio_min": 355.0,
+    "precio_max": 659.0,
+    "precios_distintos": 2,
+    "n_has_discount": 0,
+    "n_has_cuotas": 0,
+    "n_has_long_warranty": 0,
+    "n_is_official_store": 1,
+    "n_has_invoice": 0,
+    "n_has_free_shipping": 1
+   }
+  ]
+ }
+}

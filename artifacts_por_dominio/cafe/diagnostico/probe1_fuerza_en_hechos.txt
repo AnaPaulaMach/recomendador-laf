@@ -1,0 +1,8 @@
+% PRUEBA 1 - la fuerza esta en los HECHOS, reglas simetricas.
+% Positivo mucho mas creible que negativo (0.91 vs 0.09).
+% Si el motor propaga la alpha del HECHO: saborBueno debe GANAR (UNDEFEATED).
+% Si solo mira la regla (0.85 = 0.85): empata -> DEFEATED.
+resenaPositivaSabor(a). {0.91; 1.0}
+resenaNegativaSabor(a). {0.09; 1.0}
+saborBueno(X)  :- resenaPositivaSabor(X). {0.85; 1.0}
+~saborBueno(X) :- resenaNegativaSabor(X). {0.85; 1.0}

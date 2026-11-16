@@ -1,0 +1,36 @@
+<p class="comparison-scroll-hint">Deslizá hacia los costados para ver las otras opciones.</p>
+<div class="comparison-shell overflow-x-auto" tabindex="0" aria-label="Comparación de publicaciones; desplazate horizontalmente para ver todas las opciones">
+  <table class="comparison-table">
+    <caption class="sr-only">Comparación de publicaciones seleccionadas</caption>
+    <thead>
+      <tr>
+        <th scope="col">Criterio</th>
+        {% for item in listings %}
+          <th scope="col">
+            <span class="status-pill {% if forloop.first %}status-recommended{% else %}status-competitive{% endif %}">#{{ item.position }}</span>
+            {% include "recommender/partials/product_image.html" with item=item image_class="product-image-comparison" %}
+            <strong>{{ item.metadata.listing_title|default:item.metadata.seller }}</strong>
+          </th>
+        {% endfor %}
+      </tr>
+    </thead>
+    <tbody>
+      <tr><th scope="row">Resultado</th>{% for item in listings %}<td><strong class="comparison-match-label">{{ item.metadata.match_label }}</strong></td>{% endfor %}</tr>
+      <tr><th scope="row">Precio</th>{% for item in listings %}<td><strong>{{ item.metadata.price_label }}</strong></td>{% endfor %}</tr>
+      <tr><th scope="row">Garantía</th>{% for item in listings %}<td>{{ item.metadata.warranty }}</td>{% endfor %}</tr>
+      <tr><th scope="row">Tienda oficial</th>{% for item in listings %}<td>{% if item.metadata.official_store %}<span class="fact-yes">✓ Sí</span>{% else %}<span class="fact-unknown">no informado</span>{% endif %}</td>{% endfor %}</tr>
+      <tr><th scope="row">Envío</th>{% for item in listings %}<td>{{ item.metadata.shipping }}</td>{% endfor %}</tr>
+      <tr>
+        <th scope="row">Ver en Mercado Libre</th>
+        {% for item in listings %}
+          <td>
+            <a class="button button-primary button-sm comparison-marketplace-button" href="{{ item.metadata.purchase_url }}" target="_blank" rel="noopener noreferrer">
+              {% if item.metadata.purchase_url_is_fallback %}Ver opciones{% else %}Ver publicación{% endif %}
+              <span aria-hidden="true">↗</span>
+            </a>
+          </td>
+        {% endfor %}
+      </tr>
+    </tbody>
+  </table>
+</div>

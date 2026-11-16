@@ -1,0 +1,12 @@
+{% if preferences %}
+  <ol class="space-y-4">
+    {% for item in preferences %}
+      <li>
+        <div class="preference-summary-row"><span>{{ item.label }}</span><strong>{{ item.level }}</strong></div>
+        <div class="score-track mt-2"><i style="--score: {{ item.value|stringformat:"g" }}"></i></div>
+      </li>
+    {% endfor %}
+  </ol>
+{% else %}
+  <p class="text-sm text-slate-600">No hay preferencias definidas.</p>
+{% endif %}

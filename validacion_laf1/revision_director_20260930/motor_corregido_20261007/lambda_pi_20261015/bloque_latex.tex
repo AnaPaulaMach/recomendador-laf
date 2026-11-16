@@ -1,0 +1,32 @@
+% ¿Importan lambda y pi? — generado el 2026-10-14 desde resultados_lambda_pi.json (motor corregido, localhost:8088)
+% Requiere \usepackage{booktabs} y \usepackage{xcolor}.
+\begingroup\color{blue}
+\begin{table}[htbp]
+\centering
+\small
+\caption{{\color{blue}Sensibilidad del ranking a los parámetros del prior de la estrategia D, $\alpha=(W^{+}+\lambda\pi)/(W+\lambda)$. Ganador y correlación de Spearman ($\rho$) con el orden vigente ($\lambda=10$, $\pi=0{,}5$), en los perfiles neutro y solo sabor. Con asterisco, ganador distinto del vigente; con daga, primer puesto empatado en puntaje y resuelto por el desempate.}}
+\label{tab:lambda-pi}
+\begin{tabular}{rrlrlr}
+\toprule
+ & & \multicolumn{2}{c}{{\color{blue}Neutro}} & \multicolumn{2}{c}{{\color{blue}Solo sabor}} \\
+\cmidrule(lr){3-4}\cmidrule(lr){5-6}
+{\color{blue}$\lambda$} & {\color{blue}$\pi$} & {\color{blue}Ganador} & {\color{blue}$\rho$} & {\color{blue}Ganador} & {\color{blue}$\rho$} \\
+\midrule
+{\color{blue}0}  & {\color{blue}0,5} & {\color{blue}Blasón Espresso 400 g*} & {\color{blue}0,961} & {\color{blue}Nescafé Decaf*\textsuperscript{\dag}} & {\color{blue}0,418} \\
+{\color{blue}2}  & {\color{blue}0,5} & {\color{blue}Blasón Espresso Robusto} & {\color{blue}0,981} & {\color{blue}Blasón Americano*} & {\color{blue}0,913} \\
+{\color{blue}5}  & {\color{blue}0,5} & {\color{blue}Blasón Espresso Robusto} & {\color{blue}0,979} & {\color{blue}Capuccino vainilla} & {\color{blue}0,986} \\
+{\color{blue}\textbf{10}} & {\color{blue}\textbf{0,5}} & {\color{blue}\textbf{Blasón Espresso Robusto}} & {\color{blue}\textbf{1,000}} & {\color{blue}\textbf{Capuccino vainilla}} & {\color{blue}\textbf{1,000}} \\
+{\color{blue}20} & {\color{blue}0,5} & {\color{blue}Blasón Espresso Robusto} & {\color{blue}0,955} & {\color{blue}Capuccino moka*\textsuperscript{\dag}} & {\color{blue}0,990} \\
+{\color{blue}50} & {\color{blue}0,5} & {\color{blue}Blasón Espresso 400 g*} & {\color{blue}0,839} & {\color{blue}Capuccino moka*} & {\color{blue}0,975} \\
+\midrule
+{\color{blue}10} & {\color{blue}0,3} & {\color{blue}Blasón Espresso Robusto} & {\color{blue}0,932} & {\color{blue}Capuccino vainilla} & {\color{blue}0,994} \\
+{\color{blue}10} & {\color{blue}0,4} & {\color{blue}Blasón Espresso Robusto} & {\color{blue}0,934} & {\color{blue}Capuccino vainilla} & {\color{blue}0,994} \\
+{\color{blue}10} & {\color{blue}0,6} & {\color{blue}Blasón Espresso Robusto} & {\color{blue}0,979} & {\color{blue}Blasón Americano*} & {\color{blue}0,990} \\
+{\color{blue}10} & {\color{blue}0,7} & {\color{blue}Blasón Espresso Robusto} & {\color{blue}0,963} & {\color{blue}Blasón Americano*} & {\color{blue}0,979} \\
+{\color{blue}10} & {\color{blue}0,8} & {\color{blue}Blasón Espresso Robusto} & {\color{blue}0,940} & {\color{blue}Blasón Americano*} & {\color{blue}0,963} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+¿Importan $\lambda$ y $\pi$? Importan poco para el orden global y bastante para el primer puesto cuando este se define por márgenes mínimos. Con el perfil neutro, el ganador vigente (Blasón Espresso Robusto) se conserva en 9 de las 11 configuraciones y cambia solo en los extremos $\lambda=0$ y $\lambda=50$; la correlación de Spearman con el orden vigente no baja de 0,839, y de 0,932 si se excluye $\lambda=50$. Con el perfil solo sabor, el ganador cambia en 7 de las 11 configuraciones (todas las alternativas salvo $\lambda=5$, $\pi=0{,}3$ y $\pi=0{,}4$), aunque la correlación se mantiene en 0,913 o más en todas excepto $\lambda=0$ (0,418); en $\lambda=0$ y $\lambda=20$ el primer puesto es, además, un empate de puntaje que resuelve el desempate. Esta cifra reproduce de forma independiente la de «7 de 11» informada por el director, aunque sin sus scripts no puede confirmarse que ambas grillas sean la misma. En la configuración vigente, el primero y el segundo de solo sabor están separados por 0,007, mientras que en el perfil neutro la distancia es de 0,020.\par
+\endgroup
