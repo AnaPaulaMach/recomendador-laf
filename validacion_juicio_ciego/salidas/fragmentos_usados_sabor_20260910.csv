@@ -1,0 +1,601 @@
+par_id,lado,product_id,orden,fragmento_mostrado,fragmento_original,enmascarado
+P01,A,MLM16207863,1,muy buen producto buen sabor y llega rápido.,muy buen producto buen sabor y llega rápido.,no
+P01,A,MLM16207863,2,excelente el sábor.,excelente el sábor.,no
+P01,A,MLM16207863,3,delicioso sabor y llegó perfecto.,delicioso sabor y llegó perfecto.,no
+P01,A,MLM16207863,4,"no es 100 porciento cafe puro, el sabor es rico.","no es 100 porciento cafe puro, el sabor es rico.",no
+P01,A,MLM16207863,5,sabe bien.,sabe bien.,no
+P01,A,MLM16207863,6,me agrado su sabor.,me agrado su sabor.,no
+P01,A,MLM16207863,7,"excelente producto, muy rico sabor.","excelente producto, muy rico sabor.",no
+P01,A,MLM16207863,8,le agregaré piloncillo para ver si mejora olor y sabor.,le agregaré piloncillo para ver si mejora olor y sabor.,no
+P01,A,MLM16207863,9,"delicioso sabor de olla, para cuando quieres variar tú café habitual.","delicioso sabor de olla, para cuando quieres variar tú café habitual.",no
+P01,A,MLM16207863,10,un café con un muy rico sabor.,un café con un muy rico sabor.,no
+P01,A,MLM16207863,11,producto con buena fecha de caducidad y en buen estado muy buen sabor.,producto con buena fecha de caducidad y en buen estado muy buen sabor.,no
+P01,A,MLM16207863,12,"rico sabor a café de olla, me gusta mucho el sabor, también lo buscan en mi negocio.","rico sabor a café de olla, me gusta mucho el sabor, también lo buscan en mi negocio.",no
+P01,A,MLM16207863,13,"calidad regular, sabor regular","calidad regular, sabor regular",no
+P01,A,MLM16207863,14,excelente café me encantó su sabor es muy bueno.,excelente café me encantó su sabor es muy bueno.,no
+P01,A,MLM16207863,15,rico aroma y sabor.,rico aroma y sabor.,no
+P01,B,MLM16207894,1,"este café me gustó mucho, pues tiene muy buen sabor y aroma.","este café me gustó mucho, pues tiene muy buen sabor y aroma.",no
+P01,B,MLM16207894,2,me encanta el sabor de éste café!.,me encanta el sabor de éste café!.,no
+P01,B,MLM16207894,3,su sabor es suave y es muy rico.,su sabor es suave y es muy rico.,no
+P01,B,MLM16207894,4,muy rico sabor y aroma.,muy rico sabor y aroma.,no
+P01,B,MLM16207894,5,"sabor, olor, degustación inigualable por ciento recomendable tamaño exacto, muy rendidor y sabor excelente.","sabor, olor, degustación inigualable por ciento recomendable tamaño exacto, muy rendidor y sabor excelente.",no
+P01,B,MLM16207894,6,delicioso café y además es de sabor fuerte sin ser amargo.,delicioso café y además es de sabor fuerte sin ser amargo.,no
+P01,B,MLM16207894,7,"buen aroma, exelente sabor.","buen aroma, exelente sabor.",no
+P01,B,MLM16207894,8,tiene buen sabor no está fuerte.,tiene buen sabor no está fuerte.,no
+P01,B,MLM16207894,9,sabe bien.,sabe bien.,no
+P01,B,MLM16207894,10,"viene bien empacado, y lo compro por su calidad y sabor, es muy bueno , me gusta mucho,ces de lo solubles que no de arde el estómago,.","viene bien empacado, y lo compro por su calidad y sabor, es muy bueno , me gusta mucho,ces de lo solubles que no de arde el estómago,.",no
+P01,B,MLM16207894,11,"muy buen sabor, excelente producto.","muy buen sabor, excelente producto.",no
+P01,B,MLM16207894,12,excelente producto a mi me encanta este café si aroma y su sabor por encima de uno normal.,excelente producto a mi me encanta este café si aroma y su sabor por encima de uno normal.,no
+P01,B,MLM16207894,13,de excelente calidad y sabor.,de excelente calidad y sabor.,no
+P01,B,MLM16207894,14,buen olor buen sabor no lo probé mucho xk mi pareja andaba limpiando la mesa y la movió callo al piso c kebro,buen olor buen sabor no lo probé mucho xk mi pareja andaba limpiando la mesa y la movió callo al piso c kebro,no
+P01,B,MLM16207894,15,no había probado este sabor muy rico un poco fuerte,no había probado este sabor muy rico un poco fuerte,no
+P02,A,MLM16207890,1,"excelente sabor, lo recomiendo.","excelente sabor, lo recomiendo.",no
+P02,A,MLM16207890,2,vino en buen estado y ni se diga del café tienen un buen sabor.,vino en buen estado y ni se diga del café tienen un buen sabor.,no
+P02,A,MLM16207890,3,muy buen sabor.,muy buen sabor.,no
+P02,A,MLM16207890,4,"tiene buen sabor,aún sin azúcar.","tiene buen sabor,aún sin azúcar.",no
+P02,A,MLM16207890,5,es un café soluble de buena calidad y buen sabor y aroma lo volvería a comprar.,es un café soluble de buena calidad y buen sabor y aroma lo volvería a comprar.,no
+P02,A,MLM16207890,6,"huele y sabe delicioso, excelente compra.","huele y sabe delicioso, excelente compra.",no
+P02,A,MLM16207890,7,tiene un excelente sabor!!.,tiene un excelente sabor!!.,no
+P02,A,MLM16207890,8,"excelente sabor, si te gusta saborear un buen café al mejor precio.","excelente sabor, si te gusta saborear un buen café al mejor precio.",no
+P02,A,MLM16207890,9,"me encanta su sabor, ya lo conocía, todo correcto.","me encanta su sabor, ya lo conocía, todo correcto.",no
+P02,A,MLM16207890,10,excelente aroma y sabor.,excelente aroma y sabor.,no
+P02,A,MLM16207890,11,me encantó su aroma y sabor.,me encantó su aroma y sabor.,no
+P02,A,MLM16207890,12,tiene muy buen sabor.,tiene muy buen sabor.,no
+P02,A,MLM16207890,13,rico el sabor me encanta .,rico el sabor me encanta .,no
+P02,A,MLM16207890,14,me gusta mucho el sabor de este café!.,me gusta mucho el sabor de este café!.,no
+P02,A,MLM16207890,15,tiene buen sabor.,tiene buen sabor.,no
+P02,B,MLM16250252,1,el sabor delicioso.,el sabor delicioso.,no
+P02,B,MLM16250252,2,sabe bastante bien y rinde bastante.,sabe bastante bien y rinde bastante.,no
+P02,B,MLM16250252,3,"muy buen sabor ,el empaque bien cuidado ,olor super deli,buen tamaño 10de10.","muy buen sabor ,el empaque bien cuidado ,olor super deli,buen tamaño 10de10.",no
+P02,B,MLM16250252,4,tiene buen sabor.,tiene buen sabor.,no
+P02,B,MLM16250252,5,[marca] [marca] pues es garantía un sabor único.,nescafé clásico pues es garantía un sabor único.,si
+P02,B,MLM16250252,6,"es un producto que deja mucho que desear, desde el empaque se ve pirata y el sabor es malo no sabe ni un poco a [marca] , la verdad hice una mala compra.","es un producto que deja mucho que desear, desde el empaque se ve pirata y el sabor es malo no sabe ni un poco a nescafe , la verdad hice una mala compra.",si
+P02,B,MLM16250252,7,es buena opción excelente sabor y buen tamaño.,es buena opción excelente sabor y buen tamaño.,no
+P02,B,MLM16250252,8,bastante bueno en calidad y sabor.,bastante bueno en calidad y sabor.,no
+P02,B,MLM16250252,9,excelente producto de sabor tradicional.,excelente producto de sabor tradicional.,no
+P02,B,MLM16250252,10,buen sabor.,buen sabor.,no
+P02,B,MLM16250252,11,excelente aroma y sabor.,excelente aroma y sabor.,no
+P02,B,MLM16250252,12,muy buen producto sabor encantador.,muy buen producto sabor encantador.,no
+P02,B,MLM16250252,13,sin duda uno de los cafés de insuperable sabor.,sin duda uno de los cafés de insuperable sabor.,no
+P02,B,MLM16250252,14,"lo compré en esta presentación porque estaba en oferta y porque es buena cantidad de café soluble, marca con sabor bueno y [marca].","lo compré en esta presentación porque estaba en oferta y porque es buena cantidad de café soluble, marca con sabor bueno y clásico.",si
+P02,B,MLM16250252,15,"mismo sabor y calidad del producto en frasco, más económico.","mismo sabor y calidad del producto en frasco, más económico.",no
+P03,A,MLM16207890,1,"muy rico el sabor, lo volvería a comprar.","muy rico el sabor, lo volvería a comprar.",no
+P03,A,MLM16207890,2,"muy rico café, buen olor y sabor.","muy rico café, buen olor y sabor.",no
+P03,A,MLM16207890,3,"excelente sabor, si te gusta saborear un buen café al mejor precio.","excelente sabor, si te gusta saborear un buen café al mejor precio.",no
+P03,A,MLM16207890,4,"muy buen producto, lo voy a volver a comprar, gran sabor y aroma.","muy buen producto, lo voy a volver a comprar, gran sabor y aroma.",no
+P03,A,MLM16207890,5,"excelente sabor, lo recomiendo.","excelente sabor, lo recomiendo.",no
+P03,A,MLM16207890,6,"buen olor, buen sabor, buen precio, me encantó este cafe.","buen olor, buen sabor, buen precio, me encantó este cafe.",no
+P03,A,MLM16207890,7,excelente aroma y sabor.,excelente aroma y sabor.,no
+P03,A,MLM16207890,8,tiene un excelente sabor!!.,tiene un excelente sabor!!.,no
+P03,A,MLM16207890,9,muy bueno excelente sabor y color.,muy bueno excelente sabor y color.,no
+P03,A,MLM16207890,10,muy rico no me da agruras y el sabor es sumamente delicioso.,muy rico no me da agruras y el sabor es sumamente delicioso.,no
+P03,A,MLM16207890,11,tiene un sabor un poco extraño,tiene un sabor un poco extraño,no
+P03,A,MLM16207890,12,"buen sabor, de acuerdo con calidad-precio.","buen sabor, de acuerdo con calidad-precio.",no
+P03,A,MLM16207890,13,delicioso sabor a buen precio.,delicioso sabor a buen precio.,no
+P03,A,MLM16207890,14,buen sabor me gusta mucho.,buen sabor me gusta mucho.,no
+P03,A,MLM16207890,15,delicioso no lo habia probado me encantó el sabor.,delicioso no lo habia probado me encantó el sabor.,no
+P03,B,MLM23633481,1,delicioso buen sabor y con hielos mas.,delicioso buen sabor y con hielos mas.,no
+P03,B,MLM23633481,2,buen precio y buen sabor.,buen precio y buen sabor.,no
+P03,B,MLM23633481,3,se disuelve totalmente en agua fría y el sabor inconfundible de [marca].,se disuelve totalmente en agua fría y el sabor inconfundible de nescafe.,si
+P03,B,MLM23633481,4,raro no sabe a café helado.,raro no sabe a café helado.,no
+P03,B,MLM23633481,5,"no me gusto, mal sabor.","no me gusto, mal sabor.",no
+P03,B,MLM23633481,6,es exactamente igual que el café regular me imagine que sería de un sabor diferente,es exactamente igual que el café regular me imagine que sería de un sabor diferente,no
+P03,B,MLM23633481,7,"el sabor se siente ligeramente mas fuerte que el [marca], y esta mucho más molido que ese.","el sabor se siente ligeramente mas fuerte que el clásico, y esta mucho más molido que ese.",si
+P03,B,MLM23633481,8,tiene el mismo sabor que original menos fuerte,tiene el mismo sabor que original menos fuerte,no
+P03,B,MLM23633481,9,"sabe a café, así de fácil, solo que frio, haz de cuenta que cuando olvidas tomar tu café en la oficina y cuando le tomas ya está helado, o sea no esperes otro sabor ni aroma","sabe a café, así de fácil, solo que frio, haz de cuenta que cuando olvidas tomar tu café en la oficina y cuando le tomas ya está helado, o sea no esperes otro sabor ni aroma",no
+P03,B,MLM23633481,10,"muy rico, de sabor fuerte.","muy rico, de sabor fuerte.",no
+P03,B,MLM23633481,11,llegó bien y sabe rico para realizar café frío y frappé.,llegó bien y sabe rico para realizar café frío y frappé.,no
+P03,B,MLM23633481,12,muy bien sabor y se disuelve muy bien.,muy bien sabor y se disuelve muy bien.,no
+P03,B,MLM23633481,13,"amo soy más fan del café helado y esto me resolvió la vida, me facilita un montón prepararlo se disuelve súper bien en el agua fría no como el café convencional que se disuelve bien solo con agua cali","amo soy más fan del café helado y esto me resolvió la vida, me facilita un montón prepararlo se disuelve súper bien en el agua fría no como el café convencional que se disuelve bien solo con agua cali",no
+P03,B,MLM23633481,14,"llego en buenas condiciones y buena caducidad, el café sabe bien y mas con hielitos.","llego en buenas condiciones y buena caducidad, el café sabe bien y mas con hielitos.",no
+P03,B,MLM23633481,15,sabe muy bien en frio.,sabe muy bien en frio.,no
+P04,A,MLM41148521,1,"muy bueno, equilibrio en el sabor, cero ácido, además espumoso.","muy bueno, equilibrio en el sabor, cero ácido, además espumoso.",no
+P04,A,MLM41148521,2,me gusta porque lo puedes preparar bien cargado y conserva un sabor suave.,me gusta porque lo puedes preparar bien cargado y conserva un sabor suave.,no
+P04,A,MLM41148521,3,muy buen sabor.,muy buen sabor.,no
+P04,A,MLM41148521,4,buen sabor.,buen sabor.,no
+P04,A,MLM41148521,5,"excelente sabor y aroma, si te gusta el café intenso lo recomiendo.","excelente sabor y aroma, si te gusta el café intenso lo recomiendo.",no
+P04,A,MLM41148521,6,muy rico sabor.,muy rico sabor.,no
+P04,A,MLM41148521,7,muy rico sabor y aroma.,muy rico sabor y aroma.,no
+P04,A,MLM41148521,8,"olor intenso, buen sabor.","olor intenso, buen sabor.",no
+P04,A,MLM41148521,9,me encanta su sabor está de lujo.,me encanta su sabor está de lujo.,no
+P04,A,MLM41148521,10,"buen sabor, ¡me gustó!.","buen sabor, ¡me gustó!.",no
+P04,A,MLM41148521,11,"un café cuyo sabor es delicioso, son de mis favoritos y el ahora ufff.","un café cuyo sabor es delicioso, son de mis favoritos y el ahora ufff.",no
+P04,A,MLM41148521,12,"increíble, me encanta su sabor intenso, lo hago en mi cafetera italiana y se aprecia mas su sabor.","increíble, me encanta su sabor intenso, lo hago en mi cafetera italiana y se aprecia mas su sabor.",no
+P04,A,MLM41148521,13,"es un café rico te mantiene despierto de buena calidad, buen sabor y aroma.","es un café rico te mantiene despierto de buena calidad, buen sabor y aroma.",no
+P04,A,MLM41148521,14,"perfecto en precio ,sabor y calidad.","perfecto en precio ,sabor y calidad.",no
+P04,A,MLM41148521,15,", es cafe con un sabor delicioso , y tienen varios sabores unos ligeros,otros amargos,semi amargos super deliciosos.",", es cafe con un sabor delicioso , y tienen varios sabores unos ligeros,otros amargos,semi amargos super deliciosos.",no
+P04,B,MLM16250244,1,exelente sabor y precio.,exelente sabor y precio.,no
+P04,B,MLM16250244,2,"excelente sabor, solo mejoraría en el precio que es un poco elevado.","excelente sabor, solo mejoraría en el precio que es un poco elevado.",no
+P04,B,MLM16250244,3,"excelente producto su delicioso sabor y textura, sin duda súper recomendable.","excelente producto su delicioso sabor y textura, sin duda súper recomendable.",no
+P04,B,MLM16250244,4,mi sabor favorito.,mi sabor favorito.,no
+P04,B,MLM16250244,5,sabor rico aroma fuerte.,sabor rico aroma fuerte.,no
+P04,B,MLM16250244,6,"sabe riquisimo, nada pesado, me encanta, llega en buenas condiciones.","sabe riquisimo, nada pesado, me encanta, llega en buenas condiciones.",no
+P04,B,MLM16250244,7,"me encanta, tiene buen sabor.","me encanta, tiene buen sabor.",no
+P04,B,MLM16250244,8,"café de buen sabor y calidad, lo recomiendo.","café de buen sabor y calidad, lo recomiendo.",no
+P04,B,MLM16250244,9,sabe y huele rico.,sabe y huele rico.,no
+P04,B,MLM16250244,10,muy buen sabor intensidad.,muy buen sabor intensidad.,no
+P04,B,MLM16250244,11,excelente me encanta este café huele seguido y sabe muy rico.,excelente me encanta este café huele seguido y sabe muy rico.,no
+P04,B,MLM16250244,12,el sabor no es muy bueno.,el sabor no es muy bueno.,no
+P04,B,MLM16250244,13,muy rico el sabor y bien precio.,muy rico el sabor y bien precio.,no
+P04,B,MLM16250244,14,"deliciosamente rico, sabor, aroma y muy buena calidad.","deliciosamente rico, sabor, aroma y muy buena calidad.",no
+P04,B,MLM16250244,15,"excelente sabor de café, a mí esposa le encanta.","excelente sabor de café, a mí esposa le encanta.",no
+P05,A,MLM19544520,1,fascinada con el sabor.,fascinada con el sabor.,no
+P05,A,MLM19544520,2,"muy rico , no necesita tanto producto para tener sabor.","muy rico , no necesita tanto producto para tener sabor.",no
+P05,A,MLM19544520,3,"ecxelente producto,muy buen sabor.","ecxelente producto,muy buen sabor.",no
+P05,A,MLM19544520,4,"parece mas chocolate que café, es de sabor intenso, muy rico.","parece mas chocolate que café, es de sabor intenso, muy rico.",no
+P05,A,MLM19544520,5,excelente sabor y consistencia el café queda escrito con la medida que trae el bote.,excelente sabor y consistencia el café queda escrito con la medida que trae el bote.,no
+P05,A,MLM19544520,6,buen producto y exquisito sabor.,buen producto y exquisito sabor.,no
+P05,A,MLM19544520,7,vale la pena por el sabor.,vale la pena por el sabor.,no
+P05,A,MLM19544520,8,sabor único y degustable.,sabor único y degustable.,no
+P05,A,MLM19544520,9,su sabor.,su sabor.,no
+P05,A,MLM19544520,10,"es grande el bote, tiene excelente precio, calidad, sabor, fácil de preparar, me gusta mucho.","es grande el bote, tiene excelente precio, calidad, sabor, fácil de preparar, me gusta mucho.",no
+P05,A,MLM19544520,11,muy rico sabor.,muy rico sabor.,no
+P05,A,MLM19544520,12,además de que tiene un sabor super riquísimo.,además de que tiene un sabor super riquísimo.,no
+P05,A,MLM19544520,13,buen sabor se mezcla bien ya sea caliente o frío sabe rico.,buen sabor se mezcla bien ya sea caliente o frío sabe rico.,no
+P05,A,MLM19544520,14,tiene sabor muy rico ya lo había probado y me gustó por eso pedí el mío.,tiene sabor muy rico ya lo había probado y me gustó por eso pedí el mío.,no
+P05,A,MLM19544520,15,muy rico me encantó el sabor lo único malo es que la publicidad la pasan mucho y aveces me es difícil pedir.,muy rico me encantó el sabor lo único malo es que la publicidad la pasan mucho y aveces me es difícil pedir.,no
+P05,B,MLM19543513,1,molido demasiado y le falta sabor.,molido demasiado y le falta sabor.,no
+P05,B,MLM19543513,2,no me sabe al que compro en el centro comercial.,no me sabe al que compro en el centro comercial.,no
+P05,B,MLM19543513,3,"excelente sabor y aroma,.","excelente sabor y aroma,.",no
+P05,B,MLM19543513,4,"no me gusto el sabor , me regreso mejor a los de chiapas.","no me gusto el sabor , me regreso mejor a los de chiapas.",no
+P05,B,MLM19543513,5,"excelente producto, muy buen sabor, intensidad excelente, aroma exquisito.","excelente producto, muy buen sabor, intensidad excelente, aroma exquisito.",no
+P05,B,MLM19543513,6,excelente calidad y sabor exquisito.,excelente calidad y sabor exquisito.,no
+P05,B,MLM19543513,7,"muy rico, disfrutar de un aroma y sabor.","muy rico, disfrutar de un aroma y sabor.",no
+P05,B,MLM19543513,8,no tiene pierde excelente calidad y sabor.,no tiene pierde excelente calidad y sabor.,no
+P05,B,MLM19543513,9,"muy buen aroma y sabor, un café muy aceptable y versátil.","muy buen aroma y sabor, un café muy aceptable y versátil.",no
+P05,B,MLM19543513,10,buen sabor y aroma.,buen sabor y aroma.,no
+P05,B,MLM19543513,11,"es delicioso, justo un sabor y un aroma que desde que comienza a caer en la cafetera se llena el lugar a cafe.","es delicioso, justo un sabor y un aroma que desde que comienza a caer en la cafetera se llena el lugar a cafe.",no
+P05,B,MLM19543513,12,"excelente,calidad y sabor.","excelente,calidad y sabor.",no
+P05,B,MLM19543513,13,"es un producto de primera calidad sabor aroma,muyyy rico.","es un producto de primera calidad sabor aroma,muyyy rico.",no
+P05,B,MLM19543513,14,"excelente café para disfrutarse lentamente por la noche, y exquisito sabor para despertar bien después de descansar por la noche, muy recomendable.","excelente café para disfrutarse lentamente por la noche, y exquisito sabor para despertar bien después de descansar por la noche, muy recomendable.",no
+P05,B,MLM19543513,15,"excelente calidad, sabor y precio.","excelente calidad, sabor y precio.",no
+P06,A,MLM19566313,1,"100% lo recomiendo, tiene un sabor delicioso.","100% lo recomiendo, tiene un sabor delicioso.",no
+P06,A,MLM19566313,2,me encantó su sabor es.,me encantó su sabor es.,no
+P06,A,MLM19566313,3,me encanto el sabor y super fácil de preparar.,me encanto el sabor y super fácil de preparar.,no
+P06,A,MLM19566313,4,es muy bueno y tiene un sabor delicioso.,es muy bueno y tiene un sabor delicioso.,no
+P06,A,MLM19566313,5,"el sabor es bueno, lo recomiendo.","el sabor es bueno, lo recomiendo.",no
+P06,A,MLM19566313,6,"el café sabe muy rico, es el segundo que compro y lo que más me agrada es que se disuelve fácilmente.","el café sabe muy rico, es el segundo que compro y lo que más me agrada es que se disuelve fácilmente.",no
+P06,A,MLM19566313,7,"execelente sabor sin agregar nada de azúcar, muy buen precio, rinde mucho.","execelente sabor sin agregar nada de azúcar, muy buen precio, rinde mucho.",no
+P06,A,MLM19566313,8,deja los frappes espesos y con un aroma y sabor inigualables.,deja los frappes espesos y con un aroma y sabor inigualables.,no
+P06,A,MLM19566313,9,tienen mucho sabor utilizando poco producto.,tienen mucho sabor utilizando poco producto.,no
+P06,A,MLM19566313,10,"buen producto, su sabor es delicioso.","buen producto, su sabor es delicioso.",no
+P06,A,MLM19566313,11,"riquísimo, el sabor es una delicia, 100% recomendado.","riquísimo, el sabor es una delicia, 100% recomendado.",no
+P06,A,MLM19566313,12,excelente producto y sabor muy rico.,excelente producto y sabor muy rico.,no
+P06,A,MLM19566313,13,muy buen sabor y buen precio.,muy buen sabor y buen precio.,no
+P06,A,MLM19566313,14,"muy buen sabor solo que tienes que poner mucho para que sepa, se acaba pronto.","muy buen sabor solo que tienes que poner mucho para que sepa, se acaba pronto.",no
+P06,A,MLM19566313,15,"excelente el sabor, 50 pesos más que en sams","excelente el sabor, 50 pesos más que en sams",no
+P06,B,MLM19544520,1,"sabe muy rico el café, especialmente con leche, ¡me encanta!.","sabe muy rico el café, especialmente con leche, ¡me encanta!.",no
+P06,B,MLM19544520,2,es bueno el sabor y solo necesitas vaciarlo sobre agua fria o caliente y facil se prepara.,es bueno el sabor y solo necesitas vaciarlo sobre agua fria o caliente y facil se prepara.,no
+P06,B,MLM19544520,3,riquísimo es mi sabor favorito.,riquísimo es mi sabor favorito.,no
+P06,B,MLM19544520,4,"muy rico, le da un sabor muy delicioso a mi cafe del diario....","muy rico, le da un sabor muy delicioso a mi café del diario….",si
+P06,B,MLM19544520,5,"muy buena compra, sabe delicioso frío y caliente.","muy buena compra, sabe delicioso frío y caliente.",no
+P06,B,MLM19544520,6,excelente sabor .,excelente sabor .,no
+P06,B,MLM19544520,7,el sabor es bueno,el sabor es bueno,no
+P06,B,MLM19544520,8,sabor riko y eficiente.,sabor riko y eficiente.,no
+P06,B,MLM19544520,9,rico sabor.,rico sabor.,no
+P06,B,MLM19544520,10,muy bien sabor .,muy bien sabor .,no
+P06,B,MLM19544520,11,su sabor es excelente.,su sabor es excelente.,no
+P06,B,MLM19544520,12,lo he comprado muchas veces es muy rico y sutil el sabor lo recomiendo.,lo he comprado muchas veces es muy rico y sutil el sabor lo recomiendo.,no
+P06,B,MLM19544520,13,excelente precio y su sabor .,excelente precio y su sabor .,no
+P06,B,MLM19544520,14,"tiene un sabor muy rico, es un muy buen producto.","tiene un sabor muy rico, es un muy buen producto.",no
+P06,B,MLM19544520,15,"el sabor es bastante rico,buena consistencia y fácil de preparar .","el sabor es bastante rico,buena consistencia y fácil de preparar .",no
+P07,A,MLM16250244,1,muy rico sabor lo recomiendo.,muy rico sabor lo recomiendo.,no
+P07,A,MLM16250244,2,delicioso café con ese toque de sabor justo y equilibrado.,delicioso café con ese toque de sabor justo y equilibrado.,no
+P07,A,MLM16250244,3,"esperaba un café con mejor sabor, casi todos saben igual no importa si es carameli, almendra, etc.","esperaba un café con mejor sabor, casi todos saben igual no importa si es carameli, almendra, etc.",no
+P07,A,MLM16250244,4,"su sabor es único y la textura su olor, todo es un café muy fino yevo un par de años tomándolo ️ .","su sabor es único y la textura su olor, todo es un café muy fino yevo un par de años tomándolo ️ .",no
+P07,A,MLM16250244,5,excelente sabor.,excelente sabor.,no
+P07,A,MLM16250244,6,la calidad del producto es indiscutible en sabor y olor.,la calidad del producto es indiscutible en sabor y olor.,no
+P07,A,MLM16250244,7,sin duda uno de los mejores cafes a mi paladar fuerte aroma a vainilla y un sabor fuerte a cafe lo recomiendo.,sin duda uno de los mejores cafes a mi paladar fuerte aroma a vainilla y un sabor fuerte a cafe lo recomiendo.,no
+P07,A,MLM16250244,8,excelente buen sabor.,excelente buen sabor.,no
+P07,A,MLM16250244,9,"buen sabor, muy buena calidad.","buen sabor, muy buena calidad.",no
+P07,A,MLM16250244,10,gran sabor y aroma.,gran sabor y aroma.,no
+P07,A,MLM16250244,11,"muy rico sabor, lo tomo en caliente solo y deja un olor y sabor delicioso a vainilla.","muy rico sabor, lo tomo en caliente solo y deja un olor y sabor delicioso a vainilla.",no
+P07,A,MLM16250244,12,excelente café muy buen sabor me encantó.,excelente café muy buen sabor me encantó.,no
+P07,A,MLM16250244,13,"tiene un ligero sabor a chocolate, obvio no es dulce, está muy rico.","tiene un ligero sabor a chocolate, obvio no es dulce, está muy rico.",no
+P07,A,MLM16250244,14,sabe rico.,sabe rico.,no
+P07,A,MLM16250244,15,"súper rico, solo que debe llevar leche súper importante, lo probé por primera vez sin leche y no era muy agradable el sabor haha con leche 10 de 10 .","súper rico, solo que debe llevar leche súper importante, lo probé por primera vez sin leche y no era muy agradable el sabor haha con leche 10 de 10 .",no
+P07,B,MLM16207890,1,"de los mejores productos de [marca], el sabor perfecto del café para mí ,sin duda lo seguiré comprando.","de los mejores productos de nescafé, el sabor perfecto del café para mí ,sin duda lo seguiré comprando.",si
+P07,B,MLM16207890,2,me encanto su sabor.,me encanto su sabor.,no
+P07,B,MLM16207890,3,buen sabor.,buen sabor.,no
+P07,B,MLM16207890,4,tiene un excelente sabor!!.,tiene un excelente sabor!!.,no
+P07,B,MLM16207890,5,es original muy rico el sabor.,es original muy rico el sabor.,no
+P07,B,MLM16207890,6,"el café es demasiado rico perfecto para los amantes de café, ya que el sabor es muy concentrado.","el café es demasiado rico perfecto para los amantes de café, ya que el sabor es muy concentrado.",no
+P07,B,MLM16207890,7,muy buen sabor.,muy buen sabor.,no
+P07,B,MLM16207890,8,tiene un sabor un poco extraño,tiene un sabor un poco extraño,no
+P07,B,MLM16207890,9,"huele y sabe delicioso, excelente compra.","huele y sabe delicioso, excelente compra.",no
+P07,B,MLM16207890,10,"excelente sabor, negro con crema o con leche sabe riquísimo 10 /10.","excelente sabor, negro con crema o con leche sabe riquísimo 10 /10.",no
+P07,B,MLM16207890,11,excelente aroma y sabor.,excelente aroma y sabor.,no
+P07,B,MLM16207890,12,buen sabor y precio.,buen sabor y precio.,no
+P07,B,MLM16207890,13,sabor y aroma excelente.,sabor y aroma excelente.,no
+P07,B,MLM16207890,14,un muy buen café con buen sabor y aroma sin duda lo recomiendo.,un muy buen café con buen sabor y aroma sin duda lo recomiendo.,no
+P07,B,MLM16207890,15,rico el sabor me encanta .,rico el sabor me encanta .,no
+P08,A,MLM19543513,1,"muy malo, no volvería a comprarlo no es el original, sabe a quemado, ya había comprado este café claro en el supermercado y me encantó el sabor, por eso compré el mismo aquí","muy malo, no volvería a comprarlo no es el original, sabe a quemado, ya había comprado este café claro en el supermercado y me encantó el sabor, por eso compré el mismo aquí",no
+P08,A,MLM19543513,2,"excelente sabor, lo probé en [marca] original que está en el malecón del puerto de veracruz y quedé encantado.","excelente sabor, lo probé en la parroquia original que está en el malecón del puerto de veracruz y quedé encantado.",si
+P08,A,MLM19543513,3,"excelente cafe, muy buen sabor.","excelente cafe, muy buen sabor.",no
+P08,A,MLM19543513,4,"yo soy de veracruz, solo veracruz es bello y su café también, su sabor es inigualable, además el prestigio de [marca] es irrebatible.","yo soy de veracruz, solo veracruz es bello y su café también, su sabor es inigualable, además el prestigio de la parroquia es irrebatible.",si
+P08,A,MLM19543513,5,buen sabor y el precio es bueno porque rinde y tiene calidad.,buen sabor y el precio es bueno porque rinde y tiene calidad.,no
+P08,A,MLM19543513,6,me gustó mucho el sabor y muy rendidor el paquete de 1kg.,me gustó mucho el sabor y muy rendidor el paquete de 1kg.,no
+P08,A,MLM19543513,7,excelente!! sabor riquísimo!!.,excelente!! sabor riquísimo!!.,no
+P08,A,MLM19543513,8,el sabor es delicioso y es de bajo costo.,el sabor es delicioso y es de bajo costo.,no
+P08,A,MLM19543513,9,un sabor muy rico.,un sabor muy rico.,no
+P08,A,MLM19543513,10,excelente sabor!.,excelente sabor!.,no
+P08,A,MLM19543513,11,"muy buen sabor , lo volveré a comprar.","muy buen sabor , lo volveré a comprar.",no
+P08,A,MLM19543513,12,"buen cafe, aroma fuerte y sabor concentrado.","buen cafe, aroma fuerte y sabor concentrado.",no
+P08,A,MLM19543513,13,"muy buen sabor, excelente precio.","muy buen sabor, excelente precio.",no
+P08,A,MLM19543513,14,"excelente sabor, muy buen cafe de mexico.","excelente sabor, muy buen cafe de mexico.",no
+P08,A,MLM19543513,15,"me encantó el sabor, lo compre de nuevo, tiene muy buena acidez.","me encantó el sabor, lo compre de nuevo, tiene muy buena acidez.",no
+P08,B,MLM16207890,1,"me encanta su sabor, ya lo conocía, todo correcto.","me encanta su sabor, ya lo conocía, todo correcto.",no
+P08,B,MLM16207890,2,sabe riquísimo .,sabe riquísimo .,no
+P08,B,MLM16207890,3,tiene un sabor un poco extraño,tiene un sabor un poco extraño,no
+P08,B,MLM16207890,4,"en verdad que sorpresa, su aroma y sabor están de 10.","en verdad que sorpresa, su aroma y sabor están de 10.",no
+P08,B,MLM16207890,5,"excelente sabor, si te gusta saborear un buen café al mejor precio.","excelente sabor, si te gusta saborear un buen café al mejor precio.",no
+P08,B,MLM16207890,6,"este me gustó, es suave y sabe bien con leche.","este me gustó, es suave y sabe bien con leche.",no
+P08,B,MLM16207890,7,me gusta mucho el sabor de este café!.,me gusta mucho el sabor de este café!.,no
+P08,B,MLM16207890,8,"buen sabor, de acuerdo con calidad-precio.","buen sabor, de acuerdo con calidad-precio.",no
+P08,B,MLM16207890,9,"buen olor, buen sabor, buen precio, me encantó este cafe.","buen olor, buen sabor, buen precio, me encantó este cafe.",no
+P08,B,MLM16207890,10,me encanto el sabor.,me encanto el sabor.,no
+P08,B,MLM16207890,11,"excelente sabor, lo recomiendo.","excelente sabor, lo recomiendo.",no
+P08,B,MLM16207890,12,el sabor q siempre me a gustado.,el sabor q siempre me a gustado.,no
+P08,B,MLM16207890,13,sabor y aroma excelente.,sabor y aroma excelente.,no
+P08,B,MLM16207890,14,me encanto su sabor.,me encanto su sabor.,no
+P08,B,MLM16207890,15,"me llegó muy rápido, bien empacado tiene buen aroma y sabor.","me llegó muy rápido, bien empacado tiene buen aroma y sabor.",no
+P09,A,MLM20075768,1,es de los mejores cafés x su precio y sabor.,es de los mejores cafés x su precio y sabor.,no
+P09,A,MLM20075768,2,y su excelente sabor.,y su excelente sabor.,no
+P09,A,MLM20075768,3,delicioso sabor.,delicioso sabor.,no
+P09,A,MLM20075768,4,no sabe igual que el [marca] de frasco la verdad.,no sabe igual que el nescafé de frasco la verdad.,si
+P09,A,MLM20075768,5,conserva el sabor original.,conserva el sabor original.,no
+P09,A,MLM20075768,6,"esta bastante bien, el sabor cambia un poco","esta bastante bien, el sabor cambia un poco",no
+P09,A,MLM20075768,7,economico y delicioso sabor y aroma.,economico y delicioso sabor y aroma.,no
+P09,A,MLM20075768,8,muy bien sabor.,muy bien sabor.,no
+P09,A,MLM20075768,9,"llegó en excelente condición y a buen precio, el sabor me encanta.","llegó en excelente condición y a buen precio, el sabor me encanta.",no
+P09,A,MLM20075768,10,el 1 uno de mexico nuestro sabor.,el 1 uno de mexico nuestro sabor.,no
+P09,A,MLM20075768,11,"buen producto, original, sabor [marca] de café.","buen producto, original, sabor clásico de café.",si
+P09,A,MLM20075768,12,muy buen sabor.,muy buen sabor.,no
+P09,A,MLM20075768,13,"está bien el sabor y es rendidor, exelente calidad.","está bien el sabor y es rendidor, exelente calidad.",no
+P09,A,MLM20075768,14,"pésima calidad, tiene un sabor raro y desagradable, definitivamente no es [marca].","pésima calidad, tiene un sabor raro y desagradable, definitivamente no es nescafé.",si
+P09,A,MLM20075768,15,no me gustó el sabor.,no me gustó el sabor.,no
+P09,B,MLM16250253,1,no se nota la diferencia del sabor en cuanto a cafeinado y descafeinado.,no se nota la diferencia del sabor en cuanto a cafeinado y descafeinado.,no
+P09,B,MLM16250253,2,buen sabor y rendidor.,buen sabor y rendidor.,no
+P09,B,MLM16250253,3,buen sabor y me encanta por qu茅 lo puedes tomar a cualquier hora.,buen sabor y me encanta por qu茅 lo puedes tomar a cualquier hora.,no
+P09,B,MLM16250253,4,muy buen precio y sabor.,muy buen precio y sabor.,no
+P09,B,MLM16250253,5,buen sabor y calidad.,buen sabor y calidad.,no
+P09,B,MLM16250253,6,muy rico y sabor.,muy rico y sabor.,no
+P09,B,MLM16250253,7,buen sabor para mis necesidades.,buen sabor para mis necesidades.,no
+P09,B,MLM16250253,8,excelente sabor .,excelente sabor .,no
+P09,B,MLM16250253,9,muy buen sabor para disfruta en este tiempo de lluvia.,muy buen sabor para disfruta en este tiempo de lluvia.,no
+P09,B,MLM16250253,10,[marca] es una marca muy conocida excelente sabor.,nescafe es una marca muy conocida excelente sabor.,si
+P09,B,MLM16250253,11,"muy bien sabor, y por la promoción aplicada se obtienen una muy buena relación precio-calidad.","muy bien sabor, y por la promoción aplicada se obtienen una muy buena relación precio-calidad.",no
+P09,B,MLM16250253,12,me encanta el aroma y el sabor muy rico.,me encanta el aroma y el sabor muy rico.,no
+P09,B,MLM16250253,13,café claro aromático y buen sabor.,café claro aromático y buen sabor.,no
+P09,B,MLM16250253,14,"rico café, sabe igual al cafeínado, y precio calidad acorde, buen producto.","rico café, sabe igual al cafeínado, y precio calidad acorde, buen producto.",no
+P09,B,MLM16250253,15,el olor y sabor muy rico.,el olor y sabor muy rico.,no
+P10,A,MLM19543513,1,"precio muy razonable, muy buen aroma y sabor.","precio muy razonable, muy buen aroma y sabor.",no
+P10,A,MLM19543513,2,"muy rico, tiene muy buen sabor.","muy rico, tiene muy buen sabor.",no
+P10,A,MLM19543513,3,"pues más o menos, esperaba algo un poquito mejor, mejor olor y sabor, la verdad es que no está.","pues más o menos, esperaba algo un poquito mejor, mejor olor y sabor, la verdad es que no está.",no
+P10,A,MLM19543513,4,"100% recomendable, excelente sabor y aroma.","100% recomendable, excelente sabor y aroma.",no
+P10,A,MLM19543513,5,"muy buen sabor , lo volveré a comprar.","muy buen sabor , lo volveré a comprar.",no
+P10,A,MLM19543513,6,este café salió muy mal los dos kilos está casi sin un buen sabor como debe de ser aguado.,este café salió muy mal los dos kilos está casi sin un buen sabor como debe de ser aguado.,no
+P10,A,MLM19543513,7,"café excelente, muy fino sabor.","café excelente, muy fino sabor.",no
+P10,A,MLM19543513,8,muy rico sabor.,muy rico sabor.,no
+P10,A,MLM19543513,9,"bueno, cumplió con mi expectativa en sabor.","bueno, cumplió con mi expectativa en sabor.",no
+P10,A,MLM19543513,10,poco sabor en taza.,poco sabor en taza.,no
+P10,A,MLM19543513,11,sabor exquisito.,sabor exquisito.,no
+P10,A,MLM19543513,12,sabe bien.,sabe bien.,no
+P10,A,MLM19543513,13,"me gusto, buen sabor y tostado.","me gusto, buen sabor y tostado.",no
+P10,A,MLM19543513,14,buena calidad y buen sabor.,buena calidad y buen sabor.,no
+P10,A,MLM19543513,15,"sabor agradable, buen producto.","sabor agradable, buen producto.",no
+P10,B,MLM20075768,1,no me gustó el sabor.,no me gustó el sabor.,no
+P10,B,MLM20075768,2,"en fin, es tal, el café de siempre, y no pienso que por venir en bolsa cambie su sabor.","en fin, es tal, el café de siempre, y no pienso que por venir en bolsa cambie su sabor.",no
+P10,B,MLM20075768,3,sabor muy rico.,sabor muy rico.,no
+P10,B,MLM20075768,4,"no cumplió totalmente mis espectativas, viene demasiado molido el café y tiene un aroma y sabor ""algo diferentes"" al que normalmente compro .","no cumplió totalmente mis espectativas, viene demasiado molido el café y tiene un aroma y sabor ""algo diferentes"" al que normalmente compro .",no
+P10,B,MLM20075768,5,excelente sabor y muy buen precio.,excelente sabor y muy buen precio.,no
+P10,B,MLM20075768,6,el sabor sigue siendo el mismo .,el sabor sigue siendo el mismo .,no
+P10,B,MLM20075768,7,no sabe igual que el [marca] de frasco la verdad.,no sabe igual que el nescafé de frasco la verdad.,si
+P10,B,MLM20075768,8,"muy bien café, tiene muy buen sabor y el precio es muy bueno.","muy bien café, tiene muy buen sabor y el precio es muy bueno.",no
+P10,B,MLM20075768,9,súper económico y con mejor sabor que el que viene en frasco.,súper económico y con mejor sabor que el que viene en frasco.,no
+P10,B,MLM20075768,10,delicioso sabor.,delicioso sabor.,no
+P10,B,MLM20075768,11,conserva el sabor original.,conserva el sabor original.,no
+P10,B,MLM20075768,12,y su excelente sabor.,y su excelente sabor.,no
+P10,B,MLM20075768,13,mismo sabor y todo,mismo sabor y todo,no
+P10,B,MLM20075768,14,"tamaño, precio, tamaño, sabor todo excelente .","tamaño, precio, tamaño, sabor todo excelente .",no
+P10,B,MLM20075768,15,rico sabor.,rico sabor.,no
+P11,A,MLM20075768,1,y su excelente sabor.,y su excelente sabor.,no
+P11,A,MLM20075768,2,"pésima calidad, tiene un sabor raro y desagradable, definitivamente no es [marca].","pésima calidad, tiene un sabor raro y desagradable, definitivamente no es nescafé.",si
+P11,A,MLM20075768,3,sabor muy rico.,sabor muy rico.,no
+P11,A,MLM20075768,4,"excelente producto, muy bien sabor.","excelente producto, muy bien sabor.",no
+P11,A,MLM20075768,5,buen aroma y sabor.,buen aroma y sabor.,no
+P11,A,MLM20075768,6,sabe muy diferente al [marca] de frasco.,sabe muy diferente al nescafé de frasco.,si
+P11,A,MLM20075768,7,"está bien el sabor y es rendidor, exelente calidad.","está bien el sabor y es rendidor, exelente calidad.",no
+P11,A,MLM20075768,8,"viene tal cual la descripción, el sabor es el mismo de siempre.","viene tal cual la descripción, el sabor es el mismo de siempre.",no
+P11,A,MLM20075768,9,está muy pulverizado tiene su sabor original.,está muy pulverizado tiene su sabor original.,no
+P11,A,MLM20075768,10,excelente sabor y muy buen precio.,excelente sabor y muy buen precio.,no
+P11,A,MLM20075768,11,me encanta esta presentación y el café conserva su sabor.,me encanta esta presentación y el café conserva su sabor.,no
+P11,A,MLM20075768,12,delicioso sabor.,delicioso sabor.,no
+P11,A,MLM20075768,13,trae menos producto y está muy pulverizado no es la misma cantidad que el bote de los mismos gramos y la calidad también párese más al sabor del dolca muy mal esa presentación.,trae menos producto y está muy pulverizado no es la misma cantidad que el bote de los mismos gramos y la calidad también párese más al sabor del dolca muy mal esa presentación.,no
+P11,A,MLM20075768,14,muy bien sabor.,muy bien sabor.,no
+P11,A,MLM20075768,15,mismo sabor y todo,mismo sabor y todo,no
+P11,B,MLM19544520,1,"el sabor es excelente, muy rico y nada empalagoso.","el sabor es excelente, muy rico y nada empalagoso.",no
+P11,B,MLM19544520,2,excelente sabor!.,excelente sabor!.,no
+P11,B,MLM19544520,3,"tiene buen sabor, solo se debe saber preparar porque si no queda un poco simple o con muy poco sabor.","tiene buen sabor, solo se debe saber preparar porque si no queda un poco simple o con muy poco sabor.",no
+P11,B,MLM19544520,4,tiene buen sabor y con solo una medida queda.,tiene buen sabor y con solo una medida queda.,no
+P11,B,MLM19544520,5,"bien, es más dulce que sabor moka, de café no sabe nada, rinde y es sabroso","bien, es más dulce que sabor moka, de café no sabe nada, rinde y es sabroso",no
+P11,B,MLM19544520,6,sabe bien con hielo y licuado un poco dulce.,sabe bien con hielo y licuado un poco dulce.,no
+P11,B,MLM19544520,7,"muy buen sabor, si no viera la etiqueta pensaría que es chocolate en polvo, su consistencia es muy cremosa y alcanza para muchas tazas.","muy buen sabor, si no viera la etiqueta pensaría que es chocolate en polvo, su consistencia es muy cremosa y alcanza para muchas tazas.",no
+P11,B,MLM19544520,8,"delicioso sabor, muy rico.","delicioso sabor, muy rico.",no
+P11,B,MLM19544520,9,rikisimo lo volveré a pedir me llegó súper bien sin complicaciones el sabor es de lo mejor diez de diez.,rikisimo lo volveré a pedir me llegó súper bien sin complicaciones el sabor es de lo mejor diez de diez.,no
+P11,B,MLM19544520,10,"super rico el sabor, me encanta.","super rico el sabor, me encanta.",no
+P11,B,MLM19544520,11,"se convirtió en mi favorito, no es empalagoso, tiene un sabor delicioso.","se convirtió en mi favorito, no es empalagoso, tiene un sabor delicioso.",no
+P11,B,MLM19544520,12,"un producto excelente que tiene muy buen sabor, muy recomendado.","un producto excelente que tiene muy buen sabor, muy recomendado.",no
+P11,B,MLM19544520,13,"me encanta su sabor, no es empalagante, tiene un toque de canela, yo lo hago con leche congelada como frappé y queda buenísimo.","me encanta su sabor, no es empalagante, tiene un toque de canela, yo lo hago con leche congelada como frappé y queda buenísimo.",no
+P11,B,MLM19544520,14,"sabor excelente, es muy bueno este café.","sabor excelente, es muy bueno este café.",no
+P11,B,MLM19544520,15,"excelente producto , sabor y calidad.","excelente producto , sabor y calidad.",no
+P12,A,MLM19566313,1,el sabor y aroma son muy agradables ya lo he comprado anteriormente.,el sabor y aroma son muy agradables ya lo he comprado anteriormente.,no
+P12,A,MLM19566313,2,sabe delicioso.,sabe delicioso.,no
+P12,A,MLM19566313,3,mmmmmmm lo más rico y calientito para el desayuno o la merienda: calidad y sabor.,mmmmmmm lo más rico y calientito para el desayuno o la merienda: calidad y sabor.,no
+P12,A,MLM19566313,4,me encantaron su sabor y tiene una muy buena relación precio.,me encantaron su sabor y tiene una muy buena relación precio.,no
+P12,A,MLM19566313,5,sabor exquisito.,sabor exquisito.,no
+P12,A,MLM19566313,6,buen sabor se diluye fácil.,buen sabor se diluye fácil.,no
+P12,A,MLM19566313,7,se recomienda al por su sabor.,se recomienda al por su sabor.,no
+P12,A,MLM19566313,8,sabor super rico.,sabor super rico.,no
+P12,A,MLM19566313,9,un producto de muy buen sabor y la presentación sí rinde un buen.,un producto de muy buen sabor y la presentación sí rinde un buen.,no
+P12,A,MLM19566313,10,"excelente sabor, superior recomendado.","excelente sabor, superior recomendado.",no
+P12,A,MLM19566313,11,"muy buen producto, exelente sabor exelente tomar caliente ️ o frío .","muy buen producto, exelente sabor exelente tomar caliente ️ o frío .",no
+P12,A,MLM19566313,12,"sabor muy delicioso, ya dulce, muy buena compra.","sabor muy delicioso, ya dulce, muy buena compra.",no
+P12,A,MLM19566313,13,"sabor y aroma que invita a seguir tomándolo se ha preparado solo con agua caliente y sabe muy bien, toma buena consistencia.","sabor y aroma que invita a seguir tomándolo se ha preparado solo con agua caliente y sabe muy bien, toma buena consistencia.",no
+P12,A,MLM19566313,14,"esra delicioso café capuccino sabor moka, van varias veces que lo compro a buen precio lo recomiendo 10/10.","esra delicioso café capuccino sabor moka, van varias veces que lo compro a buen precio lo recomiendo 10/10.",no
+P12,A,MLM19566313,15,"tiene buen sabor, capuchino dulce.","tiene buen sabor, capuchino dulce.",no
+P12,B,MLM20999002,1,sabe bien.,sabe bien.,no
+P12,B,MLM20999002,2,excelente aroma y sabor.,excelente aroma y sabor.,no
+P12,B,MLM20999002,3,el precio y buen sabor.,el precio y buen sabor.,no
+P12,B,MLM20999002,4,sabor rico y rendidor.,sabor rico y rendidor.,no
+P12,B,MLM20999002,5,buen sabor.,buen sabor.,no
+P12,B,MLM20999002,6,"calidad garantizada, buen sabor y confiable.","calidad garantizada, buen sabor y confiable.",no
+P12,B,MLM20999002,7,le铆 comentarios que dec铆a que su sabor cambia,le铆 comentarios que dec铆a que su sabor cambia,no
+P12,B,MLM20999002,8,rinde bien y sabe bueno.,rinde bien y sabe bueno.,no
+P12,B,MLM20999002,9,"de buena calidad, viene bien sellado el paquete y tiene un buen sabor.","de buena calidad, viene bien sellado el paquete y tiene un buen sabor.",no
+P12,B,MLM20999002,10,excelente sabor.,excelente sabor.,no
+P12,B,MLM20999002,11,cómo siempre muy rico y de buen sabor.,cómo siempre muy rico y de buen sabor.,no
+P12,B,MLM20999002,12,"buen cafe, nos encanta su sabor, es una opción qué no falla.","buen cafe, nos encanta su sabor, es una opción qué no falla.",no
+P12,B,MLM20999002,13,caf茅 cl谩sico y familiar al paladar.,caf茅 cl谩sico y familiar al paladar.,no
+P12,B,MLM20999002,14,excelente 馃憣 me encanta su sabor.,excelente 馃憣 me encanta su sabor.,no
+P12,B,MLM20999002,15,es de buen sabor.,es de buen sabor.,no
+P13,A,MLM43007251,1,muy rico sabor y aroma.,muy rico sabor y aroma.,no
+P13,A,MLM43007251,2,"buen tueste, balance entre aroma y sabor.","buen tueste, balance entre aroma y sabor.",no
+P13,A,MLM43007251,3,"lo compre como alternativa al folgers, sabe parecido","lo compre como alternativa al folgers, sabe parecido",no
+P13,A,MLM43007251,4,"buen café, no muy fuerte, con un aroma muy agradable y sabor avainillado,.","buen café, no muy fuerte, con un aroma muy agradable y sabor avainillado,.",no
+P13,A,MLM43007251,5,"producto original, buen sabor y olor, buen precio, recomendable.","producto original, buen sabor y olor, buen precio, recomendable.",no
+P13,A,MLM43007251,6,"buen sabor, aroma y precio.","buen sabor, aroma y precio.",no
+P13,A,MLM43007251,7,excelente sabor.,excelente sabor.,no
+P13,A,MLM43007251,8,"excelente precio contra los supermercados, rapidez en la entrega y un sabor exquisito.","excelente precio contra los supermercados, rapidez en la entrega y un sabor exquisito.",no
+P13,A,MLM43007251,9,sabor delicioso.,sabor delicioso.,no
+P13,A,MLM43007251,10,delicioso sabor.,delicioso sabor.,no
+P13,A,MLM43007251,11,"sabor fuerte, buen molido y buen aroma.","sabor fuerte, buen molido y buen aroma.",no
+P13,A,MLM43007251,12,muy buen sabor y aroma.,muy buen sabor y aroma.,no
+P13,A,MLM43007251,13,"excelente calidad, sabor, y llegó muy rápido, un tueste suave y a la temperatura ideal queda esquisto sin necesidad de azúcar o añadidos.","excelente calidad, sabor, y llegó muy rápido, un tueste suave y a la temperatura ideal queda esquisto sin necesidad de azúcar o añadidos.",no
+P13,A,MLM43007251,14,"no está mal, el sabor no es tan intenso","no está mal, el sabor no es tan intenso",no
+P13,A,MLM43007251,15,me encanto el sabor y la textura del café.,me encanto el sabor y la textura del café.,no
+P13,B,MLM19566313,1,"muy buen producto, sabor muy similar al que encuentras en un café o restaurante.","muy buen producto, sabor muy similar al que encuentras en un café o restaurante.",no
+P13,B,MLM19566313,2,me encanto el sabor y super fácil de preparar.,me encanto el sabor y super fácil de preparar.,no
+P13,B,MLM19566313,3,magnífico sabor y el precio fantástico lo seguiré comprando.,magnífico sabor y el precio fantástico lo seguiré comprando.,no
+P13,B,MLM19566313,4,"simplemente delicioso. buen aroma, exelente sabor, me encantó.","simplemente delicioso. buen aroma, exelente sabor, me encantó.",no
+P13,B,MLM19566313,5,el sabor delicioso.,el sabor delicioso.,no
+P13,B,MLM19566313,6,"sabor delicioso, la verdad es buen precio por todo el contenido.","sabor delicioso, la verdad es buen precio por todo el contenido.",no
+P13,B,MLM19566313,7,"para acompañar al café, le falta sabor a café","para acompañar al café, le falta sabor a café",no
+P13,B,MLM19566313,8,lo recomiendo su sabor es delicioso me llegó selladito y el precio es espectacular 10/10.,lo recomiendo su sabor es delicioso me llegó selladito y el precio es espectacular 10/10.,no
+P13,B,MLM19566313,9,"buen producto, su sabor es delicioso.","buen producto, su sabor es delicioso.",no
+P13,B,MLM19566313,10,sabor rico,sabor rico,no
+P13,B,MLM19566313,11,excelente producto y buen sabor.,excelente producto y buen sabor.,no
+P13,B,MLM19566313,12,"el sabor es muy agradable, por eso lo seguiré comprando.","el sabor es muy agradable, por eso lo seguiré comprando.",no
+P13,B,MLM19566313,13,"me encanta, es la segunda vez que compro y el sabor es unico.","me encanta, es la segunda vez que compro y el sabor es unico.",no
+P13,B,MLM19566313,14,"tiene un sabor muy rico, a los clientes de mi negocio les encanta!.","tiene un sabor muy rico, a los clientes de mi negocio les encanta!.",no
+P13,B,MLM19566313,15,el mejor producto para capuchino o frappuccino un excelente sabor.,el mejor producto para capuchino o frappuccino un excelente sabor.,no
+P14,A,MLM20999002,1,muy buen sabor y calidad.,muy buen sabor y calidad.,no
+P14,A,MLM20999002,2,buen cafe y buen sabor.,buen cafe y buen sabor.,no
+P14,A,MLM20999002,3,muy bueno y buen sabor.,muy bueno y buen sabor.,no
+P14,A,MLM20999002,4,"buen cafe, nos encanta su sabor, es una opción qué no falla.","buen cafe, nos encanta su sabor, es una opción qué no falla.",no
+P14,A,MLM20999002,5,le铆 comentarios que dec铆a que su sabor cambia,le铆 comentarios que dec铆a que su sabor cambia,no
+P14,A,MLM20999002,6,el precio y buen sabor.,el precio y buen sabor.,no
+P14,A,MLM20999002,7,"un sabor exelente, y en el tiempo indicado.","un sabor exelente, y en el tiempo indicado.",no
+P14,A,MLM20999002,8,"excelente producto buen sabor, entrega rápida.","excelente producto buen sabor, entrega rápida.",no
+P14,A,MLM20999002,9,excelente sabor.,excelente sabor.,no
+P14,A,MLM20999002,10,"buen producto, rico sabor recomdqble.","buen producto, rico sabor recomdqble.",no
+P14,A,MLM20999002,11,tiene muy buen sabor me encanta la presentación que alcanza para usar varias tazas.,tiene muy buen sabor me encanta la presentación que alcanza para usar varias tazas.,no
+P14,A,MLM20999002,12,"calidad garantizada, buen sabor y confiable.","calidad garantizada, buen sabor y confiable.",no
+P14,A,MLM20999002,13,sin duda alguna su sabor de café tostado es indiscutible y un buen gusto por las mañanas.,sin duda alguna su sabor de café tostado es indiscutible y un buen gusto por las mañanas.,no
+P14,A,MLM20999002,14,a mis largos años lo sigo usando banda nunca falla buen sabor mediano fuerte como aguante y te guste lo recomiendo banda al 100 salu2.,a mis largos años lo sigo usando banda nunca falla buen sabor mediano fuerte como aguante y te guste lo recomiendo banda al 100 salu2.,no
+P14,A,MLM20999002,15,"muy bueno,de un sabor fuerte y agradable.","muy bueno,de un sabor fuerte y agradable.",no
+P14,B,MLM16207863,1,sabe bien.,sabe bien.,no
+P14,B,MLM16207863,2,es suave el sabor y agradable.,es suave el sabor y agradable.,no
+P14,B,MLM16207863,3,"lo estoy probando y pues si está rico , conserva su sabor a canela.","lo estoy probando y pues si está rico , conserva su sabor a canela.",no
+P14,B,MLM16207863,4,buen sabor y calidad.,buen sabor y calidad.,no
+P14,B,MLM16207863,5,"rico sabor a café de olla, me gusta mucho el sabor, también lo buscan en mi negocio.","rico sabor a café de olla, me gusta mucho el sabor, también lo buscan en mi negocio.",no
+P14,B,MLM16207863,6,ya conocido por su rico sabor.,ya conocido por su rico sabor.,no
+P14,B,MLM16207863,7,"no es 100 porciento cafe puro, el sabor es rico.","no es 100 porciento cafe puro, el sabor es rico.",no
+P14,B,MLM16207863,8,"a buen precio, solo a los que les gusta que tenga sabor canela les encantará, a mi la verdad no me gustó, después de probarlo prefiero alguno más [marca] en sabor y fuerte.","a buen precio, solo a los que les gusta que tenga sabor canela les encantará, a mi la verdad no me gustó, después de probarlo prefiero alguno más clásico en sabor y fuerte.",si
+P14,B,MLM16207863,9,siento que sabe a quemado.,siento que sabe a quemado.,no
+P14,B,MLM16207863,10,buen tamaño y sabor.,buen tamaño y sabor.,no
+P14,B,MLM16207863,11,muy buen sabor calidad y precio.,muy buen sabor calidad y precio.,no
+P14,B,MLM16207863,12,rico sabor sin duda lo volver茅 a comprar.,rico sabor sin duda lo volver茅 a comprar.,no
+P14,B,MLM16207863,13,de mis favoritos excelente sabor.,de mis favoritos excelente sabor.,no
+P14,B,MLM16207863,14,delicioso sabor y su aroma muy agradable.,delicioso sabor y su aroma muy agradable.,no
+P14,B,MLM16207863,15,delicioso el aroma el sabor es muy agradable.,delicioso el aroma el sabor es muy agradable.,no
+P15,A,MLM25263480,1,"excelente producto, me encantó el sabor y su calidad.","excelente producto, me encantó el sabor y su calidad.",no
+P15,A,MLM25263480,2,sabor exquisito.,sabor exquisito.,no
+P15,A,MLM25263480,3,excelente sabor de café muy rico.,excelente sabor de café muy rico.,no
+P15,A,MLM25263480,4,exelente el sabor y vuen café recomendado.,exelente el sabor y vuen café recomendado.,no
+P15,A,MLM25263480,5,buen n sabor.,buen n sabor.,no
+P15,A,MLM25263480,6,"tiene buen aroma y sabor balanceado, no es demasiado fuerte","tiene buen aroma y sabor balanceado, no es demasiado fuerte",no
+P15,A,MLM25263480,7,tiene buen sabor tostado,tiene buen sabor tostado,no
+P15,A,MLM25263480,8,"muy rico el sabor, excelente para cafetera.","muy rico el sabor, excelente para cafetera.",no
+P15,A,MLM25263480,9,buen sabor muy rico cafe.,buen sabor muy rico cafe.,no
+P15,A,MLM25263480,10,es un café de muy buen aroma y sabor.,es un café de muy buen aroma y sabor.,no
+P15,A,MLM25263480,11,es un buen cafe con aroma intenso y de gran sabor.,es un buen cafe con aroma intenso y de gran sabor.,no
+P15,A,MLM25263480,12,muy bueno buen sabor.,muy bueno buen sabor.,no
+P15,A,MLM25263480,13,"excelente aroma y sabor, muy satisfecho.","excelente aroma y sabor, muy satisfecho.",no
+P15,A,MLM25263480,14,"excelente sabor y olor ,","excelente sabor y olor ,",no
+P15,A,MLM25263480,15,"muy rico sabor, me encanto la presentacion de 1 kg....","muy rico sabor, me encanto la presentación de 1 kg….",si
+P15,B,MLM16207863,1,"excelente sabor,.","excelente sabor,.",no
+P15,B,MLM16207863,2,muy buen producto su sabor es rico.,muy buen producto su sabor es rico.,no
+P15,B,MLM16207863,3,"tiene un aroma muy rivo, el sabor esta excelente.","tiene un aroma muy rivo, el sabor esta excelente.",no
+P15,B,MLM16207863,4,buen tamaño y muy rico sabor volveré a pedir.,buen tamaño y muy rico sabor volveré a pedir.,no
+P15,B,MLM16207863,5,"rico, sabor agradable.","rico, sabor agradable.",no
+P15,B,MLM16207863,6,su sabor es muy rico.,su sabor es muy rico.,no
+P15,B,MLM16207863,7,"es un caf茅 muy rico y es muy suave en fragancia, sabor inigualable.","es un caf茅 muy rico y es muy suave en fragancia, sabor inigualable.",no
+P15,B,MLM16207863,8,sabor muy original y muy buena presentacion.,sabor muy original y muy buena presentacion.,no
+P15,B,MLM16207863,9,rico sabor.,rico sabor.,no
+P15,B,MLM16207863,10,"sabe muy rico, lo recomiendo.","sabe muy rico, lo recomiendo.",no
+P15,B,MLM16207863,11,excelente sabor y calidad.,excelente sabor y calidad.,no
+P15,B,MLM16207863,12,"calidad regular, sabor regular","calidad regular, sabor regular",no
+P15,B,MLM16207863,13,no me gustó mucho su sabor.,no me gustó mucho su sabor.,no
+P15,B,MLM16207863,14,tiene muy buen aroma y sabor.,tiene muy buen aroma y sabor.,no
+P15,B,MLM16207863,15,"rico sabor a café de olla, me gusta mucho el sabor, también lo buscan en mi negocio.","rico sabor a café de olla, me gusta mucho el sabor, también lo buscan en mi negocio.",no
+P16,A,MLM16250244,1,exelente un sabor bueno ideal.,exelente un sabor bueno ideal.,no
+P16,A,MLM16250244,2,sabe dulce muy buen savbor.,sabe dulce muy buen savbor.,no
+P16,A,MLM16250244,3,"excelente sabor, aroma, textura, recomendado 100%.","excelente sabor, aroma, textura, recomendado 100%.",no
+P16,A,MLM16250244,4,me gustan mucho esta gama de café siempre lo recomiendo si buscas un sabor intenso y sofisticado en un café soluble por supuesto no reemplaza un buen café de grano bien tostado y recién molido.,me gustan mucho esta gama de café siempre lo recomiendo si buscas un sabor intenso y sofisticado en un café soluble por supuesto no reemplaza un buen café de grano bien tostado y recién molido.,no
+P16,A,MLM16250244,5,"delicioso aroma, sabor, llegó bien, con sus sellos lo volvería a comprar.","delicioso aroma, sabor, llegó bien, con sus sellos lo volvería a comprar.",no
+P16,A,MLM16250244,6,"excelente sabor, solo mejoraría en el precio que es un poco elevado.","excelente sabor, solo mejoraría en el precio que es un poco elevado.",no
+P16,A,MLM16250244,7,sabor único.,sabor único.,no
+P16,A,MLM16250244,8,"el sabor se me hizo bastante rico, claro no soy experta en café","el sabor se me hizo bastante rico, claro no soy experta en café",no
+P16,A,MLM16250244,9,"muy buen café, el sabor es muy agradable .","muy buen café, el sabor es muy agradable .",no
+P16,A,MLM16250244,10,tiene un sabor delicioso a café puro me encanta.,tiene un sabor delicioso a café puro me encanta.,no
+P16,A,MLM16250244,11,lo recomiendo por su sabor.,lo recomiendo por su sabor.,no
+P16,A,MLM16250244,12,"me encanta su sabor, huele delicioso cúando lo estas preparando.","me encanta su sabor, huele delicioso cúando lo estas preparando.",no
+P16,A,MLM16250244,13,rico en sabor y calidad.,rico en sabor y calidad.,no
+P16,A,MLM16250244,14,buena calidad y sabor.,buena calidad y sabor.,no
+P16,A,MLM16250244,15,este café huele y sabe delicioso.,este café huele y sabe delicioso.,no
+P16,B,MLM16250253,1,rico caf茅 tiene buen sabor buen precio.,rico caf茅 tiene buen sabor buen precio.,no
+P16,B,MLM16250253,2,muy buen sabor .,muy buen sabor .,no
+P16,B,MLM16250253,3,buen sabor.,buen sabor.,no
+P16,B,MLM16250253,4,"muy bien sabor, y por la promoción aplicada se obtienen una muy buena relación precio-calidad.","muy bien sabor, y por la promoción aplicada se obtienen una muy buena relación precio-calidad.",no
+P16,B,MLM16250253,5,huele y sabe muy bien.,huele y sabe muy bien.,no
+P16,B,MLM16250253,6,"producto en buenas condiciones, buena presentaci贸n, excelente marca y el sabor delicioso.","producto en buenas condiciones, buena presentaci贸n, excelente marca y el sabor delicioso.",no
+P16,B,MLM16250253,7,"buen sabor, recomendable.","buen sabor, recomendable.",no
+P16,B,MLM16250253,8,excelente aroma y sabor.,excelente aroma y sabor.,no
+P16,B,MLM16250253,9,buen sabor y rendidor.,buen sabor y rendidor.,no
+P16,B,MLM16250253,10,muy bueno y un rico sabor.,muy bueno y un rico sabor.,no
+P16,B,MLM16250253,11,el olor y sabor muy rico.,el olor y sabor muy rico.,no
+P16,B,MLM16250253,12,buen sabor y calidad.,buen sabor y calidad.,no
+P16,B,MLM16250253,13,[marca] es una marca muy conocida excelente sabor.,nescafe es una marca muy conocida excelente sabor.,si
+P16,B,MLM16250253,14,una aroma y sabor exquisito .,una aroma y sabor exquisito .,no
+P16,B,MLM16250253,15,su sabor exquisito es lo máximo!!.,su sabor exquisito es lo máximo!!.,no
+P17,A,MLM27068249,1,café delicioso en los 3 sabores intenso y con un aroma y sabor agradable.,café delicioso en los 3 sabores intenso y con un aroma y sabor agradable.,no
+P17,A,MLM27068249,2,"excelente producto, un rico sabor.","excelente producto, un rico sabor.",no
+P17,A,MLM27068249,3,muy ricos sabores.,muy ricos sabores.,no
+P17,A,MLM27068249,4,los sabores son muy buenos.,los sabores son muy buenos.,no
+P17,A,MLM27068249,5,excelente calidad y sabor.,excelente calidad y sabor.,no
+P17,A,MLM27068249,6,muy buen café colombiano excelente sabor recomendado.,muy buen café colombiano excelente sabor recomendado.,no
+P17,A,MLM27068249,7,"el sellado de cada producto se notaba extraño, olor y sabor ok","el sellado de cada producto se notaba extraño, olor y sabor ok",no
+P17,A,MLM27068249,8,gran café y grandes sabores [marca] nunca decepciona.,gran café y grandes sabores juan valdez nunca decepciona.,si
+P17,A,MLM27068249,9,sabe muy rico.,sabe muy rico.,no
+P17,A,MLM27068249,10,todos los sabores son muy deliciosos.,todos los sabores son muy deliciosos.,no
+P17,A,MLM27068249,11,"dudo que sean auténticos por el sabor y el sello, tas etiquetas tampoco son iguales.","dudo que sean auténticos por el sabor y el sello, tas etiquetas tampoco son iguales.",no
+P17,A,MLM27068249,12,su sabor.,su sabor.,no
+P17,A,MLM27068249,13,"el producto llegó en buenas condiciones, si dudan en comprarlo no lo hagan, no dude y comprénlo el café es buenísimo tiene gran aroma y sabor.","el producto llegó en buenas condiciones, si dudan en comprarlo no lo hagan, no dude y comprénlo el café es buenísimo tiene gran aroma y sabor.",no
+P17,A,MLM27068249,14,deliciosos sabores de cafe.,deliciosos sabores de cafe.,no
+P17,A,MLM27068249,15,bueno tiene su sabor y vale la pena probarlo.,bueno tiene su sabor y vale la pena probarlo.,no
+P17,B,MLM16250244,1,"delicioso aroma, sabor exquisito.","delicioso aroma, sabor exquisito.",no
+P17,B,MLM16250244,2,"lo recomiendo, muy buen sabor.","lo recomiendo, muy buen sabor.",no
+P17,B,MLM16250244,3,"por el precio crei que tendria un muy buen sabor y la verdad deja mucho que desear, preferible comprar la versión normal ya que esta mas fuerte el sabor y mucho más barato.","por el precio crei que tendria un muy buen sabor y la verdad deja mucho que desear, preferible comprar la versión normal ya que esta mas fuerte el sabor y mucho más barato.",no
+P17,B,MLM16250244,4,sabe bueno jeje.,sabe bueno jeje.,no
+P17,B,MLM16250244,5,rico en sabor y calidad.,rico en sabor y calidad.,no
+P17,B,MLM16250244,6,delicioso olor y sabor.,delicioso olor y sabor.,no
+P17,B,MLM16250244,7,exquisito sabor!.,exquisito sabor!.,no
+P17,B,MLM16250244,8,"me encanto el aroma, el sabor y el precio.","me encanto el aroma, el sabor y el precio.",no
+P17,B,MLM16250244,9,excelente sabor y costo.,excelente sabor y costo.,no
+P17,B,MLM16250244,10,"un café para sentirse con energía, además un sabor y aroma exquisito.","un café para sentirse con energía, además un sabor y aroma exquisito.",no
+P17,B,MLM16250244,11,me encanta el aroma y sabor y llego a tiempo.,me encanta el aroma y sabor y llego a tiempo.,no
+P17,B,MLM16250244,12,excelente sabor!!!!!?.,excelente sabor!!!!!?.,no
+P17,B,MLM16250244,13,me gustan mucho esta gama de café siempre lo recomiendo si buscas un sabor intenso y sofisticado en un café soluble por supuesto no reemplaza un buen café de grano bien tostado y recién molido.,me gustan mucho esta gama de café siempre lo recomiendo si buscas un sabor intenso y sofisticado en un café soluble por supuesto no reemplaza un buen café de grano bien tostado y recién molido.,no
+P17,B,MLM16250244,14,"super bueno, sabor intenso a café, la vainilla es las el olor que sabor","super bueno, sabor intenso a café, la vainilla es las el olor que sabor",no
+P17,B,MLM16250244,15,excelente buen sabor.,excelente buen sabor.,no
+P18,A,MLM19544520,1,muy rico el sabor para disfrutar con un buen pan.,muy rico el sabor para disfrutar con un buen pan.,no
+P18,A,MLM19544520,2,excelente sabor y el tamaño es muy bueno.,excelente sabor y el tamaño es muy bueno.,no
+P18,A,MLM19544520,3,"muy buen sabor , traten de tenerlo siempre por qué tiene buen precio.","muy buen sabor , traten de tenerlo siempre por qué tiene buen precio.",no
+P18,A,MLM19544520,4,"es buen producto, no fue mucho de mi agrado el sabor, tampoco es desagradable, está pasable, me supo a chocomilk .","es buen producto, no fue mucho de mi agrado el sabor, tampoco es desagradable, está pasable, me supo a chocomilk .",no
+P18,A,MLM19544520,5,llegó muy bien sellado y tiene un sabor muy rico .,llegó muy bien sellado y tiene un sabor muy rico .,no
+P18,A,MLM19544520,6,en lo personal no me sabe a café.,en lo personal no me sabe a café.,no
+P18,A,MLM19544520,7,no le gustó el sabor a mi familia.,no le gustó el sabor a mi familia.,no
+P18,A,MLM19544520,8,se necesita ponerle bastante para que tenga sabor.,se necesita ponerle bastante para que tenga sabor.,no
+P18,A,MLM19544520,9,"el sabor es bastante rico,buena consistencia y fácil de preparar .","el sabor es bastante rico,buena consistencia y fácil de preparar .",no
+P18,A,MLM19544520,10,"bien, es más dulce que sabor moka, de café no sabe nada, rinde y es sabroso","bien, es más dulce que sabor moka, de café no sabe nada, rinde y es sabroso",no
+P18,A,MLM19544520,11,tiene buena caducidad y tiene buen sabor.,tiene buena caducidad y tiene buen sabor.,no
+P18,A,MLM19544520,12,sabe más cremoso.,sabe más cremoso.,no
+P18,A,MLM19544520,13,excelente sabor lo volvere a pedir.,excelente sabor lo volvere a pedir.,no
+P18,A,MLM19544520,14,muy buen sabor.,muy buen sabor.,no
+P18,A,MLM19544520,15,tiene buen sabor.,tiene buen sabor.,no
+P18,B,MLM16250253,1,su sabor exquisito es lo máximo!!.,su sabor exquisito es lo máximo!!.,no
+P18,B,MLM16250253,2,"super bien, el precio y la comodidad de recibir en casa, con un sabor muy rico.","super bien, el precio y la comodidad de recibir en casa, con un sabor muy rico.",no
+P18,B,MLM16250253,3,buen sabor para mis necesidades.,buen sabor para mis necesidades.,no
+P18,B,MLM16250253,4,muy buen sabor para disfruta en este tiempo de lluvia.,muy buen sabor para disfruta en este tiempo de lluvia.,no
+P18,B,MLM16250253,5,huele y sabe muy bien.,huele y sabe muy bien.,no
+P18,B,MLM16250253,6,"rico café, sabe igual al cafeínado, y precio calidad acorde, buen producto.","rico café, sabe igual al cafeínado, y precio calidad acorde, buen producto.",no
+P18,B,MLM16250253,7,el olor y sabor muy rico.,el olor y sabor muy rico.,no
+P18,B,MLM16250253,8,"buen sabor, recomendable.","buen sabor, recomendable.",no
+P18,B,MLM16250253,9,buen sabor y cantidad.,buen sabor y cantidad.,no
+P18,B,MLM16250253,10,me gustó su sabor.,me gustó su sabor.,no
+P18,B,MLM16250253,11,muy rico y sabor.,muy rico y sabor.,no
+P18,B,MLM16250253,12,rico caf茅 tiene buen sabor buen precio.,rico caf茅 tiene buen sabor buen precio.,no
+P18,B,MLM16250253,13,café claro aromático y buen sabor.,café claro aromático y buen sabor.,no
+P18,B,MLM16250253,14,buen sabor y calidad.,buen sabor y calidad.,no
+P18,B,MLM16250253,15,buan sabor.,buan sabor.,no
+P19,A,MLM20075768,1,economico y delicioso sabor y aroma.,economico y delicioso sabor y aroma.,no
+P19,A,MLM20075768,2,"excelente producto, muy bien sabor.","excelente producto, muy bien sabor.",no
+P19,A,MLM20075768,3,no son los 400g llene unos embaces de 170g pues el sabor es el esperado solo eso que no son los 400g.,no son los 400g llene unos embaces de 170g pues el sabor es el esperado solo eso que no son los 400g.,no
+P19,A,MLM20075768,4,"llegó muy rápido, el sabor y calidad de [marca].","llegó muy rápido, el sabor y calidad de nescafé.",si
+P19,A,MLM20075768,5,no me gustó el sabor.,no me gustó el sabor.,no
+P19,A,MLM20075768,6,buen sabor y en bolsa es muy practico.,buen sabor y en bolsa es muy practico.,no
+P19,A,MLM20075768,7,este huele más rico y su sabor es mejor 10 de 10.,este huele más rico y su sabor es mejor 10 de 10.,no
+P19,A,MLM20075768,8,sabor muy rico.,sabor muy rico.,no
+P19,A,MLM20075768,9,"esta bastante bien, el sabor cambia un poco","esta bastante bien, el sabor cambia un poco",no
+P19,A,MLM20075768,10,buen sabor.,buen sabor.,no
+P19,A,MLM20075768,11,"sabor fuerte, todos n [marca].","sabor fuerte, todos n clásico.",si
+P19,A,MLM20075768,12,"está bien el sabor y es rendidor, exelente calidad.","está bien el sabor y es rendidor, exelente calidad.",no
+P19,A,MLM20075768,13,"há llegado en buen estado, el sabor [marca] de siempre.","há llegado en buen estado, el sabor clásico de siempre.",si
+P19,A,MLM20075768,14,"no cumplió totalmente mis espectativas, viene demasiado molido el café y tiene un aroma y sabor ""algo diferentes"" al que normalmente compro .","no cumplió totalmente mis espectativas, viene demasiado molido el café y tiene un aroma y sabor ""algo diferentes"" al que normalmente compro .",no
+P19,A,MLM20075768,15,excelente sabor y muy buen precio.,excelente sabor y muy buen precio.,no
+P19,B,MLM23633481,1,sabe igualito al original nomás pagas más por una etiqueta que se ve chidota .,sabe igualito al original nomás pagas más por una etiqueta que se ve chidota .,no
+P19,B,MLM23633481,2,tiene muy buen sabor.,tiene muy buen sabor.,no
+P19,B,MLM23633481,3,el sabor es delicioso .,el sabor es delicioso .,no
+P19,B,MLM23633481,4,", su sabor me gusta.",", su sabor me gusta.",no
+P19,B,MLM23633481,5,delicioso buen sabor y con hielos mas.,delicioso buen sabor y con hielos mas.,no
+P19,B,MLM23633481,6,"1000/1000 lo recomiendo con leche fría y hielos, sabor cremoso .","1000/1000 lo recomiendo con leche fría y hielos, sabor cremoso .",no
+P19,B,MLM23633481,7,el mismo sabor.,el mismo sabor.,no
+P19,B,MLM23633481,8,"excelente sabor y bueno es similar al normal, la diferencia obviamente es la solubilidad en frio que me encanta, amo el café frio y es mi marca favorita.","excelente sabor y bueno es similar al normal, la diferencia obviamente es la solubilidad en frio que me encanta, amo el café frio y es mi marca favorita.",no
+P19,B,MLM23633481,9,"su sabor es delicioso, muchas tazas de un rico cafe.","su sabor es delicioso, muchas tazas de un rico cafe.",no
+P19,B,MLM23633481,10,"muy bueno , excelente sabor.","muy bueno , excelente sabor.",no
+P19,B,MLM23633481,11,rico sabor.,rico sabor.,no
+P19,B,MLM23633481,12,muy buen sabor y aroma.,muy buen sabor y aroma.,no
+P19,B,MLM23633481,13,sabe súper bien.,sabe súper bien.,no
+P19,B,MLM23633481,14,se dilhuye perfectamente en agua fría sin perder su sabor.,se dilhuye perfectamente en agua fría sin perder su sabor.,no
+P19,B,MLM23633481,15,su sabor.,su sabor.,no
+P20,A,MLM41148521,1,"olor intenso, buen sabor.","olor intenso, buen sabor.",no
+P20,A,MLM41148521,2,sabor fuerte muy aromático con tonos de chocolate muy rico.,sabor fuerte muy aromático con tonos de chocolate muy rico.,no
+P20,A,MLM41148521,3,tiene muy buen sabor.,tiene muy buen sabor.,no
+P20,A,MLM41148521,4,en lo personal es el mejor café de los que e tomado muy buen aroma color intenso y muy buen sabor.,en lo personal es el mejor café de los que e tomado muy buen aroma color intenso y muy buen sabor.,no
+P20,A,MLM41148521,5,buen sabor y aroma.,buen sabor y aroma.,no
+P20,A,MLM41148521,6,"tiene buen sabor y molienda, lo que más me agradó es que lo compre en oferta, mejor precio que de tienda.","tiene buen sabor y molienda, lo que más me agradó es que lo compre en oferta, mejor precio que de tienda.",no
+P20,A,MLM41148521,7,me gusta porque lo puedes preparar bien cargado y conserva un sabor suave.,me gusta porque lo puedes preparar bien cargado y conserva un sabor suave.,no
+P20,A,MLM41148521,8,"muy bueno, equilibrio en el sabor, cero ácido, además espumoso.","muy bueno, equilibrio en el sabor, cero ácido, además espumoso.",no
+P20,A,MLM41148521,9,"es un buen café, bueno bonito y barato, sirve bien para las maquinas domésticas de espresso y no está sobretostado por lo que tiene buen sabor en boca ya sea en espresso, capuchino o en combinación co","es un buen café, bueno bonito y barato, sirve bien para las maquinas domésticas de espresso y no está sobretostado por lo que tiene buen sabor en boca ya sea en espresso, capuchino o en combinación co",no
+P20,A,MLM41148521,10,", es cafe con un sabor delicioso , y tienen varios sabores unos ligeros,otros amargos,semi amargos super deliciosos.",", es cafe con un sabor delicioso , y tienen varios sabores unos ligeros,otros amargos,semi amargos super deliciosos.",no
+P20,A,MLM41148521,11,"increíble, me encanta su sabor intenso, lo hago en mi cafetera italiana y se aprecia mas su sabor.","increíble, me encanta su sabor intenso, lo hago en mi cafetera italiana y se aprecia mas su sabor.",no
+P20,A,MLM41148521,12,"me encanta su sabor tan concentrado, he probado de diferentes marcas y definitivamente este es mi favorito.","me encanta su sabor tan concentrado, he probado de diferentes marcas y definitivamente este es mi favorito.",no
+P20,A,MLM41148521,13,como decía expreso decidí comprarlo casi me he terminado la bolsita y la verdad he quedado sorprendida con el sabor si no lo quieres tan expreso y te quieres hacer un café normal ponle un poquito meno,como decía expreso decidí comprarlo casi me he terminado la bolsita y la verdad he quedado sorprendida con el sabor si no lo quieres tan expreso y te quieres hacer un café normal ponle un poquito meno,no
+P20,A,MLM41148521,14,"muy buen sabor, delicioso cafe.","muy buen sabor, delicioso cafe.",no
+P20,A,MLM41148521,15,muy buen sabor.,muy buen sabor.,no
+P20,B,MLM43007251,1,café con excelente aroma y sabor ya van varias veces que lo compro.,café con excelente aroma y sabor ya van varias veces que lo compro.,no
+P20,B,MLM43007251,2,súper recomendado el sabor es exelente.,súper recomendado el sabor es exelente.,no
+P20,B,MLM43007251,3,lo estamos tomando y el aroma y sabor es muy rico ya lo he comprado varias veces.,lo estamos tomando y el aroma y sabor es muy rico ya lo he comprado varias veces.,no
+P20,B,MLM43007251,4,"excelente calidad, sabor, y llegó muy rápido, un tueste suave y a la temperatura ideal queda esquisto sin necesidad de azúcar o añadidos.","excelente calidad, sabor, y llegó muy rápido, un tueste suave y a la temperatura ideal queda esquisto sin necesidad de azúcar o añadidos.",no
+P20,B,MLM43007251,5,excelente sabor y calidad.,excelente sabor y calidad.,no
+P20,B,MLM43007251,6,"lo compre como alternativa al folgers, sabe parecido","lo compre como alternativa al folgers, sabe parecido",no
+P20,B,MLM43007251,7,excelente sabor.,excelente sabor.,no
+P20,B,MLM43007251,8,"esta clase de café, me encanta el tostado, y el molido es el indicado, y sobre todo el sabor me gusta mucho.","esta clase de café, me encanta el tostado, y el molido es el indicado, y sobre todo el sabor me gusta mucho.",no
+P20,B,MLM43007251,9,"excelente café, muy rico sabor.","excelente café, muy rico sabor.",no
+P20,B,MLM43007251,10,buen sabor.,buen sabor.,no
+P20,B,MLM43007251,11,buen sabor ya van como 15 que compro.,buen sabor ya van como 15 que compro.,no
+P20,B,MLM43007251,12,siempre [marca] con su gran e increíble sabor.,siempre blason con su gran e increíble sabor.,si
+P20,B,MLM43007251,13,"buen café, en sabor y calidad, 100!!!.","buen café, en sabor y calidad, 100!!!.",no
+P20,B,MLM43007251,14,excelente cafe rico aroma sabor y consistencia.,excelente cafe rico aroma sabor y consistencia.,no
+P20,B,MLM43007251,15,viene bien sellado y buen sabor.,viene bien sellado y buen sabor.,no

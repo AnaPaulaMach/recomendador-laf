@@ -1,0 +1,70 @@
+termino,tipo,frecuencia_en_menciones_sabor,enmascarar
+sabor,palabra,3079,no
+cafe,palabra,604,no
+con,palabra,214,no
+sin,palabra,76,no
+sabores,palabra,57,no
+chocolate,palabra,37,no
+frio,palabra,36,no
+vainilla,palabra,36,no
+nescafe,palabra,29,si
+tostado,palabra,25,no
+molido,palabra,21,no
+clasico,palabra,20,si
+moka,palabra,18,no
+canela,palabra,15,no
+frasco,palabra,12,no
+soluble,palabra,12,no
+olla,palabra,10,no
+bote,palabra,9,no
+parroquia,palabra,9,si
+polvo,palabra,9,no
+la parroquia,frase,8,si
+blason,palabra,7,si
+espresso,palabra,7,no
+bolsa,palabra,6,no
+puro,palabra,6,no
+cafe de olla,frase,5,no
+robusto,palabra,5,no
+capuccino,palabra,4,no
+francesa,palabra,4,no
+gourmet,palabra,4,no
+juan,palabra,4,no
+notas,palabra,4,no
+tradicional,palabra,4,no
+americano,palabra,3,no
+juan valdez,frase,3,si
+valdez,palabra,3,si
+choice,palabra,2,si
+granos,palabra,2,no
+mark,palabra,2,si
+piloncillo,palabra,2,no
+afrutadas,palabra,1,no
+caramel,palabra,1,no
+decaf,palabra,1,si
+descafeinado,palabra,1,no
+liofilizado,palabra,1,no
+members,palabra,1,si
+members mark,frase,1,si
+robusta,palabra,1,no
+taster's,palabra,1,si
+tasters choice,frase,1,si
+amaderadas,palabra,0,no
+arabica,palabra,0,no
+arabico,palabra,0,no
+chiapaneco,palabra,0,no
+dark,palabra,0,no
+gluten,palabra,0,no
+ice,palabra,0,no
+nestle,palabra,0,si
+nestle professional,frase,0,no
+origen,palabra,0,no
+professional,palabra,0,no
+reserva,palabra,0,si
+reserva verarica,frase,0,no
+reserva xiapan,frase,0,no
+taster's choice,frase,0,si
+tripack,palabra,0,si
+veracruzano,palabra,0,no
+verarica,palabra,0,si
+xiapan,palabra,0,si

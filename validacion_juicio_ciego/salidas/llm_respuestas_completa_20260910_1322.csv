@@ -1,0 +1,432 @@
+modelo,modelo_real,temperatura,par_id,presentacion,veredicto,crudo,error
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C003,invertida,A,"VEREDICTO: A MOTIVO: En A aparecen más opiniones claramente positivas sobre el sabor, con varios “delicioso”, “riquísimo” y “excelente sabor”. En B también hay muchas buenas, pero incluye críticas directas como “sabe a quemado” y “no me gustó el sabor”.",
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C001,directa,B,"VEREDICTO: B MOTIVO: En B predominan opiniones más intensas y consistentes sobre el sabor, con varios “excelente”, “exquisito” y “delicioso”. En A también hay comentarios positivos, pero aparecen más matices como “regular” y una mención a mejorar olor y sabor.",
+gpt-5.4-mini,,0,C003,directa,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C001,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C004,directa,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C004,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C005,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C005,directa,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C007,invertida,B,"VEREDICTO: B MOTIVO: En B aparecen más opiniones claramente positivas y entusiastas sobre el sabor, mientras que en A hay varias positivas pero también algunas críticas o más tibias.",
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C006,directa,A,"VEREDICTO: A MOTIVO: En A predominan claramente las opiniones muy positivas sobre el sabor, con varias menciones de “delicioso”, “increíble” y “excelente sabor”. En B también hay buenas reseñas, pero aparecen más comentarios mixtos o negativos sobre el sabor, como “le falta sabor” y “demasiado malo”.",
+gpt-5.4-mini,,0,C006,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C008,directa,B,"VEREDICTO: B MOTIVO: Las opiniones de B repiten más veces que tiene sabor delicioso, exquisito, agradable y excelente. En A también hay elogios, pero aparecen más descripciones neutras o menos intensas.",
+gpt-5.4-mini,,0,C007,directa,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C009,invertida,B,"VEREDICTO: B MOTIVO: En B aparecen más referencias a un sabor más destacado y variado, con menciones a “excelente”, “delicioso” y “café y canela”. En A también hay muchas opiniones positivas, pero B suena un poco más sabroso y específico.",
+gpt-5.4-mini,,0,C008,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C012,directa,B,"VEREDICTO: B MOTIVO: En B aparecen más opiniones claramente positivas sobre el sabor, con palabras como “delicioso”, “exquisito”, “increíble” y “muy rico”. En A también hay elogios, pero incluye una crítica directa de “sabe a quemado” y varias descripciones más suaves.",
+gpt-5.4-mini,,0,C009,directa,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C010,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C010,directa,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C014,invertida,A,"VEREDICTO: A MOTIVO: Ambos tienen muchas opiniones positivas, pero en A aparecen más elogios directos al sabor como “excelente”, “inigualable” y “uno de los mejores”. En B también hay buenas reseñas, aunque aparecen más comentarios mixtos o negativos, como “siento que sabe a quemado” y que a alguien no le gustó.",
+gpt-5.4-mini,,0,C012,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C016,directa,A,"VEREDICTO: A MOTIVO: En A se repiten más opiniones de sabor claramente positivas y descriptivas, como “delicioso”, “exquisito” y “inigualable”. En B también hay buenos comentarios, pero aparecen más matices como “está bien” o referencias a intensidad/amargor, así que A suena mejor valorado en sabor.",
+gpt-5.4-mini,,0,C014,directa,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C015,directa,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C017,invertida,B,"VEREDICTO: B MOTIVO: En B aparecen más descripciones de sabor específicas y positivas, como canela, sabor inigualable, muy rico y original. En A también hay muchas opiniones buenas, pero varias son más generales o incluso una dice que le faltan sabor y aroma.",
+gpt-5.4-mini,,0,C015,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C018,directa,A,"VEREDICTO: A MOTIVO: En A predominan claramente las opiniones positivas y entusiastas sobre el sabor, con varias menciones de “excelente”, “inigualable” y “me encanta”. En B también hay muchas buenas opiniones, pero aparece una reseña negativa sobre el sabor y en general suena un poco menos consistente.",
+gpt-5.4-mini,,0,C016,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C021,directa,A,"VEREDICTO: A MOTIVO: En A aparecen más opiniones intensas y positivas sobre el sabor, como “sumamente delicioso”, “gran sabor” y “me encanto el sabor”. En B también hay buen sabor, pero varias reseñas son más genéricas o hablan de sabor suave, así que A parece mejor valorado en sabor.",
+gpt-5.4-mini,,0,C017,directa,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C023,invertida,B,"VEREDICTO: B MOTIVO: Ambos tienen opiniones muy positivas, pero en B aparecen más menciones de sabor “exquisito”, “excelente” y además se suma aroma, con varias reseñas que lo destacan de forma más consistente.",
+gpt-5.4-mini,,0,C018,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C021,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C025,directa,B,"VEREDICTO: B MOTIVO: En B aparecen más elogios directos al sabor y además varios lo describen como delicioso, excelente o incluso mejor que otras opciones. En A también hay muchas opiniones positivas, pero B suena un poco más consistente y enfático en sabor.",
+gpt-5.4-mini,,0,C023,directa,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C026,directa,B,"VEREDICTO: B MOTIVO: En B aparecen más opiniones con “excelente sabor”, “delicioso sabor” y “sabor agradable”, además de varias menciones positivas al sabor en conjunto. A también tiene muchas reseñas buenas, pero B suena un poco más consistente y enfático en sabor.",
+gpt-5.4-mini,,0,C024,directa,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C027,directa,A,"VEREDICTO: A MOTIVO: En A se repite más claramente que el sabor es “muy bueno”, “excelente” y “perfecto”, con varias opiniones directas y entusiastas sobre el gusto. En B también hay elogios, pero aparecen más comentarios sobre rendimiento, duración y comparaciones, así que el sabor queda un poco menos destacado.",
+gpt-5.4-mini,,0,C024,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C025,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C026,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C030,directa,A,"VEREDICTO: A MOTIVO: En A se repiten más elogios directos al sabor y al aroma, con frases como “excelente sabor”, “muy rico el sabor” y “huele y sabe delicioso”. En B también hay opiniones positivas, pero aparecen algunas reservas sobre el sabor (“un poco de sabor a ceniza”, “sabor fuerte”), así que A parece mejor valorado en sabor.",
+gpt-5.4-mini,,0,C027,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C030,invertida,B,"VEREDICTO: B MOTIVO: En B aparecen más opiniones con sabor descrito como excelente, delicioso o muy rico, y además se repite junto con aroma de forma muy consistente. En A también hay elogios, pero varias reseñas son más generales o mencionan un sabor fuerte/tostado que no suena tan claramente positivo.",
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C029,directa,B,"VEREDICTO: B MOTIVO: Ambos tienen muchas opiniones positivas, pero en B aparecen más comentarios de “excelente”, “riquísimo” y “delicioso” sabor, con menos críticas directas al gusto.",
+gpt-5.4-mini,,0,C029,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C031,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C031,directa,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C032,directa,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C032,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C033,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C033,directa,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C034,directa,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C036,directa,B,"VEREDICTO: B MOTIVO: En B aparecen más elogios directos y consistentes al sabor, con varias menciones a “exquisito”, “muy rico” y “sabor agradable”. En A también hay opiniones muy positivas, pero incluye una crítica de sabor tenue que le resta un poco.",
+gpt-5.4-mini,,0,C034,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C035,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C035,directa,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C037,invertida,B,"VEREDICTO: B MOTIVO: En B aparecen más opiniones claramente positivas sobre el sabor, con varios “delicioso”, “excelente sabor” y “muy rico”. En A también hay elogios, pero se repiten más comentarios de sabor suave o de que le falta intensidad.",
+gpt-5.4-mini,,0,C036,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C038,invertida,B,"VEREDICTO: B MOTIVO: En B aparecen más opiniones claramente positivas sobre el sabor y varias lo describen como delicioso, exquisito o favorito. En A también hay muchas buenas, pero incluye más comentarios mixtos o de falta de sabor.",
+gpt-5.4-mini,,0,C037,directa,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C039,directa,B,"VEREDICTO: B MOTIVO: En B aparecen más opiniones claramente positivas sobre el sabor, con varios “delicioso”, “excelente” y “riquísimo”. En A también hay muchas buenas reseñas, pero hay al menos una negativa explícita sobre el sabor y varias descripciones más suaves.",
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C040,directa,A,"VEREDICTO: A MOTIVO: En A aparecen más opiniones con adjetivos de sabor más intensos y elogiosos como “delicioso”, “exquisito”, “riquísimo” y “me encantó”. En B también hay buenas reseñas, pero el sabor se describe más seguido como “agradable”, “bueno” o “ideal”.",
+gpt-5.4-mini,,0,C038,directa,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C040,invertida,B,"VEREDICTO: B MOTIVO: En las opiniones de B aparecen más descripciones de sabor muy positivas y variadas, como “delicioso”, “exquisito” y “riquísimo”. En A también hay elogios, pero B parece tener una valoración de sabor más fuerte en conjunto.",
+gpt-5.4-mini,,0,C039,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C042,invertida,B,"VEREDICTO: B MOTIVO: Las opiniones de B son más consistentemente positivas y entusiastas sobre el sabor, con varios comentarios de “excelente”, “riquísimo” y “delicioso”. En A también hay elogios, pero aparecen más dudas o críticas como “no sabe a café” y que “no es tan fuerte” el sabor.",
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C042,directa,A,"VEREDICTO: A MOTIVO: En A predominan comentarios muy positivos y consistentes sobre el sabor, con palabras como “excelente”, “riquísimo”, “delicioso” y “exquisito”. En B también hay elogios, pero aparecen varias opiniones más tibias o negativas, como que “no sabe a café” o que “no es tan fuerte el sabor”.",
+gpt-5.4-mini,,0,C041,directa,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C043,directa,A,"VEREDICTO: A MOTIVO: En A se repiten más elogios directos al sabor como “exquisito”, “muy rico” y “muy bueno”, mientras que en B aunque también hay opiniones positivas, aparece una crítica explícita de “no me gustó su sabor” y varias comparaciones menos favorables.",
+gpt-5.4-mini,,0,C041,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C043,invertida,B,"VEREDICTO: B MOTIVO: En B aparecen más opiniones claramente positivas sobre el sabor y varias lo describen como exquisito, delicioso o muy rico. En A también hay elogios, pero hay más comentarios mixtos o negativos sobre el sabor.",
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C044,invertida,A,"VEREDICTO: A MOTIVO: En A se repiten más comentarios de sabor intenso, rico, delicioso y “gran sabor”, con varias menciones positivas consistentes. En B también hay muchas opiniones buenas, pero aparece una crítica negativa al sabor y en conjunto A suena un poco más favorable.",
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C045,invertida,B,"VEREDICTO: B MOTIVO: Ambos tienen opiniones muy positivas, pero en B aparecen más comentarios de sabor “excelente”, “delicioso” y “suave”, con menos menciones de intensidad que podrían dividir opiniones.",
+gpt-5.4-mini,,0,C044,directa,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C045,directa,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C047,directa,B,"VEREDICTO: B MOTIVO: En B aparecen más opiniones de sabor intenso, exquisito y “más sabroso”, con varios elogios muy fuertes al gusto. A también tiene muchas reseñas positivas, pero B suena un poco más destacado en sabor.",
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C046,invertida,A,"VEREDICTO: A MOTIVO: En A aparecen más opiniones de sabor claramente positivas y repetidas, con frases como “deliciosos los 3 sabores”, “todos los sabores me encantaron” y “excelente sabor”. En B también hay elogios, pero son un poco más generales y menos enfocados en que el sabor sea superior.",
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C048,directa,B,"VEREDICTO: B MOTIVO: En B aparecen más opiniones que destacan un sabor muy rico, delicioso o bien equilibrado, además de buen aroma asociado al sabor. A también tiene muchas reseñas positivas, pero B suena un poco más consistente y variado en elogios al sabor.",
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C049,directa,no_puedo_decidir,"VEREDICTO: no_puedo_decidir MOTIVO: Ambos productos reciben opiniones mayormente positivas sobre el sabor, y no hay una diferencia clara y consistente que permita afirmar que uno sabe mejor que el otro.",
+gpt-5.4-mini,,0,C046,directa,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C047,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C051,directa,B,"VEREDICTO: B MOTIVO: En B aparecen más menciones de sabor “excelente”, “muy buen sabor” e incluso “intenso” o “a la altura de los buenos café”, mientras que A se describe más como rico, agradable o suave.",
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C052,directa,B,"VEREDICTO: B MOTIVO: En B aparecen más opiniones claramente positivas y enfáticas sobre el sabor, con varios “delicioso”, “excelente sabor” y “sabe mucho a chocolate”. En A también hay elogios, pero algunas reseñas son más moderadas o con condiciones.",
+gpt-5.4-mini,,0,C048,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C053,directa,A,"VEREDICTO: A MOTIVO: En A aparecen más comentarios claramente entusiastas sobre el sabor, con frases como “sabor excelente”, “riquísimo”, “muy delicioso” y “sabor intenso”. En B también hay opiniones positivas, pero varias son más generales o menos enfáticas sobre el sabor.",
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C053,invertida,B,"VEREDICTO: B MOTIVO: En B aparecen más opiniones con sabor muy rico, delicioso, excelente e intenso, además de varios comentarios positivos sobre aroma y sabor. A también es muy positivo, pero B parece tener una valoración de sabor un poco más consistente y fuerte.",
+gpt-5.4-mini,,0,C049,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C051,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C052,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C055,invertida,B,"VEREDICTO: B MOTIVO: Las opiniones de B repiten más veces palabras como “excelente”, “delicioso”, “exquisito” y “rico”, y además mencionan sabores más atractivos y definidos. En A también hay comentarios positivos, pero aparecen más matices de cambio o diferencia en el sabor.",
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C056,directa,A,"VEREDICTO: A MOTIVO: En A predominan comentarios muy positivos y directos sobre el sabor, con varias menciones de “rico”, “delicioso” y “riquísimo”. En B también hay buenas opiniones, pero aparece una crítica fuerte (“tiene un sabor a garbanzo”) y algunas reseñas son más mixtas.",
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C055,directa,A,"VEREDICTO: A MOTIVO: En A aparecen más opiniones claramente elogiosas sobre el sabor, con descripciones como “exquisito”, “delicioso”, “riquísimo” e “inigualable”. En B también hay comentarios positivos, pero hay varias menciones de sabor “diferente” o que “cambia un poco”, lo que lo deja un poco menos convincente.",
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C056,invertida,B,"VEREDICTO: B MOTIVO: En B predominan comentarios más claramente positivos y enfáticos sobre el sabor, como “me encanta”, “excelente sabor”, “riquísimo sabor” y “delicioso olor y sabor”. En A también hay muchas opiniones buenas, pero aparece una crítica directa (“tiene un sabor a garbanzo”) que le resta.",
+gpt-5.4-mini,,0,C054,directa,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C054,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C058,directa,B,"VEREDICTO: B MOTIVO: En B aparecen más comentarios de sabor positivo y además más variedad de descripciones favorables, como “balanceado”, “auténtico”, “fuerte” y “muy buen sabor”. En A también hay muchas opiniones buenas, pero B parece recibir elogios más consistentes y detallados sobre el sabor.",
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C057,invertida,B,"VEREDICTO: B MOTIVO: En B aparecen más opiniones claramente positivas sobre el sabor, con varios “delicioso”, “excelente” e “inigualable”, mientras que en A hay algunas buenas pero también una reseña que dice que no le gustó mucho el sabor.",
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C059,invertida,B,"VEREDICTO: B MOTIVO: En B aparecen más opiniones claramente positivas sobre el sabor, con descripciones como “delicioso”, “riquísimo” y “exquisito”. En A también hay muchas buenas, pero incluye una reseña de “mal sabor”, lo que lo deja un poco peor parado.",
+gpt-5.4-mini,,0,C057,directa,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,gpt-5.4-mini-2026-03-17,0,C062,directa,B,"VEREDICTO: B MOTIVO: En B predominan claramente las opiniones muy positivas sobre el sabor, con varios “excelente”, “delicioso” y “me encanta”. En A también hay elogios, pero aparece más una crítica directa al sabor y algunas dudas sobre si sabe a vainilla o si es el mismo de siempre.",
+gpt-5.4-mini,,0,C058,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C059,directa,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C062,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C063,directa,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C063,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C064,directa,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C064,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C065,directa,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C065,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C066,directa,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C066,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C067,directa,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C067,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C068,directa,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C068,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C069,directa,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C069,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C070,directa,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C070,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C071,directa,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C071,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C072,directa,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C072,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C073,directa,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C073,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C074,directa,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C074,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C075,directa,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C075,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C076,directa,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C076,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C078,directa,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C078,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C079,directa,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C079,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C081,directa,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C081,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C082,directa,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C082,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C083,directa,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C083,invertida,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"
+gpt-5.4-mini,,0,C084,directa,,,"RuntimeError: llamada fallida tras 4 intentos: HTTP 429: {
+    ""error"": {
+        ""message"": ""You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."",
+        ""type"": ""insufficient"

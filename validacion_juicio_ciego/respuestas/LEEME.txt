@@ -1,0 +1,4 @@
+Acá van las planillas que devuelvan los jueces, con el nombre
+planilla_juez_1.csv, planilla_juez_2.csv, ... tal como salieron de materiales/.
+
+Cuando estén todas: python validacion_juicio_ciego/analizar_respuestas.py

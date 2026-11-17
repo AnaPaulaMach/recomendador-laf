@@ -1,0 +1,93 @@
+{
+ "fase": "solapamiento",
+ "fecha": "2026-09-10T13:15:49",
+ "pares": 20,
+ "llamadas": 100,
+ "prompt": "congelado en README_LLM.md (apendice)",
+ "modelos": {
+  "gpt-5.4-mini": {
+   "modelo_real": "gpt-5.4-mini-2026-03-17",
+   "temperatura": 0,
+   "inconsistentes": 4,
+   "tasa_inconsistencia": 0.2,
+   "descartado_por_sesgo_de_posicion": false,
+   "pares_inconsistentes": [
+    "P01",
+    "P06",
+    "P07",
+    "P10"
+   ],
+   "acuerdo_sistema": {
+    "ok": 12,
+    "n": 15,
+    "prop": 0.8
+   },
+   "no_puedo_decidir": 1,
+   "por_franja": {
+    "chica": {
+     "ok": 3,
+     "n": 4
+    },
+    "grande": {
+     "ok": 5,
+     "n": 5
+    },
+    "mediana": {
+     "ok": 4,
+     "n": 6
+    }
+   },
+   "acuerdo_con_jueza": {
+    "ok": 9,
+    "n": 12,
+    "prop": 0.75
+   },
+   "habilita_extrapolacion": true
+  },
+  "gpt-5.5": {
+   "modelo_real": "gpt-5.5-2026-04-23",
+   "temperatura": "por_defecto",
+   "inconsistentes": 4,
+   "tasa_inconsistencia": 0.2,
+   "descartado_por_sesgo_de_posicion": false,
+   "pares_inconsistentes": [
+    "P06",
+    "P07",
+    "P13",
+    "P16"
+   ],
+   "ruido_de_muestreo": 2,
+   "tasa_ruido": 0.1,
+   "acuerdo_sistema": {
+    "ok": 11,
+    "n": 15,
+    "prop": 0.7333
+   },
+   "no_puedo_decidir": 1,
+   "por_franja": {
+    "chica": {
+     "ok": 4,
+     "n": 5
+    },
+    "grande": {
+     "ok": 3,
+     "n": 4
+    },
+    "mediana": {
+     "ok": 4,
+     "n": 6
+    }
+   },
+   "acuerdo_con_jueza": {
+    "ok": 11,
+    "n": 13,
+    "prop": 0.8462
+   },
+   "habilita_extrapolacion": true
+  }
+ },
+ "acuerdo_entre_modelos": {
+  "ok": 14,
+  "n": 15
+ }
+}
