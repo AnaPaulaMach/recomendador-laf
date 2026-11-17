@@ -51,3 +51,7 @@ venv\Scripts\python.exe validacion_laf2\suficiencia_datos.py
 
 Snapshots: histórico `mlm_mlm194329_20260528_142014`, instantáneo `mlm_mlm194329_20260805_191308`,
 grano/molido `mlm_mlm194335_20260805_185233`.
+
+## Programas por condición
+
+`programas_por_condicion/` contiene los programas LAF2 generados para los dos productos de esta validación (programa combinado y uno por condición de compra); su README describe cada archivo.
